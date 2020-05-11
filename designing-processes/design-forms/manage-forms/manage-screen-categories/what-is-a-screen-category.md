@@ -34,6 +34,8 @@ ProcessMaker has multiple Category types for different types of assets. Each Cat
 
 {% page-ref page="create-a-new-screen-category.md" %}
 
+{% page-ref page="search-for-a-screen-category.md" %}
+
 {% page-ref page="edit-a-screen-category.md" %}
 
 {% page-ref page="delete-a-screen-category.md" %}

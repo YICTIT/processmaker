@@ -54,6 +54,8 @@ Use the **Searc**h setting to filter Screen Categories by their names.
 
 {% page-ref page="create-a-new-screen-category.md" %}
 
+{% page-ref page="search-for-a-screen-category.md" %}
+
 {% page-ref page="edit-a-screen-category.md" %}
 
 {% page-ref page="delete-a-screen-category.md" %}

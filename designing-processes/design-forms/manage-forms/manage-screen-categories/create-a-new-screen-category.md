@@ -38,6 +38,8 @@ Follow these steps to create a new [Screen Category](what-is-a-screen-category.m
 
 {% page-ref page="view-screen-categories.md" %}
 
+{% page-ref page="search-for-a-screen-category.md" %}
+
 {% page-ref page="edit-a-screen-category.md" %}
 
 {% page-ref page="delete-a-screen-category.md" %}

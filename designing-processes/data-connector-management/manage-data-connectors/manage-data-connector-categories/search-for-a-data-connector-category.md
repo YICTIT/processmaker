@@ -24,9 +24,9 @@ See the ProcessMaker [Data Connectors](../../../../processmaker-administration/p
 Follow these steps to search for a [Data Connector Category](what-is-a-data-connector-category.md):
 
 1. [View your Data Connector Categories](view-data-connector-categories.md#view-data-connector-categories).
-2. Enter in the **Search** setting the text to filter Data Connectors Categories by name.
+2. Enter in the **Search** setting the text to filter Data Connector Categories by name.
 
-As you enter text into the **Search** setting, Data Connectors Categories display that match your entered text.
+As you enter text into the **Search** setting, Data Connector Categories display that match your entered text.
 
 {% hint style="info" %}
 If there are no search results, the following message displays: **No Results**.
@@ -43,4 +43,6 @@ If there are no search results, the following message displays: **No Results**.
 {% page-ref page="edit-a-data-connector-category.md" %}
 
 {% page-ref page="delete-a-data-connector-category.md" %}
+
+{% page-ref page="../../what-is-a-data-connector.md" %}
 

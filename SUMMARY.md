@@ -117,6 +117,7 @@
       * [What is a Screen Category?](designing-processes/design-forms/manage-forms/manage-screen-categories/what-is-a-screen-category.md)
       * [View Screen Categories](designing-processes/design-forms/manage-forms/manage-screen-categories/view-screen-categories.md)
       * [Create a New Screen Category](designing-processes/design-forms/manage-forms/manage-screen-categories/create-a-new-screen-category.md)
+      * [Search for a Screen Category](designing-processes/design-forms/manage-forms/manage-screen-categories/search-for-a-screen-category.md)
       * [Edit a Screen Category](designing-processes/design-forms/manage-forms/manage-screen-categories/edit-a-screen-category.md)
       * [Delete a Screen Category](designing-processes/design-forms/manage-forms/manage-screen-categories/delete-a-screen-category.md)
     * [View Screens](designing-processes/design-forms/manage-forms/view-all-forms.md)
