@@ -38,6 +38,8 @@ Follow these steps to edit a [Script Category](what-is-a-script-category.md):
 
 {% page-ref page="create-a-new-script-category.md" %}
 
+{% page-ref page="search-for-a-script-category.md" %}
+
 {% page-ref page="delete-a-script-category.md" %}
 
 {% page-ref page="../../what-is-a-script.md" %}

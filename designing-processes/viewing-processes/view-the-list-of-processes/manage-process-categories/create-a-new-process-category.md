@@ -41,6 +41,8 @@ Follow these steps to create a new [Process Category](what-is-a-process-category
 
 {% page-ref page="view-process-categories.md" %}
 
+{% page-ref page="search-for-a-process-category.md" %}
+
 {% page-ref page="edit-a-process-category.md" %}
 
 {% page-ref page="delete-a-process-category.md" %}

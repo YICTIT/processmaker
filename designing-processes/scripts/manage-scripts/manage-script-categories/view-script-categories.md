@@ -54,6 +54,8 @@ Use the **Search** setting to filter Script Categories by their names.
 
 {% page-ref page="create-a-new-script-category.md" %}
 
+{% page-ref page="search-for-a-script-category.md" %}
+
 {% page-ref page="edit-a-script-category.md" %}
 
 {% page-ref page="delete-a-script-category.md" %}

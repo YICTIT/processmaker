@@ -53,6 +53,8 @@ Use the **Search** setting to filter Process Categories by their names.
 
 {% page-ref page="create-a-new-process-category.md" %}
 
+{% page-ref page="search-for-a-process-category.md" %}
+
 {% page-ref page="edit-a-process-category.md" %}
 
 {% page-ref page="delete-a-process-category.md" %}

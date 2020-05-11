@@ -38,6 +38,8 @@ Follow these steps to create a new [Script Category](what-is-a-script-category.m
 
 {% page-ref page="view-script-categories.md" %}
 
+{% page-ref page="search-for-a-script-category.md" %}
+
 {% page-ref page="edit-a-script-category.md" %}
 
 {% page-ref page="delete-a-script-category.md" %}
