@@ -22,7 +22,7 @@ ProcessMaker Enterprise edition supports the following additional programming la
 * Java and [SDK](https://github.com/ProcessMaker/sdk-java) \(requires the [Java package](../../package-development-distribution/package-a-connector/java-package.md)\)
 * R \(requires the [R package](../../package-development-distribution/package-a-connector/r-package.md)\)
 
-### ProcessMaker Scripts Run in Docker Containers for Security
+### ProcessMaker Scripts Run in Short-Lived Docker Containers for Security
 
 ProcessMaker Scripts run securely and in isolation from within [Docker](https://www.docker.com/) containers. When the ProcessMaker instance calls a ProcessMaker Script to run, ProcessMaker creates a [Docker container](https://www.docker.com/resources/what-container) for corresponding with the [programming language ProcessMaker supports](what-is-a-script.md#supported-programming-languages), runs the Script, and then destroys the Docker container. This ensures that any malicious script that anyone in your organization might inadvertently introduce to ProcessMaker does not affect the ProcessMaker instance or its hosting environment: Docker containers cannot access them. Furthermore, Docker containers cannot listen for inbound connections; therefore, a Docker container cannot be accessed externally.
 
