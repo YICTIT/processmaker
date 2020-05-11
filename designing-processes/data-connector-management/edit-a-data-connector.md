@@ -23,7 +23,7 @@ See the ProcessMaker [Data Connectors](../../processmaker-administration/permiss
 
 Follow these steps to edit the details for a [ProcessMaker Data Connector](what-is-a-data-connector.md):
 
-1. [View your ProcessMaker Data Connectors](view-data-connectors.md#view-all-scripts). The **Data Connectors** page displays.
+1. [View your ProcessMaker Data Connectors](view-data-connectors.md#view-all-scripts). The **Data Connectors** tab displays.
 2. Click the **Edit** icon![](../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)for the ProcessMaker Data Connector to edit. The **Details** tab displays.
 3. Edit the following information about the ProcessMaker Data Connector as necessary:
    * In the **Name** setting, edit the name of the ProcessMaker Data Connector. ProcessMaker Data Connector names must be unique in your organization and can only use apostrophe characters \(`'`\) and spaces. This is a required setting.

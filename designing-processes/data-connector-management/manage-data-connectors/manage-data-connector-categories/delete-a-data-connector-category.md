@@ -30,7 +30,7 @@ Deleting a Data Connector Category cannot be undone.
 
 Follow these steps to delete a [Data Connector Category](../../what-is-a-data-connector.md):
 
-1. View your [Data Connector Categories](view-data-connector-categories.md#view-data-connector-categories).
+1. [View your Data Connector Categories](view-data-connector-categories.md#view-data-connector-categories).
 2. Select the **Delete** icon![](../../../../.gitbook/assets/trash-icon-process-modeler-processes.png)for the Data Connector Category to delete. A message displays to confirm deletion of the Data Connector Category. ![](../../../../.gitbook/assets/caution-delete-data-connector-category-package.png) 
 3. Click **Confirm**. The following message displays: **The category was deleted**.
 
@@ -41,6 +41,8 @@ Follow these steps to delete a [Data Connector Category](../../what-is-a-data-co
 {% page-ref page="view-data-connector-categories.md" %}
 
 {% page-ref page="create-a-new-data-connector-category.md" %}
+
+{% page-ref page="search-for-a-data-connector-category.md" %}
 
 {% page-ref page="edit-a-data-connector-category.md" %}
 

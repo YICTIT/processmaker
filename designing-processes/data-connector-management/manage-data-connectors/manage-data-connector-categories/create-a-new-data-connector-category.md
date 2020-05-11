@@ -26,7 +26,7 @@ See the ProcessMaker [Data Connectors](../../../../processmaker-administration/p
 
 Follow these steps to create a new [Data Connector Category](../../what-is-a-data-connector.md):
 
-1. View your [Data Connector Categories](view-data-connector-categories.md#view-data-connector-categories).
+1. [View your Data Connector Categories](view-data-connector-categories.md#view-data-connector-categories).
 2. Click the **+Category** button. The **Create Category** screen displays. ![](../../../../.gitbook/assets/create-category-data-connector-package.png) 
 3. In the **Category Name** setting, enter the name of the new Data Connector Category. The Data Connector Category name must be unique from all other Data Connector Category names in your organization and can only use apostrophe characters \(`'`\) and spaces. This is a required setting.
 4. From the **Status** drop-down menu, select one of the following options for the Data Connector Category's status:
@@ -43,6 +43,8 @@ Follow these steps to create a new [Data Connector Category](../../what-is-a-dat
 {% page-ref page="what-is-a-data-connector-category.md" %}
 
 {% page-ref page="view-data-connector-categories.md" %}
+
+{% page-ref page="search-for-a-data-connector-category.md" %}
 
 {% page-ref page="edit-a-data-connector-category.md" %}
 

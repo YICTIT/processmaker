@@ -28,7 +28,7 @@ Follow these steps to view all ProcessMaker Data Connectors in your organization
 
 ![&quot;Data Connectors&quot; tab displays all ProcessMaker Data Connectors in your organization](../../.gitbook/assets/view-data-connectors-package.png)
 
-The **Data Connectors** page displays the following information in tabular format about ProcessMaker Data Connectors:
+The **Data Connectors** tab displays the following information in tabular format about ProcessMaker Data Connectors:
 
 * **Name:** The **Name** column displays the name of the ProcessMaker Data Connector. If a [ProcessMaker Collection](../../collections/what-is-a-collection.md) is created, the automatically created Data Connector that connects to that Collection has the same name as that Collection.
 * **Description:** The **Description** column displays the description of the ProcessMaker Data Connector. See [Edit Details for a ProcessMaker Data Connector](edit-a-data-connector.md#edit-details-for-a-processmaker-data-connector) for more information.

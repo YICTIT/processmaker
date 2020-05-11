@@ -24,7 +24,7 @@ See the ProcessMaker [Data Connectors](../../../../processmaker-administration/p
 
 Follow these steps to edit a [Data Connector Category](../../what-is-a-data-connector.md):
 
-1. View your [Data Connector Categories](view-data-connector-categories.md#view-data-connector-categories).
+1. [View your Data Connector Categories](view-data-connector-categories.md#view-data-connector-categories).
 2. Select the **Edit** icon![](../../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png) for the Data Connector Category to edit. The **Edit Category** screen displays. ![](../../../../.gitbook/assets/edit-category-data-connector-package.png) 
 3. Edit the following information about the Data Connector Category as necessary:
    * In the **Category Name** setting, edit the name of the new Data Connector Category. The Data Connector Category name must be unique from all other Data Connector Category names in your organization and can only use apostrophe characters \(`'`\) and spaces. This is a required setting.
@@ -43,6 +43,8 @@ Follow these steps to edit a [Data Connector Category](../../what-is-a-data-conn
 {% page-ref page="view-data-connector-categories.md" %}
 
 {% page-ref page="create-a-new-data-connector-category.md" %}
+
+{% page-ref page="search-for-a-data-connector-category.md" %}
 
 {% page-ref page="delete-a-data-connector-category.md" %}
 

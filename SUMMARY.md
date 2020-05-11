@@ -186,6 +186,7 @@
       * [What is a Data Connector Category?](designing-processes/data-connector-management/manage-data-connectors/manage-data-connector-categories/what-is-a-data-connector-category.md)
       * [View Data Connector Categories](designing-processes/data-connector-management/manage-data-connectors/manage-data-connector-categories/view-data-connector-categories.md)
       * [Create a New Data Connector Category](designing-processes/data-connector-management/manage-data-connectors/manage-data-connector-categories/create-a-new-data-connector-category.md)
+      * [Search for a Data Connector Category](designing-processes/data-connector-management/manage-data-connectors/manage-data-connector-categories/search-for-a-data-connector-category.md)
       * [Edit a Data Connector Category](designing-processes/data-connector-management/manage-data-connectors/manage-data-connector-categories/edit-a-data-connector-category.md)
       * [Delete a Data Connector Category](designing-processes/data-connector-management/manage-data-connectors/manage-data-connector-categories/delete-a-data-connector-category.md)
   * [View Data Connectors](designing-processes/data-connector-management/view-data-connectors.md)

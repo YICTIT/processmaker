@@ -27,7 +27,7 @@ A [ProcessMaker Data Connector](what-is-a-data-connector.md) is created for each
 
 Follow these steps to create a new ProcessMaker Data Connector:
 
-1. [View your ProcessMaker Data Connectors](view-data-connectors.md#view-all-scripts). The **Data Connectors** page displays.
+1. [View your ProcessMaker Data Connectors](view-data-connectors.md#view-all-scripts). The **Data Connectors** tab displays.
 2. Click the **+Data Connector** button. The **Create Data Connector** screen displays. ![](../../.gitbook/assets/create-data-connector-screen-package.png) 
 3. In the **Name** setting, enter the name of the ProcessMaker Data Connector. ProcessMaker Data Connector names must be unique in your organization and can only use apostrophe characters \(`'`\) and spaces. This is a required setting.
 4. In the **Description** setting, enter the description of the ProcessMaker Data Connector.

@@ -22,7 +22,7 @@ See the ProcessMaker [Data Connectors](../../processmaker-administration/permiss
 
 Follow these steps to create a new ProcessMaker Data Connector:
 
-1. [View your ProcessMaker Data Connectors](view-data-connectors.md#view-all-scripts). The **Data Connectors** page displays.
+1. [View your ProcessMaker Data Connectors](view-data-connectors.md#view-all-scripts). The **Data Connectors** tab displays.
 2. Enter in the **Search** setting the text to filter ProcessMaker Data Connectors using any of the following criteria:
    * **Name:** Filter by the ProcessMaker Data Connector name that displays in the **Name** column.
    * **Category:** Filter by the Data Connector [Category](manage-data-connectors/manage-data-connector-categories/what-is-a-data-connector-category.md) name that displays in the **Category** column.

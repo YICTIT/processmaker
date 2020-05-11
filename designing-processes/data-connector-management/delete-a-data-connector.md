@@ -31,7 +31,7 @@ Deleting a ProcessMaker Screen from the **Data Connectors** page cannot be undon
 
 Follow these steps to delete a ProcessMaker Data Connector:
 
-1. [View your ProcessMaker Data Connectors](view-data-connectors.md#view-all-scripts). The **Data Connectors** page displays.
+1. [View your ProcessMaker Data Connectors](view-data-connectors.md#view-all-scripts). The **Data Connectors** tab displays.
 2. Click the **Delete** icon![](../../.gitbook/assets/trash-icon-process-modeler-processes.png)for the ProcessMaker Data Connector to delete. The **Caution** screen displays to confirm the deletion of the ProcessMaker Data Connector. ![](../../.gitbook/assets/caution-delete-data-connector-package.png) 
 3. Click **Confirm**. The following message displays: **The Data Connector was deleted.**
 

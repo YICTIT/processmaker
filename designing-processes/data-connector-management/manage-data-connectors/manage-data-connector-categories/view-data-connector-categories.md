@@ -60,6 +60,8 @@ Use the **Search** setting to filter Data Connector Categories by their names.
 
 {% page-ref page="create-a-new-data-connector-category.md" %}
 
+{% page-ref page="search-for-a-data-connector-category.md" %}
+
 {% page-ref page="edit-a-data-connector-category.md" %}
 
 {% page-ref page="delete-a-data-connector-category.md" %}
