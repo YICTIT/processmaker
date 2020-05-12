@@ -99,7 +99,7 @@ The Manual Task element has multiple settings in the **Configuration** panel:
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
 
-Follow these steps to edit the name for a Task element:
+Follow these steps to edit the name for a Manual Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Manual Task element from the Process model in which to edit its name. Panels to configure this element display.
@@ -125,7 +125,7 @@ Follow these steps to select the ProcessMaker Screen that displays when a Manual
 
 #### Specify When the Manual Task is Due
 
-Specify when a Manual Task element is due from when that activity is assigned to a Request participant. The default period of time for a task to be due is 72 hours \(three days\).
+Specify when a Manual Task element is due from when that activity is assigned to a Request participant. The default period of time for a Task to be due is 72 hours \(three days\).
 
 The Task due date displays for each [pending assigned Task](../../../using-processmaker/requests/view-completed-requests.md#view-completed-requests-in-which-you-are-a-participant). After the specified time expires for a manual Task, an overdue indicator displays for that manual Task to the Task assignee.
 
@@ -216,7 +216,7 @@ Follow these steps to select to whom to assign the Task that is referenced in a 
 
    * **Self Service:** Select **Self Service** to allow any member in a specified ProcessMaker group to voluntarily self-assign any Task from a queue. When this option is selected, the **Assigned Group** drop-down menu displays below the **Task Assignment** drop-down menu.
 
-     From the **Assigned Group** drop-down menu, select the group from which any of its members can self-assign Tasks from a queue. When this Task element triggers, this Task displays in the [**Self Service** Task page](../../../using-processmaker/task-management/self-assign-tasks-to-yourself-from-a-queue.md#view-self-service-tasks-that-you-can-assign-to-yourself) for all members of that ProcessMaker group.
+     From the **Assigned Group** drop-down menu, select the group from which any of its members can self-assign Tasks from a queue. When this Manual Task element triggers, this Task displays in the [**Self Service** Task page](../../../using-processmaker/task-management/self-assign-tasks-to-yourself-from-a-queue.md#view-self-service-tasks-that-you-can-assign-to-yourself) for all members of that ProcessMaker group.
 5. Enable the **Lock task assignment to user** option to assign this Task to the same Task assignee if workflow in the Request returns to this Manual Task. If the initial Task assignee was a member of a ProcessMaker group, the Task is reassigned to the same ProcessMaker group member. This option is useful if the initial Task assignee in the Request might need to provide clarification regarding information that Request participant initially submitted in that Task.
 6. Enable the **Allow Reassignment** option to allow the Task assignee to reassign the Task if necessary. If the **Allow Reassignment** option is enabled, the **Reassign** button displays in the Task summary to allow that Task assignee to reassign that Task. See [View a Task Summary](../../../using-processmaker/task-management/view-a-task-summary.md#summary).
 
@@ -236,7 +236,7 @@ The rule that determines the Task assignee uses an expression syntax described i
 Follow these steps to select to whom to assign the Task that is referenced in a Manual Task element using a rule:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to assign the Task via a rule. Panels to configure this element display.
+2. Select the Manual Task element from the Process model in which to assign the Task via a rule. Panels to configure this element display.
 3. Expand the **Assignment Rules** panel if it is not presently expanded, and then locate the **+Rule** button.
 4. Click the **+Rule** button.  
 
@@ -246,16 +246,16 @@ Follow these steps to select to whom to assign the Task that is referenced in a 
 
    ![](../../../.gitbook/assets/rule-expression-assignment-assignee-task-process-modeler-processes.png)
 
-5. In the **Expression** setting, enter or edit the expression that determines that Task element's Task assignee using the syntax components described in [Expression Syntax Components](add-and-configure-manual-task-elements.md#expression-syntax-components), and then press **Enter**.
+5. In the **Expression** setting, enter or edit the expression that determines that Manual Task element's Task assignee using the syntax components described in [Expression Syntax Components](add-and-configure-manual-task-elements.md#expression-syntax-components), and then press **Enter**.
 6. From the **Select the Task Assignee** drop-down menu, select that Task's assignee from the following options:
-   * **Requester:** Select the **Requester** option to assign that Task element's Task to the requester if the expression in the **Expression** setting evaluates as True.
-   * **User:** Select the **User** option to assign that Task element's Task to a ProcessMaker user if the expression in the **Expression** setting evaluates as True. When this option is selected, the **Assigned User** drop-down menu displays below the **Select the Task assignee** drop-down menu.
+   * **Requester:** Select the **Requester** option to assign that Manual Task element's Task to the requester if the expression in the **Expression** setting evaluates as True.
+   * **User:** Select the **User** option to assign that Manual Task element's Task to a ProcessMaker user if the expression in the **Expression** setting evaluates as True. When this option is selected, the **Assigned User** drop-down menu displays below the **Select the Task assignee** drop-down menu.
 
      ![](../../../.gitbook/assets/rule-expression-user-assignment-assignee-task-process-modeler-processes.png)
 
      From the **Assigned User** drop-down menu, select which ProcessMaker user to assign that Task.
 
-   * **Group:** Select the **Group** option to assign that Task element's Task to a ProcessMaker group if the expression in the **Expression** setting evaluates as True. When this option is selected, the **Assigned Group** drop-down menu displays below the **Select the Task assignee** drop-down menu.
+   * **Group:** Select the **Group** option to assign that Manual Task element's Task to a ProcessMaker group if the expression in the **Expression** setting evaluates as True. When this option is selected, the **Assigned Group** drop-down menu displays below the **Select the Task assignee** drop-down menu.
 
      ![](../../../.gitbook/assets/rule-expression-group-assignment-assignee-task-process-modeler-processes.png)
 
@@ -273,7 +273,7 @@ Follow these steps to select to whom to assign the Task that is referenced in a 
 
 #### Expression Syntax Components
 
-Use the following expression syntax components to compose the expression that describes to whom is assigned a Task referenced in a Task element.
+Use the following expression syntax components to compose the expression that describes to whom is assigned a Task referenced in a Manual Task element.
 
 Spaces are allowed before and after expression components, such as arithmetic and comparison operators, to more easily read the expression.
 
@@ -349,14 +349,14 @@ Set [email notifications for Tasks](add-and-configure-manual-task-elements.md#em
 
 Set when [notifications](../../../using-processmaker/notifications.md) regarding Tasks are sent to the following:
 
-* **Requester:** Send notifications to the Request initiator \(referred to as the requester\) when the Task associated with this Task element is assigned and/or completed.
-* **Task assignee:** Send notifications to Task assignees associated with this Task element when that Task is assigned and/or completed.
-* **Request participants:** Send notifications to all Request participants of this Process when the Task associated with this Task element is assigned or completed.
+* **Requester:** Send notifications to the Request initiator \(referred to as the requester\) when the Task associated with this Manual Task element is assigned and/or completed.
+* **Task assignee:** Send notifications to Task assignees associated with this Manual Task element when that Task is assigned and/or completed.
+* **Request participants:** Send notifications to all Request participants of this Process when the Task associated with this Manual Task element is assigned or completed.
 
-Follow these steps to set Task notifications in a Task element:
+Follow these steps to set Task notifications in a Manual Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to set Task notifications. Panels to configure this element display.
+2. Select the Manual Task element from the Process model in which to set Task notifications. Panels to configure this element display.
 3. Expand the **Notifications** panel if it is not presently expanded. Settings display to set Task notifications.  
 
    ![](../../../.gitbook/assets/notification-task-process-modeler-processes.png)
@@ -393,7 +393,7 @@ The following may be email Task notification recipients:
 * ProcessMaker [users](../../../processmaker-administration/add-users/what-is-a-user.md) and/or [group](../../../processmaker-administration/assign-groups-to-users/what-is-a-group.md) members.
 * Specific email addresses for individuals who are not ProcessMaker users in your ProcessMaker instance.
 
-The email body for the Task notification may be plain text or referenced from a [Email](../../design-forms/screens-builder/types-for-screens.md#email)-type ProcessMaker Screen. If referencing the email body from a Display-type [ProcessMaker Screen](../../design-forms/what-is-a-form.md), you may use the value from a Screen's **Variable Name** setting as a variable in this setting. For example, if your Process model references a ProcessMaker Screen that contains a [Line Input control](../../design-forms/screens-builder/control-descriptions/line-input-control-settings.md) with the **Variable Name** setting value of `EmailAddress` into which the Request participant enters an email address, use [mustache syntax](https://mustache.github.io/mustache.5.html) `{{EmailAddress}}` to use that Line Input control's value in the ProcessMaker Screen.
+The email body for the Task notification may be plain text or referenced from an [Email](../../design-forms/screens-builder/types-for-screens.md#email)-type ProcessMaker Screen. If referencing the email body from a Display-type [ProcessMaker Screen](../../design-forms/what-is-a-form.md), you may use the value from a Screen's **Variable Name** setting as a variable in this setting. For example, if your Process model references a ProcessMaker Screen that contains a [Line Input control](../../design-forms/screens-builder/control-descriptions/line-input-control-settings.md) with the **Variable Name** setting value of `EmailAddress` into which the Request participant enters an email address, use [mustache syntax](https://mustache.github.io/mustache.5.html) `{{EmailAddress}}` to use that Line Input control's value in the ProcessMaker Screen.
 
 Set when email Task notifications are sent to email recipients:
 
@@ -418,21 +418,21 @@ After setting an email notification, the following settings are available:
 Follow these steps to set the email Task notification's subject and body content in a Manual Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to set email Task notifications. Panels to configure this element display.
+2. Select the Manual Task element from the Process model in which to set email Task notifications. Panels to configure this element display.
 3. Expand the **Email Notifications** panel if it is not presently expanded. The **Notifications** setting displays. ![](../../../.gitbook/assets/email-notifications-process-modeler-processes.png) 
 4. Click the icon![](../../../.gitbook/assets/add-icon.png)to add an email notification. The **Add Notification** settings display.
-5. From the **Subject** setting, revise the default text if necessary that displays as the email subject. By default, ProcessMaker displays the current Task element's [**Name** setting](add-and-configure-manual-task-elements.md#edit-the-element-name) as part of the **Subject** setting. ![](../../../.gitbook/assets/subject-email-notification-task-process-modeler-processes.png) 
+5. From the **Subject** setting, revise the default text if necessary that displays as the email subject. By default, ProcessMaker displays the current Manual Task element's [**Name** setting](add-and-configure-manual-task-elements.md#edit-the-element-name) as part of the **Subject** setting. ![](../../../.gitbook/assets/subject-email-notification-task-process-modeler-processes.png) 
 6. From the **Body** setting, select one of the following options:
    * **Plain Text:**
 
      Select the **Plain Text** option to enter plain text to display as the email body. This is the default option. Follow these steps:
 
      1. From the **Body** setting, ensure that the **Plain Text** option is selected. ![](../../../.gitbook/assets/plain-text-email-notification-task-process-modeler-processes.png) 
-     2. In the setting below the **Plain Text** option, revise the default text if necessary that displays as the email body. By default, ProcessMaker displays the current Task element's [**Name** setting](add-and-configure-manual-task-elements.md#edit-the-element-name) as part of the **Plain Text** option.
+     2. In the setting below the **Plain Text** option, revise the default text if necessary that displays as the email body. By default, ProcessMaker displays the current Manual Task element's [**Name** setting](add-and-configure-manual-task-elements.md#edit-the-element-name) as part of the **Plain Text** option.
 
    * **Display Screen:**
 
-     Select the **Display Screen** option to select a [Email](../../design-forms/screens-builder/types-for-screens.md#email)-type [ProcessMaker Screen](../../design-forms/what-is-a-form.md) from which to display its content as the email body. Follow these steps:
+     Select the **Display Screen** option to select an [Email](../../design-forms/screens-builder/types-for-screens.md#email)-type [ProcessMaker Screen](../../design-forms/what-is-a-form.md) from which to display its content as the email body. Follow these steps:
 
      1. From the **Body** setting, ensure that the **Display Screen** option is selected. ![](../../../.gitbook/assets/display-screen-email-notification-task-process-modeler-processes.png) 
      2. From the drop-down menu below the **Display Screen** option, select from which ProcessMaker Screen to display its content as the email body. Only Email-type ProcessMaker Screens display from this drop-down menu.
@@ -448,7 +448,7 @@ These instructions continue from the [Set the Email Notification's Subject and B
 Use the **Recipients** setting to set which ProcessMaker users, groups, and/or non-ProcessMaker users to send this email notification. Follow these steps:
 
 1. [Set this email notification's subject and body content](add-and-configure-manual-task-elements.md#set-the-email-notifications-subject-and-body-content).
-2. From the **Recipients** setting, select which ProcessMaker users and/or groups to send this email notification. To remove an email recipient that is currently selected, click the ![](../../../.gitbook/assets/remove-group-user-admin.png)icon for that selection or press `Enter` when the drop-down is visible. ![](../../../.gitbook/assets/recipient-email-notification-task-process-modeler-processes.png) 
+2. From the **Recipients** setting, select which ProcessMaker users and/or groups to send this email notification. To remove an email recipient that is currently selected, click the![](../../../.gitbook/assets/remove-group-user-admin.png)icon for that selection or press `Enter` when the drop-down is visible. ![](../../../.gitbook/assets/recipient-email-notification-task-process-modeler-processes.png) 
 3. Optionally, specify email addresses for individuals who are not ProcessMaker users in your ProcessMaker instance. Follow these steps:
    1. Select the **Add additional emails** option. The **enter email** setting displays. ![](../../../.gitbook/assets/add-additional-emails-email-notification-task-process-modeler-processes.png) 
    2. In the **enter email** setting, enter the email address for the non-ProcessMaker user to receive this email notification.
@@ -470,7 +470,7 @@ Use the **Send At** or **Expression** settings to set when this email notificati
 3. Do one of the following based on when you need the email notification sent:
    * **After this Task triggers or completes:** From the **Send At** setting, select one of the following options:
      * **Task Start:** Select the **Task Start** option to send this email notification when this Manual Task triggers. This is the default option.
-     * **Task Completion:** Select the **Task Completion** option to send this email notification when this Manual Task completes \(when the Task assignee submits the ProcessMaker Screen associated with this manual Task\). ![](../../../.gitbook/assets/send-at-email-notification-task-process-modeler-processes.png) 
+     * **Task Completion:** Select the **Task Completion** option to send this email notification when this Manual Task element completes \(when the Task assignee submits the ProcessMaker Screen associated with this manual Task\). ![](../../../.gitbook/assets/send-at-email-notification-task-process-modeler-processes.png) 
    * **Conditionally when a Request data object or Magic Variable meets a specific setting or condition:** In the **Expression** setting, enter the expression to conditionally send the email notification when a Request data object or [Magic Variable](../../reference-global-variables-in-your-processmaker-assets.md) meets a specific setting or condition, and then press **Enter**. Specify this condition using an expression syntax described in [Expression Syntax Components](add-and-configure-manual-task-elements.md#expression-syntax-components-1). Use logical operators to specify multiple conditions in that expression if necessary. If the **Expression** setting does not contain a value, then the **Send At** setting determines when to send email notifications for this Task. ![](../../../.gitbook/assets/expression-email-notification-task-process-modeler-processes.png) 
 4. Click **Close**. This email notification is saved and displays below the **Notifications** setting using the **Subject** setting as the email notification label. Optionally do any of the following with this email notification:
    * [Edit this email notification](add-and-configure-manual-task-elements.md#edit-an-email-notification)
@@ -608,15 +608,15 @@ Your ProcessMaker user account or group membership must have the following permi
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
 {% endhint %}
 
-Assign [ProcessMaker Vocabularies](../../vocabularies-management/what-is-a-vocabulary.md) that validate Request data complies with a specific JSON schema. This is often mandatory for many types of business sectors including banking and healthcare. Ensure the quality and compliance of Request data. For example, during a Loan Application process, ensure that personal information has been included in the Request to that moment in that in-progress Request. The Vocabularies package must be installed in your ProcessMaker instance to make this configuration.
+Assign [ProcessMaker Vocabularies](../../vocabularies-management/what-is-a-vocabulary.md) that validate that Request data complies with a specific JSON schema. This is often mandatory for many types of business sectors including banking and healthcare. Ensure the quality and compliance of Request data. For example, during a Loan Application process, ensure that personal information has been included in the Request to that moment in that in-progress Request. The Vocabularies package must be installed in your ProcessMaker instance to make this configuration.
 
-Use a ProcessMaker Vocabulary on a Manual Task element to validate Request data complies with the Vocabulary's JSON schema after the Task assignee submits the Task but prior to when the Request continues workflow. See [What is a Vocabulary?](../../vocabularies-management/what-is-a-vocabulary.md) for more information.
+Use a ProcessMaker Vocabulary on a Manual Task element to validate that Request data complies with the Vocabulary's JSON schema after the Task assignee submits the Task but prior to when the Request continues workflow. See [What is a Vocabulary?](../../vocabularies-management/what-is-a-vocabulary.md) for more information.
 
 Each moment ProcessMaker evaluates workflow routing for an in-progress Request, ProcessMaker also evaluates the Request data's conformity to the ProcessMaker Vocabularies applied to the Process and/or a specific BPMN 2.0 element in the Process model. The Request's JSON data model must conform to the ProcessMaker Vocabulary's JSON schema.
 
 During an in-progress Request, if ProcessMaker evaluates that the Request data no longer complies with all ProcessMaker Vocabularies to that moment, the Request status changes from In Progress to Error. The error displays in the [Request summary](../../../using-processmaker/requests/request-details/summary-for-requests-with-errors.md). ProcessMaker Vocabularies are cumulative in an in-progress Request: as the Request progresses, if Request data does not conform with any Vocabulary's JSON schema to that moment in the Request, the Request errors.
 
-If no ProcessMaker Vocabularies are assigned, ProcessMaker does not validate Request data complies with a specific JSON schema prior to continuing workflow for that Request.
+If no ProcessMaker Vocabularies are assigned, ProcessMaker does not validate that Request data complies with a specific JSON schema prior to continuing workflow for that Request.
 
 One or more ProcessMaker Vocabularies must be created to your ProcessMaker instance before assigning a Vocabulary. See [Create a New Vocabulary](../../vocabularies-management/manage-your-vocabularies/create-a-new-vocabulary.md#create-a-new-processmaker-vocabulary). Multiple ProcessMaker Vocabularies can be assigned to a Manual Task element.
 
@@ -659,7 +659,7 @@ Follow these steps to edit the identifier value for a Manual Task element:
 
    ![](../../../.gitbook/assets/manual-task-configuration-identifier-name-process-modeler-processes.png)
 
-4. In the **Node Identifier** setting, edit the Task element's identifier to a unique value from all elements in the Process model and then press **Enter**.
+4. In the **Node Identifier** setting, edit the Manual Task element's identifier to a unique value from all elements in the Process model and then press **Enter**.
 
 ## Related Topics
 

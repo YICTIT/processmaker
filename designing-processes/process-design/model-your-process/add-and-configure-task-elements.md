@@ -403,7 +403,7 @@ The following may be email Task notification recipients:
 * ProcessMaker [users](../../../processmaker-administration/add-users/what-is-a-user.md) and/or [group](../../../processmaker-administration/assign-groups-to-users/what-is-a-group.md) members.
 * Specific email addresses for individuals who are not ProcessMaker users in your ProcessMaker instance.
 
-The email body for the Task notification may be plain text or referenced from a [Email](../../design-forms/screens-builder/types-for-screens.md#email)-type ProcessMaker Screen. If referencing the email body from a Display-type [ProcessMaker Screen](../../design-forms/what-is-a-form.md), you may use the value from a Screen's **Variable Name** setting as a variable in this setting. For example, if your Process model references a ProcessMaker Screen that contains a [Line Input control](../../design-forms/screens-builder/control-descriptions/line-input-control-settings.md) with the **Variable Name** setting value of `EmailAddress` into which the Request participant enters an email address, use [mustache syntax](https://mustache.github.io/mustache.5.html) `{{EmailAddress}}` to use that Line Input control's value in the ProcessMaker Screen.
+The email body for the Task notification may be plain text or referenced from an [Email](../../design-forms/screens-builder/types-for-screens.md#email)-type ProcessMaker Screen. If referencing the email body from a Display-type [ProcessMaker Screen](../../design-forms/what-is-a-form.md), you may use the value from a Screen's **Variable Name** setting as a variable in this setting. For example, if your Process model references a ProcessMaker Screen that contains a [Line Input control](../../design-forms/screens-builder/control-descriptions/line-input-control-settings.md) with the **Variable Name** setting value of `EmailAddress` into which the Request participant enters an email address, use [mustache syntax](https://mustache.github.io/mustache.5.html) `{{EmailAddress}}` to use that Line Input control's value in the ProcessMaker Screen.
 
 Set when email Task notifications are sent to email recipients:
 
@@ -442,7 +442,7 @@ Follow these steps to set the email Task notification's subject and body content
 
    * **Display Screen:**
 
-     Select the **Display Screen** option to select a [Email](../../design-forms/screens-builder/types-for-screens.md#email)-type [ProcessMaker Screen](../../design-forms/what-is-a-form.md) from which to display its content as the email body. Follow these steps:
+     Select the **Display Screen** option to select an [Email](../../design-forms/screens-builder/types-for-screens.md#email)-type [ProcessMaker Screen](../../design-forms/what-is-a-form.md) from which to display its content as the email body. Follow these steps:
 
      1. From the **Body** setting, ensure that the **Display Screen** option is selected. ![](../../../.gitbook/assets/display-screen-email-notification-task-process-modeler-processes.png) 
      2. From the drop-down menu below the **Display Screen** option, select from which ProcessMaker Screen to display its content as the email body. Only Email-type ProcessMaker Screens display from this drop-down menu.
@@ -674,7 +674,7 @@ A ProcessMaker Vocabulary is a JSON schema. The JSON schema describes the data o
 The Vocabularies package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Vocabularies package can be installed in your ProcessMaker instance.
 {% endhint %}
 
-Assign [ProcessMaker Vocabularies](../../vocabularies-management/what-is-a-vocabulary.md) that validate Request data complies with a specific JSON schema. This is often mandatory for many types of business sectors including banking and healthcare. Ensure the quality and compliance of Request data. For example, during a Loan Application process, ensure that personal information has been included in the Request to that moment in that in-progress Request. The Vocabularies package must be installed in your ProcessMaker instance to make this configuration.
+Assign [ProcessMaker Vocabularies](../../vocabularies-management/what-is-a-vocabulary.md) that validate that Request data complies with a specific JSON schema. This is often mandatory for many types of business sectors including banking and healthcare. Ensure the quality and compliance of Request data. For example, during a Loan Application process, ensure that personal information has been included in the Request to that moment in that in-progress Request. The Vocabularies package must be installed in your ProcessMaker instance to make this configuration.
 
 Use a ProcessMaker Vocabulary on a Form Task element to validate that Request data complies with the Vocabulary's JSON schema after the Task assignee submits the Task [ProcessMaker User Documentation](https://app.gitbook.com/@processmaker/s/processmaker/~/drafts/-LvL_OO36QyaNSbIeD0x/). See [What is a Vocabulary?](../../vocabularies-management/what-is-a-vocabulary.md) for more information.
 
