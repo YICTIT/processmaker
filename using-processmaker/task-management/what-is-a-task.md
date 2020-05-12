@@ -6,7 +6,7 @@ description: Understand what Tasks are in ProcessMaker.
 
 ## Overview
 
-In simple terms, a "Task" represents an activity in the Process model. This activity may be information that must be provided, reviewed, approved, decided about, or otherwise acted upon via ProcessMaker software. However, a Task may also be an activity that occurs in the physical environment in which ProcessMaker software is not involved: moving inventory containers or making a phone call, for example. People participate in Processes through Tasks.
+In simple terms, a "Task" represents an activity or work a [Request](../requests/what-is-a-request.md) participant must do. This activity may be information that must be provided, reviewed, approved, decided about, or otherwise acted upon via ProcessMaker software. However, a Task may also be an activity that occurs in the physical environment in which ProcessMaker software is not involved: moving inventory containers or making a phone call, for example. People participate in Processes through Tasks.
 
 For example, each of the following are Tasks that you might use for a purchase process:
 
