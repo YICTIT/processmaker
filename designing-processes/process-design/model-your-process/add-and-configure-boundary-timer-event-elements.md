@@ -26,9 +26,9 @@ Follow these steps to add a Boundary Timer Event element to the Process model:
 1. [View your Processes](../../viewing-processes/view-the-list-of-processes/view-your-processes.md#view-all-active-processes). The **Processes** page displays.
 2. [Create a new Process](../../viewing-processes/view-the-list-of-processes/create-a-process.md) or click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
 3. Add one of the following Process model elements or [connectors](../model-processes-using-connectors/what-is-a-connector.md) to your Process model in which to associate with the Boundary Timer Event element:
-   * [Task](add-and-configure-task-elements.md#add-a-task-element) element
-   * [Script Task](add-and-configure-script-task-elements.md#add-a-script-task-element) element
+   * [Form Task](process-modeling-element-descriptions.md#form-task) element
    * [Manual Task](add-and-configure-manual-task-elements.md#add-a-manual-task-element) element
+   * [Script Task](add-and-configure-script-task-elements.md#add-a-script-task-element) element
    * [Sub Process](add-and-configure-sub-process-elements.md#add-a-sub-process-element) element
    * [Actions By Email](../model-processes-using-connectors/available-connectors-from-processmaker/actions-by-email-connector.md) connector \(requires the [Actions By Email package](../../../package-development-distribution/package-a-connector/actions-by-email-package.md)\)
    * [Data Connector](../model-processes-using-connectors/available-connectors-from-processmaker/data-connector-connector.md) connector \(requires the [Data Connector package](../../../package-development-distribution/package-a-connector/data-connector-package.md)\)
@@ -39,7 +39,7 @@ Follow these steps to add a Boundary Timer Event element to the Process model:
    * [Boundary Error Event](add-and-configure-boundary-error-event-elements.md#add-a-boundary-error-event-element) element
    * [Boundary Message Event](add-and-configure-boundary-message-event-elements.md#add-a-boundary-message-event-element) element
 
-![Boundary Timer Event element associated with a Task element](../../../.gitbook/assets/boundary-timer-event-process-modeler-processes.png)
+![Boundary Timer Event element associated with a Form Task element](../../../.gitbook/assets/boundary-timer-event-process-modeler-processes.png)
 
 After placing the Boundary Timer Event element, you may drag it to an adjacent side of its associating element. Since Process Modeler displays element names at the bottom of elements, the Boundary Timer Event element displays best at the bottom of its associating element.
 
