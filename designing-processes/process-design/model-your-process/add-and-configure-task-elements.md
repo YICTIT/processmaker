@@ -1,19 +1,19 @@
 ---
-description: Add and configure Task elements in your Process model.
+description: Add and configure Form Task elements in your Process model.
 ---
 
-# Add and Configure Task Elements
+# Add and Configure Form Task Elements
 
-## Add a Task Element
+## Add a Form Task Element
 
 {% hint style="info" %}
-### Don't Know What a Task Element Is?
+### Don't Know What a Form Task Element Is?
 
-See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Task](process-modeling-element-descriptions.md#user-task) element.
+See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Form Task](process-modeling-element-descriptions.md#form-task) element.
 
 ### Permissions Required
 
-Your ProcessMaker user account or group membership must have the following permissions to add a Task element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to add a Form Task element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
@@ -21,20 +21,20 @@ Your ProcessMaker user account or group membership must have the following permi
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
 {% endhint %}
 
-Follow these steps to add a Task element to the Process model:
+Follow these steps to add a Form Task element to the Process model:
 
 1. [View your Processes](../../viewing-processes/view-the-list-of-processes/view-your-processes.md#view-all-active-processes). The **Processes** page displays.
 2. [Create a new Process](../../viewing-processes/view-the-list-of-processes/create-a-process.md) or click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
 3. Locate the **Task** element in the **Elements and Connectors** palette that is to the left of the Process Modeler canvas. If the [**Hide Menus** button](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view)![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is enabled, the **Elements and Connectors** palette displays the **Task** element's icon![](../../../.gitbook/assets/task-icon-process-modeler-processes.png). ![](../../../.gitbook/assets/task-control-process-modeler-processes.png) 
-4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Task element cannot be placed outside of the Pool element.
+4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Form Task element cannot be placed outside of the Pool element.
 5. Do one of the following:
    * From the **Elements** drop-down menu, select the **Task** option. ![](../../../.gitbook/assets/task-selection-process-modeler-processes.png) 
-   * Click anywhere in the Process model. The Task element selects by default.
+   * Click anywhere in the Process model. The Form Task element selects by default.
 
-![Task element](../../../.gitbook/assets/task-element-process-modeler-processes.png)
+![Form Task element](../../../.gitbook/assets/task-element-process-modeler-processes.png)
 
 {% hint style="info" %}
-After adding the Task element, consider adding either of the following Boundary-type Process model elements to design business solutions when your best-case scenarios don't happen:
+After adding the Form Task element, consider adding either of the following Boundary-type Process model elements to design business solutions when your best-case scenarios don't happen:
 
 * [Boundary Timer Event](add-and-configure-boundary-timer-event-elements.md#add-a-boundary-timer-event-element) element \([Don't know what that is?](process-modeling-element-descriptions.md#boundary-timer-event)\)
 * [Boundary Error Event](add-and-configure-boundary-error-event-elements.md#add-a-boundary-error-event-element) element \([Don't know what that is?](process-modeling-element-descriptions.md#boundary-error-event)\)
@@ -43,16 +43,16 @@ After adding the Task element, consider adding either of the following Boundary-
 After the element is placed into the Process model, you may move it by dragging it to the new location.
 
 {% hint style="warning" %}
-Moving a Task element has the following limitations in regards to the following Process model elements:
+Moving a Form Task element has the following limitations in regards to the following Process model elements:
 
-* **Pool element:** If the Task element is inside of a [Pool](process-modeling-element-descriptions.md#pool) element, it cannot be moved outside of the Pool element. If you attempt to do so, Process Modeler places the Task element inside the Pool element closest to where you attempt to move it.
-* **Lane element:** If the Task element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Task element cannot be moved outside of the Pool element.
+* **Pool element:** If the Form Task element is inside of a [Pool](process-modeling-element-descriptions.md#pool) element, it cannot be moved outside of the Pool element. If you attempt to do so, Process Modeler places the Form Task element inside the Pool element closest to where you attempt to move it.
+* **Lane element:** If the Form Task element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Form Task element cannot be moved outside of the Pool element.
 {% endhint %}
 
 ## Settings
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Task element unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure a Form Task element unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
@@ -60,7 +60,7 @@ Your ProcessMaker user account or group membership must have the following permi
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
 {% endhint %}
 
-The Task element has the following panels that contain settings:
+The Form Task element has the following panels that contain settings:
 
 * **Configuration** panel
   * [Edit the element name](add-and-configure-end-event-elements.md#edit-the-element-name)
@@ -89,10 +89,10 @@ The Task element has the following panels that contain settings:
 
 ### Configuration Panel Settings
 
-The Task element has multiple settings in the **Configuration** panel:
+The Form Task element has multiple settings in the **Configuration** panel:
 
 * [Edit the element name](add-and-configure-task-elements.md#edit-the-element-name)
-* [Select the ProcessMaker Screen to do that Task](add-and-configure-task-elements.md#select-the-processmaker-screen-to-do-that-task)
+* [Select the ProcessMaker Screen for the Task](add-and-configure-task-elements.md#select-the-processmaker-screen-for-the-task)
 * [Specify when the Task is due](add-and-configure-task-elements.md#specify-when-the-task-is-due)
 * [Display the next assigned Task to the Task assignee](add-and-configure-task-elements.md#display-the-next-assigned-task-to-the-task-assignee)
 
@@ -100,74 +100,74 @@ The Task element has multiple settings in the **Configuration** panel:
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
 
-Follow these steps to edit the name for a Task element:
+Follow these steps to edit the name for a Form Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to edit its name. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to edit its name. Panels to configure this element display.
 3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays.  
 
    ![](../../../.gitbook/assets/task-configuration-name-process-modeler-processes%20%281%29.png)
 
 4. In the **Name** setting, edit the selected element's name and then press **Enter**.
 
-#### Select the ProcessMaker Screen To Do That Task
+#### Select the ProcessMaker Screen for the Task
 
-Since Task elements are designed to collect or display [Request](../../../using-processmaker/requests/what-is-a-request.md) information, specify which [ProcessMaker Screen](../../design-forms/what-is-a-form.md) a selected Task element uses. A ProcessMaker Screen must already exist before it can be selected for use in a Task element.
+Since Form Task elements are designed to collect or display [Request](../../../using-processmaker/requests/what-is-a-request.md) information, specify which [ProcessMaker Screen](../../design-forms/what-is-a-form.md) a selected Form Task element uses. A ProcessMaker Screen must already exist before it can be selected for use in a Form Task element.
 
 {% hint style="warning" %}
-Ensure to select a ProcessMaker Screen for each Task element in your Process model. If a ProcessMaker Screen is not specified and Requests are started for that Process, users who are assigned Tasks with no ProcessMaker Screens have no way of interacting with the Task.
+Ensure to select a ProcessMaker Screen for each Form Task element in your Process model. If a ProcessMaker Screen is not specified and Requests are started for that Process, users who are assigned Tasks with no ProcessMaker Screens have no way of interacting with the Task.
 {% endhint %}
 
-Follow these steps to select a ProcessMaker Screen for a Task element:
+Follow these steps to select a ProcessMaker Screen for a Form Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to specify its ProcessMaker Screen. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to specify its ProcessMaker Screen. Panels to configure this element display.
 3. Expand the **Configuration** panel if it is not presently expanded, and then locate the **Screen For Input** setting. This is a required setting.  
 
    ![](../../../.gitbook/assets/screen-input-task-process-modeler-processes.png)
 
-4. From the **Screen For Input** drop-down menu, select which ProcessMaker Screen that Task element references. Only Email-type ProcessMaker Screens display from this drop-down menu. After a ProcessMaker Screen is selected, the **Open Screen** link displays.
+4. From the **Screen For Input** drop-down menu, select which ProcessMaker Screen that Form Task element references. After a ProcessMaker Screen is selected, the **Open Screen** link displays.
 5. Optionally, click the **Open Screen** link to view and/or edit your selected ProcessMaker Screen. Note that your ProcessMaker user account must have appropriate [Screen category](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#screens) permissions to view and/or edit the selected Screen.
 
 {% hint style="warning" %}
-If no ProcessMaker Screens exist, the **Screen For Input** drop-down menu contains no options. Ensure to select a ProcessMaker Screen for every Task element in the Process model before deploying your Process.
+If no ProcessMaker Screens exist, the **Screen For Input** drop-down menu contains no options. Ensure to select a ProcessMaker Screen for every Form Task element in the Process model before deploying your Process.
 {% endhint %}
 
 #### Specify When the Task is Due
 
-Specify when a [Task](../../../using-processmaker/task-management/what-is-a-task.md) in a Task element is due from when that Task is assigned to a Request participant.
+Specify when a [Task](../../../using-processmaker/task-management/what-is-a-task.md) in a Form Task element is due from when that Task is assigned to a Request participant.
 
-The task due date displays for each [pending assigned Task](../../../using-processmaker/requests/view-completed-requests.md#view-completed-requests-in-which-you-are-a-participant). After the specified time has expired for a task, an overdue indicator displays for that task to the assigned task recipient.
+The Task due date displays for each [pending assigned Task](../../../using-processmaker/requests/view-completed-requests.md#view-completed-requests-in-which-you-are-a-participant). After the specified time expires for a Task, an overdue indicator displays for that Task to the Task assignee.
 
 {% hint style="info" %}
 ### Total Number of Hours Includes All Hours
 
-Specify due time for a Task element in total number of hours. This includes hours not normally associated with business hours, including overnight hours, weekends, and holidays.
+Specify due time for a Form Task element in total number of hours. This includes hours not normally associated with business hours, including overnight hours, weekends, and holidays.
 
 ### Self Service Tasks Can Become Overdue Without a Task Assignee
 
-A [Self Service](add-and-configure-task-elements.md#select-to-whom-to-assign-the-task) Task can become overdue even though no members of a ProcessMaker group have self-assigned that Task: the number of hours that Task is due begins as soon as that Task element triggers. Therefore, if configuring a Self Service Task, consider that the Task does not immediately have a Task assignee to do that Task.
+A [Self Service](add-and-configure-task-elements.md#select-to-whom-to-assign-the-task) Task can become overdue even though no members of a ProcessMaker group have self-assigned that Task: the number of hours that Task is due begins as soon as that Task element triggers. Therefore, if configuring a Self Service Task, consider that the Form Task does not immediately have a Task assignee to do that Task.
 {% endhint %}
 
-When a Task element is placed into a Process model, the default period of time for a task to be due is 72 hours \(three days\).
+When a Form Task element is placed into a Process model, the default period of time for a Task to be due is 72 hours \(three days\).
 
-Follow these steps to specify when a Task element is due:
+Follow these steps to specify when a Form Task element is due:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to specify how many hours the task is due. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to specify how many hours the Task is due. Panels to configure this element display.
 3. Expand the **Configuration** panel if it is not presently expanded, and then locate the **Due In** setting.  
 
    ![](../../../.gitbook/assets/due-task-process-modeler-processes.png)
 
-4. In the **Due In** setting, specify the total number of hours the task is due in one of the following ways:
+4. In the **Due In** setting, specify the total number of hours the Task is due in one of the following ways:
    * Enter the number in the **Due In** setting and then press **Enter**.
    * Hover your cursor over the **Due In** setting, and then use the spin arrows to increase or decrease the total number of hours by one.
 
 #### Display the Next Assigned Task to the Task Assignee
 
-When the **Display the Next Assigned Task to the Task Assignee** setting is used in a Task element, the Task assignee receives a waiting message after that Task assignee submits that Task. This is different than the default functionality, whereby the [**To Do Tasks**](../../../using-processmaker/task-management/view-tasks-you-need-to-do.md#view-your-assigned-tasks) page displays after each Task is submitted.
+When the **Display the Next Assigned Task to the Task Assignee** setting is used in a Form Task element, the Task assignee receives a waiting message after that Task assignee submits that Task. This is different than the default functionality, whereby the [**To Do Tasks**](../../../using-processmaker/task-management/view-tasks-you-need-to-do.md#view-your-assigned-tasks) page displays after each Task is submitted.
 
-Use this setting when you understand that this Task assignee will be assigned multiple Tasks during the same Request, regardless of whomever that Task assignee is. This becomes convenient for that Task assignee to display a next Task immediately after submitting the initial Task during that Request, especially if Script Task elements are between Task elements so that Tasks are assigned quickly.
+Use this setting when you understand that this Task assignee will be assigned multiple Tasks during the same Request, regardless of whomever that Task assignee is. This becomes convenient for that Task assignee to display the next Task immediately after submitting the initial Task during that Request, especially if Script Task elements are between Form Task and/or Manual Task elements so that Tasks are assigned quickly.
 
 The **Display the Next Assigned Task to the Task Assignee** setting applies only during the same Request.
 
@@ -175,10 +175,10 @@ The following message displays to the Task assignee after that Request participa
 
 ![Message that displays when the Display the Next Assigned Task to the Task Assignee setting is used](../../../.gitbook/assets/display-next-assigned-task-icon-process-modeler-processes.png)
 
-Follow these steps to configure a Task element to display the next assigned Task to the Task assignee:
+Follow these steps to configure a Form Task element to display the next assigned Task to the Task assignee:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to configure it to display the next assigned Task to the Task assignee. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to configure it to display the next assigned Task to the Task assignee. Panels to configure this element display.
 3. Expand the **Configuration** panel if it is not presently expanded, and then locate the **Display Next Assigned Task to Task Assignee** setting. ![](../../../.gitbook/assets/display-next-task-to-task-assignee-option-process-modeler-processes.png) 
 4. Select the **Display Next Assigned Task to Task Assignee** setting.
 
@@ -195,12 +195,12 @@ Instead of [assign the Task's assignee using one or more rules](add-and-configur
 * **Group:** Assign that Task to any member of a specified ProcessMaker [group](../../../processmaker-administration/assign-groups-to-users/what-is-a-group.md). When a Task is assigned to a ProcessMaker group, round robin assignment rules determine which group member is the assignee without manually assigning the Task.
 * **Previous Task assignee:** Assign that Task to the previous Task assignee in that Request's workflow.
 * **By User ID:** Assign that Task to a ProcessMaker user based on a **Variable Name** value as entered into a [ProcessMaker Screen](../../design-forms/what-is-a-form.md) during a previous Task in that Request. For example, if a [Line Input control](../../design-forms/screens-builder/control-descriptions/line-input-control-settings.md) in a ProcessMaker Screen has the **Variable Name** value of `Name`, to contain a user's name, then use that value to thereby assign the Task to that ProcessMaker user.
-* **Self Service:** Assign that Task to allow any member in a specified ProcessMaker group to self-assign any Task from a queue. When this Task element triggers, this Task displays in the [**Self Service** Task page](../../../using-processmaker/task-management/self-assign-tasks-to-yourself-from-a-queue.md#view-self-service-tasks-that-you-can-assign-to-yourself) for all members of that ProcessMaker group.
+* **Self Service:** Assign that Task to allow any member in a specified ProcessMaker group to self-assign any Task from a queue. When this Form Task element triggers, this Task displays in the [**Self Service** Task page](../../../using-processmaker/task-management/self-assign-tasks-to-yourself-from-a-queue.md#view-self-service-tasks-that-you-can-assign-to-yourself) for all members of that ProcessMaker group.
 
-Follow these steps to select to whom to assign the Task that is referenced in a Task element:
+Follow these steps to select to whom to assign the Task that is referenced in a Form Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to select the Task assignee. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to select the Task assignee. Panels to configure this element display.
 3. Expand the **Assignment Rules** panel if it is not presently expanded. The **Task Assignment** setting displays.  
 
    ![](../../../.gitbook/assets/assignment-assignee-task-process-modeler-processes.png)
@@ -211,7 +211,7 @@ Follow these steps to select to whom to assign the Task that is referenced in a 
 
      ![](../../../.gitbook/assets/assignment-assignee-user-task-process-modeler-processes.png)
 
-     From the **Assigned User** drop-down menu, select the person's full name as the Task element's assignee.
+     From the **Assigned User** drop-down menu, select the person's full name as the Form Task element's assignee.
 
    * **Group:** Select **Group** to assign the Task to a specified ProcessMaker group via round robin rules, whereby each member of the group has an equal chance to be assigned the Task without manually assigning the Task to a group member using a rotation. When this option is selected, the **Assigned Group** drop-down menu displays below the **Task Assignment** drop-down menu.  
 
@@ -226,27 +226,27 @@ Follow these steps to select to whom to assign the Task that is referenced in a 
 
    * **Self Service:** Select **Self Service** to allow any member in a specified ProcessMaker group to voluntarily self-assign any Task from a queue. When this option is selected, the **Assigned Group** drop-down menu displays below the **Task Assignment** drop-down menu.
 
-     From the **Assigned Group** drop-down menu, select the group from which any of its members can self-assign Tasks from a queue. When this Task element triggers, this Task displays in the [**Self Service** Task page](../../../using-processmaker/task-management/self-assign-tasks-to-yourself-from-a-queue.md#view-self-service-tasks-that-you-can-assign-to-yourself) for all members of that ProcessMaker group.
+     From the **Assigned Group** drop-down menu, select the group from which any of its members can self-assign Tasks from a queue. When this Form Task element triggers, this Task displays in the [**Self Service** Task page](../../../using-processmaker/task-management/self-assign-tasks-to-yourself-from-a-queue.md#view-self-service-tasks-that-you-can-assign-to-yourself) for all members of that ProcessMaker group.
 5. Enable the **Lock task assignment to user** option to assign this Task to the same Task assignee if workflow in the Request returns to this Task. If the initial Task assignee was a member of a ProcessMaker group, the Task is reassigned to the same ProcessMaker group member. This option is useful if the initial Task assignee in the Request might need to provide clarification regarding information that Request participant initially submitted in that Task.
 6. Enable the **Allow Reassignment** option to allow the Task assignee to reassign the Task if necessary. If the **Allow Reassignment** option is enabled, the **Reassign** button displays in the Task summary to allow that Task assignee to reassign that Task. See [View a Task Summary](../../../using-processmaker/task-management/view-a-task-summary.md#summary).
 
 #### Assign the Task Using Rules
 
-Instead of [selecting to whom to assign a Task](add-and-configure-task-elements.md#select-to-whom-to-assign-the-task) that is referenced in a Task element, assign the Task's assignee using one or more rules:
+Instead of [selecting to whom to assign a Task](add-and-configure-task-elements.md#select-to-whom-to-assign-the-task) that is referenced in a Form Task element, assign the Task's assignee using one or more rules:
 
 * **Requester:** Assign that Task to the person who started the Request, also known as the requester.
 * **User:** Assign that Task to a specified ProcessMaker user.
 * **Group:** Assign that Task to any member of a specified ProcessMaker group. When a Task is assigned to a ProcessMaker group, round robin assignment rules determine which group member is the assignee without manually assigning the Task.
 * **Previous Task assignee:** Assign that Task to the previous Task assignee in that Request's workflow.
-* By User ID: Assign that Task to a ProcessMaker user based on a **Variable Name** value as entered into a [ProcessMaker Screen](../../design-forms/what-is-a-form.md) during a previous Task in that Request. For example, if a [Line Input control](../../design-forms/screens-builder/control-descriptions/line-input-control-settings.md) in a ProcessMaker Screen has the **Variable Name** value of `Name`, to contain a user's name, then use that value to thereby assign the Task to that ProcessMaker user.
+* **By User ID:** Assign that Task to a ProcessMaker user based on a **Variable Name** value as entered into a [ProcessMaker Screen](../../design-forms/what-is-a-form.md) during a previous Task in that Request. For example, if a [Line Input control](../../design-forms/screens-builder/control-descriptions/line-input-control-settings.md) in a ProcessMaker Screen has the **Variable Name** value of `Name`, to contain a user's name, then use that value to thereby assign the Task to that ProcessMaker user.
 * **Self Service:** Assign that Task to allow any member in a specified ProcessMaker group to voluntarily self-assign any Task from a queue.
 
 The rule that determines the Task assignee uses an expression syntax described in [Expression Syntax Components](add-and-configure-task-elements.md#expression-syntax-components). Each rule can only have one expression, but by using logical operators multiple conditions can be specified in that expression. You may use multiple rules to better confine the condition\(s\) to whom to assign the Task. You may use [Magic Variables](../../reference-global-variables-in-your-processmaker-assets.md) in your expression syntax.
 
-Follow these steps to select to whom to assign the Task that is referenced in a Task element using a rule:
+Follow these steps to select to whom to assign the Task that is referenced in a Form Task element using a rule:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to assign the Task via a rule. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to assign the Task via a rule. Panels to configure this element display.
 3. Expand the **Assignment Rules** panel if it is not presently expanded, and then locate the **+Rule** button.
 4. Click the **+Rule** button.  
 
@@ -256,16 +256,16 @@ Follow these steps to select to whom to assign the Task that is referenced in a 
 
    ![](../../../.gitbook/assets/rule-expression-assignment-assignee-task-process-modeler-processes.png)
 
-5. In the **Expression** setting, enter or edit the expression that determines that Task element's Task assignee using the syntax components described in [Expression Syntax Components](add-and-configure-task-elements.md#expression-syntax-components), and then press **Enter**.
+5. In the **Expression** setting, enter or edit the expression that determines that Form Task element's Task assignee using the syntax components described in [Expression Syntax Components](add-and-configure-task-elements.md#expression-syntax-components), and then press **Enter**.
 6. From the **Select the Task Assignee** drop-down menu, select that Task's assignee from the following options:
-   * **Requester:** Select the **Requester** option to assign that Task element's Task to the requester if the expression in the **Expression** setting evaluates as True.
-   * **User:** Select the **User** option to assign that Task element's Task to a ProcessMaker user if the expression in the **Expression** setting evaluates as True. When this option is selected, the **Assigned User** drop-down menu displays below the **Select the Task assignee** drop-down menu.
+   * **Requester:** Select the **Requester** option to assign that Form Task element's Task to the requester if the expression in the **Expression** setting evaluates as True.
+   * **User:** Select the **User** option to assign that Form Task element's Task to a ProcessMaker user if the expression in the **Expression** setting evaluates as True. When this option is selected, the **Assigned User** drop-down menu displays below the **Select the Task assignee** drop-down menu.
 
      ![](../../../.gitbook/assets/rule-expression-user-assignment-assignee-task-process-modeler-processes.png)
 
      From the **Assigned User** drop-down menu, select which ProcessMaker user to assign that Task.
 
-   * **Group:** Select the **Group** option to assign that Task element's Task to a ProcessMaker group if the expression in the **Expression** setting evaluates as True. When this option is selected, the **Assigned Group** drop-down menu displays below the **Select the Task assignee** drop-down menu.
+   * **Group:** Select the **Group** option to assign that Form Task element's Task to a ProcessMaker group if the expression in the **Expression** setting evaluates as True. When this option is selected, the **Assigned Group** drop-down menu displays below the **Select the Task assignee** drop-down menu.
 
      ![](../../../.gitbook/assets/rule-expression-group-assignment-assignee-task-process-modeler-processes.png)
 
@@ -283,7 +283,7 @@ Follow these steps to select to whom to assign the Task that is referenced in a 
 
 #### Expression Syntax Components
 
-Use the following expression syntax components to compose the expression that describes to whom is assigned a Task referenced in a Task element.
+Use the following expression syntax components to compose the expression that describes to whom is assigned a Task referenced in a Form Task element.
 
 Spaces are allowed before and after expression components, such as arithmetic and comparison operators, to more easily read the expression.
 
@@ -359,30 +359,30 @@ Set [email notifications for Tasks](add-and-configure-task-elements.md#set-email
 
 Set when [notifications](../../../using-processmaker/notifications.md) regarding Tasks are sent to the following:
 
-* **Requester:** Send notifications to the Request initiator \(referred to as the requester\) when the Task associated with this Task element is assigned and/or completed.
-* **Task assignee:** Send notifications to Task assignees associated with this Task element when that Task is assigned and/or completed.
-* **Request participants:** Send notifications to all Request participants of this Process when the Task associated with this Task element is assigned or completed.
+* **Requester:** Send notifications to the Request initiator \(referred to as the requester\) when the Task associated with this Form Task element is assigned and/or completed.
+* **Task assignee:** Send notifications to Task assignees associated with this Form Task element when that Task is assigned and/or completed.
+* **Request participants:** Send notifications to all Request participants of this Process when the Task associated with this Form ask element is assigned or completed.
 
-Follow these steps to set Task notifications in a Task element:
+Follow these steps to set Task notifications in a Form Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to set Task notifications. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to set Task notifications. Panels to configure this element display.
 3. Expand the **Notifications** panel if it is not presently expanded. Settings display to set Task notifications.  
 
    ![](../../../.gitbook/assets/notification-task-process-modeler-processes.png)
 
 4. From the **Requester** settings, set Task notifications for the Requester following these guidelines:
-   * Enable the **Assigned** setting to notify the Requester when the Task associated with this Task element is assigned. Otherwise, disable this setting to not send this notification.
-   * Enable the **Completed** setting to notify the Requester when the Task associated with this Task element is completed. Otherwise, disable this setting to not send this notification.
-   * Enable the **Due** setting to notify the Requester when the Task associated with this Task element is due to be completed. Otherwise, disable this setting to not send this notification.
+   * Enable the **Assigned** setting to notify the Requester when the Task associated with this Form Task element is assigned. Otherwise, disable this setting to not send this notification.
+   * Enable the **Completed** setting to notify the Requester when the Task associated with this Form Task element is completed. Otherwise, disable this setting to not send this notification.
+   * Enable the **Due** setting to notify the Requester when the Task associated with this Form Task element is due to be completed. Otherwise, disable this setting to not send this notification.
 5. From the **Assignee** settings, set Task notifications for assignees of this Task element following these guidelines:
-   * Enable the **Assigned** setting to notify Task assignees associated with this Task element when they are assigned this Task. Otherwise, disable this setting to not send this notification.
-   * Enable the **Completed** setting to notify Task assignees associated with this Task element when they complete this Task. Otherwise, disable this setting to not send this notification.
-   * Enable the **Due** setting to notify Task assignees associated with this Task element is due to be completed. Otherwise, disable this setting to not send this notification.
+   * Enable the **Assigned** setting to notify Task assignees associated with this Form Task element when they are assigned this Task. Otherwise, disable this setting to not send this notification.
+   * Enable the **Completed** setting to notify Task assignees associated with this Form Task element when they complete this Task. Otherwise, disable this setting to not send this notification.
+   * Enable the **Due** setting to notify Task assignees associated with this Form Task element is due to be completed. Otherwise, disable this setting to not send this notification.
 6. From the **Participants** settings, set Task notifications to all Request participants of this Process following these guidelines:
-   * Enable the **Assigned** setting to notify all Request participants of this Process when the Task associated with this Task element is assigned. Otherwise, disable this setting to not send this notification.
-   * Enable the **Completed** setting to notify all Request participants of this Process when the Task associated with this Task element is completed. Otherwise, disable this setting to not send this notification.
-   * Enable the **Due** setting to notify all Request participants of this Process when the Task associated with this Task element is due to be completed. Otherwise, disable this setting to not send this notification.
+   * Enable the **Assigned** setting to notify all Request participants of this Process when the Task associated with this Form Task element is assigned. Otherwise, disable this setting to not send this notification.
+   * Enable the **Completed** setting to notify all Request participants of this Process when the Task associated with this Form Task element is completed. Otherwise, disable this setting to not send this notification.
+   * Enable the **Due** setting to notify all Request participants of this Process when the Task associated with this Form Task element is due to be completed. Otherwise, disable this setting to not send this notification.
 
 ### Email Notifications Panel Settings
 
@@ -425,20 +425,20 @@ After setting an email notification, the following settings are available:
 
 #### Set the Email Notification's Subject and Body Content
 
-Follow these steps to set the email Task notification's subject and body content in a Task element:
+Follow these steps to set the email Task notification's subject and body content in a Form Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to set email Task notifications. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to set email Task notifications. Panels to configure this element display.
 3. Expand the **Email Notifications** panel if it is not presently expanded. The **Notifications** setting displays. ![](../../../.gitbook/assets/email-notifications-process-modeler-processes.png) 
 4. Click the icon![](../../../.gitbook/assets/add-icon.png)to add an email notification. The **Add Notification** settings display.
-5. From the **Subject** setting, revise the default text if necessary that displays as the email subject. By default, ProcessMaker displays the current Task element's [**Name** setting](add-and-configure-task-elements.md#edit-the-element-name) as part of the **Subject** setting. ![](../../../.gitbook/assets/subject-email-notification-task-process-modeler-processes.png) 
+5. From the **Subject** setting, revise the default text if necessary that displays as the email subject. By default, ProcessMaker displays the current Form Task element's [**Name** setting](add-and-configure-task-elements.md#edit-the-element-name) as part of the **Subject** setting. ![](../../../.gitbook/assets/subject-email-notification-task-process-modeler-processes.png) 
 6. From the **Body** setting, select one of the following options:
    * **Plain Text:**
 
      Select the **Plain Text** option to enter plain text to display as the email body. This is the default option. Follow these steps:
 
      1. From the **Body** setting, ensure that the **Plain Text** option is selected. ![](../../../.gitbook/assets/plain-text-email-notification-task-process-modeler-processes.png) 
-     2. In the setting below the **Plain Text** option, revise the default text if necessary that displays as the email body. By default, ProcessMaker displays the current Task element's [**Name** setting](add-and-configure-task-elements.md#edit-the-element-name) as part of the **Plain Text** option.
+     2. In the setting below the **Plain Text** option, revise the default text if necessary that displays as the email body. By default, ProcessMaker displays the current Form Task element's [**Name** setting](add-and-configure-task-elements.md#edit-the-element-name) as part of the **Plain Text** option.
 
    * **Display Screen:**
 
@@ -479,8 +479,8 @@ Use the **Send At** or **Expression** settings to set when this email notificati
 2. [Set recipients for this email notification](add-and-configure-task-elements.md#set-recipients-for-this-email-notification).
 3. Do one of the following based on when you need the email notification sent:
    * **After this Task triggers or completes:** From the **Send At** setting, select one of the following options:
-     * **Task Start:** Select the **Task Start** option to send this email notification when this Task triggers. This is the default option.
-     * **Task Completion:** Select the **Task Completion** option to send this email notification when this Task completes \(when the Task assignee submits the ProcessMaker Screen associated with this Task\). ![](../../../.gitbook/assets/send-at-email-notification-task-process-modeler-processes.png) 
+     * **Task Start:** Select the **Task Start** option to send this email notification when this Form Task element triggers. This is the default option.
+     * **Task Completion:** Select the **Task Completion** option to send this email notification when this Form Task element completes \(when the Task assignee submits the ProcessMaker Screen associated with this Task\). ![](../../../.gitbook/assets/send-at-email-notification-task-process-modeler-processes.png) 
    * **Conditionally when a Request data object or Magic Variable meets a specific setting or condition:** In the **Expression** setting, enter the expression to conditionally send the email notification when a Request data object or [Magic Variable](../../reference-global-variables-in-your-processmaker-assets.md) meets a specific setting or condition, and then press **Enter**. Specify this condition using an expression syntax described in [Expression Syntax Components](add-and-configure-task-elements.md#expression-syntax-components-1). Use logical operators to specify multiple conditions in that expression if necessary. If the **Expression** setting does not contain a value, then the **Send At** setting determines when to send email notifications for this Task. ![](../../../.gitbook/assets/expression-email-notification-task-process-modeler-processes.png) 
 4. Click **Close**. This email notification is saved and displays below the **Notifications** setting using the **Subject** setting as the email notification label. Optionally do any of the following with this email notification:
    * [Edit this email notification](add-and-configure-task-elements.md#edit-an-email-notification)
@@ -560,7 +560,7 @@ Combine expressions using logical operators. Example: `(not approved) or (cost >
 Follow these steps to edit an email notification:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to edit an email notification. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to edit an email notification. Panels to configure this element display.
 3. Expand the **Email Notifications** panel if it is not presently expanded. Email notifications display below the **Notifications** setting.
 4. Click the **Edit** icon![](../../../.gitbook/assets/edit-email-notification-icon-task-process-modeler-processes.png)beside the email notification to edit.
 5. Edit the email notification settings as described in the following sections:
@@ -573,7 +573,7 @@ Follow these steps to edit an email notification:
 Follow these steps to copy an email notification:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to copy an email notification. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to copy an email notification. Panels to configure this element display.
 3. Expand the **Email Notifications** panel if it is not presently expanded. Email notifications display below the **Notifications** setting.
 4. Click the **Duplicate** icon![](../../../.gitbook/assets/copy-email-notification-icon-task-process-modeler-processes.png)beside the email notification to copy. The email notification is copied.
 5. Edit the copied email notification settings as described in the following sections:
@@ -590,7 +590,7 @@ Consider carefully when deleting an email notification. Deleting a configured em
 Follow these steps to delete an email notification:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to delete an email notification. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to delete an email notification. Panels to configure this element display.
 3. Expand the **Email Notifications** panel if it is not presently expanded. Email notifications display below the **Notifications** setting.
 4. Click the **Delete** icon![](../../../.gitbook/assets/delete-email-notification-icon-task-process-modeler-processes.png)beside the email notification to delete. The following message displays to confirm deletion of this email notification: **Are you sure you want to delete this notification?** ![](../../../.gitbook/assets/delete-email-notification-confirmation-message-task-process-modeler-processes.png) 
 5. Click **Delete**.
@@ -607,15 +607,15 @@ Your ProcessMaker instance must have the [Web Entry package](../../../package-de
 The Web Entry package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Web Entry package can be installed in your ProcessMaker instance.
 {% endhint %}
 
-When a Task element is placed into a Process model, Web Entry settings for that element are not configured. Therefore, even if the [Web Entry](../../../package-development-distribution/package-a-connector/web-entry.md) package is installed in your ProcessMaker instance, it must be configured for use.
+When a Form Task element is placed into a Process model, Web Entry settings for that element are not configured. Therefore, even if the [Web Entry](../../../package-development-distribution/package-a-connector/web-entry.md) package is installed in your ProcessMaker instance, it must be configured for use.
 
 Follow these steps to select to whom to assign the Task via a Web Entry:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to select to whom to assign the Task via a Web Entry. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to select to whom to assign the Task via a Web Entry. Panels to configure this element display.
 3. Expand the **Web Entry** panel if it is not presently expanded. The **Mode** setting displays. ![](../../../.gitbook/assets/web-entry-mode-disabled-process-modeler-processes.png) 
 4. From the **Mode** drop-down menu, select one of the following options:
-   * **Disabled:** Select the **Disabled** option to disable the Web Entry package from assigning this Task element via a Web Entry. This is the default setting.
+   * **Disabled:** Select the **Disabled** option to disable the Web Entry package from assigning this Form Task element via a Web Entry. This is the default setting.
    * **Anonymous:** Select the **Anonymous** option to assign the Task to any person who has access to the Web Entry's URL. This person may not be a ProcessMaker user.  
 
      ![](../../../.gitbook/assets/web-entry-anonymous-task-process-modeler-processes.png)
@@ -676,20 +676,20 @@ The Vocabularies package is not available in the ProcessMaker open-source editio
 
 Assign [ProcessMaker Vocabularies](../../vocabularies-management/what-is-a-vocabulary.md) that validate Request data complies with a specific JSON schema. This is often mandatory for many types of business sectors including banking and healthcare. Ensure the quality and compliance of Request data. For example, during a Loan Application process, ensure that personal information has been included in the Request to that moment in that in-progress Request. The Vocabularies package must be installed in your ProcessMaker instance to make this configuration.
 
-Use a ProcessMaker Vocabulary on a Task element to validate Request data complies with the Vocabulary's JSON schema after the Task assignee submits the Task [ProcessMaker User Documentation](https://app.gitbook.com/@processmaker/s/processmaker/~/drafts/-LvL_OO36QyaNSbIeD0x/). See [What is a Vocabulary?](../../vocabularies-management/what-is-a-vocabulary.md) for more information.
+Use a ProcessMaker Vocabulary on a Form Task element to validate that Request data complies with the Vocabulary's JSON schema after the Task assignee submits the Task [ProcessMaker User Documentation](https://app.gitbook.com/@processmaker/s/processmaker/~/drafts/-LvL_OO36QyaNSbIeD0x/). See [What is a Vocabulary?](../../vocabularies-management/what-is-a-vocabulary.md) for more information.
 
 Each moment ProcessMaker evaluates workflow routing for an in-progress Request, ProcessMaker also evaluates the Request data's conformity to the ProcessMaker Vocabularies applied to the Process and/or a specific BPMN 2.0 element in the Process model. The Request's JSON data model must conform to the ProcessMaker Vocabulary's JSON schema.
 
 During an in-progress Request, if ProcessMaker evaluates that the Request data no longer complies with all ProcessMaker Vocabularies to that moment, the Request status changes from In Progress to Error. The error displays in the [Request summary](../../../using-processmaker/requests/request-details/summary-for-requests-with-errors.md). ProcessMaker Vocabularies are cumulative in an in-progress Request: as the Request progresses, if Request data does not conform with any Vocabulary's JSON schema to that moment in the Request, the Request errors.
 
-If no ProcessMaker Vocabularies are assigned, ProcessMaker does not validate Request data complies with a specific JSON schema prior to continuing workflow for that Request.
+If no ProcessMaker Vocabularies are assigned, ProcessMaker does not validate that Request data complies with a specific JSON schema prior to continuing workflow for that Request.
 
-One or more ProcessMaker Vocabularies must be created to your ProcessMaker instance before assigning a Vocabulary. See [Create a New Vocabulary](../../vocabularies-management/manage-your-vocabularies/create-a-new-vocabulary.md#create-a-new-processmaker-vocabulary). Multiple ProcessMaker Vocabularies can be assigned to a Task element.
+One or more ProcessMaker Vocabularies must be created to your ProcessMaker instance before assigning a Vocabulary. See [Create a New Vocabulary](../../vocabularies-management/manage-your-vocabularies/create-a-new-vocabulary.md#create-a-new-processmaker-vocabulary). Multiple ProcessMaker Vocabularies can be assigned to a Form Task element.
 
-Follow these steps to assign ProcessMaker Vocabularies that validate Request data from a Task element:
+Follow these steps to assign ProcessMaker Vocabularies that validate Request data from a Form Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to assign ProcessMaker Vocabularies that validate Request data prior to when this element completes. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to assign ProcessMaker Vocabularies that validate Request data prior to when this element completes. Panels to configure this element display.
 3. Expand the **Vocabularies** panel if it is not presently expanded. The **Assigned** setting displays. ![](../../../.gitbook/assets/vocabularies-no-assigned-package-process-modeler-processes.png) 
 4. Click the![](../../../.gitbook/assets/add-icon.png)icon to add a ProcessMaker Vocabulary. The **Assign Vocabulary** option displays. ![](../../../.gitbook/assets/assign-vocabulary-option-process-modeler-processes.png) 
 5. From the **Select Vocabulary** drop-down menu, select a ProcessMaker Vocabulary from which to validate Request data complies with its JSON schema.
@@ -703,9 +703,9 @@ Follow these steps to assign ProcessMaker Vocabularies that validate Request dat
 Click the **Remove** icon![](../../../.gitbook/assets/delete-remove-icon.png)from the **Vocabularies** setting to remove a ProcessMaker Vocabulary from assignment to this element.
 {% endhint %}
 
-After one or more ProcessMaker Vocabularies are assigned to a Task element, the Vocabulary icon displays above that element.
+After one or more ProcessMaker Vocabularies are assigned to a Form Task element, the Vocabulary icon displays above that element.
 
-![Task element with an assigned ProcessMaker Vocabulary](../../../.gitbook/assets/task-vocabulary-process-modeler-processes.png)
+![Form Task element with an assigned ProcessMaker Vocabulary](../../../.gitbook/assets/task-vocabulary-process-modeler-processes.png)
 
 ### Advanced Panel Settings
 
@@ -717,15 +717,15 @@ Process Modeler automatically assigns a unique value to each Process element add
 All identifier values for all elements in the Process model must be unique.
 {% endhint %}
 
-Follow these steps to edit the identifier value for a Task element:
+Follow these steps to edit the identifier value for a Form Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Task element from the Process model in which to edit its identifier value. Panels to configure this element display.
+2. Select the Form Task element from the Process model in which to edit its identifier value. Panels to configure this element display.
 3. Expand the **Advanced** panel if it is not presently expanded. The **Node Identifier** setting displays. This is a required setting.  
 
    ![](../../../.gitbook/assets/task-configuration-identifier-name-process-modeler-processes.png)
 
-4. In the **Node Identifier** setting, edit the Task element's identifier to a unique value from all elements in the Process model and then press **Enter**.
+4. In the **Node Identifier** setting, edit the Form Task element's identifier to a unique value from all elements in the Process model and then press **Enter**.
 
 ## Related Topics
 

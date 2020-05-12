@@ -30,21 +30,21 @@ See the [Process](../../../processmaker-administration/permission-descriptions-f
 
 Use event-type elements to represent when a type of event occurs. These event types specify when a timer, message, or error occurs in the Process. ProcessMaker provides the following event-type Process model elements:
 
-* [Start Event](process-modeling-element-descriptions.md#start-event)
-* [Start Timer Event](process-modeling-element-descriptions.md#start-timer-event)
-* [Message Start Event](process-modeling-element-descriptions.md#message-start-event)
-* [Intermediate Timer Event](process-modeling-element-descriptions.md#intermediate-timer-event)
-* [Intermediate Message Catch Event](process-modeling-element-descriptions.md#intermediate-message-catch-event)
-* [Intermediate Message Throw Event](process-modeling-element-descriptions.md#intermediate-message-throw-event)
-* [End Event](process-modeling-element-descriptions.md#end-event)
-* [Message End Event](process-modeling-element-descriptions.md#message-end-event)
-* [Error End Event](process-modeling-element-descriptions.md#error-end-event)
+* [Start Event](process-modeling-element-descriptions.md#start-event) element
+* [Start Timer Event](process-modeling-element-descriptions.md#start-timer-event) element
+* [Message Start Event](process-modeling-element-descriptions.md#message-start-event) element
+* [Intermediate Timer Event](process-modeling-element-descriptions.md#intermediate-timer-event) element
+* [Intermediate Message Catch Event](process-modeling-element-descriptions.md#intermediate-message-catch-event) element
+* [Intermediate Message Throw Event](process-modeling-element-descriptions.md#intermediate-message-throw-event) element
+* [End Event](process-modeling-element-descriptions.md#end-event) element
+* [Message End Event](process-modeling-element-descriptions.md#message-end-event) element
+* [Error End Event](process-modeling-element-descriptions.md#error-end-event) element
 
-The following are event-type Process model elements that represent when alternative workflow routing occurs with [Task](process-modeling-element-descriptions.md#task) element, [Script Task](process-modeling-element-descriptions.md#script-task) element, [Manual Task](process-modeling-element-descriptions.md#manual-task) element, and/or [Sub Process](process-modeling-element-descriptions.md#sub-process) element in the Process. Use these event-type Process model elements to design business solutions when expected or nominal business workflow do not occur:
+The following are event-type Process model elements that represent when alternative workflow routing occurs with [Form Task](process-modeling-element-descriptions.md#form-task) element, [Script Task](process-modeling-element-descriptions.md#script-task) element, [Manual Task](process-modeling-element-descriptions.md#manual-task) element, and/or [Sub Process](process-modeling-element-descriptions.md#sub-process) element in the Process. Use these event-type Process model elements to design business solutions when expected or nominal business workflow do not occur:
 
-* [Boundary Timer Event](process-modeling-element-descriptions.md#boundary-timer-event)
-* [Boundary Error Event](process-modeling-element-descriptions.md#boundary-error-event)
-* [Boundary Message Event](process-modeling-element-descriptions.md#boundary-message-event)
+* [Boundary Timer Event](process-modeling-element-descriptions.md#boundary-timer-event) element
+* [Boundary Error Event](process-modeling-element-descriptions.md#boundary-error-event) element
+* [Boundary Message Event](process-modeling-element-descriptions.md#boundary-message-event) element
 
 ### Start Event
 
@@ -142,7 +142,7 @@ The Intermediate Message Catch Event element \(labeled "Catch from Order"\) is i
 
 After the "Purchase Fulfillment" Request starts, the following occurs:
 
-1. Workflow delays after the "Preparation" Task element.
+1. Workflow delays after the "Preparation" Form Task element.
 2. When the Intermediate Message Throw Event element triggers from the "Purchase Order" Request \(labeled "Throw to Fulfillment"\), it sends its message to the Intermediate Message Catch Event element in the "Purchase Fulfillment" Request. Workflow continues in the "Purchase Order" Request to the End Event element.
 3. In the "Purchase Fulfillment" Request, the Intermediate Message Catch Event element triggers and receives the Intermediate Message Throw Event element's message.
 4. Workflow resumes in the "Purchase Fulfillment" Request.
@@ -234,7 +234,7 @@ See [Add and Configure Error End Event Elements](add-and-configure-error-end-eve
 
 A Boundary Timer Event element represents alternate workflow routing when a specified amount of time expires with any of the following elements and [connectors](../model-processes-using-connectors/what-is-a-connector.md):
 
-* [Task](add-and-configure-task-elements.md#add-a-task-element) element
+* [Form Task](process-modeling-element-descriptions.md#form-task) element
 * [Script Task](add-and-configure-script-task-elements.md#add-a-script-task-element) element
 * [Manual Task](add-and-configure-manual-task-elements.md#add-a-manual-task-element) element
 * [Sub Process](add-and-configure-sub-process-elements.md#add-a-sub-process-element) element
@@ -260,9 +260,9 @@ Configure whether a Boundary Timer Event element interrupts the best-case scenar
 * **Interrupting workflow:** When workflow routes through the Boundary Timer Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes. ![](../../../.gitbook/assets/boundary-timer-event-interrupting-processes.png) 
 * **Non-interrupting workflow:** Workflow routes both through the Boundary Timer Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes; however, workflow also routes through the best-case scenario when that element completes. ![](../../../.gitbook/assets/boundary-timer-event-non-interrupting-processes.png) 
 
-Below is a Boundary Timer Event element when it is associated with a Task element. A Boundary Timer Event may also be associated with a Script Task element, Manual Task element, or Sub Process element.
+Below is a Boundary Timer Event element when it is associated with a Form Task element. A Boundary Timer Event may also be associated with a Script Task element, Manual Task element, or Sub Process element.
 
-![Boundary Timer Event element associated with a Task element](../../../.gitbook/assets/boundary-timer-event-process-modeler-processes.png)
+![Boundary Timer Event element associated with a Form Task element](../../../.gitbook/assets/boundary-timer-event-process-modeler-processes.png)
 
 {% hint style="info" %}
 See [Add and Configure Boundary Timer Event Elements](add-and-configure-boundary-timer-event-elements.md).
@@ -272,7 +272,7 @@ See [Add and Configure Boundary Timer Event Elements](add-and-configure-boundary
 
 A Boundary Error Event element represents alternate workflow routing when an error occurs with any of the following elements and [connectors](../model-processes-using-connectors/what-is-a-connector.md):
 
-* [Task](add-and-configure-task-elements.md#add-a-task-element) element
+* [Form Task](process-modeling-element-descriptions.md#form-task) element
 * [Script Task](add-and-configure-script-task-elements.md#add-a-script-task-element) element
 * [Manual Task](add-and-configure-manual-task-elements.md#add-a-manual-task-element) element
 * [Sub Process](add-and-configure-sub-process-elements.md#add-a-sub-process-element) element
@@ -292,7 +292,7 @@ Use a [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) el
 An element associated with a Boundary Error Event may also associate with a [Boundary Timer Event](process-modeling-element-descriptions.md#boundary-timer-event) and/or a [Boundary Message Event](process-modeling-element-descriptions.md#boundary-message-event) in the same element.
 {% endhint %}
 
-Below is a Boundary Error Event element when it is associated with a Script Task element. A Boundary Error Event may also be associated with a Task element, Manual Task element, or Sub Process element.
+Below is a Boundary Error Event element when it is associated with a Script Task element. A Boundary Error Event may also be associated with a Form Task element, Manual Task element, or Sub Process element.
 
 ![Boundary Error Event element associated with a Script Task element](../../../.gitbook/assets/boundary-error-event-process-modeler-processes.png)
 
@@ -332,13 +332,13 @@ See [Add and Configure Boundary Message Event Elements](add-and-configure-bounda
 
 Tasks represent activities performed by persons in ProcessMaker software, offline \(such as in the physical environment\), or by a [ProcessMaker Script](../../scripts/). ProcessMaker provides the following Task-type Process model elements:
 
-* [Task](process-modeling-element-descriptions.md#task)
-* [Script Task](process-modeling-element-descriptions.md#script-task)
-* [Manual Task](process-modeling-element-descriptions.md#manual-task)
+* [Form Task](process-modeling-element-descriptions.md#form-task) element
+* [Script Task](process-modeling-element-descriptions.md#script-task) element
+* [Manual Task](process-modeling-element-descriptions.md#manual-task) element
 
-### Task
+### Form Task
 
-A Task element represents an activity a person performs while participating in a [Request](../../../using-processmaker/requests/what-is-a-request.md) via ProcessMaker. A Task element is different than a [Manual Task](process-modeling-element-descriptions.md#manual-task) element, in which a person performs an activity in the physical environment. Assign the [Task](../../../using-processmaker/task-management/what-is-a-task.md) that the Task element represents to any of the following types of Request participants:
+A Form Task element represents an activity a person performs while participating in a [Request](../../../using-processmaker/requests/what-is-a-request.md) via ProcessMaker. A Form Task element is different than a [Manual Task](process-modeling-element-descriptions.md#manual-task) element in which a person performs an activity in the physical environment. Assign the [Task](../../../using-processmaker/task-management/what-is-a-task.md) that the Form Task element represents to any of the following types of Request participants:
 
 * The ProcessMaker user who started the Request, referred to as the Requester
 * A specific ProcessMaker [user](../../../processmaker-administration/add-users/what-is-a-user.md)
@@ -347,9 +347,9 @@ A Task element represents an activity a person performs while participating in a
 
 People perform Task activities through ProcessMaker Screens as digital [forms](../../design-forms/screens-builder/types-for-screens.md#forms) and [displays](../../design-forms/screens-builder/types-for-screens.md#display). ProcessMaker Screens are designed in [Screens Builder](../../design-forms/screens-builder/).
 
-Below is a Task element when it has been placed into a Process model.
+Below is a Form Task element when it has been placed into a Process model.
 
-![Task element](../../../.gitbook/assets/task-element-process-modeler-processes.png)
+![Form Task element](../../../.gitbook/assets/task-element-process-modeler-processes.png)
 
 {% hint style="info" %}
 See [Add and Configure Task Elements](add-and-configure-task-elements.md).
@@ -374,7 +374,7 @@ See [Add and Configure Script Task Elements](add-and-configure-script-task-eleme
 
 ### Manual Task
 
-A Manual Task element represents an activity a person performs offline and/or in the physical environment such that ProcessMaker cannot monitor its activity. A Manual Task element is different than a [Task](process-modeling-element-descriptions.md#task) element, in which a person performs an activity via ProcessMaker. ProcessMaker relies on the Task assignee to acknowledge completion of that activity. An example of a Manual Task activity is moving physical merchandise in a warehouse: this activity occurs offline and is one which does not involve ProcessMaker interaction.
+A Manual Task element represents an activity a person performs offline and/or in the physical environment such that ProcessMaker cannot monitor its activity. A Manual Task element is different than a [Form Task](process-modeling-element-descriptions.md#form-task) element, in which a person performs an activity via a [ProcessMaker Screen](../../design-forms/what-is-a-form.md). ProcessMaker relies on the Task assignee to acknowledge completion of that activity. An example of a Manual Task activity is moving physical merchandise in a warehouse: this activity occurs offline and is one which does not involve ProcessMaker interaction.
 
 Below is a Manual Task element when it has been placed into a Process model.
 

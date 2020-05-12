@@ -88,6 +88,13 @@ The Manual Task element has the following panels that contain settings:
 
 ### Configuration Panel Settings
 
+The Manual Task element has multiple settings in the **Configuration** panel:
+
+* [Edit the element name](add-and-configure-manual-task-elements.md#edit-the-element-name)
+* [Select the ProcessMaker Screen to do the manual Task](add-and-configure-manual-task-elements.md#select-the-processmaker-screen-for-the-manual-task)
+* [Specify when the manual Task is due](add-and-configure-manual-task-elements.md#specify-when-the-manual-task-is-due)
+* [Display the next assigned Task to the Task assignee](add-and-configure-manual-task-elements.md#display-the-next-assigned-task-to-the-task-assignee)
+
 #### Edit the Element Name
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
@@ -104,7 +111,7 @@ Follow these steps to edit the name for a Task element:
 
 #### Select the ProcessMaker Screen for the Manual Task
 
-When a Manual Task element triggers, a [ProcessMaker Screen](../../design-forms/what-is-a-form.md) can display instructions or information in its [Task summary](../../../using-processmaker/task-management/view-a-task-summary.md#task-form) so its Task assignee can perform the manual task. The ProcessMaker Screen must be of [Display](../../design-forms/screens-builder/types-for-screens.md#display) type.
+When a Manual Task element triggers, a [ProcessMaker Screen](../../design-forms/what-is-a-form.md) can display instructions or information in its [Task summary](../../../using-processmaker/task-management/view-a-task-summary.md#task-form) so its Task assignee can perform the manual Task. The ProcessMaker Screen must be of [Display](../../design-forms/screens-builder/types-for-screens.md#display) type.
 
 When a Manual Task element is placed into a Process model, it is not configured to display a ProcessMaker Screen when it triggers. Therefore, it must be configured.
 
@@ -120,7 +127,7 @@ Follow these steps to select the ProcessMaker Screen that displays when a Manual
 
 Specify when a Manual Task element is due from when that activity is assigned to a Request participant. The default period of time for a task to be due is 72 hours \(three days\).
 
-The Task due date displays for each [pending assigned Task](../../../using-processmaker/requests/view-completed-requests.md#view-completed-requests-in-which-you-are-a-participant). After the specified time has expired for a manual task, an overdue indicator displays for that task to the assigned task recipient.
+The Task due date displays for each [pending assigned Task](../../../using-processmaker/requests/view-completed-requests.md#view-completed-requests-in-which-you-are-a-participant). After the specified time expires for a manual Task, an overdue indicator displays for that manual Task to the Task assignee.
 
 {% hint style="info" %}
 ### Total Number of Hours Includes All Hours
@@ -150,7 +157,7 @@ Follow these steps to specify when a Manual Task element is due:
 
 When the **Display the Next Assigned Task to the Task Assignee** setting is used in a Manual Task element, the Task assignee receives a waiting message after that Task assignee submits that Task. This is different than the default functionality, whereby the [**To Do Tasks**](../../../using-processmaker/task-management/view-tasks-you-need-to-do.md#view-your-assigned-tasks) page displays after each Task is submitted.
 
-Use this setting when you understand that this Task assignee will be assigned multiple Tasks during the same Request, regardless of whomever that Task assignee is. This becomes convenient for that Task assignee to display a next Task immediately after submitting the initial Task during that Request, especially if Script Task elements are between Task elements so that Tasks are assigned quickly.
+Use this setting when you understand that this Task assignee will be assigned multiple Tasks during the same Request, regardless of whomever that Task assignee is. This becomes convenient for that Task assignee to display the next Task immediately after submitting the initial Task during that Request, especially if Script Task elements are between Form Task and/or Manual Task elements so that Tasks are assigned quickly.
 
 The **Display the Next Assigned Task to the Task Assignee** setting applies only during the same Request.
 
@@ -167,11 +174,11 @@ Follow these steps to configure a Manual Task element to display the next assign
 
 ### Assignment Rules Panel Settings
 
-Specify [whom to assign the Task](add-and-configure-manual-task-elements.md#select-to-whom-to-assign-the-task) or to [use assignment rules to assign the Task](add-and-configure-manual-task-elements.md#assign-the-task-using-rules-1).
+Specify [whom to assign the manual Task](add-and-configure-manual-task-elements.md#select-to-whom-to-assign-the-task) or to [use assignment rules to assign the manual Task](add-and-configure-manual-task-elements.md#assign-the-task-using-rules-1).
 
-#### Select to Whom to Assign the Task
+#### Select to Whom to Assign the Manual Task
 
-Instead of [assign the Task's assignee using one or more rules](add-and-configure-manual-task-elements.md#select-to-whom-to-assign-the-task), select to whom to assign a Task:
+Instead of [assign the Task's assignee using one or more rules](add-and-configure-manual-task-elements.md#select-to-whom-to-assign-the-task), select to whom to assign a manual Task:
 
 * **Requester:** Assign that Task to the person who started the Request, also known as the requester.
 * **User:** Assign that Task to a specified ProcessMaker [user](../../../processmaker-administration/add-users/what-is-a-user.md).
@@ -213,7 +220,7 @@ Follow these steps to select to whom to assign the Task that is referenced in a 
 5. Enable the **Lock task assignment to user** option to assign this Task to the same Task assignee if workflow in the Request returns to this Manual Task. If the initial Task assignee was a member of a ProcessMaker group, the Task is reassigned to the same ProcessMaker group member. This option is useful if the initial Task assignee in the Request might need to provide clarification regarding information that Request participant initially submitted in that Task.
 6. Enable the **Allow Reassignment** option to allow the Task assignee to reassign the Task if necessary. If the **Allow Reassignment** option is enabled, the **Reassign** button displays in the Task summary to allow that Task assignee to reassign that Task. See [View a Task Summary](../../../using-processmaker/task-management/view-a-task-summary.md#summary).
 
-#### Assign the Task Using Rules
+#### Assign the Manual Task Using Rules
 
 Instead of [selecting to whom to assign a Task](add-and-configure-manual-task-elements.md#select-to-whom-to-assign-the-task) that is referenced in a Manual Task element, assign the Task's assignee using one or more rules:
 
