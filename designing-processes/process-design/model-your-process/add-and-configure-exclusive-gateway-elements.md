@@ -49,7 +49,7 @@ Moving an Exclusive Gateway element has the following limitations in regards to 
 
 See [Configure an Outgoing Sequence Flow Element from an Exclusive Gateway or Inclusive Gateway Element](the-quick-toolbar.md#configure-an-outgoing-sequence-flow-element-from-an-exclusive-gateway-or-inclusive-gateway-element).
 
-### Permissions Required to Do This Configuration
+### Permissions Required
 
 Your ProcessMaker user account or group membership must have the following permissions to configure an Exclusive Gateway element unless your user account has the **Make this user a Super Admin** setting selected:
 

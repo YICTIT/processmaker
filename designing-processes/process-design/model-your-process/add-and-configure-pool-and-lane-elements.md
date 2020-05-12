@@ -119,7 +119,7 @@ Follow these steps to edit the identifier value for a Pool element:
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Lane](process-modeling-element-descriptions.md#lane) element.
 
-### Permissions Required to Do This Task
+### Permissions Required
 
 Your ProcessMaker user account or group membership must have the following permissions to add a Lane element to a Pool element unless your user account has the **Make this user a Super Admin** setting selected:
 
