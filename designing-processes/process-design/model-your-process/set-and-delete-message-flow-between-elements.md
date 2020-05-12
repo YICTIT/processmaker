@@ -10,7 +10,7 @@ description: >-
 
 In a Process model, Message Flow elements represent messaging between elements of \(or within\) one [Pool](process-modeling-element-descriptions.md#pool) element to elements of \(or within\) another Pool element. Message Flow elements cannot connect to Process model elements within the same Pool element. Message Flow elements are not to be confused with [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) elements.
 
-Use Message Flow elements to represent collaboration and data transfer from one Pool to another. Since each Pool element in a Process uses its own [Request](../../../using-processmaker/requests/what-is-a-request.md) and Request data, use Message Flow elements to exchange data and information between separate Pool elements and/or elements within those Pool elements.
+Use Message Flow elements to indicate messaging from one Pool to another. Since each Pool element in a Process uses its own [Request](../../../using-processmaker/requests/what-is-a-request.md) and Request data, use Message Flow elements to exchange messaging between separate Pool elements and/or elements within those Pool elements.
 
 In Process Modeler, Flow indicators display when you click an element in the Process model. The dotted-line Flow indicator is for Message Flows \(highlighted below\).
 
@@ -31,18 +31,23 @@ Below are the differences between incoming and outgoing Message Flow elements:
 
 The following BPMN 2.0 elements do not use Message Flow elements:
 
-* ​[Start Timer Event](process-modeling-element-descriptions.md#start-timer-event)
-* [Intermediate Timer Event](process-modeling-element-descriptions.md#intermediate-timer-event)
-* [End Event](process-modeling-element-descriptions.md#end-event)
-* [Script Task](process-modeling-element-descriptions.md#script-task)
-* [Manual Task](process-modeling-element-descriptions.md#manual-task)
-* [Sub Process](process-modeling-element-descriptions.md#sub-process)
-* [Exclusive Gateway](process-modeling-element-descriptions.md#exclusive-gateway)
-* [Inclusive Gateway](process-modeling-element-descriptions.md#inclusive-gateway)
-* [Parallel Gateway](process-modeling-element-descriptions.md#parallel-gateway)
-* [Event-Based Gateway](process-modeling-element-descriptions.md#event-based-gateway)
-* [Text Annotation](process-modeling-element-descriptions.md#text-annotation)
-* [Association](process-modeling-element-descriptions.md#association)
+* ​[Start Timer Event](process-modeling-element-descriptions.md#start-timer-event) element
+* [Message Start Event](process-modeling-element-descriptions.md#message-start-event) element
+* [Intermediate Timer Event](process-modeling-element-descriptions.md#intermediate-timer-event) element
+* Intermediate Signal Catch Event element
+* [Intermediate Message Catch Event](process-modeling-element-descriptions.md#intermediate-message-catch-event) element
+* End Signal Event element
+* [Message End Event](process-modeling-element-descriptions.md#message-end-event) element
+* [Error End Event](process-modeling-element-descriptions.md#error-end-event) element
+* [Script Task](process-modeling-element-descriptions.md#script-task) element
+* [Manual Task](process-modeling-element-descriptions.md#manual-task) element
+* [Sub Process](process-modeling-element-descriptions.md#sub-process) element
+* [Exclusive Gateway](process-modeling-element-descriptions.md#exclusive-gateway) element
+* [Inclusive Gateway](process-modeling-element-descriptions.md#inclusive-gateway) element
+* [Parallel Gateway](process-modeling-element-descriptions.md#parallel-gateway) element
+* [Event-Based Gateway](process-modeling-element-descriptions.md#event-based-gateway) element
+* [Text Annotation](process-modeling-element-descriptions.md#text-annotation) element
+* [Association](process-modeling-element-descriptions.md#association) element
 
 ## Connect the Message Flow Element Between Elements in Separate Pool Elements
 
@@ -65,17 +70,17 @@ Follow these steps to set the Message Flow element between elements in separate 
 
 1. ​[View your Processes](../../viewing-processes/view-the-list-of-processes/view-your-processes.md#view-all-active-processes). The **Processes** page displays.
 2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays. Ensure that the Process model has at least two \(2\) Pool elements from which to establish Message Flow between them.
-3. From one Pool element, select the Process model element from which you want to establish communication via the Message Flow element. Available options display to the right of the selected element. Process model element types that do not support the Message Flow element do not have the Message Flow indicator as highlighted below.  
+3. From one Pool element, select the Process model element to which to establish messaging via the Message Flow element. Available options display to the right of the selected element. Process model element types that [do not support the Message Flow element](set-and-delete-message-flow-between-elements.md#restrictions-on-message-flow-elements) do not have the Message Flow indicator as highlighted below.  
 
    ![](../../../.gitbook/assets/message-flow-indicator-process-model-processes.png)
 
 4. Click the **Message Flow** icon![](../../../.gitbook/assets/message-flow-icon-process-modeler-processes.png).
 5. Do one of the following:
-   * Click the second Pool element to indicate collaboration and data transfer between the two elements.  
+   * Click the second Pool element to indicate messaging between the two elements.  
 
      ![](../../../.gitbook/assets/message-flow-to-pool-element-process-modeler-processes.png)
 
-   * Click an element inside the second Pool element to indicate collaboration and data transfer between the two elements.  
+   * Click an element inside the second Pool element to indicate messaging between the two elements.  
 
      ![](../../../.gitbook/assets/message-flow-between-pool-elements-process-model-processes.png)
 

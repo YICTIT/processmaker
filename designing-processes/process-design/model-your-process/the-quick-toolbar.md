@@ -1,7 +1,7 @@
 ---
 description: >-
-  Indicate the order of workflow routing in your Process model by connecting
-  elements Sequence Flow elements.
+  Indicate the order of workflow routing in your Process model elements and
+  connectors using Sequence Flow elements.
 ---
 
 # Connect Sequence Flow Elements to Indicate Workflow Routing
@@ -18,18 +18,26 @@ Sequence Flow elements have the following attributes in regards to specific Proc
 
   ![](../../../.gitbook/assets/sequence-flow-incoming-outgoing-process-modeler-processes.png)
 
-  * **Incoming:** An incoming Sequence Flow element comes from its connecting element. In the example, the Sequence Flow element is incoming to the New Task element.  
+  * **Incoming:** An incoming Sequence Flow element comes from its connecting element. In the example, the Sequence Flow element is incoming to the Form Task element.  
 
     ![](../../../.gitbook/assets/sequence-flow-incoming-process-modeler-processes.png)
 
-  * **Outgoing:** An outgoing Sequence Flow goes to the connecting element. In the example, the Sequence Flow element is outgoing from the New Task element.  
+  * **Outgoing:** An outgoing Sequence Flow goes to the connecting element. In the example, the Sequence Flow element is outgoing from the Form Task element.  
 
     ![](../../../.gitbook/assets/sequence-flow-outgoing-process-modeler-processes.png)
 
 * Text annotation elements and Pool elements do not participate in sequence flow.
-* Sequence Flow elements cannot connect workflow between Process model elements within different Pool elements. Use [Message Flow](set-and-delete-message-flow-between-elements.md) elements to infer communication between elements in different Pool elements.
-* A Start Event element begins the flow of a Request for that Process. Therefore, a Start Event cannot have an incoming Sequence Flow element.
-* An End Event element terminates the flow of a Request for that Process. Therefore, an End Event cannot have an outgoing Sequence Flow element.
+* Sequence Flow elements cannot connect workflow between Process model elements within different Pool elements. Use [Message Flow](set-and-delete-message-flow-between-elements.md) elements to indicate messaging between elements in different Pool elements.
+* Start Event type elements begin the flow of a Request for that Process. Therefore, the following elements cannot have an incoming Sequence Flow element:
+  * [Start Event](process-modeling-element-descriptions.md#start-event) element
+  * [Start Timer](process-modeling-element-descriptions.md#start-timer-event) Event element
+  * Start Signal Event element
+  * [Message Start Event](process-modeling-element-descriptions.md#message-start-event) element
+* End Event type elements terminate the flow of a Request for that Process. Therefore, the following elements cannot have an outgoing Sequence Flow element:
+  * [End Event](process-modeling-element-descriptions.md#end-event) element
+  * [Message End Event](process-modeling-element-descriptions.md#message-end-event) element
+  * End Signal Event element
+  * [Error End Event](process-modeling-element-descriptions.md#error-end-event) element
 * Sequence Flow elements from [Exclusive Gateway](process-modeling-element-descriptions.md#exclusive-gateway) and [Inclusive Gateway](process-modeling-element-descriptions.md#inclusive-gateway) elements can be configured to specify under which condition a Request routes through that Sequence Flow element. See [Configure an Outgoing Sequence Flow Element from an Exclusive Gateway or Inclusive Gateway Element](the-quick-toolbar.md#configure-an-outgoing-sequence-flow-element-from-an-exclusive-gateway-or-inclusive-gateway-element).
 
 ## Connect the Sequence Flow Element to Another Element
@@ -58,7 +66,7 @@ Follow these steps to set the Sequence Flow element from one connecting element 
    ![](../../../.gitbook/assets/sequence-flow-indicator-process-modeler-processes.png)
 
 4. Click the **Sequence Flow** icon![](../../../.gitbook/assets/sequence-flow-icon-process-modeler-processes.png).
-5. Click the Process model element in which to set the workflow routing. The Sequence Flow element connects between the two \(2\) elements to indicate workflow routing.  
+5. Click the Process model element to which to set the workflow routing. The Sequence Flow element connects between the two \(2\) elements to indicate workflow routing.  
 
    ![](../../../.gitbook/assets/sequence-flow-connecting-elements-process-modeler-processes.png)
 
@@ -152,8 +160,8 @@ ProcessMaker evaluates the condition\(s\) set for each outgoing Sequence Flow el
 
   * **Outgoing Sequence Flow elements for Inclusive Gateway elements:** Workflow always routes through that Sequence Flow element because conditions are always met. Inclusive Gateway elements allow as many Sequence Flow elements to trigger in which their conditions are met.
 * **The Sequence Flow element has an expression:** The condition\(s\) in the Request data evaluate to determine if the condition\(s\) set in that Sequence Flow element is met. If so, that element triggers to route workflow from that outgoing Sequence Flow element to its connecting element. If not, then that Sequence Flow element does not trigger and workflow does not route through that element. ProcessMaker routes workflow in the following way:
-  * Outgoing Sequence Flow elements for Exclusive Gateway elements: Exclusive Gateway elements allow only one Sequence Flow to trigger.
-  * Outgoing Sequence Flow elements for Inclusive Gateway elements: Inclusive Gateway elements allow as many Sequence Flow elements to trigger in which their conditions are met. Therefore, all Sequence Flow elements in which their conditions are met trigger, thereby causing multiple workflow routes simultaneously for the same Request that stem from the Inclusive Gateway element. 
+  * **Outgoing Sequence Flow elements for Exclusive Gateway elements:** Exclusive Gateway elements allow only one Sequence Flow to trigger.
+  * **Outgoing Sequence Flow elements for Inclusive Gateway elements:** Inclusive Gateway elements allow as many Sequence Flow elements to trigger in which their conditions are met. Therefore, all Sequence Flow elements in which their conditions are met trigger, thereby causing multiple workflow routes simultaneously for the same Request that stem from the Inclusive Gateway element. 
 
 {% hint style="warning" %}
 When designing the condition\(s\) for outgoing Sequence Flow elements from an Exclusive Gateway element, ensure that the condition for one of its outgoing Sequence Flow elements can trigger. Otherwise, it may be possible that no outgoing Sequence Flow elements trigger to continue workflow, thereby causing a Request error.
