@@ -1,10 +1,10 @@
 ---
-description: Filter all the Saved Search's results to find that one you need.
+description: Filter all the Saved Search's results to find its data details.
 ---
 
-# Search for a Saved Search's Result
+# Search for a Saved Search's Data Details
 
-## Search for a Saved Search's Result
+## Search for a Saved Search's Data Details
 
 Use the **Search** function to filter all the results for a [Saved Search](../what-is-a-saved-search.md).
 
@@ -39,9 +39,7 @@ If there are no search results, the following message displays: **No Data Availa
 
 {% page-ref page="email-a-report-of-saved-search-results.md" %}
 
-{% page-ref page="schedule-to-email-reports-of-saved-search-results/" %}
+{% page-ref page="../schedule-to-email-reports-of-saved-search-results/" %}
 
 {% page-ref page="../create-and-share-a-saved-search.md" %}
-
-{% page-ref page="../manage-your-saved-searches/" %}
 

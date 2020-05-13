@@ -14,6 +14,7 @@ For example, each of the following are Tasks that you might use for a purchase p
 * A manager approves or rejects the purchase request.
 * The purchasing manager enters information on a vendor website to order approved items.
 * Warehouse personnel move purchased inventory for shipping.
+* Self-service a Task to review a purchase request by assigning that Task to yourself from a queue of Tasks.
 
 ## Related Topics
 

@@ -1,18 +1,20 @@
 ---
-description: View a Saved Search's results.
+description: >-
+  View the data details of a Saved Search's result in tabular format based on
+  the type of Saved Search.
 ---
 
-# View Results for a Saved Search
+# View the Data Details of a Saved Search's Result
 
 ## Overview
 
 {% hint style="info" %}
 ### ProcessMaker Packages Required
 
-To view search results for a [Saved Search](../what-is-a-saved-search.md), the [Saved Searches package](../../../package-development-distribution/package-a-connector/saved-searches-package.md) must be installed in your ProcessMaker instance. Likewise, to create, share, or view Saved Searches for records in a ProcessMaker Collection, the Collections package must also be installed. Neither of these packages are available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how these packages can be installed in your ProcessMaker instance.
+To view the data details for a [Saved Search](../what-is-a-saved-search.md), the [Saved Searches package](../../../package-development-distribution/package-a-connector/saved-searches-package.md) must be installed in your ProcessMaker instance. Likewise, to create, share, or view Saved Searches for records in a ProcessMaker Collection, the Collections package must also be installed. Neither of these packages are available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how these packages can be installed in your ProcessMaker instance.
 {% endhint %}
 
-Regardless of whether you [created](../create-and-share-a-saved-search.md) a Saved Search or if it has been shared with you, you may view the search results based on the [ProcessMaker Query Language \(PMQL\)](../../search-processmaker-data-using-pmql.md) parameters configured in the Saved Search.
+Regardless of whether you [created](../create-and-share-a-saved-search.md) a Saved Search or if it has been shared with you, you may view the data details of that search result that is based on the [ProcessMaker Query Language \(PMQL\)](../../search-processmaker-data-using-pmql.md) parameters configured in that Saved Search.
 
 An image represents each Saved Search on the left sidebar, but only display on pages associated with its type. Saved Searches are organized by type:
 
@@ -20,19 +22,19 @@ An image represents each Saved Search on the left sidebar, but only display on p
 * [Task](../../task-management/what-is-a-task.md)-related Saved Searches are accessed from **Tasks** pages.
 * Saved Searches for [ProcessMaker Collection](../../../collections/what-is-a-collection.md) records are accessed from the [**Collections** page](../../../collections/manage-collections/view-collections.md#view-all-collections). \(Your ProcessMaker user account or group membership must have the "Collections: View Collections" permission to view the list of ProcessMaker Collections unless your user account has the **Make this user a Super Admin** setting selected. See the ProcessMaker [Collections](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#collections) permissions or ask your ProcessMaker Administrator for assistance. Lastly, your ProcessMaker user account or group membership must have the **View** [record permission](../../../collections/manage-collections/configure-a-collection.md#configure-record-permissions-for-processmaker-users) from a Collection's configuration to view that Collection's records. See [Configure a Collection](../../../collections/manage-collections/configure-a-collection.md#configure-a-processmaker-collection) or ask the manager of that ProcessMaker Collection for assistance.\)
 
-Columns that display in the results for a Saved Search can be customized by the ProcessMaker [user](../../../processmaker-administration/add-users/what-is-a-user.md) that created the Saved Search. See the following topics:
+Columns that display in the tabular-formatted results for a Saved Search can be customized by the ProcessMaker [user](../../../processmaker-administration/add-users/what-is-a-user.md) that created the Saved Search. See the following topics:
 
 * [Create and Share a Saved Search](../create-and-share-a-saved-search.md)
-* [Configure a Saved Search](../manage-your-saved-searches/configure-a-saved-search.md)
+* [Configure a Saved Search](configure-a-saved-search.md)
 
 If a Saved Search has been shared with you, you may not change the type of information that displays in its results.
 
 {% hint style="info" %}
-To quickly view how many search results pertain to each Saved Search that either you have created or have been shared with you, click the ProcessMaker logo in the left sidebar to expand that sidebar. View at a glance how many items pertain to each Saved Search as well as Saved Searches for that type.  
+To quickly view how many search results pertain to each Saved Search that either you have created or have been shared with you, click the logo that displays in the left sidebar to expand that sidebar. View at a glance how many items pertain to each Saved Search as well as Saved Searches for that type.  
 ![](../../../.gitbook/assets/requests-sidebar-saved-searches-package.png) 
 {% endhint %}
 
-## View Request Results from a Saved Search
+## View Request-Type Saved Search Results
 
 {% hint style="info" %}
 ### ProcessMaker Package Required
@@ -55,9 +57,9 @@ Follow these steps to view results from a Saved Search pertaining to Requests:
 2. Click the image that represents the Saved Search. The results for that Saved Search display.
 
 {% hint style="info" %}
-### Analyze Request-Related Information Based on Saved Search Results
+### Visualize Request-Related Information Based on Saved Search Results
 
-Aside from viewing [Request summaries](../../requests/request-details/), visually analyze Request information.
+[Create charts of Saved Search results to visually analyze results](../create-charts-to-visualize-saved-search-results.md).
 
 ### View a Request Summary from Search Results
 
@@ -69,9 +71,9 @@ To [view a Request summary](../../requests/request-details/) from search results
 
 Below are results for a Request-related Saved Search.
 
-![Results for a Request-related Saved Search](../../../.gitbook/assets/request-saved-search-package.png)
+![Results for a Request-related Saved Search](../../../.gitbook/assets/request-saved-search-data-tab-package.png)
 
-## View Task Results from a Saved Search
+## View Task-Type Saved Search Results
 
 {% hint style="info" %}
 ### ProcessMaker Package Required
@@ -93,9 +95,9 @@ Follow these steps to view results from a Saved Search pertaining to Tasks:
 2. Click the image that represents the Saved Search. The results for that Saved Search display.
 
 {% hint style="info" %}
-### Analyze Task-Related Information Based on Saved Search Results
+### Visualize Task-Related Information Based on Saved Search Results
 
-Aside from viewing Tasks, visually analyze Task information.
+[Create charts of Saved Search results to visually analyze results](../create-charts-to-visualize-saved-search-results.md).
 
 ### View a Task Summary from Search Results
 
@@ -109,12 +111,12 @@ Below are results for a Task-related Saved Search.
 
 ![Search results for a Task-related Saved Search](../../../.gitbook/assets/task-saved-search-package.png)
 
-## View ProcessMaker Collection Record Results from a Saved Search
+## View ProcessMaker Collection Record Saved Search Results
 
 {% hint style="info" %}
 ### ProcessMaker Packages Required
 
-To view search results for a [Saved Search](../what-is-a-saved-search.md), the [Saved Searches package](../../../package-development-distribution/package-a-connector/saved-searches-package.md) must be installed in your ProcessMaker instance. Likewise, to create, share, or view Saved Searches for records in a ProcessMaker Collection, the Collections package must also be installed. Neither of these packages are available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how these packages can be installed in your ProcessMaker instance.
+To view search results for a [Saved Search](../what-is-a-saved-search.md), the [Saved Searches package](../../../package-development-distribution/package-a-connector/saved-searches-package.md) must be installed in your ProcessMaker instance. Likewise, to create, share, or view Saved Searches for records in a ProcessMaker Collection, the [Collections package](../../../package-development-distribution/package-a-connector/collections.md) must also be installed. Neither of these packages are available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how these packages can be installed in your ProcessMaker instance.
 
 ### Permissions Required
 
@@ -131,6 +133,10 @@ Follow these steps to view results from a Saved Search pertaining to records in 
 2. Click the image that represents the Saved Search. The results for that Saved Search display.
 
 {% hint style="info" %}
+### Visualize ProcessMaker Collection-Related Saved Search Results
+
+[Create charts of Saved Search results to visually analyze results](../create-charts-to-visualize-saved-search-results.md).
+
 ### View a ProcessMaker Collection Record from Search Results
 
 To view a ProcessMaker Collection record from search results, click the **Edit** icon![](../../../.gitbook/assets/edit-icon.png)for the record you want to edit.
@@ -186,9 +192,7 @@ If there are no search results from the Saved Search, the following message disp
 
 {% page-ref page="email-a-report-of-saved-search-results.md" %}
 
-{% page-ref page="schedule-to-email-reports-of-saved-search-results/" %}
+{% page-ref page="../schedule-to-email-reports-of-saved-search-results/" %}
 
 {% page-ref page="../create-and-share-a-saved-search.md" %}
-
-{% page-ref page="../manage-your-saved-searches/" %}
 

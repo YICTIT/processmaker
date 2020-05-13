@@ -53,7 +53,5 @@ Follow these steps to create and share a Saved Search:
 
 {% page-ref page="view-saved-searches-that-are-shared-with-you/" %}
 
-{% page-ref page="view-saved-searches-that-are-shared-with-you/schedule-to-email-reports-of-saved-search-results/" %}
-
-{% page-ref page="manage-your-saved-searches/" %}
+{% page-ref page="schedule-to-email-reports-of-saved-search-results/" %}
 
