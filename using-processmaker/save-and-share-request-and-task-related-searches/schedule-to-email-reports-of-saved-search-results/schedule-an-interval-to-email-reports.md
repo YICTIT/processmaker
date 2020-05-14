@@ -21,7 +21,7 @@ Follow these steps to schedule an interval to email reports of a Saved Search's 
 5. In the **Send To** setting, enter the email address\(es\) for the email recipients to receive the report. Separate multiple email recipients using commas.
 6. In the **Email Subject** setting, enter the email subject of your report to which the report will be attached.
 7. From the **Email Body** option, do one of the following:
-   * In the **Email Body** setting, enter the email body content for your report.
+   * In the **Email Body** setting, enter the email body content for your report. Email recipients see this setting in their email clients when they receive a report.
    * Select the **Would you like to use a custom Email Screen?** option. A drop-down menu displays from which you can select an [Email](../../../designing-processes/design-forms/screens-builder/types-for-screens.md#email)-type [ProcessMaker Screen](../../../designing-processes/design-forms/what-is-a-form.md) that will display its contents as the email body. Note that the [Send Email package](../../../package-development-distribution/package-a-connector/email.md) must be installed in your ProcessMaker instance to have the Email-type ProcessMaker Screen and send emails of scheduled reports. ![](../../../.gitbook/assets/email-screen-drop-down-schedule-saved-search-package.png) 
 8. From the **File Format** option, select one of the following options to specify the format of the emailed report that is attached to the email:
    * **CSV:** Select the **CSV** option to email the report in `.CSV` format.

@@ -14,8 +14,8 @@ To edit a scheduled interval to email reports of a [Saved Search's](../what-is-a
 
 Follow these steps to edit a scheduled interval to email reports of a Saved Search's search results:
 
-1. [View the schedules to email reports of a Saved Search's results](../view-saved-searches-that-are-shared-with-you/view-search-results-for-a-saved-search.md). The **Scheduled Reports** page displays for that Saved Search.
-2. Click the **Edit** icon![](../../../.gitbook/assets/edit-icon.png) for the schedule in which to edit. The **Schedule Report** screen displays. ![](../../../.gitbook/assets/schedule-report-screen-edit-saved-searches-package.png) 
+1. [View the scheduled intervals to email reports of a Saved Search's results](../view-saved-searches-that-are-shared-with-you/view-search-results-for-a-saved-search.md). The **Scheduled Reports** page displays for that Saved Search.
+2. Click the **Edit** icon![](../../../.gitbook/assets/edit-icon.png)for the schedule in which to edit. The **Schedule Report** screen displays. ![](../../../.gitbook/assets/schedule-report-screen-edit-saved-searches-package.png) 
 3. Edit the following settings for the scheduled report as necessary:
    1. From the **Day of the week** setting, select the day of the week in which to email the report of the Saved Search's results. Only one day may be selected. If multiple days are required, then create another schedule that sends the report on a different day.
    2. In the **Time** setting, edit the time in 24-hour format in which to email the report.

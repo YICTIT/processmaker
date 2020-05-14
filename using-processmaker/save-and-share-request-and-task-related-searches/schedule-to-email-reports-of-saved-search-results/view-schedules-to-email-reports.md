@@ -19,12 +19,19 @@ Follow these steps to view the schedules to email reports of a Saved Search's re
 
 ![Schedule to email reports for a Saved Search&apos;s results](../../../.gitbook/assets/schedules-saved-search-package.png)
 
+The **Scheduled Reports** page displays the following information in tabular format about the intervals in which to email reports for this Saved Search:
+
+* **Subject:** The **Subject** column displays the email subject of the report. Email recipients see this setting in their email clients when they receive a report.
+* **To:** The **To** column displays the email address\(es\) for the email recipients of the report.
+* **Scheduled:** The **Scheduled** column displays the scheduled interval when to email reports.
+* **Last Sent:** The **Last Sent** column displays when the last report was emailed. If this scheduled interval has not emailed a report, this column displays **Never Sent** for this scheduled interval.
+
 {% hint style="info" %}
 ### Pause a Schedule to Email Reports
 
 Click the **Pause** icon![](../../../.gitbook/assets/pause-start-timer-event-element-icon-processes.png)to suspend the schedule of emailed reports for that Saved Search's results.
 
-Click the **Play** icon![](../../../.gitbook/assets/play-start-timer-event-element-icon-processes.png)to resume the schedule of emailed reports for that Saved Search's results. Note that this icon only displays if a schedule is paused.
+Click the **Unpause** icon![](../../../.gitbook/assets/play-start-timer-event-element-icon-processes.png)to resume the schedule of emailed reports for that Saved Search's results. Note that this icon only displays if a schedule is paused.
 
 ### Schedule a New Interval to Email Reports
 

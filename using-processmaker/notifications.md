@@ -6,6 +6,8 @@ description: Receive updates about Requests and your assigned Tasks.
 
 ## Overview
 
+### Receive Notifications as a Request Participant
+
 Request participants may receive notifications when the following events occur:
 
 * A [Request](requests/what-is-a-request.md) has started for a specific Process.
@@ -13,6 +15,12 @@ Request participants may receive notifications when the following events occur:
 * Task assignees and/or Request participants may be notified when a Task is due.
 * The Requester's Request is canceled. Selecting a notification for a canceled Request opens that [Request's summary](requests/request-details/summary-for-canceled-requests.md).
 * The Requester's Request is completed. Selecting a notification for a completed Request opens that [Request's summary](requests/request-details/summary-for-completed-requests.md).
+
+### Receive Notifications If Results for a Saved Search Change
+
+You may configure your [Saved Search](save-and-share-request-and-task-related-searches/what-is-a-saved-search.md) to [notify you each time search results change](save-and-share-request-and-task-related-searches/view-saved-searches-that-are-shared-with-you/get-notified-of-save-search-result-changes.md#enable-notification-of-saved-search-result-changes) based on your Saved Search parameters. For example, suppose that you have a Saved Search for all in-progress Requests for a particular Process, such as for a Purchase Request Process. Each time a Request starts for that Process, your Saved Search results change. If your Saved Search is configured to send notifications each time your Saved Search results change, you receive a notification.
+
+Note that the [Saved Search package](../package-development-distribution/package-a-connector/saved-searches-package.md) must be installed in your ProcessMaker instance to use Saved Searches. The Saved Searches package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Saved Searches package can be installed in your ProcessMaker instance.
 
 ## View New Notifications
 
