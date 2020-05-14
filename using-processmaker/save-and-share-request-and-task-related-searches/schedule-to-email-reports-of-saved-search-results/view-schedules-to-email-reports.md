@@ -27,7 +27,7 @@ The **Scheduled Reports** page displays the following information in tabular for
 * **Last Sent:** The **Last Sent** column displays when the last report was emailed. If this scheduled interval has not emailed a report, this column displays **Never Sent** for this scheduled interval.
 
 {% hint style="info" %}
-### Pause a Schedule to Email Reports
+### Pause the Schedule to Email Reports
 
 Click the **Pause** icon![](../../../.gitbook/assets/pause-start-timer-event-element-icon-processes.png)to suspend the schedule of emailed reports for that Saved Search's results.
 
@@ -45,9 +45,9 @@ Click the **Edit** icon![](../../../.gitbook/assets/edit-icon.png). See [Edit a 
 
 Click the **Delete** icon![](../../../.gitbook/assets/trash-icon-process-modeler-processes.png). See [Delete a Scheduled Interval to Email Reports](delete-a-scheduled-interval-to-email-reports.md).
 
-### No Saved Searches?
+### No Scheduled Reports?
 
-If there are no Saved Searches, the following message displays: **No Data Available**.
+If there are no scheduled reports, the following message displays: **No Data Available**.
 
 ### Display Information the Way You Want It
 
