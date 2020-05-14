@@ -65,7 +65,8 @@
     * [Pause Scheduled Reports of a Saved Search](using-processmaker/save-and-share-request-and-task-related-searches/schedule-to-email-reports-of-saved-search-results/pause-scheduled-reports-of-a-saved-search.md)
     * [Edit a Scheduled Interval to Email Reports](using-processmaker/save-and-share-request-and-task-related-searches/schedule-to-email-reports-of-saved-search-results/edit-a-scheduled-interval-to-email-reports.md)
     * [Delete a Scheduled Interval to Email Reports](using-processmaker/save-and-share-request-and-task-related-searches/schedule-to-email-reports-of-saved-search-results/delete-a-scheduled-interval-to-email-reports.md)
-  * [Create Charts to Visualize Saved Search Results](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results.md)
+  * [Create Charts to Visualize Saved Search Results](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/README.md)
+    * [Overview of Saved Search Charts](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md)
 * [Notifications](using-processmaker/notifications.md)
 * [Control How Tabular Information Displays](using-processmaker/control-how-requests-display-in-a-tab.md)
 

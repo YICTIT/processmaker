@@ -63,7 +63,7 @@ Follow these steps to view results from a Saved Search pertaining to Requests:
 {% hint style="info" %}
 ### Visualize Request-Related Information Based on Saved Search Results
 
-[Create charts of Saved Search results to visually analyze results](../create-charts-to-visualize-saved-search-results.md).
+[Create charts of Saved Search results to visually analyze results](../create-charts-to-visualize-saved-search-results/).
 
 ### View a Request Summary from Search Results
 
@@ -101,7 +101,7 @@ Follow these steps to view results from a Saved Search pertaining to Tasks:
 {% hint style="info" %}
 ### Visualize Task-Related Information Based on Saved Search Results
 
-[Create charts of Saved Search results to visually analyze results](../create-charts-to-visualize-saved-search-results.md).
+[Create charts of Saved Search results to visually analyze results](../create-charts-to-visualize-saved-search-results/).
 
 ### View a Task Summary from Search Results
 
@@ -139,7 +139,7 @@ Follow these steps to view results from a Saved Search pertaining to records in 
 {% hint style="info" %}
 ### Visualize ProcessMaker Collection-Related Saved Search Results
 
-[Create charts of Saved Search results to visually analyze results](../create-charts-to-visualize-saved-search-results.md).
+[Create charts of Saved Search results to visually analyze results](../create-charts-to-visualize-saved-search-results/).
 
 ### View a ProcessMaker Collection Record from Search Results
 

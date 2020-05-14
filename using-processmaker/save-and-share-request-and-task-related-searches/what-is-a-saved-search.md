@@ -38,7 +38,7 @@ Saved Searches have the following attributes regarding configuring and sharing S
 
 ### Create Charts to Visualize Your Saved Search Results
 
-Create and configure charts to visualize your Saved Search results after selecting a Saved Search. Charts can visualize Saved Search data independently of the Saved Search data results. Furthermore, customize charts regardless of whether you created the Saved Search. Create as many facets of the selected Saved Search as necessary.
+Create and configure charts to visualize Saved Search results after selecting a Saved Search. Charts use the data results from the Saved Search to visualize those results in a variety of chart types and styles. Furthermore, customize charts regardless of whether you created the Saved Search or if it was shared with you. Create as many facets of the selected Saved Search as necessary.
 
 ![Saved Search results for Requests of the Account Opening Process showing charts](../../.gitbook/assets/request-saved-search-charts-tab-package.png)
 
@@ -48,6 +48,8 @@ Configure the following types of Saved Search charts:
 * Line
 * Pie
 * Doughnut
+
+See [Create Charts to Visualize Saved Search Results](create-charts-to-visualize-saved-search-results/).
 
 ## Related Topics
 
