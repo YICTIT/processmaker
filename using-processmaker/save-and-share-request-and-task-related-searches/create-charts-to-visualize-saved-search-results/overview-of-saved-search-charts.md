@@ -42,13 +42,15 @@ See the following Saved Search chart types:
 
 #### Bar Chart \(Horizontal\)
 
-The following bar chart presented horizontally shows the number of Requests that start for the Account Process by the day of the week.
+The following bar chart presenting horizontally shows the number of Requests that start for the Account Process by the day of the week.
 
 ![Number of Requests that start for the Account Process by day of the week](../../../.gitbook/assets/bar-chart-horizontal-example-saved-searches-package.png)
 
 #### Bar Chart \(Vertical\)
 
+The following bar chart presenting vertically shows the number of Requests by status per agency. Data points are stacked such that all Requests display on each other for each agency.
 
+![Number of Requests by status per agency](../../../.gitbook/assets/bar-chart-vertical-stacked-example-saved-searches-package.png)
 
 #### Line Chart
 
