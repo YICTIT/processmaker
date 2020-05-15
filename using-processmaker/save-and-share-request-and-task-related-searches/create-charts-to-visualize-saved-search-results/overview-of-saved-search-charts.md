@@ -12,6 +12,8 @@ Charts help visualize your Saved Search results. Though you can customize in tab
 
 Charts use the data results from the Saved Search to visualize those results in a variety of chart types and styles. Chart data may be filtered by using an optional [ProcessMaker Query Language \(PMQL\)](../../search-processmaker-data-using-pmql.md) query that further filters the data from that Saved Search to visualize minute data.
 
+Customize charts to include the series and/or categories from the both PMQL query parameters and the columns configured in the detailed data view of that Saved Search. For example, if your Saved Search included a custom column called Countries to display how many Requests have started based on a Request variable value called `Countries`, that Request variable may also be used as a series or category in a chart in that Saved Search.
+
 ![Saved Search results for Requests of the Account Opening Process showing charts](../../../.gitbook/assets/request-saved-search-charts-tab-package.png)
 
 ### Filter Data That Displays in a Saved Search Chart
@@ -23,6 +25,10 @@ Filter data that displays in a chart by hiding attributes of that data via the c
 To not display the Requests that have an error, click the **Error** key in the chart's legend. The strike-through text style displays over the **Error** key in the chart legend that indicates this chart attribute is hidden from the chart. The other chart attributes automatically adjust to show their data using the chart's current units of measurement. Click the **Error** key again to show this chart attribute again.
 
 ![Saved Search chart hiding the &quot;Error&quot; key attribute](../../../.gitbook/assets/line-chart-request-hide-attribute-example-saved-searches-package.png)
+
+Hover your cursor over a data point to see what that data represents.
+
+![Hover your cursor over a data point to see what that data represents](../../../.gitbook/assets/bar-chart-vertical-stacked-example-saved-searches-package.png)
 
 ### Types of Saved Search Charts
 
