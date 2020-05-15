@@ -8,7 +8,9 @@ description: >-
 
 ## Overview
 
-Charts help visualize your Saved Search results. Though you can customize in tabular format the data details for your Saved Searches, nothing distills that data like a customized chart. Create and configure charts to visualize Saved Search results after selecting a Saved Search. Charts use the data results from the Saved Search to visualize those results in a variety of chart types and styles. Furthermore, customize charts regardless of whether you created the Saved Search or if it was shared with you. Create as many facets of the selected Saved Search as necessary.
+Charts help visualize your Saved Search results. Though you can customize in tabular format the data details for your Saved Searches, nothing distills that data like a customized chart. Create and configure charts to visualize Saved Search results after selecting a Saved Search. Create customized charts regardless of whether you created the Saved Search or if it was shared with you.
+
+Charts use the data results from the Saved Search to visualize those results in a variety of chart types and styles. Chart data may be filtered by using an optional [ProcessMaker Query Language \(PMQL\)](../../search-processmaker-data-using-pmql.md) query that further filters the data from that Saved Search to visualize minute data.
 
 ![Saved Search results for Requests of the Account Opening Process showing charts](../../../.gitbook/assets/request-saved-search-charts-tab-package.png)
 
@@ -34,7 +36,9 @@ See the following Saved Search chart types:
 
 #### Bar Chart \(Horizontal\)
 
+The following bar chart presented horizontally shows the number of Requests that start for the Account Process by the day of the week.
 
+![Number of Requests that start for the Account Process by day of the week](../../../.gitbook/assets/bar-chart-horizontal-example-saved-searches-package.png)
 
 #### Bar Chart \(Vertical\)
 
