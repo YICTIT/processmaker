@@ -24,7 +24,7 @@ Hover your cursor over a data point or marker to see what that data represents.
 
 ### Filter Data That Displays in a Saved Search Chart
 
-Filter data that displays in a chart by hiding attributes of that data via the chart's legend. Consider the chart below that shows how the number of Requests by Request status type versus the each day of the week to visualize how many Requests exist for the "Account Process". This chart contains three keys in the legend that displays at the top of the chart.
+Filter data that displays in a chart by hiding attributes of that data via the chart's legend. Consider the following chart that shows the number of Requests by status type per day of the week to visualize how many Requests exist for the "Account Process". This chart contains three keys in the legend that displays at the top of the chart.
 
 ![Saved Search chart showing all key attributes](../../../.gitbook/assets/line-chart-request-all-attributes-example-saved-searches-package.png)
 
@@ -44,7 +44,7 @@ See the following Saved Search chart types:
 
 #### Bar Chart \(Horizontal\)
 
-The following bar chart presenting horizontally shows the number of Requests that start for the Account Process by the day of the week.
+The following bar chart presenting horizontally shows the number of Requests that start for the Account Process per day of the week.
 
 ![Number of Requests that start for the Account Process by day of the week](../../../.gitbook/assets/bar-chart-horizontal-example-saved-searches-package.png)
 
@@ -56,7 +56,9 @@ The following bar chart presenting vertically shows the number of Requests by st
 
 #### Line Chart
 
+The following line chart shows the number of Requests by status type per day of the week.
 
+![Number of Requests by status type per day of the week](../../../.gitbook/assets/line-chart-request-all-attributes-example-saved-searches-package.png)
 
 #### Pie Chart
 
