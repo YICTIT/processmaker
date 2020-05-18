@@ -18,7 +18,7 @@ To view the data details for a [Saved Search](../what-is-a-saved-search.md), the
 You may also view the data details for a Saved Search associated with a ProcessMaker [Collection](../../../collections/what-is-a-collection.md). Use Saved Searches in ProcessMaker Collections to search for records in a Collection. To use ProcessMaker Collections, the [Collections package](../../../package-development-distribution/package-a-connector/collections.md) must be installed in your ProcessMaker instance. The Collections package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Collections package can be installed in your ProcessMaker instance.
 {% endhint %}
 
-Regardless of whether you [created](../create-and-share-a-saved-search.md) a Saved Search or if it has been shared with you, you may view the data details of that search result that is based on the [ProcessMaker Query Language \(PMQL\)](../../search-processmaker-data-using-pmql.md) parameters configured in that Saved Search.
+Regardless of whether you [created](create-and-share-a-saved-search.md) a Saved Search or if it has been shared with you, you may view the data details of that search result that is based on the [ProcessMaker Query Language \(PMQL\)](../../search-processmaker-data-using-pmql.md) parameters configured in that Saved Search.
 
 An image represents each Saved Search on the left sidebar, but only display on pages associated with its type. Saved Searches are organized by type:
 
@@ -28,7 +28,7 @@ An image represents each Saved Search on the left sidebar, but only display on p
 
 Columns that display in the tabular-formatted results for a Saved Search can be customized by the ProcessMaker [user](../../../processmaker-administration/add-users/what-is-a-user.md) that created the Saved Search. See the following topics:
 
-* [Create and Share a Saved Search](../create-and-share-a-saved-search.md)
+* [Create and Share a Saved Search](create-and-share-a-saved-search.md)
 * [Configure a Saved Search](configure-a-saved-search.md)
 
 If a Saved Search has been shared with you, you may not change the type of information that displays in its results.
@@ -198,5 +198,5 @@ If there are no search results from the Saved Search, the following message disp
 
 {% page-ref page="../schedule-to-email-reports-of-saved-search-results/" %}
 
-{% page-ref page="../create-and-share-a-saved-search.md" %}
+{% page-ref page="create-and-share-a-saved-search.md" %}
 

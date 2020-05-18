@@ -22,7 +22,7 @@ Click the **Edit Saved Searches** icon![](../../.gitbook/assets/configure-proces
 
 ![Edit Saved Searches page displays both your Saved Searches and those shared with you](../../.gitbook/assets/edit-saved-searches-request-package.png)
 
-An icon represents each Saved Search that the ProcessMaker user selects when [creating the Saved Search](create-and-share-a-saved-search.md). Saved Searches display above the **My Saved Searches** icon![](../../.gitbook/assets/save-search-icon-package-requests-tasks.png). Click the logo at the top of the left sidebar on any of the **Requests**, **Tasks**, or **Collections** pages to view search results for each Saved Search.
+An icon represents each Saved Search that the ProcessMaker user selects when [creating the Saved Search](view-saved-searches-that-are-shared-with-you/create-and-share-a-saved-search.md). Saved Searches display above the **My Saved Searches** icon![](../../.gitbook/assets/save-search-icon-package-requests-tasks.png). Click the logo at the top of the left sidebar on any of the **Requests**, **Tasks**, or **Collections** pages to view search results for each Saved Search.
 
 ![Saved Searches](../../.gitbook/assets/requests-sidebar-saved-searches-package.png)
 
@@ -30,7 +30,7 @@ An icon represents each Saved Search that the ProcessMaker user selects when [cr
 
 Saved Searches have the following attributes regarding configuring and sharing Saved Searches:
 
-* **Configure your Saved Searches:** You [create](create-and-share-a-saved-search.md) and [configure](view-saved-searches-that-are-shared-with-you/configure-a-saved-search.md) your own Saved Searches. Those that you share with others can only view its search results using the parameters configured in your Saved Searches.
+* **Configure your Saved Searches:** You [create](view-saved-searches-that-are-shared-with-you/create-and-share-a-saved-search.md) and [configure](view-saved-searches-that-are-shared-with-you/configure-a-saved-search.md) your own Saved Searches. Those that you share with others can only view its search results using the parameters configured in your Saved Searches.
 * **Schedule to email reports of your Saved Search results:** You may [create one or more schedules](schedule-to-email-reports-of-saved-search-results/schedule-an-interval-to-email-reports.md) to email reports for the search results for one of your own Saved Searches. Each schedule can email the report in `.CSV` or `.XLSX` format.
 * **Hide Saved Searches:** You may hide your own Saved Searches. Hiding a Saved Search only hides that Saved Search from the left sidebar of your Request- and Task-related pages. Shared recipients of that Saved Search may still use it to view search results using your Saved Search's parameters.
 * **Delete Saved Searches:** You may delete your Saved Searches. However, in doing so, they are no longer shared with those ProcessMaker users and/or groups with which you have shared them. The recipients of your shared Saved Search will no longer be able to use it to quickly view search results using your Shared Search's parameters.
@@ -44,15 +44,15 @@ Charts help visualize your Saved Search results. Though you can customize in tab
 
 Charts use the data results from the Saved Search to visualize those results in a variety of chart types and styles. Chart data may be filtered by using an optional PMQL query that further filters the data from that Saved Search to visualize minute data.
 
-![Saved Search results for Requests of the Account Opening Process showing charts](../../.gitbook/assets/request-saved-search-charts-tab-package.png)
+![Saved Search results for Requests of the &quot;All Loans&quot; Process showing charts](../../.gitbook/assets/request-type-charts-tab-saved-search-package.png)
 
 Configure the following types of Saved Search charts:
 
-* Bar \(horizontal or vertical\)
-* Line
-* Pie
-* Doughnut
-* Count
+* **Bar \(horizontal or vertical\):** Display data values in [horizontal](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#bar-chart-horizontal) or [vertical](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#bar-chart-vertical) bars.
+* **Line:** Display [data points on a line](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#line-chart) to show how that data trends.
+* **Pie:** Display [relational proportions between data](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#pie-chart).
+* **Doughnut:** Display data similarly to the pie chart style [but with the inner portion removed](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#doughnut-chart).
+* **Count:** Display a [single data metric on a canvas](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#count).
 
 See [Create Charts to Visualize Saved Search Results](create-charts-to-visualize-saved-search-results/).
 
@@ -66,7 +66,7 @@ See [Create Charts to Visualize Saved Search Results](create-charts-to-visualize
 
 {% page-ref page="schedule-to-email-reports-of-saved-search-results/" %}
 
-{% page-ref page="create-and-share-a-saved-search.md" %}
+{% page-ref page="view-saved-searches-that-are-shared-with-you/create-and-share-a-saved-search.md" %}
 
 {% page-ref page="../requests/what-is-a-request.md" %}
 

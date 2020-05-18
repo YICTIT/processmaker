@@ -39,5 +39,5 @@ Follow these steps to email a report of search results for a Saved Search:
 
 {% page-ref page="../schedule-to-email-reports-of-saved-search-results/" %}
 
-{% page-ref page="../create-and-share-a-saved-search.md" %}
+{% page-ref page="create-and-share-a-saved-search.md" %}
 

@@ -14,11 +14,11 @@ Charts use the data results from the Saved Search to visualize those results in 
 
 Customize charts to include the series and/or categories from the both PMQL query parameters and the columns configured in the detailed data view of that Saved Search. For example, if your Saved Search included a custom column called Countries to display how many Requests have started based on a Request variable value called `Countries`, that Request variable may also be used as a series or category in a chart in that Saved Search.
 
-![Saved Search results for Requests of the Account Opening Process showing charts](../../../.gitbook/assets/request-saved-search-charts-tab-package.png)
+![Saved Search results for Requests of the Account Opening Process showing charts](../../../.gitbook/assets/request-type-charts-tab-saved-search-package.png)
 
 ### See What a Data Point or Marker Represents
 
-Hover your cursor over a data point or marker to see what that data represents.
+Hover your cursor over a data point to see what that data represents.
 
 ![Hover your cursor over a data point to see what that data represents](../../../.gitbook/assets/bar-chart-vertical-stacked-example-saved-searches-package.png)
 
@@ -45,13 +45,13 @@ See the following Saved Search chart types:
 
 #### Bar Chart \(Horizontal\)
 
-The following bar chart presenting horizontally shows the number of [Requests](../../requests/what-is-a-request.md) that start for the Account Process per day of the week.
+The horizontal-style bar chart display data values in horizontal bars. The following horizontal-style bar chart shows the number of [Requests](../../requests/what-is-a-request.md) that start for the Account Process per day of the week.
 
 ![Number of Requests that start for the Account Process by day of the week](../../../.gitbook/assets/bar-chart-horizontal-example-saved-searches-package.png)
 
 #### Bar Chart \(Vertical\)
 
-The following bar chart presenting vertically shows the number of Requests by status per agency. Data points are stacked such that all Requests display on each other for each agency.
+The vertical-style bar chart display data values in vertical bars. The following vertical-style bar chart shows the number of Requests by status per agency. In this example, data points are stacked such that all Requests display on each other for each agency. Furthermore, this example displays the data value a marker represents when hovering the cursor over that marker.
 
 ![Number of Requests by status per agency](../../../.gitbook/assets/bar-chart-vertical-stacked-example-saved-searches-package.png)
 

@@ -14,7 +14,7 @@ description: >-
 To view [Saved Searches](../what-is-a-saved-search.md), the [Saved Searches package](../../../package-development-distribution/package-a-connector/saved-searches-package.md) must be installed in your ProcessMaker instance. The Saved Searches package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Saved Searches package can be installed in your ProcessMaker instance.
 {% endhint %}
 
-You can view and manage your own Saved Searches. However, you cannot manage Saved Searches which have been shared with you. You can only manage those that you have [created](../create-and-share-a-saved-search.md). When a Saved Search is shared with you, you may only use it or ignore it.
+You can view and manage your own Saved Searches. However, you cannot manage Saved Searches which have been shared with you. You can only manage those that you have [created](create-and-share-a-saved-search.md). When a Saved Search is shared with you, you may only use it or ignore it.
 
 Saved Searches are organized by type:
 
@@ -37,7 +37,7 @@ To quickly configure a specific Saved Search that you have created, follow these
 
 The **Edit Saved Searches** page displays the following information in tabular format about your Saved Searches and those which have been shared with you for that Saved Search type:
 
-* **Name:** The **Name** column displays the name of the Saved Search. The icon beside the Saved Search's name displays in the left sidebar for that Saved Search's type. For example, the icons that display in the image above display in Request-related pages. ProcessMaker users who have been shared a Saved Search click on that Saved Search's icon to view the search results of that Saved Search. The ProcessMaker user who [created the Saved Search](../create-and-share-a-saved-search.md#create-and-share-a-saved-search) selects the icon that displays for that Saved Search.
+* **Name:** The **Name** column displays the name of the Saved Search. The icon beside the Saved Search's name displays in the left sidebar for that Saved Search's type. For example, the icons that display in the image above display in Request-related pages. ProcessMaker users who have been shared a Saved Search click on that Saved Search's icon to view the search results of that Saved Search. The ProcessMaker user who [created the Saved Search](create-and-share-a-saved-search.md#create-and-share-a-saved-search) selects the icon that displays for that Saved Search.
 * **Created By:** The **Created By** column displays the ProcessMaker user's avatar who created the Saved Search. Hover your cursor over the ProcessMaker user's avatar to view that person's full name.
 * **Modified:** The **Modified** column displays the date and time the Saved Search was last modified by the ProcessMaker user that created the Saved Search. A Saved Search can only be modified by the ProcessMaker user that created it. The time zone setting to display the time is according to the ProcessMaker instance unless your [user profile's](../../profile-settings.md#change-your-profile-settings) **Time zone** setting is specified.
 * **Created:** The **Created** column displays the date and time the Saved Search was created. The time zone setting to display the time is according to the ProcessMaker instance unless your [user profile's](../../profile-settings.md#change-your-profile-settings) **Time zone** setting is specified.
@@ -82,7 +82,7 @@ If there are no Saved Searches, the following message displays: **No Data Availa
 
 {% page-ref page="../schedule-to-email-reports-of-saved-search-results/" %}
 
-{% page-ref page="../create-and-share-a-saved-search.md" %}
+{% page-ref page="create-and-share-a-saved-search.md" %}
 
 {% page-ref page="hide-or-show-a-saved-search.md" %}
 

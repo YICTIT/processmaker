@@ -20,7 +20,7 @@ Furthermore, [scheduled email reports](../schedule-to-email-reports-of-saved-sea
 Deleting a Saved Search from the **Edit Saved Searches** page cannot be undone.
 {% endhint %}
 
-You may delete a Saved Search that you [created](../create-and-share-a-saved-search.md). Delete a Saved Search regardless of whether it is [visible](hide-or-show-a-saved-search.md#show-your-hidden-saved-search) or [hidden](hide-or-show-a-saved-search.md#hide-your-own-saved-search).
+You may delete a Saved Search that you [created](create-and-share-a-saved-search.md). Delete a Saved Search regardless of whether it is [visible](hide-or-show-a-saved-search.md#show-your-hidden-saved-search) or [hidden](hide-or-show-a-saved-search.md#hide-your-own-saved-search).
 
 Follow these steps to delete one of your own Saved Searches:
 

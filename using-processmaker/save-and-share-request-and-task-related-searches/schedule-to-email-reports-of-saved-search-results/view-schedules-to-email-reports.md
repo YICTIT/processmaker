@@ -74,5 +74,5 @@ If there are no scheduled reports, the following message displays: **No Data Ava
 
 {% page-ref page="delete-a-scheduled-interval-to-email-reports.md" %}
 
-{% page-ref page="../create-and-share-a-saved-search.md" %}
+{% page-ref page="../view-saved-searches-that-are-shared-with-you/create-and-share-a-saved-search.md" %}
 

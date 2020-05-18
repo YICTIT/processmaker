@@ -47,5 +47,5 @@ Follow these steps to delete a scheduled interval to email reports of a Saved Se
 
 {% page-ref page="edit-a-scheduled-interval-to-email-reports.md" %}
 
-{% page-ref page="../create-and-share-a-saved-search.md" %}
+{% page-ref page="../view-saved-searches-that-are-shared-with-you/create-and-share-a-saved-search.md" %}
 

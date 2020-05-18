@@ -22,7 +22,7 @@ Furthermore, your ProcessMaker user account or group membership must have the **
 
 Use the Saved Searches package to save and share search parameters associated with [Requests](../../using-processmaker/requests/what-is-a-request.md), [Tasks](../../using-processmaker/task-management/what-is-a-task.md) and [Collections](../what-is-a-collection.md). In doing so, you manage the search parameters for your Saved Searches. You may share your own Saved Searches with other ProcessMaker [users](../../processmaker-administration/add-users/what-is-a-user.md) and/or [groups](../../processmaker-administration/assign-groups-to-users/what-is-a-group.md). Recipients of your shared Saved Searches can only use your Saved Search to view its search results, but cannot modify your Saved Searches' parameter settings you configured.
 
-See [Create and Share a Saved Search](../../using-processmaker/save-and-share-request-and-task-related-searches/create-and-share-a-saved-search.md#create-and-share-a-saved-search).
+See [Create and Share a Saved Search](../../using-processmaker/save-and-share-request-and-task-related-searches/view-saved-searches-that-are-shared-with-you/create-and-share-a-saved-search.md#create-and-share-a-saved-search).
 
 ## Related Topics
 

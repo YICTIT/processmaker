@@ -14,7 +14,7 @@ description: >-
 To hide or show [Saved Searches](../what-is-a-saved-search.md), the [Saved Searches package](../../../package-development-distribution/package-a-connector/saved-searches-package.md) must be installed in your ProcessMaker instance. The Saved Searches package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Saved Searches package can be installed in your ProcessMaker instance.
 {% endhint %}
 
-You may hide or show your own Saved Searches. However, you cannot hide or show Saved Searches which have been shared with you. You can only control visibility of Saved Searches that you have [created](../create-and-share-a-saved-search.md).
+You may hide or show your own Saved Searches. However, you cannot hide or show Saved Searches which have been shared with you. You can only control visibility of Saved Searches that you have [created](create-and-share-a-saved-search.md).
 
 Hiding a Saved Search only hides it from the left sidebar for its specific Saved Search type. For example, toggling visibility of a Request-related Saved Search only affects the left sidebar on Request-related pages. Shared recipients of a Saved Search may still use that Saved Search to view search results.
 

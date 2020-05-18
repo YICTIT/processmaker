@@ -41,5 +41,5 @@ If there are no search results, the following message displays: **No Data Availa
 
 {% page-ref page="../schedule-to-email-reports-of-saved-search-results/" %}
 
-{% page-ref page="../create-and-share-a-saved-search.md" %}
+{% page-ref page="create-and-share-a-saved-search.md" %}
 
