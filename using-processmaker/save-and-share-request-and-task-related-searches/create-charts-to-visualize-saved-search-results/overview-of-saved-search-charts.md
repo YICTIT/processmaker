@@ -29,7 +29,7 @@ Visualized data in a Saved Search chart contains the following components:
 * **Data marker:** A data marker represents one visualization in the chart data. In the example chart above, two data markers are visible. Data markers can be stacked: data markers overlay on one another in the x- and y-axis. The data markers in the example chart above are not stacked.
 * **Data point:** A data point represents a point in a line chart's data that shows trending. Data points only apply to line charts. Each visible data marker in the example chart above has four \(4\) data points.
 * **Legend:** The chart legend identifies how the data markers in the chart are represented. Chart legends may be displayed on the top, bottom, left, or right of the visualized data.
-* **Key:** A key is an item in the legend. Keys that have strike-through text style are hidden in the visualized chart data. In the example chart above, there are three keys in the chart legend. The data marker for the Error-status Requests is hidden.
+* **Key:** A key is an item in the chart legend. Each key in the chart legend represents a data marker in the visualized chart data. Keys that have strike-through text style are hidden in the visualized chart data. In the example chart above, there are three keys in the chart legend. The data marker for the Error-status Requests is hidden.
 * **Series:** The chart series dictates the content of the chart as indicated in the chart legend.
 * **Category:** A chart category indicates the units of measure in a chart's axis. Chart categories are optional in the chart presentation. In the example chart above, the chart category is the following:
   * **X-axis:** days of the week in which Requests started
@@ -46,9 +46,7 @@ Hover your cursor over a data point to see what that data represents.
 
 Filter data that displays in a chart by hiding attributes of that data via the chart's legend. Consider the following chart that shows the number of Requests by status type per day of the week to visualize how many Requests exist for the "Account Process".
 
-Understand the following terminology how to 
-
-This chart contains three keys in the legend that displays at the top of the chart. Each key in the legend represents a data marker in the visualized chart data.
+This chart contains three keys in the legend that displays at the top of the chart. Each key in the chart legend represents a data marker in the visualized chart data.
 
 ![Saved Search chart showing all key attributes](../../../.gitbook/assets/line-chart-request-all-attributes-example-saved-searches-package.png)
 
