@@ -44,7 +44,7 @@ See the following Saved Search chart types:
 
 #### Bar Chart \(Horizontal\)
 
-The following bar chart presenting horizontally shows the number of Requests that start for the Account Process per day of the week.
+The following bar chart presenting horizontally shows the number of [Requests](../../requests/what-is-a-request.md) that start for the Account Process per day of the week.
 
 ![Number of Requests that start for the Account Process by day of the week](../../../.gitbook/assets/bar-chart-horizontal-example-saved-searches-package.png)
 
@@ -67,6 +67,12 @@ The following line chart shows the number of Requests by status type per day of 
 #### Doughnut Chart
 
 
+
+#### Count
+
+The following count chart shows how many records are in the "Department" [ProcessMaker Collection](../../../collections/what-is-a-collection.md).
+
+![Number of records in the &quot;Department&quot; ProcessMaker Collection.](../../../.gitbook/assets/count-chart-example-saved-searches-package.png)
 
 ## Related Topics
 
