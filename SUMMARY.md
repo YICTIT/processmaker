@@ -67,6 +67,7 @@
     * [Delete a Scheduled Interval to Email Reports](using-processmaker/save-and-share-request-and-task-related-searches/schedule-to-email-reports-of-saved-search-results/delete-a-scheduled-interval-to-email-reports.md)
   * [Create Charts to Visualize Saved Search Results](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/README.md)
     * [Overview of Saved Search Charts](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md)
+    * [View Charts for a Saved Search](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/view-charts-for-a-saved-search.md)
 * [Notifications](using-processmaker/notifications.md)
 * [Control How Tabular Information Displays](using-processmaker/control-how-requests-display-in-a-tab.md)
 

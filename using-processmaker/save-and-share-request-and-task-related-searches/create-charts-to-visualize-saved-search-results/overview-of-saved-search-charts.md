@@ -41,6 +41,7 @@ See the following Saved Search chart types:
 * [Line chart](overview-of-saved-search-charts.md#line-chart)
 * [Pie chart](overview-of-saved-search-charts.md#pie-chart)
 * [Doughnut chart](overview-of-saved-search-charts.md#doughnut-chart)
+* [Count](overview-of-saved-search-charts.md#count)
 
 #### Bar Chart \(Horizontal\)
 
@@ -62,11 +63,15 @@ The following line chart shows the number of Requests by status type per day of 
 
 #### Pie Chart
 
+The following pie chart shows the number of Requests by status type for the Loan Process.
 
+![Number of Requests by status type for the Loan Process](../../../.gitbook/assets/pie-chart-example-saved-searches-package.png)
 
 #### Doughnut Chart
 
+The following doughnut chart shows the number of Requests by status type for the Loan Process.
 
+![Number of Requests by status type for the Loan Process](../../../.gitbook/assets/doughnut-chart-example-saved-searches-package.png)
 
 #### Count
 

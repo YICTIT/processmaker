@@ -52,6 +52,7 @@ Configure the following types of Saved Search charts:
 * Line
 * Pie
 * Doughnut
+* Count
 
 See [Create Charts to Visualize Saved Search Results](create-charts-to-visualize-saved-search-results/).
 

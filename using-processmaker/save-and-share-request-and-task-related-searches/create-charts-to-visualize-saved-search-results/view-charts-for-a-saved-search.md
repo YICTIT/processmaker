@@ -1,0 +1,19 @@
+---
+description: View all the charts created for a Saved Search.
+---
+
+# View Charts for a Saved Search
+
+## View the Charts for a Saved Search
+
+{% hint style="info" %}
+### ProcessMaker Package Required
+
+To view the charts created for a [Saved Search's](../what-is-a-saved-search.md) results, the [Saved Searches package](../../../package-development-distribution/package-a-connector/saved-searches-package.md) must be installed in your ProcessMaker instance. The Saved Searches package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Saved Searches package can be installed in your ProcessMaker instance.
+{% endhint %}
+
+Follow these steps to view the charts for a Saved Search:
+
+1. [View the search results for a Saved Search](../view-saved-searches-that-are-shared-with-you/view-search-results-for-a-saved-search.md) in which to view its charts.
+2. Click the **Charts** tab.
+
