@@ -40,7 +40,7 @@ Saved Searches have the following attributes regarding configuring and sharing S
 
 ### Create Charts to Visualize Your Saved Search Results
 
-Charts help visualize your Saved Search results. Though you can customize in tabular format the data details for your Saved Searches, nothing distills that data like a customized chart. Create and configure charts to visualize Saved Search results after selecting a Saved Search. Create customized charts regardless of whether you created the Saved Search or if it was shared with you.
+Charts help visualize your Saved Search results. Though you can customize in tabular format the data details for your Saved Searches, nothing distills that data like a customized chart. Create and configure two-dimensional charts to visualize Saved Search results after selecting a Saved Search. You may create customized charts regardless of whether you created the Saved Search or if it was shared with you.
 
 Charts use the data results from the Saved Search to visualize those results in a variety of chart types and styles. Chart data may be filtered by using an optional PMQL query that further filters the data from that Saved Search to visualize minute data.
 
