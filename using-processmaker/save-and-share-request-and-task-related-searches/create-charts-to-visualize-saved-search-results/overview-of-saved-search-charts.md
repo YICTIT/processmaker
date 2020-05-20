@@ -16,15 +16,15 @@ Customize charts to include the series and/or categories from the both PMQL quer
 
 ![Saved Search results for Requests of the Account Opening Process showing charts](../../../.gitbook/assets/request-type-charts-tab-saved-search-package.png)
 
-### Saved Search Chart Components
+### Saved Search Chart Terminology
 
-Understand how ProcessMaker references components in a Saved Search chart. Note that Saved Search charts are visualizations of Saved Search results. The data and how that data presents in a Saved Search chart derive from the columns presented in the [data details view](../view-saved-searches-that-are-shared-with-you/view-search-results-for-a-saved-search.md) of that Saved Search.
+Understand how ProcessMaker defines components in a Saved Search chart. Note that Saved Search charts are visualizations of Saved Search results. The data and how that data presents in a Saved Search chart derive from the columns presented in the [data details view](../view-saved-searches-that-are-shared-with-you/view-search-results-for-a-saved-search.md) of that Saved Search.
 
 See the following example chart as reference.
 
 ![Example chart from which to reference Saved Search chart components](../../../.gitbook/assets/line-chart-request-hide-attribute-example-saved-searches-package.png)
 
-Visualized data in a Saved Search chart contains the following components:
+ProcessMaker defines the following components of a Saved Search chart, some of which are referenced when configuring a Saved Search chart: 
 
 * **Data marker:** A data marker represents one visualization in the chart data. In the example chart above, two data markers are visible. Data markers can be stacked: data markers overlay on one another in the x- and y-axis. The data markers in the example chart above are not stacked.
 * **Data point:** A data point represents a point in a line chart's data that shows trending. Data points only apply to line charts. Each visible data marker in the example chart above has four \(4\) data points.
