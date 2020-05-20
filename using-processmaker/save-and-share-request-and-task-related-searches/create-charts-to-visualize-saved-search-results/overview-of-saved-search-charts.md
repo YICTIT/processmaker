@@ -43,11 +43,11 @@ See the following example chart as reference for the following terms ProcessMake
 * [Metric](overview-of-saved-search-charts.md#metric)
 * [Series](overview-of-saved-search-charts.md#series)
 
-![Example chart from which to reference Saved Search chart component definitions](../../../.gitbook/assets/line-chart-request-hide-attribute-example-saved-searches-package.png)
+![Example chart from which to reference Saved Search chart component definitions](../../../.gitbook/assets/chart-call-outs-saved-search-package.png)
 
 #### Category
 
-A chart category optionally aggregates the chart [series](overview-of-saved-search-charts.md#series) by an additional measurement. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the chart category aggregates started Requests by status type.
+A chart category optionally aggregates the chart [series](overview-of-saved-search-charts.md#series) by an additional measurement as indicated by the chart [legend](overview-of-saved-search-charts.md#legend). The chart category represents the column from the Saved Search tabular data. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the chart category additionally aggregates by Request status.
 
 #### Data Marker
 
@@ -67,11 +67,11 @@ The chart legend identifies how the [data markers](overview-of-saved-search-char
 
 #### Metric
 
-A chart metric represents the column from the Saved Search data that chart is based to visualize and how to aggregate that data. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the chart metric is the Request ID as displayed in the **\#** column of Saved Search detailed data view, and then aggregated by count.
+The chart metric indicates the content of the chart as configured from the Saved Search tabular data as well as how to aggregate that data. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the chart metric is the Request ID as displayed in the **\#** column of Saved Search detailed data view, and then aggregated by the sum of all Requests by status.
 
 #### Series
 
-The chart series dictates the content and aggregation of the chart data. The series aggregates the chart content by the units of measurement in the X-axis. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the series is "how many Requests start by day of the week."
+The chart series indicates the grouping of the chart data as configured from the Saved Search tabular data. The series groups the chart content by the units of measurement in the X-axis. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the series is "how many Requests start by day of the week."
 
 ### See What a Data Point or Marker Represents
 
