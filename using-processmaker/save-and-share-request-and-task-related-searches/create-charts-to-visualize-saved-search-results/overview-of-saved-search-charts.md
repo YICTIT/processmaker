@@ -47,10 +47,7 @@ See the following example chart as reference for the following terms ProcessMake
 
 #### Category
 
-A chart category indicates the units of measure in a chart's axis. Chart categories are optional in the chart presentation. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the chart category is the following:
-
-* **X-axis:** days of the week in which Requests started
-* **Y-axis:** number of started Requests
+A chart category optionally aggregates the chart [series](overview-of-saved-search-charts.md#series) by an additional measurement. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the chart category aggregates started Requests by status type.
 
 #### Data Marker
 
@@ -74,7 +71,7 @@ A chart metric represents the column from the Saved Search data that chart is ba
 
 #### Series
 
-The chart series dictates the content of the chart as indicated in the [chart legend](overview-of-saved-search-charts.md#legend-chart-legend). In the [example chart above](overview-of-saved-search-charts.md#example-chart), the series is the Request status.
+The chart series dictates the content and aggregation of the chart data. The series aggregates the chart content by the units of measurement in the X-axis. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the series is "how many Requests start by day of the week."
 
 ### See What a Data Point or Marker Represents
 
