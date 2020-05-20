@@ -33,11 +33,7 @@ See the following sections:
 
 #### Example Chart
 
-See the following example chart as reference.
-
-![Example chart from which to reference Saved Search chart components](../../../.gitbook/assets/line-chart-request-hide-attribute-example-saved-searches-package.png)
-
-ProcessMaker defines the following components of a Saved Search chart, some of which are referenced when configuring a Saved Search chart:
+See the following example chart as reference for the following terms ProcessMaker uses in Saved Search charts:
 
 * [Category](overview-of-saved-search-charts.md#category)
 * [Data Marker](overview-of-saved-search-charts.md#data-marker)
@@ -46,6 +42,8 @@ ProcessMaker defines the following components of a Saved Search chart, some of w
 * [Legend](overview-of-saved-search-charts.md#legend)
 * [Metric](overview-of-saved-search-charts.md#metric)
 * [Series](overview-of-saved-search-charts.md#series)
+
+![Example chart from which to reference Saved Search chart component definitions](../../../.gitbook/assets/line-chart-request-hide-attribute-example-saved-searches-package.png)
 
 #### Category
 
