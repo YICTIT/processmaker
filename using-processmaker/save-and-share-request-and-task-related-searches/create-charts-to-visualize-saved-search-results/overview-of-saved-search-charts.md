@@ -8,11 +8,13 @@ description: >-
 
 ## Overview
 
-Charts help visualize your Saved Search results. Though you can customize in tabular format the data details for your Saved Searches, nothing distills that data like a customized chart. Create and configure two-dimensional charts to visualize Saved Search results after selecting a Saved Search. You may create customized charts regardless of whether you created the Saved Search or if it was shared with you.
+Charts help visualize your Saved Search results. Though you can [customize in tabular format the data details for your Saved Searches](../view-saved-searches-that-are-shared-with-you/configure-a-saved-search.md#configure-how-saved-search-results-display-in-tabular-format), nothing distills that data like a customized chart. Create and configure two-dimensional charts to visualize Saved Search results after selecting a Saved Search. You may create customized charts regardless of whether you created the Saved Search or if it was shared with you.
 
 Charts use the data results from the Saved Search to visualize those results in a variety of chart types and styles. Chart data may be filtered by using an optional [ProcessMaker Query Language \(PMQL\)](../../search-processmaker-data-using-pmql.md) query that further filters the data from that Saved Search to visualize minute data.
 
 Customize charts to include the series and/or categories from the both PMQL query parameters and the columns configured in the detailed data view of that Saved Search. For example, if your Saved Search included a custom column called **Countries** to display how many Requests have started based on a Request variable value called `Countries`, that Request variable may also be used as a series or category in a chart in that Saved Search.
+
+The **Charts** tab displays charts created for a Saved Search.
 
 ![Saved Search results for Requests of the Account Opening Process showing charts](../../../.gitbook/assets/request-type-charts-tab-saved-search-package.png)
 
@@ -47,7 +49,7 @@ See the following example chart as reference for the following terms ProcessMake
 
 #### Category
 
-A chart category optionally aggregates the chart [series](overview-of-saved-search-charts.md#series) by an additional measurement as indicated by the chart [legend](overview-of-saved-search-charts.md#legend). The chart category represents the column from the Saved Search tabular data. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the chart category additionally aggregates by Request status.
+A chart category optionally aggregates the chart [series](overview-of-saved-search-charts.md#series) by an additional measurement as indicated by the chart [legend](overview-of-saved-search-charts.md#legend). The chart category represents the column from the Saved Search tabular data for applicable chart types. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the chart category additionally aggregates by Request status.
 
 #### Data Marker
 
@@ -67,11 +69,11 @@ The chart legend identifies how the [data markers](overview-of-saved-search-char
 
 #### Metric
 
-The chart metric indicates the content of the chart as configured from the Saved Search tabular data as well as how to aggregate that data. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the chart metric is the Request ID as displayed in the **\#** column of Saved Search detailed data view, and then aggregated by the sum of all Requests by status.
+The chart metric indicates the chart contents from the Saved Search tabular-formatted results to aggregate as well as how to aggregate that data. Aggregation is represented by the Y-axis for applicable chart types. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the chart metric is the Request ID as displayed in the **\#** column of Saved Search detailed data view, and then aggregated by the sum of all Requests by status.
 
 #### Series
 
-The chart series indicates the grouping of the chart data as configured from the Saved Search tabular data. The series groups the chart content by the units of measurement in the X-axis. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the series is "how many Requests start by day of the week."
+The chart series indicates how to group the Saved Search tabular-formatted results. The series groups the chart content by the units of measurement in the X-axis for applicable chart types. In the [example chart above](overview-of-saved-search-charts.md#example-chart), the series is "how many Requests start by day of the week."
 
 ### See What a Data Point or Marker Represents
 
@@ -104,37 +106,37 @@ See the following Saved Search chart types:
 
 #### Bar Chart \(Horizontal\)
 
-The horizontal-style bar chart display data values in horizontal bars. The following horizontal-style bar chart shows the number of [Requests](../../requests/what-is-a-request.md) that start for the Account Process per day of the week.
+The horizontal-style bar chart visualizes Saved Search results in horizontal bars. The following horizontal-style bar chart shows the number of [Requests](../../requests/what-is-a-request.md) that start for the Account Process per day of the week.
 
 ![Number of Requests that start for the Account Process by day of the week](../../../.gitbook/assets/bar-chart-horizontal-example-saved-searches-package.png)
 
 #### Bar Chart \(Vertical\)
 
-The vertical-style bar chart display data values in vertical bars. The following vertical-style bar chart shows the number of Requests by status per agency. In this example, data points are stacked such that all Requests display on each other for each agency. Furthermore, this example displays the data value a marker represents when hovering the cursor over that marker.
+The vertical-style bar chart visualizes Saved Search results in vertical bars. The following vertical-style bar chart shows the number of Requests by status per agency. In this example, data points are stacked such that all Requests display on each other for each agency. Furthermore, this example displays the data value a marker represents when hovering the cursor over that marker.
 
 ![Number of Requests by status per agency](../../../.gitbook/assets/bar-chart-vertical-stacked-example-saved-searches-package.png)
 
 #### Line Chart
 
-The following line chart shows the number of Requests by status type per day of the week.
+The line chart visualizes Saved Search results as data points on a line to show how those results trend. The following line chart shows the number of Requests by status type per day of the week.
 
 ![Number of Requests by status type per day of the week](../../../.gitbook/assets/line-chart-request-all-attributes-example-saved-searches-package.png)
 
 #### Pie Chart
 
-The following pie chart shows the number of Requests by status type for the Loan Process.
+The pie chart visualizes Saved Search results as relational proportions between data. The following pie chart shows the number of Requests by status type for the Loan Process.
 
 ![Number of Requests by status type for the Loan Process](../../../.gitbook/assets/pie-chart-example-saved-searches-package.png)
 
 #### Doughnut Chart
 
-The following doughnut chart shows the number of Requests by status type for the Loan Process.
+The doughnut chart visualizes Saved Search results as relational proportions between data similarly to the [pie chart type](overview-of-saved-search-charts.md#pie-chart) but with the inner portion removed. The following doughnut chart shows the number of Requests by status type for the Loan Process.
 
 ![Number of Requests by status type for the Loan Process](../../../.gitbook/assets/doughnut-chart-example-saved-searches-package.png)
 
 #### Count
 
-The following count chart shows how many records are in the "Department" [ProcessMaker Collection](../../../collections/what-is-a-collection.md).
+The count chart displays a single data metric on a canvas. The following count chart shows how many records are in the "Department" [ProcessMaker Collection](../../../collections/what-is-a-collection.md).
 
 ![Number of records in the &quot;Department&quot; ProcessMaker Collection.](../../../.gitbook/assets/count-chart-example-saved-searches-package.png)
 

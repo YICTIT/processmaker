@@ -40,18 +40,20 @@ Saved Searches have the following attributes regarding configuring and sharing S
 
 ### Create Charts to Visualize Your Saved Search Results
 
-Charts help visualize your Saved Search results. Though you can customize in tabular format the data details for your Saved Searches, nothing distills that data like a customized chart. Create and configure two-dimensional charts to visualize Saved Search results after selecting a Saved Search. You may create customized charts regardless of whether you created the Saved Search or if it was shared with you.
+Charts help visualize your Saved Search results. Though you can [customize in tabular format the data details for your Saved Searches](view-saved-searches-that-are-shared-with-you/configure-a-saved-search.md#configure-how-saved-search-results-display-in-tabular-format), nothing distills that data like a customized chart. Create and configure two-dimensional charts to visualize Saved Search results after selecting a Saved Search. You may create customized charts regardless of whether you created the Saved Search or if it was shared with you.
 
 Charts use the data results from the Saved Search to visualize those results in a variety of chart types and styles. Chart data may be filtered by using an optional PMQL query that further filters the data from that Saved Search to visualize minute data.
+
+The **Charts** tab displays charts created for a Saved Search.
 
 ![Saved Search results for Requests of the &quot;All Loans&quot; Process showing charts](../../.gitbook/assets/request-type-charts-tab-saved-search-package.png)
 
 Configure the following types of Saved Search charts:
 
-* **Bar \(horizontal or vertical\):** Display data values in [horizontal](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#bar-chart-horizontal) or [vertical](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#bar-chart-vertical) bars.
-* **Line:** Display [data points on a line](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#line-chart) to show how that data trends.
-* **Pie:** Display [relational proportions between data](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#pie-chart).
-* **Doughnut:** Display data similarly to the pie chart style [but with the inner portion removed](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#doughnut-chart).
+* **Bar \(horizontal or vertical\):** Visualize Saved Search results in [horizontal](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#bar-chart-horizontal) or [vertical](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#bar-chart-vertical) bars.
+* **Line:** Visualize Saved Search results as [data points on a line](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#line-chart) to show how those results trend.
+* **Pie:** Visualize Saved Search results as [relational proportions between data](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#pie-chart).
+* **Doughnut:** Visualize Saved Search results similarly to the pie chart style [but with the inner portion removed](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#doughnut-chart).
 * **Count:** Display a [single data metric on a canvas](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#count).
 
 See [Create Charts to Visualize Saved Search Results](create-charts-to-visualize-saved-search-results/).

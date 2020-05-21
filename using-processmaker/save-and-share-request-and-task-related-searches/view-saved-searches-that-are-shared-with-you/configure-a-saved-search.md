@@ -45,23 +45,25 @@ Follow these steps to configure basic settings for your Saved Search:
      1. Click the **Upload Custom Icon** button to the right of the **Icon** drop-down menu. The file browser window displays.
      2. Locate the icon on your local computer or network to represent the Saved Search. The icon must not be larger than 2 kilobytes large or the following message displays below the **Choose File** button: **The file is too large. File size must be less than 2KB when base64 encoded.**.
 
-   * **PMQL:** In the **PMQL** field, edit the ProcessMaker Query Language \(PMQL\) parameters if necessary. See the following topics for information how to use PMQL for Requests and Tasks:
+   * **PMQL:** In the **PMQL** field, edit the ProcessMaker Query Language \(PMQL\) parameters if necessary. See the following topics for information how to use PMQL for Requests, Tasks, and ProcessMaker Collections:
      * [PMQL Syntax for Requests](../../search-processmaker-data-using-pmql.md#pmql-syntax-for-requests)
      * [PMQL Syntax for Tasks](../../search-processmaker-data-using-pmql.md#pmql-syntax-for-tasks)
      * [PMQL Syntax for ProcessMaker Collections](../../search-processmaker-data-using-pmql.md#pmql-syntax-for-processmaker-collections)
 3. Click **Save**.
 
-### Configure How Saved Search Information Displays
+### Configure How Saved Search Results Display in Tabular Format
 
 Follow these steps to configure how information displays for your Saved Search:
 
 1. [Select the Saved Search to configure](configure-a-saved-search.md#select-the-saved-search-to-configure). The **Configuration** tab displays.
-2. Click the **Columns** tab. Use the **Columns** tab to customize a table from which to display search results for this Saved Search. The **Active Columns** column displays the currently selected columns that display information in the Saved Search's search results. The **Available Columns** column displays optional informational components to display in the Saved Search's search results. These available options are based on ProcessMaker's analysis of completed Requests for the Saved Search's selected Process.  
+2. Click the **Columns** tab. Use the **Columns** tab to customize how the Saved Search results display in tabular format from the **Data** tab. The **Active Columns** column displays the currently selected or default columns to present the Saved Search's search results in tabular format. The **Available Columns** column displays optional informational components to display the Saved Search's search results. These available options are based on ProcessMaker's analysis of the Saved Search results.  
    ![](../../../.gitbook/assets/columns-tab-saved-search-package.png) 
 
-   The informational components in the **Active Columns** column display in the order that these informational components will display in search results. Informational components at the top of the **Active Columns** column display left-most in the column order; components at the bottom of the **Active Columns** column display right-most in the column order.
+   Note the following when configuring how Saved Search results display in tabular format:
 
-   It may be helpful to know how ProcessMaker analyzed completed Requests associated with the Process selected in your Saved Search. To derive that Request information, view the [**Data** tab in the summary for a completed Request](../../requests/request-details/summary-for-completed-requests.md#editable-request-data) to view the data from a completed Request. The key names \(represented in red-colored text\) represent Request data. Note that your ProcessMaker user account or group membership must have the [Requests: Edit Request Data](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#requests) permission. Ask your ProcessMaker Administrator if you do not see the **Data** tab in completed Requests.
+   * The informational components in the **Active Columns** column display in the order that these informational components display in tabular format. Informational components at the top of the **Active Columns** column display left-most in the column order; components at the bottom of the **Active Columns** column display right-most in the column order.
+   * It may be helpful to understand how ProcessMaker analyzes completed Request data for Request-type Saved Searches. To derive that Request information, view the [**Data** tab in the summary for a completed Request](../../requests/request-details/summary-for-completed-requests.md#editable-request-data) to view the data from a completed Request. The key names \(represented in red-colored text\) represent Request data. Note that your ProcessMaker user account or group membership must have the [Requests: Edit Request Data](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#requests) permission. Ask your ProcessMaker Administrator if you do not see the **Data** tab in completed Request summaries.
+   * The columns as configured in the **Active Columns** column determine how Saved Search results can be [visualized in charts](../create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md): these columns are options when configuring the chart [series](../create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#series), [category](../create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#category), and [metric](../create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#metric) settings for a chart. Active columns in a Saved Search's results that represent dates, numbers, and/or unique text results are recommended as settings when configuring a Saved Search chart.
 
 3. Follow these guidelines to select which column\(s\) display information in the Saved Search results:
 
