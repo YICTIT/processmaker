@@ -112,7 +112,7 @@ The horizontal-style bar chart visualizes Saved Search results in horizontal bar
 
 #### Bar Chart \(Vertical\)
 
-The vertical-style bar chart visualizes Saved Search results in vertical bars. The following vertical-style bar chart shows the number of Requests by status per agency. In this example, data points are stacked such that all Requests display on each other for each agency. Furthermore, this example displays the data value a marker represents when hovering the cursor over that marker.
+The vertical-style bar chart visualizes Saved Search results in vertical bars. The following vertical-style bar chart shows the number of Requests by status per agency. In this example, data markers are stacked: data markers overlay on one another in the x- and y-axis such that all Request status types display on each other for each agency. Furthermore, this example displays the data marker represents when hovering the cursor over that marker.
 
 ![Number of Requests by status per agency](../../../.gitbook/assets/bar-chart-vertical-stacked-example-saved-searches-package.png)
 

@@ -34,7 +34,19 @@ Follow these steps to create a chart for a type of Saved Search:
 6. Click the **Source** tab to configure from which Saved Search's results to visualize in the chart. ![](../../../.gitbook/assets/source-tab-create-chart-screen-saved-searches-package.png) 
 7. From the **Series** setting, select how to group the chart data. The [series](overview-of-saved-search-charts.md#series) groups the chart content by the units of measurement in the X-axis for applicable chart types. See [chart example that references the series grouping](overview-of-saved-search-charts.md#example-chart). The **Series** setting does not apply to count charts. Options that display in the **Series** drop-down menu derive from the columns configured from the Saved Search tabular data as displayed from the **Data** tab of this Saved Search. The default configurable columns vary for each type of Saved Search. The **Recommended** indicator for Saved Search results represent dates, numbers, and/or unique text results and are recommended when configuring the chart series. This is a required setting for applicable charts.
 8. From the **Category** setting, optionally select a secondary measurement by which to aggregate the chart series. See [chart example that references the category measurement](overview-of-saved-search-charts.md#example-chart). The **Category** setting does not apply to count charts. Options and their recommendations that display in the **Category** setting are the same as those in the **Series** setting.
-9. From the **Metric** setting, select the chart contents from the Saved Search tabular-formatted results to aggregate as well as how to aggregate that data. The **Metric** setting options are numerically-based Saved Search results such as **\#** that represents the ID for the Request, Task, or ProcessMaker Collection record associated with that Saved Search. See [chart example that references how that chart data is aggregated](overview-of-saved-search-charts.md#example-chart). This is a required setting.
+9. From the **Metric** setting, select the chart contents from the Saved Search tabular-formatted results to aggregate as well as how to aggregate that data. The **Metric** setting options are numerically-based Saved Search results such as **\#** that represents the ID for the Request, Task, or ProcessMaker Collection record associated with that Saved Search. See [chart example that references how that chart data is aggregated](overview-of-saved-search-charts.md#example-chart).
+
+   Select from the following options how to aggregate the selected chart metric:
+
+   * **Average:** 
+   * **Count:** 
+   * **Minimum:** 
+   * **Maximum:** 
+   * **Median:** 
+   * **Sum:** This is the default option.
+
+   This is a required setting.
+
 10. In the **Query** setting, optionally enter a ProcessMaker Query Language \(PMQL\) query from which to further filter the Saved Search's results. See the following topics for information how to use PMQL for Requests, Tasks, and ProcessMaker Collections:
     * [PMQL Syntax for Requests](../../search-processmaker-data-using-pmql.md#pmql-syntax-for-requests)
     * [PMQL Syntax for Tasks](../../search-processmaker-data-using-pmql.md#pmql-syntax-for-tasks)
@@ -44,11 +56,21 @@ Follow these steps to create a chart for a type of Saved Search:
     **Display tab settings for the count chart type**  
     ![](../../../.gitbook/assets/display-tab-count-create-chart-screen-saved-searches-package.png) 
 
-    1. 2. 
+    1. From the **Background Color** setting, select a color as the background for the count chart canvas.
+    2. From the **Icon** setting, select an icon to display beside to the left of the count chart metric. The **Line Chart** icon is the default icon.
+    3. In the **Label** setting, optionally enter a label to describe the count chart metric instead of the metric's default label.
+
     **Display tab settings for all chart types except the count chart**  
     ![](../../../.gitbook/assets/display-tab-create-chart-screen-saved-searches-package.png) 
 
-    1. 
+    1. From the **Color Scheme** setting, select the color palette from which to display the chart.
+    2. Enable the **Stacked** toggle key to stack the chart's data markers: overlay the data markers one another in the x- and y-axis. See [this chart as an example of stacked data markers](overview-of-saved-search-charts.md#bar-chart-vertical).
+    3. From the **Legend** setting, select where to place the legend in respect to the chart from the following options:
+       * **None:** The chart legend does not display.
+       * **Top:** The legend displays above the chart. This is the default option.
+       * **Bottom:** The legend displays below the chart.
+       * **Left:** The legend displays to the left of the chart.
+       * **Right:** The legend displays to the right of the chart.
 
 12. Click **Save**.
 
