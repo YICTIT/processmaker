@@ -17,7 +17,7 @@ To create a chart for a [Saved Search's](../what-is-a-saved-search.md) results, 
 Follow these steps to create a chart for a type of Saved Search:
 
 1. [View the search results for a Saved Search](../view-saved-searches-that-are-shared-with-you/view-search-results-for-a-saved-search.md) in which to create a chart. The **Data** tab displays the data details for that Saved Search.
-2. Click the **Charts** tab. The **Charts** tab displays all charts already created for this Saved Search.
+2. Click the **Charts** tab. The **Charts** tab displays all charts created for this Saved Search.
 3. Click the **+Chart** button. The **Create Chart** screen displays the **General** tab. ![](../../../.gitbook/assets/general-tab-create-chart-screen-saved-searches-package.png) 
 4. In the **Name** setting, enter the name of the chart. This is a required setting.
 5. From the **Chart Type** group, select one of the following chart types to visualize the results of this Saved Search:
@@ -38,12 +38,12 @@ Follow these steps to create a chart for a type of Saved Search:
 
    Select from the following options how to aggregate the selected chart metric:
 
-   * **Average:** 
-   * **Count:** 
-   * **Minimum:** 
-   * **Maximum:** 
-   * **Median:** 
-   * **Sum:** This is the default option.
+   * **Average:** The average is the arithmetic mean calculated by adding a group of numbers or values, and then dividing by the count of those items. This aggregation method does not work well with Request, Task, or ProcessMaker Collection IDs.
+   * **Count:** The count is the number of items that the Saved Search chart visualizes.
+   * **Minimum:** The chart visualizes the minimum number or value within the Saved Search results.
+   * **Maximum:** The chart visualizes the maximum number or value within the Saved Search results.
+   * **Median:** The median is the arithmetic median or middle value of a group of numbers/values that is calculated by determining the lowest number/value and the highest number/value, then returning the middle value. This aggregation method does not work well with Request, Task, or ProcessMaker Collection IDs.
+   * **Sum:** The sum is the arithmetic addition of the items that the Saved Search chart visualizes. This aggregation method does not work well with Request, Task, or ProcessMaker Collection IDs. This is the default option.
 
    This is a required setting.
 
