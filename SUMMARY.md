@@ -69,7 +69,7 @@
     * [Overview of Saved Search Charts](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md)
     * [View Charts for a Saved Search](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/view-charts-for-a-saved-search.md)
     * [Create a Saved Search Chart](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/create-a-saved-search-chart.md)
-    * [Configure a Saved Search Chart](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/configure-a-saved-search-chart.md)
+    * [Edit a Saved Search Chart](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/configure-a-saved-search-chart.md)
     * [Arrange Saved Search Charts](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/arrange-saved-search-charts.md)
     * [Copy a Saved Search Chart](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/copy-a-saved-search-chart.md)
     * [Delete a Saved Search Chart](using-processmaker/save-and-share-request-and-task-related-searches/create-charts-to-visualize-saved-search-results/delete-a-saved-search-chart.md)
