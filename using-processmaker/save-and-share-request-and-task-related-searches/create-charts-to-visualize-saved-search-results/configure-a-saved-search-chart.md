@@ -66,7 +66,7 @@ Follow these steps to edit a Saved Search chart:
         * **Bottom:** The legend displays below the chart.
         * **Left:** The legend displays to the left of the chart.
         * **Right:** The legend displays to the right of the chart.
-5. Click **Save**.
+5. Click **Save**. If a required setting does not contain a value or selection, the following message displays: **The given data was invalid.**. Otherwise, the chart and the following message display: **Successfully Created Chart**.
 
 ## Related Topics
 

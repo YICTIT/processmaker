@@ -72,7 +72,7 @@ Follow these steps to create a chart for a type of Saved Search:
        * **Left:** The legend displays to the left of the chart.
        * **Right:** The legend displays to the right of the chart.
 
-12. Click **Save**.
+12. Click **Save**. If a required setting does not contain a value or selection, the following message displays: **The given data was invalid.**. Otherwise, the chart and the following message display: **Successfully Created Chart**.
 
 ## Related Topics
 
