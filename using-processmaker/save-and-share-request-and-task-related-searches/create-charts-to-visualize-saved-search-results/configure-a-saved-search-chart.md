@@ -33,12 +33,12 @@ Follow these steps to edit a Saved Search chart:
 
      Select from the following options how to aggregate the selected chart metric:
 
-     * **Average:** The average is the arithmetic mean calculated by adding a group of numbers or values, and then dividing by the count of those items. This aggregation method does not work well with Request, Task, or ProcessMaker Collection IDs.
-     * **Count:** The count is the number of items that the Saved Search chart visualizes.
-     * **Minimum:** The chart visualizes the minimum number or value within the Saved Search results.
-     * **Maximum:** The chart visualizes the maximum number or value within the Saved Search results.
-     * **Median:** The median is the arithmetic median or middle value of a group of numbers/values that is calculated by determining the lowest number/value and the highest number/value, then returning the middle value. This aggregation method does not work well with Request, Task, or ProcessMaker Collection IDs.
-     * **Sum:** The sum is the arithmetic addition of the items that the Saved Search chart visualizes. This aggregation method does not work well with Request, Task, or ProcessMaker Collection IDs. This is the default option.
+     * **Average:** The average is the arithmetic mean calculated by adding a group of values, and then dividing by the count of those items.
+     * **Count:** The chart visualizes the number of values of the metric you select.
+     * **Minimum:** The chart visualizes the minimum value of the metric you select.
+     * **Maximum:** The chart visualizes the maximum value of the metric you select.
+     * **Median:** The median is the middle value of a group of values that is calculated by sorting each of the values of the metric you select, then visualizing the middle value.
+     * **Sum:** The sum is the arithmetic addition of each value of the metric you select. This is the default option.
 
      This is a required setting.
 
