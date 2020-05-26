@@ -20,6 +20,7 @@ See how easy it is to create a [Process](../designing-processes/viewing-processe
 
 * **Intended audience:** General and new users
 * **Viewing time:** 1 minute; no narration
+* **Tags:** [create Process](../designing-processes/viewing-processes/view-the-list-of-processes/create-a-process.md); [create workflow](../designing-processes/viewing-processes/view-the-list-of-processes/create-a-process.md); Process design; design Process; workflow design; design workflow; video
 
 {% embed url="https://vimeo.com/377838677" %}
 
@@ -35,6 +36,7 @@ See how easy it is to start a [Request](../using-processmaker/requests/what-is-a
 
 * **Intended audience:** General and new users
 * **Viewing time:** 5 minutes to watch the four-part video series; no narration
+* **Tags:** [start Request](../using-processmaker/requests/make-a-request.md); [start Process](../using-processmaker/requests/make-a-request.md#start-a-request); [start workflow](../using-processmaker/requests/make-a-request.md#start-a-request); Leave of Absence Process Request; HR; human resources; video
 
 {% embed url="https://youtu.be/V0Q6aRt4DJw" %}
 
@@ -58,6 +60,7 @@ See how easy it is to start a [Request](../using-processmaker/requests/what-is-a
 
 * **Intended audience:** General and new users
 * **Viewing time:** 3 minutes to watch the three-part video series; no narration
+* **Tags:** [start Request](../using-processmaker/requests/make-a-request.md#start-a-request); [start Process](../using-processmaker/requests/make-a-request.md#start-a-request); workflow; Expense Report Process Request; HR; human resources; financial; approval; rejection; Process approval; [PDF Generator connector](../designing-processes/process-design/model-processes-using-connectors/available-connectors-from-processmaker/pdf-generator-connector.md); video
 
 {% embed url="https://vimeo.com/386035782" %}
 
@@ -79,6 +82,7 @@ See how easy it is to start a [Request](../using-processmaker/requests/what-is-a
 
 * **Intended audience:** General and new users
 * **Viewing time:** 5 minutes to watch the five-part video series; no narration
+* **Tags:** [start Request](../using-processmaker/requests/make-a-request.md#start-a-request); [start Process](../using-processmaker/requests/make-a-request.md#start-a-request); [start workflow](../using-processmaker/requests/make-a-request.md#start-a-request); Purchase Process Request; HR; human resources; financial; approval; rejection; Process approval; video
 
 {% embed url="https://vimeo.com/386809543" %}
 
@@ -110,6 +114,7 @@ See how ProcessMaker can integrate with third-party services Amazon Textract and
 
 * **Intended audience:** Process designers and business analysts
 * **Viewing time:** 11 minutes; contains narration
+* **Tags:** [Process](../designing-processes/viewing-processes/what-is-a-process.md) design; design Process; workflow design; design workflow; form; web form; design form; form design; analyze documents; Load Application Process Request; API; application program interface; third-party API call; RPA; robotic process automation; banking; financial; loan application; demo; video
 
 {% embed url="https://vimeo.com/383574552" %}
 
@@ -129,12 +134,17 @@ See how [ProcessMaker Data Connectors](../designing-processes/data-connector-man
 
 * **Intended audience:** Process designers, business analysts, software developers, coding engineers
 * **Viewing time:** 9 minutes; contains narration
+* **Tags:** [Process](../designing-processes/viewing-processes/what-is-a-process.md) design; design Process; workflow design; design workflow; form; web form; design form; form design; [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); API; application program interface; third-party API call; [Screen Builder](../designing-processes/design-forms/screens-builder/); [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control; demo; video
 
 {% embed url="https://vimeo.com/393099655" %}
 
 ### Example 2
 
 This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens.
+
+* **Intended audience:** Process designers, business analysts, software developers, coding engineers
+* **Viewing time:** 9 minutes; contains narration
+* **Tags:** [Process](../designing-processes/viewing-processes/what-is-a-process.md) design; design Process; workflow design; design workflow; form; web form; design form; form design; [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [Screen Builder](../designing-processes/design-forms/screens-builder/); [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control; API; application program interface; third-party API call; higher education; demo; video
 
 {% embed url="https://vimeo.com/414002969" %}
 
@@ -158,6 +168,7 @@ See how to design interactive web-based forms, called [ProcessMaker Screens](../
 
 * **Intended audience:** Process designers, Web designers, graphic designers
 * **Viewing time:** 3 minutes; no narration
+* **Tags:** form; web form; design form; form design; [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [Screen Builder](../designing-processes/design-forms/screens-builder/); Leave Request form; Leave of Absence Request form; employee information; video
 
 {% embed url="https://vimeo.com/380782573" %}
 
@@ -173,6 +184,7 @@ See how to design a Leave Request form using [Screen Builder](../designing-proce
 
 * **Intended audience:** Process designers, Web designers, graphic designers
 * **Viewing time:** 3 minutes; no narration
+* **Tags:** form; web form; design form; form design; [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [Screen Builder](../designing-processes/design-forms/screens-builder/); Leave Request form; Leave of Absence Request form; employee information; video
 
 {% embed url="https://vimeo.com/380396796" %}
 
@@ -186,6 +198,7 @@ See how to populate a [Record List](../designing-processes/design-forms/screens-
 
 * **Intended audience:** Process designers, Web designers, graphic designers, software developers, coding engineers
 * **Viewing time:** 10 minutes; contains narration
+* **Tags:** form; web form; design form; form design; [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); [ProcessMaker Collection](../collections/what-is-a-collection.md); [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [Screen Builder](../designing-processes/design-forms/screens-builder/); [Record List](../designing-processes/design-forms/screens-builder/control-descriptions/record-list-control-settings.md) control; demo; video
 
 {% embed url="https://vimeo.com/392377797" %}
 
@@ -205,12 +218,17 @@ See how to populate a [Select List](../designing-processes/design-forms/screens-
 
 * **Intended audience:** Process designers, Web designers, graphic designers, software developers, coding engineers
 * **Viewing time:** 3 minutes; contains narration
+* **Tags:** form; web form; design form; form design; [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [Screen Builder](../designing-processes/design-forms/screens-builder/); [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control; API; application program interface; demo; video
 
 {% embed url="https://vimeo.com/392379310" %}
 
 ### Example 2
 
 This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens.
+
+* **Intended audience:** Process designers, Web designers, graphic designers, software developers, coding engineers
+* **Viewing time:** 9 minutes; contains narration
+* **Tags:** [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control; API; third-party API call; higher education; demo; video
 
 {% embed url="https://vimeo.com/414002969" %}
 
@@ -230,6 +248,7 @@ See how to use [Watchers](../designing-processes/design-forms/screens-builder/ma
 
 * **Intended audience:** Process designers, Web designers, graphic designers, software developers, coding engineers
 * **Viewing time:** 10 minutes to watch two videos; contains narration
+* **Tags:** form; web form; design form; form design; [Process](../designing-processes/viewing-processes/what-is-a-process.md) design; design Process; workflow design; design workflow; [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [ProcessMaker Script](../designing-processes/scripts/what-is-a-script.md); [Screen Builder](../designing-processes/design-forms/screens-builder/); [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control; [Watcher](../designing-processes/design-forms/screens-builder/manage-watchers/what-is-a-watcher.md); application program interface; API; demo; video
 
 {% embed url="https://vimeo.com/392379936" %}
 
@@ -255,10 +274,11 @@ This section contains videos how to use the [ProcessMaker RESTful Application Pr
 
 {% tabs %}
 {% tab title="Start a Request Via the API" %}
-Start a ProcessMaker [Request](../using-processmaker/requests/what-is-a-request.md) using the [ProcessMaker RESTful API](https://staging-pm4.processmaker.net/api/documentation). Luigi
+Start a ProcessMaker [Request](../using-processmaker/requests/what-is-a-request.md) using the [ProcessMaker RESTful API](https://staging-pm4.processmaker.net/api/documentation).
 
 * **Intended audience:** Software developers and coding engineers
 * **Viewing time:** 2 minutes; contains narration
+* **Tags:** [start Request](../using-processmaker/requests/make-a-request.md); [start Process](../using-processmaker/requests/make-a-request.md#start-a-request); start Request via API; start [Process](../designing-processes/viewing-processes/what-is-a-process.md) via API; [start workflow](../using-processmaker/requests/make-a-request.md#start-a-request); start workflow via API; API; [ProcessMaker API](../processmaker-api-documentation/access-processmaker-api-documentation.md); application program interface; process\_events; Process ID; ProcessID; curl; JSON; token; bearer token; demo; video
 
 {% embed url="https://vimeo.com/392378523" %}
 
@@ -274,6 +294,7 @@ Use the [PHP SDK](https://github.com/ProcessMaker/sdk-php) with the [ProcessMake
 
 * **Intended audience:** Software developers and coding engineers
 * **Viewing time:** 2 minutes; contains narration
+* **Tags:** PHP; SDK; software development kit; [ProcessMaker Script](../designing-processes/scripts/what-is-a-script.md); [Script Editor](../designing-processes/scripts/scripts-editor.md); API; [ProcessMaker API](../processmaker-api-documentation/access-processmaker-api-documentation.md); application program interface; getProcessesRequests; token; bearer token; demo; video
 
 {% embed url="https://vimeo.com/392379630" %}
 
@@ -287,6 +308,7 @@ Make calls against the ProcessMaker database using the [ProcessMaker RESTful API
 
 * **Intended audience:** Software developers and coding engineers
 * **Viewing time:** 6 minutes; contains narration
+* **Tags:** [Process](../designing-processes/viewing-processes/what-is-a-process.md) design; design Process; workflow design; design workflow; database; API; [ProcessMaker API](../processmaker-api-documentation/access-processmaker-api-documentation.md); application program interface; token; bearer token; JSON; curl; demo; video
 
 {% embed url="https://vimeo.com/393099810" %}
 
@@ -298,6 +320,7 @@ Use the [JavaScript SDK](https://github.com/ProcessMaker/sdk-node) with the [Pro
 
 * **Intended audience:** Software developers and coding engineers
 * **Viewing time:** 4 minutes; contains narration
+* **Tags:** JavaScript; JS; Node; SDK; software development kit; [ProcessMaker Script](../designing-processes/scripts/what-is-a-script.md); [Script Editor](../designing-processes/scripts/scripts-editor.md); API; ProcessMaker API; getProcessesRequest; application program interface; token; bearer token; demo; video
 
 {% embed url="https://vimeo.com/393099824" %}
 
