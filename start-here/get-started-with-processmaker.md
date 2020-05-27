@@ -140,11 +140,11 @@ See how [ProcessMaker Data Connectors](../designing-processes/data-connector-man
 
 ### Example 2
 
-This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens.
+This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens. This example demonstrates how the options in one control depend on the options on another.
 
 * **Intended audience:** Process designers, business analysts, software developers, coding engineers
 * **Viewing time:** 9 minutes; contains narration
-* **Tags:** [Process](../designing-processes/viewing-processes/what-is-a-process.md) design; design Process; workflow design; design workflow; form; web form; design form; form design; [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [Screen Builder](../designing-processes/design-forms/screens-builder/); [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control; API; application program interface; third-party API call; higher education; demo; video
+* **Tags:** [Process](../designing-processes/viewing-processes/what-is-a-process.md) design; design Process; workflow design; design workflow; form; web form; design form; form design; [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [Screen Builder](../designing-processes/design-forms/screens-builder/); [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control; dependent controls; dependent fields; API; application program interface; third-party API call; higher education; demo; video
 
 {% embed url="https://vimeo.com/414002969" %}
 
@@ -224,11 +224,11 @@ See how to populate a [Select List](../designing-processes/design-forms/screens-
 
 ### Example 2
 
-This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens.
+This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens. This example demonstrates how the options in one control depend on the options on another.
 
 * **Intended audience:** Process designers, Web designers, graphic designers, software developers, coding engineers
 * **Viewing time:** 9 minutes; contains narration
-* **Tags:** [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control; API; third-party API call; higher education; demo; video
+* **Tags:** [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control; dependent controls; dependent fields; API; third-party API call; higher education; demo; video
 
 {% embed url="https://vimeo.com/414002969" %}
 

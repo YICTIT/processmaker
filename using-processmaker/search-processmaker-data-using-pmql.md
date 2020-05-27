@@ -86,11 +86,31 @@ Use the following syntax as a guide to include two or more Request participants 
 
 ### Request Age
 
-Use the following syntax as a guide to include the age of a Request or Task in your search criteria:
+PMQL interprets strings in the format `YYYY-MM-DD` as dates and can be used in comparative queries. Dates can be compared dynamically in PMQL queries based on the current time by using the `NOW` keyword.
+
+Use `updated_at < NOW` to represent how old the sought after Request or Task is, then use `-` followed by a number to specify that time. PMQL supports the following intervals of time: `second`, `minute`, `hour` and `day`.
+
+Furthermore, perform arithmetic operations on dates by using the following syntax:
+
+`date` `operator` `+` or `-number` `interval`
+
+where:
+
+* `date` represents the date
+* `operator` represents the comparative operator
+* `+` or `-` represents the addition or subtraction \(respectively\) from the `date`
+* `number` represents the number to add or subtract from the `date`
+* `interval` is the interval of time
+
+#### Examples
+
+Use the following PMQL query to find Requests or Tasks that are up to two \(2\) days old:
 
 `updated_at < NOW -2 day`
 
-Use `updated_at < NOW` to represent how old the sought after Request or Task is, then use `-` followed by an integer to specify that time. The units of time `second`, `minute`, `hour` and `day` are supported.
+Use the `NOW` keyword in the following PMQL query to find Requests or Tasks that contain data for persons that are presently 25 years old or younger as stored in a Request variable called `DOB` that contains the date of birth by subtracting 9125 days \(365 \* 25 = 9125\):
+
+`dob > NOW -9125 day`
 
 ## PMQL Syntax for Tasks
 
