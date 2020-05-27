@@ -202,7 +202,11 @@ If there are no search results from the Saved Search, the following message disp
 
 {% page-ref page="email-a-report-of-saved-search-results.md" %}
 
+{% page-ref page="get-notified-of-save-search-result-changes.md" %}
+
+{% page-ref page="delete-a-saved-search.md" %}
+
 {% page-ref page="../schedule-to-email-reports-of-saved-search-results/" %}
 
-{% page-ref page="create-and-share-a-saved-search.md" %}
+{% page-ref page="../create-charts-to-visualize-saved-search-results/" %}
 

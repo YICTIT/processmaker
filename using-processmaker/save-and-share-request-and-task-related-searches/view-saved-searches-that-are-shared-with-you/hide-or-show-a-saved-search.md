@@ -42,5 +42,11 @@ Follow these steps to show one of your hidden Saved Searches:
 
 ## Related Topics
 
+{% page-ref page="../../../package-development-distribution/first-topic.md" %}
 
+{% page-ref page="../../../package-development-distribution/package-a-connector/saved-searches-package.md" %}
+
+{% page-ref page="../what-is-a-saved-search.md" %}
+
+{% page-ref page="view-search-results-for-a-saved-search.md" %}
 

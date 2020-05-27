@@ -78,9 +78,7 @@ If there are no Saved Searches, the following message displays: **No Data Availa
 
 {% page-ref page="../what-is-a-saved-search.md" %}
 
-{% page-ref page="./" %}
-
-{% page-ref page="../schedule-to-email-reports-of-saved-search-results/" %}
+{% page-ref page="view-search-results-for-a-saved-search.md" %}
 
 {% page-ref page="create-and-share-a-saved-search.md" %}
 
@@ -88,5 +86,15 @@ If there are no Saved Searches, the following message displays: **No Data Availa
 
 {% page-ref page="configure-a-saved-search.md" %}
 
+{% page-ref page="search-for-a-saved-searchs-search-result.md" %}
+
+{% page-ref page="email-a-report-of-saved-search-results.md" %}
+
+{% page-ref page="get-notified-of-save-search-result-changes.md" %}
+
 {% page-ref page="delete-a-saved-search.md" %}
+
+{% page-ref page="../schedule-to-email-reports-of-saved-search-results/" %}
+
+{% page-ref page="../create-charts-to-visualize-saved-search-results/" %}
 
