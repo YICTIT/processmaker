@@ -8,14 +8,14 @@ description: >-
 
 ## Overview
 
-ProcessMaker Query Language \(PMQL\) is a custom ProcessMaker language to search through ProcessMaker data in your organization. Similar in ways to SQL, which is a standard language for storing, manipulating and retrieving data in databases, use PMQL to find [Requests](requests/what-is-a-request.md), [Tasks](task-management/what-is-a-task.md), and ProcessMaker [Collection](../collections/what-is-a-collection.md) record information. PMQL uses both common SQL syntax as well as custom syntax parameters to find ProcessMaker data.
+ProcessMaker Query Language \(PMQL\) is a custom ProcessMaker language to search through ProcessMaker data in your organization. Similar in ways to SQL, which is a standard language for storing, manipulating and retrieving data in databases, use PMQL to find [Requests](requests/what-is-a-request.md), [Tasks](task-management/what-is-a-task.md), and ProcessMaker [Collection](../collections/what-is-a-collection.md) record information. PMQL uses both [common SQL syntax](search-processmaker-data-using-pmql.md#standard-sql-syntax-pmql-supports) as well as custom syntax parameters to find ProcessMaker data.
 
 Use PMQL in the following ways:
 
 * **Requests:** Perform [advanced searches to find Request summaries](requests/search-for-a-request.md#advanced-search-for-a-request).
 * **Tasks:** Perform [advanced searches through your Tasks](task-management/search-for-a-task.md#advanced-search-for-a-task).
 * **ProcessMaker Collection records:** [Search through the records](../collections/manage-records-in-a-collection/search-for-a-record-in-a-collection.md#search-records-in-a-processmaker-collection) in a ProcessMaker Collection.
-* **ProcessMaker Scripts:** Include PMQL searches in a ProcessMaker Script such that the search occurs when the Script runs.
+* **ProcessMaker Scripts:** Include PMQL searches in a [ProcessMaker Script](../designing-processes/scripts/what-is-a-script.md) such that the search occurs when the Script runs.
 
 PMQL is customized with particular syntax parameters to find ProcessMaker data unique to each of these ProcessMaker data. See the following sections regarding how to use PMQL:
 
@@ -27,6 +27,10 @@ PMQL is customized with particular syntax parameters to find ProcessMaker data u
 ## PMQL Syntax for Requests
 
 Use [standard SQL syntax](search-processmaker-data-using-pmql.md#standard-sql-syntax-pmql-supports) that ProcessMaker Query Language \(PMQL\) supports in conjunction with the following PMQL parameters to perform [advanced Request searches](requests/search-for-a-request.md#advanced-search-for-a-request).
+
+{% hint style="warning" %}
+PMQL syntax is not case sensitive. However, queries are case sensitive. For example, if querying for a string, PMQL returns results only if the case matches your query exactly. Bypass this by using the `lower(field)` syntax.
+{% endhint %}
 
 ### Processes Associated with the Request
 
@@ -92,6 +96,10 @@ Use `updated_at < NOW` to represent how old the sought after Request or Task is,
 
 Use [standard SQL syntax](search-processmaker-data-using-pmql.md#standard-sql-syntax-pmql-supports) that ProcessMaker Query Language \(PMQL\) supports in conjunction with the following PMQL parameters to perform [advanced Task searches](task-management/search-for-a-task.md#advanced-search-for-a-task).
 
+{% hint style="warning" %}
+PMQL syntax is not case sensitive. However, queries are case sensitive. For example, if querying for a string, PMQL returns results only if the case matches your query exactly. Bypass this by using the `lower(field)` syntax.
+{% endhint %}
+
 ### Processes Associated with the Task's Request
 
 See [Processes Associated with the Request](search-processmaker-data-using-pmql.md#processes-associated-with-the-request).
@@ -146,6 +154,10 @@ To search records in a ProcessMaker Collection, the [Collections package](../pac
 
 Use [standard SQL syntax](search-processmaker-data-using-pmql.md#standard-sql-syntax-pmql-supports) that ProcessMaker Query Language \(PMQL\) supports in conjunction with the following PMQL parameters to [search records](../collections/manage-records-in-a-collection/search-for-a-record-in-a-collection.md#search-records-in-a-processmaker-collection) in a ProcessMaker Collection.
 
+{% hint style="warning" %}
+PMQL syntax is not case sensitive. However, queries are case sensitive. For example, if querying for a string, PMQL returns results only if the case matches your query exactly. Bypass this by using the `lower(field)` syntax.
+{% endhint %}
+
 ### Record ID
 
 Use the following syntax as a guide to include one record in your search criteria based on its ID \(as noted in the **\#** column when [viewing the Collection's records](../collections/manage-records-in-a-collection/view-all-records-in-a-collection.md#view-all-records-in-a-collection)\):
@@ -189,13 +201,25 @@ PMQL supports the following operators in and between search criterion:
 * Use `AND` operators between each set of search criterion to search using multiple criteria.
 * Use the `AND` operator between criterion to search for multiple specified criterion.
 * Use the `OR` operator between criterion to search for either specified criterion.
-* Use the LIKE operator
+* Use the `LIKE` operator for pattern matching.
 
 Spaces are allowed between operators. Example: `data.last_name = "Canera"`.
 
+{% hint style="warning" %}
+### PMQL Syntax Style Considerations
+
+PMQL operators are not case-sensitive.
+
+ Spaces are allowed between operators. Example: `data.last_name = "Canera"`.
+
+### PMQL Query Consideration
+
+PMQL syntax is not case sensitive. However, queries are case sensitive. For example, if querying for a string, PMQL returns results only if the case matches your query exactly. Bypass this by using the `lower(field)` syntax.
+{% endhint %}
+
 ### Wildcard Syntax
 
-Use the `like` operator, then include wildcards `%` or `_` within the quotation marks \(`"`\) of your search parameter.
+Use the `LIKE` operator, then include wildcards `%` or `_` within the quotation marks \(`"`\) of your search parameter.
 
 The `%` wildcard represents zero, one, or more characters. The `_` wildcard represents exactly one character.
 
