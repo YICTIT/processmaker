@@ -190,7 +190,13 @@ If there are no search results from the Saved Search, the following message disp
 
 {% page-ref page="../../../package-development-distribution/first-topic.md" %}
 
-{% page-ref page="./" %}
+{% page-ref page="create-and-share-a-saved-search.md" %}
+
+{% page-ref page="view-saved-searches.md" %}
+
+{% page-ref page="hide-or-show-a-saved-search.md" %}
+
+{% page-ref page="configure-a-saved-search.md" %}
 
 {% page-ref page="search-for-a-saved-searchs-search-result.md" %}
 

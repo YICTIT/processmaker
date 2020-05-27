@@ -68,7 +68,7 @@ See [Create Charts to Visualize Saved Search Results](create-charts-to-visualize
 
 {% page-ref page="schedule-to-email-reports-of-saved-search-results/" %}
 
-{% page-ref page="view-saved-searches-that-are-shared-with-you/create-and-share-a-saved-search.md" %}
+{% page-ref page="create-charts-to-visualize-saved-search-results/" %}
 
 {% page-ref page="../requests/what-is-a-request.md" %}
 
