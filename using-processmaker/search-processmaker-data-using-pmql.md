@@ -190,7 +190,7 @@ ProcessMaker Query Language \(PMQL\) supports the following standard SQL syntax:
 
 * [Operators](search-processmaker-data-using-pmql.md#operators)
 * [Wildcard syntax](search-processmaker-data-using-pmql.md#wildcard-syntax)
-* [Cast function](search-processmaker-data-using-pmql.md#casting-function)
+* [CAST function](search-processmaker-data-using-pmql.md#casting-function)
 
 ### Operators
 
@@ -205,16 +205,16 @@ PMQL supports the following operators in and between search criterion:
 * Use `AND` operators between each set of search criterion to search using multiple criteria.
 * Use the `AND` operator between criterion to search for multiple specified criterion.
 * Use the `OR` operator between criterion to search for either specified criterion.
-* Use the `LIKE` operator for pattern matching.
+* Use the `LIKE` operator for pattern matching. See [Wildcard Syntax](search-processmaker-data-using-pmql.md#wildcard-syntax).
 
 Spaces are allowed between operators. Example: `data.last_name = "Canera"`.
 
 {% hint style="warning" %}
 ### PMQL Syntax Style Considerations
 
-PMQL operators are not case-sensitive.
+PMQL operators are not case-sensitive, but is in all capitalization in this information for easier readability.
 
- Spaces are allowed between operators. Example: `data.last_name = "Canera"`.
+Spaces are allowed between operators. Example: `data.last_name = "Canera"`.
 
 ### PMQL Query Consideration
 
@@ -225,19 +225,29 @@ PMQL syntax is not case sensitive. However, queries are case sensitive. For exam
 
 Use the `LIKE` operator, then include wildcards `%` or `_` within the quotation marks \(`"`\) of your search parameter.
 
+{% hint style="info" %}
+The `LIKE` operator is not case sensitive, but is in all capitalization in this information for easier readability.
+{% endhint %}
+
 The `%` wildcard represents zero, one, or more characters. The `_` wildcard represents exactly one character.
 
 Examples:
 
-* `request like "P%"` finds Requests associated with all Processes that begin with `P`.
-* `status like "c%"` finds Requests with both Completed and Canceled statuses.
-* `data.last_name like "Ca%"` finds all values from Requests that begin with `Ca` in the `last_name` key name.
-* `data.last_name like "Ca___"` finds all values from Requests that begin with `Ca` and those that match three following characters in the `last_name` key name.
-* `task like "T%"` finds all Tasks that begin with `T`.
+* `request LIKE "P%"` finds Requests associated with all Processes that begin with `P`.
+* `status LIKE "c%"` finds Requests with both Completed and Canceled statuses.
+* `data.last_name LIKE "Ca%"` finds all values from Requests that begin with `Ca` in the `last_name` key name.
+* `data.last_name LIKE "Ca___"` finds all values from Requests that begin with `Ca` and those that match three following characters in the `last_name` key name.
+* `task LIKE "T%"` finds all Tasks that begin with `T`.
 
-### Cast Function
+### CAST Function
 
-The `CAST` function is a standard SQL syntax that PMQL supports for specific data types. The `CAST` function converts data from one data type to another. PMQL supports the `CAST` function for the following data types:
+The `CAST` function is a standard SQL syntax that PMQL supports for specific data types.
+
+{% hint style="info" %}
+The `CAST` function is not case sensitive, but is in all capitalization in this information for easier readability.
+{% endhint %}
+
+The `CAST` function converts data from one data type to another. PMQL supports the `CAST` function for the following data types:
 
 * **Text:** If the Request data stores the Request variable in the PMQL query as an integer \(such as `2`\), convert that value to text \("2"\).
 * **Number:** If the Request data stores the Request variable in the PMQL query as text \(such as "2"\), convert that value to a number \(`2`\). For example, use the `CAST` function in a PMQL query to  perform a numerical comparison to the `Experience` Request variable that stores a job candidate's experience in an industry to find job candidates with two \(2\) years of experience or greater, use the following PMQL query: `cast(Experience as number) >= 2`.
