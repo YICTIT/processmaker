@@ -64,15 +64,15 @@ If there are no scheduled reports, the following message displays: **No Data Ava
 
 {% page-ref page="../view-saved-searches-that-are-shared-with-you/" %}
 
-{% page-ref page="./" %}
-
 {% page-ref page="overview.md" %}
 
 {% page-ref page="schedule-an-interval-to-email-reports.md" %}
+
+{% page-ref page="pause-scheduled-reports-of-a-saved-search.md" %}
 
 {% page-ref page="edit-a-scheduled-interval-to-email-reports.md" %}
 
 {% page-ref page="delete-a-scheduled-interval-to-email-reports.md" %}
 
-{% page-ref page="../view-saved-searches-that-are-shared-with-you/create-and-share-a-saved-search.md" %}
+{% page-ref page="../create-charts-to-visualize-saved-search-results/" %}
 

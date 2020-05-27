@@ -31,13 +31,23 @@ Follow these steps to email a report of search results for a Saved Search:
 
 {% page-ref page="../what-is-a-saved-search.md" %}
 
-{% page-ref page="./" %}
-
 {% page-ref page="view-search-results-for-a-saved-search.md" %}
+
+{% page-ref page="create-and-share-a-saved-search.md" %}
+
+{% page-ref page="view-saved-searches.md" %}
+
+{% page-ref page="hide-or-show-a-saved-search.md" %}
+
+{% page-ref page="configure-a-saved-search.md" %}
 
 {% page-ref page="search-for-a-saved-searchs-search-result.md" %}
 
+{% page-ref page="get-notified-of-save-search-result-changes.md" %}
+
+{% page-ref page="delete-a-saved-search.md" %}
+
 {% page-ref page="../schedule-to-email-reports-of-saved-search-results/" %}
 
-{% page-ref page="create-and-share-a-saved-search.md" %}
+{% page-ref page="../create-charts-to-visualize-saved-search-results/" %}
 

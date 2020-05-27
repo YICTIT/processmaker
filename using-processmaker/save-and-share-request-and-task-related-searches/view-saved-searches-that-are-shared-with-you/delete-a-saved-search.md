@@ -30,5 +30,29 @@ Follow these steps to delete one of your own Saved Searches:
 
 ## Related Topics
 
+{% page-ref page="../../../package-development-distribution/package-a-connector/saved-searches-package.md" %}
 
+{% page-ref page="../../../package-development-distribution/first-topic.md" %}
+
+{% page-ref page="../what-is-a-saved-search.md" %}
+
+{% page-ref page="view-search-results-for-a-saved-search.md" %}
+
+{% page-ref page="create-and-share-a-saved-search.md" %}
+
+{% page-ref page="view-saved-searches.md" %}
+
+{% page-ref page="hide-or-show-a-saved-search.md" %}
+
+{% page-ref page="configure-a-saved-search.md" %}
+
+{% page-ref page="search-for-a-saved-searchs-search-result.md" %}
+
+{% page-ref page="email-a-report-of-saved-search-results.md" %}
+
+{% page-ref page="get-notified-of-save-search-result-changes.md" %}
+
+{% page-ref page="../schedule-to-email-reports-of-saved-search-results/" %}
+
+{% page-ref page="../create-charts-to-visualize-saved-search-results/" %}
 

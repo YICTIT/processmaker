@@ -33,15 +33,15 @@ Email recipients receive the Saved Search results as an attachment to the email.
 
 {% page-ref page="../view-saved-searches-that-are-shared-with-you/" %}
 
-{% page-ref page="./" %}
-
 {% page-ref page="view-schedules-to-email-reports.md" %}
 
 {% page-ref page="schedule-an-interval-to-email-reports.md" %}
+
+{% page-ref page="pause-scheduled-reports-of-a-saved-search.md" %}
 
 {% page-ref page="edit-a-scheduled-interval-to-email-reports.md" %}
 
 {% page-ref page="delete-a-scheduled-interval-to-email-reports.md" %}
 
-{% page-ref page="../view-saved-searches-that-are-shared-with-you/create-and-share-a-saved-search.md" %}
+{% page-ref page="../create-charts-to-visualize-saved-search-results/" %}
 

@@ -22,5 +22,25 @@ Follow these steps to arrange the order of the charts of a Saved Search:
 
 ## Related Topics
 
+{% page-ref page="../../../package-development-distribution/package-a-connector/saved-searches-package.md" %}
 
+{% page-ref page="../../../package-development-distribution/first-topic.md" %}
+
+{% page-ref page="../what-is-a-saved-search.md" %}
+
+{% page-ref page="../view-saved-searches-that-are-shared-with-you/" %}
+
+{% page-ref page="../schedule-to-email-reports-of-saved-search-results/" %}
+
+{% page-ref page="overview-of-saved-search-charts.md" %}
+
+{% page-ref page="view-charts-for-a-saved-search.md" %}
+
+{% page-ref page="create-a-saved-search-chart.md" %}
+
+{% page-ref page="configure-a-saved-search-chart.md" %}
+
+{% page-ref page="copy-a-saved-search-chart.md" %}
+
+{% page-ref page="delete-a-saved-search-chart.md" %}
 
