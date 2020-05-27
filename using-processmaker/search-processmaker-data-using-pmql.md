@@ -188,6 +188,10 @@ Use `updated_at < NOW` to represent how much time from the present the sought af
 
 ProcessMaker Query Language \(PMQL\) supports the following standard SQL syntax:
 
+* [Operators](search-processmaker-data-using-pmql.md#operators)
+* [Wildcard syntax](search-processmaker-data-using-pmql.md#wildcard-syntax)
+* [Cast function](search-processmaker-data-using-pmql.md#casting-function)
+
 ### Operators
 
 PMQL supports the following operators in and between search criterion:
@@ -230,6 +234,13 @@ Examples:
 * `data.last_name like "Ca%"` finds all values from Requests that begin with `Ca` in the `last_name` key name.
 * `data.last_name like "Ca___"` finds all values from Requests that begin with `Ca` and those that match three following characters in the `last_name` key name.
 * `task like "T%"` finds all Tasks that begin with `T`.
+
+### Cast Function
+
+The `CAST` function is a standard SQL syntax that PMQL supports for specific data types. The `CAST` function converts data from one data type to another. PMQL supports the `CAST` function for the following data types:
+
+* **Text:** If the Request data stores the Request variable in the PMQL query as an integer \(such as `2`\), convert that value to text \("2"\).
+* **Number:** If the Request data stores the Request variable in the PMQL query as text \(such as "2"\), convert that value to a number \(`2`\). For example, use the `CAST` function in a PMQL query to  perform a numerical comparison to the `Experience` Request variable that stores a job candidate's experience in an industry to find job candidates with two \(2\) years of experience or greater, use the following PMQL query: `cast(Experience as number) >= 2`.
 
 ## Related Topics
 
