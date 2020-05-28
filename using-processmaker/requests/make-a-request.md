@@ -28,6 +28,12 @@ If there are no active Processes or you are not authorized to start a Request fo
 
 After the Request starts, that Request displays in the [**My Requests** page](view-started-requests.md#view-requests-you-started).
 
+## Start a Request Via the ProcessMaker API
+
+The following video demonstrates how to start a ProcessMaker Request using the [ProcessMaker RESTful API](https://staging-pm4.processmaker.net/api/documentation).
+
+{% embed url="https://vimeo.com/392378523" caption="Start a Request using the ProcessMaker RESTful API" %}
+
 ## Related Topics
 
 {% page-ref page="what-is-a-request.md" %}

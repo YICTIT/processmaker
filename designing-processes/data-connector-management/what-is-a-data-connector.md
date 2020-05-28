@@ -19,6 +19,12 @@ In ProcessMaker, a Data Connector connects your ProcessMaker assets to a data so
 
 ProcessMaker Data Connectors use [Endpoints](what-is-an-endpoint.md) with which to interact with a data source.
 
+## Video Demonstration
+
+See how ProcessMaker Data Connectors call third-party Application Program Interfaces \(APIs\), and then use that data in Processes.
+
+{% embed url="https://vimeo.com/393099655" caption="Video demonstration of a ProcessMaker Data Connector using an API as a data source" %}
+
 ## Related Topics
 
 {% page-ref page="what-is-an-endpoint.md" %}

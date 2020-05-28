@@ -433,6 +433,21 @@ To make this control hidden until another control contains a value, enter the **
 Enter the value to represent this control in custom CSS syntax when in [Custom CSS](../add-custom-css-to-a-screen.md#add-custom-css-to-a-processmaker-screen) mode. As a best practice, use the same **CSS Selector Name** value on different controls of the same type to apply the same custom CSS style to all those controls.  
 ![](../../../../.gitbook/assets/css-selector-name-screen-builder-processes.png) 
 
+## Dependent Field Design Example
+
+The following video example demonstrates dependent fields: how the options in one Select List control depend on which option is selected from a previous Select List control. This example demonstrates that after a country is selected from one Select List control, a second Select List control contains as options the states and/or provinces in that selected country.
+
+The Select List control that contains the countries as its options gets those options from a [ProcessMaker Data Connector](../../../data-connector-management/what-is-a-data-connector.md) that uses an [Endpoint](../../../data-connector-management/what-is-an-endpoint.md) to get the list of countries and their corresponding ISO codes from a third-party application program interface \(API\). A [Watcher](../manage-watchers/what-is-a-watcher.md) monitors when a country is selected, and then another ProcessMaker Data Connector uses an Endpoint to get the list of states and/or provinces from that selected country based on that country's ISO code. The Watcher stores that list of states/provinces as a Request variable in that Request's data so that the second Select List control may access that list to display as its options. The second Select List control's options depend on the first Select List control's selection.
+
+{% hint style="info" %}
+The [Data Connector package](../../../../package-development-distribution/package-a-connector/data-connector-package.md) must be installed in your ProcessMaker instance. The [Data Connector](../../../data-connector-management/what-is-a-data-connector.md) package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Data Connectors package can be installed in your ProcessMaker instance.
+{% endhint %}
+
+* **Intended audience:** Process designers, Web designers, graphic designers, software developers, coding engineers
+* **Viewing time:** 21 minutes; contains narration
+
+{% embed url="https://vimeo.com/423630726" caption="Design dependent fields using two Select List controls, ProcessMaker Data Connectors, and a Watcher" %}
+
 ## Related Topics <a id="related-topics"></a>
 
 {% page-ref page="../types-for-screens.md" %}

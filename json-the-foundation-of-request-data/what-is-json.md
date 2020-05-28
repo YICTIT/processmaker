@@ -386,7 +386,9 @@ Each data type requires specific syntax to be valid. Below is the syntax for eac
       </td>
     </tr>
   </tbody>
-</table>## Example Request Data
+</table>
+
+## Example Request Data
 
 Below is an example of [Request data](what-is-request-data.md) that contains at least one attribute for each supported JSON data type.
 

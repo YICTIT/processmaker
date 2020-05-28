@@ -29,7 +29,7 @@ PMQL is customized with particular syntax parameters to find ProcessMaker data u
 Use [standard SQL syntax](search-processmaker-data-using-pmql.md#standard-sql-syntax-pmql-supports) that ProcessMaker Query Language \(PMQL\) supports in conjunction with the following PMQL parameters to perform [advanced Request searches](requests/search-for-a-request.md#advanced-search-for-a-request).
 
 {% hint style="warning" %}
-PMQL syntax is not case sensitive. However, queries are case sensitive. For example, if querying for a string, PMQL returns results only if the case matches your query exactly. Bypass this by using the `lower(field)` syntax.
+PMQL queries are case sensitive. For example, if querying for a string, PMQL returns results only if the case exactly matches your query. Bypass case-sensitivity evaluation by using the `lower(RequestVariable)` syntax where `RequestVariable` is the Request variable name. Example: `lower(data.job_title) LIKE "prod%" OR lower(data.job_title) LIKE "proj%"`
 {% endhint %}
 
 ### Processes Associated with the Request
@@ -84,7 +84,7 @@ Use the following syntax as a guide to include two or more Request participants 
 
 `(participant = "Username3" OR participant = "Username4")`
 
-### Request Age
+### Request or Task Age
 
 PMQL interprets strings in the format `YYYY-MM-DD` as dates and can be used in comparative queries. Dates can be compared dynamically in PMQL queries based on the current time by using the `NOW` keyword.
 
@@ -102,7 +102,7 @@ where:
 * `number` represents the number to add or subtract from the `date`
 * `interval` is the interval of time
 
-#### Examples
+#### Request and Task Age Usage Examples
 
 Use the following PMQL query to find Requests or Tasks that are up to two \(2\) days old:
 
@@ -117,7 +117,7 @@ Use the `NOW` keyword in the following PMQL query to find Requests or Tasks that
 Use [standard SQL syntax](search-processmaker-data-using-pmql.md#standard-sql-syntax-pmql-supports) that ProcessMaker Query Language \(PMQL\) supports in conjunction with the following PMQL parameters to perform [advanced Task searches](task-management/search-for-a-task.md#advanced-search-for-a-task).
 
 {% hint style="warning" %}
-PMQL syntax is not case sensitive. However, queries are case sensitive. For example, if querying for a string, PMQL returns results only if the case matches your query exactly. Bypass this by using the `lower(field)` syntax.
+PMQL queries are case sensitive. For example, if querying for a string, PMQL returns results only if the case exactly matches your query. Bypass case-sensitivity evaluation by using the `lower(RequestVariable)` syntax where `RequestVariable` is the Request variable name. Example: `lower(data.job_title) LIKE "prod%" OR lower(data.job_title) LIKE "proj%"`
 {% endhint %}
 
 ### Processes Associated with the Task's Request
@@ -154,7 +154,7 @@ Use the following syntax as a guide to include two or more Task statuses in your
 
 ### Task Age
 
-See [Request Age](search-processmaker-data-using-pmql.md#request-age).
+See [Request or Task Age](search-processmaker-data-using-pmql.md#request-or-task-age).
 
 ### Task Due
 
@@ -175,7 +175,7 @@ To search records in a ProcessMaker Collection, the [Collections package](../pac
 Use [standard SQL syntax](search-processmaker-data-using-pmql.md#standard-sql-syntax-pmql-supports) that ProcessMaker Query Language \(PMQL\) supports in conjunction with the following PMQL parameters to [search records](../collections/manage-records-in-a-collection/search-for-a-record-in-a-collection.md#search-records-in-a-processmaker-collection) in a ProcessMaker Collection.
 
 {% hint style="warning" %}
-PMQL syntax is not case sensitive. However, queries are case sensitive. For example, if querying for a string, PMQL returns results only if the case matches your query exactly. Bypass this by using the `lower(field)` syntax.
+PMQL queries are case sensitive. For example, if querying for a string, PMQL returns results only if the case exactly matches your query. Bypass case-sensitivity evaluation by using the `lower(RequestVariable)` syntax where `RequestVariable` is the Request variable name. Example: `lower(data.job_title) LIKE "prod%" OR lower(data.job_title) LIKE "proj%"`
 {% endhint %}
 
 ### Record ID
@@ -198,36 +198,33 @@ Use the following syntax as a guide to reference record-related information in y
 
 ### Record Age
 
-Use the following syntax as a guide to include a period of time in your search criteria:
+PMQL interprets strings in the format `YYYY-MM-DD` as dates and can be used in comparative queries. Dates can be compared dynamically in PMQL queries based on the current time by using the `NOW` keyword.
 
-`updated_at < NOW -2 day`
+Use `updated_at < NOW` to represent how old the sought after record is, then use `-` followed by a number to specify that time. PMQL supports the following intervals of time: `second`, `minute`, `hour` and `day`.
 
-Use `updated_at < NOW` to represent how much time from the present the sought after record is, then use `-` followed by an integer to specify that time. The units of time `second`, `minute`, `hour` and `day` are supported.
+Furthermore, perform arithmetic operations on dates by using the following syntax:
+
+`date` `operator` `+` or `-number` `interval`
+
+where:
+
+* `date` represents the date
+* `operator` represents the comparative operator
+* `+` or `-` represents the addition or subtraction \(respectively\) from the `date`
+* `number` represents the number to add or subtract from the `date`
+* `interval` is the interval of time
 
 ## Standard SQL Syntax PMQL Supports
 
 ProcessMaker Query Language \(PMQL\) supports the following standard SQL syntax:
 
-* [Operators](search-processmaker-data-using-pmql.md#operators)
-* [Wildcard syntax](search-processmaker-data-using-pmql.md#wildcard-syntax)
+* [Operators and grouping multiple criteria](search-processmaker-data-using-pmql.md#operators-and-grouping-multiple-criteria)
+* [Pattern matching wildcard syntax Using LIKE operator](search-processmaker-data-using-pmql.md#pattern-matching-wildcard-syntax-using-like-operator)
 * [CAST function](search-processmaker-data-using-pmql.md#casting-function)
 
-### Operators
+### Operators and Grouping Multiple Criteria
 
-PMQL supports the following operators in and between search criterion:
-
-* Equal to: `=`
-* Not equal to: `!=`
-* Less than: `<`
-* Greater than: `>`
-* Less than or equal to: `<=`
-* Greater than or equal to: `>=`
-* Use `AND` operators between each set of search criterion to search using multiple criteria.
-* Use the `AND` operator between criterion to search for multiple specified criterion.
-* Use the `OR` operator between criterion to search for either specified criterion.
-* Use the `LIKE` operator for pattern matching. See [Wildcard Syntax](search-processmaker-data-using-pmql.md#wildcard-syntax).
-
-Spaces are allowed between operators. Example: `data.last_name = "Canera"`.
+PMQL supports the following operators in and between search criterion. The example for each comparative or logical operator assumes that the PMQL query searches against Request data for a Request variable \(such as `last_name`,  `experience`, and `job_title`\). See [Request Information](search-processmaker-data-using-pmql.md#request-information) why `data.` precedes each Request variable in each example.
 
 {% hint style="warning" %}
 ### PMQL Syntax Style Considerations
@@ -236,12 +233,25 @@ PMQL operators are not case-sensitive, but is in all capitalization in this info
 
 Spaces are allowed between operators. Example: `data.last_name = "Canera"`.
 
-### PMQL Query Consideration
+### PMQL Query Case Sensitivity
 
-PMQL syntax is not case sensitive. However, queries are case sensitive. For example, if querying for a string, PMQL returns results only if the case matches your query exactly. Bypass this by using the `lower(field)` syntax.
+PMQL queries are case sensitive. For example, if querying for a string, PMQL returns results only if the case exactly matches your query. Bypass case-sensitivity evaluation by using the `lower(RequestVariable)` syntax where `RequestVariable` is the Request variable name. Example: `lower(data.job_title) LIKE "prod%" OR lower(data.job_title) LIKE "proj%"`
 {% endhint %}
 
-### Wildcard Syntax
+| Operator Description | Syntax | Example |
+| :--- | :--- | :--- |
+| Equal to | `=` | `data.last_name = "Canera"` |
+| Not equal to | `!=` | `data.last_name != "Canera"` |
+| Less than | `<` | `data.experience < 2` |
+| Greater than | `>` | `data.experience > 2` |
+| Less than or equal to | `<=` | `data.experience <= 2` |
+| Greater than or equal to | `>=` | `data.experience >= 2` |
+| Search multiple required criteria \(logical operator\) | `AND` | `data.last_name = "Canera" AND data.experience > 2` |
+| Search for any of multiple criteria \(logical operator\) | `OR` | `data.experience <= 2 OR data.experience >= 5` |
+| Group multiple logical operators | n/a | `(data.job_title = "product manager" OR data.job_title = "project manager") AND data.experience > 5` |
+| Pattern matching | `LIKE` | See [Pattern Matching Wildcard Syntax Using LIKE Operator](search-processmaker-data-using-pmql.md#pattern-matching-wildcard-syntax-using-like-operator). |
+
+### Pattern Matching Wildcard Syntax Using LIKE Operator
 
 Use the `LIKE` operator, then include wildcards `%` or `_` within the quotation marks \(`"`\) of your search parameter.
 
@@ -251,12 +261,12 @@ The `LIKE` operator is not case sensitive, but is in all capitalization in this 
 
 The `%` wildcard represents zero, one, or more characters. The `_` wildcard represents exactly one character.
 
-Examples:
+#### Wildcard Usage Examples
 
 * `request LIKE "P%"` finds Requests associated with all Processes that begin with `P`.
 * `status LIKE "c%"` finds Requests with both Completed and Canceled statuses.
-* `data.last_name LIKE "Ca%"` finds all values from Requests that begin with `Ca` in the `last_name` key name.
-* `data.last_name LIKE "Ca___"` finds all values from Requests that begin with `Ca` and those that match three following characters in the `last_name` key name.
+* `data.last_name LIKE "Ca%"` finds all values from Requests that begin with `Ca` in the `last_name` Request variable.
+* `data.last_name LIKE "Ca___"` finds all values from Requests that begin with `Ca` and those that match three following characters in the `last_name` Request variable.
 * `task LIKE "T%"` finds all Tasks that begin with `T`.
 
 ### CAST Function
@@ -270,7 +280,7 @@ The `CAST` function is not case sensitive, but is in all capitalization in this 
 The `CAST` function converts data from one data type to another. PMQL supports the `CAST` function for the following data types:
 
 * **Text:** If the Request data stores the Request variable in the PMQL query as an integer \(such as `2`\), convert that value to text \("2"\).
-* **Number:** If the Request data stores the Request variable in the PMQL query as text \(such as "2"\), convert that value to a number \(`2`\). For example, use the `CAST` function in a PMQL query to  perform a numerical comparison to the `Experience` Request variable that stores a job candidate's experience in an industry to find job candidates with two \(2\) years of experience or greater, use the following PMQL query: `cast(Experience as number) >= 2`.
+* **Number:** If the Request data stores the Request variable in the PMQL query as text \(such as "2"\), convert that value to a number \(`2`\). For example, use the `CAST` function in a PMQL query to  perform a numerical comparison to the `Experience` Request variable that stores a job candidate's experience in an industry to find job candidates with two \(2\) years of experience or greater, use the following PMQL query: `CAST(Experience as number) >= 2`.
 
 ## Related Topics
 
@@ -279,4 +289,8 @@ The `CAST` function converts data from one data type to another. PMQL supports t
 {% page-ref page="task-management/search-for-a-task.md" %}
 
 {% page-ref page="../collections/manage-records-in-a-collection/search-for-a-record-in-a-collection.md" %}
+
+{% page-ref page="../json-the-foundation-of-request-data/what-is-request-data.md" %}
+
+{% page-ref page="../json-the-foundation-of-request-data/what-is-a-request-variable.md" %}
 
