@@ -22,9 +22,12 @@ Any Process designed in or exported from ProcessMaker is [BPMN 2.0 compliant](ht
 To learn more about how to model a Process in ProcessMaker, see [Process Modeling](../process-design/).
 {% endhint %}
 
-## RMA ProcessMaker Integration
+## RPA ProcessMaker Integration
 
 See how ProcessMaker integrates with third-party services Amazon Textract and UiPath Robotic Process Automation \(RPA\) so a loan application workflow scans, analyzes, and intelligently routes a Request and provision a bot accordingly.
+
+* **Intended audience:** Process designers and business analysts
+* **Viewing time:** 11 minutes; contains narration
 
 {% embed url="https://vimeo.com/383574552" %}
 
