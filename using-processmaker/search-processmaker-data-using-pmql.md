@@ -218,8 +218,8 @@ where:
 
 ProcessMaker Query Language \(PMQL\) supports the following standard SQL syntax:
 
-* [Operators](search-processmaker-data-using-pmql.md#operators)
-* [Wildcard syntax](search-processmaker-data-using-pmql.md#wildcard-syntax)
+* [Operators and grouping multiple criteria](search-processmaker-data-using-pmql.md#operators-and-grouping-multiple-criteria)
+* [Pattern matching wildcard syntax Using LIKE operator](search-processmaker-data-using-pmql.md#pattern-matching-wildcard-syntax-using-like-operator)
 * [CAST function](search-processmaker-data-using-pmql.md#casting-function)
 
 ### Operators and Grouping Multiple Criteria
