@@ -27,6 +27,12 @@ The Data Connector package has the following components after it is installed to
 * **Process model connector:** A [Data Connector connector](../../designing-processes/process-design/model-processes-using-connectors/available-connectors-from-processmaker/data-connector-connector.md) is a control that integrates into Process Modeler. Use the Data Connector connector as you would [BPMN controls](../../designing-processes/process-design/model-your-process/): drag and place the Data Connector connector into your Process model, configure its settings, and then add its [incoming and outgoing Sequence Flow elements](../../designing-processes/process-design/model-your-process/the-quick-toolbar.md).
 * **Screen Builder controls:** Interact with ProcessMaker Collection records and third-party data source directly from within specific Screen Builder controls, such as the [Select List](../../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) and [Record List](../../designing-processes/design-forms/screens-builder/control-descriptions/record-list-control-settings.md) controls.
 
+## Video Example
+
+See how ProcessMaker Data Connectors call third-party Application Program Interfaces \(APIs\), and then use that data in Processes.
+
+{% embed url="https://vimeo.com/393099655" caption="Video demonstration of a ProcessMaker Data Connector using an API as a data source" %}
+
 ## Related Topics
 
 {% page-ref page="../first-topic.md" %}
