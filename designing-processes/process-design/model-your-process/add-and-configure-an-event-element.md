@@ -194,7 +194,7 @@ Follow these steps to select who can start a Request via a Web Entry URL via thi
 
      ![](../../../.gitbook/assets/web-entry-completed-action-url-start-event-process-modeler-processes.png)
 
-     After the **Url** option is selected, the **Url to redirect to** setting displays below the **Completed Action** drop-down menu to redirect the Requester after the Requester submits the ProcessMaker Screen selected from the Screen Associated drop-down menu. The redirect URL supports [mustache syntax](https://mustache.github.io/mustache.5.html) to reference the value of a Request variable as the URL. In the **Url to redirect to** setting, enter the URL to redirect the Requester, and then press **Enter**. This is a required setting.  
+     After the **Url** option is selected, the **Url to redirect to** setting displays below the **Completed Action** drop-down menu. In the **Url to redirect to** setting, enter the URL to redirect the Requester after the Requester submits the ProcessMaker Screen selected from the **Screen Associated** drop-down menu, and then press **Enter**. This is a required setting.  
 
      ![](../../../.gitbook/assets/web-entry-url-start-event-process-modeler-processes.png)
 7. The **Web Entry URL** displays the Web Entry URL from which the Requester accesses the ProcessMaker Screen selected from the **Screen Associated** drop-down menu. The **Web Entry URL** value cannot be changed. The Web Entry package generates this URL using the following structure: _`ProcessMaker instance domain`_`/webentry/`_`Web Entry numerical instance`_`/`_`Identifier Value of this Start Event element`_. If necessary, click the **Copy to clipboard** link to copy the **Web Entry URL** value so that it is available in your clipboard.  

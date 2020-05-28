@@ -110,7 +110,7 @@ This section contains videos discussing Process development proof-of-concepts an
 
 {% tabs %}
 {% tab title="Analyze Documents in a \"Loan Application\" Process" %}
-See how ProcessMaker integrates with third-party services Amazon Textract and UiPath Robotic Process Automation \(RPA\) so a loan application workflow scans, analyzes, and intelligently routes a [Request](../using-processmaker/requests/what-is-a-request.md) and provision a bot accordingly.
+See how ProcessMaker can integrate with third-party services Amazon Textract and UiPath Robotic Process Automation \(RPA\) so a loan application workflow can scan, analyze, and intelligently route a [Request](../using-processmaker/requests/what-is-a-request.md) and provision a bot accordingly.
 
 * **Intended audience:** Process designers and business analysts
 * **Viewing time:** 11 minutes; contains narration
@@ -140,7 +140,7 @@ See how [ProcessMaker Data Connectors](../designing-processes/data-connector-man
 
 ### Example 2
 
-This example demonstrates dependent fields: how the options in one [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control depend on which option is selected from a previous Select List control. This example demonstrates how a Select List control in a [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md) can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md) that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens.
+This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens. This example demonstrates how the options in one control depend on the options on another.
 
 * **Intended audience:** Process designers, business analysts, software developers, coding engineers
 * **Viewing time:** 9 minutes; contains narration
@@ -211,22 +211,20 @@ See how to populate a [Record List](../designing-processes/design-forms/screens-
 {% page-ref page="../collections/what-is-a-collection.md" %}
 {% endtab %}
 
-{% tab title="Design Dependent Fields" %}
+{% tab title="Populate a Select List from a Data Connector" %}
 ### Example 1
 
-This example demonstrates dependent fields: how the options in one [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control depend on which option is selected from a previous Select List control. This example demonstrates that after a country is selected from one Select List control, a second Select List control contains as options the states and/or provinces in that selected country.
-
-The Select List control that contains the countries as its options gets those options from a [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md) that uses an [Endpoint](../designing-processes/data-connector-management/what-is-an-endpoint.md) to get the list of countries and their corresponding ISO codes from a third-party application program interface \(API\). A [Watcher](../designing-processes/design-forms/screens-builder/manage-watchers/what-is-a-watcher.md) monitors when a country is selected, and then another ProcessMaker Data Connector uses an Endpoint to get the list of states and/or provinces from that selected country based on that country's ISO code. The Watcher stores that list of states/provinces as a Request variable in that Request's data so that the second Select List control may access that list to display as its options. The second Select List control's options depend on the first Select List control's selection.
+See how to populate a [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control from records in a [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md).
 
 * **Intended audience:** Process designers, Web designers, graphic designers, software developers, coding engineers
-* **Viewing time:** 21 minutes; contains narration
-* **Tags:** [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control; dependent controls; dependent fields; API; application program interface; third-party API call; demo; video
+* **Viewing time:** 3 minutes; contains narration
+* **Tags:** form; web form; design form; form design; [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [Screen Builder](../designing-processes/design-forms/screens-builder/); [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control; API; application program interface; demo; video
 
-{% embed url="https://vimeo.com/423630726" %}
+{% embed url="https://vimeo.com/392379310" %}
 
 ### Example 2
 
-This example demonstrates dependent fields: how the options in one [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control depend on which option is selected from a previous Select List control. This example demonstrates how a Select List control in a [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md) can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md) that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens.
+This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens. This example demonstrates how the options in one control depend on the options on another.
 
 * **Intended audience:** Process designers, Web designers, graphic designers, software developers, coding engineers
 * **Viewing time:** 9 minutes; contains narration
@@ -241,20 +239,16 @@ This example demonstrates dependent fields: how the options in one [Select List]
 {% page-ref page="../designing-processes/design-forms/what-is-a-form.md" %}
 
 {% page-ref page="../designing-processes/data-connector-management/what-is-a-data-connector.md" %}
+
+{% page-ref page="../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md" %}
 {% endtab %}
 
 {% tab title="Using Watchers" %}
-### Examples 1 and 2
-
 See how to use [Watchers](../designing-processes/design-forms/screens-builder/manage-watchers/what-is-a-watcher.md) in [Screen Builder](../designing-processes/design-forms/screens-builder/what-is-screens-builder.md) to monitor when a [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md) control changes value, then perform an action with a [ProcessMaker Script](../designing-processes/scripts/what-is-a-script.md) or [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md).
 
 * **Intended audience:** Process designers, Web designers, graphic designers, software developers, coding engineers
 * **Viewing time:** 10 minutes to watch two videos; contains narration
-  * **Example 1:** 2 minutes
-  * **Example 1:** 8 minutes
 * **Tags:** form; web form; design form; form design; [Process](../designing-processes/viewing-processes/what-is-a-process.md) design; design Process; workflow design; design workflow; [ProcessMaker Data Connector](../designing-processes/data-connector-management/what-is-a-data-connector.md); [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md); [ProcessMaker Script](../designing-processes/scripts/what-is-a-script.md); [Screen Builder](../designing-processes/design-forms/screens-builder/); [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control; [Watcher](../designing-processes/design-forms/screens-builder/manage-watchers/what-is-a-watcher.md); application program interface; API; demo; video
-
-#### Example 1
 
 {% embed url="https://vimeo.com/392379936" %}
 
@@ -335,4 +329,8 @@ Use the [JavaScript SDK](https://github.com/ProcessMaker/sdk-node) with the [Pro
 {% page-ref page="../processmaker-api-documentation/access-processmaker-api-documentation.md" %}
 {% endtab %}
 {% endtabs %}
+
+
+
+
 

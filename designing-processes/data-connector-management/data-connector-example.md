@@ -9,7 +9,7 @@ description: >-
 
 ## Overview
 
-This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens. This example demonstrates dependent fields: how the options in one Select List control depend on which option is selected from a previous Select List control. Click in the Select List control's drop-down menu to select an option or start typing into the control to filter those university names that match the text entered into the control.
+This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens. Click in the Select List control's drop-down menu to select an option or start typing into the control to filter those university names that match the text entered into the control.
 
 Note that after creating this ProcessMaker Data Connector, it may be used for any ProcessMaker asset in your ProcessMaker instance that can use a Data Connector. It is not limited to being used with a Select List control.
 
