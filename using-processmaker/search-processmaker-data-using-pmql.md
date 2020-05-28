@@ -290,3 +290,7 @@ The `CAST` function converts data from one data type to another. PMQL supports t
 
 {% page-ref page="../collections/manage-records-in-a-collection/search-for-a-record-in-a-collection.md" %}
 
+{% page-ref page="../json-the-foundation-of-request-data/what-is-request-data.md" %}
+
+{% page-ref page="../json-the-foundation-of-request-data/what-is-a-request-variable.md" %}
+
