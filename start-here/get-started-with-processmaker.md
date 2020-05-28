@@ -110,7 +110,7 @@ This section contains videos discussing Process development proof-of-concepts an
 
 {% tabs %}
 {% tab title="Analyze Documents in a \"Loan Application\" Process" %}
-See how ProcessMaker can integrate with third-party services Amazon Textract and UiPath Robotic Process Automation \(RPA\) so a loan application workflow can scan, analyze, and intelligently route a [Request](../using-processmaker/requests/what-is-a-request.md) and provision a bot accordingly.
+See how ProcessMaker integrates with third-party services Amazon Textract and UiPath Robotic Process Automation \(RPA\) so a loan application workflow scans, analyzes, and intelligently routes a [Request](../using-processmaker/requests/what-is-a-request.md) and provision a bot accordingly.
 
 * **Intended audience:** Process designers and business analysts
 * **Viewing time:** 11 minutes; contains narration
