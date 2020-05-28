@@ -140,7 +140,7 @@ See how [ProcessMaker Data Connectors](../designing-processes/data-connector-man
 
 ### Example 2
 
-This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens. This example demonstrates how the options in one control depend on the options on another.
+This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens. This example demonstrates dependent fields: how the options in one Select List control depend on which option is selected from a previous Select List control.
 
 * **Intended audience:** Process designers, business analysts, software developers, coding engineers
 * **Viewing time:** 9 minutes; contains narration
@@ -224,7 +224,7 @@ See how to populate a [Select List](../designing-processes/design-forms/screens-
 
 ### Example 2
 
-This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens. This example demonstrates how the options in one control depend on the options on another.
+This example demonstrates how a Select List control in a ProcessMaker Screen can display the names of major universities around the world as its options in a drop-down menu. The options in this Select List control come from a ProcessMaker Data Connector that calls a third-party Application Program Interface \(API\) when the ProcessMaker Screen containing the Select List control opens. This example demonstrates dependent fields: how the options in one Select List control depend on which option is selected from a previous Select List control.
 
 * **Intended audience:** Process designers, Web designers, graphic designers, software developers, coding engineers
 * **Viewing time:** 9 minutes; contains narration
