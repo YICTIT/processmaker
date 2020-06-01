@@ -84,11 +84,11 @@ See [Add and Configure Start Timer Event Elements](add-and-configure-start-timer
 
 ### Signal Start Event
 
-
+A Signal Start Event element starts a [Request](../../../using-processmaker/requests/what-is-a-request.md) for a Process when it triggers from a specific signal broadcast from an [Intermediate Signal Throw Event](process-modeling-element-descriptions.md#intermediate-signal-throw-event) or [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element in any other Request in that ProcessMaker instance.
 
 ### Message Start Event
 
-A Message Start Event element starts a [Request](../../../using-processmaker/requests/what-is-a-request.md) for a Process when it triggers from a message. The Message Start Event element listens for a message from a specified source. The purpose of the message transfer is to send data from one Pool element's Request data to another Pool element within the same Process model, thereby using the sent Request data to start a Request for the receiving Pool element; each Pool element represents its own Request with its own distinct Request data.
+A Message Start Event element starts a [Request](../../../using-processmaker/requests/what-is-a-request.md) for a Process when it triggers from a specific message. The Message Start Event element listens for a message from a specified source. The purpose of the message transfer is to send data from one Pool element's Request data to another Pool element within the same Process model, thereby using the sent Request data to start a Request for the receiving Pool element; each Pool element represents its own Request with its own distinct Request data.
 
 A [Message Flow](process-modeling-element-descriptions.md#message-flow) element can connect from the element sending the message to the Message Start Event element. A Process model can have multiple Message Start Event elements.
 
@@ -135,7 +135,7 @@ See [Add and Configure Intermediate Timer Event Elements](add-and-configure-inte
 
 ### Intermediate Message Catch Event
 
-An Intermediate Message Catch Event element delays a [Request](../../../using-processmaker/requests/what-is-a-request.md) until that element receives a message. The purpose of the message transfer is to send data between Requests running from the same Process model since each Pool element represents its own Request with its own distinct Request data.
+An Intermediate Message Catch Event element delays a [Request](../../../using-processmaker/requests/what-is-a-request.md) until that element receives a specific message. The purpose of the message transfer is to send data between Requests running from the same Process model since each Pool element represents its own Request with its own distinct Request data.
 
 This message may originate from any of the following:
 
@@ -332,12 +332,12 @@ See [Add and Configure Boundary Error Event Elements](add-and-configure-boundary
 
 ### Boundary Message Event
 
-A Boundary Message Event element represents alternate workflow routing from the following element or connector when that Boundary Message Event element receives a message:
+A Boundary Message Event element represents alternate workflow routing from the following element or connector when that Boundary Message Event element receives a specific message:
 
 * [Sub Process](add-and-configure-sub-process-elements.md#add-a-sub-process-element) element
 * [Actions By Email](../model-processes-using-connectors/available-connectors-from-processmaker/actions-by-email-connector.md) connector \(requires the [Actions By Email package](../../../package-development-distribution/package-a-connector/actions-by-email-package.md)\)
 
- Use a Boundary Message Event element to design business solutions for different outcomes in the child Request.
+Use a Boundary Message Event element to design business solutions for different outcomes in the child Request.
 
 Use a [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) element to indicate workflow routing if the Boundary Message Event element triggers: when this element receives a message from the child Request.
 
@@ -645,7 +645,7 @@ In Process Modeler, Flow indicators display when you click an element in the Pro
 
 These messages indicate the transfer of Request data between separate Process model elements. Use a [Text Annotation](process-modeling-element-descriptions.md#text-annotation) element to add descriptive information about the nature of the data transfer.
 
-![A Message Flow element \(dotted line\) between two elements in different Pool elements](../../../.gitbook/assets/message-flow-between-pool-elements-process-model-processes.png)
+![A Message Flow element \(dotted line\) between two elements in different Pool elements](../../../.gitbook/assets/message-flow-between-pool-elements-process-model-designer.png)
 
 {% hint style="info" %}
 See [Connect Message Flow Elements to Indicate Collaboration](set-and-delete-message-flow-between-elements.md).

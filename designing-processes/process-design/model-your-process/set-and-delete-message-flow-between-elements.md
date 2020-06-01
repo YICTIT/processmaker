@@ -22,7 +22,7 @@ In Process Modeler, Flow indicators display when you click an element in the Pro
 
 From the context of a Process model element associated with a Message Flow element, that Message Flow element can be "incoming" or "outgoing." Consider the following Process model example to demonstrate their differences.
 
-![Message Flow element is outgoing for Task 1, but incoming for Task 2](../../../.gitbook/assets/message-flow-between-pool-elements-process-model-processes.png)
+![Message Flow element is outgoing for Task 1, but incoming for Task 2](../../../.gitbook/assets/message-flow-between-pool-elements-process-model-designer.png)
 
 Below are the differences between incoming and outgoing Message Flow elements:
 
@@ -36,11 +36,17 @@ The following BPMN 2.0 elements do not use Message Flow elements:
 * ​[Start Timer Event](process-modeling-element-descriptions.md#start-timer-event) element
 * [Message Start Event](process-modeling-element-descriptions.md#message-start-event) element
 * [Intermediate Timer Event](process-modeling-element-descriptions.md#intermediate-timer-event) element
-* Intermediate Signal Catch Event element
+* [Intermediate Signal Catch Event](process-modeling-element-descriptions.md#intermediate-signal-catch-event) element
 * [Intermediate Message Catch Event](process-modeling-element-descriptions.md#intermediate-message-catch-event) element
-* End Signal Event element
+* [End Event](process-modeling-element-descriptions.md#end-event) element
 * [Message End Event](process-modeling-element-descriptions.md#message-end-event) element
 * [Error End Event](process-modeling-element-descriptions.md#error-end-event) element
+* [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element
+* [Terminate End Event](process-modeling-element-descriptions.md#terminate-end-event) element
+* [Boundary Timer Event](process-modeling-element-descriptions.md#boundary-timer-event) element
+* [Boundary Error Event](process-modeling-element-descriptions.md#boundary-error-event) element
+* [Boundary Signal Event](process-modeling-element-descriptions.md#boundary-signal-event) element
+* [Boundary Message Event](process-modeling-element-descriptions.md#boundary-message-event) element
 * [Script Task](process-modeling-element-descriptions.md#script-task) element
 * [Manual Task](process-modeling-element-descriptions.md#manual-task) element
 * [Sub Process](process-modeling-element-descriptions.md#sub-process) element
@@ -80,11 +86,11 @@ Follow these steps to set the Message Flow element between elements in separate 
 5. Do one of the following:
    * Click the second Pool element to indicate messaging between the two elements.  
 
-     ![](../../../.gitbook/assets/message-flow-to-pool-element-process-modeler-processes.png)
+     ![](../../../.gitbook/assets/message-flow-to-pool-element-process-modeler-designer.png)
 
    * Click an element inside the second Pool element to indicate messaging between the two elements.  
 
-     ![](../../../.gitbook/assets/message-flow-between-pool-elements-process-model-processes.png)
+     ![](../../../.gitbook/assets/message-flow-between-pool-elements-process-model-designer.png)
 
 ## Settings
 
