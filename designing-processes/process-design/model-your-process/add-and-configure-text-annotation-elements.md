@@ -30,7 +30,7 @@ Follow these steps to add a Text Annotation element to the Process model:
 3. Locate the **Text Annotation** element in the **Elements and Connectors** palette that is to the left of the Process Modeler canvas. If the [**Hide Menus** button](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view)![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is enabled, the **Elements and Connectors** palette displays the **Text Annotation** element's icon![](../../../.gitbook/assets/text-annotation-icon-process-modeler-processes.png). ![](../../../.gitbook/assets/bpmn-panel-text-annotation-process-modeler-processes.png) 
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Text Annotation element cannot be placed outside of the Pool element.
 
-![Text Annotation element](../../../.gitbook/assets/text-annotation-process-modeler-processes.png)
+![Text Annotation element](../../../.gitbook/assets/text-annotation-element-process-modeler-designer.png)
 
 After the element is placed into the Process model, you may move it by dragging it to the new location.
 
@@ -118,7 +118,7 @@ Follow these steps to add an Association element to the Process model:
 5. Click the **Association Flow** icon![](../../../.gitbook/assets/association-flow-icon-text-annotation-process-modeler-processes.png).
 6. Click the Process model element to which the Text Annotation element describes. The Annotation element is placed.  
 
-   ![](../../../.gitbook/assets/association-process-modeler-processes.png)
+   ![](../../../.gitbook/assets/association-element-process-modeler-designer.png)
 
 7. Repeat steps 5 and 6 to reference another Process model element that the Text Annotation element describes as necessary.
 
@@ -174,15 +174,15 @@ Follow these steps to edit the directional arrow that points between the Text An
 4. From the **Direction** drop-down menu, select the direction in which the arrow points between the Text Annotation element and the element it describes. Select one of the following options:
    * **None:** Select the **None** option to not display an arrow that indicates the reference between the Text Annotation element and the element it describes.  
 
-     ![](../../../.gitbook/assets/association-process-modeler-processes.png)
+     ![](../../../.gitbook/assets/association-element-process-modeler-designer.png)
 
    * **One:** Select the **One** option to display an arrow that points from the Text Annotation element to the element it describes. This is the default option.  
 
-     ![](../../../.gitbook/assets/assocation-one-process-modeler-processes.png)
+     ![](../../../.gitbook/assets/association-element-one-process-modeler-designer.png)
 
    * **Both:** Select the **Both** option to display arrows to and from the Text Annotation element's  referencing element.  
 
-     ![](../../../.gitbook/assets/association-both-process-modeler-processes.png)
+     ![](../../../.gitbook/assets/association-element-both-process-modeler-designer.png)
 
 ## Related Topics
 

@@ -32,7 +32,7 @@ Follow these steps to add a Message Start Event element to the Process model:
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Start Timer Event element cannot be placed outside of the Pool element.
 5. From the **Elements** drop-down menu, select the **Message Start Event** option. The Message Start Event element displays. ![](../../../.gitbook/assets/message-start-event-selection-process-modeler-processes.png) 
 
-![Message Start Event element](../../../.gitbook/assets/message-start-event-process-modeler-processes%20%281%29.png)
+![Message Start Event element](../../../.gitbook/assets/message-start-event-element-process-modeler-designer.png)
 
 After the element is placed into the Process model, you may move it by dragging it to the new location.
 

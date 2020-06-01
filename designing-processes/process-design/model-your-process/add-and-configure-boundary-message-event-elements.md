@@ -33,7 +33,7 @@ Follow these steps to add a Boundary Message Event element to the Process model:
    * [Boundary Timer Event](add-and-configure-boundary-error-event-elements.md#add-a-boundary-error-event-element) element
    * [Boundary Error Event](add-and-configure-boundary-error-event-elements.md#add-a-boundary-error-event-element) element
 
-![Boundary Message Event element associated with a Sub Process element](../../../.gitbook/assets/boundary-message-event-process-modeler-processes.png)
+![Boundary Message Event element associated with a Sub Process element](../../../.gitbook/assets/boundary-message-event-element-process-modeler-designer.png)
 
 After placing the Boundary Message Event element, you may drag it to an adjacent side of its associating element. Since Process Modeler displays element names at the bottom of elements, the Boundary Message Event element displays best at the bottom of its associating element.
 
@@ -73,8 +73,8 @@ Follow these steps to edit the name for a Boundary Message Event element:
 
 Indicate whether the Boundary Message Event element interrupts the best-case scenario workflow:
 
-* **Interrupting workflow:** When workflow routes through the Boundary Message Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Message Event element if that element receives a message from the child Request. ![](../../../.gitbook/assets/boundary-message-event-interrupting.png) 
-* **Non-interrupting workflow:** Workflow routes both through the Boundary Message Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Message Event element if that element receives a message from the child Request; however, after the child Request completes and workflow resumes in the parent Request, the Sub Process element completes and routes through the best-case scenario. ![](../../../.gitbook/assets/boundary-message-event-non-interrupting.png)
+* **Interrupting workflow:** When workflow routes through the Boundary Message Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Message Event element if that element receives a message from the child Request. ![](../../../.gitbook/assets/boundary-message-event-interrupting-example.png) 
+* **Non-interrupting workflow:** Workflow routes both through the Boundary Message Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Message Event element if that element receives a message from the child Request; however, after the child Request completes and workflow resumes in the parent Request, the Sub Process element completes and routes through the best-case scenario. ![](../../../.gitbook/assets/boundary-message-event-non-interrupting-example.png)
 
 Follow these steps to indicate if this Boundary Message Event element interrupts the best-case scenario workflow when it triggers:
 

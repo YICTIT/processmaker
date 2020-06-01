@@ -34,7 +34,7 @@ Follow these steps to add an End Event element to the Process model:
    * From the **Elements** drop-down menu, select the **End Event** option. ![](../../../.gitbook/assets/end-event-selection-process-modeler-processes.png) 
    * Click anywhere in the Process model. The End Event element selects by default.
 
-![End Event element](../../../.gitbook/assets/end-event-process-modeler-processes.png)
+![End Event element](../../../.gitbook/assets/end-event-element-process-modeler-designer.png)
 
 After the element is placed into the Process model, you may move it by dragging it to the new location.
 

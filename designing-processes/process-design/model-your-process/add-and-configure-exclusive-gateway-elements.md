@@ -31,7 +31,7 @@ Follow these steps to add an Exclusive Gateway element to the Process model:
    * From the **Elements** drop-down menu, select the **Exclusive Gateway** option. ![](../../../.gitbook/assets/exclusive-gateway-selection-process-modeler-processes.png) 
    * Click anywhere in the Process model. The Exclusive Gateway element selects by default.
 
-![Exclusive Gateway element](../../../.gitbook/assets/exclusive-gateway-process-modeler-processes.png)
+![Exclusive Gateway element](../../../.gitbook/assets/exclusive-gateway-element-process-modeler-designer.png)
 
 After the element is placed into the Process model, you may move it by dragging it to the new location.
 

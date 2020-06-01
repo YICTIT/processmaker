@@ -10,11 +10,13 @@ description: >-
 
 In a Process model, Message Flow elements represent messaging between elements of \(or within\) one [Pool](process-modeling-element-descriptions.md#pool) element to elements of \(or within\) another Pool element. Message Flow elements cannot connect to Process model elements within the same Pool element. Message Flow elements are not to be confused with [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) elements.
 
-Use Message Flow elements to indicate messaging from one Pool to another. Since each Pool element in a Process uses its own [Request](../../../using-processmaker/requests/what-is-a-request.md) and Request data, use Message Flow elements to exchange messaging between separate Pool elements and/or elements within those Pool elements.
+Use Message Flow elements to represent collaboration and transfer Request data from one Pool to another. Since each Pool element in a Process uses its own [Request](../../../using-processmaker/requests/what-is-a-request.md) and Request data, use Message Flow elements to exchange data and information between separate Pool elements and/or elements within those Pool elements.
+
+These messages indicate the transfer of Request data between separate Process model elements. Use a [Text Annotation](process-modeling-element-descriptions.md#text-annotation) element to add descriptive information about the nature of the data transfer.
 
 In Process Modeler, Flow indicators display when you click an element in the Process model. The dotted-line Flow indicator is for Message Flows \(highlighted below\).
 
-![Message Flow indicator \(highlighted\) on a selected Process model element](../../../.gitbook/assets/message-flow-indicator-process-model-processes.png)
+![Message Flow indicator \(highlighted\) on a selected Process model element](../../../.gitbook/assets/message-flow-indicator-process-modeler-designer.png)
 
 ### Incoming and Outgoing Message Flow
 
@@ -72,7 +74,7 @@ Follow these steps to set the Message Flow element between elements in separate 
 2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays. Ensure that the Process model has at least two \(2\) Pool elements from which to establish Message Flow between them.
 3. From one Pool element, select the Process model element to which to establish messaging via the Message Flow element. Available options display to the right of the selected element. Process model element types that [do not support the Message Flow element](set-and-delete-message-flow-between-elements.md#restrictions-on-message-flow-elements) do not have the Message Flow indicator as highlighted below.  
 
-   ![](../../../.gitbook/assets/message-flow-indicator-process-model-processes.png)
+   ![](../../../.gitbook/assets/message-flow-indicator-process-modeler-designer.png)
 
 4. Click the **Message Flow** icon![](../../../.gitbook/assets/message-flow-icon-process-modeler-processes.png).
 5. Do one of the following:

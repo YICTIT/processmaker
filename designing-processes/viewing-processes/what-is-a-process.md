@@ -29,7 +29,7 @@ The following video demonstrates how ProcessMaker integrates with third-party se
 * **Intended audience:** Process designers and business analysts
 * **Viewing time:** 11 minutes; contains narration
 
-{% embed url="https://vimeo.com/383574552" %}
+{% embed url="https://vimeo.com/383574552" caption="Video demonstration how ProcessMaker integrates with third-party services and RPAs" %}
 
 ## Related Topics
 

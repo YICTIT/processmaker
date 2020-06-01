@@ -31,7 +31,7 @@ Follow these steps to add an Intermediate Message Catch Event element to the Pro
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Intermediate Message Catch Event element cannot be placed outside of the Pool element.
 5. From the **Elements** drop-down menu, select the **Intermediate Message Catch Event** option. The Intermediate Message Catch Event element displays. ![](../../../.gitbook/assets/intermediate-message-catch-event-selection-process-modeler-processes.png) 
 
-![Intermediate Message Catch Event element](../../../.gitbook/assets/intermediate-message-catch-event-process-modeler-processes.png)
+![Intermediate Message Catch Event element](../../../.gitbook/assets/intermediate-message-catch-event-element-process-modeler-designer.png)
 
 After the element is placed into the Process model, you may move it by dragging it to the new location.
 

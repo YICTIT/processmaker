@@ -39,7 +39,7 @@ Follow these steps to add a Boundary Error Event element to the Process model:
    * [Boundary Timer Event](add-and-configure-boundary-timer-event-elements.md#add-a-boundary-timer-event-element) element
    * [Boundary Message Event](add-and-configure-boundary-message-event-elements.md#add-a-boundary-message-event-element) element
 
-![Boundary Error Event element associated with a Script Task element](../../../.gitbook/assets/boundary-error-event-process-modeler-processes.png)
+![Boundary Error Event element associated with a Script Task element](../../../.gitbook/assets/boundary-error-event-element-process-modeler-designer.png)
 
 After placing the Boundary Error Event element, you may drag it to an adjacent side of its associating element. Since Process Modeler displays element names at the bottom of elements, the Boundary Error Event element displays best at the bottom of its associating element.
 

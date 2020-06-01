@@ -29,7 +29,7 @@ Follow these steps to add a Parallel Gateway element to the Process model:
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Parallel Gateway element cannot be placed outside of the Pool element.
 5. From the **Elements** drop-down menu, select the **Parallel Gateway** option. The Parallel Gateway element displays. ![](../../../.gitbook/assets/parallel-gateway-selection-process-modeler-processes.png) 
 
-![Parallel Gateway element](../../../.gitbook/assets/parallel-gateway-process-modeler-processes.png)
+![Parallel Gateway element](../../../.gitbook/assets/parallel-gateway-element-process-modeler-designer.png)
 
 After the element is placed into the Process model, you may move it by dragging it to the new location.
 
@@ -78,15 +78,15 @@ Indicate if the workflow direction for the Parallel Gateway is converging or div
 
 * **Converging:** Converging workflow represents two or more incoming [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) elements to the Parallel Gateway element. All incoming Sequence Flow elements converging to the Parallel Gateway element must trigger before the Parallel Gateway element triggers, thereby synchronizing a [Request's](../../../using-processmaker/requests/what-is-a-request.md) workflow. Use this coordinate workflow.
 
-  ![](../../../.gitbook/assets/parallel-gateway-converging.png)
+  ![](../../../.gitbook/assets/converging-parallel-gateway.png)
 
 * **Diverging:** Diverging workflow represents two or more outgoing Sequence Flow elements from the Parallel Gateway element. When a Parallel Gateway triggers, all outgoing Sequence Flow elements from the gateway element trigger simultaneously without exception. Conditions cannot be placed on any outgoing Sequence Flow elements from the Parallel Gateway element. Use this when multiple workflow routes must occur simultaneously.
 
-  ![](../../../.gitbook/assets/parallel-gateway-diverging.png)
+  ![](../../../.gitbook/assets/diverging-parallel-gateway.png)
 
 One Parallel Gateway element can only converge or diverge parallel workflow, but not both. Use two Parallel Gateway elements to synchronize both converging and diverging parallel workflow.
 
-![Use two Parallel Gateway elements for both converging and diverging parallel workflow](../../../.gitbook/assets/parallel-gateway-converging-and-diverging.png)
+![Use two Parallel Gateway elements for both converging and diverging parallel workflow](../../../.gitbook/assets/converging-and-diverging-parallel-gateway.png)
 
 Follow these steps to indicate the workflow direction for a Parallel Gateway element:
 

@@ -31,7 +31,7 @@ Follow these steps to add a Form Task element to the Process model:
    * From the **Elements** drop-down menu, select the **Task** option. ![](../../../.gitbook/assets/task-selection-process-modeler-processes.png) 
    * Click anywhere in the Process model. The Form Task element selects by default.
 
-![Form Task element](../../../.gitbook/assets/task-element-process-modeler-processes.png)
+![Form Task element](../../../.gitbook/assets/form-task-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 After adding the Form Task element, consider adding either of the following Boundary-type Process model elements to design business solutions when your best-case scenarios don't happen:

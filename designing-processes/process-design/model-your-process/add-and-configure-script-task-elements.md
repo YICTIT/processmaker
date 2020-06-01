@@ -32,7 +32,7 @@ Follow these steps to add a Script Task element to the Process model:
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Script Task element cannot be placed outside of the Pool element.
 5. From the **Elements** drop-down menu, select the **Script Task** option. The Script Task element displays. ![](../../../.gitbook/assets/script-task-selection-process-modeler-processes.png) 
 
-![Script Task element](../../../.gitbook/assets/script-task-process-modeler-processes.png)
+![Script Task element](../../../.gitbook/assets/script-task-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 After adding the Script Task element, consider adding either of the following Boundary-type Process model elements to design business solutions when your best-case scenarios don't happen:

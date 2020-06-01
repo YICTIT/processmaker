@@ -16,28 +16,29 @@ Sequence Flow elements have the following attributes in regards to specific Proc
 
 * From the context of a Process model element associated with a Sequence Flow element, that Sequence Flow element can be "incoming" or "outgoing." Consider the following Process model example to demonstrate their differences.  
 
-  ![](../../../.gitbook/assets/sequence-flow-incoming-outgoing-process-modeler-processes.png)
+  ![](../../../.gitbook/assets/sequence-flow-incoming-outgoing-process-modeler-designer.png)
 
   * **Incoming:** An incoming Sequence Flow element comes from its connecting element. In the example, the Sequence Flow element is incoming to the Form Task element.  
 
-    ![](../../../.gitbook/assets/sequence-flow-incoming-process-modeler-processes.png)
+    ![](../../../.gitbook/assets/sequence-flow-incoming-process-modeler-designer.png)
 
   * **Outgoing:** An outgoing Sequence Flow goes to the connecting element. In the example, the Sequence Flow element is outgoing from the Form Task element.  
 
-    ![](../../../.gitbook/assets/sequence-flow-outgoing-process-modeler-processes.png)
+    ![](../../../.gitbook/assets/sequence-flow-outgoing-process-modeler-designer.png)
 
 * Text annotation elements and Pool elements do not participate in sequence flow.
 * Sequence Flow elements cannot connect workflow between Process model elements within different Pool elements. Use [Message Flow](set-and-delete-message-flow-between-elements.md) elements to indicate messaging between elements in different Pool elements.
 * Start Event type elements begin the flow of a Request for that Process. Therefore, the following elements cannot have an incoming Sequence Flow element:
   * [Start Event](process-modeling-element-descriptions.md#start-event) element
   * [Start Timer](process-modeling-element-descriptions.md#start-timer-event) Event element
-  * Start Signal Event element
+  * [Signal Start Event](process-modeling-element-descriptions.md#signal-start-event) element
   * [Message Start Event](process-modeling-element-descriptions.md#message-start-event) element
 * End Event type elements terminate the flow of a Request for that Process. Therefore, the following elements cannot have an outgoing Sequence Flow element:
   * [End Event](process-modeling-element-descriptions.md#end-event) element
   * [Message End Event](process-modeling-element-descriptions.md#message-end-event) element
-  * End Signal Event element
   * [Error End Event](process-modeling-element-descriptions.md#error-end-event) element
+  * [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element
+  * [Terminate End Event](process-modeling-element-descriptions.md#terminate-end-event) element
 * Sequence Flow elements from [Exclusive Gateway](process-modeling-element-descriptions.md#exclusive-gateway) and [Inclusive Gateway](process-modeling-element-descriptions.md#inclusive-gateway) elements can be configured to specify under which condition a Request routes through that Sequence Flow element. See [Configure an Outgoing Sequence Flow Element from an Exclusive Gateway or Inclusive Gateway Element](the-quick-toolbar.md#configure-an-outgoing-sequence-flow-element-from-an-exclusive-gateway-or-inclusive-gateway-element).
 
 ## Connect the Sequence Flow Element to Another Element
@@ -63,12 +64,10 @@ Follow these steps to set the Sequence Flow element from one connecting element 
 2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
 3. Select the Process model element from which you want to set the workflow routing. Available options display to the right of the selected element. The solid-line Flow indicator is for Sequence Flows \(highlighted below\).  
 
-   ![](../../../.gitbook/assets/sequence-flow-indicator-process-modeler-processes.png)
+   ![](../../../.gitbook/assets/sequence-flow-indicator-process-modeler-designer.png)
 
 4. Click the **Sequence Flow** icon![](../../../.gitbook/assets/sequence-flow-icon-process-modeler-processes.png).
 5. Click the Process model element to which to set the workflow routing. The Sequence Flow element connects between the two \(2\) elements to indicate workflow routing.  
-
-   ![](../../../.gitbook/assets/sequence-flow-connecting-elements-process-modeler-processes.png)
 
 ## Settings
 

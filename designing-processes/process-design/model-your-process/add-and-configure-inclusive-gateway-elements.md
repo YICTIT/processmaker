@@ -29,7 +29,7 @@ Follow these steps to add an Inclusive Gateway element to the Process model:
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Inclusive Gateway element cannot be placed outside of the Pool element.
 5. From the **Elements** drop-down menu, select the **Inclusive Gateway** option. The Inclusive Gateway element displays. ![](../../../.gitbook/assets/inclusive-gateway-selection-process-modeler-processes.png) 
 
-![Inclusive Gateway element](../../../.gitbook/assets/inclusive-gateway-element-process-modeler-processes.png)
+![Inclusive Gateway element](../../../.gitbook/assets/inclusive-gateway-element-process-modeler-designer.png)
 
 After the element is placed into the Process model, you may move it by dragging it to the new location.
 

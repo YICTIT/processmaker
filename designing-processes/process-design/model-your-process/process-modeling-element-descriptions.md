@@ -32,18 +32,24 @@ Use event-type elements to represent when a type of event occurs. These event ty
 
 * [Start Event](process-modeling-element-descriptions.md#start-event) element
 * [Start Timer Event](process-modeling-element-descriptions.md#start-timer-event) element
+* [Signal Start Event](process-modeling-element-descriptions.md#start-signal-event) element
 * [Message Start Event](process-modeling-element-descriptions.md#message-start-event) element
 * [Intermediate Timer Event](process-modeling-element-descriptions.md#intermediate-timer-event) element
+* [Intermediate Signal Catch Event](process-modeling-element-descriptions.md#intermediate-signal-catch-event) element
+* [Intermediate Signal Throw Event](process-modeling-element-descriptions.md#intermediate-signal-throw-event) element
 * [Intermediate Message Catch Event](process-modeling-element-descriptions.md#intermediate-message-catch-event) element
 * [Intermediate Message Throw Event](process-modeling-element-descriptions.md#intermediate-message-throw-event) element
 * [End Event](process-modeling-element-descriptions.md#end-event) element
 * [Message End Event](process-modeling-element-descriptions.md#message-end-event) element
 * [Error End Event](process-modeling-element-descriptions.md#error-end-event) element
+* [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element
+* [Terminate End Event](process-modeling-element-descriptions.md#terminate-end-event) element
 
 The following are event-type Process model elements that represent when alternative workflow routing occurs with [Form Task](process-modeling-element-descriptions.md#form-task) element, [Script Task](process-modeling-element-descriptions.md#script-task) element, [Manual Task](process-modeling-element-descriptions.md#manual-task) element, and/or [Sub Process](process-modeling-element-descriptions.md#sub-process) element in the Process. Use these event-type Process model elements to design business solutions when expected or nominal business workflow do not occur:
 
 * [Boundary Timer Event](process-modeling-element-descriptions.md#boundary-timer-event) element
 * [Boundary Error Event](process-modeling-element-descriptions.md#boundary-error-event) element
+* [Boundary Signal Event](process-modeling-element-descriptions.md#boundary-signal-event) element
 * [Boundary Message Event](process-modeling-element-descriptions.md#boundary-message-event) element
 
 ### Start Event
@@ -54,11 +60,11 @@ Use a Start Event element to represent how a Request for that Process starts in 
 
 * The Request can be started by an authenticated ProcessMaker [user](../../../processmaker-administration/add-users/what-is-a-user.md) \(Jane Doe\) or any member of a specified [group](../../../processmaker-administration/assign-groups-to-users/what-is-a-group.md) \(Accounting department\).
 * The Request can be started by either an anonymous or authenticated ProcessMaker user through a published URL. This allows a ProcessMaker Screen to be available on a public-facing Web site that starts the Request when that Screen is submitted. Note that this feature is only available if the Web Entry package is installed in your ProcessMaker instance. See [Web Entry](../../../package-development-distribution/package-a-connector/web-entry.md).
-* The Request can be started via the ProcessMaker API.
+* The Request can be [started via the ProcessMaker RESTful API](../../../using-processmaker/requests/make-a-request.md#start-a-request-via-the-processmaker-api).
 
 Below is a Start Event element when it has been placed into a Process model.
 
-![Start Event element](../../../.gitbook/assets/start-event-process-modeler-processes.png)
+![Start Event element](../../../.gitbook/assets/start-event-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Event Elements](add-and-configure-an-event-element.md#add-a-start-event-element).
@@ -70,11 +76,15 @@ A Start Timer Event element starts a [Request](../../../using-processmaker/reque
 
 Below is a Start Timer Event element when it has been placed into a Process model.
 
-![Start Timer Event element](../../../.gitbook/assets/start-timer-event-process-modeler-processes.png)
+![Start Timer Event element](../../../.gitbook/assets/start-timer-event-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Start Timer Event Elements](add-and-configure-start-timer-event-elements.md).
 {% endhint %}
+
+### Signal Start Event
+
+
 
 ### Message Start Event
 
@@ -97,7 +107,7 @@ A Message Start Event element functions as follows during a Request:
 
 Below is a Message Start Event element when it has been placed into a Process model.
 
-![Message Start Event](../../../.gitbook/assets/message-start-event-process-modeler-processes.png)
+![Message Start Event element](../../../.gitbook/assets/message-start-event-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Message Start Event Elements](add-and-configure-message-start-event-elements.md).
@@ -109,11 +119,19 @@ An Intermediate Timer Event element delays a [Request](../../../using-processmak
 
 Below is an Intermediate Timer Event element when it has been placed into a Process model.
 
-![Intermediate Timer Event element](../../../.gitbook/assets/intermediate-timer-event-process-modeler-processes.png)
+![Intermediate Timer Event element](../../../.gitbook/assets/intermediate-timer-event-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Intermediate Timer Event Elements](add-and-configure-intermediate-timer-event-elements.md).
 {% endhint %}
+
+### Intermediate Signal Catch Event
+
+
+
+### Intermediate Signal Throw Event
+
+
 
 ### Intermediate Message Catch Event
 
@@ -129,12 +147,12 @@ A [Message Flow](process-modeling-element-descriptions.md#message-flow) element 
 
 An Intermediate Message Catch Event element functions as follows during a Request:
 
-1. Workflow in the Request using the Intermediate Message Catch Event element pauses when it reaches this event. The Intermediate Message Catch Event element listens for a message based on that message's name. The message name is a placeholder for the message.
+1. Workflow in the Request using the Intermediate Message Catch Event element pauses when it reaches this event. The Intermediate Message Catch Event element waits for a message based on that message's name. The message name is a placeholder for the message.
 2. The Intermediate Message Throw Event element or Message End Event element triggers.
 3. That triggering element sends its message containing Request data to the Intermediate Message Catch Event element.
-4. If the message name matches that for which the Intermediate Message Catch Event element is listening, then that element triggers; workflow resumes in that Request. Otherwise, the message is ignored.
+4. If the message name matches that for which the Intermediate Message Catch Event element is listening, then that element triggers; workflow resumes in that Request. Otherwise, the Intermediate Message Catch Event element ignores the message.
 
-Consider the following example how the Intermediate Message Catch Event element functions. This example uses the Intermediate Message Throw Event element  in an overly simple purchase request and order fulfillment Process model.
+Consider the following example how the Intermediate Message Catch Event element functions. This example uses the Intermediate Message Throw Event element in an overly simple purchase request and order fulfillment Process model. The Process model contains two Processes, each within its own Pool element. Each Process may potentially run its own Request.
 
 ![Simple Process model example to demonstrate how an Intermediate Message Catch Event functions](../../../.gitbook/assets/intermediate-throw-catch-event-example.png)
 
@@ -149,7 +167,7 @@ After the "Purchase Fulfillment" Request starts, the following occurs:
 
 Below is an Intermediate Message Catch Event element when it has been placed into a Process model.
 
-![Intermediate Message Catch Event element](../../../.gitbook/assets/intermediate-message-catch-event-process-modeler-processes.png)
+![Intermediate Message Catch Event element](../../../.gitbook/assets/intermediate-message-catch-event-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Intermediate Timer Event Elements](add-and-configure-intermediate-timer-event-elements.md).
@@ -173,7 +191,7 @@ See the [Intermediate Message Catch Event](process-modeling-element-descriptions
 
 Below is an Intermediate Message Throw Event element when it has been placed into a Process model.
 
-![Intermediate Message Throw Event element](../../../.gitbook/assets/intermediate-message-throw-event-process-modeler-processes%20%281%29.png)
+![Intermediate Message Throw Event element](../../../.gitbook/assets/intermediate-timer-event-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Intermediate Message Throw Event Elements](add-and-configure-intermediate-message-throw-event-elements.md).
@@ -185,7 +203,7 @@ An End Event element completes a [Request](../../../using-processmaker/requests/
 
 Below is an End Event element when it has been placed into a Process model.
 
-![End Event element](../../../.gitbook/assets/end-event-process-modeler-processes.png)
+![End Event element](../../../.gitbook/assets/end-event-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure End Event Elements](add-and-configure-end-event-elements.md).
@@ -205,7 +223,7 @@ A Message End Event element functions as follows during a Request:
 
 Below is a Message End Event element when it has been placed into a Process model.
 
-![Message End Event element](../../../.gitbook/assets/message-end-event-process-modeler-processes%20%281%29.png)
+![Message End Event element](../../../.gitbook/assets/message-end-event-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Message End Event Elements](add-and-configure-message-end-event-elements.md).
@@ -224,11 +242,19 @@ Use an Error End Event element in the following ways:
 
 Below is an Error End Event element when it has been placed into a Process model.
 
-![Error End Event element](../../../.gitbook/assets/error-end-event-process-modeler-processes.png)
+![Error End Event element](../../../.gitbook/assets/error-end-event-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Error End Event Elements](add-and-configure-error-end-event-elements.md).
 {% endhint %}
+
+### Signal End Event
+
+
+
+### Terminate End Event
+
+
 
 ### Boundary Timer Event
 
@@ -257,12 +283,12 @@ An element associated with a Boundary Timer Event may also associate with a [Bou
 
 Configure whether a Boundary Timer Event element interrupts the best-case scenario workflow:
 
-* **Interrupting workflow:** When workflow routes through the Boundary Timer Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes. ![](../../../.gitbook/assets/boundary-timer-event-interrupting-processes.png) 
-* **Non-interrupting workflow:** Workflow routes both through the Boundary Timer Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes; however, workflow also routes through the best-case scenario when that element completes. ![](../../../.gitbook/assets/boundary-timer-event-non-interrupting-processes.png) 
+* **Interrupting workflow:** When workflow routes through the Boundary Timer Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes. ![](../../../.gitbook/assets/boundary-timer-event-interrupting-example.png) 
+* **Non-interrupting workflow:** Workflow routes both through the Boundary Timer Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes; however, workflow also routes through the best-case scenario when that element completes. ![](../../../.gitbook/assets/boundary-timer-event-non-interrupting-example.png) 
 
 Below is a Boundary Timer Event element when it is associated with a Form Task element. A Boundary Timer Event may also be associated with a Script Task element, Manual Task element, or Sub Process element.
 
-![Boundary Timer Event element associated with a Form Task element](../../../.gitbook/assets/boundary-timer-event-process-modeler-processes.png)
+![Boundary Timer Event element associated with a Form Task element](../../../.gitbook/assets/boundary-timer-event-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Boundary Timer Event Elements](add-and-configure-boundary-timer-event-elements.md).
@@ -294,11 +320,15 @@ An element associated with a Boundary Error Event may also associate with a [Bou
 
 Below is a Boundary Error Event element when it is associated with a Script Task element. A Boundary Error Event may also be associated with a Form Task element, Manual Task element, or Sub Process element.
 
-![Boundary Error Event element associated with a Script Task element](../../../.gitbook/assets/boundary-error-event-process-modeler-processes.png)
+![Boundary Error Event element associated with a Script Task element](../../../.gitbook/assets/boundary-error-event-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Boundary Error Event Elements](add-and-configure-boundary-error-event-elements.md).
 {% endhint %}
+
+### Boundary Signal Event
+
+
 
 ### Boundary Message Event
 
@@ -317,12 +347,12 @@ A Sub Process element associated with a Boundary Message Event may also associat
 
 Configure whether a Boundary Message Event element interrupts the best-case scenario workflow:
 
-* **Interrupting workflow:** When workflow routes through the Boundary Message Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Message Event element if that element receives a message from the child Request. ![](../../../.gitbook/assets/boundary-message-event-interrupting.png) 
-* **Non-interrupting workflow:** Workflow routes both through the Boundary Message Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Message Event element if that element receives a message from the child Request; however, after the child Request completes and workflow resumes in the parent Request, the Sub Process element completes and routes through the best-case scenario. ![](../../../.gitbook/assets/boundary-message-event-non-interrupting.png) 
+* **Interrupting workflow:** When workflow routes through the Boundary Message Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Message Event element if that element receives a message from the child Request. ![](../../../.gitbook/assets/boundary-message-event-interrupting-example.png) 
+* **Non-interrupting workflow:** Workflow routes both through the Boundary Message Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Message Event element if that element receives a message from the child Request; however, after the child Request completes and workflow resumes in the parent Request, the Sub Process element completes and routes through the best-case scenario. ![](../../../.gitbook/assets/boundary-message-event-non-interrupting-example.png) 
 
 Below is a Boundary Message Event element associated with a Sub Process element.
 
-![Boundary Message Event element associated with a Sub Process element](../../../.gitbook/assets/boundary-message-event-process-modeler-processes.png)
+![Boundary Message Event element associated with a Sub Process element](../../../.gitbook/assets/boundary-message-event-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Boundary Message Event Elements](add-and-configure-boundary-message-event-elements.md).
@@ -333,8 +363,8 @@ See [Add and Configure Boundary Message Event Elements](add-and-configure-bounda
 Tasks represent activities performed by persons in ProcessMaker software, offline \(such as in the physical environment\), or by a [ProcessMaker Script](../../scripts/). ProcessMaker provides the following Task-type Process model elements:
 
 * [Form Task](process-modeling-element-descriptions.md#form-task) element
-* [Script Task](process-modeling-element-descriptions.md#script-task) element
 * [Manual Task](process-modeling-element-descriptions.md#manual-task) element
+* [Script Task](process-modeling-element-descriptions.md#script-task) element
 
 ### Form Task
 
@@ -349,27 +379,10 @@ People perform Task activities through ProcessMaker Screens as digital [forms](.
 
 Below is a Form Task element when it has been placed into a Process model.
 
-![Form Task element](../../../.gitbook/assets/task-element-process-modeler-processes.png)
+![Form Task element](../../../.gitbook/assets/form-task-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Task Elements](add-and-configure-task-elements.md).
-{% endhint %}
-
-### Script Task
-
-A Script Task element represents an activity performed by a [ProcessMaker Script](../../scripts/what-is-a-script.md). Use ProcessMaker Scripts in the following ways:
-
-* Interact with legacy systems in your organization such as ERPs and CRMs.
-* Connect with third-party services like Adobe DocuSign, Short Message Service \(SMS\), or APIs.
-
-ProcessMaker Scripts are designed in [Scripts Editor](../../scripts/scripts-editor.md). ProcessMaker Scripts are independent of Process models: any ProcessMaker Script can be reused in any Process model in your organization. This architecture allows Process Owners to focus on Process modeling in a no-code environment while ProcessMaker Developers develop reusable ProcessMaker Scripts. ProcessMaker Scripts can leverage ProcessMaker Screens variable values for in-progress Requests.
-
-Below is a Script Task element when it has been placed into a Process model.
-
-![Script Task element](../../../.gitbook/assets/script-task-element-process-modeler-processes.png)
-
-{% hint style="info" %}
-See [Add and Configure Script Task Elements](add-and-configure-script-task-elements.md).
 {% endhint %}
 
 ### Manual Task
@@ -378,10 +391,36 @@ A Manual Task element represents an activity a person performs offline and/or in
 
 Below is a Manual Task element when it has been placed into a Process model.
 
-![Manual Task element](../../../.gitbook/assets/manual-task-element-process-modeler-processes.png)
+![Manual Task element](../../../.gitbook/assets/manual-task-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Manual Task Elements](add-and-configure-manual-task-elements.md).
+{% endhint %}
+
+### Script Task
+
+A Script Task element represents an activity performed by a [ProcessMaker Script](../../scripts/what-is-a-script.md). Use ProcessMaker Scripts in the following ways:
+
+* Interact with legacy systems in your organization such as ERPs and CRMs.
+* Connect with third-party services like Adobe DocuSign, Amazon Textract, and APIs as well as Robotic Process Automations \(RPAs\) like UiPath.
+
+See an example in the following video how ProcessMaker integrates with third-party services Amazon Textract and UiPath Robotic Process Automation \(RPA\) so a loan application workflow scans, analyzes, and intelligently routes a Request and provision a bot accordingly.
+
+* **Intended audience:** Process designers and business analysts
+* **Viewing time:** 11 minutes; contains narration
+
+{% embed url="https://vimeo.com/383574552" caption="Script Tasks integrate with third-party services and RPAs in a Process demonstration" %}
+
+
+
+ProcessMaker Scripts are designed in [Scripts Editor](../../scripts/scripts-editor.md). ProcessMaker Scripts are independent of Process models: any ProcessMaker Script can be reused in any Process model in your organization. This architecture allows Process Owners to focus on Process modeling in a no-code environment while ProcessMaker Developers develop reusable ProcessMaker Scripts. ProcessMaker Scripts can leverage ProcessMaker Screens variable values for in-progress Requests.
+
+Below is a Script Task element when it has been placed into a Process model.
+
+![Script Task element](../../../.gitbook/assets/script-task-element-process-modeler-designer.png)
+
+{% hint style="info" %}
+See [Add and Configure Script Task Elements](add-and-configure-script-task-elements.md).
 {% endhint %}
 
 ## Sub Process
@@ -398,7 +437,7 @@ To prevent routing for the parent Process's Request from waiting until the child
 
 Below is a Sub Process element when it has been placed into a Process model.
 
-![Sub Process element](../../../.gitbook/assets/call-activity-process-modeler-processes.png)
+![Sub Process element](../../../.gitbook/assets/sub-process-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Sub Process Elements](add-and-configure-sub-process-elements.md).
@@ -421,7 +460,7 @@ Use an Exclusive Gateway element when you want only one condition to pass. Other
 
 Below is an Exclusive Gateway element when it has been placed into a Process model.
 
-![Exclusive Gateway element](../../../.gitbook/assets/exclusive-gateway-process-modeler-processes.png)
+![Exclusive Gateway element](../../../.gitbook/assets/exclusive-gateway-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See the following topics about Exclusive Gateway elements:
@@ -443,7 +482,7 @@ One Inclusive Gateway element can only converge or diverge workflow, but not bot
 
 Below is an Inclusive Gateway element when it has been placed into a Process model.
 
-![Inclusive Gateway element](../../../.gitbook/assets/inclusive-gateway-element-process-modeler-processes.png)
+![Inclusive Gateway element](../../../.gitbook/assets/inclusive-gateway-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Inclusive Gateway Elements](add-and-configure-inclusive-gateway-elements.md).
@@ -455,19 +494,19 @@ A Parallel Gateway element synchronizes [Request](../../../using-processmaker/re
 
 * **Converging workflow:** Converging workflow represents two or more incoming Sequence Flow elements to the Parallel Gateway element. All incoming Sequence Flow elements converging to the Parallel Gateway element must trigger before the Parallel Gateway element triggers, thereby synchronizing a Request's workflow. Use this coordinate workflow.  
 
-  ![](../../../.gitbook/assets/parallel-gateway-converging.png)
+  ![](../../../.gitbook/assets/converging-parallel-gateway.png)
 
 * **Diverging workflow:** Diverging workflow represents two or more outgoing Sequence Flow elements from the Parallel Gateway element. When a Parallel Gateway triggers, all outgoing Sequence Flow elements from the gateway element trigger simultaneously without exception. Conditions cannot be placed on any outgoing Sequence Flow elements from the Parallel Gateway element. Use this when multiple workflow routes must occur simultaneously.  
 
-  ![](../../../.gitbook/assets/parallel-gateway-diverging.png)
+  ![](../../../.gitbook/assets/diverging-parallel-gateway.png)
 
 One Parallel Gateway element can only converge or diverge workflow, but not both. Use two Parallel Gateway elements to synchronize both converging and diverging parallel workflow.  
 
-![Use two Parallel Gateway elements for both converging and diverging parallel workflow](../../../.gitbook/assets/parallel-gateway-converging-and-diverging.png)
+![Use two Parallel Gateway elements for both converging and diverging parallel workflow](../../../.gitbook/assets/converging-and-diverging-parallel-gateway.png)
 
 Below is a Parallel Gateway element when it has been placed into a Process model.
 
-![Parallel Gateway element](../../../.gitbook/assets/parallel-gateway-process-modeler-processes.png)
+![Parallel Gateway element](../../../.gitbook/assets/parallel-gateway-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Parallel Gateway Elements](add-and-configure-parallel-gateway-elements.md).
@@ -493,15 +532,15 @@ In this example, connect the following Process modeling elements from the Event-
 
 Below is an Event-Based Gateway element when it has been placed into a Process model.
 
-![Event-Based Gateway element](../../../.gitbook/assets/event-based-gateway-in-process-modeler-processes.png)
+![Event-Based Gateway element](../../../.gitbook/assets/event-based-gateway-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Event-Based Gateway Elements](add-and-configure-event-based-gateway-elements.md).
 {% endhint %}
 
-## Organize Process Participants
+## Organize Process Participants and Roles
 
-BPMN 2.0 provides graphical representations to organize participants in a Process model.
+BPMN 2.0 provides graphical representations to organize participants and roles in a Process model.
 
 ### Pool
 
@@ -511,7 +550,7 @@ Each Pool element represents its own Request, and therefore its own Request data
 
 Below is a Pool element when it has been placed into a Process model. "New Pool" is the name of the Pool element.
 
-![Pool element containing a modeled Process](../../../.gitbook/assets/pool-element-process-modeler-processes.png)
+![Pool element containing a modeled Process](../../../.gitbook/assets/pool-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Pool and Lane Elements](add-and-configure-pool-and-lane-elements.md).
@@ -521,9 +560,9 @@ See [Add and Configure Pool and Lane Elements](add-and-configure-pool-and-lane-e
 
 A Lane element represents a partition within a [Pool](process-modeling-element-descriptions.md#pool) element. Each Lane element indicates a role, actor, or participant within the Pool element. Text within the Lane element indicates the participant in the Process model. Any elements within the Lane element indicate that the participant is the actor or is responsible for performing actions in the Process model. Furthermore, [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) elements between elements in other Pool or Lane elements indicate with which other Process participants that Lane element interacts.
 
-Below is a Pool element that contains three Lane elements when it has been placed into a Process model: "Requester," "Approval," and "Requisition" from top to bottom in the Pool element. Each Lane element indicates roles within the overall organization.
+Below is a Pool element that contains three Lane elements when it has been placed into a Process model: "Requester," "Approval," and "Requisition" from top to bottom in the Pool element. Each Lane element indicates roles within the overall Process.
 
-![Pool element with three Lane elements that indicate roles within the organization](../../../.gitbook/assets/pool-element-with-lanes-process-modeler-processes.png)
+![Pool element with three Lane elements that indicate roles within the Process](../../../.gitbook/assets/pool-element-with-lanes-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Pool and Lane Elements](add-and-configure-pool-and-lane-elements.md).
@@ -539,7 +578,7 @@ A Text Annotation element is human-readable text in a Process model that provide
 
 Below is a Text Annotation element when it has been placed into a Process model.
 
-![Text Annotation element](../../../.gitbook/assets/text-annotation-process-modeler-processes.png)
+![Text Annotation element](../../../.gitbook/assets/text-annotation-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Text Annotation and Association Elements](add-and-configure-text-annotation-elements.md).
@@ -553,7 +592,7 @@ Each Annotation element can display a directional arrow to and/or from the Text 
 
 Below is an Association element when it has been placed into a Process model.
 
-![Association element that references the Text Annotation element to the element it describes](../../../.gitbook/assets/association-process-modeler-processes.png)
+![Association element that references the Text Annotation element to the element it describes](../../../.gitbook/assets/association-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Add and Configure Text Annotation and Association Elements](add-and-configure-text-annotation-elements.md#add-an-association-element).
@@ -563,8 +602,8 @@ See [Add and Configure Text Annotation and Association Elements](add-and-configu
 
 Flow indicators represent the order in which workflow routing and messaging occur in a Process model. ProcessMaker provides the following Process model elements that indicate workflow:
 
-* [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow)
-* [Message Flow](process-modeling-element-descriptions.md#message-flow)
+* [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) element
+* [Message Flow](process-modeling-element-descriptions.md#message-flow) element
 
 ### Sequence Flow
 
@@ -572,23 +611,23 @@ Sequence Flow elements connect Process model elements to represent the intended 
 
 As a best practice, indicate a consistent direction of Sequence Flow elements: either left to right or top to bottom, to make Process models easier to understand.
 
-In Process Modeler, Flow indicators display when you click an element in the Process model. The top Flow indicator is for Sequence Flows \(highlighted below\), represented with a solid line.
+In Process Modeler, Flow indicators display when you click an element in the Process model. The solid-line Flow indicator is for Sequence Flows \(highlighted below\).
 
-![Sequence Flow indicator \(highlighted\) on a selected Process model element](../../../.gitbook/assets/sequence-flow-indicator-process-modeler-processes.png)
+![Sequence Flow indicator \(highlighted\) on a selected Process model element](../../../.gitbook/assets/sequence-flow-indicator-process-modeler-designer.png)
 
 {% hint style="info" %}
-[Text annotations](process-modeling-element-descriptions.md#text-annotation), [Pool](process-modeling-element-descriptions.md#pool), and [Lane](process-modeling-element-descriptions.md#lane) elements do not use Sequence Flow elements. Furthermore, Sequence Flow elements cannot connect between Process model elements that are in different Pool elements since Pool elements represent different organizations. However, use Message Flow elements to infer communication between elements in different Pool elements.
+[Text annotations](process-modeling-element-descriptions.md#text-annotation), [Pool](process-modeling-element-descriptions.md#pool), and [Lane](process-modeling-element-descriptions.md#lane) elements do not use Sequence Flow elements. Furthermore, Sequence Flow elements cannot connect between Process model elements that are in different Pool elements since Pool elements represent different [Requests](../../../using-processmaker/requests/what-is-a-request.md). However, use Message Flow elements to transfer Request data between elements in different Pool elements.
 
-Sequence Flow elements from Exclusive Gateway and Inclusive Gateway elements can be configured to specify under which condition\(s\) Request workflow routes through that Sequence Flow element. See [Connect Sequence Flow Elements to Indicate Workflow Routing](the-quick-toolbar.md).
+Sequence Flow elements from [Exclusive Gateway](process-modeling-element-descriptions.md#exclusive-gateway) and [Inclusive Gateway](process-modeling-element-descriptions.md#inclusive-gateway) elements can be configured to specify under which condition\(s\) Request workflow routes through that Sequence Flow element. See [Connect Sequence Flow Elements to Indicate Workflow Routing](the-quick-toolbar.md).
 
-[Start Event](process-modeling-element-descriptions.md#start-event), [Start Timer Event](process-modeling-element-descriptions.md#start-timer-event) and Message Start Event elements begin Request workflow in Process design. Therefore, these elements cannot have incoming Sequence Flow elements.
+[Start Event](process-modeling-element-descriptions.md#start-event), [Start Timer Event](process-modeling-element-descriptions.md#start-timer-event), [Signal Start Event](process-modeling-element-descriptions.md#signal-start-event), and [Message Start Event](process-modeling-element-descriptions.md#message-start-event) elements begin Request workflow in Process design. Therefore, these elements cannot have incoming Sequence Flow elements.
 
-[End Event](process-modeling-element-descriptions.md#end-event), Message End Event, and Error End Event elements terminate Request workflow in Process design. Therefore, these elements cannot have outgoing Sequence Flow elements.
+[End Event](process-modeling-element-descriptions.md#end-event), [Message End Event](process-modeling-element-descriptions.md#message-end-event), [Error End Event](process-modeling-element-descriptions.md#error-end-event), [Signal End Event](process-modeling-element-descriptions.md#signal-end-event), and [Terminate End Event](process-modeling-element-descriptions.md#terminate-end-event) elements terminate Request workflow in Process design. Therefore, these elements cannot have outgoing Sequence Flow elements.
 {% endhint %}
 
-The Sequence Flow element indicates in which order workflow routing occurs between two connected Process model elements. Below are two Process model elements connected in Process Modeler.
+The Sequence Flow element indicates in which order workflow routing occurs between two connected Process model elements. Below are two Process model elements connected to infer workflow order.
 
-![Process model elements connected by a Sequence Flow element infers the order of workflow](../../../.gitbook/assets/sequence-flow-connecting-elements-process-modeler-processes.png)
+![Process model elements connected by a Sequence Flow element infers the order of workflow](../../../.gitbook/assets/sequence-flow-incoming-process-modeler-designer.png)
 
 {% hint style="info" %}
 See [Set and Delete Sequence Flow Between Elements](the-quick-toolbar.md).
@@ -598,13 +637,13 @@ See [Set and Delete Sequence Flow Between Elements](the-quick-toolbar.md).
 
 In a Process model, Message Flow elements represent messaging between elements of \(or within\) one [Pool](process-modeling-element-descriptions.md#pool) element to elements of \(or within\) another Pool element. Message Flow elements cannot connect to Process model elements within the same Pool element. Message Flow elements are not to be confused with [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) elements.
 
-Use Message Flow elements to represent collaboration and data transfer from one Pool to another. Since each Pool element in a Process uses its own [Request](../../../using-processmaker/requests/what-is-a-request.md) and Request data, use Message Flow elements to exchange data and information between separate Pool elements and/or elements within those Pool elements.
+Use Message Flow elements to represent collaboration and transfer Request data from one Pool to another. Since each Pool element in a Process uses its own [Request](../../../using-processmaker/requests/what-is-a-request.md) and Request data, use Message Flow elements to exchange data and information between separate Pool elements and/or elements within those Pool elements.
 
 In Process Modeler, Flow indicators display when you click an element in the Process model. The dotted-line Flow indicator is for Message Flows \(highlighted below\).
 
-![Message Flow indicator \(highlighted\) on a selected Process element](../../../.gitbook/assets/message-flow-indicator-process-model-processes.png)
+![Message Flow indicator \(highlighted\) on a selected Process element](../../../.gitbook/assets/message-flow-indicator-process-modeler-designer.png)
 
-These messages indicate indirect communication between separate Process participants. The Message Flow element does not indicate whether the message is physical or digital. Use a [Text Annotation](process-modeling-element-descriptions.md#text-annotation) element to add information about the type of communication.
+These messages indicate the transfer of Request data between separate Process model elements. Use a [Text Annotation](process-modeling-element-descriptions.md#text-annotation) element to add descriptive information about the nature of the data transfer.
 
 ![A Message Flow element \(dotted line\) between two elements in different Pool elements](../../../.gitbook/assets/message-flow-between-pool-elements-process-model-processes.png)
 

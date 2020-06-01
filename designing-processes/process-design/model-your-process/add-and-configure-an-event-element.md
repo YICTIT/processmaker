@@ -34,7 +34,7 @@ Follow these steps to add a Start Event element to the Process model:
    * From the **Elements** drop-down menu, select the **Start Event** option. ![](../../../.gitbook/assets/start-event-selection-process-modeler-processes.png) 
    * Click anywhere in the Process model. The Start Event element selects by default.
 
-![Start Event element](../../../.gitbook/assets/start-event-process-modeler-processes.png)
+![Start Event element](../../../.gitbook/assets/start-event-element-process-modeler-designer.png)
 
 After the element is placed into the Process model, you may move it by dragging it to the new location.
 

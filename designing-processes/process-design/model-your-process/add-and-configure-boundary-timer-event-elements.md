@@ -39,7 +39,7 @@ Follow these steps to add a Boundary Timer Event element to the Process model:
    * [Boundary Error Event](add-and-configure-boundary-error-event-elements.md#add-a-boundary-error-event-element) element
    * [Boundary Message Event](add-and-configure-boundary-message-event-elements.md#add-a-boundary-message-event-element) element
 
-![Boundary Timer Event element associated with a Form Task element](../../../.gitbook/assets/boundary-timer-event-process-modeler-processes.png)
+![Boundary Timer Event element associated with a Form Task element](../../../.gitbook/assets/boundary-timer-event-element-process-modeler-designer.png)
 
 After placing the Boundary Timer Event element, you may drag it to an adjacent side of its associating element. Since Process Modeler displays element names at the bottom of elements, the Boundary Timer Event element displays best at the bottom of its associating element.
 
@@ -81,8 +81,8 @@ Follow these steps to edit the name for a Boundary Timer Event element:
 
 Indicate whether the Boundary Timer Event element interrupts the best-case scenario workflow:
 
-* **Interrupting workflow:** When workflow routes through the Boundary Timer Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes. ![](../../../.gitbook/assets/boundary-timer-event-interrupting-processes.png) 
-* **Non-interrupting workflow:** Workflow routes both through the Boundary Timer Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes; however, workflow also routes through the best-case scenario when that element completes. ![](../../../.gitbook/assets/boundary-timer-event-non-interrupting-processes.png) 
+* **Interrupting workflow:** When workflow routes through the Boundary Timer Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes. ![](../../../.gitbook/assets/boundary-timer-event-interrupting-example.png) 
+* **Non-interrupting workflow:** Workflow routes both through the Boundary Timer Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes; however, workflow also routes through the best-case scenario when that element completes. ![](../../../.gitbook/assets/boundary-timer-event-non-interrupting-example.png) 
 
 Follow these steps to indicate if this Boundary Timer Event element interrupts the best-case scenario workflow when it triggers:
 

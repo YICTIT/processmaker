@@ -8,6 +8,15 @@ description: Understand what a Script does in ProcessMaker.
 
 In ProcessMaker, Scripts allow Process Owners and ProcessMaker Developers to write self-contained programmatic actions that can be called from any Process [Request](../../using-processmaker/requests/what-is-a-request.md) at run-time. The same ProcessMaker Script can be deployed in any [Process model](../process-design/). In other words, "write once, use anywhere."
 
+See an example in the following video how ProcessMaker integrates with third-party services Amazon Textract and UiPath Robotic Process Automation \(RPA\) so a loan application workflow scans, analyzes, and intelligently routes a Request and provision a bot accordingly.
+
+* **Intended audience:** Process designers and business analysts
+* **Viewing time:** 11 minutes; contains narration
+
+{% embed url="https://vimeo.com/383574552" caption="Script Tasks integrate with third-party services and RPAs in a Process demonstration" %}
+
+
+
 ### Supported Programming Languages
 
 ProcessMaker supports the following programming languages and their corresponding software development kits \(SDKs\) in the open-source edition:

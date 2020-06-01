@@ -32,7 +32,7 @@ Follow these steps to add a Sub Process element to the Process model:
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Sub Process element cannot be placed outside of the Pool element.
 5. From the **Elements** drop-down menu, select the **Sub Process** option. The Sub Process element displays. ![](../../../.gitbook/assets/sub-process-selection-process-modeler-processes.png) 
 
-![Sub Process element](../../../.gitbook/assets/call-activity-process-modeler-processes.png)
+![Sub Process element](../../../.gitbook/assets/sub-process-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 After adding the Sub Process element, consider adding any of the following Boundary-type Process model elements to design business solutions when your best-case scenarios don't happen:
