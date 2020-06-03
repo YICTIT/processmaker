@@ -84,7 +84,27 @@ See [Add and Configure Start Timer Event Elements](add-and-configure-start-timer
 
 ### Signal Start Event
 
-A Signal Start Event element starts a [Request](../../../using-processmaker/requests/what-is-a-request.md) for a Process when it triggers from a specific signal broadcast from an [Intermediate Signal Throw Event](process-modeling-element-descriptions.md#intermediate-signal-throw-event) or [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element in any other Request in that ProcessMaker instance.
+A Signal Start Event element starts a [Request](../../../using-processmaker/requests/what-is-a-request.md) for a Process when it triggers by receiving a specific broadcast signal from a broadcasting element in any other Request in that ProcessMaker instance. The element that broadcasts the signal does not need to be in the same Process model as the Signal Start Event element that receives the broadcast.
+
+The signal may originate from any of the following:
+
+* **Intermediate Signal Throw Event element:** An [Intermediate Signal Throw Event](process-modeling-element-descriptions.md#intermediate-signal-throw-event) element broadcasts a signal and its Request data to all Signal Start Event elements in all Processes listening for that signal. Use this functionality to start different Process Requests simultaneously while the Request that broadcasts the signal is in progress.
+* **Signal End Event element:** A [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element broadcasts a signal and its Request data to all Signal Start Event elements in all Processes listening for that signal. Use this functionality to start a different Process's Request when the Request that broadcasts the signal completes.
+
+Signal Start Event elements function as follows during a Request:
+
+1. All Signal Start Event elements listen for a broadcast based on the signal name. The signal name is a placeholder for the broadcast.
+2. The Intermediate Signal Throw Event element or Signal End Event element triggers from a separate Request not necessarily represented in the same Process model as any Signal Start Event element.
+3. That triggering element broadcasts its signal containing Request data.
+4. For each Signal Start Event element in any Process in that ProcessMaker instance, if the signal name matches that for which it is listening for its broadcast, then that Signal Start Event element triggers, thereby starting a Request for its Process. Otherwise, the signal is ignored for those Signal Start Event elements not listening for that signal and those Processes do not start a Request.
+
+Below is a Signal Start Event element when it has been placed into a Process model.
+
+![Signal Start Event element](../../../.gitbook/assets/signal-start-event-element-process-modeler-designer.png)
+
+{% hint style="info" %}
+See [Add and Configure Signal Start Event Elements](add-and-configure-signal-start-event-elements.md).
+{% endhint %}
 
 ### Message Start Event
 
@@ -92,7 +112,7 @@ A Message Start Event element starts a [Request](../../../using-processmaker/req
 
 A [Message Flow](process-modeling-element-descriptions.md#message-flow) element can connect from the element sending the message to the Message Start Event element. A Process model can have multiple Message Start Event elements.
 
-This message may originate from any of the following:
+The message may originate from any of the following:
 
 * **Intermediate Message Throw Event element:** An [Intermediate Message Throw Event](process-modeling-element-descriptions.md#intermediate-message-throw-event) element sends a message to the Message Start Event. Use this functionality to start a different Process's Request while the Request that sends the message is in progress. If the Message Start Event element is in the same Process model as the Intermediate Message Throw Event element for which it listens for its message, these elements must be in separate [Pool](process-modeling-element-descriptions.md#pool) elements since each Pool element has its own Request.
 * **Message End Event element:** A [Message End Event](process-modeling-element-descriptions.md#message-end-event) element sends a message to the Message Start Event. Use this functionality to start a different Process's Request when the Request that sends the message completes. If the Message Start Event element is in the same Process model as the Message End Event element for which it listens for its message, these elements must be in separate Pool elements.
@@ -103,7 +123,7 @@ A Message Start Event element functions as follows during a Request:
 1. The Message Start Event element listens for a message based on that message's name. The message name is a placeholder for the message.
 2. The Intermediate Message Throw Event element or Message End Event element triggers.
 3. That triggering element sends its message containing Request data to the Message Start Event element.
-4. If the message name matches that for which the Message Start Event element is listening, then that element triggers; the Request starts. Otherwise, the message is ignored.
+4. If the message name matches that for which the Message Start Event element is listening, then that element triggers, thereby starting the Request. Otherwise, the message is ignored.
 
 Below is a Message Start Event element when it has been placed into a Process model.
 
@@ -115,7 +135,7 @@ See [Add and Configure Message Start Event Elements](add-and-configure-message-s
 
 ### Intermediate Timer Event
 
-An Intermediate Timer Event element delays a [Request](../../../using-processmaker/requests/what-is-a-request.md) for a Process until a specific time. When the specified time occurs, the Intermediate Timer Event element triggers, thereby resuming workflow for that Process's Request. Use this element to cause a Request to wait until a specific time. For example, use this element to make a Process wait 30 days before checking if you receive an invoice from a customer after services are rendered.
+An Intermediate Timer Event element pauses a [Request](../../../using-processmaker/requests/what-is-a-request.md) for a Process until a specific time. When the specified time occurs, the Intermediate Timer Event element triggers, thereby resuming workflow for that Request. Use this element to cause a Request to pause until a specific time. For example, use this element to make a Request pause 30 days before checking if you receive an invoice from a customer after services are rendered.
 
 Below is an Intermediate Timer Event element when it has been placed into a Process model.
 
@@ -127,19 +147,58 @@ See [Add and Configure Intermediate Timer Event Elements](add-and-configure-inte
 
 ### Intermediate Signal Catch Event
 
+An Intermediate Signal Catch Event element pauses a [Request](../../../using-processmaker/requests/what-is-a-request.md) until that element receives a specific broadcast from a broadcasting element in any other Request in that ProcessMaker instance. The element that broadcasts the signal does not need to be in the same Process model as the Intermediate Signal Catch Event element that receives the broadcast.
 
+The signal may originate from any of the following:
+
+* **Intermediate Signal Throw Event element:** An [Intermediate Signal Throw Event](process-modeling-element-descriptions.md#intermediate-signal-throw-event) element broadcasts a signal and its Request data to all Intermediate Signal Catch Event elements in all in-progress Requests that have paused as the Intermediate Signal Catch Event elements in those Requests listen for that signal. Use this functionality to resume workflow for paused Requests simultaneously while the Request that broadcasts the signal is in progress.
+* **Signal End Event element:** A [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element broadcasts a signal and its Request data to all Intermediate Signal Catch Event elements in all in-progress Requests that have paused as the Intermediate Signal Catch Event elements in those Requests listen for that signal. Use this functionality to resume workflow for paused Requests simultaneously while the Request that broadcasts the signal completes.
+
+Each Intermediate Signal Catch Event element functions as follows during its Request:
+
+1. Workflow in each Request using an Intermediate Signal Catch Event element pauses when it reaches this event. Each Intermediate Signal Catch Event element waits for a signal based on that signal's name. The signal name is a placeholder for the broadcast.
+2. The Intermediate Signal Throw Event element or Signal End Event element triggers from a separate Request not necessarily represented in the same Process model as any Intermediate Signal Catch Event element.
+3. That triggering element broadcasts its signal containing Request data.
+4. For each Intermediate Signal Catch Event element in each paused Request that matches the broadcast signal name, that Intermediate Signal Catch Event element triggers, thereby resuming workflow simultaneously with all other Intermediate Signal Catch Event elements listening for the same signal name. Otherwise, the signal is ignored for those Intermediate Signal Catch Event elements not listening for that signal and those Requests remain paused.
+
+Below is an Intermediate Signal Catch Event element when it has been placed into a Process model.
+
+![Intermediate Signal Catch Event element](../../../.gitbook/assets/intermediate-signal-catch-event-element-process-modeler-designer.png)
+
+{% hint style="info" %}
+See [Add and Configure Intermediate Signal Catch Event Elements](add-and-configure-intermediate-signal-catch-event-elements.md).
+{% endhint %}
 
 ### Intermediate Signal Throw Event
 
+An Intermediate Signal Throw Event element broadcasts a specific signal and its Request data when it triggers to all elements throughout that ProcessMaker instance listening for that signal. The element that listens for the broadcast signal does not need to be in the same Process model as the Intermediate Signal Throw Event element.
 
+The purpose of the broadcast signal may be the following:
+
+* **Signal Start Event element:** Broadcast a named signal to all Signal Start Event elements to simultaneously start Requests for those Processes with a Signal Start Event element listening for that named signal. Reference Request data from the Intermediate Signal Throw Event element's Request when Signal Start Event elements start their Requests.
+* **Intermediate Signal Catch Event element:** Broadcast a named signal to all Intermediate Signal Catch Event elements to simultaneously resume workflow for those Requests that have been paused with an Intermediate Signal Catch Event element listening for that named signal. Reference Request data from the Intermediate Signal Throw Event element's Request when resuming the Intermediate Signal Catch Event element's Request.
+
+An Intermediate Signal Throw Event element functions as follows during a Request:
+
+1. The Intermediate Signal Throw Event element triggers.
+2. The Intermediate Signal Throw Event element broadcasts its signal. The signal has a name which is a placeholder for the Request data it broadcasts to all listening elements.
+3. If the signal name matches that for which any element in that ProcessMaker instance is listening, then that listening element triggers. Otherwise, the signal is ignored.
+
+Below is an Intermediate Signal Throw Event element when it has been placed into a Process model.
+
+![Intermediate Message Throw Event element](../../../.gitbook/assets/intermediate-signal-throw-event-element-process-modeler-designer.png)
+
+{% hint style="info" %}
+See [Add and Configure Intermediate Signal Throw Event Elements](add-and-configure-intermediate-signal-throw-event-elements.md).
+{% endhint %}
 
 ### Intermediate Message Catch Event
 
-An Intermediate Message Catch Event element delays a [Request](../../../using-processmaker/requests/what-is-a-request.md) until that element receives a specific message. The purpose of the message transfer is to send data between Requests running from the same Process model since each Pool element represents its own Request with its own distinct Request data.
+An Intermediate Message Catch Event element pauses a [Request](../../../using-processmaker/requests/what-is-a-request.md) until that element receives a specific message. The purpose of the message transfer is to send data between Requests running from the same Process model since each Pool element represents its own Request with its own distinct Request data.
 
-This message may originate from any of the following:
+The message may originate from any of the following:
 
-* **Intermediate Message Throw Event element:** An [Intermediate Message Throw Event](process-modeling-element-descriptions.md#intermediate-message-throw-event) element sends a message to the Intermediate Message Catch Event. Use this functionality to resume workflow to the Process Request using the Intermediate Message Catch Event element from another Request. If the Intermediate Message Catch Event element is in the same Process model as the Intermediate Message Throw Event element for which it listens for its message, these elements must be in separate [Pool](process-modeling-element-descriptions.md#pool) elements since each Pool element has its own Request.
+* **Intermediate Message Throw Event element:** An [Intermediate Message Throw Event](process-modeling-element-descriptions.md#intermediate-message-throw-event) element sends a message to the Intermediate Message Catch Event element that has paused its in-progress Request until the Intermediate Message Catch Event element receives its message. Use this functionality to resume workflow to the Request using the Intermediate Message Catch Event element from another Request. If the Intermediate Message Catch Event element is in the same Process model as the Intermediate Message Throw Event element for which it listens for its message, these elements must be in separate [Pool](process-modeling-element-descriptions.md#pool) elements since each Pool element has its own Request.
 * **Message End Event element:** A [Message End Event](process-modeling-element-descriptions.md#message-end-event) element sends a message to the Intermediate Message Catch Event. Use this functionality to resume workflow to the Process Request using the Intermediate Message Catch Event element when the Request that sends the message completes. If the Intermediate Message Catch Event element is in the same Process model as the Message End Event element for which it listens for its message, these elements must be in separate Pool elements.
 * **Third-party service:** A third-party service such as a CRM may send a message via the [ProcessMaker API](../../../processmaker-api-documentation/access-processmaker-api-documentation.md) to the Intermediate Message Catch Event, thereby resuming workflow for that Request.
 
@@ -231,7 +290,7 @@ See [Add and Configure Message End Event Elements](add-and-configure-message-end
 
 ### Error End Event
 
-An Error End Event element records the error before that Request completes if an error occurs. The purpose of sending the error is to provide an alternate business solution if expected workflow routing experiences an error.
+An Error End Event element records the error before that Request completes if an error occurs. The purpose of sending the error is to provide an alternate business solution if expected workflow routing encounters an error.
 
 Use an Error End Event element in the following ways:
 
@@ -250,11 +309,38 @@ See [Add and Configure Error End Event Elements](add-and-configure-error-end-eve
 
 ### Signal End Event
 
+A Signal End Event element broadcasts a specific signal and its Request data when it triggers to all elements throughout that ProcessMaker instance listening for that signal. The Signal End Event element triggers when its Request completes. The element that listens for the broadcast signal does not need to be in the same Process model as the Signal End Event element.
 
+The purpose of the broadcast signal may be the following:
+
+* **Signal Start Event element:** Broadcast a named signal to all Signal Start Event elements to simultaneously start Requests for those Processes with a Signal Start Event element listening for that named signal. Reference Request data from the Signal End Event element's Request when Signal Start Event elements start their Requests.
+* **Intermediate Signal Catch Event element:** Broadcast a named signal to all Intermediate Signal Catch Event elements to simultaneously resume workflow for those Requests that have been paused with an Intermediate Signal Catch Event element listening for that named signal. Reference Request data from the Signal End Event element's Request when resuming the Intermediate Signal Catch Event element's Request.
+
+A Signal End Event element functions as follows during a Request:
+
+1. The Signal End Event element triggers, thereby completing its Request.
+2. The Signal End Event element broadcasts its signal. The signal has a name which is a placeholder for the Request data it broadcasts to all listening elements.
+3. If the signal name matches that for which any element in that ProcessMaker instance is listening, then that listening element triggers. Otherwise, the signal is ignored.
+
+Below is an Signal End Event element when it has been placed into a Process model.
+
+![Signal End Event element](../../../.gitbook/assets/signal-end-event-element-process-modeler-designer.png)
+
+{% hint style="info" %}
+See [Add and Configure Signal End Event Elements](add-and-configure-signal-end-event-elements.md).
+{% endhint %}
 
 ### Terminate End Event
 
+A Terminate End Event element immediately terminates a [Request](../../../using-processmaker/requests/what-is-a-request.md) for a Process as well as any child Request\(s\) that \(parent\) Request started via [Sub Process](process-modeling-element-descriptions.md#sub-process) element\(s\). A Terminate End Event element cannot have an outgoing [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) element. A Process model can have multiple Terminate End Event elements.
 
+Below is a Terminate End Event element when it has been placed into a Process model.
+
+![Terminate End Event element](../../../.gitbook/assets/terminate-end-event-element-process-modeler-designer.png)
+
+{% hint style="info" %}
+See [Add and Configure Terminate End Event Elements](add-and-configure-terminate-end-event-elements.md).
+{% endhint %}
 
 ### Boundary Timer Event
 

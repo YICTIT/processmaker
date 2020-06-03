@@ -32,6 +32,8 @@ Follow these steps to add an Error End Event element to the Process model:
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Error End Event element cannot be placed outside of the Pool element.
 5. From the **Elements** drop-down menu, select the **Error End Event** option. The Error End Event element displays. ![](../../../.gitbook/assets/error-end-event-selection-process-modeler-processes.png) 
 
+![Error End Event element](../../../.gitbook/assets/error-end-event-element-process-modeler-designer.png)
+
 After the element is placed into the Process model, you may move it by dragging it to the new location.
 
 {% hint style="warning" %}
@@ -44,7 +46,7 @@ Moving an Error End Event element has the following limitations in regards to th
 ## Settings
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Message End Event element unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure an Error End Event element unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
