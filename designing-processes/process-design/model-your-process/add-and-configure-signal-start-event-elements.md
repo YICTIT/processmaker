@@ -119,7 +119,7 @@ Follow these steps to edit the name of a signal:
 #### Delete a Signal from the ProcessMaker Instance
 
 {% hint style="warning" %}
-Carefully consider whether to delete a signal. Deleting a signal deletes it from your ProcessMaker instance. Any elements configured to broadcast or listen for this signal can no longer access this signal in new Requests, though in-progress Requests are not affected.
+Carefully consider whether to delete a signal. Deleting a signal makes that signal unavailable when configuring all elements that broadcast or listen to signals throughout your ProcessMaker instance. However, those elements already configured with a deleted signal are not affected, nor are any started Requests affected.
 
 Deleting a signal from the ProcessMaker instance cannot be undone.
 {% endhint %}
