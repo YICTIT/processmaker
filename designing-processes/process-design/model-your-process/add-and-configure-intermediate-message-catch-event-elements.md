@@ -9,7 +9,7 @@ description: >-
 ## Add an Intermediate Message Catch Event Element
 
 {% hint style="info" %}
-### Don't Know What an End Event Is?
+### Don't Know What an Intermediate Message Catch Event Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Intermediate Message Catch Event](process-modeling-element-descriptions.md#intermediate-message-catch-event) element.
 

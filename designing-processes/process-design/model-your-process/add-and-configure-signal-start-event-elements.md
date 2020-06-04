@@ -79,7 +79,7 @@ Follow these steps to edit the name for a Signal Start Event element:
 
 #### Select the Signal That Triggers This Element
 
-A Signal Start Event element starts a Request for a Process when it triggers by receiving a specific broadcast signal from a broadcasting element in any other Request in that ProcessMaker instance. Select the signal that triggers this element.
+A Signal Start Event element starts a Request for a Process when it triggers by receiving a specific broadcast signal from a broadcasting element in any other Request in that ProcessMaker instance. The element that broadcasts the signal does not need to be in the same Process model as the Signal Start Event element that receives the broadcast. Select the signal that triggers this element.
 
 You may create a signal from this setting. However, ensure to configure one of the following elements from any Process model to broadcast this signal when it triggers; otherwise, the signal you create from this setting never broadcasts during any Request:
 
@@ -132,7 +132,6 @@ Follow these steps to delete a signal from the ProcessMaker instance:
 4. Click the menu icon![](../../../.gitbook/assets/signal-menu-icon-process-modeler-designer.png)beside the **Signal** drop-down menu. All signals configured in your ProcessMaker instance display below the **+Signal** button. The signal ID displays in a gray border; the signal name displays to the right of the signal ID. ![](../../../.gitbook/assets/signal-edit-delete-process-modeler-designer.png) 
 5. Click the **Delete** icon![](../../../.gitbook/assets/delete-icon.png)that displays beside each signal to delete that signal. A message displays to confirm deletion of this signal. ![](../../../.gitbook/assets/delete-signal-message-process-modeler-designer.png) 
 6. Click **Delete**.
-7. Review all elements configured to broadcast or listen for the deleted signal throughout all Processes that a different signal is used for those elements.
 
 ### Advanced Panel Settings
 
