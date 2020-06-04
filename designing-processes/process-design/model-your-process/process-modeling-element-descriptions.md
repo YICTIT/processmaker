@@ -135,7 +135,7 @@ See [Add and Configure Message Start Event Elements](add-and-configure-message-s
 
 ### Intermediate Timer Event
 
-An Intermediate Timer Event element pauses a [Request](../../../using-processmaker/requests/what-is-a-request.md) for a Process until a specific time. When the specified time occurs, the Intermediate Timer Event element triggers, thereby resuming workflow for that Request. Use this element to cause a Request to pause until a specific time. For example, use this element to make a Request pause 30 days before checking if you receive an invoice from a customer after services are rendered.
+An Intermediate Timer Event element delays a [Request](../../../using-processmaker/requests/what-is-a-request.md) for a Process until a specific time. When the specified time occurs, the Intermediate Timer Event element triggers, thereby resuming workflow for that Request. Use this element to cause a Request to pause until a specific time. For example, use this element to make a Request pause 30 days before checking if you receive an invoice from a customer after services are rendered.
 
 Below is an Intermediate Timer Event element when it has been placed into a Process model.
 
@@ -364,7 +364,10 @@ Workflow routes through the Boundary Timer Event element when the specified time
 Use a [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) element to indicate workflow routing if the Boundary Timer Event element triggers: when the configured timer expires before the associated element completes.
 
 {% hint style="info" %}
-An element associated with a Boundary Timer Event may also associate with a [Boundary Error Event](process-modeling-element-descriptions.md#boundary-error-event) and/or a [Boundary Message Event](process-modeling-element-descriptions.md#boundary-message-event) in the same element.
+An element associated with a Boundary Timer Event element may also associate with the following elements in the same element:
+
+* [Boundary Error Event](process-modeling-element-descriptions.md#boundary-error-event) element
+* [Boundary Signal Event](process-modeling-element-descriptions.md#boundary-signal-event) element
 {% endhint %}
 
 Configure whether a Boundary Timer Event element interrupts the best-case scenario workflow:
@@ -372,7 +375,7 @@ Configure whether a Boundary Timer Event element interrupts the best-case scenar
 * **Interrupting workflow:** When workflow routes through the Boundary Timer Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes. ![](../../../.gitbook/assets/boundary-timer-event-interrupting-example.png) 
 * **Non-interrupting workflow:** Workflow routes both through the Boundary Timer Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes; however, workflow also routes through the best-case scenario when that element completes. ![](../../../.gitbook/assets/boundary-timer-event-non-interrupting-example.png) 
 
-Below is a Boundary Timer Event element when it is associated with a Form Task element. A Boundary Timer Event may also be associated with a Script Task element, Manual Task element, or Sub Process element.
+Below is a Boundary Timer Event element when it is associated with a Form Task element.
 
 ![Boundary Timer Event element associated with a Form Task element](../../../.gitbook/assets/boundary-timer-event-element-process-modeler-designer.png)
 
@@ -401,10 +404,13 @@ Workflow routes through the Boundary Error Event element when its associated ele
 Use a [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) element to indicate workflow routing if the Boundary Error Event element triggers: when this element receives an error before the associated element completes.
 
 {% hint style="info" %}
-An element associated with a Boundary Error Event may also associate with a [Boundary Timer Event](process-modeling-element-descriptions.md#boundary-timer-event) and/or a [Boundary Message Event](process-modeling-element-descriptions.md#boundary-message-event) in the same element.
+An element associated with a Boundary Error Event element may also associate with the following elements in the same element:
+
+* [Boundary Timer Event](process-modeling-element-descriptions.md#boundary-timer-event) element
+* [Boundary Signal Event](process-modeling-element-descriptions.md#boundary-signal-event) element
 {% endhint %}
 
-Below is a Boundary Error Event element when it is associated with a Script Task element. A Boundary Error Event may also be associated with a Form Task element, Manual Task element, or Sub Process element.
+Below is a Boundary Error Event element when it is associated with a Script Task element.
 
 ![Boundary Error Event element associated with a Script Task element](../../../.gitbook/assets/boundary-error-event-element-process-modeler-designer.png)
 
@@ -414,7 +420,44 @@ See [Add and Configure Boundary Error Event Elements](add-and-configure-boundary
 
 ### Boundary Signal Event
 
+A Boundary Signal Event element represents alternate workflow routing when that element receives a specific broadcast signal with any of the following elements and [connectors](../model-processes-using-connectors/what-is-a-connector.md):
 
+* [Form Task](process-modeling-element-descriptions.md#form-task) element
+* [Script Task](add-and-configure-script-task-elements.md#add-a-script-task-element) element
+* [Manual Task](add-and-configure-manual-task-elements.md#add-a-manual-task-element) element
+* [Sub Process](add-and-configure-sub-process-elements.md#add-a-sub-process-element) element
+* [Actions By Email](../model-processes-using-connectors/available-connectors-from-processmaker/actions-by-email-connector.md) connector \(requires the [Actions By Email package](../../../package-development-distribution/package-a-connector/actions-by-email-package.md)\)
+* [Data Connector](../model-processes-using-connectors/available-connectors-from-processmaker/data-connector-connector.md) connector \(requires the [Data Connector package](../../../package-development-distribution/package-a-connector/data-connector-package.md)\)
+* [PDF Generator](../model-processes-using-connectors/available-connectors-from-processmaker/pdf-generator-connector.md) connector \(requires the [PDF Generator package](../../../package-development-distribution/package-a-connector/pdf-generator-package.md)\)
+* [Send Email](../model-processes-using-connectors/available-connectors-from-processmaker/email-connector.md) connector \(requires the [Send Email package](../../../package-development-distribution/package-a-connector/email.md)\)
+
+Workflow routes through the Boundary Signal Event element when that element receives the broadcast. The element that broadcasts the signal does not need to be in the same Process model as the Boundary Signal Event element to receive the broadcast signal. Use a Boundary Signal Event element to design business solutions when alternate workflow must occur simultaneously across multiple Process Requests when a separate element in a separate Request broadcasts a signal for which any or all Boundary Signal Event elements is listening. Consider these examples:
+
+* **Escalate multiple Requests simultaneously to higher management:** Use an [Intermediate Signal Throw Event](process-modeling-element-descriptions.md#intermediate-signal-throw-event) element to broadcast a specific signal that may indicate higher management needs to participate in multiple separate Requests simultaneously: when all Boundary Signal Event elements receive the specific signal, workflow alternatively routes to different Task assignee to escalate a problem in each separate Request.
+* **Broadcast a signal when a separate Request completes:** When a separate Request completes, a [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element broadcasts a specific signal that indicates that Request's completion. All Boundary Signal Event elements from all in-progress Requests trigger simultaneously to route through alternate workflow. This design may be a business solution to indicate work on multiple Requests may not be necessary and workflow may alternatively route to end each of those Requests simultaneously.
+* **Broadcast a signal from a child sub-process:** If during a Request for a child Sub Process broadcasts a signal from an Intermediate Signal Throw Event or Signal End Event element, all Boundary Signal Event elements from all in-progress Requests trigger simultaneously to route through alternate workflow.
+
+Use a [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) element to indicate workflow routing if the Boundary Signal Event element triggers: when the Boundary Signal Event element receives its signal before the associated element completes.
+
+{% hint style="info" %}
+An element associated with a Boundary Signal Event element may also associate with the following elements in the same element:
+
+* [Boundary Timer Event](process-modeling-element-descriptions.md#boundary-timer-event) element
+* [Boundary Error Event](process-modeling-element-descriptions.md#boundary-error-event) element
+{% endhint %}
+
+Configure whether a Boundary Signal Event element interrupts the best-case scenario workflow:
+
+* **Interrupting workflow:** When workflow routes through the Boundary Signal Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Signal Event element if the Boundary Signal Event element receives the specific broadcast signal for which it is listening if the Manual Task element is not complete when receiving that signal. ![](../../../.gitbook/assets/boundary-signal-event-interrupting-example.png) 
+* **Non-interrupting workflow:** Workflow routes both through the Boundary Signal Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Signal Event element if the Manual Task element is not yet complete; however, workflow also routes through the best-case scenario when that element completes. ![](../../../.gitbook/assets/boundary-signal-event-non-interrupting-example.png) 
+
+Below is a Boundary Signal Event element when it is associated with a Form Task element.
+
+![Boundary Timer Event element associated with a Form Task element](../../../.gitbook/assets/boundary-signal-event-element-process-modeler-designer.png)
+
+{% hint style="info" %}
+See [Add and Configure Boundary Signal Event Elements](add-and-configure-boundary-signal-event-elements.md).
+{% endhint %}
 
 ### Boundary Message Event
 
@@ -428,7 +471,11 @@ Use a Boundary Message Event element to design business solutions for different 
 Use a [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) element to indicate workflow routing if the Boundary Message Event element triggers: when this element receives a message from the child Request.
 
 {% hint style="info" %}
-A Sub Process element associated with a Boundary Message Event may also associate with a [Boundary Timer Event](process-modeling-element-descriptions.md#boundary-timer-event) and/or a [Boundary Error Event](process-modeling-element-descriptions.md#boundary-error-event) in the same element.
+A Sub Process element associated with a Boundary Message Event element may also associate with the following elements in the same element:
+
+* [Boundary Timer Event](process-modeling-element-descriptions.md#boundary-timer-event) element
+* [Boundary Error Event](process-modeling-element-descriptions.md#boundary-error-event) element
+* [Boundary Signal Event](process-modeling-element-descriptions.md#boundary-signal-event) element
 {% endhint %}
 
 Configure whether a Boundary Message Event element interrupts the best-case scenario workflow:

@@ -57,7 +57,7 @@ The Intermediate Message Catch Event element has the following panels that conta
 
 * **Configuration** panel
   * [Edit the element name](add-and-configure-intermediate-message-catch-event-elements.md#edit-the-element-name)
-  * Configure how to trigger an Intermediate Message Catch Event element
+  * [Select the element from which to listen for a message](add-and-configure-intermediate-message-catch-event-elements.md#select-the-element-from-which-to-listen-for-a-message)
 * **Vocabularies** panel \(available when the [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) is installed\)
   * [Assign ProcessMaker Vocabularies that validate Request data from this element](add-and-configure-intermediate-message-catch-event-elements.md#assign-processmaker-vocabularies-that-validate-request-data-from-this-element)
 * **Advanced** panel
@@ -79,11 +79,11 @@ Follow these steps to edit the name for an Intermediate Message Catch Event elem
 
 4. In the **Name** setting, edit the selected element's name and then press **Enter**.
 
-#### Configure How to Trigger an Intermediate Message Catch Event Element
+#### Select the Element from Which to Listen for a Message
 
-An Intermediate Message Catch Event element delays a [Request](../../../using-processmaker/requests/what-is-a-request.md) until that element receives a message from either an [Intermediate Message Throw Event](process-modeling-element-descriptions.md#intermediate-message-throw-event) element or a [Message End Event](process-modeling-element-descriptions.md#message-end-event) element \(but not both\) located in a different [Pool](process-modeling-element-descriptions.md#pool) element than the Intermediate Message Catch Event element receiving the message. After the Intermediate Message Catch Event element receives its message, that element triggers. Select from which element to listen for a message based on the Intermediate Message Throw Event or Message End Event element's **Message Name** setting value.
+An Intermediate Message Catch Event element pauses a [Request](../../../using-processmaker/requests/what-is-a-request.md) until that element receives a message from either an [Intermediate Message Throw Event](process-modeling-element-descriptions.md#intermediate-message-throw-event) element or a [Message End Event](process-modeling-element-descriptions.md#message-end-event) element \(but not both\) located in a different [Pool](process-modeling-element-descriptions.md#pool) element than the Intermediate Message Catch Event element receiving the message. After the Intermediate Message Catch Event element receives its message, that element triggers. Select from which element to listen for a message based on the Intermediate Message Throw Event or Message End Event element's **Message Name** setting value.
 
-Follow these steps to configure how to trigger an Intermediate Message Catch Event element:
+Follow these steps to select the element from which to listen for a message:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Intermediate Message Catch Event element from the Process model in which to configure how it is triggered. Panels to configure this element display.
