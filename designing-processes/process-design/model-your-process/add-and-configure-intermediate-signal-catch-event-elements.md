@@ -57,7 +57,7 @@ The Intermediate Signal Catch Event element has the following panels that contai
 
 * **Configuration** panel
   * [Edit the element name](add-and-configure-intermediate-signal-catch-event-elements.md#edit-the-element-name)
-  * [Select the signal that triggers this element](add-and-configure-intermediate-signal-catch-event-elements.md#select-the-signal-that-triggers-this-element)
+  * [Select the signal to trigger the element](add-and-configure-intermediate-signal-catch-event-elements.md#select-the-signal-to-trigger-the-element)
   * [Edit the name of a signal](add-and-configure-intermediate-signal-catch-event-elements.md#edit-the-name-of-a-signal)
   * [Delete a signal from the ProcessMaker instance](add-and-configure-intermediate-signal-catch-event-elements.md#delete-a-signal-from-the-processmaker-instance)
 * **Advanced** panel
@@ -76,11 +76,13 @@ Follow these steps to edit the name for an Intermediate Signal Catch Event eleme
 3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. ![](../../../.gitbook/assets/intermediate-signal-catch-event-configuration-name-process-modeler-designer.png) 
 4. In the **Name** setting, edit the selected element's name and then press **Enter**.
 
-#### Select the Signal That Triggers This Element
+#### Select the Signal to Trigger the Element
 
 An Intermediate Signal Catch Event element pauses a Request until that element receives a specific broadcast from a broadcasting element in any other Request in that ProcessMaker instance. The element that broadcasts the signal does not need to be in the same Process model as the Intermediate Signal Catch Event element that receives the broadcast. Select the signal that triggers this element.
 
-You may create a signal from this setting. However, ensure to configure one of the following elements from any Process model to broadcast this signal when it triggers; otherwise, the signal you create from this setting never broadcasts during any Request:
+You may create a signal from this setting. This signal becomes available throughout your ProcessMaker instance for all Process designers to use. Therefore, the attributes that define a signal, the signal ID and signal name, must be unique.
+
+However, ensure to configure one of the following elements from any Process model to broadcast this signal when it triggers; otherwise, the signal you create from this setting never broadcasts during any Request:
 
 * [Intermediate Signal Throw Event](process-modeling-element-descriptions.md#intermediate-signal-throw-event) element
 * [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element
@@ -103,12 +105,12 @@ Follow these steps to select the signal that triggers this element:
 
 #### Edit the Name of a Signal
 
-Editing the name of a signal changes that signal's name in that ProcessMaker instance. This signal name displays when selecting a signal from other elements that can broadcast or listen for a signal.
+Editing the name of a signal changes that signal's name in your ProcessMaker instance. This signal name displays when selecting a signal from other elements that can broadcast or listen for a signal.
 
 Follow these steps to edit the name of a signal:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Intermediate Signal Catch Event element from the Process model in which to select the signal that triggers it. Panels to configure this element display.
+2. Select any element from the Process model that broadcasts or listens for a signal. Panels to configure this element display.
 3. Expand the **Configuration** panel if it is not presently expanded, and then locate the **Signal** setting. The **Signal** setting may have a selection unlike the image below indicates. ![](../../../.gitbook/assets/signal-start-event-configuration-signal-process-modeler-designer.png) 
 4. Click the menu icon![](../../../.gitbook/assets/signal-menu-icon-process-modeler-designer.png)beside the **Signal** drop-down menu. All signals configured in your ProcessMaker instance display below the **+Signal** button. The signal ID displays in a gray border; the signal name displays to the right of the signal ID. ![](../../../.gitbook/assets/signal-edit-delete-process-modeler-designer.png) 
 5. Click the **Edit** icon![](../../../.gitbook/assets/edit-icon%20%281%29.png)that displays beside each signal to edit that signal. The **Name** setting displays the name of that signal. ![](../../../.gitbook/assets/signal-name-edit-process-modeler-designer.png) 
@@ -126,7 +128,7 @@ Deleting a signal from the ProcessMaker instance cannot be undone.
 Follow these steps to delete a signal from the ProcessMaker instance:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Intermediate Signal Catch Event element from the Process model in which to select the signal that triggers it. Panels to configure this element display.
+2. Select any element from the Process model that broadcasts or listens for a signal. Panels to configure this element display.
 3. Expand the **Configuration** panel if it is not presently expanded, and then locate the **Signal** setting. The **Signal** setting may have a selection unlike the image below indicates. ![](../../../.gitbook/assets/signal-start-event-configuration-signal-process-modeler-designer.png) 
 4. Click the menu icon![](../../../.gitbook/assets/signal-menu-icon-process-modeler-designer.png)beside the **Signal** drop-down menu. All signals configured in your ProcessMaker instance display below the **+Signal** button. The signal ID displays in a gray border; the signal name displays to the right of the signal ID. ![](../../../.gitbook/assets/signal-edit-delete-process-modeler-designer.png) 
 5. Click the **Delete** icon![](../../../.gitbook/assets/delete-icon.png)that displays beside each signal to delete that signal. A message displays to confirm deletion of this signal. ![](../../../.gitbook/assets/delete-signal-message-process-modeler-designer.png) 

@@ -186,7 +186,7 @@ An Intermediate Signal Throw Event element functions as follows during a Request
 
 Below is an Intermediate Signal Throw Event element when it has been placed into a Process model.
 
-![Intermediate Message Throw Event element](../../../.gitbook/assets/intermediate-signal-throw-event-element-process-modeler-designer.png)
+![Intermediate Signal Throw Event element](../../../.gitbook/assets/intermediate-signal-throw-event-element-process-modeler-designer%20%282%29.png)
 
 {% hint style="info" %}
 See [Add and Configure Intermediate Signal Throw Event Elements](add-and-configure-intermediate-signal-throw-event-elements.md).

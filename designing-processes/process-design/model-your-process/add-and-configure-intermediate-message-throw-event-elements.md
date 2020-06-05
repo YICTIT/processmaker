@@ -9,7 +9,7 @@ description: >-
 ## Add an Intermediate Message Throw Event Element
 
 {% hint style="info" %}
-### Don't Know What an End Event Is?
+### Don't Know What an Intermediate Signal Throw Event Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Intermediate Message Throw Event](process-modeling-element-descriptions.md#intermediate-message-throw-event) element.
 
@@ -67,7 +67,7 @@ The Intermediate Message Throw Event element has the following panels that conta
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
 
-Follow these steps to edit the name for an Intermediate Message Catch Event element:
+Follow these steps to edit the name for an Intermediate Message Throw Event element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Intermediate Message Throw Event element from the Process model in which to edit its name. Panels to configure this element display.
