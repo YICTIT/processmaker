@@ -34,14 +34,11 @@ Follow these steps to add a Boundary Timer Event element to the Process model:
    * [Data Connector](../model-processes-using-connectors/available-connectors-from-processmaker/data-connector-connector.md) connector \(requires the [Data Connector package](../../../package-development-distribution/package-a-connector/data-connector-package.md)\)
    * [PDF Generator](../model-processes-using-connectors/available-connectors-from-processmaker/pdf-generator-connector.md) connector \(requires the [PDF Generator package](../../../package-development-distribution/package-a-connector/pdf-generator-package.md)\)
    * [Send Email](../model-processes-using-connectors/available-connectors-from-processmaker/email-connector.md) connector \(requires the [Send Email package](../../../package-development-distribution/package-a-connector/email.md)\)
-4. From the **Boundary Events** drop-down menu, select the **Boundary Timer Event** option. The Boundary Timer Event element displays on the top of its associating element. ![](../../../.gitbook/assets/boundary-timer-event-selection-process-modeler-processes.png) 
-5. Optionally, add the following Boundary Event element types in which to associate with the Task-type element:
-   * [Boundary Error Event](add-and-configure-boundary-error-event-elements.md#add-a-boundary-error-event-element) element
-   * [Boundary Message Event](add-and-configure-boundary-message-event-elements.md#add-a-boundary-message-event-element) element
+4. From the **Boundary Events** drop-down menu, select the **Boundary Timer Event** option. The Boundary Timer Event element displays on the top of its associating element/connector. ![](../../../.gitbook/assets/boundary-timer-event-selection-process-modeler-processes.png) 
 
 ![Boundary Timer Event element associated with a Form Task element](../../../.gitbook/assets/boundary-timer-event-element-process-modeler-designer.png)
 
-After placing the Boundary Timer Event element, you may drag it to an adjacent side of its associating element. Since Process Modeler displays element names at the bottom of elements, the Boundary Timer Event element displays best at the bottom of its associating element.
+After placing the Boundary Timer Event element, you may drag it to an adjacent side of its associating element/connector. Since Process Modeler displays labels at the bottom of Process model elements and connectors, the Boundary Timer Event element displays best at the bottom of its associating element.
 
 ## Settings
 
@@ -88,7 +85,7 @@ Follow these steps to indicate if this Boundary Timer Event element interrupts t
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Boundary Timer Event element from the Process model in which to indicate if it interrupts the best-case scenario workflow. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded, and then locate the **Interrupting** setting. ![](../../../.gitbook/assets/interrupting-boundary-event-process-modeler-processes.png) 
+3. Expand the **Configuration** panel if it is not presently expanded, and then locate the **Interrupting** setting. ![](../../../.gitbook/assets/interrupting-boundary-event-process-modeler-designer.png) 
 4. From the **Interrupting** checkbox, indicate whether this Boundary Timer Event element interrupts the best-case scenario workflow when it triggers. When the **Interrupting** checkbox is selected, which is the default setting, this element interrupts the best-case scenario workflow.
 
 ### Timing Control Panel Settings
