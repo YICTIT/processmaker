@@ -29,7 +29,7 @@ Follow these steps to add an Intermediate Signal Throw Event element to the Proc
 2. [Create a new Process](../../viewing-processes/view-the-list-of-processes/create-a-process.md) or click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
 3. Locate the **Intermediate Event** element in the **Elements and Connectors** palette that is to the left of the Process Modeler canvas. If the [**Hide Menus** button](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view)![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is enabled, the **Elements and Connectors** palette displays the **Intermediate Event** element's icon![](../../../.gitbook/assets/intermediate-event-icon-process-modeler-processes.png). ![](../../../.gitbook/assets/intermediate-event-control-process-modeler-processes.png) 
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Intermediate Signal Throw Event element cannot be placed outside of the Pool element.
-5. From the **Elements** drop-down menu, select the **Intermediate Signal Throw Event** option. The Intermediate Message Throw Event element displays. ![](../../../.gitbook/assets/intermediate-signal-throw-event-selection-process-modeler-designer.png)  
+5. From the **Elements** drop-down menu, select the **Intermediate Signal Throw Event** option. The Intermediate Signal Throw Event element displays. ![](../../../.gitbook/assets/intermediate-signal-throw-event-selection-process-modeler-designer.png)  
 
 ![Intermediate Signal Throw Event element](../../../.gitbook/assets/intermediate-signal-throw-event-element-process-modeler-designer%20%282%29.png)
 
@@ -85,7 +85,7 @@ You may create a signal from this setting that this element broadcasts if necess
 Follow these steps to select the signal that this element broadcasts:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
-2. Select the Intermediate Signal Throw Event element from the Process model in which to select the signal that triggers it. Panels to configure this element display.
+2. Select the Intermediate Signal Throw Event element from the Process model in which to select the signal that it broadcasts. Panels to configure this element display.
 3. Expand the **Configuration** panel if it is not presently expanded, and then locate the **Signal** setting. ![](../../../.gitbook/assets/intermediate-signal-catch-event-configuration-signal-process-modeler-designer.png) 
 4. Do one of the following:
    * **The signal exists that this element broadcasts:**
