@@ -359,7 +359,9 @@ The Boundary Timer Event element associates with an element or connector by atta
 
 ![Boundary Timer Event element associates with a Form Task element](../../../.gitbook/assets/boundary-timer-event-element-process-modeler-designer.png)
 
-During an in-progress Request, if the element/connector to which the Boundary Timer Event associates has triggered but is not yet complete and the specified time expires for which the Boundary Timer Event element is set, then workflow routes through the Boundary Timer Event element. Use a Boundary Timer Event element to design business solutions when intended or best-case workflow in your Process does not occur in an expected period of time. Consider these examples:
+During an in-progress Request, if the element/connector to which the Boundary Timer Event associates has triggered but is not yet complete and the specified time expires for which the Boundary Timer Event element is set, then workflow routes through the Boundary Timer Event element.
+
+Use a Boundary Timer Event element to design business solutions when intended or best-case workflow in your Process does not occur in an expected period of time. Consider these examples:
 
 * **Escalate Task problems:** When a Task assignee does not complete a Task when it is due, escalate to that assignee's manager to ensure project tasks are completed on schedule.
 * **ProcessMaker Script fail-safe:** If a ProcessMaker Script does not complete in a period of time, route workflow to a system administrator to investigate why the Script provided no response.
@@ -444,7 +446,11 @@ The Boundary Signal Event element associates with an element or connector by att
 
 ![Boundary Signal Event element associates with a Form Task element](../../../.gitbook/assets/boundary-signal-event-element-process-modeler-designer.png)
 
-During an in-progress Request, if the element/connector to which the Boundary Signal Event associates has triggered but is not yet complete and the Boundary Signal Event element receives the signal for which it listens, then workflow routes through the Boundary Signal Event element. The element that broadcasts the signal does not need to be in the same Process model as the Boundary Signal Event element to receive the broadcast signal. Use a Boundary Signal Event element to design business solutions when alternate workflow must occur in multiple Process Requests when a separate element in a separate Request broadcasts a signal for which any or all Boundary Signal Event elements is listening. Consider these examples:
+During an in-progress Request, if the element/connector to which the Boundary Signal Event associates has triggered but is not yet complete and the Boundary Signal Event element receives the signal for which it listens, then workflow routes through the Boundary Signal Event element. The element that broadcasts the signal does not need to be in the same Process model as the Boundary Signal Event element to receive the broadcast signal.
+
+If the element/connector to which the Boundary Signal Event element associates has not triggered when the signal broadcasts, then the Boundary Signal Event element does not trigger.
+
+Use a Boundary Signal Event element to design business solutions when alternate workflow must occur in multiple Process Requests when a separate element in a separate Request broadcasts a signal for which any or all Boundary Signal Event elements is listening. Consider these examples:
 
 * **Escalate multiple Requests simultaneously to higher management:** Use an [Intermediate Signal Throw Event](process-modeling-element-descriptions.md#intermediate-signal-throw-event) element to broadcast a specific signal to indicate that higher management needs to participate in multiple separate Requests simultaneously: when all Boundary Signal Event elements receive the specific signal, workflow alternatively routes to different Task assignee to escalate a problem in each separate Request.
 * **Broadcast a signal when a separate Request completes:** When a separate Request completes, a [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element broadcasts a specific signal that indicates that Request's completion. All Boundary Signal Event elements from all in-progress Requests trigger simultaneously to route through alternate workflow. This design may be a business solution to indicate work on multiple Requests may not be necessary and workflow may alternatively route to end each of those Requests simultaneously.
