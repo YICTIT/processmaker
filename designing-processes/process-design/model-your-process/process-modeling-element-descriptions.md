@@ -361,6 +361,8 @@ The Boundary Timer Event element associates with an element or connector by atta
 
 During an in-progress Request, if the element/connector to which the Boundary Timer Event associates has triggered but is not yet complete and the specified time expires for which the Boundary Timer Event element is set, then workflow routes through the Boundary Timer Event element.
 
+After the associating element/connector triggers, the Boundary Timer Event element starts the set timer but does not trigger. The Boundary Timer Event element triggers only after the set time expires and its associating element has not completed.
+
 Use a Boundary Timer Event element to design business solutions when intended or best-case workflow in your Process does not occur in an expected period of time. Consider these examples:
 
 * **Escalate Task problems:** When a Task assignee does not complete a Task when it is due, escalate to that assignee's manager to ensure project tasks are completed on schedule.
@@ -406,6 +408,8 @@ The Boundary Error Event element associates with an element or connector by atta
 
 * An error occurs in the associating element/connector.
 * The Boundary Error Event element associates with a Sub Process element and that element receives an error from its child Request.
+
+If the element/connector to which the Boundary Error Event element associates has not triggered when the error occurs, then the Boundary Error Event element does not trigger.
 
 Use a [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) element to indicate workflow routing if the Boundary Error Event element triggers: when this element receives an error before the associating element completes.
 
@@ -486,6 +490,8 @@ The Boundary Message Event element associates with an element or connector by at
 ![Boundary Message Event element associates with a Sub Process element](../../../.gitbook/assets/boundary-message-event-element-process-modeler-designer.png)
 
 During an in-progress Request, if the element/connector to which the Boundary Message Event associates has triggered but is not yet complete and that associating element receives a specific message, then workflow routes through the Boundary Message Event element.
+
+If the element/connector to which the Boundary Message Event element associates has not triggered when the message sends to that associating element, then the Boundary Message Event element does not trigger.
 
 Use a [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) element to indicate workflow routing if the Boundary Message Event element triggers: when this element receives a message from the child Request.
 
