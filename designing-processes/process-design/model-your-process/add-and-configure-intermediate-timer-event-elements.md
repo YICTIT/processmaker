@@ -28,7 +28,7 @@ Follow these steps to add an Intermediate Timer Event element to the Process mod
 3. Locate the **Intermediate Event** element in the **Elements and Connectors** palette that is to the left of the Process Modeler canvas. If the [**Hide Menus** button](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view)![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is enabled, the **Elements and Connectors** palette displays the **Intermediate Event** element's icon![](../../../.gitbook/assets/intermediate-event-icon-process-modeler-processes.png). ![](../../../.gitbook/assets/intermediate-event-control-process-modeler-processes.png) 
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Intermediate Timer Event element cannot be placed outside of the Pool element.
 5. Do one of the following:
-   * From the **Elements** drop-down menu, select the **Intermediate Timer Event** option. ![](../../../.gitbook/assets/intermediate-timer-event-selection-process-modeler-processes.png) 
+   * From the **Elements** drop-down menu, select the **Intermediate Timer Event** option. ![](../../../.gitbook/assets/intermediate-timer-event-selection-process-modeler-designer.png) 
    * Click anywhere in the Process model. The Intermediate Timer Event element selects by default.
 
 ![Intermediate Timer Event element](../../../.gitbook/assets/intermediate-timer-event-process-modeler-processes.png)
@@ -72,7 +72,7 @@ Follow these steps to edit the name for an Intermediate Timer Event element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Intermediate Timer Event element from the Process model in which to edit its name. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays.  
+3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. This is a required setting.  
 
    ![](../../../.gitbook/assets/intermediate-timer-event-configuration-name-process-modeler-processes.png)
 
@@ -146,6 +146,8 @@ Follow these steps to edit the identifier value for an Intermediate Timer Event 
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/view-your-processes.md" %}
 
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
+
+{% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
 
 {% page-ref page="../remove-process-model-elements.md" %}
 

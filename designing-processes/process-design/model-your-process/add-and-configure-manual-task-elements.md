@@ -30,15 +30,16 @@ Follow these steps to add a Manual Task element to the Process model:
    ![](../../../.gitbook/assets/task-control-process-modeler-processes.png)
 
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Manual Task element cannot be placed outside of the Pool element.
-5. From the **Elements** drop-down menu, select the **Manual Task** option. The Manual Task element displays. ![](../../../.gitbook/assets/manual-task-selection-process-modeler-processes.png) 
+5. From the **Elements** drop-down menu, select the **Manual Task** option. The Manual Task element displays. ![](../../../.gitbook/assets/manual-task-selection-process-modeler-designer.png) 
 
-![Manual Task element](../../../.gitbook/assets/manual-task-process-modeler-processes.png)
+![Manual Task element](../../../.gitbook/assets/manual-task-element-process-modeler-designer.png)
 
 {% hint style="info" %}
 After adding the Manual Task element, consider adding either of the following Boundary-type Process model elements to design business solutions when your best-case scenarios don't happen:
 
 * [Boundary Timer Event](add-and-configure-boundary-timer-event-elements.md#add-a-boundary-timer-event-element) element \([Don't know what that is?](process-modeling-element-descriptions.md#boundary-timer-event)\)
 * [Boundary Error Event](add-and-configure-boundary-error-event-elements.md#add-a-boundary-error-event-element) element \([Don't know what that is?](process-modeling-element-descriptions.md#boundary-error-event)\)
+* [Boundary Signal Event](add-and-configure-boundary-signal-event-elements.md) element \([Don't know what that is?](process-modeling-element-descriptions.md#boundary-signal-event)\)
 {% endhint %}
 
 After the element is placed into the Process model, you may move it by dragging it to the new location.
@@ -103,9 +104,9 @@ Follow these steps to edit the name for a Manual Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Manual Task element from the Process model in which to edit its name. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays.  
+3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. This is a required setting.  
 
-   ![](../../../.gitbook/assets/manual-task-configuration-name-process-modeler-processes.png)
+   ![](../../../.gitbook/assets/manual-task-configuration-name-process-modeler-designer.png)
 
 4. In the **Name** setting, edit the selected element's name and then press **Enter**.
 
@@ -637,9 +638,9 @@ Follow these steps to assign ProcessMaker Vocabularies that validate Request dat
 Click the **Remove** icon![](../../../.gitbook/assets/delete-remove-icon.png)from the **Vocabularies** setting to remove a ProcessMaker Vocabulary from assignment to this element.
 {% endhint %}
 
-After one or more ProcessMaker Vocabularies are assigned to a Manual Task element, the Vocabulary icon displays above that element.
+After one or more ProcessMaker Vocabularies are assigned to a Manual Task element, the Vocabulary icon displays in that element.
 
-![Manual Task element with an assigned ProcessMaker Vocabulary](../../../.gitbook/assets/manual-task-vocabulary-process-modeler-processes.png)
+![Manual Task element with an assigned ProcessMaker Vocabulary](../../../.gitbook/assets/manual-task-vocabulary-process-modeler-designer.png)
 
 ### Advanced Panel Settings
 

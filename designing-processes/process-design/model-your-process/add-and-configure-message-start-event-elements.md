@@ -30,7 +30,7 @@ Follow these steps to add a Message Start Event element to the Process model:
    ![](../../../.gitbook/assets/start-event-control-process-modeler-processes.png)
 
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Start Timer Event element cannot be placed outside of the Pool element.
-5. From the **Elements** drop-down menu, select the **Message Start Event** option. The Message Start Event element displays. ![](../../../.gitbook/assets/message-start-event-selection-process-modeler-processes.png) 
+5. From the **Elements** drop-down menu, select the **Message Start Event** option. The Message Start Event element displays. ![](../../../.gitbook/assets/message-start-event-selection-process-modeler-designer.png) 
 
 ![Message Start Event element](../../../.gitbook/assets/message-start-event-element-process-modeler-designer.png)
 
@@ -72,7 +72,7 @@ Follow these steps to edit the name for a Message Start Event element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Message Start Event element from the Process model in which to edit its name. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. ![](../../../.gitbook/assets/message-start-event-configuration-name-process-modeler-processes.png) 
+3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. This is a required setting. ![](../../../.gitbook/assets/message-start-event-configuration-name-process-modeler-processes.png) 
 4. In the **Name** setting, edit the selected element's name and then press **Enter**.
 
 #### Select the Element from Which to Listen for a Message
@@ -104,8 +104,6 @@ Follow these steps to edit the identifier value for a Message Start Event elemen
 4. In the **Node Identifier** setting, edit the Message Start Event element's identifier to a unique value from all elements in the Process model and then press **Enter**.
 
 ## Related Topics
-
-
 
 {% page-ref page="process-modeling-element-descriptions.md" %}
 

@@ -28,7 +28,7 @@ Follow these steps to add a Boundary Message Event element to the Process model:
 3. Add the following Process model element or [connector](../model-processes-using-connectors/what-is-a-connector.md) to your Process model in which to associate with the Boundary Error Event element:
    * [Sub Process](add-and-configure-sub-process-elements.md#add-a-sub-process-element) element
    * [Actions By Email](../model-processes-using-connectors/available-connectors-from-processmaker/actions-by-email-connector.md) connector \(requires the [Actions By Email package](../../../package-development-distribution/package-a-connector/actions-by-email-package.md)\)
-4. From the **Boundary Events** drop-down menu, select the **Boundary Message Event** option. The Boundary Message Event element displays on the top of its associating element/connector. ![](../../../.gitbook/assets/boundary-message-event-selection-process-modeler-processes.png) 
+4. From the **Boundary Events** drop-down menu, select the **Boundary Message Event** option. The Boundary Message Event element displays on the top of its associating element/connector. ![](../../../.gitbook/assets/boundary-message-event-selection-process-modeler-designer.png) 
 
 ![Boundary Message Event element associated with a Sub Process element](../../../.gitbook/assets/boundary-message-event-element-process-modeler-designer.png)
 
@@ -63,7 +63,7 @@ Follow these steps to edit the name for a Boundary Message Event element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Boundary Message Event element from the Process model in which to edit its name. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. ![](../../../.gitbook/assets/boundary-message-event-configuration-name-process-modeler-processes.png) 
+3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. This is a required setting. ![](../../../.gitbook/assets/boundary-message-event-configuration-name-process-modeler-designer.png) 
 4. In the **Name** setting, edit the selected element's name and then press **Enter**.
 
 #### Indicate to Interrupt the Best-Case Scenario Workflow

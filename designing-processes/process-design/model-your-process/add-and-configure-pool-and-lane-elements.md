@@ -28,7 +28,7 @@ Follow these steps to add a Pool element to the Process model:
 3. Locate the **Pool** element in the **Elements and Connectors** palette that is to the left of the Process Modeler canvas. If the [**Hide Menus** button](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view)![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is enabled, the **Elements and Connectors** palette displays the **Pool** element's icon![](../../../.gitbook/assets/pool-icon-process-modeler-processes.png). ![](../../../.gitbook/assets/pool-control-process-modeler-processes.png) 
 4. Drag the element into the Process model canvas where you want to place it. If non-Pool/[Lane](process-modeling-element-descriptions.md#lane) elements or [controls](../model-processes-using-connectors/what-is-a-connector.md) are in your Process model when you place the Pool element, those elements are automatically placed into the Pool element. A Pool element cannot be placed into another Pool element, though the most recently placed Pool element can overlap another such that only the recent Pool element and its contents is visible.
 
-![Pool element](../../../.gitbook/assets/pool-process-modeler-processes.png)
+![Pool element](../../../.gitbook/assets/pool-process-modeler-designer.png)
 
 After the element is placed into the Process model, you may [resize it](add-and-configure-pool-and-lane-elements.md#resize-a-pool-element) or move it by dragging it to the new location. Any elements within the Pool element move as well.
 
@@ -60,7 +60,7 @@ Follow these steps to resize a Pool element:
 1. [Add a Pool element to your Process model](add-and-configure-pool-and-lane-elements.md#add-a-pool-element).
 2. Select the Pool element from the Process model to resize. Anchors display on each corner of the Pool element.  
 
-   ![](../../../.gitbook/assets/pool-element-lane-message-anchor-icons-process-modeler-processes.png)
+   ![](../../../.gitbook/assets/pool-element-lane-message-anchor-icons-process-modeler-designer.png)
 
 3. Click one of the anchors on the Pool element![](../../../.gitbook/assets/pool-element-anchor-process-modeler-processes.png), hold your cursor, and then adjust the size of the Pool element on the Process model canvas. If the Pool element contains elements within it prior to resizing, the Pool element only resizes to contain all elements within it. Lane elements automatically adjust to the width of the Pool element, though [Lane elements can be resized](add-and-configure-pool-and-lane-elements.md#resize-a-lane-element) separately.
 
@@ -92,7 +92,7 @@ Follow these steps to edit the name for a Pool element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Pool element from the Process model in which to edit its name. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. ![](../../../.gitbook/assets/pool-configuration-name-process-modeler-processes.png)
+3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. This is a required setting. ![](../../../.gitbook/assets/pool-configuration-name-process-modeler-designer.png)
 4. In the **Name** setting, edit the selected element's name and then press **Enter**.
 
 ### Advanced Panel Settings
@@ -136,7 +136,7 @@ Follow these steps to add a Lane element to a Pool element:
 3. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 4. Click the Pool element from the Process model into which to add a Lane element. Icons to add a Lane to a Pool element display.  
 
-   ![](../../../.gitbook/assets/pool-element-lane-message-anchor-icons-process-modeler-processes.png)
+   ![](../../../.gitbook/assets/pool-element-lane-message-anchor-icons-process-modeler-designer.png)
 
 5. Do one of the following:
    * **Add a Lane element above existing Lane elements:** Click the **Lane Above** icon![](../../../.gitbook/assets/lane-above-icon-pool-process-modeler-processes.png)to add a Lane element above all existing Lane elements. If only the Pool element exists, two Lane elements display.
@@ -158,7 +158,7 @@ Follow these steps to resize a Lane element:
 1. [Add a Lane element to a Pool element](add-and-configure-pool-and-lane-elements.md#add-a-lane-element-to-a-pool-element).
 2. Select the Lane element from the Pool element to resize. Anchors display on each corner of the Lane element.  
 
-   ![](../../../.gitbook/assets/lane-element-resize-anchor-process-modeler-processes.png)
+   ![](../../../.gitbook/assets/lane-element-resize-anchor-process-modeler-designer.png)
 
 3. Click one of the anchors on the Lane element![](../../../.gitbook/assets/pool-element-anchor-process-modeler-processes.png), hold your cursor, and then adjust the size of the Lane element in the Pool element. If the Lane element contains elements within it prior to resizing, the Lane element only resizes to contain all elements within it. The Pool element automatically adjusts to the width of the resized Lane element so far as all elements contained within the Pool element remain contained in it. [Pool elements can be resized](add-and-configure-pool-and-lane-elements.md#resize-a-pool-element) separately.
 
@@ -190,7 +190,7 @@ Follow these steps to edit the name for a Lane element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Lane element from the Process model in which to edit its name. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. ![](../../../.gitbook/assets/lane-configuration-name-process-modeler-processes.png)
+3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. This is a required setting. ![](../../../.gitbook/assets/lane-configuration-name-process-modeler-designer.png)
 4. In the **Name** setting, edit the selected element's name and then press **Enter**.
 
 ### Advanced Panel Settings

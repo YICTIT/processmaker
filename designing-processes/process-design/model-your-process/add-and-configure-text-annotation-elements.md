@@ -69,7 +69,7 @@ Follow these steps to edit the annotation description for a Text Annotation elem
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Pool element from the Process model in which to edit its name. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Text to Show** setting displays. ![](../../../.gitbook/assets/text-to-show-annotation-process-modeler-processes.png)
+3. Expand the **Configuration** panel if it is not presently expanded. The **Text to Show** setting displays. ![](../../../.gitbook/assets/text-annotation-configuration-show-process-modeler-designer.png)
 4. In the **Text to Show** setting, edit the selected Text Annotation element's text to display in the Process model and then press **Enter**.
 
 ### Advanced Panel Settings
@@ -113,7 +113,7 @@ Follow these steps to add an Association element to the Process model:
 3. [Add a Text Annotation element to the Process model](add-and-configure-text-annotation-elements.md#add-a-text-annotation-element).
 4. Select the Text Annotation element from which you want to add an Association element. Available options display to the right of the selected element.  
 
-   ![](../../../.gitbook/assets/association-element-process-modeler-processes.png)
+   ![](../../../.gitbook/assets/text-annotation-association-element-process-modeler-designer.png)
 
 5. Click the **Association Flow** icon![](../../../.gitbook/assets/association-flow-icon-text-annotation-process-modeler-processes.png).
 6. Click the Process model element to which the Text Annotation element describes. The Annotation element is placed.  

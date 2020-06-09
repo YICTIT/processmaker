@@ -31,7 +31,7 @@ Follow these steps to add a Start Event element to the Process model:
 
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Start Event element cannot be placed outside of the Pool element.
 5. Do one of the following:
-   * From the **Elements** drop-down menu, select the **Start Event** option. ![](../../../.gitbook/assets/start-event-selection-process-modeler-processes.png) 
+   * From the **Elements** drop-down menu, select the **Start Event** option. ![](../../../.gitbook/assets/start-event-selection-process-modeler-designer.png) 
    * Click anywhere in the Process model. The Start Event element selects by default.
 
 ![Start Event element](../../../.gitbook/assets/start-event-element-process-modeler-designer.png)
@@ -80,7 +80,7 @@ Follow these steps to edit the name for a Start Event element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Start Event element from the Process model in which to edit its name. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays.  
+3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. This is a required setting.  
 
    ![](../../../.gitbook/assets/start-event-configuration-name-process-modeler-processes.png)
 
@@ -246,7 +246,7 @@ Click the **Remove** icon![](../../../.gitbook/assets/delete-remove-icon.png)fro
 
 After one or more ProcessMaker Vocabularies are assigned to a Start Event element, the Vocabulary icon displays above that element.
 
-![Start Event element with an assigned ProcessMaker Vocabulary](../../../.gitbook/assets/start-event-vocabulary-process-modeler-processes.png)
+![Start Event element with an assigned ProcessMaker Vocabulary](../../../.gitbook/assets/start-event-vocabulary-process-modeler-designer.png)
 
 ### Advanced Panel Settings
 

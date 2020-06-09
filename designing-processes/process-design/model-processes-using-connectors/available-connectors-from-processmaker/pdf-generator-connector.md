@@ -47,6 +47,7 @@ After adding the PDF Generator connector, consider adding the following Boundary
 
 * [Boundary Timer Event](../../model-your-process/add-and-configure-boundary-timer-event-elements.md#add-a-boundary-timer-event-element) element \([Don't know what that is?](../../model-your-process/process-modeling-element-descriptions.md#boundary-timer-event)\)
 * [Boundary Error Event](../../model-your-process/add-and-configure-boundary-error-event-elements.md#add-a-boundary-error-event-element) element \([Don't know what that is?](../../model-your-process/process-modeling-element-descriptions.md#boundary-error-event)\)
+* [Boundary Signal Event](../../model-your-process/add-and-configure-boundary-signal-event-elements.md) element \([Don't know what that is?](../../model-your-process/process-modeling-element-descriptions.md#boundary-signal-event)\)
 {% endhint %}
 
 After the PDF Generator connector is placed into the Process model, you may move it by dragging it to the new location.
@@ -89,7 +90,7 @@ Follow these steps to configure a PDF Generator connector:
 
 1. Ensure that the **Hide Menus** button![](../../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the PDF Generator connector from the Process model in which to configure its settings. Panels to configure this connector display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. ![](../../../../.gitbook/assets/pdf-generator-configuration-name-process-modeler-package-processes.png) 
+3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. This is a required setting. ![](../../../../.gitbook/assets/pdf-generator-configuration-name-process-modeler-package-processes.png) 
 4. In the **Name** setting, edit the selected connector's name and then press **Enter**.
 
 #### Select the ProcessMaker Screen from Which to Generate a PDF

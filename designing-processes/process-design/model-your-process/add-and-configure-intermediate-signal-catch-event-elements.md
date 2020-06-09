@@ -73,7 +73,7 @@ Follow these steps to edit the name for an Intermediate Signal Catch Event eleme
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Intermediate Signal Catch Event element from the Process model in which to edit its name. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. ![](../../../.gitbook/assets/intermediate-signal-catch-event-configuration-name-process-modeler-designer.png) 
+3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. This is a required setting. ![](../../../.gitbook/assets/intermediate-signal-catch-event-configuration-name-process-modeler-designer.png) 
 4. In the **Name** setting, edit the selected element's name and then press **Enter**.
 
 #### Select the Signal to Trigger the Element
@@ -155,5 +155,13 @@ Follow these steps to edit the identifier value for an Intermediate Signal Catch
 
 ## Related Topics
 
+{% page-ref page="process-modeling-element-descriptions.md" %}
 
+{% page-ref page="../../viewing-processes/view-the-list-of-processes/view-your-processes.md" %}
+
+{% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
+
+{% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
+
+{% page-ref page="../remove-process-model-elements.md" %}
 

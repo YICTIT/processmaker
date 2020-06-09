@@ -29,7 +29,7 @@ Follow these steps to add an Intermediate Message Catch Event element to the Pro
 2. [Create a new Process](../../viewing-processes/view-the-list-of-processes/create-a-process.md) or click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
 3. Locate the **Intermediate Event** element in the **Elements and Connectors** palette that is to the left of the Process Modeler canvas. If the [**Hide Menus** button](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view)![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is enabled, the **Elements and Connectors** palette displays the **Intermediate Event** element's icon![](../../../.gitbook/assets/intermediate-event-icon-process-modeler-processes.png). ![](../../../.gitbook/assets/intermediate-event-control-process-modeler-processes.png) 
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Intermediate Message Catch Event element cannot be placed outside of the Pool element.
-5. From the **Elements** drop-down menu, select the **Intermediate Message Catch Event** option. The Intermediate Message Catch Event element displays. ![](../../../.gitbook/assets/intermediate-message-catch-event-selection-process-modeler-processes.png) 
+5. From the **Elements** drop-down menu, select the **Intermediate Message Catch Event** option. The Intermediate Message Catch Event element displays. ![](../../../.gitbook/assets/intermediate-message-catch-event-selection-process-modeler-designer.png) 
 
 ![Intermediate Message Catch Event element](../../../.gitbook/assets/intermediate-message-catch-event-element-process-modeler-designer.png)
 
@@ -73,7 +73,7 @@ Follow these steps to edit the name for an Intermediate Message Catch Event elem
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Intermediate Message Catch Event element from the Process model in which to edit its name. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays.  
+3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. This is a required setting.  
 
    ![](../../../.gitbook/assets/intermediate-message-catch-event-configuration-name-process-modeler-processes.png)
 
@@ -135,7 +135,7 @@ Click the **Remove** icon![](../../../.gitbook/assets/delete-remove-icon.png)fro
 
 After one or more ProcessMaker Vocabularies are assigned to an Intermediate Message Catch Event element, the Vocabulary icon displays above that element.
 
-![Intermediate Message Catch Event element with an assigned ProcessMaker Vocabulary](../../../.gitbook/assets/intermediate-message-catch-event-vocabulary-process-modeler-processes.png)
+![Intermediate Message Catch Event element with an assigned ProcessMaker Vocabulary](../../../.gitbook/assets/intermediate-message-catch-event-vocabulary-process-modeler-designer.png)
 
 ### Advanced Panel Settings
 

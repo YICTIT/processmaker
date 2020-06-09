@@ -28,7 +28,7 @@ Follow these steps to add a Form Task element to the Process model:
 3. Locate the **Task** element in the **Elements and Connectors** palette that is to the left of the Process Modeler canvas. If the [**Hide Menus** button](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view)![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is enabled, the **Elements and Connectors** palette displays the **Task** element's icon![](../../../.gitbook/assets/task-icon-process-modeler-processes.png). ![](../../../.gitbook/assets/task-control-process-modeler-processes.png) 
 4. Drag the element into the Process model canvas where you want to place it. If a Pool element is in your Process model, the Form Task element cannot be placed outside of the Pool element.
 5. Do one of the following:
-   * From the **Elements** drop-down menu, select the **Task** option. ![](../../../.gitbook/assets/task-selection-process-modeler-processes.png) 
+   * From the **Elements** drop-down menu, select the **Form Task** option. ![](../../../.gitbook/assets/form-task-selection-process-modeler-designer.png) 
    * Click anywhere in the Process model. The Form Task element selects by default.
 
 ![Form Task element](../../../.gitbook/assets/form-task-element-process-modeler-designer.png)
@@ -38,6 +38,7 @@ After adding the Form Task element, consider adding either of the following Boun
 
 * [Boundary Timer Event](add-and-configure-boundary-timer-event-elements.md#add-a-boundary-timer-event-element) element \([Don't know what that is?](process-modeling-element-descriptions.md#boundary-timer-event)\)
 * [Boundary Error Event](add-and-configure-boundary-error-event-elements.md#add-a-boundary-error-event-element) element \([Don't know what that is?](process-modeling-element-descriptions.md#boundary-error-event)\)
+* [Boundary Signal Event](add-and-configure-boundary-signal-event-elements.md) element \([Don't know what that is?](process-modeling-element-descriptions.md#boundary-signal-event)\)
 {% endhint %}
 
 After the element is placed into the Process model, you may move it by dragging it to the new location.
@@ -104,9 +105,9 @@ Follow these steps to edit the name for a Form Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Form Task element from the Process model in which to edit its name. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays.  
+3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. This is a required setting.  
 
-   ![](../../../.gitbook/assets/task-configuration-name-process-modeler-processes%20%281%29.png)
+   ![](../../../.gitbook/assets/form-task-configuration-name-process-modeler-designer.png)
 
 4. In the **Name** setting, edit the selected element's name and then press **Enter**.
 
@@ -703,9 +704,9 @@ Follow these steps to assign ProcessMaker Vocabularies that validate Request dat
 Click the **Remove** icon![](../../../.gitbook/assets/delete-remove-icon.png)from the **Vocabularies** setting to remove a ProcessMaker Vocabulary from assignment to this element.
 {% endhint %}
 
-After one or more ProcessMaker Vocabularies are assigned to a Form Task element, the Vocabulary icon displays above that element.
+After one or more ProcessMaker Vocabularies are assigned to a Form Task element, the Vocabulary icon displays in that element.
 
-![Form Task element with an assigned ProcessMaker Vocabulary](../../../.gitbook/assets/task-vocabulary-process-modeler-processes.png)
+![Form Task element with an assigned ProcessMaker Vocabulary](../../../.gitbook/assets/form-task-vocabulary-process-modeler-designer.png)
 
 ### Advanced Panel Settings
 
