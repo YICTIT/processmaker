@@ -135,14 +135,20 @@ Follow these steps to edit the identifier value for a Sequence Flow element:
 3. Expand the **Advanced** panel if it is not presently expanded. The **Node Identifier** setting displays. ![](../../../.gitbook/assets/sequence-flow-configuration-identifier-name-process-modeler-processes.png)
 4. In the **Node Identifier** setting, edit the Sequence Flow element's identifier to a unique value from all elements in the Process model and then press **Enter**.
 
-### Configure an Outgoing Sequence Flow Element from an Exclusive Gateway or Inclusive Gateway Element
+## Configure an Outgoing Sequence Flow Element from an Exclusive Gateway or Inclusive Gateway Element
+
+### Overview
 
 Outgoing Sequence Flow elements from [Exclusive Gateway](process-modeling-element-descriptions.md#exclusive-gateway) and [Inclusive Gateway](process-modeling-element-descriptions.md#inclusive-gateway) elements have the following settings as do other Sequence Flow elements:
 
 * [Identifier value](the-quick-toolbar.md#edit-the-identifier-value)
 * [Element name](the-quick-toolbar.md#edit-the-element-name)
 
-Outgoing Sequence Flow elements from Exclusive Gateway and Inclusive Gateway elements have an additional setting to indicate under which condition\(s\) a Sequence Flow element triggers to route a Request's workflow to its connecting element. If the condition\(s\) set for that Sequence Flow element are met, then that element triggers. ProcessMaker evaluates a Sequence Flow element's condition\(s\) to trigger by reviewing the Request's data to an expression that describes the condition\(s\). Specify this condition using an expression syntax described in [Expression Syntax Components](the-quick-toolbar.md#expression-syntax-components). Each Sequence Flow element can only have one expression, but by using logical operators multiple conditions can be specified in that expression. You may use [Magic Variables](../../reference-global-variables-in-your-processmaker-assets.md) in your expressions.
+Outgoing Sequence Flow elements from Exclusive Gateway and Inclusive Gateway elements have an additional settings to indicate under which condition\(s\) an outgoing Sequence Flow element triggers to route a Request's workflow to its connecting element:
+
+* Specify the condition\(s\) that must occur in a Request to trigger a Sequence Flow element, thereby triggering its connecting element. By setting different conditions on all outgoing Sequence Flow elements from an Exclusive Gateway or Inclusive Gateway element, 
+* 
+ If the condition\(s\) set for that Sequence Flow element are met, then that element triggers. ProcessMaker evaluates a Sequence Flow element's condition\(s\) to trigger by reviewing the Request's data to an expression that describes the condition\(s\). Specify this condition using an expression syntax described in [Expression Syntax Components](the-quick-toolbar.md#expression-syntax-components). Each Sequence Flow element can only have one expression, but by using logical operators multiple conditions can be specified in that expression. You may use [Magic Variables](../../reference-global-variables-in-your-processmaker-assets.md) in your expressions.
 
 {% hint style="info" %}
 See [Edit the Expression to Indicate Workflow Routing](the-quick-toolbar.md#edit-the-expression-to-indicate-workflow-routing) for information how to edit an expression in an outgoing Sequence Flow element from an Exclusive Gateway or Inclusive Gateway element.
@@ -150,7 +156,7 @@ See [Edit the Expression to Indicate Workflow Routing](the-quick-toolbar.md#edit
 
 ProcessMaker evaluates the condition\(s\) set for each outgoing Sequence Flow element from an Exclusive Gateway or Inclusive Gateway element using the following protocol:
 
-* **The Sequence Flow element does not have an expression:** If an outgoing Sequence Flow element does not have an expression, there are no conditions to evaluate; therefore, that Sequence Flow element always triggers. ProcessMaker routes workflow in the following way:
+* **The Sequence Flow element does not have an expression:** If an outgoing Sequence Flow element does not have an expression, there are no conditions to evaluate; therefore, that Sequence Flow element always triggers. ProcessMaker routes workflow in the following ways:
   * **Outgoing Sequence Flow elements for Exclusive Gateway elements:** If all outgoing Sequence Flow elements have no expressions from which to evaluate conditions, all Sequence Flow elements would trigger. However, Exclusive Gateway elements allow only one Sequence Flow element to trigger, so ProcessMaker triggers the top-most or left-most Sequence Flow element. In the example below, if neither Sequence Flow element has an expression to indicate routing conditions, then workflow routes to the "Task 1" element. ![](../../../.gitbook/assets/exclusive-gateway-sequence-flow-no-condition-expression-proces-modeler-processes.png) 
 
     Likewise, in the example below, if neither Sequence Flow element has an expression to indicate routing conditions, then workflow routes to the "Task 3" element. ![](../../../.gitbook/assets/exclusive-gateway-sequence-flow-no-condition-left-right-expression-proces-modeler-processes.png) 
