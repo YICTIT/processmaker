@@ -62,7 +62,7 @@ Follow these steps to set the Sequence Flow element from one connecting element 
 
 1. [​View your Processes](../../viewing-processes/view-the-list-of-processes/view-your-processes.md#view-all-active-processes). The **Processes** page displays.
 2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
-3. Select the Process model element from which you want to set the workflow routing. Available options display to the right of the selected element. The solid-line Flow indicator is for Sequence Flows \(highlighted below\).  
+3. Select the Process model element from which you want to set the workflow routing. Available options display to the right of the selected element. The solid-line Flow indicator is for Sequence Flow elements \(highlighted below\).  
 
    ![](../../../.gitbook/assets/sequence-flow-indicator-process-modeler-designer.png)
 
@@ -92,31 +92,31 @@ The Sequence Flow element has the following panels that contain settings:
 
 #### Edit the Element Name
 
-An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
+An element name is a human-readable reference for a Process element.
 
-Follow these steps to edit the name for a Sequence Flow element:
+Follow these steps to enter or edit the name for a Sequence Flow element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Sequence Flow element from the Process model in which to edit its name. Panels to configure this element display.
-3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. ![](../../../.gitbook/assets/sequence-flow-configuration-name-process-modeler-processes.png)
-4. In the **Name** setting, edit the selected element's name and then press **Enter**.
+3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. ![](../../../.gitbook/assets/sequence-flow-configuration-name-process-modeler-designer.png)
+4. In the **Name** setting, enter or edit the selected element's name and then press **Enter**.
 
 #### Edit the Expression to Indicate Workflow Routing
 
 {% hint style="info" %}
-This Sequence Flow element setting is available only for Exclusive Gateway and Inclusive Gateway elements. See [Configure an Outgoing Sequence Flow Element from an Exclusive Gateway or Inclusive Gateway Element](the-quick-toolbar.md#configure-an-outgoing-sequence-flow-element-from-an-exclusive-gateway-or-inclusive-gateway-element) for information how this setting affects workflow routing.
+This Sequence Flow element setting is available only for [Exclusive Gateway](process-modeling-element-descriptions.md#exclusive-gateway) and [Inclusive Gateway](process-modeling-element-descriptions.md#inclusive-gateway) elements. See [Configure an Outgoing Sequence Flow Element from an Exclusive Gateway or Inclusive Gateway Element](the-quick-toolbar.md#configure-an-outgoing-sequence-flow-element-from-an-exclusive-gateway-or-inclusive-gateway-element) for information how this setting affects workflow routing.
 {% endhint %}
 
-Outgoing Sequence Flow elements from Exclusive Gateway and Inclusive Gateway elements have an additional setting from which to dictate under which condition\(s\) that Sequence Flow element triggers to route a Request's workflow to its connecting element during a Request.
+Outgoing Sequence Flow elements from Exclusive Gateway and Inclusive Gateway elements have an additional setting from which to configure under which Request condition\(s\) that Sequence Flow element triggers to route that Request's workflow to its connecting element or [connector](../model-processes-using-connectors/what-is-a-connector.md).
 
-Follow these steps to edit the expression that dictates under which condition\(s\) that Sequence Flow element triggers to route a Request's workflow to its connecting element:
+Follow these steps to edit the expression that indicates under which Request condition\(s\) that Sequence Flow element triggers to route that Request's workflow to its connecting element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the outgoing Sequence Flow element from the Exclusive Gateway or Inclusive Gateway element from which dictate conditions under which workflow routes through that Sequence Flow element. Panels to configure this element display.
 3. Expand the **Configuration** panel if it is not presently expanded. The **Expression** setting displays. ![](../../../.gitbook/assets/expression-sequence-flow-exclusive-inclusive-gateway-process-modeler-processes.png) 
 4. In the **Expression** setting, enter the expression that dictates under which condition\(s\) that Sequence Flow element triggers to route a Request's workflow to its connecting element, and then press **Enter**. See the following sections for more information:
    * [Configure an Outgoing Sequence Flow Element from an Exclusive Gateway or Inclusive Gateway Element](the-quick-toolbar.md#configure-an-outgoing-sequence-flow-element-from-an-exclusive-gateway-or-inclusive-gateway-element)
-   * [Expression Syntax Components](the-quick-toolbar.md#expression-syntax-components)
+   * [Expression Syntax Components to Specify Request Conditions That Trigger an Outgoing Sequence Flow Element](the-quick-toolbar.md#expression-syntax-components-to-specify-request-conditions-that-trigger-an-outgoing-sequence-flow-element)
 
 ### Advanced Panel Settings
 
@@ -144,37 +144,51 @@ Outgoing Sequence Flow elements from [Exclusive Gateway](process-modeling-elemen
 * [Identifier value](the-quick-toolbar.md#edit-the-identifier-value)
 * [Element name](the-quick-toolbar.md#edit-the-element-name)
 
-Outgoing Sequence Flow elements from Exclusive Gateway and Inclusive Gateway elements have an additional settings to indicate under which condition\(s\) an outgoing Sequence Flow element triggers to route a Request's workflow to its connecting element:
+Outgoing Sequence Flow elements from Exclusive Gateway and Inclusive Gateway elements have additional settings to indicate under which condition\(s\) an outgoing Sequence Flow element triggers to route a Request's workflow to its connecting element or [connector](../model-processes-using-connectors/what-is-a-connector.md):
 
-* Specify the condition\(s\) that must occur in a Request to trigger a Sequence Flow element, thereby triggering its connecting element. By setting different conditions on all outgoing Sequence Flow elements from an Exclusive Gateway or Inclusive Gateway element, 
-* 
- If the condition\(s\) set for that Sequence Flow element are met, then that element triggers. ProcessMaker evaluates a Sequence Flow element's condition\(s\) to trigger by reviewing the Request's data to an expression that describes the condition\(s\). Specify this condition using an expression syntax described in [Expression Syntax Components](the-quick-toolbar.md#expression-syntax-components). Each Sequence Flow element can only have one expression, but by using logical operators multiple conditions can be specified in that expression. You may use [Magic Variables](../../reference-global-variables-in-your-processmaker-assets.md) in your expressions.
+* **Specify the condition\(s\) to trigger each Sequence Flow element:** Specify the condition\(s\) that must occur in a Request to trigger that Sequence Flow element, thereby triggering its connecting element. By setting different conditions on all outgoing Sequence Flow elements from an Exclusive Gateway or Inclusive Gateway element, you determine the business requirements for each Request of that Process model. ProcessMaker evaluates a Sequence Flow element's condition\(s\) to trigger by reviewing the Request's data to an expression that describes the condition\(s\). Specify this condition using an expression syntax described in [Expression Syntax Components to Specify Request Conditions That Trigger an Outgoing Sequence Flow Element](the-quick-toolbar.md#expression-syntax-components-to-specify-request-conditions-that-trigger-an-outgoing-sequence-flow-element). Each Sequence Flow element can only have one expression, but by using logical operators multiple conditions can be specified in that expression. You may use [Magic Variables](../../reference-global-variables-in-your-processmaker-assets.md) in your expressions.
+* **Select which Sequence Flow element triggers if Request conditions cannot trigger any of them:** [Select which outgoing Sequence Flow element triggers by default](the-quick-toolbar.md#select-a-default-sequence-flow-element) when none of the Request conditions can trigger any of the outgoing Sequence flows from an Exclusive Gateway or Inclusive Gateway element. If none of the conditions specified in any of the outgoing Sequence Flow elements meet the Request conditions to trigger, the default outgoing Sequence Flow triggers, thereby preventing the Request from pausing indefinitely. If a Sequence Flow element is set as the default, then its evaluation is ignored and it triggers by default. Only one outgoing Sequence Flow element from an outgoing Exclusive Gateway or Inclusive Gateway element may be set as the default.
 
 {% hint style="info" %}
 See [Edit the Expression to Indicate Workflow Routing](the-quick-toolbar.md#edit-the-expression-to-indicate-workflow-routing) for information how to edit an expression in an outgoing Sequence Flow element from an Exclusive Gateway or Inclusive Gateway element.
 {% endhint %}
 
-ProcessMaker evaluates the condition\(s\) set for each outgoing Sequence Flow element from an Exclusive Gateway or Inclusive Gateway element using the following protocol:
+#### Exclusive Gateway Elements Allow One Outgoing Sequence Flow Element to Trigger
 
-* **The Sequence Flow element does not have an expression:** If an outgoing Sequence Flow element does not have an expression, there are no conditions to evaluate; therefore, that Sequence Flow element always triggers. ProcessMaker routes workflow in the following ways:
-  * **Outgoing Sequence Flow elements for Exclusive Gateway elements:** If all outgoing Sequence Flow elements have no expressions from which to evaluate conditions, all Sequence Flow elements would trigger. However, Exclusive Gateway elements allow only one Sequence Flow element to trigger, so ProcessMaker triggers the top-most or left-most Sequence Flow element. In the example below, if neither Sequence Flow element has an expression to indicate routing conditions, then workflow routes to the "Task 1" element. ![](../../../.gitbook/assets/exclusive-gateway-sequence-flow-no-condition-expression-proces-modeler-processes.png) 
+An Exclusive Gateway element allows only one outgoing Sequence Flow element to trigger. If all outgoing Sequence Flow elements from an Exclusive Gateway element do not have expressions from which to evaluate conditions during a Request, that Request pauses and remains in-progress indefinitely; that Request will never complete.
 
-    Likewise, in the example below, if neither Sequence Flow element has an expression to indicate routing conditions, then workflow routes to the "Task 3" element. ![](../../../.gitbook/assets/exclusive-gateway-sequence-flow-no-condition-left-right-expression-proces-modeler-processes.png) 
+Therefore, ensure to do the following when configuring outgoing Sequence Flow elements from an Exclusive Gateway element:
 
-    Note that Exclusive Gateway elements are designed to use expressions to evaluate Request data and thereby determine workflow routing. Therefore, not using expressions in outgoing Sequence Flow elements for Exclusive Gateway elements is not a best practice.
+* [Specify the condition\(s\) on each outgoing Sequence Flow element to indicate workflow routing](the-quick-toolbar.md#edit-the-expression-to-indicate-workflow-routing).
+* [Select one outgoing Sequence Flow element as the default outgoing Sequence Flow element](the-quick-toolbar.md#select-a-default-sequence-flow-element) if none of the Request conditions can trigger any of the Sequence Flow elements, thereby preventing any in-progress Request from pausing indefinitely.
 
-  * **Outgoing Sequence Flow elements for Inclusive Gateway elements:** Workflow always routes through that Sequence Flow element because conditions are always met. Inclusive Gateway elements allow as many Sequence Flow elements to trigger in which their conditions are met.
-* **The Sequence Flow element has an expression:** The condition\(s\) in the Request data evaluate to determine if the condition\(s\) set in that Sequence Flow element is met. If so, that element triggers to route workflow from that outgoing Sequence Flow element to its connecting element. If not, then that Sequence Flow element does not trigger and workflow does not route through that element. ProcessMaker routes workflow in the following way:
-  * **Outgoing Sequence Flow elements for Exclusive Gateway elements:** Exclusive Gateway elements allow only one Sequence Flow to trigger.
-  * **Outgoing Sequence Flow elements for Inclusive Gateway elements:** Inclusive Gateway elements allow as many Sequence Flow elements to trigger in which their conditions are met. Therefore, all Sequence Flow elements in which their conditions are met trigger, thereby causing multiple workflow routes simultaneously for the same Request that stem from the Inclusive Gateway element. 
+#### Inclusive Gateway Elements Allow Potentially Multiple Outgoing Sequence Flow Elements to Trigger
 
-{% hint style="warning" %}
-When designing the condition\(s\) for outgoing Sequence Flow elements from an Exclusive Gateway element, ensure that the condition for one of its outgoing Sequence Flow elements can trigger. Otherwise, it may be possible that no outgoing Sequence Flow elements trigger to continue workflow, thereby causing a Request error.
-{% endhint %}
+An Inclusive Gateway element potentially allows all its outgoing Sequence Flow elements to trigger if the Request condition\(s\) for each Sequence Flow element are met. For example, if no outgoing Sequence Flow elements from an Inclusive Gateway element have expressions from which to evaluate Request conditions, then all Sequence Flow elements always trigger, thereby causing the Inclusive Gateway element to function as a [Parallel Gateway](process-modeling-element-descriptions.md#parallel-gateway) element set to [diverge workflow](add-and-configure-parallel-gateway-elements.md#indicate-workflow-direction). Even if one Sequence Flow element is selected as the default Sequence Flow element to trigger, workflow routing is not affected when no outgoing Sequence Flow elements have expressions from which to evaluate Request conditions.
 
-#### Expression Syntax Components
+Therefore, ensure to do the following when configuring outgoing Sequence Flow elements from an Inclusive Gateway element:
 
-Use the following expression syntax components to compose the expression that describes under which condition\(s\) an outgoing Sequence Flow element triggers.
+* [Specify the condition\(s\) on each outgoing Sequence Flow element to indicate workflow routing](the-quick-toolbar.md#edit-the-expression-to-indicate-workflow-routing).
+* [Select one outgoing Sequence Flow element as the default outgoing Sequence Flow element](the-quick-toolbar.md#select-a-default-sequence-flow-element) to ensure that this Sequence Flow element always triggers regardless of Request conditions. Selecting one outgoing Sequence Flow element as the default workflow prevents any in-progress Request from pausing indefinitely.
+
+### Select a Default Outgoing Sequence Flow Element
+
+Select which outgoing Sequence Flow element triggers by default when none of the Request conditions can trigger any of the outgoing Sequence flows from an Exclusive Gateway or Inclusive Gateway element. If none of the conditions specified in any of the outgoing Sequence Flow elements meet the Request conditions to trigger, the default outgoing Sequence Flow triggers, thereby preventing the in-progress Request from pausing indefinitely. If a Sequence Flow element is set as the default, then its evaluation is ignored and it triggers by default. Only one outgoing Sequence Flow element from an outgoing Exclusive Gateway or Inclusive Gateway element may be set as the default.
+
+Setting a default Sequence Flow to trigger is only available for outgoing Sequence Flow elements from Exclusive Gateway or Inclusive Gateway elements.
+
+Follow these steps to select an outgoing Sequence Flow element as the default to trigger from either an Exclusive Gateway or Inclusive Gateway element:
+
+1. Select the outgoing Sequence Flow element from either an Exclusive Gateway element or Inclusive Gateway element to set as default to trigger.
+2. Click the **Set as Default Flow** icon![](../../../.gitbook/assets/set-as-default-flow-icon-sequence-exclusive-inclusive-gateway-process-modeler-designer.png)for that outgoing Sequence Flow element. The default workflow indicator displays for that Sequence Flow element. The default workflow indicator removes from any other Sequence Flow element previously configured to be the default to trigger since only one outgoing Sequence Flow element can be the default.
+
+The center outgoing Sequence Flow element is the default Sequence Flow element from the Exclusive Gateway element below.
+
+![Center outgoing Sequence Flow element is the default workflow](../../../.gitbook/assets/default-workflow-sequence-flow-exclusive-inclusive-gateway-process-modeler-designer.png)
+
+### Expression Syntax Components to Specify Request Conditions That Trigger an Outgoing Sequence Flow Element
+
+Use the following expression syntax components to compose the expression that describes under which Request condition\(s\) an outgoing Sequence Flow element triggers from an Exclusive Gateway or Inclusive Gateway element.
 
 Spaces are allowed before and after expression components, such as arithmetic and comparison operators, to more easily read the expression.
 
@@ -184,7 +198,7 @@ Combine expressions using logical operators. Example: `(not approved) or (cost >
 [Magic Variables](../../reference-global-variables-in-your-processmaker-assets.md) can be used in when composing expressions.
 {% endhint %}
 
-**Literals**
+#### **Literals**
 
 | Component | Syntax | Expression Example |
 | :--- | :--- | :--- |
@@ -193,7 +207,7 @@ Combine expressions using logical operators. Example: `(not approved) or (cost >
 | array | `[`value1`,` value2`]` | `myFruit not in ["apples", "oranges"]` |
 | Boolean | `true` and `false` | `directorSigned` |
 
-**Arithmetic Operations**
+#### **Arithmetic Operations**
 
 | Component | Syntax |
 | :--- | :--- |
@@ -202,7 +216,7 @@ Combine expressions using logical operators. Example: `(not approved) or (cost >
 | multiplication | `*` |
 | division | `/` |
 
-**Logical Operators**
+#### **Logical Operators**
 
 | Component | Syntax |
 | :--- | :--- |
@@ -210,7 +224,7 @@ Combine expressions using logical operators. Example: `(not approved) or (cost >
 | and | `and` |
 | or | `or` |
 
-**Comparison Operators**
+#### **Comparison Operators**
 
 | Component | Syntax |
 | :--- | :--- |
@@ -221,20 +235,20 @@ Combine expressions using logical operators. Example: `(not approved) or (cost >
 | less than or equal to | `<=` |
 | greater than or equal to | `>=` |
 
-**String Operator**
+#### **String Operator**
 
 | Component | Syntax |
 | :--- | :--- |
 | concatenate matches | `~` |
 
-**Array Operators**
+#### **Array Operators**
 
 | Component | Syntax |
 | :--- | :--- |
 | contains | `in` |
 | does not contain | `not in` |
 
-**Range**
+#### **Range**
 
 | Component | Syntax | Example |
 | :--- | :--- | :--- |

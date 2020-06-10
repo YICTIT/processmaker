@@ -767,7 +767,7 @@ Sequence Flow elements connect Process model elements to represent the intended 
 
 As a best practice, indicate a consistent direction of Sequence Flow elements: either left to right or top to bottom, to make Process models easier to understand.
 
-In Process Modeler, Flow indicators display when you click an element in the Process model. The solid-line Flow indicator is for Sequence Flows \(highlighted below\).
+In Process Modeler, Flow indicators display when you click an element in the Process model. The solid-line Flow indicator is for Sequence Flow elements \(highlighted below\).
 
 ![Sequence Flow indicator \(highlighted\) on a selected Process model element](../../../.gitbook/assets/sequence-flow-indicator-process-modeler-designer.png)
 
@@ -795,7 +795,7 @@ In a Process model, Message Flow elements represent messaging between elements o
 
 Use Message Flow elements to represent collaboration and transfer Request data from one Pool to another. Since each Pool element in a Process uses its own [Request](../../../using-processmaker/requests/what-is-a-request.md) and Request data, use Message Flow elements to exchange data and information between separate Pool elements and/or elements within those Pool elements.
 
-In Process Modeler, Flow indicators display when you click an element in the Process model. The dotted-line Flow indicator is for Message Flows \(highlighted below\).
+In Process Modeler, Flow indicators display when you click an element in the Process model. The dotted-line Flow indicator is for Message Flow elements \(highlighted below\).
 
 ![Message Flow indicator \(highlighted\) on a selected Process element](../../../.gitbook/assets/message-flow-indicator-process-modeler-designer.png)
 

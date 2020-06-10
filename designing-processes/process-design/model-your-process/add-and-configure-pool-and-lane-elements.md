@@ -184,14 +184,14 @@ The Lane element has the following panels that contain settings:
 
 #### Edit the Element Name
 
-An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
+An element name is a human-readable reference for a Process element.
 
-Follow these steps to edit the name for a Lane element:
+Follow these steps to enter or edit the name for a Lane element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
 2. Select the Lane element from the Process model in which to edit its name. Panels to configure this element display.
 3. Expand the **Configuration** panel if it is not presently expanded. The **Name** setting displays. This is a required setting. ![](../../../.gitbook/assets/lane-configuration-name-process-modeler-designer.png)
-4. In the **Name** setting, edit the selected element's name and then press **Enter**.
+4. In the **Name** setting, enter or edit the selected element's name and then press **Enter**.
 
 ### Advanced Panel Settings
 
