@@ -28,7 +28,7 @@ Customize how the ProcessMaker user interface \(UI\) displays in your ProcessMak
   * **Secondary:** The **Secondary** color setting affects in the following components of the ProcessMaker UI:
 
     * Color for all primary action buttons in pages and screens, including but not limited to the **Save** and **Cancel** buttons.
-    * Primary action buttons in [Scripts Editor](../designing-processes/scripts/scripts-editor.md) and [Screens Builder](../designing-processes/design-forms/screens-builder/).
+    * Primary action buttons in [Scripts Editor]() and [Screens Builder](../designing-processes/design-forms/screens-builder/).
     * Default color for the **Secondary** option in the **Variant** setting for ProcessMaker Screen controls.
 
     Default hex color: \#788793.
@@ -136,6 +136,4 @@ Follow these steps to customize the ProcessMaker user interface \(UI\) in your i
 {% page-ref page="../designing-processes/design-forms/what-is-a-form.md" %}
 
 {% page-ref page="../designing-processes/design-forms/screens-builder/" %}
-
-{% page-ref page="../designing-processes/scripts/scripts-editor.md" %}
 

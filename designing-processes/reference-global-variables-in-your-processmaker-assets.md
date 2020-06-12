@@ -38,7 +38,7 @@ Your ProcessMaker user account or group membership must have the following permi
 See the ProcessMaker [Scripts](../processmaker-administration/permission-descriptions-for-users-and-groups.md#scripts) permissions or ask your ProcessMaker Administrator for assistance.
 {% endhint %}
 
-[Mock ProcessMaker Magic Variable values while mocking Request data](scripts/scripts-editor.md#mock-request-data-coming-into-the-processmaker-script) during testing to ensure your ProcessMaker Script runs as you intended.
+[Mock ProcessMaker Magic Variable values while mocking Request data]() during testing to ensure your ProcessMaker Script runs as you intended.
 
 ### Reference in Screens
 

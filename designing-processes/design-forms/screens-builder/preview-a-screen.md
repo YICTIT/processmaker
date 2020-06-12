@@ -25,7 +25,7 @@ Use [Preview mode](screens-builder-modes.md#preview-mode) in the following ways:
 ![Screen Builder displaying JSON input and output data models in Preview mode](../../../.gitbook/assets/preview-mode-screens-builder-processes.png)
 
 {% hint style="info" %}
-Are you a ProcessMaker Developer developing ProcessMaker Scripts? See [Scripts Editor](../../scripts/scripts-editor.md).
+Are you a ProcessMaker Developer developing ProcessMaker Scripts? See [Scripts Editor]().
 {% endhint %}
 
 ## Preview JSON Data Models in a ProcessMaker Screen
@@ -86,8 +86,6 @@ Calculated properties also display in the **Data Preview** panel as part of the 
 {% page-ref page="../../viewing-processes/what-is-a-process.md" %}
 
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
-
-{% page-ref page="../../scripts/scripts-editor.md" %}
 
 {% page-ref page="../../scripts/what-is-a-script.md" %}
 

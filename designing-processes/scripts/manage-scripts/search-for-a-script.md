@@ -48,5 +48,3 @@ If there are no search results, the following message displays: **No Results**.
 
 {% page-ref page="remove-a-script.md" %}
 
-{% page-ref page="../scripts-editor.md" %}
-

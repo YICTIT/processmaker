@@ -302,7 +302,7 @@ Use the [PHP SDK](https://github.com/ProcessMaker/sdk-php) with the [ProcessMake
 
 * **Intended audience:** Software developers and coding engineers
 * **Viewing time:** 2 minutes; contains narration
-* **Tags:** PHP; SDK; software development kit; [ProcessMaker Script](../designing-processes/scripts/what-is-a-script.md); [Script Editor](../designing-processes/scripts/scripts-editor.md); API; [ProcessMaker API](../processmaker-api-documentation/access-processmaker-api-documentation.md); application program interface; getProcessesRequests; token; bearer token; demo; video
+* **Tags:** PHP; SDK; software development kit; [ProcessMaker Script](../designing-processes/scripts/what-is-a-script.md); [Script Editor](); API; [ProcessMaker API](../processmaker-api-documentation/access-processmaker-api-documentation.md); application program interface; getProcessesRequests; token; bearer token; demo; video
 
 {% embed url="https://vimeo.com/392379630" %}
 
@@ -328,13 +328,51 @@ Use the [JavaScript SDK](https://github.com/ProcessMaker/sdk-node) with the [Pro
 
 * **Intended audience:** Software developers and coding engineers
 * **Viewing time:** 4 minutes; contains narration
-* **Tags:** JavaScript; JS; Node; SDK; software development kit; [ProcessMaker Script](../designing-processes/scripts/what-is-a-script.md); [Script Editor](../designing-processes/scripts/scripts-editor.md); API; ProcessMaker API; getProcessesRequest; application program interface; token; bearer token; demo; video
+* **Tags:** JavaScript; JS; Node; SDK; software development kit; [ProcessMaker Script](../designing-processes/scripts/what-is-a-script.md); [Script Editor](); API; ProcessMaker API; getProcessesRequest; application program interface; token; bearer token; demo; video
 
 {% embed url="https://vimeo.com/393099824" %}
 
 {% page-ref page="../designing-processes/scripts/what-is-a-script.md" %}
 
 {% page-ref page="../processmaker-api-documentation/access-processmaker-api-documentation.md" %}
+{% endtab %}
+
+{% tab title="Use Script Executors" %}
+Use a ProcessMaker Script Executor to call the Google API that requires a custom Google class called Google Client. See how ProcessMaker Script Executors can securely run custom code or packages that a sanctioned third-party Application Program Interface \(API\) or Software Development Kit \(SDK\) requires to successful call that resource.
+
+* **Intended audience:** ProcessMaker Administrators, software developers, and coding engineers
+* **Viewing time:** 3 minutes; contains narration
+* **Tags:** JavaScript; JS; Node; R; Python; Lua; PHP; SDK; software development kit; [ProcessMaker Script Executor](../processmaker-administration/script-executor-management/what-is-a-script-executor.md); [ProcessMaker Script](../designing-processes/scripts/what-is-a-script.md); API; Google API; application program interface; demo; video
+
+{% embed url="https://vimeo.com/428147806" %}
+
+### Related Topics
+
+{% page-ref page="../designing-processes/scripts/what-is-a-script.md" %}
+
+{% page-ref page="../processmaker-administration/script-executor-management/what-is-a-script-executor.md" %}
+{% endtab %}
+{% endtabs %}
+
+## Administer ProcessMaker
+
+This section contains videos discussing how to administer ProcessMaker.
+
+{% tabs %}
+{% tab title="Administer Script Executors" %}
+Use a ProcessMaker Script Executor that includes a Docker RUN command to package the Google Client class provided by Google into that Script Executor, thereby allowing ProcessMaker Scripts using that Script Executor to successfully call the Google Application Program Interface \(API\).
+
+* **Intended audience:** ProcessMaker Administrators, software developers, and coding engineers
+* **Viewing time:** 3 minutes; contains narration
+* **Tags:** JavaScript; JS; Node; R; Python; Lua; PHP; SDK; software development kit; [ProcessMaker Script Executor](../processmaker-administration/script-executor-management/what-is-a-script-executor.md); [ProcessMaker Script](../designing-processes/scripts/what-is-a-script.md); API; Google API; application program interface; demo; video
+
+{% embed url="https://vimeo.com/428147806" %}
+
+### Related Topics
+
+{% page-ref page="../processmaker-administration/script-executor-management/what-is-a-script-executor.md" %}
+
+{% page-ref page="../designing-processes/scripts/what-is-a-script.md" %}
 {% endtab %}
 {% endtabs %}
 

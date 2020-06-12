@@ -24,7 +24,7 @@ Follow these steps to view all ProcessMaker Scripts in your organization:
 
 The **Scripts** tab displays the following information in tabular format about ProcessMaker Scripts:
 
-* **Name:** The **Name** column displays the name of the ProcessMaker Script. Click the name to edit the ProcessMaker Script in [Scripts Editor](../scripts-editor.md).
+* **Name:** The **Name** column displays the name of the ProcessMaker Script. Click the name to edit the ProcessMaker Script in [Scripts Editor]().
 * **Description:** The **Description** column displays the description of the ProcessMaker Script. See [Edit Script Configuration](edit-script-configuration.md#edit-configuration-information-about-a-processmaker-script) for more information.
 * **Category:** The **Category** column displays to which [Script Category](manage-script-categories/what-is-a-script-category.md) the ProcessMaker Script is assigned.
 * **Language:** The **Language** column displays the programming language with which the ProcessMaker Script was written.
@@ -82,8 +82,6 @@ If no ProcessMaker Scripts exist, the following message displays: **No Results**
 {% page-ref page="duplicate-a-script.md" %}
 
 {% page-ref page="remove-a-script.md" %}
-
-{% page-ref page="../scripts-editor.md" %}
 
 {% page-ref page="../../../using-processmaker/control-how-requests-display-in-a-tab.md" %}
 

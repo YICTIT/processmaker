@@ -94,7 +94,7 @@ Since Script Task elements are designed to run a [ProcessMaker Script](../../scr
 See the following topics for more information:
 
 * [What is a Script?](../../scripts/what-is-a-script.md)
-* [Scripts Editor](../../scripts/scripts-editor.md)
+* [Scripts Editor]()
 {% endhint %}
 
 {% hint style="warning" %}
@@ -124,7 +124,7 @@ After [selecting the ProcessMaker Script for the Script Task element](add-and-co
 See the following topics for more information:
 
 * [What is a Script?](../../scripts/what-is-a-script.md)
-* [Scripts Editor](../../scripts/scripts-editor.md)
+* [Scripts Editor]()
 {% endhint %}
 
 If a JSON script exists in the Script Task element, that script is used for the ProcessMaker Script. An existing JSON configuration script displays in the **Script Configuration** option for a selected Script Task element.
@@ -238,8 +238,6 @@ Follow these steps to edit the identifier value for a Script Task element:
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 
 {% page-ref page="../../scripts/what-is-a-script.md" %}
-
-{% page-ref page="../../scripts/scripts-editor.md" %}
 
 {% page-ref page="../remove-process-model-elements.md" %}
 

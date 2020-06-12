@@ -45,5 +45,3 @@ Follow these steps to copy a ProcessMaker Script:
 
 {% page-ref page="remove-a-script.md" %}
 
-{% page-ref page="../scripts-editor.md" %}
-
