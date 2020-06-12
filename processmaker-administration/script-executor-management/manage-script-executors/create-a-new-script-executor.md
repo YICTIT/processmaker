@@ -30,6 +30,15 @@ Follow these steps to create a new ProcessMaker Script Executor:
 7. Click **Save and Build** to build the Docker container from which the ProcessMaker Script Executor runs Scripts. The **Build Command Output** setting displays below the **Dockerfile** setting as the ProcessMaker Script Executor builds the Docker container in real-time. If the Docker container builds successfully, the following message displays: **Executor Successfully Built. You can now close this window**. If building the Docker container is unsuccessful, the following message displays: **Error Building Executor. See Output Above.**. The **Build Command Output** setting displays the Dockerfile error.
 8. Click **Close**.
 
+## Video Demonstration
+
+See an example in the following video how to use a ProcessMaker Script Executor that includes a Docker RUN command to package the Google Client class provided by Google into that Script Executor, thereby allowing ProcessMaker Scripts using that Script Executor to successfully call the Google API.
+
+* **Intended audience:** ProcessMaker Administrators, software developers, and coding engineers
+* **Viewing time:** 3 minutes; contains narration
+
+{% embed url="https://vimeo.com/428147806" caption="Video demonstration how to use a ProcessMaker Script Executor" %}
+
 ## Related Topics
 
 {% page-ref page="../what-is-a-script-executor.md" %}

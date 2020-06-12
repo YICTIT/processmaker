@@ -19,7 +19,7 @@ See an example in the following video how to use a ProcessMaker Script Executor 
 * **Intended audience:** ProcessMaker Administrators, software developers, and coding engineers
 * **Viewing time:** 3 minutes; contains narration
 
-{% embed url="https://vimeo.com/428147806" %}
+{% embed url="https://vimeo.com/428147806" caption="Video demonstration how to use a ProcessMaker Script Executor" %}
 
 ### Supported Programming Languages
 
