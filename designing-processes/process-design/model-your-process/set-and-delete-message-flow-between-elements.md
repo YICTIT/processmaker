@@ -4,7 +4,7 @@ description: >-
   between elements in separate Pool elements.
 ---
 
-# Connect Message Flow Elements to Indicate Collaboration
+# Connect Message Flow Elements to Indicate Messaging
 
 ## Overview
 

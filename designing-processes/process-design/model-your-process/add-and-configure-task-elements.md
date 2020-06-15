@@ -11,6 +11,10 @@ description: Add and configure Form Task elements in your Process model.
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Form Task](process-modeling-element-descriptions.md#form-task) element.
 
+### Make a Copy of an Existing Form Task Element Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
+
 ### Permissions Required
 
 Your ProcessMaker user account or group membership must have the following permissions to add a Form Task element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
@@ -745,6 +749,8 @@ Follow these steps to edit the identifier value for a Form Task element:
 {% page-ref page="../../../using-processmaker/task-management/view-tasks-you-need-to-do.md" %}
 
 {% page-ref page="../../../using-processmaker/notifications.md" %}
+
+{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
 
 {% page-ref page="../remove-process-model-elements.md" %}
 

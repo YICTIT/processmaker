@@ -23,6 +23,10 @@ When the PDF Generator connector successfully generates the PDF during an in-pro
 
 The [PDF Generator package](../../../../package-development-distribution/package-a-connector/pdf-generator-package.md) is required. The PDF Generator [package](../../../../package-development-distribution/first-topic.md) installs the PDF Generator connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the PDF Generator connector can be installed in your ProcessMaker instance.
 
+### Make a Copy of an Existing PDF Connector Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../../copy-process-model-elements-or-connectors.md).
+
 ### Permissions Required
 
 Your ProcessMaker user account or group membership must have the following permissions to add a PDF Generator connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
@@ -109,4 +113,8 @@ Follow these steps to select from which [Display](../../../design-forms/screens-
 {% page-ref page="../what-is-a-connector.md" %}
 
 {% page-ref page="../../../../package-development-distribution/first-topic.md" %}
+
+{% page-ref page="../../copy-process-model-elements-or-connectors.md" %}
+
+{% page-ref page="../../remove-process-model-elements.md" %}
 

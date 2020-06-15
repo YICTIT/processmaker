@@ -7,9 +7,13 @@ description: Add and configure Error End Event elements in your Process model.
 ## Add an Error End Event Element
 
 {% hint style="info" %}
-### Don't Know What an Error End Event Is?
+### Don't Know What an Error End Event Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Error End Event](process-modeling-element-descriptions.md#error-end-event) element.
+
+### Make a Copy of an Existing Error End Event Element Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
 
 ### Permissions Required
 
@@ -112,6 +116,8 @@ Follow these steps to edit the identifier value for an Error End Event element:
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
+
+{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
 
 {% page-ref page="../remove-process-model-elements.md" %}
 

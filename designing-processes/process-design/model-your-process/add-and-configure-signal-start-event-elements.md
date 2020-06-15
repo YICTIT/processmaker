@@ -11,6 +11,10 @@ description: Add and configure Signal Start Event elements in your Process model
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Signal Start Event](process-modeling-element-descriptions.md#signal-start-event) element.
 
+### Make a Copy of an Existing Signal Start Event Element Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
+
 ### Permissions Required
 
 Your ProcessMaker user account or group membership must have the following permissions to add a Signal Start Event element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
@@ -163,6 +167,8 @@ Follow these steps to edit the identifier value for a Signal Start Event element
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
+
+{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
 
 {% page-ref page="../remove-process-model-elements.md" %}
 

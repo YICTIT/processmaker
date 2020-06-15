@@ -11,6 +11,10 @@ description: Add and configure Event-Based Gateway elements in your Process mode
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Event-Based Gateway](process-modeling-element-descriptions.md#event-based-gateway) element.
 
+### Make a Copy of an Existing Event-Based Gateway Element Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
+
 ### Permissions Required
 
 Your ProcessMaker user account or group membership must have the following permissions to add an Event-Based Gateway element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
@@ -95,6 +99,8 @@ Follow these steps to edit the identifier value for an Event-Based Gateway eleme
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/view-your-processes.md" %}
 
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
+
+{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
 
 {% page-ref page="../remove-process-model-elements.md" %}
 

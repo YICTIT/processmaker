@@ -13,13 +13,13 @@ Deleting a Process model element or a [connector](model-processes-using-connecto
 
 See [Process Modeling Element Descriptions](model-your-process/process-modeling-element-descriptions.md).
 
-### Don't Know What a ConnectorIs?
+### Don't Know What a Connector Is?
 
 See [What is a Connector?](model-processes-using-connectors/what-is-a-connector.md).
 
 ### Permissions Required
 
-Your ProcessMaker user account or group membership must have the following permissions to delete elements from the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to delete elements or connectors from the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
@@ -29,13 +29,15 @@ See the [Process](../../processmaker-administration/permission-descriptions-for-
 
 ### Delete a Non-Pool Element or a Connector
 
-Follow these steps to delete any non-Pool element or a connector from a Process model:
+Follow these steps to delete any non-Pool element or a connector from your Process model:
 
-1. Select the non-Pool element/connector to delete. Available options display above the selected element/connector.  
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the non-Pool element or connector to delete. Available options display above the selected element/connector.  
 
    ![](../../.gitbook/assets/delete-element-process-modeler-processes.png)
 
-2. Click the **Delete** icon![](../../.gitbook/assets/remove-icon.png). The Process model element/connector is deleted.
+4. Click the **Delete** icon![](../../.gitbook/assets/remove-icon.png). The Process model element/connector deletes.
 
 ### Delete a Pool Element
 
@@ -47,15 +49,19 @@ If you accidentally delete a Pool element with other elements/connectors you wan
 
 Follow these steps to delete a Pool element from a Process model:
 
-1. ​Select the Pool name in the Pool element to delete, thereby selecting the Pool element. Available options display to the right of the selected element.
-2. Click the **Delete** icon![](../../.gitbook/assets/remove-icon.png). The Pool element is deleted. All non-Pool elements and connectors within the Pool element are also deleted.
+1. ​​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Pool name in the Pool element to delete, thereby selecting the Pool element. Available options display to the right of the selected element.
+4. Click the **Delete** icon![](../../.gitbook/assets/remove-icon.png). The Pool element is deleted. All non-Pool elements and connectors within the Pool element also delete.
 
 ### Delete a Lane Element from a Pool Element
 
 Follow these steps to delete a Lane element from a Pool element:
 
-1. ​Select the Lane element in the Pool element to delete. Available options display above the selected element.
-2. Click the **Delete** icon![](../../.gitbook/assets/remove-icon.png). The Pool element is deleted. All non-Pool elements and connectors that were within the deleted Lane element stay in their current positions within the Pool element.
+1. ​​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Lane element in the Pool element to delete. Available options display above the selected element.
+4. Click the **Delete** icon![](../../.gitbook/assets/remove-icon.png). The Pool element is deleted. All non-Pool elements and connectors that were within the deleted Lane element stay in their current positions within the Pool element.
 
 ## Related Topics
 
@@ -63,5 +69,5 @@ Follow these steps to delete a Lane element from a Pool element:
 
 {% page-ref page="../viewing-processes/view-the-list-of-processes/view-your-processes.md" %}
 
-{% page-ref page="../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
+{% page-ref page="undo-and-redo-changes.md" %}
 

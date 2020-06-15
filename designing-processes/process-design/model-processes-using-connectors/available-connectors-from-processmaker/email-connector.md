@@ -34,6 +34,10 @@ The email recipient's name and email address can be specified in one of the foll
 
 The [Send Email package](../../../../package-development-distribution/package-a-connector/email.md) is required. The Send Email [package](../../../../package-development-distribution/first-topic.md) installs the Send Email connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Send Email connector can be installed in your ProcessMaker instance.
 
+### Make a Copy of an Existing Send Email Connector Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../../copy-process-model-elements-or-connectors.md).
+
 ### Permissions Required
 
 Your ProcessMaker user account or group membership must have the following permissions to add a Send Email connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
@@ -105,4 +109,8 @@ Follow these steps to configure a Send Email connector:
 {% page-ref page="../what-is-a-connector.md" %}
 
 {% page-ref page="../../../../package-development-distribution/first-topic.md" %}
+
+{% page-ref page="../../copy-process-model-elements-or-connectors.md" %}
+
+{% page-ref page="../../remove-process-model-elements.md" %}
 

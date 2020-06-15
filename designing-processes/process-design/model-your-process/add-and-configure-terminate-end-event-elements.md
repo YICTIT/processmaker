@@ -7,9 +7,13 @@ description: Add and configure Terminate End Event elements in your Process mode
 ## Add a Terminate End Event Element
 
 {% hint style="info" %}
-### Don't Know What a Terminate End Event Is?
+### Don't Know What a Terminate End Event Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Terminate End Event](process-modeling-element-descriptions.md#terminate-end-event) element.
+
+### Make a Copy of an Existing Terminate End Event Element Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
 
 ### Permissions Required
 
@@ -100,6 +104,8 @@ Follow these steps to edit the identifier value for a Terminate End Event elemen
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
+
+{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
 
 {% page-ref page="../remove-process-model-elements.md" %}
 

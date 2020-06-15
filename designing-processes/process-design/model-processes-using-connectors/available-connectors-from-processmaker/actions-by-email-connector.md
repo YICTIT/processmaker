@@ -55,12 +55,16 @@ To ensure that Requests do not remain indefinitely active on an Exclusive Gatewa
 * If an [Intermediate Message Catch Event](../../model-your-process/process-modeling-element-descriptions.md#intermediate-message-catch-event) element triggers instead of the Intermediate Timer Event element, the email recipient sent the response within the allotted time period.
 {% endhint %}
 
-## Add an Actions by Email Connector to the Process Model
+## Add an Actions By Email Connector to the Process Model
 
 {% hint style="info" %}
 ### ProcessMaker Package Required
 
 The [Actions By Email package](../../../../package-development-distribution/package-a-connector/actions-by-email-package.md) is required. The Actions By Email [package](../../../../package-development-distribution/first-topic.md) installs the Actions By Email connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Actions By Email connector can be installed in your ProcessMaker instance.
+
+### Make a Copy of an Existing Actions By Email Connector Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../../copy-process-model-elements-or-connectors.md).
 
 ### Permissions Required
 
@@ -156,4 +160,8 @@ Follow these steps to configure an Actions By Email connector:
 {% page-ref page="../what-is-a-connector.md" %}
 
 {% page-ref page="../../../../package-development-distribution/first-topic.md" %}
+
+{% page-ref page="../../copy-process-model-elements-or-connectors.md" %}
+
+{% page-ref page="../../remove-process-model-elements.md" %}
 

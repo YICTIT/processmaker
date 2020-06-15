@@ -9,9 +9,13 @@ description: >-
 ## Add an Intermediate Signal Catch Event Element
 
 {% hint style="info" %}
-### Don't Know What an Intermediate Signal Catch Event Is?
+### Don't Know What an Intermediate Signal Catch Event Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Intermediate Signal Catch Event](process-modeling-element-descriptions.md#intermediate-signal-catch-event) element.
+
+### Make a Copy of an Existing Intermediate Signal Catch Event Element Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
 
 ### Permissions Required
 
@@ -162,6 +166,8 @@ Follow these steps to edit the identifier value for an Intermediate Signal Catch
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
+
+{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
 
 {% page-ref page="../remove-process-model-elements.md" %}
 

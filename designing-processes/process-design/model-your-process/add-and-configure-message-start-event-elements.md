@@ -11,6 +11,10 @@ description: Add and configure Message Start Event elements in your Process mode
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Message Start Event](process-modeling-element-descriptions.md#message-start-event) element.
 
+### Make a Copy of an Existing Message Start Event Element Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
+
 ### Permissions Required
 
 Your ProcessMaker user account or group membership must have the following permissions to add a Start Timer Event element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
@@ -114,6 +118,8 @@ Follow these steps to edit the identifier value for a Message Start Event elemen
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
 
 {% page-ref page="../remove-process-model-elements.md" %}
+
+{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
 
 {% page-ref page="set-and-delete-message-flow-between-elements.md" %}
 

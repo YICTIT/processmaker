@@ -7,9 +7,13 @@ description: Add and configure End Event elements in your Process model.
 ## Add an End Event Element
 
 {% hint style="info" %}
-### Don't Know What an End Event Is?
+### Don't Know What an End Event Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [End Event](process-modeling-element-descriptions.md#end-event) element.
+
+### Make a Copy of an Existing End Event Element Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
 
 ### Permissions Required
 
@@ -129,6 +133,8 @@ Follow these steps to edit the identifier value for an End Event element:
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
 
 {% page-ref page="../../design-forms/what-is-a-form.md" %}
+
+{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
 
 {% page-ref page="../remove-process-model-elements.md" %}
 

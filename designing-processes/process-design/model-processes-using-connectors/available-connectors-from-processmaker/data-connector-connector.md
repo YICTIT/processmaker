@@ -28,6 +28,10 @@ The Data Connector connector requires that the [Data Connector package](../../..
 
 The [Data Connector package](../../../../package-development-distribution/package-a-connector/data-connector-package.md) is required. The Data Connector [package](../../../../package-development-distribution/first-topic.md) installs the Data Connector connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Data Connector connector can be installed in your ProcessMaker instance.
 
+### Make a Copy of an Existing Data Connector Connector Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../../copy-process-model-elements-or-connectors.md).
+
 ### Permissions Required
 
 Your ProcessMaker user account or group membership must have the following permissions to add a Data Connector connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
@@ -182,4 +186,8 @@ Click the **Delete** icon![](../../../../.gitbook/assets/delete-record-record-li
 {% page-ref page="../../../scripts/what-is-a-script.md" %}
 
 {% page-ref page="../../../../package-development-distribution/first-topic.md" %}
+
+{% page-ref page="../../copy-process-model-elements-or-connectors.md" %}
+
+{% page-ref page="../../remove-process-model-elements.md" %}
 

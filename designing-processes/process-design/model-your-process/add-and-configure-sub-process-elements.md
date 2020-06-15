@@ -11,6 +11,10 @@ description: Add and configure Sub Process elements in your Process model.
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Sub Process](process-modeling-element-descriptions.md#call-activity) element.
 
+### Make a Copy of an Existing Sub Process Element Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
+
 ### Permissions Required
 
 Your ProcessMaker user account or group membership must have the following permissions to add a Sub Process element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
@@ -183,6 +187,8 @@ Follow these steps to edit the identifier value for a Sub Process element:
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/view-your-processes.md" %}
 
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
+
+{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
 
 {% page-ref page="../remove-process-model-elements.md" %}
 
