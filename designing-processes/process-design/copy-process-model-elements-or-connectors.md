@@ -16,7 +16,7 @@ The Form Task element is below the original in the following example.
 
 [Pool](model-your-process/process-modeling-element-descriptions.md#pool) elements cannot be copied since they contain other elements and/or connectors.
 
-### Copy Restrictions
+### Restrictions
 
 The following elements cannot be copied:
 
@@ -26,7 +26,6 @@ The following elements cannot be copied:
 * [Boundary Message Event](model-your-process/process-modeling-element-descriptions.md#boundary-message-event) elements
 * [Pool](model-your-process/process-modeling-element-descriptions.md#pool) elements
 * [Lane](model-your-process/process-modeling-element-descriptions.md#lane) elements
-* [Text Annotation](model-your-process/process-modeling-element-descriptions.md#text-annotation) elements
 * [Association](model-your-process/process-modeling-element-descriptions.md#association) elements
 * [Sequence Flow](model-your-process/process-modeling-element-descriptions.md#sequence-flow) elements
 * [Message Flow](model-your-process/process-modeling-element-descriptions.md#message-flow) elements
@@ -62,4 +61,6 @@ Follow these steps to copy an element or connector in your Process model:
 ## Related Topics
 
 {% page-ref page="model-your-process/process-modeling-element-descriptions.md" %}
+
+{% page-ref page="../viewing-processes/view-the-list-of-processes/view-your-processes.md" %}
 

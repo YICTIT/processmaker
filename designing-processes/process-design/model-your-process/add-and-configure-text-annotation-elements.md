@@ -13,6 +13,10 @@ description: >-
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Text Annotation](process-modeling-element-descriptions.md#text-annotation) element.
 
+### Make a Copy of an Existing Text Annotation Element Instead of Adding One?
+
+See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
+
 ### Permissions Required
 
 Your ProcessMaker user account or group membership must have the following permissions to add a Text Annotation element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
