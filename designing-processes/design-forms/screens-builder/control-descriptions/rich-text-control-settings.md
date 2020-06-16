@@ -18,10 +18,6 @@ Aside from rich text styles and images, the Rich Text control can display the fo
 
 * **Magic Variable values:** Display the value of a [Magic Variable](../../../reference-global-variables-in-your-processmaker-assets.md) by referencing the Magic Variable using mustache syntax. Example: `{{ _user.fullname }}`. Spaces surrounding the Magic Variable reference are allowed.
 
-{% hint style="info" %}
-Do you need to export this ProcessMaker Screen? Click the **Export Screen** button![](../../../../.gitbook/assets/export-screen-button-screens-builder-processes.png). See [Export a Screen](../../manage-forms/export-a-screen.md#overview) for more information.
-{% endhint %}
-
 ## Add the Control to a ProcessMaker Screen
 
 {% hint style="info" %}
@@ -41,7 +37,7 @@ Follow these steps to add this control to the [ProcessMaker Screen](../../what-i
 4. Drag the **Rich Text** icon into the Screen Builder canvas. Existing controls on the Screen Builder canvas adjust positioning based on where you drag the control.
 5. Place into the Screen Builder canvas where you want the control to display on the ProcessMaker Screen.  
 
-   ![](../../../../.gitbook/assets/rich-text-control-placed-screens-builder-processes.png)
+   ![](../../../../.gitbook/assets/rich-text-control-screen-builder-processes.png)
 
 6. Configure the Rich Text control. See [Settings](rich-text-control-settings.md#settings).
 7. Validate that the control is configured correctly. See [Validate Your Screen](../validate-your-screen.md#validate-a-processmaker-screen).

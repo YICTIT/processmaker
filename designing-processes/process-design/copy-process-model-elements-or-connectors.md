@@ -6,6 +6,12 @@ description: Copy elements or connectors you've added to your Process model.
 
 ## Overview
 
+{% hint style="info" %}
+### New Topic
+
+This topic is new for ProcessMaker version 4.0.4. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.4-release-notes#process-modeler-1).
+{% endhint %}
+
 Copying a Process model element or a [connector](model-processes-using-connectors/what-is-a-connector.md) copies the original element/connector along with its current settings. Copying Process model elements or connectors in your Process model makes it easier to design your model without adding default elements/connectors with their default settings.
 
 The copied Process model element or connector displays below the original. Any [Sequence Flow](model-your-process/process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](model-your-process/process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from the original are not copied.

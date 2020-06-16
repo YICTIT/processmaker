@@ -25,6 +25,10 @@ Your ProcessMaker user account or group membership must have the following permi
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+### New Topic
+
+This topic is new for ProcessMaker version 4.0.4. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.4-release-notes#process-modeler-1).
 {% endhint %}
 
 Follow these steps to add an Intermediate Signal Throw Event element to the Process model:

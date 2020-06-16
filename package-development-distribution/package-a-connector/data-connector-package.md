@@ -15,7 +15,7 @@ The Data Connector [package](../first-topic.md) is not available in the ProcessM
 
 Use the Data Connector package to connect your ProcessMaker assets, such as [ProcessMaker Screens](../../designing-processes/design-forms/what-is-a-form.md), [ProcessMaker Scripts](../../designing-processes/scripts/what-is-a-script.md), and [ProcessMaker Collections](../../collections/what-is-a-collection.md) to and from third-party data sources such as Application Program Interfaces \(APIs\). After a ProcessMaker Data Connector is created, ProcessMaker designers can reference the data source via the ProcessMaker Data Connector from within their ProcessMaker assets. Incorporating data from external data sources such as APIs helps you make business decisions from information outside of your ProcessMaker instance.
 
- Below are a few ways to use ProcessMaker Data Connectors:
+Below are a few ways to use ProcessMaker Data Connectors:
 
 * In [Screen Builder](../../designing-processes/design-forms/screens-builder/what-is-screens-builder.md), use the records in a ProcessMaker Collection as [Select List](../../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control options in a [ProcessMaker Screen](../../designing-processes/design-forms/what-is-a-form.md).
 * In Screen Builder, use a [Watcher](../../designing-processes/design-forms/screens-builder/manage-watchers/what-is-a-watcher.md) to act on data from a ProcessMaker Data Connector when the value of a Screen control changes.

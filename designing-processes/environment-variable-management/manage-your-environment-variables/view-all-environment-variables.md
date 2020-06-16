@@ -29,6 +29,12 @@ The **Environment Variables** page displays the following information in tabular
 * **Modified:** The **Modified** column displays the date and time the ProcessMaker Environment Variable was last modified. The time zone setting to display the time is according to the ProcessMaker instance unless your [user profile's](../../../using-processmaker/profile-settings.md#change-your-processmaker-settings) **Time zone** setting is specified.
 * **Created:** The **Created** column displays the date and time the ProcessMaker Environment Variable was created. The time zone setting to display the time is according to the ProcessMaker instance unless your [user profile's](../../../using-processmaker/profile-settings.md#change-your-processmaker-settings) **Time zone** setting is specified.
 
+{% hint style="warning" %}
+The [Google Places package](../../../package-development-distribution/package-a-connector/google-places-package.md) adds a [ProcessMaker Environment Variable](../what-is-an-environment-variable.md) called `GOOGLE_API_TOKEN` that contains the Google API token for that ProcessMaker instance. The ProcessMaker Environment Variable does not require configuration or revision after it has been added to your ProcessMaker instance. Please do not delete that ProcessMaker Environment Variable: all [Google Place controls](../../design-forms/screens-builder/control-descriptions/google-places-control-settings.md) added to [Form](../../design-forms/screens-builder/types-for-screens.md#form)-type [ProcessMaker Screens](../../design-forms/what-is-a-form.md) will no longer function it it is deleted.
+
+The Google Places [package](../../../package-development-distribution/first-topic.md) is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places package can be installed in your ProcessMaker instance.
+{% endhint %}
+
 {% hint style="info" %}
 ### Search for a ProcessMaker Environment Variable
 
