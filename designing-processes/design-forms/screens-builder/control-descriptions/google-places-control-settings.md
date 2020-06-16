@@ -283,6 +283,10 @@ The Google Places control receives its source data from the Google API after the
 
 Follow these guidelines to reference [JSON object](../../../../json-the-foundation-of-request-data/what-is-json.md#json-objects) key names and/or [arrays](../../../../json-the-foundation-of-request-data/what-is-json.md#json-arrays) from Google's returned data object in other [ProcessMaker Screen](../../what-is-a-form.md) controls.
 
+{% hint style="info" %}
+To reference other data from the Google JSON data object that the Google API returns not documented here, see [Google's documentation on how to reference autocomplete results](https://developers.google.com/places/web-service/autocomplete#place_autocomplete_results).
+{% endhint %}
+
 ### Reference the Entire Selected Address or Location
 
 Reference the following JSON key name for the entire selected address or location that includes the entire value in the Google Places control as indicated in [JSON dot notation](../../../../json-the-foundation-of-request-data/what-is-json.md#json-dot-notation):
@@ -318,7 +322,7 @@ variable_name.0.predictions.0.description.0.structured_formatting.0.main_text
 The Rich Text control displays the following during a Request:
 
 ```text
-"ProcessMaker, West Main Street, Durham, NC, USA"
+"ProcessMaker"
 ```
 
 #### Example of the Main Text for the Selected Address or Location
@@ -337,6 +341,74 @@ The Rich Text control displays the following during a Request:
 
 ```text
 "ProcessMaker"
+```
+
+### Reference the Secondary Text for the Selected Address or Location
+
+Reference the following JSON key name for the secondary text for the selected address or location as indicated in [JSON dot notation](../../../../json-the-foundation-of-request-data/what-is-json.md#json-dot-notation):
+
+```text
+variable_name.0.predictions.0.description.0.structured_formatting.0.secondary_text
+```
+
+`variable_name` represents the [**Variable Name** setting](google-places-control-settings.md#variable-name) value for the Google Places control being referenced.
+
+The Rich Text control displays the following during a Request:
+
+```text
+"West Main Street, Durham, NC, USA"
+```
+
+#### Example of the Secondary Text for the Selected Address or Location
+
+Below is the Google Places control selection for this example. The Google Places control's **Variable Name** setting value is the default `google_places_1`.
+
+![Google Places control example](../../../../.gitbook/assets/google-places-control-business-example-package.png)
+
+If a [Rich Text](rich-text-control-settings.md) control references this Google Places control's secondary text for the selected address, use the following syntax in the Rich Text control's content using [mustache syntax](https://mustache.github.io/mustache.5.html):
+
+```text
+{{ google_places_1.0.predictions.0.description.0.structured_formatting.0.secondary_text }}
+```
+
+The Rich Text control displays the following during a Request:
+
+```text
+"West Main Street, Durham, NC, USA"
+```
+
+### Reference the Place Type\(s\) for the Selected Address or Location
+
+Reference the following JSON array for the [place type\(s\)](https://developers.google.com/places/web-service/supported_types) for the selected address or location as indicated in [JSON dot notation](../../../../json-the-foundation-of-request-data/what-is-json.md#json-dot-notation):
+
+```text
+variable_name.0.predictions.0.description.0.types
+```
+
+`variable_name` represents the [**Variable Name** setting](google-places-control-settings.md#variable-name) value for the Google Places control being referenced.
+
+The Rich Text control displays the following during a Request:
+
+```text
+"point_of_interest", "establishment"
+```
+
+#### Example of the Secondary Text for the Selected Address or Location
+
+Below is the Google Places control selection for this example. The Google Places control's **Variable Name** setting value is the default `google_places_1`.
+
+![Google Places control example](../../../../.gitbook/assets/google-places-control-business-example-package.png)
+
+If a [Rich Text](rich-text-control-settings.md) control references this Google Places control's secondary text for the selected address, use the following syntax in the Rich Text control's content using [mustache syntax](https://mustache.github.io/mustache.5.html):
+
+```text
+{{ google_places_1.0.predictions.0.description.0.types }}
+```
+
+The Rich Text control displays the following during a Request:
+
+```text
+"point_of_interest", "establishment"
 ```
 
 ## Related Topics
