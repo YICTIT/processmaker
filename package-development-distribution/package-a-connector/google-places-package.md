@@ -16,10 +16,10 @@ Use the Google Places package to allow [Request](../../using-processmaker/reques
 
 The Google Places package has the following components after it is installed to your ProcessMaker instance:
 
-* **Screen Builder control:** The Google Places package installs the Google Places control into [Form](../../designing-processes/design-forms/screens-builder/types-for-screens.md#form)-type ProcessMaker Screens. After adding and configuring a Google Places control into your ProcessMaker Screen, Request participants start entering an address, then receive auto-complete address options from which to select as the intended address, location, or business name. The Google Place control stores the selected address in the Request data using that control's **Variable Name** setting value, as well as all the returned data from the Google API.
+* **Screen Builder control:** The Google Places package installs the Google Places control into [Form](../../designing-processes/design-forms/screens-builder/types-for-screens.md#form)-type ProcessMaker Screens. After adding and configuring a Google Places control into your ProcessMaker Screen, Request participants start entering an address, then receive auto-complete address options from which to select as the intended address, location, or business name. The Google Place control stores the selected address in the Request data using that control's **Variable Name** setting value, as well as all the returned data from the Google API. See [Google Places Control Settings](../../designing-processes/design-forms/screens-builder/control-descriptions/google-places-control-settings.md).
 * **ProcessMaker Environment Variable:** The Google Places package adds a [ProcessMaker Environment Variable](../../designing-processes/environment-variable-management/what-is-an-environment-variable.md) called `GOOGLE_API_TOKEN` that contains the Google API token for that ProcessMaker instance. The ProcessMaker Environment Variable does not require configuration or revision after it has been added to your ProcessMaker instance.
 
-The Google Places control uses the Google API token to call the Google API when a Google Places control is placed into a ProcessMaker Screen, then when address information is entered into the control. Google uses Basic Service Set Identifiers \(BSSID\) information from the Request participant's Wireless Local Area Network \(WLAN\) Access Point to get an approximation of where that Request participant is located, even when GPS and WiFi is not available.
+The Google Places control uses the Google API token to call the Google API when a Google Places control is placed into a ProcessMaker Screen, then when address information is entered into the control. Google uses Basic Service Set Identifiers \(BSSID\) information from the Request participant's Wireless Local Area Network \(WLAN\) Access Point to get an approximation of where that Request participant is located, even when GPS and WiFi are not available.
 
 Below are a few ways to use the Google Places package:
 
@@ -29,5 +29,11 @@ Below are a few ways to use the Google Places package:
 
 ## Related Topics
 
+{% page-ref page="../first-topic.md" %}
 
+{% page-ref page="../../designing-processes/design-forms/screens-builder/control-descriptions/google-places-control-settings.md" %}
+
+{% page-ref page="../../designing-processes/design-forms/what-is-a-form.md" %}
+
+{% page-ref page="../../using-processmaker/requests/what-is-a-request.md" %}
 
