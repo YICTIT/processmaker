@@ -262,7 +262,7 @@ To make this control hidden until another control contains a value, enter the **
 Enter the value to represent this control in custom CSS syntax when in [Custom CSS](../add-custom-css-to-a-screen.md#add-custom-css-to-a-processmaker-screen) mode. As a best practice, use the same **CSS Selector Name** value on different controls of the same type to apply the same custom CSS style to all those controls.  
 ![](../../../../.gitbook/assets/css-selector-name-screen-builder-processes.png) 
 
-## Reference Request Data from the Google Places Control
+## Reference Request Data from the Google Places Control in Other Controls
 
 {% hint style="info" %}
 ### ProcessMaker Package Required
@@ -281,9 +281,63 @@ See the ProcessMaker [Screens](../../../../processmaker-administration/permissio
 
 The Google Places control receives its source data from the Google API after the [Request](../../../../using-processmaker/requests/what-is-a-request.md) participant selects an address or location. The Google Places control stores the entire JSON data object that the Google API returns in the Request data.
 
-Follow these guidelines to reference JSON object key names and/or arrays from Google's returned data object in other [ProcessMaker Screen](../../what-is-a-form.md) controls:
+Follow these guidelines to reference [JSON object](../../../../json-the-foundation-of-request-data/what-is-json.md#json-objects) key names and/or [arrays](../../../../json-the-foundation-of-request-data/what-is-json.md#json-arrays) from Google's returned data object in other [ProcessMaker Screen](../../what-is-a-form.md) controls.
 
+### Reference the Entire Selected Address or Location
 
+Reference the following JSON key name for the entire selected address or location that includes the entire value in the Google Places control as indicated in [JSON dot notation](../../../../json-the-foundation-of-request-data/what-is-json.md#json-dot-notation):
+
+```text
+variable_name.0.predictions.0.description
+```
+
+`variable_name` represents the [**Variable Name** setting](google-places-control-settings.md#variable-name) value for the Google Places control being referenced.
+
+#### Example of the Entire Selected Address or Location
+
+Below is the Google Places control selection for this example. The Google Places control's **Variable Name** setting value is the default `google_places_1`.
+
+![Google Places control example](../../../../.gitbook/assets/google-places-control-business-example-package.png)
+
+If a [Rich Text](rich-text-control-settings.md) control references this Google Places control's entire selected address, use the following syntax in the Rich Text control's content using [mustache syntax](https://mustache.github.io/mustache.5.html):
+
+```text
+{{ google_places_1.0.predictions.0.description }}
+```
+
+### Reference the Main Text for the Selected Address or Location
+
+Reference the following JSON key name for the main text for the selected address or location as indicated in [JSON dot notation](../../../../json-the-foundation-of-request-data/what-is-json.md#json-dot-notation):
+
+```text
+variable_name.0.predictions.0.description.0.structured_formatting.0.main_text
+```
+
+`variable_name` represents the [**Variable Name** setting](google-places-control-settings.md#variable-name) value for the Google Places control being referenced.
+
+The Rich Text control displays the following during a Request:
+
+```text
+"ProcessMaker, West Main Street, Durham, NC, USA"
+```
+
+#### Example of the Main Text for the Selected Address or Location
+
+Below is the Google Places control selection for this example. The Google Places control's **Variable Name** setting value is the default `google_places_1`.
+
+![Google Places control example](../../../../.gitbook/assets/google-places-control-business-example-package.png)
+
+If a [Rich Text](rich-text-control-settings.md) control references this Google Places control's main text for the selected address, use the following syntax in the Rich Text control's content using [mustache syntax](https://mustache.github.io/mustache.5.html):
+
+```text
+{{ google_places_1.0.predictions.0.description.0.structured_formatting.0.main_text }}
+```
+
+The Rich Text control displays the following during a Request:
+
+```text
+"ProcessMaker"
+```
 
 ## Related Topics
 
