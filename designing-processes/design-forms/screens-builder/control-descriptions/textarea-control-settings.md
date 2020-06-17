@@ -279,6 +279,8 @@ Enter the value to represent this control in custom CSS syntax when in [Custom C
 
 {% page-ref page="./" %}
 
+{% page-ref page="google-places-control-settings.md" %}
+
 {% page-ref page="rich-text-control-settings.md" %}
 
 {% page-ref page="line-input-control-settings.md" %}

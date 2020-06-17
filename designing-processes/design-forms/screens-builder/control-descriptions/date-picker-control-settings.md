@@ -12,7 +12,7 @@ The Date Picker control allows the [Request](../../../../using-processmaker/requ
 
 Configure the Date Picker control to accept one of the following data types:
 
-* **Datetime:** The control accepts a datetime, which is includes both date and time components.
+* **Datetime:** The control accepts a datetime, which includes both date and time components.
 * **Date:** The control accepts a date.
 
 {% hint style="info" %}
@@ -282,6 +282,8 @@ Enter the value to represent this control in custom CSS syntax when in [Custom C
 {% page-ref page="../validate-your-screen.md" %}
 
 {% page-ref page="./" %}
+
+{% page-ref page="google-places-control-settings.md" %}
 
 {% page-ref page="rich-text-control-settings.md" %}
 
