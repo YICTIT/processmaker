@@ -18,6 +18,8 @@ The **Charts** tab displays charts created for a Saved Search.
 
 ![Saved Search results for Requests of the Account Opening Process showing charts](../../../.gitbook/assets/request-type-charts-tab-saved-search-package.png)
 
+[ProcessMaker Screen](../../../designing-processes/design-forms/what-is-a-form.md) designers may also embed Saved Search charts into [Form](../../../designing-processes/design-forms/screens-builder/types-for-screens.md#form)- and [Display](../../../designing-processes/design-forms/screens-builder/types-for-screens.md#display)-type Screens using the [Saved Search Chart control](../../../designing-processes/design-forms/screens-builder/control-descriptions/saved-search-chart-control-settings.md).
+
 ### Saved Search Chart Terminology
 
 Understand how ProcessMaker defines components in a Saved Search chart. Note that Saved Search charts are visualizations of Saved Search results. The data and how that data presents in a Saved Search chart derive from the columns presented in the [data details view](../view-saved-searches-that-are-shared-with-you/view-search-results-for-a-saved-search.md) of that Saved Search.
@@ -130,7 +132,7 @@ The pie chart visualizes Saved Search results as relational proportions between 
 
 #### Doughnut Chart
 
-The doughnut chart visualizes Saved Search results as relational proportions between data similarly to the [pie chart type](overview-of-saved-search-charts.md#pie-chart) but with the inner portion removed. The following doughnut chart shows the number of Requests by status type for the Loan Process.
+The doughnut chart visualizes Saved Search results as relational proportions between data similar to the [pie chart type](overview-of-saved-search-charts.md#pie-chart) but with the inner portion removed. The following doughnut chart shows the number of Requests by status type for the Loan Process.
 
 ![Number of Requests by status type for the Loan Process](../../../.gitbook/assets/doughnut-chart-example-saved-searches-package.png)
 

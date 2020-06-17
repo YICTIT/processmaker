@@ -12,6 +12,15 @@ The Multicolumn / Table control adds a layout element with two or more columns. 
 
 Specify the width of each column in `colspan` [HTML attribute](https://www.w3schools.com/tags/att_colspan.asp) settings. The total of all `colspan` attribute settings must be divisible by 12. The control contains two columns of six \(6\) `colspan` HTML attribute setting each by default.
 
+{% hint style="info" %}
+This control is only available for the following Screen types:
+
+* [Form](../types-for-screens.md#form) type
+* [Display](../types-for-screens.md#display) type
+
+See [Screen Types](../types-for-screens.md).
+{% endhint %}
+
 ## Add the Control to a ProcessMaker Screen <a id="add-the-control-to-a-processmaker-screen"></a>
 
 {% hint style="info" %}

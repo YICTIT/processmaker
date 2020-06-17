@@ -16,7 +16,7 @@ Set options that display in this control in one of the following ways:
 * **Reference a data source in the JSON data model:** Reference data from a [ProcessMaker Data Connector](../../../data-connector-management/what-is-a-data-connector.md) that displays in this control as its options. Specify the data name, value, and content from the Data Connector. Optionally, use a [PMQL](../../../../using-processmaker/search-processmaker-data-using-pmql.md) expression to limit which data to use as options based on the PMQL expression's criteria. The order that data objects present in the data object determines the order these options display in the control; options cannot be manually reordered.
 
 {% hint style="info" %}
-This control is not available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
+This control is only available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
 {% endhint %}
 
 ### Checkbox Functional Description
@@ -416,7 +416,7 @@ Below are settings for the Select List in the **Advanced** panel:
 This topic is updated for ProcessMaker version 4.0.1. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.1-release-notes#screen-builder).
 {% endhint %}
 
-Enter the default value this control displays. If the **Default Value** setting has no value, then this control does not display a value when the ProcessMaker Screen displays. When the ProcessMaker Screen submits, the Request uses this control's default value unless the Request participant changed it.  
+Enter the default value this control displays. If the **Default Value** setting has no value, then this control does not display a value when the ProcessMaker Screen displays. When the ProcessMaker Screen submits, the Request uses this control's default value unless the Request participant changes it. The **Default Value** setting supports [mustache syntax](https://mustache.github.io/mustache.5.html) as the default value. For example, if the **Default Value** setting is `{{ FirstName }} {{ LastName }}`, this control displays those Request variable values during the Request.  
 ![](../../../../.gitbook/assets/select-list-control-default-value-screen-builder-processes.png) 
 
 #### Visibility Rule

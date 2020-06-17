@@ -13,6 +13,16 @@ The Record List control functions differently in [Form](../types-for-screens.md#
 * [Form-Type Screen Usage](record-list-control-settings.md#form-type-screen-usage)
 * [Display-Type Screen Usage](record-list-control-settings.md#display-type-screen-usage)
 
+{% hint style="info" %}
+This control is available for the following Screen types:
+
+* [Form](../types-for-screens.md#form) type
+* [Display](../types-for-screens.md#display) type
+* [Email](../types-for-screens.md#email) type \(requires the [Send Email package](../../../../package-development-distribution/package-a-connector/email.md)\)
+
+See [Screen Types](../types-for-screens.md).
+{% endhint %}
+
 ### Form-Type Screen Usage
 
 #### Configuration Description

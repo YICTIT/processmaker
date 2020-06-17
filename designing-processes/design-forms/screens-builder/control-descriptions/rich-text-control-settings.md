@@ -18,6 +18,16 @@ Aside from rich text styles and images, the Rich Text control can display the fo
 
 * **Magic Variable values:** Display the value of a [Magic Variable](../../../reference-global-variables-in-your-processmaker-assets.md) by referencing the Magic Variable using mustache syntax. Example: `{{ _user.fullname }}`. Spaces surrounding the Magic Variable reference are allowed.
 
+{% hint style="info" %}
+This control is available for the following Screen types:
+
+* [Form](../types-for-screens.md#form) type
+* [Display](../types-for-screens.md#display) type
+* [Email](../types-for-screens.md#email) type \(requires the [Send Email package](../../../../package-development-distribution/package-a-connector/email.md)\)
+
+See [Screen Types](../types-for-screens.md).
+{% endhint %}
+
 ## Add the Control to a ProcessMaker Screen
 
 {% hint style="info" %}

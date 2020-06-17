@@ -48,12 +48,14 @@ The **Charts** tab displays charts created for a Saved Search.
 
 ![Saved Search results for Requests of the &quot;All Loans&quot; Process showing charts](../../.gitbook/assets/request-type-charts-tab-saved-search-package.png)
 
+[ProcessMaker Screen](../../designing-processes/design-forms/what-is-a-form.md) designers may also embed Saved Search charts into [Form](../../designing-processes/design-forms/screens-builder/types-for-screens.md#form)- and [Display](../../designing-processes/design-forms/screens-builder/types-for-screens.md#display)-type Screens using the [Saved Search Chart control](../../designing-processes/design-forms/screens-builder/control-descriptions/saved-search-chart-control-settings.md).
+
 Configure the following types of Saved Search charts:
 
 * **Bar \(horizontal or vertical\):** Visualize Saved Search results in [horizontal](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#bar-chart-horizontal) or [vertical](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#bar-chart-vertical) bars.
 * **Line:** Visualize Saved Search results as [data points on a line](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#line-chart) to show how those results trend.
 * **Pie:** Visualize Saved Search results as [relational proportions between data](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#pie-chart).
-* **Doughnut:** Visualize Saved Search results similarly to the pie chart style [but with the inner portion removed](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#doughnut-chart).
+* **Doughnut:** Visualize Saved Search results similar to the pie chart style [but with the inner portion removed](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#doughnut-chart).
 * **Count:** Display a [single data metric on a canvas](create-charts-to-visualize-saved-search-results/overview-of-saved-search-charts.md#count).
 
 See [Create Charts to Visualize Saved Search Results](create-charts-to-visualize-saved-search-results/).

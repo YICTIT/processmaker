@@ -8,6 +8,15 @@ description: Add a control that displays an image.
 
 The Image control displays an image that is PNG, GIF, or JPG file types.
 
+{% hint style="info" %}
+This control is only available for the following Screen types:
+
+* [Form](../types-for-screens.md#form) type
+* [Display](../types-for-screens.md#display) type
+
+See [Screen Types](../types-for-screens.md).
+{% endhint %}
+
 ## Add the Control to a ProcessMaker Screen
 
 {% hint style="info" %}

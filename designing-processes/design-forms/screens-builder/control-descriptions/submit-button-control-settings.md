@@ -9,7 +9,7 @@ description: Add a control from which the Request participant submits the form.
 The Submit Button control adds a button from which the [Request](../../../../using-processmaker/requests/what-is-a-request.md) participant submits the ProcessMaker [Screen](../../what-is-a-form.md). After using the Submit Button control, the Request participant cannot revise that form.
 
 {% hint style="info" %}
-This control is not available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
+This control is only available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
 {% endhint %}
 
 ## Add the Control to a ProcessMaker Screen <a id="add-the-control-to-a-processmaker-screen"></a>

@@ -36,7 +36,7 @@ ProcessMaker Screen designers can easily build a Screen by placing modular compo
 * Nested Screen control for Screen 4: Shipping information
 
 {% hint style="info" %}
-This control is not available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
+This control is only available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
 {% endhint %}
 
 ## Add the Control to a ProcessMaker Screen <a id="add-the-control-to-a-processmaker-screen"></a>

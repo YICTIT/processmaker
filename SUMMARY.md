@@ -144,6 +144,7 @@
     * [Validate Your Screen](designing-processes/design-forms/screens-builder/validate-your-screen.md)
     * [Edit Your Screen](designing-processes/design-forms/screens-builder/control-descriptions/README.md)
       * [Google Places Control Settings](designing-processes/design-forms/screens-builder/control-descriptions/google-places-control-settings.md)
+      * [Saved Search Chart Control Settings](designing-processes/design-forms/screens-builder/control-descriptions/saved-search-chart-control-settings.md)
       * [Rich Text Control Settings](designing-processes/design-forms/screens-builder/control-descriptions/rich-text-control-settings.md)
       * [Line Input Control Settings](designing-processes/design-forms/screens-builder/control-descriptions/line-input-control-settings.md)
       * [Textarea Control Settings](designing-processes/design-forms/screens-builder/control-descriptions/textarea-control-settings.md)

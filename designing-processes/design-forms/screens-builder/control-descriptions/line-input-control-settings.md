@@ -26,7 +26,7 @@ The Line Input control is a text field that the [Request](../../../../using-proc
 * **Password:** The control accepts a password. Entered text is hidden.
 
 {% hint style="info" %}
-This control is not available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
+This control is only available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
 {% endhint %}
 
 ## Add the Control to a ProcessMaker Screen
@@ -274,7 +274,7 @@ Below are settings for the Line Input control in the **Advanced** panel:
 This topic is updated for ProcessMaker version 4.0.1. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.1-release-notes#screen-builder).
 {% endhint %}
 
-Enter the default value this control displays. If the **Default Value** setting has no value, then this control does not display a value when the ProcessMaker Screen displays. When the ProcessMaker Screen submits, the Request uses this control's default value unless the Request participant changed it.  
+Enter the default value this control displays. If the **Default Value** setting has no value, then this control does not display a value when the ProcessMaker Screen displays. When the ProcessMaker Screen submits, the Request uses this control's default value unless the Request participant changes it. The **Default Value** setting supports [mustache syntax](https://mustache.github.io/mustache.5.html) as the default value. For example, if the **Default Value** setting is `{{ FirstName }} {{ LastName }}`, this control displays those Request variable values during the Request.  
 ![](../../../../.gitbook/assets/default-value-line-input-control-screen-builder-processes.png) 
 
 #### Visibility Rule

@@ -11,7 +11,7 @@ description: >-
 The Google Places control is a text field the [Request](../../../../using-processmaker/requests/what-is-a-request.md) participant uses to start entering an address, location, or business name. The Google Places control uses the Google API to auto-complete that address or location. The Google Place control stores the selected address in the Request data as well as all the returned data from the Google API.
 
 {% hint style="info" %}
-This control is not available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
+This control is only available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
 {% endhint %}
 
 Below are a few ways to use the Google Places control:
@@ -416,4 +416,40 @@ The Rich Text control displays the following during a Request:
 {% page-ref page="../../../../package-development-distribution/package-a-connector/google-places-package.md" %}
 
 {% page-ref page="../../../../package-development-distribution/first-topic.md" %}
+
+{% page-ref page="saved-search-chart-control-settings.md" %}
+
+{% page-ref page="rich-text-control-settings.md" %}
+
+{% page-ref page="line-input-control-settings.md" %}
+
+{% page-ref page="textarea-control-settings.md" %}
+
+{% page-ref page="select-list-control-settings.md" %}
+
+{% page-ref page="checkbox-control-settings.md" %}
+
+{% page-ref page="date-picker-control-settings.md" %}
+
+{% page-ref page="page-navigation-button-control-settings.md" %}
+
+{% page-ref page="multi-column-button-control-settings.md" %}
+
+{% page-ref page="loop-control-settings.md" %}
+
+{% page-ref page="record-list-control-settings.md" %}
+
+{% page-ref page="image-control-settings.md" %}
+
+{% page-ref page="submit-button-control-settings.md" %}
+
+{% page-ref page="nested-screen-control-settings.md" %}
+
+{% page-ref page="file-upload-control-settings.md" %}
+
+{% page-ref page="file-download-control-settings.md" %}
+
+{% page-ref page="validation-rules-for-validation-control-settings.md" %}
+
+{% page-ref page="expression-syntax-components-for-show-if-control-settings.md" %}
 

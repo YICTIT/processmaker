@@ -10,6 +10,15 @@ description: >-
 
 The File Download control adds an area in the ProcessMaker [Screen](../../what-is-a-form.md) from which the [Request](../../../../using-processmaker/requests/what-is-a-request.md) participant can download a file to a local computer that was attached to the Request via a [File Upload](file-upload-control-settings.md) control in a different Screen in that Request.
 
+{% hint style="info" %}
+This control is only available for the following Screen types:
+
+* [Form](../types-for-screens.md#form) type
+* [Display](../types-for-screens.md#display) type
+
+See [Screen Types](../types-for-screens.md).
+{% endhint %}
+
 ## Add the Control to a ProcessMaker Screen <a id="add-the-control-to-a-processmaker-screen"></a>
 
 {% hint style="info" %}

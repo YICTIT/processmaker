@@ -22,24 +22,23 @@ All ProcessMaker Screen [controls](control-descriptions/) in Screen Builder are 
 
 Use the Display type to display information or allow [Request](../../../using-processmaker/requests/what-is-a-request.md) participants to download files. The Display type has limited functionality compared the Form type. The Display type provides the following controls in Screen Builder:
 
-* [Rich Text](control-descriptions/rich-text-control-settings.md)
-* [Multicolumn / Table](control-descriptions/multi-column-button-control-settings.md)
-* [Record List](control-descriptions/record-list-control-settings.md)
-* [Image](control-descriptions/image-control-settings.md)
-* [File Download](control-descriptions/file-download-control-settings.md)
+* [Saved Search Chart](control-descriptions/saved-search-chart-control-settings.md) control \(requires the [Saved Searches package](../../../package-development-distribution/package-a-connector/saved-searches-package.md)\)
+* [Rich Text](control-descriptions/rich-text-control-settings.md) control
+* [Multicolumn / Table](control-descriptions/multi-column-button-control-settings.md) control
+* [Record List](control-descriptions/record-list-control-settings.md) control
+* [Image](control-descriptions/image-control-settings.md) control
+* [File Download](control-descriptions/file-download-control-settings.md) control
 
 ### Email
 
 {% hint style="info" %}
-The Email package must be installed in your ProcessMaker instance to use the Email type of ProcessMaker Screen. The Email package is not available in the ProcessMaker open-source edition. See [Email Package](../../../package-development-distribution/package-a-connector/email.md).
+The [Send Email package](../../../package-development-distribution/package-a-connector/email.md) must be installed in your ProcessMaker instance to use the Email-type ProcessMaker Screen. The Email package is not available in the ProcessMaker open-source edition.
 {% endhint %}
 
-Use the Email type to compose the email body for email messages to be used with the Email connector. The Email type provides the following controls in Screen Builder:
+Use the Email type to compose the email body for email messages to be used with the [Send Email connector](../../process-design/model-processes-using-connectors/available-connectors-from-processmaker/email-connector.md). The Email type provides the following controls in Screen Builder:
 
-* [Rich Text](control-descriptions/rich-text-control-settings.md)
-* [Multicolumn / Table](control-descriptions/multi-column-button-control-settings.md)
-* [Image](control-descriptions/image-control-settings.md)
-* [Record List](control-descriptions/record-list-control-settings.md)
+* [Rich Text](control-descriptions/rich-text-control-settings.md) control
+* [Record List](control-descriptions/record-list-control-settings.md) control
 
 {% hint style="info" %}
 Do not use a ProcessMaker Screen type other than the Email type when using the [Send Email](../../process-design/model-processes-using-connectors/available-connectors-from-processmaker/email-connector.md) connector. Otherwise, you will not be able to reference any ProcessMaker Screens from the Email control in Process Modeler to specify which Screen to use for the email body content.
