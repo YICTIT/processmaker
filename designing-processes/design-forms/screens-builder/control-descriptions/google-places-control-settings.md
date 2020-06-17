@@ -168,7 +168,7 @@ Edit the default **Variable Name** setting value for this control if necessary. 
 Use the **Variable Name** setting value in the following ways:
 
 * Reference this control by its **Variable Name** setting's value. The **Data Preview** panel in [Preview mode](../screens-builder-modes.md#preview-mode) corresponds the Google Places control's textual content with that Google Places control's **Variable Name** value. In the example below, `GooglePlacesControl` is the **Variable Name** setting's value. ![](../../../../.gitbook/assets/google-places-preview-screens-builder-package-designer.png) 
-* Reference this control's value in a different Screen Builder control. To do so, use [mustache syntax](https://mustache.github.io/mustache.5.html) and reference this control's **Variable Name** value in the target control. Example: `{{ GooglePlacesControl }}`.
+* Reference this control's value in a different Screen Builder control. To do so, use [mustache syntax](https://mustache.github.io/mustache.5.html) and reference this control's **Variable Name** value in the target control. Example: `{{ GooglePlacesControl }}`. See [Reference Request Data from the Google Places Control in Other Controls](google-places-control-settings.md#reference-request-data-from-the-google-places-control-in-other-controls).
 * Reference this value in [**Visibility Rule** setting expressions](expression-syntax-components-for-show-if-control-settings.md).
 
 #### Label
