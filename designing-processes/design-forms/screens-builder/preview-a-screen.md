@@ -8,7 +8,7 @@ description: >-
 
 ## Overview
 
-To allow ProcessMaker Screens to be used among any [Process](../../viewing-processes/what-is-a-process.md), they are represented in JSON format. Processes are also represented as JSON data models that pass [Request](../../../using-processmaker/requests/what-is-a-request.md) data to [Tasks](../../process-design/model-your-process/process-modeling-element-descriptions.md#user-task) defined in the [Process model](../../process-design/what-is-process-modeling.md). Preview how data in your ProcessMaker Screen is passed to JSON data models.
+To allow [ProcessMaker Screens](../what-is-a-form.md) to be used among any [Process](../../viewing-processes/what-is-a-process.md), they are represented in [JSON](../../../json-the-foundation-of-request-data/what-is-json.md) format. Processes are also represented as JSON data models that pass [Request data](../../../json-the-foundation-of-request-data/what-is-request-data.md) to [Tasks](../../process-design/model-your-process/process-modeling-element-descriptions.md#user-task) defined in the [Process model](../../process-design/what-is-process-modeling.md). Preview how data in your ProcessMaker Screen is passed to JSON data models before using that Screen in Processes.
 
 Use [Preview mode](screens-builder-modes.md#preview-mode) in the following ways:
 
@@ -25,7 +25,7 @@ Use [Preview mode](screens-builder-modes.md#preview-mode) in the following ways:
 ![Screen Builder displaying JSON input and output data models in Preview mode](../../../.gitbook/assets/preview-mode-screens-builder-processes.png)
 
 {% hint style="info" %}
-Are you a ProcessMaker Developer developing ProcessMaker Scripts? See [Scripts Editor]().
+Are you a ProcessMaker Developer developing ProcessMaker Scripts? See [Scripts Management](../../scripts/).
 {% endhint %}
 
 ## Preview JSON Data Models in a ProcessMaker Screen

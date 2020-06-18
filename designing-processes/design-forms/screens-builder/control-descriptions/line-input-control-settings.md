@@ -274,8 +274,21 @@ Below are settings for the Line Input control in the **Advanced** panel:
 This topic is updated for ProcessMaker version 4.0.1. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.1-release-notes#screen-builder).
 {% endhint %}
 
-Enter the default value this control displays. If the **Default Value** setting has no value, then this control does not display a value when the ProcessMaker Screen displays. When the ProcessMaker Screen submits, the Request uses this control's default value unless the Request participant changes it. The **Default Value** setting supports [mustache syntax](https://mustache.github.io/mustache.5.html) as the default value. For example, if the **Default Value** setting is `{{ FirstName }} {{ LastName }}`, this control displays those Request variable values during the Request.  
-![](../../../../.gitbook/assets/default-value-line-input-control-screen-builder-processes.png) 
+Enter the default value this control displays. If the **Default Value** setting has no value, then this control does not display a value when the ProcessMaker Screen displays. When the ProcessMaker Screen submits, the Request uses this control's default value unless the Request participant changes it. The **Default Value** setting supports [mustache syntax](https://mustache.github.io/mustache.5.html) as the default value. For example, if the **Default Value** setting is `{{ FirstName }} {{ LastName }}`, this control displays those Request variable values during the Request.
+
+There are two ways to enter the default value this control displays.
+
+{% tabs %}
+{% tab title="Enter the default value as text \(default\)" %}
+Enter the default value as text.  
+![](../../../../.gitbook/assets/default-value-text-screen-builder-designer.png) 
+{% endtab %}
+
+{% tab title="Enter the default value as JavaScript" %}
+Enter the default value as JavaScript, especially if a [Calculated Property](../manage-computed-properties/what-is-a-computed-property.md) might change this default value setting. Ensure to use the [`this.` JavaScript keyword](https://www.w3schools.com/js/js_this.asp) preceding the ProcessMaker Screen control reference. Example: `this.FullName` when `FullName` is the **Variable Value** setting value for the control to set its default value.  
+![](../../../../.gitbook/assets/default-value-javascript-screen-builder-designer.png) 
+{% endtab %}
+{% endtabs %}
 
 #### Visibility Rule
 
