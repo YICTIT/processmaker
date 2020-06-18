@@ -11,7 +11,7 @@ description: >-
 {% hint style="info" %}
 ### ProcessMaker Package Required
 
-The [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) must be installed in your ProcessMaker instance. The [Vocabularies](../what-is-a-vocabulary.md) package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Vocabularies package can be installed in your ProcessMaker instance.
+The [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) must be installed in your ProcessMaker instance. The [Vocabularies](../what-is-a-vocabulary.md) package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Vocabularies [package](../../../package-development-distribution/first-topic.md) can be installed in your ProcessMaker instance.
 
 ### Permissions Required
 
@@ -48,4 +48,6 @@ Follow these steps to delete a ProcessMaker [Vocabulary](../what-is-a-vocabulary
 {% page-ref page="edit-a-vocabulary.md" %}
 
 {% page-ref page="../../../package-development-distribution/package-a-connector/vocabularies.md" %}
+
+{% page-ref page="../../../package-development-distribution/first-topic.md" %}
 
