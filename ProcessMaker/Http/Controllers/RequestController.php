@@ -189,6 +189,6 @@ class RequestController extends Controller
         if (!$ids->contains($media->id)) {
             abort(403);
         }
-        return response()->download($media->getPath(), $media->file_name);
+        return $media;
     }
 }
