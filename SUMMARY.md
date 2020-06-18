@@ -119,6 +119,7 @@
     * [Edit a Script](designing-processes/scripts/manage-scripts/edit-a-script.md)
     * [Copy a Script](designing-processes/scripts/manage-scripts/duplicate-a-script.md)
     * [Delete a Script](designing-processes/scripts/manage-scripts/remove-a-script.md)
+  * [Script Editor](designing-processes/scripts/script-editor.md)
 * [Screen Management](designing-processes/design-forms/README.md)
   * [What is a Screen?](designing-processes/design-forms/what-is-a-form.md)
   * [Manage Screens](designing-processes/design-forms/manage-forms/README.md)
