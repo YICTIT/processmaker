@@ -136,6 +136,7 @@ Click the control while in [Design](../screens-builder-modes.md#design-mode) mod
 Below is the setting for the Rich Text control in the **Configuration** panel:
 
 * [Content](rich-text-control-settings.md#content)
+* [Render HTML from a Variable](rich-text-control-settings.md#render-html-from-a-variable)
 
 #### Content
 
@@ -144,6 +145,11 @@ Enter the text and/or image to display in the Rich Text control using HTML synta
 
 Alternatively, use the What-You-See-Is-What-You-Get \(WYSIWYG\) rich text editor to enter your text. Reference images in your content using HTML syntax. Your text and/or images display in the **Content** setting using HTML syntax.  
 ![](../../../../.gitbook/assets/rich-text-control-screen-builder-processes.png) 
+
+#### Render HTML from a Variable
+
+Select the **Render HTML from a Variable** setting to not show HTML syntax, but instead render the HTML syntax. If the **Render HTML from a Variable** setting is not selected, then the Rich Text control displays the HTML syntax. If a Request variable from which the Rich Text control references its data contains HTML syntax, select this setting to render that HTML.   
+![](../../../../.gitbook/assets/rich-text-control-render-html-from-variable-screen-builder-designer.png) 
 
 ### Advanced Panel Settings
 

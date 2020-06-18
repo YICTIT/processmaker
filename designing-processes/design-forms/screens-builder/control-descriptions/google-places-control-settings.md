@@ -25,7 +25,7 @@ Below are a few ways to use the Google Places control:
 {% hint style="info" %}
 ### ProcessMaker Package Required
 
-To add a Google Places control to a [ProcessMaker Screen](../../what-is-a-form.md), the [Google Places package](../../../../package-development-distribution/package-a-connector/google-places-package.md) must be installed in your ProcessMaker instance. The Google Places control and the Google Places [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places control can be installed in your ProcessMaker instance.
+To add a Google Places control to a [ProcessMaker Screen](../../what-is-a-form.md), the [Google Places package](../../../../package-development-distribution/package-a-connector/google-places-package.md) must be installed in your ProcessMaker instance. The Google Places control and the Google Places [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places package can be installed in your ProcessMaker instance.
 
 ### Permissions Required
 
@@ -41,10 +41,10 @@ Follow these steps to add this control to the ProcessMaker Screen:
 
 1. [Create a new ProcessMaker Screen](../../manage-forms/create-a-new-form.md) or click the **Edit** icon![](../../../../.gitbook/assets/edit-icon.png)to edit the selected Screen. The ProcessMaker Screen is in [Design mode](../screens-builder-modes.md#editor-mode).
 2. View the ProcessMaker Screen page to which to add the control.
-3. Locate the **Google Places** icon ![](../../../../.gitbook/assets/google-places-icon-screen-builder-package.png) in the panel to the left of the Screen Builder canvas.
+3. Locate the **Google Places** icon![](../../../../.gitbook/assets/google-places-icon-screen-builder-package.png)in the panel to the left of the Screen Builder canvas.
 4. Drag the **Google Places** icon into the Screen Builder canvas. Existing controls on the Screen Builder canvas adjust positioning based on where you drag the control.
 5. Place into the Screen Builder canvas where you want the control to display on the ProcessMaker Screen. ![](../../../../.gitbook/assets/google-places-control-in-preview-mode-package.png) 
-6. Configure the Google Places control. See [Settings](rich-text-control-settings.md#settings).
+6. Configure the Google Places control. See [Settings](google-places-control-settings.md#settings).
 7. Validate that the control is configured correctly. See [Validate Your Screen](../validate-your-screen.md#validate-a-processmaker-screen).
 
 Below is a Google Places control in [Preview mode](../screens-builder-modes.md#preview-mode).
@@ -56,7 +56,7 @@ Below is a Google Places control in [Preview mode](../screens-builder-modes.md#p
 {% hint style="info" %}
 ### ProcessMaker Package Required
 
-To move a Google Places control in a [ProcessMaker Screen](../../what-is-a-form.md) page, the [Google Places package](../../../../package-development-distribution/package-a-connector/google-places-package.md) must be installed in your ProcessMaker instance. The Google Places control and the Google Places [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places control can be installed in your ProcessMaker instance.
+To move a Google Places control in a [ProcessMaker Screen](../../what-is-a-form.md) page, the [Google Places package](../../../../package-development-distribution/package-a-connector/google-places-package.md) must be installed in your ProcessMaker instance. The Google Places control and the Google Places [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places package can be installed in your ProcessMaker instance.
 
 ### Permissions Required
 
@@ -81,7 +81,7 @@ Follow these steps to move a control to another location on that ProcessMaker Sc
 {% hint style="info" %}
 ### ProcessMaker Package Required
 
-To copy a Google Places control, the [Google Places package](../../../../package-development-distribution/package-a-connector/google-places-package.md) must be installed in your ProcessMaker instance. The Google Places control and the Google Places [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places control can be installed in your ProcessMaker instance.
+To copy a Google Places control, the [Google Places package](../../../../package-development-distribution/package-a-connector/google-places-package.md) must be installed in your ProcessMaker instance. The Google Places control and the Google Places [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places package can be installed in your ProcessMaker instance.
 
 ### Permissions Required
 
@@ -105,7 +105,7 @@ Follow these steps to copy a control:
 {% hint style="info" %}
 ### ProcessMaker Package Required
 
-To delete a Google Places control, the [Google Places package](../../../../package-development-distribution/package-a-connector/google-places-package.md) must be installed in your ProcessMaker instance. The Google Places control and the Google Places [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places control can be installed in your ProcessMaker instance.
+To delete a Google Places control, the [Google Places package](../../../../package-development-distribution/package-a-connector/google-places-package.md) must be installed in your ProcessMaker instance. The Google Places control and the Google Places [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places package can be installed in your ProcessMaker instance.
 
 ### Permissions Required
 
@@ -131,7 +131,7 @@ Follow these steps to delete a control from a [ProcessMaker Screen](../../what-i
 {% hint style="info" %}
 ### ProcessMaker Package Required
 
-To edit a Google Places control, the [Google Places package](../../../../package-development-distribution/package-a-connector/google-places-package.md) must be installed in your ProcessMaker instance. The Google Places control and the Google Places [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places control can be installed in your ProcessMaker instance.
+To edit a Google Places control, the [Google Places package](../../../../package-development-distribution/package-a-connector/google-places-package.md) must be installed in your ProcessMaker instance. The Google Places control and the Google Places [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places package can be installed in your ProcessMaker instance.
 
 ### Permissions Required
 
@@ -267,7 +267,7 @@ Enter the value to represent this control in custom CSS syntax when in [Custom C
 {% hint style="info" %}
 ### ProcessMaker Package Required
 
-To reference Request data from a Google Places control, the [Google Places package](../../../../package-development-distribution/package-a-connector/google-places-package.md) must be installed in your ProcessMaker instance. The Google Places control and the Google Places [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places control can be installed in your ProcessMaker instance.
+To reference Request data from a Google Places control, the [Google Places package](../../../../package-development-distribution/package-a-connector/google-places-package.md) must be installed in your ProcessMaker instance. The Google Places control and the Google Places [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Google Places package can be installed in your ProcessMaker instance.
 
 ### Permissions Required
 
