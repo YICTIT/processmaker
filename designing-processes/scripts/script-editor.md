@@ -110,5 +110,27 @@ You may also use ProcessMaker's [PHP SDK](https://github.com/ProcessMaker/sdk-ph
 
 ## Related Topics <a id="related-topics"></a>
 
+{% page-ref page="what-is-a-script.md" %}
 
+{% page-ref page="../design-forms/what-is-a-form.md" %}
+
+{% page-ref page="manage-scripts/manage-script-categories/" %}
+
+{% page-ref page="../../processmaker-administration/script-executor-management/what-is-a-script-executor.md" %}
+
+{% page-ref page="../reference-global-variables-in-your-processmaker-assets.md" %}
+
+{% page-ref page="manage-scripts/view-all-scripts.md" %}
+
+{% page-ref page="manage-scripts/create-a-new-script.md" %}
+
+{% page-ref page="manage-scripts/search-for-a-script.md" %}
+
+{% page-ref page="manage-scripts/edit-script-configuration.md" %}
+
+{% page-ref page="manage-scripts/edit-a-script.md" %}
+
+{% page-ref page="manage-scripts/duplicate-a-script.md" %}
+
+{% page-ref page="manage-scripts/remove-a-script.md" %}
 
