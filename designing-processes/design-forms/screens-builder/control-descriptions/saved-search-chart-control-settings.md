@@ -173,17 +173,24 @@ Enable the **Title** toggle key to display the Saved Search chart's title above 
 
 #### Border
 
-
+Enable the **Border** toggle key to display a border around the Saved Search chart. The **Border** toggle key is enabled by default.  
+![](../../../../.gitbook/assets/border-saved-search-chart-control-screen-builder-package.png) 
 
 #### Enable Link
 
-
+Enable the **Enable Link** toggle key to display the![](../../../../.gitbook/assets/enable-link-icon-saved-search-chart-control-screen-builder-package.png)icon that, when clicked, displays the Saved Search from which the chart visualizes data in a new browser window. The **Enable Link** toggle key is disabled by default.  
+![](../../../../.gitbook/assets/enable-link-saved-search-chart-control-screen-builder-package.png) 
 
 #### Size
 
+Select the size of the Saved Search chart.  
+![](../../../../.gitbook/assets/size-saved-search-chart-control-screen-builder-package.png) 
 
+The **Size** setting options are based on the height of the Saved Search chart. The width of the chart adjusts accordingly. Select from the following options:
 
-
+* **Half:** The **Half** option displays the chart by half its height.
+* **Standard:** The **Standard** option displays the chart in its default height. The **Standard** option is the default setting.
+* **Double:** The **Double** option displays the chart double its default height.
 
 ## Related Topics
 
