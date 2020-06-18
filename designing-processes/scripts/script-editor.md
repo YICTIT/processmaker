@@ -65,7 +65,9 @@ Follow these guidelines to mock Request data coming into your ProcessMaker Scrip
 A ProcessMaker Script may reference ProcessMaker Screen control values during a Request by placing their **Variable Name** setting values within [mustache syntax](https://mustache.github.io/mustache.5.html). In the example below, `FullName` is the **Variable Name** setting value for a control to store a Request participant's full name:
 
 ```text
-{ "Name": "{{ FullName }}" }
+{
+    "Name": "{{ FullName }}"
+}
 ```
 
 ### ‌Test Your ProcessMaker Script
@@ -101,10 +103,6 @@ Below is a sample ProcessMaker Script that uses PHP. Refer to the comments denot
 * How to get a value from a data object.
 
 You may also use ProcessMaker's [PHP SDK](https://github.com/ProcessMaker/sdk-php) to design custom applications.
-
-```text
-<?php​$output = [];​// Get a ProcessMaker Environment Variable, in this case TEST_VAR.$output['envVar'] = getenv('TEST_VAR');​// Get a value from the config object.// In this example, 'test' in the JSON config: {"test":"test config value"}$output['configTest'] = $config["test"];​// Get a value from the data object.// In this example, the user_id for the _request.$output['requestUserId'] = $data['_request']['user_id'];​// Get the email address for user id 1 using the API/SDK.// Use the global `$api_config` to set credentials automatically.$usersApi = new ProcessMaker\Client\Api\UsersApi(null, $api_config);$user = $usersApi->getUserById("1");$output['userEmail'] = $user->getEmail();​return $output;
-```
 
 ### ‌Save Your ProcessMaker Script
 
