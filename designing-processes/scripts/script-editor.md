@@ -272,7 +272,7 @@ import ProcessMaker_Client.ApiClient;
 import ProcessMaker_Client.ApiException;
 import ProcessMaker_Model.Users;
 import ProcessMaker_Api.UsersApi;
-​
+
 // A ProcessMaker Script written in Java must have a 'Script' class that implements 'BaseScript'.
 // It must include a method named 'execute'. Results must be pushed to the 'output' map.
 public class Script implements BaseScript {
@@ -282,7 +282,7 @@ public class Script implements BaseScript {
         Map<String, Object> output,
         ApiClient api
     ) {
-        
+
         // Get a ProcessMaker Environment Variable, in this example TEST_VAR.
         Map<String, String> env = System.getenv();
         output.put("env-var", env.get("TEST_VAR"));
@@ -290,12 +290,12 @@ public class Script implements BaseScript {
         // Get a value from the config object.
         // In this example, 'test' in the JSON config: {"test":"test config value"}
         output.put("config-test", config.get("test"));
-​
+
         // Get a value from the data object.
         // In this example, the user_id for the _request.
         Map requestData = ((Map)data.get("_request")); 
         output.put("data-request-user-id", requestData.get("user_id"));
-​
+        
         // Get the email address for user id 1 using the API/SDK.
         try {
             UsersApi apiInstance = new UsersApi(api);
@@ -306,82 +306,9 @@ public class Script implements BaseScript {
         }
     }
 }
-
-```
-{% endtab %}
-
-{% tab title="Python" %}
-{% hint style="info" %}
-The [Python package](../../package-development-distribution/package-a-connector/python-package.md) is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Python [package](../../package-development-distribution/first-topic.md) can be installed in your ProcessMaker instance.
-{% endhint %}
-
-Below is a sample ProcessMaker Script that uses Python. Refer to the comments denoted with `#` that describe how the sample functions:
-
-* How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
-* How to get a value from the configuration object.
-* How to get a value from a data object.
-
-```python
-# A PM4 script written in Python must set a dict
-# named `output` with the data to return.
-​
-# Get an environment variable, in this case TEST_VAR
-envVar = os.getenv('TEST_VAR')
-​
-# Get a value from the config object.
-# In this case, 'test' in the json config: {"test":"test config value"}
-configTest = config['test']
-​
-# Get a value from the data object.
-# In this case the user_id for the _request
-requestUserId = data['_request']['user_id']
-​
-# Get the email address for user id 1 using the API/SDK
-# Use the global `configuration` object to set auth tokens
-users_api_instance = pmsdk.UsersApi(pmsdk.ApiClient(configuration))
-user = users_api_instance.get_user_by_id(1)
-userEmail = user.email
-​
-output = {
-    "envVar": envVar, 
-    "configTest": configTest, 
-    "requestUserId": requestUserId, 
-    "userEmail": userEmail
-}
-```
-{% endtab %}
-
-{% tab title="R" %}
-{% hint style="info" %}
-The [R package](../../package-development-distribution/package-a-connector/r-package.md) is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the R [package](../../package-development-distribution/first-topic.md) can be installed in your ProcessMaker instance.
-{% endhint %}
-
-Below is a sample ProcessMaker Script that uses R. Refer to the comments denoted with `#` that describe how the sample functions:
-
-* How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
-* How to get a value from the configuration object.
-* How to get a value from a data object.
-
-```r
-# Get a ProcessMaker Environment Variable, in this example TEST_VAR.
-envVar <- Sys.getenv("TEST_VAR")
-​
-# Get a value from the config object.
-# In this example, 'test' in the JSON config: {"test":"test config value"}
-configVar <- config[["test"]]
-​
-# Get a value from the data object.
-# In this example, the user_id for the _request.
-dataVar <- data[["_request"]][["user_id"]]
-​
-output 
-
-<- list(envVar = envVar, configVar = configVar, dataVar = dataVar)
 ```
 {% endtab %}
 {% endtabs %}
-
-### ‌Save Your ProcessMaker Script
 
 ‌Click the **Save** icon![](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LJ0aNaVW1m7sNsxVJLV%2F-LioNdUzT8w_d7Hb_0a5%2F-LRZVMVhCYDrATwHc9Jt%2FSave%20Icon%20-%20Processes.png?alt=media&token=93c6458d-d6c2-439d-937b-458fc65b2238)from Script Editor's top menu to save the ProcessMaker Script.‌
 
