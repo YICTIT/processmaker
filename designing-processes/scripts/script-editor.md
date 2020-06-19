@@ -134,22 +134,22 @@ Below is a sample ProcessMaker Script that uses Lua. Refer to the comments denot
 ```lua
 -- Get a ProcessMaker Environment Variable, in this example TEST_VAR.
 local envVar = os.getenv("TEST_VAR")
-        
+   
 -- Get a value from the config object.
 -- In this example, 'test' in the JSON config: {"test":"test config value"}
 local configTest = config["test"]
-​
+
 -- Get a value from the data object.
 -- In this example, the user_id for the _request.
 local requestUserId = data["_request"]["user_id"]
-​
+
 -- Get the email address for user id 1 using the API/SDK.
 -- Use client.make to get a pre-configured api client.
 -- See https://github.com/ProcessMaker/sdk-lua/tree/master/pmsdk/api for available clients.
 local users_api = client.make('users_api')
 local user = users_api:get_user_by_id("1")
 local userEmail = user.email
-​
+
 return {envVar=envVar, configTest=configTest, requestUserId=requestUserId, userEmail=userEmail}
 ```
 {% endtab %}
@@ -166,14 +166,14 @@ Below is a sample ProcessMaker Script that uses JavaScript. Refer to the comment
 // resolves with the output data. You can also return a basic object.
 // For example `return {"key":"value"}`
 return new Promise((resolve, reject) => {
-​
+
     // Get a ProcessMaker Environment Variable, in this example TEST_VAR.
     const envVar = process.env['TEST_VAR'];
-​
+    
     // Get a value from the config object.
     // In this example, 'test' in the JSON config: {"test":"test config value"}
     const configTest = config['test'];
-​
+    
     // Get a value from the data object.
     // In this case the user_id for the _request.
     const requestUserId = data["_request"]["user_id"];
@@ -182,9 +182,9 @@ return new Promise((resolve, reject) => {
     // Use the global `api` object to get a pre-configured client.
     let usersApi = new api.UsersApi();
     usersApi.getUserById("1", (error, user) => {
-​
+    
         const userEmail = user.email;
-​
+        
         resolve({
             'envVar' : envVar,
             'configTest' : configTest,
@@ -192,7 +192,6 @@ return new Promise((resolve, reject) => {
             'userEmail' : userEmail
         });
     });
-   
 });
 ```
 {% endtab %}
@@ -213,7 +212,7 @@ using System;
 using ProcessMakerSDK.Api;
 using ProcessMakerSDK.Client;
 using ProcessMakerSDK.Model;
-​
+
 // A ProcessMaker Script written in C# must have a 'Script' class that implements 'BaseScript'.
 // It must include a method named 'Execute'. Results must be added to the 'output' map.
 public class Script : BaseScript
@@ -230,11 +229,11 @@ public class Script : BaseScript
         // Get a value from the config object.
         // In this example, 'test' in the JSON config: {"test":"test config value"}
         output.configTest = config["test"];
-​
+        
         // Get a value from the data object.
         // In this example, the user_id for the _request.
         output.requestUserId = data["_request"]["user_id"];
-​
+        
         // Get the email address for user id 1 using the API/SDK.
         try {
             var apiInstance = new UsersApi(apiConfig);
@@ -317,24 +316,24 @@ Below is a sample ProcessMaker Script that uses Python. Refer to the comments de
 ```python
 # A PM4 script written in Python must set a dict
 # named `output` with the data to return.
-​
+
 # Get an environment variable, in this case TEST_VAR
 envVar = os.getenv('TEST_VAR')
-​
+
 # Get a value from the config object.
 # In this case, 'test' in the json config: {"test":"test config value"}
 configTest = config['test']
-​
+
 # Get a value from the data object.
 # In this case the user_id for the _request
 requestUserId = data['_request']['user_id']
-​
+
 # Get the email address for user id 1 using the API/SDK
 # Use the global `configuration` object to set auth tokens
 users_api_instance = pmsdk.UsersApi(pmsdk.ApiClient(configuration))
 user = users_api_instance.get_user_by_id(1)
 userEmail = user.email
-​
+
 output = {
     "envVar": envVar, 
     "configTest": configTest, 
@@ -358,16 +357,16 @@ Below is a sample ProcessMaker Script that uses R. Refer to the comments denoted
 ```r
 # Get a ProcessMaker Environment Variable, in this example TEST_VAR.
 envVar <- Sys.getenv("TEST_VAR")
-​
+
 # Get a value from the config object.
 # In this example, 'test' in the JSON config: {"test":"test config value"}
 configVar <- config[["test"]]
-​
+
 # Get a value from the data object.
 # In this example, the user_id for the _request.
 dataVar <- data[["_request"]][["user_id"]]
-​
-output 
+
+output
 
 <- list(envVar = envVar, configVar = configVar, dataVar = dataVar)
 ```
