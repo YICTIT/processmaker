@@ -370,3 +370,13 @@ output
 
 {% page-ref page="manage-scripts/remove-a-script.md" %}
 
+{% page-ref page="../../package-development-distribution/package-a-connector/c-package.md" %}
+
+{% page-ref page="../../package-development-distribution/package-a-connector/java-package.md" %}
+
+{% page-ref page="../../package-development-distribution/package-a-connector/r-package.md" %}
+
+{% page-ref page="../../package-development-distribution/package-a-connector/python-package.md" %}
+
+{% page-ref page="../../package-development-distribution/first-topic.md" %}
+
