@@ -26,7 +26,7 @@ Use Preview mode to view and test your ProcessMaker Screen. Test how your contro
 
 Furthermore, test how the ProcessMaker Screen's controls you configured in Design mode interact with JSON data models. ProcessMaker represents ProcessMaker Screens as JSON data models. You can view any JSON data model in Preview mode to test how a [Process's](../../viewing-processes/what-is-a-process.md) JSON data model or another ProcessMaker Screen's data model interacts with your Screen. Viewing the JSON data model can be helpful to see how values are entered into the ProcessMaker Screen as well as to use that JSON data model in your [ProcessMaker Scripts](../../scripts/what-is-a-script.md).
 
-![Screen Builder in Preview mode](../../../.gitbook/assets/preview-mode-screens-builder-processes.png)
+![Screen Builder in Preview mode](../../../.gitbook/assets/preview-mode-screen-builder-designer.png)
 
 {% hint style="info" %}
  See [Preview a Screen and Its JSON Data Model](preview-a-screen.md).

@@ -67,7 +67,7 @@ Follow these guidelines to enter mock Request data into your ProcessMaker Screen
    * [Select a ProcessMaker Vocabulary from which to evaluate your ProcessMaker Screen's compliance](preview-a-screen.md#select-a-processmaker-vocabulary-from-which-to-evaluate-your-processmaker-screens-compliance)
    * [Preview the JSON data model your ProcessMaker Screen generates for Requests](preview-a-screen.md#preview-the-json-data-model-your-processmaker-screen-generates-for-requests)
 
-![Screen Builder displaying JSON input and output data models in Preview mode](../../../.gitbook/assets/preview-mode-screens-builder-processes.png)
+![Screen Builder displaying JSON input and output data models in Preview mode](../../../.gitbook/assets/preview-mode-screen-builder-designer.png)
 
 ### Preview the JSON Data Model Your ProcessMaker Screen Generates for Requests
 
@@ -77,16 +77,12 @@ Follow these guidelines to preview the JSON data model your ProcessMaker Screen 
 2. Click the **Preview** button.
 3. Expand the **Data Preview** panel that is on the right-side of the Screen Builder canvas if it is not already. ![](../../../.gitbook/assets/data-preview-panel-preview-mode-screen-builder-designer.png) 
 4. Enter or review data in the ProcessMaker Screen controls as you would for a [Task](../../../using-processmaker/task-management/what-is-a-task.md) during a [Request](../../../using-processmaker/requests/what-is-a-request.md). When data is entered into each control, the **Data Preview** panel adds that control value into a JSON data model using the **Variable Name** setting value of that control. During an in-progress Request, this JSON data model would incorporate into that Request's data model.
-5. Evaluate if your ProcessMaker Screen generates data appropriately.
+5. Evaluate if your ProcessMaker Screen generates data appropriately. Calculated properties also display in the **Data Preview** panel as part of the JSON data model if you submit the ProcessMaker Screen by clicking the [Submit Button](control-descriptions/submit-button-control-settings.md) control in [Form](types-for-screens.md#form)-type Screens. See [Manage Calculated Properties](manage-computed-properties/).
 6. During your ProcessMaker Screen evaluation, optionally do the following:
    * [Select a ProcessMaker Vocabulary from which to evaluate your ProcessMaker Screen's compliance](preview-a-screen.md#select-a-processmaker-vocabulary-from-which-to-evaluate-your-processmaker-screens-compliance)
    * [Enter mock Request data into your ProcessMaker Screen to evaluate if your Screen processes expected Request data appropriately](preview-a-screen.md#enter-mock-request-data-coming-into-your-processmaker-screen)
 
-![Data Preview panel displays a JSON data model in Preview mode](../../../.gitbook/assets/data-preview-panel-screen-builder-processes.png)
-
-{% hint style="info" %}
-Calculated properties also display in the **Data Preview** panel as part of the JSON data model. See [Manage Calculated Properties](manage-computed-properties/).
-{% endhint %}
+![Screen Builder displaying JSON input and output data models in Preview mode](../../../.gitbook/assets/preview-mode-screen-builder-designer.png)
 
 ## Related Topics
 
