@@ -106,26 +106,20 @@ Below is a sample ProcessMaker Script that uses PHP. Refer to the comments denot
 
 ```php
 <?php
-​
 $output = [];
-​
 // Get a ProcessMaker Environment Variable, in this case TEST_VAR.
 $output['envVar'] = getenv('TEST_VAR');
-​
 // Get a value from the config object.
 // In this example, 'test' in the JSON config: {"test":"test config value"}
 $output['configTest'] = $config["test"];
-​
 // Get a value from the data object.
 // In this example, the user_id for the _request.
 $output['requestUserId'] = $data['_request']['user_id'];
-​
 // Get the email address for user id 1 using the API/SDK.
 // Use the global `$api_config` to set credentials automatically.
 $usersApi = new ProcessMaker\Client\Api\UsersApi(null, $api_config);
 $user = $usersApi->getUserById("1");
 $output['userEmail'] = $user->getEmail();
-​
 return $output;
 ```
 {% endtab %}
