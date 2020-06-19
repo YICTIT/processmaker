@@ -310,6 +310,8 @@ public class Script implements BaseScript {
 {% endtab %}
 {% endtabs %}
 
+### Save Your ProcessMaker Script
+
 ‌Click the **Save** icon![](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LJ0aNaVW1m7sNsxVJLV%2F-LioNdUzT8w_d7Hb_0a5%2F-LRZVMVhCYDrATwHc9Jt%2FSave%20Icon%20-%20Processes.png?alt=media&token=93c6458d-d6c2-439d-937b-458fc65b2238)from Script Editor's top menu to save the ProcessMaker Script.‌
 
 ## Related Topics <a id="related-topics"></a>
