@@ -41,9 +41,9 @@ Access Script Editor in the following ways:
 
 ‌Develop the ProcessMaker Script below the script's name and language description. Use the scroll panel to navigate your code not currently displayed. This is useful especially when you are editing a long ProcessMaker Script.‌
 
-### Mock Request Data Coming Into the ProcessMaker Script <a id="mock-request-data-coming-into-the-processmaker-script"></a>
+### Enter Mock Request Data Coming Into Your ProcessMaker Script <a id="mock-request-data-coming-into-the-processmaker-script"></a>
 
-‌Use the **Sample Input** panel to mock [Request data](../../json-the-foundation-of-request-data/what-is-request-data.md) that comes into the ProcessMaker Script.
+‌Use the **Sample Input** panel to mock [Request data](../../json-the-foundation-of-request-data/what-is-request-data.md) that comes into your ProcessMaker Script to test how the Script runs using Request data you expect. 
 
 Define the variables in a [ProcessMaker Screen](../design-forms/what-is-a-form.md) when you configure its controls. See [information about each control](../design-forms/screens-builder/control-descriptions/).‌
 
@@ -131,7 +131,7 @@ return $output;
 {% endtab %}
 
 {% tab title="Lua" %}
-Below is a sample ProcessMaker Script that uses Lua. Refer to the comments denoted with -- that describe how the sample functions:
+Below is a sample ProcessMaker Script that uses Lua. Refer to the comments denoted with `--` that describe how the sample functions:
 
 * How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
 * How to get a value from the configuration object.
@@ -161,7 +161,7 @@ return {envVar=envVar, configTest=configTest, requestUserId=requestUserId, userE
 {% endtab %}
 
 {% tab title="JavaScript" %}
-Below is a sample ProcessMaker Script that uses JavaScript. Refer to the comments denoted with // that describe how the sample functions:
+Below is a sample ProcessMaker Script that uses JavaScript. Refer to the comments denoted with `//` that describe how the sample functions:
 
 * How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
 * How to get a value from the configuration object.
@@ -208,7 +208,7 @@ return new Promise((resolve, reject) => {
 The [C\# package](../../package-development-distribution/package-a-connector/c-package.md) is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the C\# [package](../../package-development-distribution/first-topic.md) can be installed in your ProcessMaker instance.
 {% endhint %}
 
-Below is a sample ProcessMaker Script that uses C\#. Refer to the comments denoted with // that describe how the sample functions:
+Below is a sample ProcessMaker Script that uses C\#. Refer to the comments denoted with `//` that describe how the sample functions:
 
 * How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
 * How to get a value from the configuration object.
@@ -259,7 +259,7 @@ public class Script : BaseScript
 The [Java package](../../package-development-distribution/package-a-connector/java-package.md) is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Java [package](../../package-development-distribution/first-topic.md) can be installed in your ProcessMaker instance.
 {% endhint %}
 
-Below is a sample ProcessMaker Script that uses Java. Refer to the comments denoted with // that describe how the sample functions:
+Below is a sample ProcessMaker Script that uses Java. Refer to the comments denoted with `//` that describe how the sample functions:
 
 * How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
 * How to get a value from the configuration object.
@@ -310,12 +310,53 @@ public class Script implements BaseScript {
 ```
 {% endtab %}
 
+{% tab title="Python" %}
+{% hint style="info" %}
+The [Python package](../../package-development-distribution/package-a-connector/python-package.md) is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Python [package](../../package-development-distribution/first-topic.md) can be installed in your ProcessMaker instance.
+{% endhint %}
+
+Below is a sample ProcessMaker Script that uses Python. Refer to the comments denoted with `#` that describe how the sample functions:
+
+* How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
+* How to get a value from the configuration object.
+* How to get a value from a data object.
+
+```python
+# A PM4 script written in Python must set a dict
+# named `output` with the data to return.
+​
+# Get an environment variable, in this case TEST_VAR
+envVar = os.getenv('TEST_VAR')
+​
+# Get a value from the config object.
+# In this case, 'test' in the json config: {"test":"test config value"}
+configTest = config['test']
+​
+# Get a value from the data object.
+# In this case the user_id for the _request
+requestUserId = data['_request']['user_id']
+​
+# Get the email address for user id 1 using the API/SDK
+# Use the global `configuration` object to set auth tokens
+users_api_instance = pmsdk.UsersApi(pmsdk.ApiClient(configuration))
+user = users_api_instance.get_user_by_id(1)
+userEmail = user.email
+​
+output = {
+    "envVar": envVar, 
+    "configTest": configTest, 
+    "requestUserId": requestUserId, 
+    "userEmail": userEmail
+}
+```
+{% endtab %}
+
 {% tab title="R" %}
 {% hint style="info" %}
 The [R package](../../package-development-distribution/package-a-connector/r-package.md) is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the R [package](../../package-development-distribution/first-topic.md) can be installed in your ProcessMaker instance.
 {% endhint %}
 
-Below is a sample ProcessMaker Script that uses R. Refer to the comments denoted with \# that describe how the sample functions:
+Below is a sample ProcessMaker Script that uses R. Refer to the comments denoted with `#` that describe how the sample functions:
 
 * How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
 * How to get a value from the configuration object.

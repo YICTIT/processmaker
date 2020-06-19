@@ -15,7 +15,7 @@ Use the Python package to develop [ProcessMaker Scripts](../../designing-process
 See the following topics:
 
 * [Create a New Script](../../designing-processes/scripts/manage-scripts/create-a-new-script.md#create-a-new-processmaker-script)
-* [Scripts Editor]()
+* [Script Editor](../../designing-processes/scripts/script-editor.md)
 
 ## Related Topics
 
