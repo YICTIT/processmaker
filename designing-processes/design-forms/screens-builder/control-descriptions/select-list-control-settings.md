@@ -285,7 +285,7 @@ Follow these steps to sort the order of the options that display in this control
 Follow these steps to set whether multiple selections can be selected from this control and how the options display:
 
 1. Access the [**Data Source** panel for this control](select-list-control-settings.md#data-source-panel-settings) while in [Design](../screens-builder-modes.md#design-mode) mode, and then ensure that the **Data Source** setting uses the **Provide Values** option. ![](../../../../.gitbook/assets/select-list-control-data-source-provide-values-screen-builder-processes.png) 
-2. Click the **Allow multiple selections** setting to allow multiple options be selected from this control. Otherwise, only one option can be selected. ![](../../../../.gitbook/assets/select-list-control-allow-multiple-selections-screen-builder-processes.png) 
+2. Click the **Allow multiple selections** setting to allow multiple options to be selected from this control. Otherwise, only one option can be selected. ![](../../../../.gitbook/assets/select-list-control-allow-multiple-selections-screen-builder-processes.png) 
 3. From the **Render Options As** drop-down menu, select one of the following options:
    * **Dropdown/Multiselect:** Select the **Dropdown/Multiselect** option to display the control as a drop-down menu.
    * **Radio/Checkbox Group:** Select the **Radio/Checkbox Group** option to display the control as a group of checkboxes. ![](../../../../.gitbook/assets/select-list-control-render-options-as-screen-builder-processes.png) 
@@ -301,7 +301,7 @@ Follow these steps to provide options that display in this control using a JSON 
 3. Click the **Edit as JSON** option below the **Options** list label. If the **JSON Data** setting displays, skip this step.  
    ![](../../../../.gitbook/assets/edit-as-json-screens-builder-processes.png) 
 
-   The **JSON Data** setting displays. If a valid JSON schema has been configured previously, the **JSON Data** setting displays the JSON. Otherwise the setting is empty.
+   The **JSON Data** setting displays. If a valid JSON schema has been configured previously, the **JSON Data** setting displays the JSON. Otherwise, this setting is empty.
 
 4. Click the icon![](../../../../.gitbook/assets/json-configuration-script-icon-script-task-element-process-modeler-processes.png)beside the **JSON Data** option. The **Script Config Editor** displays.  
 
@@ -315,7 +315,7 @@ Follow these steps to provide options that display in this control using a JSON 
 Follow these steps to set whether multiple selections can be selected from this control and how the options display:
 
 1. Access the [**Data Source** panel for this control](select-list-control-settings.md#data-source-panel-settings) while in [Design](../screens-builder-modes.md#design-mode) mode, and then ensure that the **Data Source** setting uses the **Provide Values** option. ![](../../../../.gitbook/assets/select-list-control-data-source-provide-values-screen-builder-processes.png) 
-2. Click the **Allow multiple selections** setting to allow multiple options be selected from this control. Otherwise, only one option can be selected. ![](../../../../.gitbook/assets/select-list-control-allow-multiple-selections-screen-builder-processes.png) 
+2. Click the **Allow multiple selections** setting to allow multiple options to be selected from this control. Otherwise, only one option can be selected. ![](../../../../.gitbook/assets/select-list-control-allow-multiple-selections-screen-builder-processes.png) 
 3. From the **Render Options As** drop-down menu, select one of the following options:
    * **Dropdown/Multiselect:** Select the **Dropdown/Multiselect** option to display the control as a drop-down menu.
    * **Radio/Checkbox Group:** Select the **Radio/Checkbox Group** option to display the control as a group of checkboxes. ![](../../../../.gitbook/assets/select-list-control-render-options-as-screen-builder-processes.png) 

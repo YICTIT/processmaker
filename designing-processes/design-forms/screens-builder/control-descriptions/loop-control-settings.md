@@ -35,6 +35,15 @@ Do not place another Loop control inside the first Loop control.
 This control is only available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
 {% endhint %}
 
+### Use the `parent` JSON Key to Reference Request Data from Controls in a Loop Control
+
+The Loop control uses a unique JSON key available to any control placed within the Loop control to reference Request data. Controls that are placed into a Loop control for duplication are within a container and may only access another control's data that is in the same Loop control. Use the `parent` JSON key in a control's settings placed within a Loop control to reference Request data outside of that Loop control.
+
+Consider the following examples:
+
+* A Line Input control placed within a Loop control requires a default value to display each time the Loop control duplicates its set of controls. This Line Input control's default value is derived from a separate Line Input control's value already added to that Request's data of which its **Variable Name** setting is `Line_Input_Data`.  From the Line Input control placed within the Loop container, enter the following into that Line Input control's [**Default Value** setting](line-input-control-settings.md#default-value): `{{ _parent.Line_Input_Data }}`.
+* A Select List control placed within a Loop control requires its options to display each time the Loop control duplicates its set of controls from another Select List control's options used during that Request of which its **Variable Name** setting is `Select_List_Options`. While configuring this Select List control's settings to [derive its options from Request data](select-list-control-settings.md#reference-request-data), enter the following into the **Options Variable** setting: `{{ _parent.Select_List_Options }}`.
+
 ## Add the Control to a ProcessMaker Screen <a id="add-the-control-to-a-processmaker-screen"></a>
 
 {% hint style="info" %}
