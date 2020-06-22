@@ -41,7 +41,7 @@ The Loop control uses a unique JSON key available to any control placed within t
 
 Consider the following examples:
 
-* A Line Input control placed within a Loop control requires a default value to display from another Line Input control used during that Request of which its **Variable Name** setting is `Line_Input_Data`.  From the Line Input control placed within the Loop control, enter the following into that Line Input control's [**Default Value** setting](line-input-control-settings.md#default-value): `{{ _parent.Line_Input_Data }}`.
+* A Line Input control placed within a Loop control requires a default value to display from another Line Input control used during that Request of which its **Variable Name** setting is `Line_Input_Data`.  From the Line Input control placed within the Loop control, enter the following into the [**Default Value** setting](line-input-control-settings.md#default-value): `{{ _parent.Line_Input_Data }}`.
 * A Select List control placed within a Loop control requires its options to display from another Select List control's options used during that Request of which its **Variable Name** setting is `Select_List_Options`. While configuring the Select List control placed within the Loop control to [use Request data as its data source](select-list-control-settings.md#reference-request-data), enter the following into the **Options Variable** setting: `{{ _parent.Select_List_Options }}`.
 
 ## Add the Control to a ProcessMaker Screen <a id="add-the-control-to-a-processmaker-screen"></a>
