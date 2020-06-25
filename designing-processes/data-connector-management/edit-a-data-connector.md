@@ -216,7 +216,7 @@ Follow these steps to test a ProcessMaker Data Connector's Endpoint:
 
 1. [Add](edit-a-data-connector.md#add-an-endpoint-to-a-processmaker-data-connector) or [view](edit-a-data-connector.md#view-an-endpoint-in-a-processmaker-data-connector) the Endpoint for the ProcessMaker Data Connector to test. The **Config** tab displays basic configuration settings for that Endpoint.
 2. Click the **Test** tab. ![](../../.gitbook/assets/test-sub-tab-endpoints-tab-data-connector-package-designer.png) 
-3. Click the **Run** button. If the Endpoint successfully interacts with the data source resource, the resource's response displays. ![](../../.gitbook/assets/test-screen-data-connector-example-package.png) 
+3. Click the **Run** button. If the Endpoint successfully interacts with the data source resource, the resource's response displays. Along with the data source response, its status, response time, and size display. ![](../../.gitbook/assets/test-screen-data-connector-example-package.png) 
 4. Click the **List Endpoints** button to view all Endpoints for this ProcessMaker Data Connector.
 
 ### View or Edit an Endpoint in a ProcessMaker Data Connector
