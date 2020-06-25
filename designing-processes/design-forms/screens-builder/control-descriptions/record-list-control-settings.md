@@ -79,6 +79,25 @@ See [Display-type Screen Settings](record-list-control-settings.md#display-type-
 
 After opening a Task or Manual Task with a Display-type ProcessMaker Screen using a Record List control, the record list displays each record as entered in a Form-type Screen in a previous Task of that Request.
 
+### Use the `parent` JSON Key to Reference Request Data from Controls in a Record List Control
+
+{% hint style="info" %}
+### Topic Update
+
+This topic is updated for ProcessMaker version 4.0.3. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.3-release-notes).
+{% endhint %}
+
+The Record List control uses a unique JSON key available to any control placed into the secondary page from which the Record List control references its values so that those controls can reference Request data. Controls that are placed into that secondary page function within a container and may only access another control's data that is in the same secondary page. Use the `parent` JSON key in a control's settings placed into the secondary page to reference Request data outside of that Record List control.
+
+{% hint style="info" %}
+The `parent` JSON key only applies to controls placed into a Record List control or [Loop](loop-control-settings.md) control.
+{% endhint %}
+
+Consider the following examples:
+
+* A Line Input control placed into the secondary page requires a default value to display from another Line Input control used during that Request of which its **Variable Name** setting is `Line_Input_Data`.  From the Line Input control placed into the secondary page, enter the following into the [**Default Value** setting](line-input-control-settings.md#default-value): `{{ _parent.Line_Input_Data }}`.
+* A Select List control placed within the secondary page requires its options to display from another Select List control's options used during that Request of which its **Variable Name** setting is `Select_List_Options`. While configuring the Select List control placed into the secondary page to [use Request data as its data source](select-list-control-settings.md#reference-request-data), enter the following into the **Options Variable** setting: `{{ _parent.Select_List_Options }}`.
+
 ## Add the Control to a ProcessMaker Screen <a id="add-the-control-to-a-processmaker-screen"></a>
 
 {% hint style="info" %}
@@ -105,8 +124,9 @@ Follow these steps to add this control to the [ProcessMaker Screen](../../what-i
    **Form-type ProcessMaker Screen:**
 
    1. Create a new page in this ProcessMaker Screen. Use this page to design how the Request participant enters data that the Record List control records. The page that records the submitted records cannot be on the same page as the Record List control. See [Add a New Page to a ProcessMaker Screen](../add-a-new-page-to-a-screen.md#add-a-new-page-to-a-processmaker-screen).
-   2. On the new page, design the form using controls from which the Request participant enters the data component that the Record List control receives for each record. In each of the controls that receives a data component for each record, make note of the **Variable Name** setting values for each control; these values correspond with how the Record List control displays the record list in the **Value** parameter for each column. Do not place a [Submit Button](submit-button-control-settings.md#control-description) control on the new page; otherwise, the [Task](../../../../using-processmaker/task-management/what-is-a-task.md) cannot be submitted during a Request.
-   3. Return to the page that the Record List control is placed, and then configure the Record List control. See [Settings](record-list-control-settings.md#inspector-settings). Ensure to add a Submit Button or [Page Navigation](page-navigation-button-control-settings.md#control-description) control on the page containing the Record List control so that the Task can be submitted after all records have been added to the record list during a Request.
+   2. On the new page, design the form using controls from which the Request participant enters the data component that the Record List control receives for each record. In each of the controls that receive a data component for each record, make note of the **Variable Name** setting values for each control; these values correspond with how the Record List control displays the record list in the **Value** parameter for each column. Do not place a [Submit Button](submit-button-control-settings.md#control-description) control on the new page; otherwise, the [Task](../../../../using-processmaker/task-management/what-is-a-task.md) cannot be submitted during a Request.
+   3. Configure each of the controls placed on the new page. If a control placed into this page requires to use Request data, use the `parent` JSON key. See [Use the `parent` JSON Key to Reference Request Data from Controls in a Loop Control](record-list-control-settings.md#use-the-parent-json-key-to-reference-request-data-from-controls-in-a-record-list-control).
+   4. Return to the page that the Record List control is placed, and then configure the Record List control. See [Settings](record-list-control-settings.md#inspector-settings). Ensure to add a Submit Button or [Page Navigation](page-navigation-button-control-settings.md#control-description) control on the page containing the Record List control so that the Task can be submitted after all records have been added to the record list during a Request.
 
    **Display-type ProcessMaker Screen:**
 

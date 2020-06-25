@@ -229,10 +229,12 @@ Click the control while in [Design](../screens-builder-modes.md#design-mode) mod
 From the **Data Source** panel, select one of the following methods to specify options that display in the Select List control:
 
 * [Provide options](select-list-control-settings.md#provide-options): Enter a unique value that represents each option, and then enter the text that displays as the option. After your options are configured, sort the order in which they are to display in this control. Alternatively, provide options in this control in JSON format.
-* [Request data](select-list-control-settings.md#reference-request-data): Reference data from the in-progress Request as options in this control. This data object must be part of the Request's JSON data model. During the in-progress Request, the Select List control references a specified data array and object in the Request's JSON data model to display its values as options in that control. The order that data objects are in the Request's JSON data model determines the order these options display in the control; options cannot be manually reordered.
-* [ProcessMaker Data Connector](select-list-control-settings.md#reference-a-data-connector): Reference the data from a ProcessMaker Data Connector's [Endpoint](../../../data-connector-management/what-is-a-data-connector.md#what-is-an-endpoint) as options in this control. Note that the [ProcessMaker Data Connector](../../../../package-development-distribution/package-a-connector/data-connector-package.md) package must be installed to your ProcessMaker instance for this option to be available. The Data Connector package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Data Connector package can be installed in your ProcessMaker instance.
+* [Request data](select-list-control-settings.md#reference-request-data): Reference data from the in-progress Request as options in this control. This data object must be part of the Request's JSON data model. During the in-progress Request, the Select List control references a specified data array and object in the Request's JSON data model to display its values as options in that control. The order that data objects are in the Request's JSON data model determines the order these options display in the control; options cannot be manually reordered. See [Dependent Field Design Example Using Select List Controls](select-list-control-settings.md#dependent-field-design-example-using-select-list-controls).
+* [ProcessMaker Data Connector](select-list-control-settings.md#reference-a-processmaker-data-connector): Reference the data from a ProcessMaker Data Connector's [Endpoint](../../../data-connector-management/what-is-a-data-connector.md#what-is-an-endpoint) as options in this control. Note that the [ProcessMaker Data Connector](../../../../package-development-distribution/package-a-connector/data-connector-package.md) package must be installed to your ProcessMaker instance for this option to be available. The Data Connector package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Data Connector package can be installed in your ProcessMaker instance.
 
   These Endpoints a [ProcessMaker Data Connector](../../../data-connector-management/what-is-a-data-connector.md) references may be Application Program Interface \(API\) endpoints, ProcessMaker Collection records, or other data source endpoints. During the in-progress Request, when the Select List control references data from the ProcessMaker Data Connector, the control maps the ProcessMaker Data Connector data to a specified JSON data array, variable or key name, or data object to become part of that Request's data. Data maps to the JSON data array in the same order it is retrieved from the ProcessMaker Data Connector. Optionally, use a [PMQL](../../../../using-processmaker/search-processmaker-data-using-pmql.md) expression to limit which data to use as options based on the PMQL expression's criteria. The order that data objects return from the ProcessMaker Data Connector determines the order these options display in the control; options cannot be manually reordered.
+
+  See [Dependent Field Design Example Using Select List Controls](select-list-control-settings.md#dependent-field-design-example-using-select-list-controls).
 
 #### Provide Options
 
@@ -324,17 +326,26 @@ Follow these steps to set whether multiple selections can be selected from this 
 
 #### Reference Request Data
 
+{% hint style="info" %}
+### Topic Update
+
+This topic is updated for ProcessMaker version 4.0.4. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.4-release-notes#screen-builder).
+{% endhint %}
+
 Follow these steps to reference data from the in-progress Request as options in this control:
 
 1. Access the [**Data Source** panel for this control](select-list-control-settings.md#data-source-panel-settings) while in [Design](../screens-builder-modes.md#design-mode) mode.
 2. From the **Data Source** drop-down menu, select **Request Data**. ![](../../../../.gitbook/assets/select-list-control-data-source-request-data-screen-builder-processes.png) 
-3. Select the **Allow multiple selections** option to allow multiple selections from this control. Otherwise, only one option can be selected. ![](../../../../.gitbook/assets/select-list-control-allow-multiple-selections-screen-builder-processes.png) 
-4. From the **Render Options As** drop-down menu, select one of the following options:
+3. In the **Options Variable** setting, enter from which Request variable, based on its **Variable Name** setting value, to use as options for this control. The Request variable from which to use as options must be an array. The options in the Select List control display in the same order as the Request variable lists items in its array. Optionally, use [mustache syntax](https://mustache.github.io/mustache.5.html) to indicate the Request variable name, especially if each option in this control derives from combining multiple properties within an array where each of its items contains one or more objects. **response** is the default setting. See [Dependent Field Design Example Using Select List Controls](select-list-control-settings.md#dependent-field-design-example-using-select-list-controls). ![](../../../../.gitbook/assets/options-variable-select-list-control-screen-builder-designer.png)
+4. In the **Option Label Shown** setting, enter the key name from the Request variable selected in the **Options Variable** setting to display in this control when the ProcessMaker Screen displays. If the Request variable from which to use as options contains one or more objects within each item of the array, use this setting to indicate which object key name to reference as each option in this control. **content** is the default setting. ![](../../../../.gitbook/assets/option-label-shown-select-list-control-screen-builder-designer.png) 
+5. From the **Show Control As** drop-down menu, select one of the following options:
    * **Dropdown/Multiselect:** Select the **Dropdown/Multiselect** option to display the control as a drop-down menu.
    * **Radio/Checkbox Group:** Select the **Radio/Checkbox Group** option to display the control as a group of checkboxes. ![](../../../../.gitbook/assets/select-list-control-render-options-as-screen-builder-processes.png) 
-5. In the **Element Name** setting, enter the name of the JSON data array within the Request data from which to reference its objects as options that display in this control. Use JSON dot notation as necessary. **response** is the default value. Example: `data.response`![](../../../../.gitbook/assets/select-list-control-element-name-screen-builder-processes.png) 
-6. In the **Value** setting, enter the JSON key name from within the JSON data array selected from the  **Element Name** setting to reference its objects as options that display in this control. Use JSON dot notation as necessary. **value** is the default value. Example: `data.response.value`![](../../../../.gitbook/assets/select-list-control-value-screen-builder-processes.png) 
-7. In the **Content** setting, enter the JSON object name that corresponds with the JSON key name selected from the **Value** setting's JSON key name to display its content as options in this control. Use JSON dot notation as necessary. **content** is the default value. Example: `data.response.value.content` ![](../../../../.gitbook/assets/select-list-control-content-screen-builder-processes.png) 
+6. Select the **Allow multiple selections** option to allow multiple options to be selected from this control. Otherwise, only one option can be selected. ![](../../../../.gitbook/assets/select-list-control-allow-multiple-selections-screen-builder-processes.png) 
+7. From the **Type of Value Returned** drop-down menu, select one of the following options:
+   * **Single Value:** Select the **Single Value** option to indicate that only a part of the JSON object specified from the Option Label Shown displays as each option in this control.
+   * **Object:** Select the **Object** option to indicate that the entire JSON object within each item of the array displays as each option in this control.
+8. If the **Single Value** option is selected from the **Type of Value Returned** setting, then the **Variable Data Property** setting displays. In the **Variable Data Property** setting, enter the JSON property name from the Request variable that passes to this control when an is selected. **value** is the default option.
 
 #### Reference a ProcessMaker Data Connector
 
@@ -346,16 +357,20 @@ Follow these steps to reference data from a [ProcessMaker Data Connector](../../
 
 1. Access the [**Data Source** panel for this control](select-list-control-settings.md#data-source-panel-settings) while in [Design](../screens-builder-modes.md#design-mode) mode.
 2. From the **Data Source** drop-down menu, select **Data Connector**. ![](../../../../.gitbook/assets/select-list-control-data-source-connector-screen-builder-processes.png) 
-3. Select the **Allow multiple selections** option to allow multiple selections from this control. Otherwise, only one option can be selected. ![](../../../../.gitbook/assets/select-list-control-allow-multiple-selections-screen-builder-processes.png) 
-4. From the **Render Options As** drop-down menu, select one of the following options:
+3. 4. Select the **Allow multiple selections** option to allow multiple selections from this control. Otherwise, only one option can be selected. ![](../../../../.gitbook/assets/select-list-control-allow-multiple-selections-screen-builder-processes.png) 
+5. From the **Render Options As** drop-down menu, select one of the following options:
    * **Dropdown/Multiselect:** Select the **Dropdown/Multiselect** option to display the control as a drop-down menu.
    * **Radio/Checkbox Group:** Select the **Radio/Checkbox Group** option to display the control as a group of checkboxes. ![](../../../../.gitbook/assets/select-list-control-render-options-as-screen-builder-processes.png) 
-5. From the **Data Connector** drop-down menu, select from which ProcessMaker Data Connector to reference as a data source. If a ProcessMaker Data Connector does not exist, this setting has no options. ![](../../../../.gitbook/assets/select-list-control-data-connector-screen-builder-processes.png) 
-6. From the **Endpoint** drop-down menu, select which [Endpoint](../../../data-connector-management/what-is-a-data-connector.md#what-is-an-endpoint) to reference from the selected ProcessMaker Data Connector. These Endpoints are configured from the ProcessMaker Data Connector itself. Depending on the ProcessMaker Data Connector selected from the **Data Connector Name** drop-down menu, these Endpoints may reference API endpoints, ProcessMaker Collection records, or other data source endpoints. ![](../../../../.gitbook/assets/select-list-control-endpoint-screen-builder-processes.png) 
-7. In the **Element Name** setting, enter the name of the JSON data array within the selected ProcessMaker Data Connector from which to reference its objects as options that display in this control. This JSON data array and its content becomes part of that Request's data. Use JSON dot notation as necessary. **response** is the default value. ![](../../../../.gitbook/assets/select-list-control-element-name-screen-builder-processes.png) 
-8. In the **Value** setting, enter the JSON key name from within the JSON data array selected from the  **Element Name** setting to reference its objects as options that display in this control. Use JSON dot notation as necessary. **value** is the default value. ![](../../../../.gitbook/assets/select-list-control-value-screen-builder-processes.png) 
-9. In the **Content** setting, enter the JSON object name that corresponds with the JSON key name selected from the **Value** setting's JSON key name to display its content as options in this control. Use JSON dot notation as necessary. **content** is the default value. ![](../../../../.gitbook/assets/select-list-control-content-screen-builder-processes.png) 
-10. In the **PMQL** setting, optionally enter a [PMQL](../../../../using-processmaker/search-processmaker-data-using-pmql.md#overview) expression to filter which data in the JSON data array to display as options in this control based on which objects in that array meet the PMQL expression's criteria. ![](../../../../.gitbook/assets/select-list-control-pmql-screen-builder-processes.png) 
+6. From the **Data Connector** drop-down menu, select from which ProcessMaker Data Connector to reference as a data source. If a ProcessMaker Data Connector does not exist, this setting has no options. ![](../../../../.gitbook/assets/select-list-control-data-connector-screen-builder-processes.png) 
+7. From the **Endpoint** drop-down menu, select which [Endpoint](../../../data-connector-management/what-is-a-data-connector.md#what-is-an-endpoint) to reference from the selected ProcessMaker Data Connector. These Endpoints are configured from the ProcessMaker Data Connector itself. Depending on the ProcessMaker Data Connector selected from the **Data Connector Name** drop-down menu, these Endpoints may reference API endpoints, ProcessMaker Collection records, or other data source endpoints. ![](../../../../.gitbook/assets/select-list-control-endpoint-screen-builder-processes.png) 
+8. In the **Element Name** setting, enter the name of the JSON array within the selected ProcessMaker Data Connector from which to reference its objects as options that display in this control. This JSON data array and its content become part of that Request's data. Use [JSON dot notation](../../../../json-the-foundation-of-request-data/what-is-json.md#json-dot-notation) as necessary. **response** is the default value. ![](../../../../.gitbook/assets/select-list-control-element-name-screen-builder-processes.png) 
+9. In the **Value** setting, enter the JSON key name from within the JSON array selected from the **Element Name** setting to reference its objects as options that display in this control. To use all items in the JSON array, do not enter a value into the **Value** setting. Use JSON dot notation as necessary. Optionally, use [mustache syntax](https://mustache.github.io/mustache.5.html) to indicate the JSON key name from within the JSON array. **value** is the default setting. See [Dependent Field Design Example Using Select List Controls](select-list-control-settings.md#dependent-field-design-example-using-select-list-controls). ![](../../../../.gitbook/assets/value-select-list-control-screen-builder-designer.png) 
+10. In the **Content** setting, enter the JSON object key name within the JSON array referenced from the **Value** setting to display its content as options in this control. To use all JSON object key names in the JSON object, do not enter a value into the **Content** setting. Use JSON dot notation as necessary. Optionally, use mustache syntax to indicate the JSON object key name from within the JSON array.
+
+    **content** is the default value.  
+    ![](../../../../.gitbook/assets/content-select-list-control-screen-builder-designer.png) 
+
+11. In the **PMQL** setting, optionally enter a [PMQL](../../../../using-processmaker/search-processmaker-data-using-pmql.md#overview) expression to filter which data in the JSON data array to display as options in this control based on which JSON objects in that array meet the PMQL expression's criteria. ![](../../../../.gitbook/assets/select-list-control-pmql-screen-builder-processes.png) 
 
 Consider the following example of doctors who work in a clinic. 
 
@@ -416,8 +431,7 @@ Below are settings for the Select List in the **Advanced** panel:
 This topic is updated for ProcessMaker version 4.0.1. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.1-release-notes#screen-builder).
 {% endhint %}
 
-Enter the default value this control displays. If the **Default Value** setting has no value, then this control does not display a value when the ProcessMaker Screen displays. When the ProcessMaker Screen submits, the Request uses this control's default value unless the Request participant changes it. The **Default Value** setting supports [mustache syntax](https://mustache.github.io/mustache.5.html) as the default value. For example, if the **Default Value** setting is `{{ FirstName }} {{ LastName }}`, this control displays those Request variable values during the Request.  
-
+Enter the default value this control displays. If the **Default Value** setting has no value, then this control does not display a value when the ProcessMaker Screen displays. When the ProcessMaker Screen submits, the Request uses this control's default value unless the Request participant changes it. The **Default Value** setting supports [mustache syntax](https://mustache.github.io/mustache.5.html) as the default value. For example, if the **Default Value** setting is `{{ data.SelectList1.response.content }}`, this control displays from that control's options by default during the Request.
 
 There are two ways to enter the default value this control displays.
 
@@ -449,9 +463,11 @@ To make this control hidden until another control contains a value, enter the **
 Enter the value to represent this control in custom CSS syntax when in [Custom CSS](../add-custom-css-to-a-screen.md#add-custom-css-to-a-processmaker-screen) mode. As a best practice, use the same **CSS Selector Name** value on different controls of the same type to apply the same custom CSS style to all those controls.  
 ![](../../../../.gitbook/assets/css-selector-name-screen-builder-processes.png) 
 
-## Dependent Field Design Example
+## Dependent Field Design Example Using Select List Controls
 
-The following video example demonstrates dependent fields: how the options in one Select List control depend on which option is selected from a previous Select List control. This example demonstrates that after a country is selected from one Select List control, a second Select List control contains as options the states and/or provinces in that selected country.
+### Overview
+
+The following example demonstrates dependent fields: how the options in one Select List control depend on which option is selected from a previous Select List control. This example demonstrates that after a country is selected from one Select List control, a second Select List control contains as options the states and/or provinces in that selected country.
 
 The Select List control that contains the countries as its options gets those options from a [ProcessMaker Data Connector](../../../data-connector-management/what-is-a-data-connector.md) that uses an [Endpoint](../../../data-connector-management/what-is-an-endpoint.md) to get the list of countries and their corresponding ISO codes from a third-party application program interface \(API\). A [Watcher](../manage-watchers/what-is-a-watcher.md) monitors when a country is selected, and then another ProcessMaker Data Connector uses an Endpoint to get the list of states and/or provinces from that selected country based on that country's ISO code. The Watcher stores that list of states/provinces as a Request variable in that Request's data so that the second Select List control may access that list to display as its options. The second Select List control's options depend on the first Select List control's selection.
 
@@ -459,10 +475,74 @@ The Select List control that contains the countries as its options gets those op
 The [Data Connector package](../../../../package-development-distribution/package-a-connector/data-connector-package.md) must be installed in your ProcessMaker instance. The [Data Connector](../../../data-connector-management/what-is-a-data-connector.md) package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Data Connectors package can be installed in your ProcessMaker instance.
 {% endhint %}
 
+Click the video below to watch a demonstration of this example.
+
 * **Intended audience:** Process designers, Web designers, graphic designers, software developers, coding engineers
 * **Viewing time:** 21 minutes; contains narration
+* **Note:** The video demonstrates how to configure the Select List controls using obsolete settings. The written form of this example documents how to configure the Select List controls using current settings.
 
 {% embed url="https://vimeo.com/423630726" caption="Design dependent fields using two Select List controls, ProcessMaker Data Connectors, and a Watcher" %}
+
+This example contains the following procedures in this order:
+
+1. **Create the ProcessMaker Data Connector:** Create the ProcessMaker Data Connector that calls the API containing the list of universities. This is a public API that has been made available for demonstration purposes, so it does not require host authentication. The list of universities is in a JSON object. Though the host provides the domains, names, and countries of origin for each university in its list,  this example references only the university name. [The host provides public information about this API.](https://github.com/Hipo/university-domains-list-api) See [Create the ProcessMaker Data Connector](select-list-control-settings.md#create-the-processmaker-data-connector).
+2. **Configure the Select List control:** After the ProcessMaker Data Connector is created, create a ProcessMaker Screen that contains a configure a Select List control. Configure the Select List control to use this ProcessMaker Data Connector as its data source to get the list of universities as the Select List control's options. See [Configure the Select List Control](../../../data-connector-management/data-connector-example.md#configure-the-select-list-control).
+3. **Create the Process model:** Create the Process model to include a Form Task element that references the ProcessMaker Screen containing the Select List control. See [Create the Process Model](../../../data-connector-management/data-connector-example.md#create-the-process-model).
+4. **Start a Request:** Start a Request for the Process as designed in the Process model for this example. See [Start a Request for the Example Process](../../../data-connector-management/data-connector-example.md#start-a-request-for-the-example-process).
+
+### Create the ProcessMaker Data Connector
+
+Follow these steps to create the ProcessMaker Data Connector as [described in this example](select-list-control-settings.md#overview):
+
+1. [Log on](../../../../using-processmaker/log-in.md#log-in) to ProcessMaker.
+2. Click the **Designer** option from the top menu. The **Processes** page displays.
+3. Click the **Data Connectors** icon![](../../../../.gitbook/assets/data-connectors-icon-package.png)from the left sidebar. The **Data Connectors** tab displays all ProcessMaker Data Connectors in the **Data Connectors** page.
+4. Verify the ProcessMaker Data Connector Category exists in which to assign this Data Connector. If this Category does not exist, see [Create a New Data Connector Category](../../../data-connector-management/manage-data-connectors/manage-data-connector-categories/create-a-new-data-connector-category.md).
+5. Click the **+Data Connector** button. The **Create Data Connector** screen displays. ![](../../../../.gitbook/assets/create-data-connector-screen-package-designer.png) 
+6. In the **Name** setting, enter a name of the ProcessMaker Data Connector. This example uses the name `Call Countries API`.
+7. In the **Description** setting, enter a description of this ProcessMaker Data Connector.
+8. From the **Authentication Type** drop-down menu, select the **No Auth** option. This example uses this option because the host does not require authentication from its publicly accessible API.
+9. From the **Category** drop-down menu, select the ProcessMaker Data Connector Category to assign this Data Connector.
+
+   This example uses the following settings.  
+   ![](../../../../.gitbook/assets/dependent-fields-example-create-data-connector-screen.png) 
+
+10. Click **Save**. The **Details** tab displays to edit the settings for this ProcessMaker Data Connector.
+11. Click the **Endpoints** tab. This example requires no changes to the **Authorization** tab.
+12. Click the **+Endpoint** button. The **Add Endpoint** screen displays. ![](../../../../.gitbook/assets/add-endpoint-screen-data-connectors-package.png) 
+13. In the **Purpose** setting, optionally edit the purpose for this Endpoint. The value the **Purpose** setting displays from the ProcessMaker asset when configuring the data source from that ProcessMaker asset. In this example, this setting value displays from the Select List control to select this Endpoint to get the list of universities. Therefore, provide a concise but relevant purpose for this Endpoint so other ProcessMaker designers understand its function. This example uses `list universities` for this setting.
+14. In the **Description** setting, enter a description of this Endpoint. This example uses the following description: `This Endpoint gets a JSON list of worldwide universities.`.
+15. From the **Method** drop-down menu, select the **GET** option. The GET method reads data.
+16. In the **URL** setting, enter the following URL for this example: `http://universities.hipolabs.com/search?`. This URL is truncated from the host's [documented example](https://github.com/Hipo/university-domains-list-api) how to search its public API. ![](../../../../.gitbook/assets/config-sub-tab-endpoints-tab-data-connector-package-designer.png) 
+17. Click the **Test** icon![](../../../../.gitbook/assets/test-endpoint-icon-data-connector-package.png)to verify that the Endpoint functions as intended. If configured correctly, the **Test** screen displays the Endpoint response. ![](../../../../.gitbook/assets/test-screen-data-connector-example-package.png) 
+18. Notice which element in each JSON object within the Endpoint response contains the name of the university. Look at the first JSON object in the array that is the list of universities:  
+    `{` 
+
+        `"domains": [` 
+
+            `"marywood.edu"` 
+
+        `],` 
+
+        `"country": "United States",` 
+
+        `"web_pages": [` 
+
+            `"`[`http://www.marywood.edu`](http://www.marywood.edu)`"` 
+
+        `],` 
+
+        `"name": "Marywood University",` 
+
+        `"state-province": null,` 
+
+        `"alpha_two_code": "PA"` 
+
+    `},`
+
+    The `name` element contains the name of each university in this JSON object. Make note of the element's name that contains relevant data from a data source, as the ProcessMaker asset requires this element name when configuring which data that asset requires from the ProcessMaker Data Connector's Endpoint response. In this example, the ProcessMaker Screen containing the Select List control is the ProcessMaker asset.
+
+19. Click **Close** to close the **Test** screen, and then click **Save** to save the Endpoint. The ProcessMaker Data Connector is configured for this example.
 
 ## Related Topics <a id="related-topics"></a>
 

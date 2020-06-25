@@ -37,7 +37,17 @@ This control is only available for [Display](../types-for-screens.md#display)-ty
 
 ### Use the `parent` JSON Key to Reference Request Data from Controls in a Loop Control
 
+{% hint style="info" %}
+### Topic Update
+
+This topic is updated for ProcessMaker version 4.0.3. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.3-release-notes).
+{% endhint %}
+
 The Loop control uses a unique JSON key available to any control placed within the Loop control to reference Request data. Controls that are placed into a Loop control for duplication are within a container and may only access another control's data that is in the same Loop control. Use the `parent` JSON key in a control's settings placed within a Loop control to reference Request data outside of that Loop control.
+
+{% hint style="info" %}
+The `parent` JSON key only applies to controls placed into a Loop control or [Record List](record-list-control-settings.md) control.
+{% endhint %}
 
 Consider the following examples:
 
@@ -70,7 +80,7 @@ Follow these steps to add this control to the [ProcessMaker Screen](../../what-i
 
    See [Control Description](loop-control-settings.md#control-description) for an example.
 
-8. Configure each control placed into the Loop control.
+8. Configure each control placed into the Loop control. If a control placed into the Loop control requires to use Request data, use the `parent` JSON key. See [Use the `parent` JSON Key to Reference Request Data from Controls in a Loop Control](loop-control-settings.md#use-the-parent-json-key-to-reference-request-data-from-controls-in-a-loop-control).
 9. Validate that the control is configured correctly. See [Validate Your Screen](../validate-your-screen.md#validate-a-processmaker-screen).
 
 Below is a Loop control in [Preview mode](../screens-builder-modes.md#preview-mode).

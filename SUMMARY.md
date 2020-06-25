@@ -207,7 +207,7 @@
   * [Search for a Data Connector](designing-processes/data-connector-management/search-for-a-data-connector.md)
   * [Edit a Data Connector](designing-processes/data-connector-management/edit-a-data-connector.md)
   * [Delete a Data Connector](designing-processes/data-connector-management/delete-a-data-connector.md)
-  * [Data Connector Example](designing-processes/data-connector-management/data-connector-example.md)
+  * [Example Data Connector Use Case](designing-processes/data-connector-management/data-connector-example.md)
 * [Vocabularies Management](designing-processes/vocabularies-management/README.md)
   * [What is a Vocabulary?](designing-processes/vocabularies-management/what-is-a-vocabulary.md)
   * [Manage Your Vocabularies](designing-processes/vocabularies-management/manage-your-vocabularies/README.md)
