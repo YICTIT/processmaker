@@ -363,9 +363,9 @@ Follow these steps to reference data from a [ProcessMaker Data Connector](../../
    * **Radio/Checkbox Group:** Select the **Radio/Checkbox Group** option to display the control as a group of checkboxes. ![](../../../../.gitbook/assets/select-list-control-render-options-as-screen-builder-processes.png) 
 6. From the **Data Connector** drop-down menu, select from which ProcessMaker Data Connector to reference as a data source. If a ProcessMaker Data Connector does not exist, this setting has no options. ![](../../../../.gitbook/assets/select-list-control-data-connector-screen-builder-processes.png) 
 7. From the **Endpoint** drop-down menu, select which [Endpoint](../../../data-connector-management/what-is-a-data-connector.md#what-is-an-endpoint) to reference from the selected ProcessMaker Data Connector. These Endpoints are configured from the ProcessMaker Data Connector itself. Depending on the ProcessMaker Data Connector selected from the **Data Connector Name** drop-down menu, these Endpoints may reference API endpoints, ProcessMaker Collection records, or other data source endpoints. ![](../../../../.gitbook/assets/select-list-control-endpoint-screen-builder-processes.png) 
-8. In the **Element Name** setting, enter the name of the JSON array within the selected ProcessMaker Data Connector from which to reference its objects as options that display in this control. This JSON data array and its content become part of that Request's data. Use [JSON dot notation](../../../../json-the-foundation-of-request-data/what-is-json.md#json-dot-notation) as necessary. **response** is the default value. ![](../../../../.gitbook/assets/select-list-control-element-name-screen-builder-processes.png) 
-9. In the **Value** setting, enter the JSON key name from within the JSON array selected from the **Element Name** setting to reference its objects as options that display in this control. To use all items in the JSON array, do not enter a value into the **Value** setting. Use JSON dot notation as necessary. Optionally, use [mustache syntax](https://mustache.github.io/mustache.5.html) to indicate the JSON key name from within the JSON array. **value** is the default setting. See [Dependent Field Design Example Using Select List Controls](select-list-control-settings.md#dependent-field-design-example-using-select-list-controls). ![](../../../../.gitbook/assets/value-select-list-control-screen-builder-designer.png) 
-10. In the **Content** setting, enter the JSON object key name within the JSON array referenced from the **Value** setting to display its content as options in this control. To use all JSON object key names in the JSON object, do not enter a value into the **Content** setting. Use JSON dot notation as necessary. Optionally, use mustache syntax to indicate the JSON object key name from within the JSON array.
+8. In the **Element Name** setting, enter the name of the JSON array containing the JSON response from which to reference its objects as options that display in this control. Use [JSON dot notation](../../../../json-the-foundation-of-request-data/what-is-json.md#json-dot-notation) as necessary if the relevant JSON array containing the object key name is embedded in other JSON objects and/or arrays. **response** is the default value. ![](../../../../.gitbook/assets/select-list-control-element-name-screen-builder-processes.png) 
+9. In the **Value** setting, enter the JSON object key name from within the JSON array containing the JSON response that this control stores in that Request's data when this ProcessMaker Screen submits. To use all items in the JSON array, do not enter a value into the **Value** setting. Use JSON dot notation as necessary if the relevant JSON array containing the object key name is embedded in other JSON objects and/or arrays. Optionally, use [mustache syntax](https://mustache.github.io/mustache.5.html) to indicate the JSON key name from within the JSON array. **value** is the default setting. See [Dependent Field Design Example Using Select List Controls](select-list-control-settings.md#dependent-field-design-example-using-select-list-controls). ![](../../../../.gitbook/assets/value-select-list-control-screen-builder-designer.png) 
+10. In the **Content** setting, enter the JSON object key name from within the JSON array containing the JSON response to display as each option in this control. To use all JSON object key names in the JSON object, do not enter a value into the **Content** setting. Use JSON dot notation as necessary. Optionally, use mustache syntax to indicate the JSON object key name from within the JSON array.
 
     **content** is the default value.  
     ![](../../../../.gitbook/assets/content-select-list-control-screen-builder-designer.png) 
@@ -485,14 +485,17 @@ Click the video below to watch a demonstration of this example.
 
 This example contains the following procedures in this order:
 
-1. **Create the ProcessMaker Data Connector:** Create the ProcessMaker Data Connector that calls the API containing the list of universities. This is a public API that has been made available for demonstration purposes, so it does not require host authentication. The list of universities is in a JSON object. Though the host provides the domains, names, and countries of origin for each university in its list,  this example references only the university name. [The host provides public information about this API.](https://github.com/Hipo/university-domains-list-api) See [Create the ProcessMaker Data Connector](select-list-control-settings.md#create-the-processmaker-data-connector).
-2. **Configure the Select List control:** After the ProcessMaker Data Connector is created, create a ProcessMaker Screen that contains a configure a Select List control. Configure the Select List control to use this ProcessMaker Data Connector as its data source to get the list of universities as the Select List control's options. See [Configure the Select List Control](../../../data-connector-management/data-connector-example.md#configure-the-select-list-control).
-3. **Create the Process model:** Create the Process model to include a Form Task element that references the ProcessMaker Screen containing the Select List control. See [Create the Process Model](../../../data-connector-management/data-connector-example.md#create-the-process-model).
-4. **Start a Request:** Start a Request for the Process as designed in the Process model for this example. See [Start a Request for the Example Process](../../../data-connector-management/data-connector-example.md#start-a-request-for-the-example-process).
+1. **Create the ProcessMaker Data Connector that gets the list of countries for one Select List control:** Create the ProcessMaker Data Connector that calls the API to get a JSON array that contains a JSON object for each country. One Select List control uses this ProcessMaker Data Connector's API response to get the list of countries as its options. This is a public API that has been made available for demonstration purposes, so it does not require host authentication. See [Create the ProcessMaker Data Connector That Gets a JSON Array of Countries in its Response](select-list-control-settings.md#create-the-processmaker-data-connector-that-gets-a-json-array-of-countries-in-its-response).
+2. **Create the ProcessMaker Data Connector that gets the list of states and/or provinces for the dependent Select List control based on the first Select List control's option selection:** See [Create the ProcessMaker Data Connector That Gets a JSON Array of States and Provinces in its Response Based on a Selected Country](select-list-control-settings.md#create-the-processmaker-data-connector-that-gets-a-json-array-of-states-and-provinces-in-its-response-based-on-a-selected-country).
+3. **Configure the Select List control to select a country:**  See .
+4. **Configure the Watcher that monitors for a country selection:** See .
+5. **Configure the dependent Select List control to select a state/province based on the country selection:** See .
+6. **Create the Process model:** Create the Process model to include a Form Task element that references the ProcessMaker Screen containing the Select List controls. See Create the Process Model.
+7. **Start a Request:** Start a Request for the Process as designed in the Process model for this example. See Start a Request for the Example Process.
 
-### Create the ProcessMaker Data Connector
+### Create the ProcessMaker Data Connector That Gets a JSON Array of Countries in its Response
 
-Follow these steps to create the ProcessMaker Data Connector as [described in this example](select-list-control-settings.md#overview):
+Follow these steps to create the ProcessMaker Data Connector that gets a JSON array containing the JSON objects of countries that the first Select List control uses to display a list of countries as its options as [described in this example](select-list-control-settings.md#overview):
 
 1. [Log on](../../../../using-processmaker/log-in.md#log-in) to ProcessMaker.
 2. Click the **Designer** option from the top menu. The **Processes** page displays.
@@ -508,32 +511,31 @@ Follow these steps to create the ProcessMaker Data Connector as [described in th
    ![](../../../../.gitbook/assets/dependent-fields-example-create-data-connector-screen.png) 
 
 10. Click **Save**. The **Details** tab displays to edit the settings for this ProcessMaker Data Connector.
-11. [Continue by adding the Endpoint that gets the list of countries](select-list-control-settings.md#add-the-endpoint-that-gets-the-list-of-countries).
+11. Click the **Endpoints** tab. This example requires no changes to the **Authorization** tab.
+12. Click the **+Endpoint** button. The **Add Endpoint** screen displays. ![](../../../../.gitbook/assets/add-endpoint-screen-data-connectors-package.png) 
+13. In the **Purpose** setting, optionally edit the purpose for this Endpoint. The value the **Purpose** setting displays from the ProcessMaker asset when configuring the data source from that ProcessMaker asset. In this example, this setting value displays from the Select List control to select this Endpoint to get the list of universities. Therefore, provide a concise but relevant purpose for this Endpoint so other ProcessMaker designers understand its function. This example uses the default `list` for this setting.
+14. In the **Description** setting, enter a description of this Endpoint. This example uses the following description: `Gets a list of countries.`.
+15. From the **Method** drop-down menu, select the **GET** option. The GET method reads data.
+16. In the **URL** setting, enter the following URL for this example: `https://restcountries.eu/rest/v2/all`. This URL is provided by [this host](https://restcountries.eu/).
+17. Click **Add**. The new Endpoint displays in the **Endpoints** tab. ![](../../../../.gitbook/assets/config-sub-tab-endpoints-tab-data-connector-package-designer.png) 
+18. Click the **Test** sub-tab in the **Endpoints** tab to verify that the Endpoint functions as intended. ![](../../../../.gitbook/assets/test-sub-tab-endpoints-tab-data-connector-package-designer.png) 
+19. Click **Run**. If configured correctly, the **Test** tab displays the Endpoint response. ![](../../../../.gitbook/assets/dependent-fields-example-test-sub-tab-endpoint-data-connector.png) 
+20. Notice which element in each JSON object within the Endpoint response contains the name of the university. Look at the first JSON object. Notice the following key names in this JSON object:
 
-#### Add the Endpoint That Gets the List of Countries
+    * **`name`:** Notice that the `name` key name in the JSON object contains the name of each country; the value of the `name` key name displays as each option in the Select List control from which a country name is selected.
+    * **`alpha2Code`:** Notice the `alpha2Code` key name contains the two-letter [International Organization for Standardization \(ISO\) code](https://www.iso.org/iso-3166-country-codes.html) for each country; this Select List control stores the value of the `alpha2Code` key name element. In this example, a [Watcher](../manage-watchers/what-is-a-watcher.md) uses the ISO country code to determine which region\(s\), state\(s\), territory\(ies\), and/or province\(s\) to display in the dependent Select List control.
 
-Follow these steps to add the Endpoint in the `Call Countries API` ProcessMaker Data Connector that gets the list of countries as [described in this example](select-list-control-settings.md#overview):
+    Make note of the relevant key name\(s\) that contains relevant data from a data source, as the ProcessMaker asset requires this element name when configuring which data that asset requires from the ProcessMaker Data Connector's Endpoint response. In this example, the ProcessMaker Screen containing the Select List control is the ProcessMaker asset. See [Example JSON Object from the Endpoint Response for the List of Countries](select-list-control-settings.md#example-json-object-from-the-endpoint-response-for-the-list-of-countries).
 
-1. Edit the `Call Countries API` ProcessMaker Data Connector used in this example. If this ProcessMaker Data Connector does not exist yet, [create it](select-list-control-settings.md#create-the-processmaker-data-connector).
-2. Click the **Endpoints** tab. This example requires no changes to the **Authorization** tab.
-3. Click the **+Endpoint** button. The **Add Endpoint** screen displays. ![](../../../../.gitbook/assets/add-endpoint-screen-data-connectors-package.png) 
-4. In the **Purpose** setting, optionally edit the purpose for this Endpoint. The value the **Purpose** setting displays from the ProcessMaker asset when configuring the data source from that ProcessMaker asset. In this example, this setting value displays from the Select List control to select this Endpoint to get the list of universities. Therefore, provide a concise but relevant purpose for this Endpoint so other ProcessMaker designers understand its function. This example uses the default `list` for this setting.
-5. In the **Description** setting, enter a description of this Endpoint. This example uses the following description: `Gets a list of countries.`.
-6. From the **Method** drop-down menu, select the **GET** option. The GET method reads data.
-7. In the **URL** setting, enter the following URL for this example: `https://restcountries.eu/rest/v2/all`. This URL is provided by [this host](https://restcountries.eu/).
-8. Click **Add**. The new Endpoint displays in the **Endpoints** tab. ![](../../../../.gitbook/assets/config-sub-tab-endpoints-tab-data-connector-package-designer.png) 
-9. Click the **Test** sub-tab in the **Endpoints** tab to verify that the Endpoint functions as intended. ![](../../../../.gitbook/assets/test-sub-tab-endpoints-tab-data-connector-package-designer.png) 
-10. Click **Run**. If configured correctly, the **Test** tab displays the Endpoint response. ![](../../../../.gitbook/assets/dependent-fields-example-test-sub-tab-endpoint-data-connector.png) 
-11. Notice which element in each JSON object within the Endpoint response contains the name of the university. Look at the first JSON object. Notice that the `name` element in the JSON object contains the name of each country. Make note of the element's name that contains relevant data from a data source, as the ProcessMaker asset requires this element name when configuring which data that asset requires from the ProcessMaker Data Connector's Endpoint response. In this example, the ProcessMaker Screen containing the Select List control is the ProcessMaker asset. See [Example JSON Object from the Endpoint Response for the List of Countries](select-list-control-settings.md#example-json-object-from-the-endpoint-response-for-the-list-of-countries).
-12. Click **Save** to save the Endpoint. The ProcessMaker Data Connector is configured for this example.
+21. Click **Save** to save the Endpoint. The ProcessMaker Data Connector is configured for this example.
 
-#### Add the Endpoint That Gets the List of US States and Territories
+### Create the ProcessMaker Data Connector That Gets a JSON Array of States and Provinces in its Response Based on a Selected Country
 
 
 
 ### Example JSON Object from the Endpoint Response for the List of Countries
 
-Below is one JSON object from the Endpoint response that gets the list of countries. The name element is relevant to configure the Select List control that lists countries by using the `Call Countries API` ProcessMaker Data Connector.
+Below is one JSON object from the Endpoint response that gets the list of countries. The key names relevant in this JSON object for [this example](select-list-control-settings.md#overview) are `Call Countries API` and `alpha2Code`.
 
 ```text
 {
