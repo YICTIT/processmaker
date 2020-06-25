@@ -508,41 +508,119 @@ Follow these steps to create the ProcessMaker Data Connector as [described in th
    ![](../../../../.gitbook/assets/dependent-fields-example-create-data-connector-screen.png) 
 
 10. Click **Save**. The **Details** tab displays to edit the settings for this ProcessMaker Data Connector.
-11. Click the **Endpoints** tab. This example requires no changes to the **Authorization** tab.
-12. Click the **+Endpoint** button. The **Add Endpoint** screen displays. ![](../../../../.gitbook/assets/add-endpoint-screen-data-connectors-package.png) 
-13. In the **Purpose** setting, optionally edit the purpose for this Endpoint. The value the **Purpose** setting displays from the ProcessMaker asset when configuring the data source from that ProcessMaker asset. In this example, this setting value displays from the Select List control to select this Endpoint to get the list of universities. Therefore, provide a concise but relevant purpose for this Endpoint so other ProcessMaker designers understand its function. This example uses `list universities` for this setting.
-14. In the **Description** setting, enter a description of this Endpoint. This example uses the following description: `This Endpoint gets a JSON list of worldwide universities.`.
-15. From the **Method** drop-down menu, select the **GET** option. The GET method reads data.
-16. In the **URL** setting, enter the following URL for this example: `http://universities.hipolabs.com/search?`. This URL is truncated from the host's [documented example](https://github.com/Hipo/university-domains-list-api) how to search its public API. ![](../../../../.gitbook/assets/config-sub-tab-endpoints-tab-data-connector-package-designer.png) 
-17. Click the **Test** icon![](../../../../.gitbook/assets/test-endpoint-icon-data-connector-package.png)to verify that the Endpoint functions as intended. If configured correctly, the **Test** screen displays the Endpoint response. ![](../../../../.gitbook/assets/test-screen-data-connector-example-package.png) 
-18. Notice which element in each JSON object within the Endpoint response contains the name of the university. Look at the first JSON object in the array that is the list of universities:  
-    `{` 
+11. [Continue by adding the Endpoint that gets the list of countries](select-list-control-settings.md#add-the-endpoint-that-gets-the-list-of-countries).
 
-        `"domains": [` 
+#### Add the Endpoint That Gets the List of Countries
 
-            `"marywood.edu"` 
+Follow these steps to add the Endpoint in the `Call Countries API` ProcessMaker Data Connector that gets the list of countries as [described in this example](select-list-control-settings.md#overview):
 
-        `],` 
+1. Edit the `Call Countries API` ProcessMaker Data Connector used in this example. If this ProcessMaker Data Connector does not exist yet, [create it](select-list-control-settings.md#create-the-processmaker-data-connector).
+2. Click the **Endpoints** tab. This example requires no changes to the **Authorization** tab.
+3. Click the **+Endpoint** button. The **Add Endpoint** screen displays. ![](../../../../.gitbook/assets/add-endpoint-screen-data-connectors-package.png) 
+4. In the **Purpose** setting, optionally edit the purpose for this Endpoint. The value the **Purpose** setting displays from the ProcessMaker asset when configuring the data source from that ProcessMaker asset. In this example, this setting value displays from the Select List control to select this Endpoint to get the list of universities. Therefore, provide a concise but relevant purpose for this Endpoint so other ProcessMaker designers understand its function. This example uses the default `list` for this setting.
+5. In the **Description** setting, enter a description of this Endpoint. This example uses the following description: `Gets a list of countries.`.
+6. From the **Method** drop-down menu, select the **GET** option. The GET method reads data.
+7. In the **URL** setting, enter the following URL for this example: `https://restcountries.eu/rest/v2/all`. This URL is provided by [this host](https://restcountries.eu/).
+8. Click **Add**. The new Endpoint displays in the **Endpoints** tab. ![](../../../../.gitbook/assets/config-sub-tab-endpoints-tab-data-connector-package-designer.png) 
+9. Click the **Test** sub-tab in the **Endpoints** tab to verify that the Endpoint functions as intended. ![](../../../../.gitbook/assets/test-sub-tab-endpoints-tab-data-connector-package-designer.png) 
+10. Click **Run**. If configured correctly, the **Test** tab displays the Endpoint response. ![](../../../../.gitbook/assets/dependent-fields-example-test-sub-tab-endpoint-data-connector.png) 
+11. Notice which element in each JSON object within the Endpoint response contains the name of the university. Look at the first JSON object. Notice that the `name` element in the JSON object contains the name of each country. Make note of the element's name that contains relevant data from a data source, as the ProcessMaker asset requires this element name when configuring which data that asset requires from the ProcessMaker Data Connector's Endpoint response. In this example, the ProcessMaker Screen containing the Select List control is the ProcessMaker asset. See [Example JSON Object from the Endpoint Response for the List of Countries](select-list-control-settings.md#example-json-object-from-the-endpoint-response-for-the-list-of-countries).
+12. Click **Save** to save the Endpoint. The ProcessMaker Data Connector is configured for this example.
 
-        `"country": "United States",` 
+### Example JSON Object from the Endpoint Response for the List of Countries
 
-        `"web_pages": [` 
+Below is one JSON object from the Endpoint response that gets the list of countries. The name element is relevant to configure the Select List control that lists countries by using the `Call Countries API` ProcessMaker Data Connector.
 
-            `"`[`http://www.marywood.edu`](http://www.marywood.edu)`"` 
-
-        `],` 
-
-        `"name": "Marywood University",` 
-
-        `"state-province": null,` 
-
-        `"alpha_two_code": "PA"` 
-
-    `},`
-
-    The `name` element contains the name of each university in this JSON object. Make note of the element's name that contains relevant data from a data source, as the ProcessMaker asset requires this element name when configuring which data that asset requires from the ProcessMaker Data Connector's Endpoint response. In this example, the ProcessMaker Screen containing the Select List control is the ProcessMaker asset.
-
-19. Click **Close** to close the **Test** screen, and then click **Save** to save the Endpoint. The ProcessMaker Data Connector is configured for this example.
+```text
+{
+        "name": "Afghanistan",
+        "topLevelDomain": [
+            ".af"
+        ],
+        "alpha2Code": "AF",
+        "alpha3Code": "AFG",
+        "callingCodes": [
+            "93"
+        ],
+        "capital": "Kabul",
+        "altSpellings": [
+            "AF",
+            "Afġānistān"
+        ],
+        "region": "Asia",
+        "subregion": "Southern Asia",
+        "population": 27657145,
+        "latlng": [
+            33,
+            65
+        ],
+        "demonym": "Afghan",
+        "area": 652230,
+        "gini": 27.8,
+        "timezones": [
+            "UTC+04:30"
+        ],
+        "borders": [
+            "IRN",
+            "PAK",
+            "TKM",
+            "UZB",
+            "TJK",
+            "CHN"
+        ],
+        "nativeName": "افغانستان",
+        "numericCode": "004",
+        "currencies": [
+            {
+                "code": "AFN",
+                "name": "Afghan afghani",
+                "symbol": "؋"
+            }
+        ],
+        "languages": [
+            {
+                "iso639_1": "ps",
+                "iso639_2": "pus",
+                "name": "Pashto",
+                "nativeName": "پښتو"
+            },
+            {
+                "iso639_1": "uz",
+                "iso639_2": "uzb",
+                "name": "Uzbek",
+                "nativeName": "Oʻzbek"
+            },
+            {
+                "iso639_1": "tk",
+                "iso639_2": "tuk",
+                "name": "Turkmen",
+                "nativeName": "Türkmen"
+            }
+        ],
+        "translations": {
+            "de": "Afghanistan",
+            "es": "Afganistán",
+            "fr": "Afghanistan",
+            "ja": "アフガニスタン",
+            "it": "Afghanistan",
+            "br": "Afeganistão",
+            "pt": "Afeganistão",
+            "nl": "Afghanistan",
+            "hr": "Afganistan",
+            "fa": "افغانستان"
+        },
+        "flag": "https://restcountries.eu/data/afg.svg",
+        "regionalBlocs": [
+            {
+                "acronym": "SAARC",
+                "name": "South Asian Association for Regional Cooperation",
+                "otherAcronyms": [],
+                "otherNames": []
+            }
+        ],
+        "cioc": "AFG"
+    },
+```
 
 ## Related Topics <a id="related-topics"></a>
 

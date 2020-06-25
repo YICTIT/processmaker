@@ -146,7 +146,7 @@ Follow these steps to add an Endpoint to a ProcessMaker Data Connector:
 10. Do one of the following:
     * Optionally, add Request headers to this Endpoint. The Request header\(s\) are sent to the data source's resource when this Endpoint interacts with that resource. See [Add Endpoint Request Headers](edit-a-data-connector.md#add-endpoint-request-headers).
     * Optionally, add a Request body to this Endpoint. The Request body is sent to the data source's resource when this Endpoint interacts with that resource. See [Add an Endpoint Request Body](edit-a-data-connector.md#add-an-endpoint-request-body).
-    * Optionally, add sample Request data that is sent to the data source's resource when this Endpoint interacts with that resource. See [Add Endpoint Sample Request Data](edit-a-data-connector.md#add-endpoint-sample-request-data).
+    * Optionally, add sample Request data that is sent to the data source's resource when this Endpoint interacts with that resource. Optional include sample Request data when including a Request body for an Endpoint. See [Add Endpoint Sample Request Data](edit-a-data-connector.md#add-endpoint-sample-request-data).
     * Click the **List Endpoints** button to display all Endpoints in this ProcessMaker Data Connector in the **Endpoints** tab.
 
 #### Add an Endpoint Request Header
@@ -194,7 +194,7 @@ Follow these steps to add a request body to a ProcessMaker Data Connector's Endp
 
 #### Add Endpoint Sample Request Data
 
-An Endpoint may send sample ProcessMaker Request data when that Endpoint makes it request to the ProcessMaker API so that the ProcessMaker API resource may process that Request data prior to its response.
+An Endpoint may send sample ProcessMaker Request data when that Endpoint makes it request to the ProcessMaker API so that the ProcessMaker API resource may process that Request data prior to its response. Optional include sample Request data when including a Request body for an Endpoint.
 
 {% hint style="info" %}
 Do not send ProcessMaker Request data to data source other than the ProcessMaker API. A third-party data source cannot recognize the Request data.
@@ -242,7 +242,7 @@ Follow these steps to view or edit a ProcessMaker Data Connector's Endpoint:
 6. Do one of the following:
    * Optionally, [add](edit-a-data-connector.md#add-an-endpoint-request-header), [edit](edit-a-data-connector.md#edit-an-endpoint-request-header) or [delete](edit-a-data-connector.md#delete-an-endpoint-request-header) Request headers to this Endpoint. The Request header\(s\) are sent to the data source's resource when this Endpoint interacts with that resource.
    * Optionally, [add](edit-a-data-connector.md#add-an-endpoint-request-body) or [edit](edit-a-data-connector.md#edit-an-endpoint-request-body) the Request body to this Endpoint. The Request body is sent to the data source's resource when this Endpoint interacts with that resource.
-   * Optionally, [add](edit-a-data-connector.md#add-endpoint-sample-request-data) or [edit](edit-a-data-connector.md#edit-endpoint-sample-request-data) sample Request data that is sent to the data source's resource when this Endpoint interacts with that resource.
+   * Optionally, [add](edit-a-data-connector.md#add-endpoint-sample-request-data) or [edit](edit-a-data-connector.md#edit-endpoint-sample-request-data) sample Request data that is sent to the data source's resource when this Endpoint interacts with that resource. Optional include sample Request data when including a Request body for an Endpoint.
    * Click the **List Endpoints** button to display all Endpoints in this ProcessMaker Data Connector in the **Endpoints** tab.
 
 #### Edit an Endpoint Request Header
@@ -299,7 +299,7 @@ Follow these steps to edit a request body to a ProcessMaker Data Connector's End
 
 #### Edit Endpoint Sample Request Data
 
-An Endpoint may send sample ProcessMaker Request data when that Endpoint makes it request to the ProcessMaker API so that the ProcessMaker API resource may process that Request data prior to its response.
+An Endpoint may send sample ProcessMaker Request data when that Endpoint makes it request to the ProcessMaker API so that the ProcessMaker API resource may process that Request data prior to its response. Optional include sample Request data when including a Request body for an Endpoint.
 
 {% hint style="info" %}
 Do not send ProcessMaker Request data to data source other than the ProcessMaker API. A third-party data source cannot recognize the Request data.

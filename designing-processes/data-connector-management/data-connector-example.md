@@ -53,7 +53,7 @@ Follow these steps to create the ProcessMaker Data Connector as [described in th
 16. In the **URL** setting, enter the following URL for this example: `http://universities.hipolabs.com/search?`. This URL is truncated from the host's [documented example](https://github.com/Hipo/university-domains-list-api) how to search its public API. ![](../../.gitbook/assets/config-sub-tab-endpoints-tab-data-connector-package-designer.png) 
 17. Click **Add**. The **Endpoints** tab displays the configuration settings for the new Endpoint in the **Config** sub-tab.
 18. Click the **Test** tab, and then click the **Run** button to verify that the Endpoint functions as intended. If configured correctly, the Endpoint response displays. ![](../../.gitbook/assets/test-screen-data-connector-example-package.png) 
-19. Notice which element in each JSON object within the Endpoint response contains the name of the university. Look at the first JSON object in the array that is the list of universities:  
+19. Notice which element in each JSON object within the Endpoint response contains the name of the university. Look at the first JSON object that is the list of universities:  
     `{` 
 
         `"domains": [` 
