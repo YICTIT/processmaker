@@ -487,10 +487,10 @@ This example contains the following procedures in this order:
 
 1. **Create the ProcessMaker Data Connector that gets the list of countries for one Select List control:** Create the ProcessMaker Data Connector that gets a JSON array containing a JSON object for each country. One Select List control in this example uses this ProcessMaker Data Connector's API response to get the list of countries as its options. This ProcessMaker Data Connector accesses a public API that has been made available for demonstration purposes, so it does not require host authentication. See [Create the ProcessMaker Data Connector That Gets a JSON Array of Countries in its Response](select-list-control-settings.md#create-the-processmaker-data-connector-that-gets-a-json-array-of-countries-in-its-response).
 2. **Create the ProcessMaker Data Connector that gets the list of states and/or provinces for the dependent Select List control based on the first Select List control's option selection:** After selecting a country as an option from the first Select List control, create another ProcessMaker Data Connector that gets the region\(s\), state\(s\), department\(s\), and/or province\(s\) for the selected country. This ProcessMaker Data Connector access an API host under [Creative Commons license](http://creativecommons.org/licenses/by/3.0.) that requires signing up for authentication. To demonstrate how to add request headers to a ProcessMaker Data Connector's Endpoint, the authentication information for this API host is configured in an Endpoint's request headers instead of the **Authentication** tab of the Data Connector. Before creating this ProcessMaker Data Connector, [read about the API host](https://rapidapi.com/wirefreethought/api/geodb-cities/details), and then [sign up to access the API](https://rapidapi.com/). Note that third-party APIs change their terms of use, so ensure that you are comfortable signing up to use this API host for this example. See [Create the ProcessMaker Data Connector That Gets a JSON Array of States and Provinces in its Response Based on a Selected Country](select-list-control-settings.md#create-the-processmaker-data-connector-that-gets-a-json-array-of-states-and-provinces-in-its-response-based-on-a-selected-country).
-3. **Configure the Select List control to select a country:**  See .
+3. **Configure the Select List control to select a country:** From the ProcessMaker Screen to use for this example, add and configure the Select List control from which to select a country. See [Configure the Select List Control's Data Source to Get the List of Countries](select-list-control-settings.md#configure-the-select-list-controls-data-source-to-get-the-list-of-countries).
 4. **Configure the Watcher that monitors for a country selection:** See .
 5. **Configure the dependent Select List control to select a state/province based on the country selection:** See .
-6. **Create the Process model:** Create the Process model to include a Form Task element that references the ProcessMaker Screen containing the Select List controls. See Create the Process Model.
+6. **Create the Process model:** Create the Process model to include a Form Task element that references the ProcessMaker Screen containing the Select List controls and Watcher. See Create the Process Model.
 7. **Start a Request:** Start a Request for the Process as designed in the Process model for this example. See Start a Request for the Example Process.
 
 ### Create the ProcessMaker Data Connector That Gets a JSON Array of Countries in its Response
@@ -572,10 +572,17 @@ Follow these steps to create the ProcessMaker Data Connector that gets a JSON ar
 26. Click **Save**. The second request header displays in the **Request Headers** sub-tab. ![](../../../../.gitbook/assets/dependent-fields-example-request-headers-for-get-locales.png) 
 27. Click **Save** to save the Endpoint with the two configured request headers. Do not test this Endpoint because it will not successfully test: the URL this Endpoint uses does not have a value for the `country` Request variable from the Select List control from which a country is selected. The ProcessMaker Data Connector is configured for this example.
 
-### Create the Select List Control to Select a Country
+### Configure the Select List Control's Data Source to Get the List of Countries
 
+Follow these steps to configure the Select List control's data source to get the list of countries as [described in this example](select-list-control-settings.md#overview):
 
-
+1. [Log on](../../../../using-processmaker/log-in.md#log-in) to ProcessMaker.
+2. [Create the ProcessMaker Screen](../../manage-forms/create-a-new-form.md#create-a-new-processmaker-screen) for the example to contain the two Select List controls and [Watcher](../manage-watchers/what-is-a-watcher.md).
+3. [Add the Select List control](select-list-control-settings.md#add-the-control-to-a-processmaker-screen) from which to select a country from the list of countries.
+4. [Configure the settings](select-list-control-settings.md#inspector-settings) for the Select List control. This procedure only discusses how to configure this Select List control's data source settings. However, in the [**Variable Name** setting](select-list-control-settings.md#variable-name), enter `country` since both the Watcher and the ProcessMaker Data Connector that gets the regions for the selected country from this Select List control expect this **Variable Name** setting value. ![](../../../../.gitbook/assets/dependent-fields-example-variable-name-setting-select-list-control.png) 
+5. Click the **Data Source** panel.
+6. From the **Data Source** drop-down menu, select **Data Connector**. ![](../../../../.gitbook/assets/dependent-fields-example-data-source-setting-select-list-control.png) 
+7. 
 ### Example JSON Object from the Endpoint Response for the List of Countries
 
 Below is one JSON object from the Endpoint response that gets the list of countries. The key names relevant in this JSON object for [this example](select-list-control-settings.md#overview) are `Call Countries API` and `alpha2Code`.
