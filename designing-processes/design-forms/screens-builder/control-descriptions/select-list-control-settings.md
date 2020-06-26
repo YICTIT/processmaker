@@ -513,7 +513,7 @@ Follow these steps to create the ProcessMaker Data Connector that gets a JSON ar
 10. Click **Save**. The **Details** tab displays to edit the settings for this ProcessMaker Data Connector.
 11. Click the **Endpoints** tab. This example requires no changes to the **Authorization** tab.
 12. Click the **+Endpoint** button. The **Add Endpoint** screen displays. ![](../../../../.gitbook/assets/add-endpoint-screen-data-connectors-package.png) 
-13. In the **Purpose** setting, optionally edit the purpose for this Endpoint. The value the **Purpose** setting displays from the ProcessMaker asset when configuring the data source from that ProcessMaker asset. In this example, this setting value displays from the Select List control to select this Endpoint to get the list of universities. Therefore, provide a concise but relevant purpose for this Endpoint so other ProcessMaker designers understand its function. This example uses the default `list` for this setting.
+13. In the **Purpose** setting, optionally edit the purpose for this [Endpoint](../../../data-connector-management/what-is-an-endpoint.md). The value the **Purpose** setting displays from the ProcessMaker asset when configuring the data source from that ProcessMaker asset. In this example, this setting value displays from the Select List control to select this Endpoint to get the list of countries. Therefore, provide a concise but relevant purpose for this Endpoint so other ProcessMaker designers understand its function. This example uses the default `list` for this setting.
 14. In the **Description** setting, enter a description of this Endpoint. This example uses the following description: `Gets a list of countries.`.
 15. From the **Method** drop-down menu, select the **GET** option. The GET method reads data.
 16. In the **URL** setting, enter the following URL for this example: `https://restcountries.eu/rest/v2/all`. This URL is provided by [this host](https://restcountries.eu/).
@@ -540,32 +540,41 @@ Follow these steps to create the ProcessMaker Data Connector that gets a JSON ar
 3. Click the **Data Connectors** icon![](../../../../.gitbook/assets/data-connectors-icon-package.png)from the left sidebar. The **Data Connectors** tab displays all ProcessMaker Data Connectors in the **Data Connectors** page.
 4. Verify the ProcessMaker Data Connector Category exists in which to assign this Data Connector. If this Category does not exist, see [Create a New Data Connector Category](../../../data-connector-management/manage-data-connectors/manage-data-connector-categories/create-a-new-data-connector-category.md).
 5. Click the **+Data Connector** button. The **Create Data Connector** screen displays. ![](../../../../.gitbook/assets/create-data-connector-screen-package-designer.png) 
-6. In the **Name** setting, enter the name of the ProcessMaker Data Connector. This example uses the name `Call Countries API`.
+6. In the **Name** setting, enter the name of the ProcessMaker Data Connector. This example uses the name `Get Regions`.
 7. In the **Description** setting, enter a description of this ProcessMaker Data Connector.
-8. From the **Authentication Type** drop-down menu, select the **No Auth** option. This example uses this option because the host does not require authentication from its publicly accessible API.
+8. From the **Authentication Type** drop-down menu, select the **No Auth** option. To demonstrate how to add request headers to a ProcessMaker Data Connector's [Endpoint](../../../data-connector-management/what-is-an-endpoint.md), the authentication information for this API host is configured in an Endpoint's request headers instead of the Authentication tab of the Data Connector.
 9. From the **Category** drop-down menu, select the ProcessMaker Data Connector Category to assign this Data Connector.
 
    This example uses the following settings.  
-   ![](../../../../.gitbook/assets/dependent-fields-example-create-data-connector-screen.png) 
+   ![](../../../../.gitbook/assets/dependent-fields-example-create-data-connector-2-screen.png) 
 
 10. Click **Save**. The **Details** tab displays to edit the settings for this ProcessMaker Data Connector.
-11. Click the **Endpoints** tab. This example requires no changes to the **Authorization** tab.
+11. Click the **Endpoints** tab since this example provides API authentication information in an Endpoint's request headers.
 12. Click the **+Endpoint** button. The **Add Endpoint** screen displays. ![](../../../../.gitbook/assets/add-endpoint-screen-data-connectors-package.png) 
-13. In the **Purpose** setting, optionally edit the purpose for this Endpoint. The value the **Purpose** setting displays from the ProcessMaker asset when configuring the data source from that ProcessMaker asset. In this example, this setting value displays from the Select List control to select this Endpoint to get the list of universities. Therefore, provide a concise but relevant purpose for this Endpoint so other ProcessMaker designers understand its function. This example uses the default `list` for this setting.
-14. In the **Description** setting, enter a description of this Endpoint. This example uses the following description: `Gets a list of countries.`.
+13. In the **Purpose** setting, optionally edit the purpose for this Endpoint. The value the **Purpose** setting displays from the ProcessMaker asset when configuring the data source from that ProcessMaker asset. In this example, this setting value displays from the Select List control to select this Endpoint to get the list of regions from the selected country from the first Select List control. Therefore, provide a concise but relevant purpose for this Endpoint so other ProcessMaker designers understand its function. This example uses the default `list` for this setting.
+14. In the **Description** setting, enter a description of this Endpoint. This example uses the following description: `Gets a list of regions from the selected country.`.
 15. From the **Method** drop-down menu, select the **GET** option. The GET method reads data.
-16. In the **URL** setting, enter the following URL for this example: `https://restcountries.eu/rest/v2/all`. This URL is provided by [this host](https://restcountries.eu/).
-17. Click **Add**. The new Endpoint displays in the **Endpoints** tab. ![](../../../../.gitbook/assets/config-sub-tab-endpoints-tab-data-connector-package-designer.png) 
-18. Click the **Test** sub-tab in the **Endpoints** tab to verify that the Endpoint functions as intended. ![](../../../../.gitbook/assets/test-sub-tab-endpoints-tab-data-connector-package-designer.png) 
-19. Click **Run**. If configured correctly, the **Test** tab displays the Endpoint response. ![](../../../../.gitbook/assets/dependent-fields-example-test-sub-tab-endpoint-data-connector.png) 
-20. Notice which element in each JSON object within the Endpoint response contains the name of the university. Look at the first JSON object. Notice the following key names in this JSON object:
+16. In the **URL** setting, enter the following URL for this example: `https://wft-geo-db.p.rapidapi.com/v1/geo/countries/{{country}}/regions`. Notice how this URL contains the API parameter `{{country}}` within it. This URL uses [mustache syntax](https://mustache.github.io/mustache.5.html) to get the value from the [Request data](../../../../json-the-foundation-of-request-data/what-is-request-data.md) of the Select List control's country selection that is named `country` in this example. See [Create the Select List Control to Select a Country](select-list-control-settings.md#create-the-select-list-control-to-select-a-country).
+17. Click **Add**. The new Endpoint displays in the **Endpoints** tab. ![](../../../../.gitbook/assets/dependent-fields-example-add-endpoint-screen-2-data-connector.png) 
+18. Click the **Request Headers** sub-tab in the **Endpoints** tab to add request headers that contain the authentication information to access the host's API. This example requires two request headers that  provide valid authentication to access this API's endpoint.  
+    ![](../../../../.gitbook/assets/dependent-fields-example-request-headers-sub-tab-endpoints-tab-data-connector.png) 
 
-    * **`name`:** Notice that the `name` key name in the JSON object contains the name of each country; the value of the `name` key name displays as each option in the Select List control from which a country name is selected.
-    * **`alpha2Code`:** Notice the `alpha2Code` key name contains the two-letter [International Organization for Standardization \(ISO\) code](https://www.iso.org/iso-3166-country-codes.html) for each country; this Select List control stores the value of the `alpha2Code` key name element. In this example, a [Watcher](../manage-watchers/what-is-a-watcher.md) uses the ISO country code to determine which region\(s\), state\(s\), territory\(ies\), and/or province\(s\) to display in the dependent Select List control.
+    These request headers are required header parameters for the [`Locales` endpoint using the GET method](https://rapidapi.com/wirefreethought/api/geodb-cities): `X-RapidAPI-Host` and `X-RapidAPI-Key`. Note that the `X-RapidAPI-Key` header parameter value is unique for each person using this API for authentication.  
+    ![](../../../../.gitbook/assets/dependent-fields-example-header-parameters-get-locales.png) 
 
-    Make note of the relevant key name\(s\) that contains relevant data from a data source, as the ProcessMaker asset requires this element name when configuring which data that asset requires from the ProcessMaker Data Connector's Endpoint response. In this example, the ProcessMaker Screen containing the Select List control is the ProcessMaker asset. See [Example JSON Object from the Endpoint Response for the List of Countries](select-list-control-settings.md#example-json-object-from-the-endpoint-response-for-the-list-of-countries).
+19. Click the **+Header** button to add the first request header. The **Add** screen displays. ![](../../../../.gitbook/assets/add-screen-request-headers-endpoints-tab-data-connector-package-designer.png) 
+20. In the **Key** setting for the first request header, enter `x-rapidapi-host` as specified by the API host for this request parameter.
+21. In the **Default** setting for the first request header, enter `wft-geo-db.p.rapidapi.com` as specified by the API host for this request parameter.
+22. Click **Save**. The first request header displays in the **Request Headers** sub-tab.
+23. Click the **+Header** button to add the second request header. The **Add** screen displays.
+24. In the **Key** setting for the second request header, enter `X-RapidAPI-Key` as specified by the API host for this request parameter for authentication.
+25. In the **Default** setting for the second request header, enter your unique authentication key.
+26. Click **Save**. The second request header displays in the **Request Headers** sub-tab. ![](../../../../.gitbook/assets/dependent-fields-example-request-headers-for-get-locales.png) 
+27. Click **Save** to save the Endpoint with the two configured request headers. Do not test this Endpoint because it will not successfully test: the URL this Endpoint uses does not have a value for the `country` Request variable from the Select List control from which a country is selected. The ProcessMaker Data Connector is configured for this example.
 
-21. Click **Save** to save the Endpoint. The ProcessMaker Data Connector is configured for this example.
+### Create the Select List Control to Select a Country
+
+
 
 ### Example JSON Object from the Endpoint Response for the List of Countries
 
