@@ -485,8 +485,8 @@ Click the video below to watch a demonstration of this example.
 
 This example contains the following procedures in this order:
 
-1. **Create the ProcessMaker Data Connector that gets the list of countries for one Select List control:** Create the ProcessMaker Data Connector that calls the API to get a JSON array that contains a JSON object for each country. One Select List control uses this ProcessMaker Data Connector's API response to get the list of countries as its options. This is a public API that has been made available for demonstration purposes, so it does not require host authentication. See [Create the ProcessMaker Data Connector That Gets a JSON Array of Countries in its Response](select-list-control-settings.md#create-the-processmaker-data-connector-that-gets-a-json-array-of-countries-in-its-response).
-2. **Create the ProcessMaker Data Connector that gets the list of states and/or provinces for the dependent Select List control based on the first Select List control's option selection:** See [Create the ProcessMaker Data Connector That Gets a JSON Array of States and Provinces in its Response Based on a Selected Country](select-list-control-settings.md#create-the-processmaker-data-connector-that-gets-a-json-array-of-states-and-provinces-in-its-response-based-on-a-selected-country).
+1. **Create the ProcessMaker Data Connector that gets the list of countries for one Select List control:** Create the ProcessMaker Data Connector that gets a JSON array containing a JSON object for each country. One Select List control in this example uses this ProcessMaker Data Connector's API response to get the list of countries as its options. This ProcessMaker Data Connector accesses a public API that has been made available for demonstration purposes, so it does not require host authentication. See [Create the ProcessMaker Data Connector That Gets a JSON Array of Countries in its Response](select-list-control-settings.md#create-the-processmaker-data-connector-that-gets-a-json-array-of-countries-in-its-response).
+2. **Create the ProcessMaker Data Connector that gets the list of states and/or provinces for the dependent Select List control based on the first Select List control's option selection:** After selecting a country as an option from the first Select List control, create another ProcessMaker Data Connector that gets the region\(s\), state\(s\), department\(s\), and/or province\(s\) for the selected country. This ProcessMaker Data Connector access an API host under [Creative Commons license](http://creativecommons.org/licenses/by/3.0.) that requires signing up for authentication. To demonstrate how to add request headers to a ProcessMaker Data Connector's Endpoint, the authentication information for this API host is configured in an Endpoint's request headers instead of the **Authentication** tab of the Data Connector. Before creating this ProcessMaker Data Connector, [read about the API host](https://rapidapi.com/wirefreethought/api/geodb-cities/details), and then [sign up to access the API](https://rapidapi.com/). Note that third-party APIs change their terms of use, so ensure that you are comfortable signing up to use this API host for this example. See [Create the ProcessMaker Data Connector That Gets a JSON Array of States and Provinces in its Response Based on a Selected Country](select-list-control-settings.md#create-the-processmaker-data-connector-that-gets-a-json-array-of-states-and-provinces-in-its-response-based-on-a-selected-country).
 3. **Configure the Select List control to select a country:**  See .
 4. **Configure the Watcher that monitors for a country selection:** See .
 5. **Configure the dependent Select List control to select a state/province based on the country selection:** See .
@@ -502,7 +502,45 @@ Follow these steps to create the ProcessMaker Data Connector that gets a JSON ar
 3. Click the **Data Connectors** icon![](../../../../.gitbook/assets/data-connectors-icon-package.png)from the left sidebar. The **Data Connectors** tab displays all ProcessMaker Data Connectors in the **Data Connectors** page.
 4. Verify the ProcessMaker Data Connector Category exists in which to assign this Data Connector. If this Category does not exist, see [Create a New Data Connector Category](../../../data-connector-management/manage-data-connectors/manage-data-connector-categories/create-a-new-data-connector-category.md).
 5. Click the **+Data Connector** button. The **Create Data Connector** screen displays. ![](../../../../.gitbook/assets/create-data-connector-screen-package-designer.png) 
-6. In the **Name** setting, enter a name of the ProcessMaker Data Connector. This example uses the name `Call Countries API`.
+6. In the **Name** setting, enter the name of the ProcessMaker Data Connector. This example uses the name `Call Countries API`.
+7. In the **Description** setting, enter a description of this ProcessMaker Data Connector.
+8. From the **Authentication Type** drop-down menu, select the **No Auth** option. This example uses this option because the host does not require authentication from its publicly accessible API.
+9. From the **Category** drop-down menu, select the ProcessMaker Data Connector Category to assign this Data Connector.
+
+   This example uses the following settings.  
+   ![](../../../../.gitbook/assets/dependent-fields-example-create-data-connector-screen.png) 
+
+10. Click **Save**. The **Details** tab displays to edit the settings for this ProcessMaker Data Connector.
+11. Click the **Endpoints** tab. This example requires no changes to the **Authorization** tab.
+12. Click the **+Endpoint** button. The **Add Endpoint** screen displays. ![](../../../../.gitbook/assets/add-endpoint-screen-data-connectors-package.png) 
+13. In the **Purpose** setting, optionally edit the purpose for this Endpoint. The value the **Purpose** setting displays from the ProcessMaker asset when configuring the data source from that ProcessMaker asset. In this example, this setting value displays from the Select List control to select this Endpoint to get the list of universities. Therefore, provide a concise but relevant purpose for this Endpoint so other ProcessMaker designers understand its function. This example uses the default `list` for this setting.
+14. In the **Description** setting, enter a description of this Endpoint. This example uses the following description: `Gets a list of countries.`.
+15. From the **Method** drop-down menu, select the **GET** option. The GET method reads data.
+16. In the **URL** setting, enter the following URL for this example: `https://restcountries.eu/rest/v2/all`. This URL is provided by [this host](https://restcountries.eu/).
+17. Click **Add**. The new Endpoint displays in the **Endpoints** tab. ![](../../../../.gitbook/assets/config-sub-tab-endpoints-tab-data-connector-package-designer.png) 
+18. Click the **Test** sub-tab in the **Endpoints** tab to verify that the Endpoint functions as intended. ![](../../../../.gitbook/assets/test-sub-tab-endpoints-tab-data-connector-package-designer.png) 
+19. Click **Run**. If configured correctly, the **Test** tab displays the Endpoint response. ![](../../../../.gitbook/assets/dependent-fields-example-test-sub-tab-endpoint-data-connector.png) 
+20. Notice which element in each JSON object within the Endpoint response contains the name of the university. Look at the first JSON object. Notice the following key names in this JSON object:
+
+    * **`name`:** Notice that the `name` key name in the JSON object contains the name of each country; the value of the `name` key name displays as each option in the Select List control from which a country name is selected.
+    * **`alpha2Code`:** Notice the `alpha2Code` key name contains the two-letter [International Organization for Standardization \(ISO\) code](https://www.iso.org/iso-3166-country-codes.html) for each country; this Select List control stores the value of the `alpha2Code` key name element. In this example, a [Watcher](../manage-watchers/what-is-a-watcher.md) uses the ISO country code to determine which region\(s\), state\(s\), department\(s\), and/or province\(s\) to display in the dependent Select List control.
+
+    Make note of the relevant key name\(s\) that contains relevant data from a data source, as the ProcessMaker asset requires this element name when configuring which data that asset requires from the ProcessMaker Data Connector's Endpoint response. In this example, the ProcessMaker Screen containing the Select List control is the ProcessMaker asset. See [Example JSON Object from the Endpoint Response for the List of Countries](select-list-control-settings.md#example-json-object-from-the-endpoint-response-for-the-list-of-countries).
+
+21. Click **Save** to save the Endpoint. The ProcessMaker Data Connector is configured for this example.
+
+### Create the ProcessMaker Data Connector That Gets a JSON Array of States and Provinces in its Response Based on a Selected Country
+
+Before creating this ProcessMaker Data Connector, [read about the API host](https://rapidapi.com/wirefreethought/api/geodb-cities/details), and then [sign up to access the API](https://rapidapi.com/). Note that third-party APIs change their terms of use, so ensure that you are comfortable signing up to use this API host for this example.
+
+Follow these steps to create the ProcessMaker Data Connector that gets a JSON array containing the JSON objects of region\(s\), state\(s\), department\(s\), and/or province\(s\) for the selected country from the first Select List control as [described in this example](select-list-control-settings.md#overview):
+
+1. [Log on](../../../../using-processmaker/log-in.md#log-in) to ProcessMaker.
+2. Click the **Designer** option from the top menu. The **Processes** page displays.
+3. Click the **Data Connectors** icon![](../../../../.gitbook/assets/data-connectors-icon-package.png)from the left sidebar. The **Data Connectors** tab displays all ProcessMaker Data Connectors in the **Data Connectors** page.
+4. Verify the ProcessMaker Data Connector Category exists in which to assign this Data Connector. If this Category does not exist, see [Create a New Data Connector Category](../../../data-connector-management/manage-data-connectors/manage-data-connector-categories/create-a-new-data-connector-category.md).
+5. Click the **+Data Connector** button. The **Create Data Connector** screen displays. ![](../../../../.gitbook/assets/create-data-connector-screen-package-designer.png) 
+6. In the **Name** setting, enter the name of the ProcessMaker Data Connector. This example uses the name `Call Countries API`.
 7. In the **Description** setting, enter a description of this ProcessMaker Data Connector.
 8. From the **Authentication Type** drop-down menu, select the **No Auth** option. This example uses this option because the host does not require authentication from its publicly accessible API.
 9. From the **Category** drop-down menu, select the ProcessMaker Data Connector Category to assign this Data Connector.
@@ -528,10 +566,6 @@ Follow these steps to create the ProcessMaker Data Connector that gets a JSON ar
     Make note of the relevant key name\(s\) that contains relevant data from a data source, as the ProcessMaker asset requires this element name when configuring which data that asset requires from the ProcessMaker Data Connector's Endpoint response. In this example, the ProcessMaker Screen containing the Select List control is the ProcessMaker asset. See [Example JSON Object from the Endpoint Response for the List of Countries](select-list-control-settings.md#example-json-object-from-the-endpoint-response-for-the-list-of-countries).
 
 21. Click **Save** to save the Endpoint. The ProcessMaker Data Connector is configured for this example.
-
-### Create the ProcessMaker Data Connector That Gets a JSON Array of States and Provinces in its Response Based on a Selected Country
-
-
 
 ### Example JSON Object from the Endpoint Response for the List of Countries
 
