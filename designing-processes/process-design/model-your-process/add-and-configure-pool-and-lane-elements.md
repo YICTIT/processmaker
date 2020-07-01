@@ -1,24 +1,30 @@
 ---
-description: Add and configure Pool and Lane elements in your Process model.
+description: >-
+  Add, resize, delete, and configure Pool and Lane elements in your Process
+  model.
 ---
 
-# Add and Configure Pool and Lane Elements
+# Configure Pool and Lane Elements
 
-## Add a Pool Element
+## Permissions Required
 
 {% hint style="info" %}
 ### Don't Know What a Pool Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Pool](process-modeling-element-descriptions.md#pool) element.
+{% endhint %}
 
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Pool element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure a Pool element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add a Pool Element
+
+{% hint style="info" %}
+[Permissions are required to do this action](add-and-configure-pool-and-lane-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add a Pool element to the Process model:
@@ -63,6 +69,30 @@ Follow these steps to resize a Pool element:
    ![](../../../.gitbook/assets/pool-element-lane-message-anchor-icons-process-modeler-designer.png)
 
 3. Click one of the anchors on the Pool element![](../../../.gitbook/assets/pool-element-anchor-process-modeler-processes.png), hold your cursor, and then adjust the size of the Pool element on the Process model canvas. If the Pool element contains elements within it prior to resizing, the Pool element only resizes to contain all elements within it. Lane elements automatically adjust to the width of the Pool element, though [Lane elements can be resized](add-and-configure-pool-and-lane-elements.md#resize-a-lane-element) separately.
+
+## Delete a Pool Element
+
+{% hint style="info" %}
+Your ProcessMaker user account or group membership must have the following permissions to delete a Pool element from the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+
+* Processes: Edit Processes
+* Processes: View Processes
+
+See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+{% endhint %}
+
+{% hint style="warning" %}
+When a Pool element is deleted, all elements and connectors within it are also deleted. If you want to keep the elements/controls within a Pool element, you must add those elements/controls outside of the Pool element prior to deleting the Pool element.
+
+If you accidentally delete a Pool element with other elements/connectors you want to keep, then select the **Undo** button.
+{% endhint %}
+
+Follow these steps to delete a Pool element from a Process model:
+
+1. ​​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Pool name in the Pool element to delete, thereby selecting the Pool element. Available options display to the right of the selected element.
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Pool element is deleted. All non-Pool elements and connectors within the Pool element also delete.
 
 ## Pool Element Settings
 
@@ -161,6 +191,15 @@ Follow these steps to resize a Lane element:
    ![](../../../.gitbook/assets/lane-element-resize-anchor-process-modeler-designer.png)
 
 3. Click one of the anchors on the Lane element![](../../../.gitbook/assets/pool-element-anchor-process-modeler-processes.png), hold your cursor, and then adjust the size of the Lane element in the Pool element. If the Lane element contains elements within it prior to resizing, the Lane element only resizes to contain all elements within it. The Pool element automatically adjusts to the width of the resized Lane element so far as all elements contained within the Pool element remain contained in it. [Pool elements can be resized](add-and-configure-pool-and-lane-elements.md#resize-a-pool-element) separately.
+
+## Delete a Lane Element from a Pool Element
+
+Follow these steps to delete a Lane element from a Pool element:
+
+1. ​​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Lane element in the Pool element to delete. Available options display above the selected element.
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Pool element is deleted. All non-Pool elements and connectors that were within the deleted Lane element stay in their current positions within the Pool element.
 
 ## Lane Element Settings
 

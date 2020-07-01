@@ -247,7 +247,7 @@
     * [Add and Configure Inclusive Gateway Elements](designing-processes/process-design/model-your-process/add-and-configure-inclusive-gateway-elements.md)
     * [Add and Configure Parallel Gateway Elements](designing-processes/process-design/model-your-process/add-and-configure-parallel-gateway-elements.md)
     * [Add and Configure Event-Based Gateway Elements](designing-processes/process-design/model-your-process/add-and-configure-event-based-gateway-elements.md)
-    * [Add and Configure Pool and Lane Elements](designing-processes/process-design/model-your-process/add-and-configure-pool-and-lane-elements.md)
+    * [Configure Pool and Lane Elements](designing-processes/process-design/model-your-process/add-and-configure-pool-and-lane-elements.md)
     * [Add and Configure Text Annotation and Association Elements](designing-processes/process-design/model-your-process/add-and-configure-text-annotation-elements.md)
     * [Connect Sequence Flow Elements to Indicate Workflow Routing](designing-processes/process-design/model-your-process/the-quick-toolbar.md)
     * [Connect Message Flow Elements to Indicate Messaging](designing-processes/process-design/model-your-process/set-and-delete-message-flow-between-elements.md)
