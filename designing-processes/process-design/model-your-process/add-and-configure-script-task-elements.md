@@ -9,9 +9,9 @@ description: >-
 ## Permissions Required
 
 {% hint style="info" %}
-### Don't Know What a Manual Task Element Is?
+### Don't Know What a Script Task Element Is?
 
-See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Manual Task](process-modeling-element-descriptions.md#manual-task) element.
+See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Script Task](process-modeling-element-descriptions.md#script-task) element.
 {% endhint %}
 
 Your ProcessMaker user account or group membership must have the following permissions to configure a Script Task element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
@@ -24,22 +24,7 @@ See the [Process](../../../processmaker-administration/permission-descriptions-f
 ## Add a Script Task Element
 
 {% hint style="info" %}
-### Don't Know What a Script Task Element Is?
-
-See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Script Task](process-modeling-element-descriptions.md#script-task) element.
-
-### Make a Copy of an Existing Script Task Element Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Script Task element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-script-task-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add a Script Task element to the Process model:
@@ -72,16 +57,22 @@ Moving a Script Task element has the following limitations in regards to the fol
 * **Lane element:** If the Script Task element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Script Task element cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Settings
+## Delete a Script Task Element
+
+Deleting a Process model element also deletes any [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model element is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/[connectors](../model-processes-using-connectors/what-is-a-connector.md).
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Script Task element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-script-task-elements.md#permissions-required).
 {% endhint %}
+
+Follow these steps to delete a Script Task element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Script Task element to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-script-task-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Settings
 
 The Script Task element has the following panels that contain settings:
 
@@ -100,6 +91,10 @@ The Script Task element has the following panels that contain settings:
 
 An element name is a human-readable reference for a process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-script-task-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit the name for a Script Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -115,11 +110,15 @@ Since Script Task elements are designed to run a [ProcessMaker Script](../../scr
 See the following topics for more information:
 
 * [What is a Script?](../../scripts/what-is-a-script.md)
-* [Scripts Editor]()
+* [Script Editor](../../scripts/script-editor.md)
 {% endhint %}
 
 {% hint style="warning" %}
 Ensure to select a ProcessMaker Script for each Script Task element in your Process model. If a ProcessMaker Script is not specified and Requests are started for that Process, Requests associated with that Process will stall and never complete because there is no ProcessMaker Script to run for the Script Task element\(s\).
+{% endhint %}
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-script-task-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to select a ProcessMaker Script for a Script Task element:
@@ -145,13 +144,17 @@ After [selecting the ProcessMaker Script for the Script Task element](add-and-co
 See the following topics for more information:
 
 * [What is a Script?](../../scripts/what-is-a-script.md)
-* [Scripts Editor]()
+* [Script Editor](../../scripts/script-editor.md)
 {% endhint %}
 
 If a JSON script exists in the Script Task element, that script is used for the ProcessMaker Script. An existing JSON configuration script displays in the **Script Configuration** option for a selected Script Task element.
 
 {% hint style="warning" %}
 The JSON script in the Script Task element overrides any JSON script entered in the **Script Config JSON** panel in Scripts Editor for the associated ProcessMaker Script.
+{% endhint %}
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-script-task-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to enter or edit a JSON configuration script for a Script Task element:
@@ -178,25 +181,6 @@ You can enter your JSON configuration script directly into the **Script Configur
 
 #### Assign ProcessMaker Vocabularies That Validate Request Data from This Element
 
-{% hint style="info" %}
-### ProcessMaker Package Required
-
-Your ProcessMaker instance must have the [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) installed to assign which ProcessMaker Vocabularies validate Request data at a Script Task element. Use the Vocabularies package to maintain uniform JSON schemas across all assets in your organization. These assets include [Processes](../../viewing-processes/what-is-a-process.md), [ProcessMaker Screens](../../design-forms/what-is-a-form.md), and [ProcessMaker Scripts](../../scripts/what-is-a-script.md).
-
-A ProcessMaker Vocabulary is a JSON schema. The JSON schema describes the data objects, types, and structure that you want in both a machine and human readable format. Apply one or more ProcessMaker Vocabularies to your Processes and/or specific BPMN 2.0 elements in your Process models to ensure the JSON data model in Request data complies with the data structure outlined in the JSON schema that you need to meet regulatory specifications or ensure Request data contains required information.
-
-The Vocabularies package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Vocabularies package can be installed in your ProcessMaker instance.
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to set which ProcessMaker user or group can start a Request for a Process unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
-{% endhint %}
-
 Assign [ProcessMaker Vocabularies](../../vocabularies-management/what-is-a-vocabulary.md) that validate that Request data complies with a specific JSON schema. This is often mandatory for many types of business sectors including banking and healthcare. Ensure the quality and compliance of Request data. For example, during a Loan Application process, ensure that personal information has been included in the Request to that moment in that in-progress Request. The Vocabularies package must be installed in your ProcessMaker instance to make this configuration.
 
 Use a ProcessMaker Vocabulary on a Script Task element to validate that Request data complies with the Vocabulary's JSON schema after the Script Task runs its ProcessMaker Script but prior to when the Request continues workflow. See [What is a Vocabulary?](../../vocabularies-management/what-is-a-vocabulary.md) for more information.
@@ -208,6 +192,20 @@ During an in-progress Request, if ProcessMaker evaluates that the Request data n
 If no ProcessMaker Vocabularies are assigned, ProcessMaker does not validate that Request data complies with a specific JSON schema prior to continuing workflow for that Request.
 
 One or more ProcessMaker Vocabularies must be created to your ProcessMaker instance before assigning a Vocabulary. See [Create a New Vocabulary](../../vocabularies-management/manage-your-vocabularies/create-a-new-vocabulary.md#create-a-new-processmaker-vocabulary). Multiple ProcessMaker Vocabularies can be assigned to a Script Task element.
+
+{% hint style="info" %}
+### ProcessMaker Package Required
+
+Your ProcessMaker instance must have the [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) installed to assign which ProcessMaker Vocabularies validate Request data at a Script Task element. Use the Vocabularies package to maintain uniform JSON schemas across all assets in your organization. These assets include [Processes](../../viewing-processes/what-is-a-process.md), [ProcessMaker Screens](../../design-forms/what-is-a-form.md), and [ProcessMaker Scripts](../../scripts/what-is-a-script.md).
+
+A ProcessMaker Vocabulary is a JSON schema. The JSON schema describes the data objects, types, and structure that you want in both a machine and human readable format. Apply one or more ProcessMaker Vocabularies to your Processes and/or specific BPMN 2.0 elements in your Process models to ensure the JSON data model in Request data complies with the data structure outlined in the JSON schema that you need to meet regulatory specifications or ensure Request data contains required information.
+
+The Vocabularies package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Vocabularies package can be installed in your ProcessMaker instance.
+{% endhint %}
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-script-task-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to assign ProcessMaker Vocabularies that validate Request data from a Script Task element:
 
@@ -235,6 +233,10 @@ After one or more ProcessMaker Vocabularies are assigned to a Script Task elemen
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-script-task-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.

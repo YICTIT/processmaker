@@ -61,7 +61,7 @@ Follow these steps to delete a Terminate End Event element from your Process mod
 
 1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
 2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
-3. Select the Terminate End Event element or connector to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-terminate-end-event-element-process-modeler-designer.png) 
+3. Select the Terminate End Event element to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-terminate-end-event-element-process-modeler-designer.png) 
 4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
 
 ## Settings

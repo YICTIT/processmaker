@@ -1,28 +1,30 @@
 ---
-description: Add and configure Boundary Signal Event elements in your Process model.
+description: >-
+  Add, copy, delete, change the color, and configure Boundary Signal Event
+  elements in your Process model.
 ---
 
-# Add and Configure Boundary Signal Event Elements
+# Boundary Signal Event Elements
 
-## Add a Boundary Signal Event Element
+## Permissions Required
 
 {% hint style="info" %}
 ### Don't Know What a Boundary Signal Event Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Boundary Signal Event](process-modeling-element-descriptions.md#boundary-signal-event) element.
+{% endhint %}
 
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Boundary Signal Event element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure a Boundary Signal Event element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
 
-### New Topic
+## Add a Boundary Signal Event Element
 
-This topic is new for ProcessMaker version 4.0.4. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.4-release-notes#process-modeler-1).
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-signal-event-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add a Boundary Signal Event element to the Process model:
@@ -44,16 +46,20 @@ Follow these steps to add a Boundary Signal Event element to the Process model:
 
 After placing the Boundary Signal Event element, you may drag it to an adjacent side of its associating element/connector. Since Process Modeler displays labels at the bottom of Process model elements and connectors, the Boundary Signal Event element displays best at the bottom of its associating element.
 
-## Settings
+## Delete a Boundary Signal Event Element
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Boundary Signal Event element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-boundary-signal-event-elements.md#permissions-required).
 {% endhint %}
+
+Follow these steps to delete a Boundary Signal Event element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Boundary Signal Event element to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-boundary-signal-event-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Settings
 
 The Boundary Signal Event element has the following panels that contain settings:
 
@@ -72,6 +78,10 @@ The Boundary Signal Event element has the following panels that contain settings
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-signal-event-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit the name for a Boundary Signal Event element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -85,6 +95,10 @@ Indicate whether the Boundary Signal Event element interrupts the best-case scen
 
 * **Interrupting workflow:** When workflow routes through the Boundary Signal Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Signal Event element if the Boundary Signal Event element receives the specific broadcast signal for which it is listening if the Manual Task element is not complete when receiving that signal. ![](../../../.gitbook/assets/boundary-signal-event-interrupting-example.png) 
 * **Non-interrupting workflow:** Workflow routes both through the Boundary Signal Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Signal Event element if the Manual Task element is not yet complete; however, workflow also routes through the best-case scenario when that element completes. ![](../../../.gitbook/assets/boundary-signal-event-non-interrupting-example.png) 
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-signal-event-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to indicate if this Boundary Signal Event element interrupts the best-case scenario workflow when it triggers:
 
@@ -103,6 +117,10 @@ However, ensure to configure one of the following elements from any Process mode
 
 * [Intermediate Signal Throw Event](process-modeling-element-descriptions.md#intermediate-signal-throw-event) element
 * [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-signal-event-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to select the signal that triggers the Boundary Signal Event element:
 
@@ -124,6 +142,10 @@ Follow these steps to select the signal that triggers the Boundary Signal Event 
 
 Editing the name of a signal changes that signal's name in your ProcessMaker instance. This signal name displays when selecting a signal from other elements that can broadcast or listen for a signal.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-signal-event-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit the name of a signal:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -136,6 +158,10 @@ Follow these steps to edit the name of a signal:
 8. [Save your Process model](../toolboxes.md#save-your-process-model).
 
 #### Delete a Signal from the ProcessMaker Instance
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-signal-event-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 Carefully consider whether to delete a signal. Deleting a signal makes that signal unavailable when configuring all elements that broadcast or listen to signals throughout your ProcessMaker instance. However, those elements already configured with a deleted signal are not affected, nor are any started Requests affected.
@@ -158,6 +184,10 @@ Follow these steps to delete a signal from the ProcessMaker instance:
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-signal-event-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.

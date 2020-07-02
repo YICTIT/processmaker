@@ -1,28 +1,30 @@
 ---
-description: Add and configure Exclusive Gateway elements in your Process model.
+description: >-
+  Add, copy, delete, change the color, align, and configure Exclusive Gateway
+  elements in your Process model.
 ---
 
-# Add and Configure Exclusive Gateway Elements
+# Exclusive Gateway Elements
 
-## Add an Exclusive Gateway Element
+## Permissions Required
 
 {% hint style="info" %}
 ### Don't Know What an Exclusive Gateway Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Exclusive Gateway](process-modeling-element-descriptions.md#exclusive-gateway) element.
+{% endhint %}
 
-### Make a Copy of an Existing Exclusive Gateway Element Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add an Exclusive Gateway element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure a Exclusive Gateway element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add an Exclusive Gateway Element
+
+{% hint style="info" %}
+Permissions are required to do this.
 {% endhint %}
 
 Follow these steps to add an Exclusive Gateway element to the Process model:

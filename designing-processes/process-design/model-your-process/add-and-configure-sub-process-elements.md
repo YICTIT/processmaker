@@ -1,28 +1,30 @@
 ---
-description: Add and configure Sub Process elements in your Process model.
+description: >-
+  Add, copy, delete, change the color, align, and configure Sub Process elements
+  in your Process model.
 ---
 
-# Add and Configure Sub Process Elements
+# Sub Process Elements
 
-## Add a Sub Process Element
+## Permissions Required
 
 {% hint style="info" %}
-### Don't Know What a Sub Process Element Is?
+### Don't Know What a Script Task Element Is?
 
-See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Sub Process](process-modeling-element-descriptions.md#call-activity) element.
+See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Script Task](process-modeling-element-descriptions.md#script-task) element.
+{% endhint %}
 
-### Make a Copy of an Existing Sub Process Element Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Sub Process element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure a Sub Process element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add a Sub Process Element
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-sub-process-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add a Sub Process element to the Process model:
@@ -56,16 +58,22 @@ Moving a Sub Process element has the following limitations in regards to the fol
 * **Lane element:** If the Sub Process element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Sub Process element cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Settings
+## Delete a Sub Process Element
+
+Deleting a Process model element also deletes any [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model element is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/[connectors](../model-processes-using-connectors/what-is-a-connector.md).
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Sub Process element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-sub-process-elements.md#permissions-required).
 {% endhint %}
+
+Follow these steps to delete a Sub Process element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Sub Process element to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-sub-process-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Settings
 
 The Sub Process element has the following panels that contain settings:
 
@@ -82,6 +90,10 @@ The Sub Process element has the following panels that contain settings:
 #### Edit the Element Name
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-sub-process-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to edit the name for a Sub Process element:
 
@@ -100,6 +112,10 @@ The child Sub Process has its own [Request](../../../using-processmaker/requests
 To prevent routing for the parent Process's Request from waiting until the child Sub Process's Request completes, use a [Parallel Gateway](process-modeling-element-descriptions.md#parallel-gateway) element preceding the Sub Process element. Use a parallel outgoing [Sequence Flow](the-quick-toolbar.md) element from the Parallel Gateway element to continue routing the parent Process while the Sub Process element waits for the child Sub Process's Request to complete.
 {% endhint %}
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-sub-process-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to select the child Sub Process the Sub Process element calls when it triggers:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -110,25 +126,6 @@ Follow these steps to select the child Sub Process the Sub Process element calls
 ### Vocabularies Panel Settings
 
 #### Assign ProcessMaker Vocabularies That Validate Request Data from This Element
-
-{% hint style="info" %}
-### ProcessMaker Package Required
-
-Your ProcessMaker instance must have the [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) installed to assign which ProcessMaker Vocabularies validate Request data at a Sub Process element. Use the Vocabularies package to maintain uniform JSON schemas across all assets in your organization. These assets include [Processes](../../viewing-processes/what-is-a-process.md), [ProcessMaker Screens](../../design-forms/what-is-a-form.md), and [ProcessMaker Scripts](../../scripts/what-is-a-script.md).
-
-A ProcessMaker Vocabulary is a JSON schema. The JSON schema describes the data objects, types, and structure that you want in both a machine and human readable format. Apply one or more ProcessMaker Vocabularies to your Processes and/or specific BPMN 2.0 elements in your Process models to ensure the JSON data model in Request data complies with the data structure outlined in the JSON schema that you need to meet regulatory specifications or ensure Request data contains required information.
-
-The Vocabularies package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Vocabularies package can be installed in your ProcessMaker instance.
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to set which ProcessMaker user or group can start a Request for a Process unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
-{% endhint %}
 
 Assign [ProcessMaker Vocabularies](../../vocabularies-management/what-is-a-vocabulary.md) that validate that Request data complies with a specific JSON schema. This is often mandatory for many types of business sectors including banking and healthcare. Ensure the quality and compliance of Request data. For example, during a Loan Application process, ensure that personal information has been included in the Request to that moment in that in-progress Request. The Vocabularies package must be installed in your ProcessMaker instance to make this configuration.
 
@@ -141,6 +138,20 @@ During an in-progress Request, if ProcessMaker evaluates that the Request data n
 If no ProcessMaker Vocabularies are assigned, ProcessMaker does not validate that Request data complies with a specific JSON schema prior to continuing workflow for that Request.
 
 One or more ProcessMaker Vocabularies must be created to your ProcessMaker instance before assigning a Vocabulary. See [Create a New Vocabulary](../../vocabularies-management/manage-your-vocabularies/create-a-new-vocabulary.md#create-a-new-processmaker-vocabulary). Multiple ProcessMaker Vocabularies can be assigned to a Sub Process element.
+
+{% hint style="info" %}
+### ProcessMaker Package Required
+
+Your ProcessMaker instance must have the [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) installed to assign which ProcessMaker Vocabularies validate Request data at a Sub Process element. Use the Vocabularies package to maintain uniform JSON schemas across all assets in your organization. These assets include [Processes](../../viewing-processes/what-is-a-process.md), [ProcessMaker Screens](../../design-forms/what-is-a-form.md), and [ProcessMaker Scripts](../../scripts/what-is-a-script.md).
+
+A ProcessMaker Vocabulary is a JSON schema. The JSON schema describes the data objects, types, and structure that you want in both a machine and human readable format. Apply one or more ProcessMaker Vocabularies to your Processes and/or specific BPMN 2.0 elements in your Process models to ensure the JSON data model in Request data complies with the data structure outlined in the JSON schema that you need to meet regulatory specifications or ensure Request data contains required information.
+
+The Vocabularies package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Vocabularies package can be installed in your ProcessMaker instance.
+{% endhint %}
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-sub-process-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to assign ProcessMaker Vocabularies that validate Request data from a Sub Process element:
 
@@ -168,6 +179,10 @@ After one or more ProcessMaker Vocabularies are assigned to a Sub Process elemen
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-sub-process-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.

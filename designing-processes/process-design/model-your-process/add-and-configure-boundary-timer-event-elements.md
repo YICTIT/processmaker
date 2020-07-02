@@ -1,24 +1,30 @@
 ---
-description: Add and configure Boundary Timer Event elements in your Process model.
+description: >-
+  Add, copy, delete, change the color, and configure Boundary Timer Event
+  elements in your Process model.
 ---
 
-# Add and Configure Boundary Timer Event Elements
+# Boundary Timer Event Elements
 
-## Add a Boundary Timer Event Element
+## Permissions Required
 
 {% hint style="info" %}
 ### Don't Know What a Boundary Timer Event Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Boundary Timer Event](process-modeling-element-descriptions.md#boundary-timer-event) element.
+{% endhint %}
 
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Boundary Timer Event element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure a Boundary Timer Event element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add a Boundary Timer Event Element
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-timer-event-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add a Boundary Timer Event element to the Process model:
@@ -40,16 +46,20 @@ Follow these steps to add a Boundary Timer Event element to the Process model:
 
 After placing the Boundary Timer Event element, you may drag it to an adjacent side of its associating element/connector. Since Process Modeler displays labels at the bottom of Process model elements and connectors, the Boundary Timer Event element displays best at the bottom of its associating element.
 
-## Settings
+## Delete a Boundary Timer Event Element
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Boundary Timer Event element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-boundary-timer-event-elements.md#permissions-required).
 {% endhint %}
+
+Follow these steps to delete a Boundary Timer Event element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Boundary Timer Event element to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-boundary-timer-event-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Settings
 
 The Boundary Timer Event element has the following panels that contain settings:
 
@@ -67,6 +77,10 @@ The Boundary Timer Event element has the following panels that contain settings:
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-timer-event-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit the name for a Boundary Timer Event element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -80,6 +94,10 @@ Indicate whether the Boundary Timer Event element interrupts the best-case scena
 
 * **Interrupting workflow:** When workflow routes through the Boundary Timer Event element, workflow is interrupted and does not route through the best-case scenario. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes. ![](../../../.gitbook/assets/boundary-timer-event-interrupting-example.png) 
 * **Non-interrupting workflow:** Workflow routes both through the Boundary Timer Event element and the best-case scenario, thereby creating parallel workflow in that Request. As highlighted in the example below, workflow routes through the Boundary Timer Event element if the Manual Task element does not complete within 30 minutes; however, workflow also routes through the best-case scenario when that element completes. ![](../../../.gitbook/assets/boundary-timer-event-non-interrupting-example.png) 
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-timer-event-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to indicate if this Boundary Timer Event element interrupts the best-case scenario workflow when it triggers:
 
@@ -96,6 +114,10 @@ When a Boundary Timer Event element is placed into a Process model, it is set to
 
 * Set an interval in which to delay routing workflow through the Boundary Timer Event element in a specified number of days, weeks, months, or years \(unless its associative element completes before the delay expires\).
 * Set the date and hour when the Boundary Timer Event element routes workflow through it \(unless its associative element completes before that date and hour arrives\).
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-timer-event-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to set the timer controls for a Boundary Timer Event element:
 
@@ -124,6 +146,10 @@ Follow these steps to set the timer controls for a Boundary Timer Event element:
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-timer-event-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.
