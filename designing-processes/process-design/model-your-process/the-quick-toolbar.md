@@ -86,9 +86,10 @@ Follow these steps to adjust a straight line within a Sequence Flow element:
 
 1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
 2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
-3. [Connect a Sequence Flow element](the-quick-toolbar.md#connect-the-sequence-flow-element-to-another-element-or-connector) from one element/connector to another.
-4. Select the Sequence Flow element so that available options display above the selected element. Sequence Flow elements that have immediately been connected require two clicks of the Sequence Flow element for anchors to display.
-5. Drag the oblong anchor![](../../../.gitbook/assets/oblong-anchor-sequence-flow-element-process-modeler-designer.png)perpendicularly with the straight line of the Sequence Flow element.
+3. Do one of the following:
+   * [Connect a Sequence Flow element](the-quick-toolbar.md#connect-the-sequence-flow-element-to-another-element-or-connector) from one element/connector to another.
+   * Select a Sequence Flow element so that available options display above the selected element. Sequence Flow elements that have immediately been connected require two clicks of the Sequence Flow element for anchors to display.
+4. Drag the oblong anchor![](../../../.gitbook/assets/oblong-anchor-sequence-flow-element-process-modeler-designer.png)perpendicularly with the straight line of the Sequence Flow element.
 
 ### Adjust Where a Sequence Flow Element Bends
 
