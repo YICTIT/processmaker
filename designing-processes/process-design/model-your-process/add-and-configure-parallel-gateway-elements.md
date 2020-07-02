@@ -1,28 +1,30 @@
 ---
-description: Add and configure Parallel Gateway elements in your Process model.
+description: >-
+  Add, copy, delete, change the color, align, and configure Parallel Gateway
+  elements in your Process model.
 ---
 
-# Add and Configure Parallel Gateway Elements
+# Parallel Gateway Elements
 
-## Add a Parallel Gateway Element
+## Permissions Required
 
 {% hint style="info" %}
 ### Don't Know What a Parallel Gateway Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Parallel Gateway](process-modeling-element-descriptions.md#parallel-gateway) element.
+{% endhint %}
 
-### Make a Copy of an Existing Parallel Gateway Element Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Parallel Gateway element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure a Parallel Gateway element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add a Parallel Gateway Element
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-parallel-gateway-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add a Parallel Gateway element to the Process model:
@@ -44,16 +46,22 @@ Moving a Parallel Gateway element has the following limitations in regards to th
 * **Lane element:** If the Parallel Gateway element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Parallel Gateway element cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Settings
+## Delete a Parallel Gateway Element
+
+Deleting a Process model element also deletes any [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model element is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/[connectors](../model-processes-using-connectors/what-is-a-connector.md).
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Parallel Gateway element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-parallel-gateway-elements.md#permissions-required).
 {% endhint %}
+
+Follow these steps to delete a Parallel Gateway element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Parallel Gateway element to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-parallel-gateway-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Settings
 
 The Parallel Gateway element has the following panels that contain settings:
 
@@ -68,6 +76,10 @@ The Parallel Gateway element has the following panels that contain settings:
 #### Edit the Element Name
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-parallel-gateway-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to edit the name for a Parallel Gateway element:
 
@@ -92,6 +104,10 @@ One Parallel Gateway element can only converge or diverge parallel workflow, but
 
 ![Use two Parallel Gateway elements for both converging and diverging parallel workflow](../../../.gitbook/assets/converging-and-diverging-parallel-gateway.png)
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-parallel-gateway-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to indicate the workflow direction for a Parallel Gateway element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -106,6 +122,10 @@ Follow these steps to indicate the workflow direction for a Parallel Gateway ele
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-parallel-gateway-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.

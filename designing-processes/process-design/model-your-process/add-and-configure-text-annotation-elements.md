@@ -1,30 +1,30 @@
 ---
 description: >-
-  Add and configure Text Annotation and Association elements in your Process
-  model.
+  Add, delete, and configure Text Annotation and Association elements in your
+  Process model.
 ---
 
-# Add and Configure Text Annotation and Association Elements
+# Text Annotation and Association Elements
 
-## Add a Text Annotation Element
+## Permissions Required
 
 {% hint style="info" %}
 ### Don't Know What a Text Annotation Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Text Annotation](process-modeling-element-descriptions.md#text-annotation) element.
+{% endhint %}
 
-### Make a Copy of an Existing Text Annotation Element Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Text Annotation element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure a Text Annotation or Association element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add a Text Annotation Element
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-text-annotation-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add a Text Annotation element to the Process model:
@@ -45,16 +45,20 @@ Moving a Text Annotation element has the following limitations in regards to the
 * **Lane element:** If the Text Annotation element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Text Annotation element cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Text Annotation Element Settings
+## Delete a Text Annotation Element
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Text Annotation element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-text-annotation-elements.md#permissions-required).
 {% endhint %}
+
+Follow these steps to delete a Text Annotation element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Text Annotation element to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-text-annotation-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Text Annotation element deletes, including all its [Association](process-modeling-element-descriptions.md#association) elements.
+
+## Text Annotation Element Settings
 
 The Text Annotation element has the following panels that contain settings:
 
@@ -69,6 +73,10 @@ The Text Annotation element has the following panels that contain settings:
 
 Process Modeler automatically assigns a default value to a new Text Annotation element. However, change the annotation description to provide context to your Process model.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-text-annotation-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit the annotation description for a Text Annotation element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -81,6 +89,10 @@ Follow these steps to edit the annotation description for a Text Annotation elem
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-text-annotation-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.
@@ -99,15 +111,10 @@ Follow these steps to edit the identifier value for a Text Annotation element:
 ### Don't Know What an Association Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Association](process-modeling-element-descriptions.md#association) element.
+{% endhint %}
 
-### Permissions Required to Do This Task
-
-Your ProcessMaker user account or group membership must have the following permissions to add an Association element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-text-annotation-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add an Association element to the Process model:
@@ -126,16 +133,20 @@ Follow these steps to add an Association element to the Process model:
 
 7. Repeat steps 5 and 6 to reference another Process model element that the Text Annotation element describes as necessary.
 
-## Association Element Settings
+## Delete an Association Element
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure an Association element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-text-annotation-elements.md#permissions-required).
 {% endhint %}
+
+Follow these steps to delete an Association element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Association element from the Text Annotation element from which to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-association-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Association Element Settings
 
 The Association element has the following panels that contain settings:
 
@@ -148,6 +159,10 @@ The Association element has the following panels that contain settings:
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-text-annotation-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.
@@ -166,6 +181,10 @@ Follow these steps to edit the identifier value for an Association element:
 #### Edit the Direction of the Text Annotation Element's Reference
 
 Use the Annotation element to place a directional arrow that points between the Text Annotation element and the element it describes.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-text-annotation-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to edit the directional arrow that points between the Text Annotation element and the element it describes:
 

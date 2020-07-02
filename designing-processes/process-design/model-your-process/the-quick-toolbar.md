@@ -4,7 +4,7 @@ description: >-
   connectors using Sequence Flow elements.
 ---
 
-# Connect Sequence Flow Elements to Indicate Workflow Routing
+# Sequence Flow Elements
 
 ## Overview
 
@@ -41,24 +41,22 @@ Sequence Flow elements have the following attributes in regards to specific Proc
   * [Terminate End Event](process-modeling-element-descriptions.md#terminate-end-event) element
 * Sequence Flow elements from [Exclusive Gateway](process-modeling-element-descriptions.md#exclusive-gateway) and [Inclusive Gateway](process-modeling-element-descriptions.md#inclusive-gateway) elements can be configured to specify under which condition a Request routes through that Sequence Flow element. See [Configure an Outgoing Sequence Flow Element from an Exclusive Gateway or Inclusive Gateway Element](the-quick-toolbar.md#configure-an-outgoing-sequence-flow-element-from-an-exclusive-gateway-or-inclusive-gateway-element).
 
-## Connect the Sequence Flow Element to Another Element
+## Permissions Required
 
-{% hint style="info" %}
-### Looking for Information about Message Flow Elements?
-
-See [Set and Delete Message Flow Between Elements](set-and-delete-message-flow-between-elements.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to set Sequence Flow elements in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure Sequence Flow elements in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Connect the Sequence Flow Element to Another Element or Connector
+
+{% hint style="info" %}
+[Permissions are required to do this](the-quick-toolbar.md#permissions-required).
 {% endhint %}
 
-Follow these steps to set the Sequence Flow element from one connecting element to another:
+Follow these steps to set the Sequence Flow element from one connecting element/[connector](../model-processes-using-connectors/what-is-a-connector.md) to another:
 
 1. [​View your Processes](../../viewing-processes/view-the-list-of-processes/view-your-processes.md#view-all-active-processes). The **Processes** page displays.
 2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
@@ -67,18 +65,62 @@ Follow these steps to set the Sequence Flow element from one connecting element 
    ![](../../../.gitbook/assets/sequence-flow-indicator-process-modeler-designer.png)
 
 4. Click the **Sequence Flow** icon![](../../../.gitbook/assets/sequence-flow-icon-process-modeler-processes.png).
-5. Click the Process model element to which to set the workflow routing. The Sequence Flow element connects between the two \(2\) elements to indicate workflow routing.  
+5. Click the Process model element or connector to which to set the workflow routing. The Sequence Flow element connects between the two \(2\) elements to indicate workflow routing.  
 
-## Settings
+## Adjust How a Sequence Flow Element Bends Using Anchors
+
+Use anchors in a Sequence Flow element to adjust how that Sequence Flow element bends between its connecting elements/[connectors](../model-processes-using-connectors/what-is-a-connector.md). There are two \(2\) types of Sequence Flow anchors:
+
+* [Adjust a straight line within a Sequence Flow element](the-quick-toolbar.md#adjust-a-straight-line-within-a-sequence-flow-element) by dragging the placement of an oblong anchor![](../../../.gitbook/assets/oblong-anchor-sequence-flow-element-process-modeler-designer.png).
+* [Adjust where a Sequence Flow element bends](the-quick-toolbar.md#adjust-where-a-sequence-flow-element-bends) by placing, then dragging round anchors![](../../../.gitbook/assets/round-anchor-sequence-flow-element-process-modeler-designer.png).
+
+![Sequence Flow anchors adjust how that element bends](../../../.gitbook/assets/sequence-flow-anchors-process-modeler-designer.png)
+
+### Adjust a Straight Line Within a Sequence Flow Element
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure Sequence Flows in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](the-quick-toolbar.md#permissions-required).
 {% endhint %}
+
+Follow these steps to adjust a straight line within a Sequence Flow element:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. [Connect a Sequence Flow element](the-quick-toolbar.md#connect-the-sequence-flow-element-to-another-element-or-connector) from one element/connector to another.
+4. Select the Sequence Flow element so that available options display above the selected element. Sequence Flow elements that have immediately been connected require two clicks of the Sequence Flow element for anchors to display.
+5. Drag the oblong anchor![](../../../.gitbook/assets/oblong-anchor-sequence-flow-element-process-modeler-designer.png)perpendicularly with the straight line of the Sequence Flow element.
+
+### Adjust Where a Sequence Flow Element Bends
+
+{% hint style="info" %}
+[Permissions are required to do this](the-quick-toolbar.md#permissions-required).
+{% endhint %}
+
+Follow these steps to adjust where a Sequence Flow element bends:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. [Connect a Sequence Flow element](the-quick-toolbar.md#connect-the-sequence-flow-element-to-another-element-or-connector) from one element/connector to another.
+4. Select the Sequence Flow element so that available options display above the selected element. Sequence Flow elements that have immediately been connected require two clicks of the Sequence Flow element for anchors to display.
+5. Do one of the following:
+   * Drag an existing round anchor![](../../../.gitbook/assets/round-anchor-sequence-flow-element-process-modeler-designer.png)to place where to bend that Sequence Flow element.
+   * Click, and then drag, on a straight line of the Sequence Flow element to add a round anchor, then place where to add a bend in that Sequence Flow element.
+   * Click an existing round anchor to delete it, thereby removing that bend in that Sequence Flow element. ![](../../../.gitbook/assets/delete-round-anchor-sequence-flow-element-process-modeler-designer.png) 
+
+## Delete a Sequence Flow Element
+
+{% hint style="info" %}
+[Permissions are required to do this](the-quick-toolbar.md#permissions-required).
+{% endhint %}
+
+Follow these steps to delete a Sequence Flow element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Sequence Flow element between the connected element/[connector](../model-processes-using-connectors/what-is-a-connector.md) to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-sequence-flow-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Settings
 
 The Sequence Flow element has the following panels that contain settings:
 
@@ -93,6 +135,10 @@ The Sequence Flow element has the following panels that contain settings:
 #### Edit the Element Name
 
 An element name is a human-readable reference for a Process element.
+
+{% hint style="info" %}
+[Permissions are required to do this](the-quick-toolbar.md#permissions-required).
+{% endhint %}
 
 Follow these steps to enter or edit the name for a Sequence Flow element:
 
@@ -109,6 +155,10 @@ This Sequence Flow element setting is available only for [Exclusive Gateway](pro
 
 Outgoing Sequence Flow elements from Exclusive Gateway and Inclusive Gateway elements have an additional setting from which to configure under which Request condition\(s\) that Sequence Flow element triggers to route that Request's workflow to its connecting element or [connector](../model-processes-using-connectors/what-is-a-connector.md).
 
+{% hint style="info" %}
+[Permissions are required to do this](the-quick-toolbar.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit the expression that indicates under which Request condition\(s\) that Sequence Flow element triggers to route that Request's workflow to its connecting element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -123,6 +173,10 @@ Follow these steps to edit the expression that indicates under which Request con
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this](the-quick-toolbar.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.
@@ -176,6 +230,10 @@ Therefore, ensure to do the following when configuring outgoing Sequence Flow el
 Select which outgoing Sequence Flow element triggers by default when none of the Request conditions can trigger any of the outgoing Sequence flows from an Exclusive Gateway or Inclusive Gateway element. If none of the conditions specified in any of the outgoing Sequence Flow elements meet the Request conditions to trigger, the default outgoing Sequence Flow triggers, thereby preventing the in-progress Request from pausing indefinitely. If a Sequence Flow element is set as the default, then its evaluation is ignored and it triggers by default. Only one outgoing Sequence Flow element from an outgoing Exclusive Gateway or Inclusive Gateway element may be set as the default.
 
 Setting a default Sequence Flow to trigger is only available for outgoing Sequence Flow elements from Exclusive Gateway or Inclusive Gateway elements.
+
+{% hint style="info" %}
+[Permissions are required to do this](the-quick-toolbar.md#permissions-required).
+{% endhint %}
 
 Follow these steps to select an outgoing Sequence Flow element as the default to trigger from either an Exclusive Gateway or Inclusive Gateway element:
 

@@ -4,7 +4,7 @@ description: >-
   between elements in separate Pool elements.
 ---
 
-# Connect Message Flow Elements to Indicate Messaging
+# Message Flow Elements
 
 ## Overview
 
@@ -57,21 +57,19 @@ The following BPMN 2.0 elements do not use outgoing Message Flow elements:
 * [Text Annotation](process-modeling-element-descriptions.md#text-annotation) element
 * [Association](process-modeling-element-descriptions.md#association) element
 
-## Connect the Message Flow Element Between Elements in Separate Pool Elements
+## Permissions Required
 
-{% hint style="info" %}
-### Looking for Information about Sequence Flow Elements?
-
-See [Set and Delete Sequence Flow Between Elements](the-quick-toolbar.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to set Message Flow elements in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure Message Flow elements in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Connect the Message Flow Element Between Elements in Separate Pool Elements
+
+{% hint style="info" %}
+[Permissions are required to do this](set-and-delete-message-flow-between-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to set the Message Flow element between elements in separate Pool elements:
@@ -94,15 +92,6 @@ Follow these steps to set the Message Flow element between elements in separate 
 
 ## Settings
 
-{% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Message Flow element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
-{% endhint %}
-
 The Message Flow element has the following panels that contain settings:
 
 * **Configuration** panel
@@ -116,6 +105,10 @@ The Message Flow element has the following panels that contain settings:
 
 An element name is a human-readable reference for a Process element.
 
+{% hint style="info" %}
+[Permissions are required to do this](set-and-delete-message-flow-between-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to enter or edit the name for a Message Flow element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -128,6 +121,10 @@ Follow these steps to enter or edit the name for a Message Flow element:
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this](set-and-delete-message-flow-between-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.

@@ -14,7 +14,7 @@ description: >-
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Pool](process-modeling-element-descriptions.md#pool) element.
 {% endhint %}
 
-Your ProcessMaker user account or group membership must have the following permissions to configure a Pool element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure a Pool or Lane element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
@@ -132,6 +132,12 @@ Follow these steps to edit the identifier value for a Pool element:
 4. In the **Node Identifier** setting, edit the Pool element's identifier to a unique value from all elements in the Process model and then press **Enter**.
 
 ## Add a Lane Element to a Pool Element
+
+{% hint style="info" %}
+### Don't Know What a Lane Element Is?
+
+See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Lane](process-modeling-element-descriptions.md#lane) element.
+{% endhint %}
 
 {% hint style="info" %}
 [Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
