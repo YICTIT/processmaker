@@ -116,5 +116,3 @@ Follow these steps to select from which [Display](../../../design-forms/screens-
 
 {% page-ref page="../../copy-process-model-elements-or-connectors.md" %}
 
-{% page-ref page="../../remove-process-model-elements.md" %}
-

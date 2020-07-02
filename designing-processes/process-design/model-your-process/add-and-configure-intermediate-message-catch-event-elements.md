@@ -1,30 +1,30 @@
 ---
 description: >-
-  Add and configure Intermediate Message Catch Event elements in your Process
-  model.
+  Add, copy, delete, change the color, align, and configure Intermediate Message
+  Catch Event elements in your Process model.
 ---
 
-# Add and Configure Intermediate Message Catch Event Elements
+# Intermediate Message Catch Event Elements
 
-## Add an Intermediate Message Catch Event Element
+## Permissions Required
 
 {% hint style="info" %}
 ### Don't Know What an Intermediate Message Catch Event Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Intermediate Message Catch Event](process-modeling-element-descriptions.md#intermediate-message-catch-event) element.
+{% endhint %}
 
-### Make a Copy of an Existing Intermediate Message Catch Event Element Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add an Intermediate Message Catch Event element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure an Intermediate Message Catch Event element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add an Intermediate Message Catch Event Element
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-message-catch-event-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add an Intermediate Message Catch Event element to the Process model:
@@ -46,16 +46,22 @@ Moving an Intermediate Message Catch Event element has the following limitations
 * **Lane element:** If the Intermediate Message Catch Event element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Intermediate Message Catch Event element cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Settings
+## Delete an Intermediate Message Catch Event Element
+
+Deleting a Process model element also deletes any [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model element is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/[connectors](../model-processes-using-connectors/what-is-a-connector.md).
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure an Intermediate Message Catch Event element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-intermediate-message-catch-event-elements.md#permissions-required).
 {% endhint %}
+
+Follow these steps to delete an Intermediate Message Catch Event element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Intermediate Message Catch Event element to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-intermediate-message-catch-event-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Settings
 
 The Intermediate Message Catch Event element has the following panels that contain settings:
 
@@ -73,6 +79,10 @@ The Intermediate Message Catch Event element has the following panels that conta
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-message-catch-event-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit the name for an Intermediate Message Catch Event element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -87,6 +97,10 @@ Follow these steps to edit the name for an Intermediate Message Catch Event elem
 
 An Intermediate Message Catch Event element pauses a [Request](../../../using-processmaker/requests/what-is-a-request.md) until that element receives a message from either an [Intermediate Message Throw Event](process-modeling-element-descriptions.md#intermediate-message-throw-event) element or a [Message End Event](process-modeling-element-descriptions.md#message-end-event) element \(but not both\) located in a different [Pool](process-modeling-element-descriptions.md#pool) element than the Intermediate Message Catch Event element receiving the message. After the Intermediate Message Catch Event element receives its message, that element triggers. Select from which element to listen for a message based on the Intermediate Message Throw Event or Message End Event element's **Message Name** setting value.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-message-catch-event-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to select the element from which to listen for a message:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -97,16 +111,6 @@ Follow these steps to select the element from which to listen for a message:
 ### Vocabularies Panel Settings
 
 #### Assign ProcessMaker Vocabularies That Validate Request Data from This Element
-
-{% hint style="info" %}
-### ProcessMaker Package Required
-
-Your ProcessMaker instance must have the [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) installed to assign which ProcessMaker Vocabularies validate Request data at an Intermediate Message Catch Event element. Use the Vocabularies package to maintain uniform JSON schemas across all assets in your organization. These assets include [Processes](../../viewing-processes/what-is-a-process.md), [ProcessMaker Screens](../../design-forms/what-is-a-form.md), and [ProcessMaker Scripts](../../scripts/what-is-a-script.md).
-
-A ProcessMaker Vocabulary is a JSON schema. The JSON schema describes the data objects, types, and structure that you want in both a machine and human readable format. Apply one or more ProcessMaker Vocabularies to your Processes and/or specific BPMN 2.0 elements in your Process models to ensure the JSON data model in Request data complies with the data structure outlined in the JSON schema that you need to meet regulatory specifications or ensure Request data contains required information.
-
-The Vocabularies package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Vocabularies package can be installed in your ProcessMaker instance.
-{% endhint %}
 
 Assign [ProcessMaker Vocabularies](../../vocabularies-management/what-is-a-vocabulary.md) that validate Request data complies with a specific JSON schema. This is often mandatory for many types of business sectors including banking and healthcare. Ensure the quality and compliance of Request data. For example, during a Loan Application process, ensure that personal information has been included in the Request to that moment in that in-progress Request. The Vocabularies package must be installed in your ProcessMaker instance to make this configuration.
 
@@ -119,6 +123,20 @@ During an in-progress Request, if ProcessMaker evaluates that the Request data n
 If no ProcessMaker Vocabularies are assigned, ProcessMaker does not validate Request data complies with a specific JSON schema prior to continuing workflow for that Request.
 
 One or more ProcessMaker Vocabularies must be created to your ProcessMaker instance before assigning a Vocabulary. See [Create a New Vocabulary](../../vocabularies-management/manage-your-vocabularies/create-a-new-vocabulary.md#create-a-new-processmaker-vocabulary). Multiple ProcessMaker Vocabularies can be assigned to a Start Event element.
+
+{% hint style="info" %}
+### ProcessMaker Package Required
+
+Your ProcessMaker instance must have the [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) installed to assign which ProcessMaker Vocabularies validate Request data at an Intermediate Message Catch Event element. Use the Vocabularies package to maintain uniform JSON schemas across all assets in your organization. These assets include [Processes](../../viewing-processes/what-is-a-process.md), [ProcessMaker Screens](../../design-forms/what-is-a-form.md), and [ProcessMaker Scripts](../../scripts/what-is-a-script.md).
+
+A ProcessMaker Vocabulary is a JSON schema. The JSON schema describes the data objects, types, and structure that you want in both a machine and human readable format. Apply one or more ProcessMaker Vocabularies to your Processes and/or specific BPMN 2.0 elements in your Process models to ensure the JSON data model in Request data complies with the data structure outlined in the JSON schema that you need to meet regulatory specifications or ensure Request data contains required information.
+
+The Vocabularies package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Vocabularies package can be installed in your ProcessMaker instance.
+{% endhint %}
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-message-catch-event-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to assign ProcessMaker Vocabularies that validate Request data from an Intermediate Message Catch Event element:
 
@@ -147,6 +165,10 @@ After one or more ProcessMaker Vocabularies are assigned to an Intermediate Mess
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-message-catch-event-elements.md#permissions-required).
+{% endhint %}
+
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.
 {% endhint %}
@@ -170,8 +192,6 @@ Follow these steps to edit the identifier value for an Intermediate Message Catc
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 
 {% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
-{% page-ref page="../remove-process-model-elements.md" %}
 
 {% page-ref page="set-and-delete-message-flow-between-elements.md" %}
 

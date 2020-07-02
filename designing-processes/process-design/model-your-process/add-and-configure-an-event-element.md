@@ -1,28 +1,30 @@
 ---
-description: Add and configure Start Event elements in your Process model.
+description: >-
+  Add, copy, delete, change the color, align, and configure Start Event elements
+  in your Process model.
 ---
 
-# Add and Configure Start Event Elements
+# Start Event Elements
 
-## Add a Start Event Element
+## Permissions Required
 
 {% hint style="info" %}
 ### Don't Know What a Start Event Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Start Event](process-modeling-element-descriptions.md#start-event) element.
+{% endhint %}
 
-### Make a Copy of an Existing Start Event Element Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Start Event element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure a Start Event element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add a Start Event Element
+
+{% hint style="info" %}
+[Permissions are required to do this.](add-and-configure-an-event-element.md#permissions-required)
 {% endhint %}
 
 Follow these steps to add a Start Event element to the Process model:
@@ -49,16 +51,22 @@ Moving a Start Event element has the following limitations in regards to the fol
 * **Lane element:** If the Start Event element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Start Event element cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Settings
+## Delete a Start Event Element
+
+Deleting a Process model element also deletes any [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model element is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/[connectors](../model-processes-using-connectors/what-is-a-connector.md).
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Start Event element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this.](add-and-configure-an-event-element.md#permissions-required)
 {% endhint %}
+
+Follow these steps to delete a Start Event element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Start Event element or connector to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-start-event-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Settings
 
 The Start Event element has the following panels that contain settings:
 
@@ -79,6 +87,10 @@ The Start Event element has the following panels that contain settings:
 #### Edit the Element Name
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
+
+{% hint style="info" %}
+[Permissions are required to do this.](add-and-configure-an-event-element.md#permissions-required)
+{% endhint %}
 
 Follow these steps to edit the name for a Start Event element:
 
@@ -101,6 +113,10 @@ Select whether a [ProcessMaker user](../../../processmaker-administration/add-us
 
 When a Start Event element is placed into a Process model, it is not configured to indicate how a Request can start via that Start Event element. Therefore, it must be configured.
 
+{% hint style="info" %}
+[Permissions are required to do this.](add-and-configure-an-event-element.md#permissions-required)
+{% endhint %}
+
 Follow these steps to select which ProcessMaker [user](../../../processmaker-administration/add-users/what-is-a-user.md) can start a Request via this Start Event element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -118,6 +134,10 @@ Follow these steps to select which ProcessMaker [user](../../../processmaker-adm
 #### Select the ProcessMaker Group That Can Start a Request
 
 When a Start Event element is placed into a Process model, it is not configured to indicate how a Request can start via that Start Event element. Therefore, it must be configured.
+
+{% hint style="info" %}
+[Permissions are required to do this.](add-and-configure-an-event-element.md#permissions-required)
+{% endhint %}
 
 Follow these steps to select which ProcessMaker [group](../../../processmaker-administration/assign-groups-to-users/what-is-a-group.md) members can start a Request via this Start Event element:
 
@@ -137,6 +157,8 @@ Follow these steps to select which ProcessMaker [group](../../../processmaker-ad
 
 #### Select Who Can Start a Request via a Web Entry
 
+When a Start Event element is placed into a Process model, Web Entry settings for that element are disabled. Therefore, even if the [Web Entry](../../../package-development-distribution/package-a-connector/web-entry.md) package is installed in your ProcessMaker instance, it must be configured for use.
+
 {% hint style="info" %}
 ### ProcessMaker Package Required
 
@@ -145,7 +167,9 @@ Your ProcessMaker instance must have the [Web Entry package](../../../package-de
 The Web Entry package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Web Entry package can be installed in your ProcessMaker instance.
 {% endhint %}
 
-When a Start Event element is placed into a Process model, Web Entry settings for that element are disabled. Therefore, even if the [Web Entry](../../../package-development-distribution/package-a-connector/web-entry.md) package is installed in your ProcessMaker instance, it must be configured for use.
+{% hint style="info" %}
+[Permissions are required to do this.](add-and-configure-an-event-element.md#permissions-required)
+{% endhint %}
 
 Follow these steps to select who can start a Request via a Web Entry URL via this Start Event element:
 
@@ -209,16 +233,6 @@ Follow these steps to select who can start a Request via a Web Entry URL via thi
 
 #### Assign ProcessMaker Vocabularies That Validate Request Data from This Element
 
-{% hint style="info" %}
-### ProcessMaker Package Required
-
-Your ProcessMaker instance must have the [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) installed to assign which ProcessMaker Vocabularies validate Request data at a Start Event element. Use the Vocabularies package to maintain uniform JSON schemas across all assets in your organization. These assets include [Processes](../../viewing-processes/what-is-a-process.md), [ProcessMaker Screens](../../design-forms/what-is-a-form.md), and [ProcessMaker Scripts](../../scripts/what-is-a-script.md).
-
-A ProcessMaker Vocabulary is a JSON schema. The JSON schema describes the data objects, types, and structure that you want in both a machine and human readable format. Apply one or more ProcessMaker Vocabularies to your Processes and/or specific BPMN 2.0 elements in your Process models to ensure the JSON data model in Request data complies with the data structure outlined in the JSON schema that you need to meet regulatory specifications or ensure Request data contains required information.
-
-The Vocabularies package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Vocabularies package can be installed in your ProcessMaker instance.
-{% endhint %}
-
 Assign [ProcessMaker Vocabularies](../../vocabularies-management/what-is-a-vocabulary.md) that validate Request data complies with a specific JSON schema. This is often mandatory for many types of business sectors including banking and healthcare. Ensure the quality and compliance of Request data. For example, during a Loan Application process, ensure that personal information has been included in the Request to that moment in that in-progress Request. The Vocabularies package must be installed in your ProcessMaker instance to make this configuration.
 
 Use a ProcessMaker Vocabulary on a Start Event element when using the [Web Entry package](../../../package-development-distribution/package-a-connector/web-entry.md). After the Request data is submitted from the Web Entry, ProcessMaker Vocabularies assigned to the Start Event element validate the Request data complies with the Vocabulary's JSON schema. See [What is a Vocabulary?](../../vocabularies-management/what-is-a-vocabulary.md) for more information. See [Select Who Can Start a Request via a Web Entry](add-and-configure-an-event-element.md#select-who-can-start-a-request-via-a-web-entry) for information how to use the Web Entry package on a Start Event element.
@@ -230,6 +244,20 @@ During an in-progress Request, if ProcessMaker evaluates that the Request data n
 If no ProcessMaker Vocabularies are assigned, ProcessMaker does not validate Request data complies with a specific JSON schema prior to continuing workflow for that Request.
 
 One or more ProcessMaker Vocabularies must be created to your ProcessMaker instance before assigning a Vocabulary. See [Create a New Vocabulary](../../vocabularies-management/manage-your-vocabularies/create-a-new-vocabulary.md#create-a-new-processmaker-vocabulary). Multiple ProcessMaker Vocabularies can be assigned to a Start Event element.
+
+{% hint style="info" %}
+### ProcessMaker Package Required
+
+Your ProcessMaker instance must have the [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) installed to assign which ProcessMaker Vocabularies validate Request data at a Start Event element. Use the Vocabularies package to maintain uniform JSON schemas across all assets in your organization. These assets include [Processes](../../viewing-processes/what-is-a-process.md), [ProcessMaker Screens](../../design-forms/what-is-a-form.md), and [ProcessMaker Scripts](../../scripts/what-is-a-script.md).
+
+A ProcessMaker Vocabulary is a JSON schema. The JSON schema describes the data objects, types, and structure that you want in both a machine and human readable format. Apply one or more ProcessMaker Vocabularies to your Processes and/or specific BPMN 2.0 elements in your Process models to ensure the JSON data model in Request data complies with the data structure outlined in the JSON schema that you need to meet regulatory specifications or ensure Request data contains required information.
+
+The Vocabularies package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Vocabularies package can be installed in your ProcessMaker instance.
+{% endhint %}
+
+{% hint style="info" %}
+[Permissions are required to do this.](add-and-configure-an-event-element.md#permissions-required)
+{% endhint %}
 
 Follow these steps to assign ProcessMaker Vocabularies that validate Request data from a Start Event element:
 
@@ -257,6 +285,10 @@ After one or more ProcessMaker Vocabularies are assigned to a Start Event elemen
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this.](add-and-configure-an-event-element.md#permissions-required)
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.
@@ -287,8 +319,6 @@ Follow these steps to edit the identifier value for a Start Event element:
 {% page-ref page="../../../processmaker-administration/assign-groups-to-users/what-is-a-group.md" %}
 
 {% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
-{% page-ref page="../remove-process-model-elements.md" %}
 
 {% page-ref page="../../../package-development-distribution/package-a-connector/web-entry.md" %}
 

@@ -264,5 +264,3 @@ Combine expressions using logical operators. Example: `(not approved) or (cost >
 
 {% page-ref page="set-and-delete-message-flow-between-elements.md" %}
 
-{% page-ref page="../remove-process-model-elements.md" %}
-

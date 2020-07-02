@@ -112,5 +112,3 @@ Follow these steps to configure a Send Email connector:
 
 {% page-ref page="../../copy-process-model-elements-or-connectors.md" %}
 
-{% page-ref page="../../remove-process-model-elements.md" %}
-

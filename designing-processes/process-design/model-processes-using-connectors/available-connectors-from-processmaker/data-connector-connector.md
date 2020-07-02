@@ -189,5 +189,3 @@ Click the **Delete** icon![](../../../../.gitbook/assets/delete-record-record-li
 
 {% page-ref page="../../copy-process-model-elements-or-connectors.md" %}
 
-{% page-ref page="../../remove-process-model-elements.md" %}
-

@@ -152,5 +152,3 @@ Follow these steps to enter the Slack notification message to send:
 
 {% page-ref page="../../copy-process-model-elements-or-connectors.md" %}
 
-{% page-ref page="../../remove-process-model-elements.md" %}
-

@@ -1,28 +1,30 @@
 ---
-description: Add and configure Intermediate Timer Event elements in your Process model.
+description: >-
+  Add, copy, delete, change the color, align, and configure Intermediate Timer
+  Event elements in your Process model.
 ---
 
-# Add and Configure Intermediate Timer Event Elements
+# Intermediate Timer Event Elements
 
-## Add an Intermediate Timer Event Element
+## Permissions Required
 
 {% hint style="info" %}
 ### Don't Know What an Intermediate Timer Event Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Intermediate Timer Event](process-modeling-element-descriptions.md#intermediate-timer-event) element.
+{% endhint %}
 
-### Make a Copy of an Existing Intermediate Timer Event Element Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add an Intermediate Timer Event element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure an Intermediate Timer Event element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add an Intermediate Timer Event Element
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-timer-event-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add an Intermediate Timer Event element to the Process model:
@@ -46,16 +48,22 @@ Moving an Intermediate Timer Event element has the following limitations in rega
 * **Lane element:** If the Intermediate Timer Event element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Intermediate Timer Event element cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Settings
+## Delete an Intermediate Timer Event Element
+
+Deleting a Process model element also deletes any [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model element is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/[connectors](../model-processes-using-connectors/what-is-a-connector.md).
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure an Intermediate Timer Event element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-intermediate-timer-event-elements.md#permissions-required).
 {% endhint %}
+
+Follow these steps to delete an Intermediate Timer Event element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Intermediate Timer Event element to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-intermediate-timer-event-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Settings
 
 The Intermediate Timer Event element has the following panels that contain settings:
 
@@ -71,6 +79,10 @@ The Intermediate Timer Event element has the following panels that contain setti
 #### Edit the Element Name
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-timer-event-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to edit the name for an Intermediate Timer Event element:
 
@@ -90,6 +102,10 @@ When an Intermediate Timer Event element is placed into a Process model, it is s
 
 * Set an interval in which to delay triggering the Intermediate Time Event element in a specified number of days, weeks, months, or years.
 * Set the date and hour when the trigger the Intermediate Timer Event element.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-timer-event-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to set the timer controls for an Intermediate Timer Event element:
 
@@ -129,6 +145,10 @@ Follow these steps to set the timer controls for an Intermediate Timer Event ele
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-timer-event-elements.md#permissions-required).
+{% endhint %}
+
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.
 {% endhint %}
@@ -154,6 +174,4 @@ Follow these steps to edit the identifier value for an Intermediate Timer Event 
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
 
 {% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
-{% page-ref page="../remove-process-model-elements.md" %}
 

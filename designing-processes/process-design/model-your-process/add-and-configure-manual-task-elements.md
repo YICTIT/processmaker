@@ -1,28 +1,30 @@
 ---
-description: Add and configure Manual Task elements in your Process model.
+description: >-
+  Add, copy, delete, change the color, align, and configure Manual Task elements
+  in your Process model.
 ---
 
-# Add and Configure Manual Task Elements
+# Manual Task Elements
 
-## Add a Manual Task Element
+## Permissions Required
 
 {% hint style="info" %}
 ### Don't Know What a Manual Task Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Manual Task](process-modeling-element-descriptions.md#manual-task) element.
+{% endhint %}
 
-### Make a Copy of an Existing Manual Task Element Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Manual Task element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure a Manual Task element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add a Manual Task Element
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add a Manual Task element to the Process model:
@@ -55,16 +57,22 @@ Moving a Manual Task element has the following limitations in regards to the fol
 * **Lane element:** If the Manual Task element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Manual Task element cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Settings
+## Delete a Manual Task Element
+
+Deleting a Process model element also deletes any [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model element is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/[connectors](../model-processes-using-connectors/what-is-a-connector.md).
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Manual Task element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-task-elements.md#permissions-required).
 {% endhint %}
+
+Follow these steps to delete a Manual Task element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Manual Task element or connector to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-manual-task-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Settings
 
 The Manual Task element has the following panels that contain settings:
 
@@ -104,6 +112,10 @@ The Manual Task element has multiple settings in the **Configuration** panel:
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit the name for a Manual Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -119,6 +131,10 @@ Follow these steps to edit the name for a Manual Task element:
 When a Manual Task element triggers, a [ProcessMaker Screen](../../design-forms/what-is-a-form.md) can display instructions or information in its [Task summary](../../../using-processmaker/task-management/view-a-task-summary.md#task-form) so its Task assignee can perform the manual Task. The ProcessMaker Screen must be of [Display](../../design-forms/screens-builder/types-for-screens.md#display) type.
 
 When a Manual Task element is placed into a Process model, it is not configured to display a ProcessMaker Screen when it triggers. Therefore, it must be configured.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to select the ProcessMaker Screen that displays when a Manual Task element triggers:
 
@@ -142,6 +158,10 @@ Specify due time for a Task element in total number of hours. This includes hour
 ### Self Service Tasks Can Become Overdue Without a Task Assignee
 
 A [Self Service](add-and-configure-task-elements.md#select-to-whom-to-assign-the-task) Task can become overdue even though no members of a ProcessMaker group have self-assigned that Task: the number of hours that Task is due begins as soon as that Task element triggers. Therefore, if configuring a Self Service Task, consider that the Task does not immediately have a Task assignee to do that Task.
+{% endhint %}
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to specify when a Manual Task element is due:
@@ -170,6 +190,10 @@ The following message displays to the Task assignee after that Request participa
 
 ![Message that displays when the Display the Next Assigned Task to the Task Assignee setting is used](../../../.gitbook/assets/display-next-assigned-task-icon-process-modeler-processes.png)
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to configure a Manual Task element to display the next assigned Task to the Task assignee:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -191,6 +215,10 @@ Instead of [assign the Task's assignee using one or more rules](add-and-configur
 * **Previous Task assignee:** Assign that Task to the previous Task assignee in that Request's workflow.
 * **By User ID:** Assign that Task to a ProcessMaker user based on a **Variable Name** value as entered into a [ProcessMaker Screen](../../design-forms/what-is-a-form.md) during a previous Task in that Request. For example, if a [Line Input control](../../design-forms/screens-builder/control-descriptions/line-input-control-settings.md) in a ProcessMaker Screen has the **Variable Name** value of `Name`, to contain a user's name, then use that value to thereby assign the Task to that ProcessMaker user.
 * **Self Service:** Assign that Task to allow any member in a specified ProcessMaker group to self-assign any Task from a queue. When this Task element triggers, this Task displays in the [**Self Service** Task page](../../../using-processmaker/task-management/self-assign-tasks-to-yourself-from-a-queue.md#view-self-service-tasks-that-you-can-assign-to-yourself) for all members of that ProcessMaker group.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to select to whom to assign the Task that is referenced in a Manual Task element:
 
@@ -237,6 +265,10 @@ Instead of [selecting to whom to assign a Task](add-and-configure-manual-task-el
 * **Self Service:** Assign that Task to allow any member in a specified ProcessMaker group to voluntarily self-assign any Task from a queue.
 
 The rule that determines the Task assignee uses an expression syntax described in [Expression Syntax Components](add-and-configure-manual-task-elements.md#expression-syntax-components). Each rule can only have one expression, but by using logical operators multiple conditions can be specified in that expression. You may use multiple rules to better confine the condition\(s\) to whom to assign the Task. You may use [Magic Variables](../../reference-global-variables-in-your-processmaker-assets.md) in your expression syntax.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to select to whom to assign the Task that is referenced in a Manual Task element using a rule:
 
@@ -358,6 +390,10 @@ Set when [notifications](../../../using-processmaker/notifications.md) regarding
 * **Task assignee:** Send notifications to Task assignees associated with this Manual Task element when that Task is assigned and/or completed.
 * **Request participants:** Send notifications to all Request participants of this Process when the Task associated with this Manual Task element is assigned or completed.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to set Task notifications in a Manual Task element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -419,6 +455,10 @@ After setting an email notification, the following settings are available:
 * [Delete an email notification](add-and-configure-manual-task-elements.md#delete-an-email-notification)
 
 #### Set the Email Notification's Subject and Body Content
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to set the email Task notification's subject and body content in a Manual Task element:
 
@@ -552,6 +592,10 @@ Combine expressions using logical operators. Example: `(not approved) or (cost >
 
 #### Edit an Email Notification
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit an email notification:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -565,6 +609,10 @@ Follow these steps to edit an email notification:
 
 #### Copy an Email Notification
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to copy an email notification:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -577,6 +625,10 @@ Follow these steps to copy an email notification:
    * [Set when this email notification sends](add-and-configure-manual-task-elements.md#set-when-this-email-notification-sends)
 
 #### Delete an Email Notification
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 Consider carefully when deleting an email notification. Deleting a configured email notification cannot be undone.
@@ -594,25 +646,6 @@ Follow these steps to delete an email notification:
 
 #### Assign ProcessMaker Vocabularies That Validate Request Data from This Element
 
-{% hint style="info" %}
-### ProcessMaker Package Required
-
-Your ProcessMaker instance must have the [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) installed to assign which ProcessMaker Vocabularies validate Request data at a Manual Task element. Use the Vocabularies package to maintain uniform JSON schemas across all assets in your organization. These assets include [Processes](../../viewing-processes/what-is-a-process.md), [ProcessMaker Screens](../../design-forms/what-is-a-form.md), and [ProcessMaker Scripts](../../scripts/what-is-a-script.md).
-
-A ProcessMaker Vocabulary is a JSON schema. The JSON schema describes the data objects, types, and structure that you want in both a machine and human readable format. Apply one or more ProcessMaker Vocabularies to your Processes and/or specific BPMN 2.0 elements in your Process models to ensure the JSON data model in Request data complies with the data structure outlined in the JSON schema that you need to meet regulatory specifications or ensure Request data contains required information.
-
-The Vocabularies package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Vocabularies package can be installed in your ProcessMaker instance.
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to set which ProcessMaker user or group can start a Request for a Process unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: View Processes
-* Processes: Edit Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
-{% endhint %}
-
 Assign [ProcessMaker Vocabularies](../../vocabularies-management/what-is-a-vocabulary.md) that validate that Request data complies with a specific JSON schema. This is often mandatory for many types of business sectors including banking and healthcare. Ensure the quality and compliance of Request data. For example, during a Loan Application process, ensure that personal information has been included in the Request to that moment in that in-progress Request. The Vocabularies package must be installed in your ProcessMaker instance to make this configuration.
 
 Use a ProcessMaker Vocabulary on a Manual Task element to validate that Request data complies with the Vocabulary's JSON schema after the Task assignee submits the Task but prior to when the Request continues workflow. See [What is a Vocabulary?](../../vocabularies-management/what-is-a-vocabulary.md) for more information.
@@ -624,6 +657,20 @@ During an in-progress Request, if ProcessMaker evaluates that the Request data n
 If no ProcessMaker Vocabularies are assigned, ProcessMaker does not validate that Request data complies with a specific JSON schema prior to continuing workflow for that Request.
 
 One or more ProcessMaker Vocabularies must be created to your ProcessMaker instance before assigning a Vocabulary. See [Create a New Vocabulary](../../vocabularies-management/manage-your-vocabularies/create-a-new-vocabulary.md#create-a-new-processmaker-vocabulary). Multiple ProcessMaker Vocabularies can be assigned to a Manual Task element.
+
+{% hint style="info" %}
+### ProcessMaker Package Required
+
+Your ProcessMaker instance must have the [Vocabularies package](../../../package-development-distribution/package-a-connector/vocabularies.md) installed to assign which ProcessMaker Vocabularies validate Request data at a Manual Task element. Use the Vocabularies package to maintain uniform JSON schemas across all assets in your organization. These assets include [Processes](../../viewing-processes/what-is-a-process.md), [ProcessMaker Screens](../../design-forms/what-is-a-form.md), and [ProcessMaker Scripts](../../scripts/what-is-a-script.md).
+
+A ProcessMaker Vocabulary is a JSON schema. The JSON schema describes the data objects, types, and structure that you want in both a machine and human readable format. Apply one or more ProcessMaker Vocabularies to your Processes and/or specific BPMN 2.0 elements in your Process models to ensure the JSON data model in Request data complies with the data structure outlined in the JSON schema that you need to meet regulatory specifications or ensure Request data contains required information.
+
+The Vocabularies package is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Vocabularies package can be installed in your ProcessMaker instance.
+{% endhint %}
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to assign ProcessMaker Vocabularies that validate Request data from a Manual Task element:
 
@@ -651,6 +698,10 @@ After one or more ProcessMaker Vocabularies are assigned to a Manual Task elemen
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-manual-task-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.
@@ -685,8 +736,6 @@ Follow these steps to edit the identifier value for a Manual Task element:
 {% page-ref page="../../../using-processmaker/notifications.md" %}
 
 {% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
-{% page-ref page="../remove-process-model-elements.md" %}
 
 {% page-ref page="../../../using-processmaker/task-management/view-a-task-summary.md" %}
 

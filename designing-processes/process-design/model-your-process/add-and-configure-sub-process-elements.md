@@ -190,8 +190,6 @@ Follow these steps to edit the identifier value for a Sub Process element:
 
 {% page-ref page="../copy-process-model-elements-or-connectors.md" %}
 
-{% page-ref page="../remove-process-model-elements.md" %}
-
 {% page-ref page="../../../package-development-distribution/package-a-connector/vocabularies.md" %}
 
 {% page-ref page="../../vocabularies-management/what-is-a-vocabulary.md" %}

@@ -110,5 +110,3 @@ Follow these steps to edit the identifier value for an Exclusive Gateway element
 
 {% page-ref page="../copy-process-model-elements-or-connectors.md" %}
 
-{% page-ref page="../remove-process-model-elements.md" %}
-

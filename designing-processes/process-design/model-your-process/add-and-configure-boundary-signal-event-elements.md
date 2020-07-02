@@ -180,5 +180,3 @@ Follow these steps to edit the identifier value for a Boundary Signal Event elem
 
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
 
-{% page-ref page="../remove-process-model-elements.md" %}
-

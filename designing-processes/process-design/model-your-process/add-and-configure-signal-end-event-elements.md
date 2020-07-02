@@ -1,32 +1,30 @@
 ---
-description: Add and configure Signal End Event elements in your Process model.
+description: >-
+  Add, copy, delete, change the color, align, and configure Signal End Event
+  elements in your Process model.
 ---
 
-# Add and Configure Signal End Event Elements
+# Signal End Event Elements
 
-## Add a Signal End Event Element
+## Permissions Required
 
 {% hint style="info" %}
 ### Don't Know What a Signal End Event Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element.
+{% endhint %}
 
-### Make a Copy of an Existing Signal End Event Element Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Signal End Event element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure a Signal End Event element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
 
-### New Topic
+## Add a Signal End Event Element
 
-This topic is new for ProcessMaker version 4.0.4. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.4-release-notes#process-modeler-1).
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-signal-end-event-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add a Signal End Event element to the Process model:
@@ -51,16 +49,22 @@ Moving a Signal End Event element has the following limitations in regards to th
 * **Lane element:** If the Signal End Event element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Signal End Event element cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Settings
+## Delete a Signal End Event Element
+
+Deleting a Process model element also deletes any [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model element is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/[connectors](../model-processes-using-connectors/what-is-a-connector.md).
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Signal End Event element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-error-end-event-elements.md#permissions-required).
 {% endhint %}
+
+Follow these steps to delete a Signal End Event element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Signal End Event element or connector to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-signal-end-event-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Settings
 
 The Signal End Event element has the following panels that contain settings:
 
@@ -78,6 +82,10 @@ The Signal End Event element has the following panels that contain settings:
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-signal-end-event-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit the name for a Signal End Event element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -90,6 +98,10 @@ Follow these steps to edit the name for a Signal End Event element:
 A Signal End Event element broadcasts a specific signal and its Request data when it triggers to all elements throughout that ProcessMaker instance listening for that signal. The Signal End Event element triggers when its Request completes. The element that listens for the broadcast signal does not need to be in the same Process model as the Signal End Event element. Select the signal that this element broadcasts.
 
 You may create a signal from this setting that this element broadcasts if necessary. This signal becomes available throughout your ProcessMaker instance for all Process designers to use after you [save your Process model](../toolboxes.md#save-your-process-model). Therefore, the attributes that define a signal, the signal ID and signal name, must be unique.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-signal-end-event-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to select the signal that the Signal End Event element broadcasts:
 
@@ -111,6 +123,10 @@ Follow these steps to select the signal that the Signal End Event element broadc
 
 Editing the name of a signal changes that signal's name in your ProcessMaker instance. This signal name displays when selecting a signal from other elements that can broadcast or listen for a signal.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-signal-end-event-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit the name of a signal:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -123,6 +139,10 @@ Follow these steps to edit the name of a signal:
 8. [Save your Process model](../toolboxes.md#save-your-process-model).
 
 #### Delete a Signal from the ProcessMaker Instance
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-signal-end-event-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 Carefully consider whether to delete a signal. Deleting a signal makes that signal unavailable when configuring all elements that broadcast or listen to signals throughout your ProcessMaker instance. However, those elements already configured with a deleted signal are not affected, nor are any started Requests affected.
@@ -146,6 +166,10 @@ Follow these steps to delete a signal from the ProcessMaker instance:
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-signal-end-event-elements.md#permissions-required).
+{% endhint %}
+
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.
 {% endhint %}
@@ -168,6 +192,4 @@ Follow these steps to edit the identifier value for a Signal End Event element:
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
 
 {% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
-{% page-ref page="../remove-process-model-elements.md" %}
 

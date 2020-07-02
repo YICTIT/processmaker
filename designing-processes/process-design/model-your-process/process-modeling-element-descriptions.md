@@ -851,8 +851,6 @@ See [Connect Message Flow Elements to Indicate Collaboration](set-and-delete-mes
 
 {% page-ref page="add-and-configure-text-annotation-elements.md" %}
 
-{% page-ref page="../remove-process-model-elements.md" %}
-
 {% page-ref page="../undo-and-redo-changes.md" %}
 
 {% page-ref page="../navigate-around-your-process-model.md" %}

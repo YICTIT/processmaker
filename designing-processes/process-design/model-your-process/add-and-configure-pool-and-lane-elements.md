@@ -4,7 +4,7 @@ description: >-
   model.
 ---
 
-# Configure Pool and Lane Elements
+# Pool and Lane Elements
 
 ## Permissions Required
 
@@ -24,7 +24,7 @@ See the [Process](../../../processmaker-administration/permission-descriptions-f
 ## Add a Pool Element
 
 {% hint style="info" %}
-[Permissions are required to do this action](add-and-configure-pool-and-lane-elements.md#permissions-required).
+[Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add a Pool element to the Process model:
@@ -45,7 +45,7 @@ If a non-Pool element is placed into a Pool element, that element cannot be move
 
 ### Deleting a Pool Element Also Deletes All Elements Within It
 
-When a Pool element is [deleted](../remove-process-model-elements.md#delete-a-pool-element), all elements within it are also deleted. If you want to keep the elements within a Pool element, you must add those elements outside of the Pool element prior to deleting the Pool element.
+When a Pool element is [deleted](), all elements within it are also deleted. If you want to keep the elements within a Pool element, you must add those elements outside of the Pool element prior to deleting the Pool element.
 
 If you accidentally delete a Pool element with other elements you want to keep, then click the **Undo** button.
 {% endhint %}
@@ -53,12 +53,7 @@ If you accidentally delete a Pool element with other elements you want to keep, 
 ## Resize a Pool Element
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to resize a Pool element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to resize a Pool element:
@@ -73,12 +68,7 @@ Follow these steps to resize a Pool element:
 ## Delete a Pool Element
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to delete a Pool element from the Process model unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
 {% endhint %}
 
 {% hint style="warning" %}
@@ -96,15 +86,6 @@ Follow these steps to delete a Pool element from a Process model:
 
 ## Pool Element Settings
 
-{% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Pool element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
-{% endhint %}
-
 The Pool element has the following panels that contain settings:
 
 * **Configuration** panel
@@ -118,6 +99,10 @@ The Pool element has the following panels that contain settings:
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit the name for a Pool element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -130,6 +115,10 @@ Follow these steps to edit the name for a Pool element:
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.
@@ -145,18 +134,7 @@ Follow these steps to edit the identifier value for a Pool element:
 ## Add a Lane Element to a Pool Element
 
 {% hint style="info" %}
-### Don't Know What a Lane Element Is?
-
-See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Lane](process-modeling-element-descriptions.md#lane) element.
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Lane element to a Pool element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add a Lane element to a Pool element:
@@ -175,12 +153,7 @@ Follow these steps to add a Lane element to a Pool element:
 ## Resize a Lane Element
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to resize a Lane element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to resize a Lane element:
@@ -194,6 +167,10 @@ Follow these steps to resize a Lane element:
 
 ## Delete a Lane Element from a Pool Element
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to delete a Lane element from a Pool element:
 
 1. ​​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
@@ -202,15 +179,6 @@ Follow these steps to delete a Lane element from a Pool element:
 4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Pool element is deleted. All non-Pool elements and connectors that were within the deleted Lane element stay in their current positions within the Pool element.
 
 ## Lane Element Settings
-
-{% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure a Lane element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
-{% endhint %}
 
 The Lane element has the following panels that contain settings:
 
@@ -225,6 +193,10 @@ The Lane element has the following panels that contain settings:
 
 An element name is a human-readable reference for a Process element.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to enter or edit the name for a Lane element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -237,6 +209,10 @@ Follow these steps to enter or edit the name for a Lane element:
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.
@@ -256,8 +232,6 @@ Follow these steps to edit the identifier value for a Lane element:
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/view-your-processes.md" %}
 
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
-
-{% page-ref page="../remove-process-model-elements.md" %}
 
 {% page-ref page="../model-processes-using-connectors/what-is-a-connector.md" %}
 

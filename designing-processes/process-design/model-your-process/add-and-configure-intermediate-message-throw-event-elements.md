@@ -1,30 +1,30 @@
 ---
 description: >-
-  Add and configure Intermediate Message Throw Event elements in your Process
-  model.
+  Add, copy, delete, change the color, align, and configure Intermediate Message
+  Throw Event elements in your Process model.
 ---
 
-# Add and Configure Intermediate Message Throw Event Elements
+# Intermediate Message Throw Event Elements
 
-## Add an Intermediate Message Throw Event Element
+## Permissions Required
 
 {% hint style="info" %}
-### Don't Know What an Intermediate Signal Throw Event Element Is?
+### Don't Know What an Intermediate Message Throw Event Element Is?
 
 See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Intermediate Message Throw Event](process-modeling-element-descriptions.md#intermediate-message-throw-event) element.
+{% endhint %}
 
-### Make a Copy of an Existing Intermediate Message Throw Event Element Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add an Intermediate Message Throw Event element to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Your ProcessMaker user account or group membership must have the following permissions to configure an Intermediate Message Throw Event element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add an Intermediate Message Throw Event Element
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-message-throw-event-elements.md#permissions-required).
 {% endhint %}
 
 Follow these steps to add an Intermediate Message Throw Event element to the Process model:
@@ -46,16 +46,22 @@ Moving an Intermediate Message Throw Event element has the following limitations
 * **Lane element:** If the Intermediate Message Throw Event element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Intermediate Message Throw Event element cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Settings
+## Delete an Intermediate Message Throw Event Element
+
+Deleting a Process model element also deletes any [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model element is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/[connectors](../model-processes-using-connectors/what-is-a-connector.md).
 
 {% hint style="info" %}
-Your ProcessMaker user account or group membership must have the following permissions to configure an Intermediate Message Throw Event element unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[Permissions are required to do this](add-and-configure-intermediate-message-catch-event-elements.md#permissions-required).
 {% endhint %}
+
+Follow these steps to delete an Intermediate Message Throw Event element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Intermediate Message Throw Event element to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-intermediate-message-throw-event-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
+## Settings
 
 The Intermediate Message Throw Event element has the following panels that contain settings:
 
@@ -71,6 +77,10 @@ The Intermediate Message Throw Event element has the following panels that conta
 
 An element name is a human-readable reference for a Process element. Process Modeler automatically assigns the name of a Process element with its element type. However, an element's name can be changed.
 
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-message-throw-event-elements.md#permissions-required).
+{% endhint %}
+
 Follow these steps to edit the name for an Intermediate Message Throw Event element:
 
 1. Ensure that the **Hide Menus** button![](../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -81,6 +91,10 @@ Follow these steps to edit the name for an Intermediate Message Throw Event elem
 #### Edit the Message Name
 
 The Intermediate Message Throw Event element uses a message name as a placeholder for the Request data that this element sends to a catching element. When a [Message Start Event](process-modeling-element-descriptions.md#message-start-event) element or an [Intermediate Message Catch Event](process-modeling-element-descriptions.md#intermediate-message-catch-event) element listens for a message, it references the Intermediate Message Throw Event element's message name.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-message-throw-event-elements.md#permissions-required).
+{% endhint %}
 
 Follow these steps to configure the message name for an Intermediate Message Throw Event element:
 
@@ -94,6 +108,10 @@ Follow these steps to configure the message name for an Intermediate Message Thr
 #### Edit the Element's Identifier Value
 
 Process Modeler automatically assigns a unique value to each Process element added to a Process model. However, an element's identifier value can be changed if it is unique to all other elements in the Process model, including the Process model's identifier value.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-message-throw-event-elements.md#permissions-required).
+{% endhint %}
 
 {% hint style="warning" %}
 All identifier values for all elements in the Process model must be unique.
@@ -115,8 +133,6 @@ Follow these steps to edit the identifier value for an Intermediate Message Thro
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 
 {% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
-{% page-ref page="../remove-process-model-elements.md" %}
 
 {% page-ref page="set-and-delete-message-flow-between-elements.md" %}
 

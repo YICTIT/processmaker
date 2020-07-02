@@ -1,8 +1,25 @@
 ---
-description: Add and configure Script Task elements in your Process model.
+description: >-
+  Add, copy, delete, change the color, align, and configure Script Task elements
+  in your Process model.
 ---
 
-# Add and Configure Script Task Elements
+# Script Task Elements
+
+## Permissions Required
+
+{% hint style="info" %}
+### Don't Know What a Manual Task Element Is?
+
+See [Process Modeling Element Descriptions](process-modeling-element-descriptions.md) for a description of the [Manual Task](process-modeling-element-descriptions.md#manual-task) element.
+{% endhint %}
+
+Your ProcessMaker user account or group membership must have the following permissions to configure a Script Task element in the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+
+* Processes: Edit Processes
+* Processes: View Processes
+
+See the [Process](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
 
 ## Add a Script Task Element
 
@@ -244,8 +261,6 @@ Follow these steps to edit the identifier value for a Script Task element:
 {% page-ref page="../../scripts/what-is-a-script.md" %}
 
 {% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
-{% page-ref page="../remove-process-model-elements.md" %}
 
 {% page-ref page="../../../package-development-distribution/package-a-connector/vocabularies.md" %}
 

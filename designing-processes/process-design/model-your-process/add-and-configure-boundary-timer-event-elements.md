@@ -144,5 +144,3 @@ Follow these steps to edit the identifier value for a Boundary Timer Event eleme
 
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 
-{% page-ref page="../remove-process-model-elements.md" %}
-
