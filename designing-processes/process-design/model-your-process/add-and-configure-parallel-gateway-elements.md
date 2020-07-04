@@ -4,7 +4,7 @@ description: >-
   elements in your Process model.
 ---
 
-# Parallel Gateway Elements
+# Parallel Gateway Element
 
 ## Permissions Required
 

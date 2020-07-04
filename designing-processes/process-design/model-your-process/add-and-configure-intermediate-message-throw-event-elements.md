@@ -4,7 +4,7 @@ description: >-
   Throw Event elements in your Process model.
 ---
 
-# Intermediate Message Throw Event Elements
+# Intermediate Message Throw Event Element
 
 ## Permissions Required
 

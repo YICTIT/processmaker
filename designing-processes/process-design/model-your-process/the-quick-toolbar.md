@@ -4,7 +4,7 @@ description: >-
   connectors using Sequence Flow elements.
 ---
 
-# Sequence Flow Elements
+# Sequence Flow Element
 
 ## Overview
 

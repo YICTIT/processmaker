@@ -4,7 +4,7 @@ description: >-
   Event elements in your Process model.
 ---
 
-# Intermediate Timer Event Elements
+# Intermediate Timer Event Element
 
 ## Permissions Required
 

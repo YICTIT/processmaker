@@ -27,25 +27,36 @@ The email recipient's name and email address can be specified in one of the foll
 * A **Variable Name** setting value using mustache syntax, for example `{{ email_recipient }}` and `{{ email_address }}`, respectively
 * A [ProcessMaker Magic Variable](../../../reference-global-variables-in-your-processmaker-assets.md) value, specifically `{{ _user.fullname }}` and `{{ _user.email }}`, respectively
 
-## Add a Send Email Connector to the Process Model
+## Package and Permissions Required
 
-{% hint style="info" %}
-### ProcessMaker Package Required
+The Send Email connector requires that the [ProcessMaker Send Email package](../../../../package-development-distribution/package-a-connector/email.md) be installed in your ProcessMaker instance. The Send Email connector and the Send Email [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Send Email connector can be installed in your ProcessMaker instance.
 
-The [Send Email package](../../../../package-development-distribution/package-a-connector/email.md) is required. The Send Email [package](../../../../package-development-distribution/first-topic.md) installs the Send Email connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Send Email connector can be installed in your ProcessMaker instance.
-
-### Make a Copy of an Existing Send Email Connector Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Send Email connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Furthermore, your ProcessMaker user account or group membership must have the following permissions to configure a Send Email connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Delete a Send Email Connector
+
+Deleting a Process model [connector](../what-is-a-connector.md) also deletes any [Sequence Flow](../../model-your-process/process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](../../model-your-process/process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model connector is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/connectors.
+
+{% hint style="info" %}
+[A package and permissions are required to do this](email-connector.md#package-and-permissions-required).
+{% endhint %}
+
+Follow these steps to delete a Send Email connector from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Send Email connector to delete. Available options display above the selected connector. ![](../../../../.gitbook/assets/delete-send-email-connector-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../../.gitbook/assets/remove-icon.png). The Process model connector deletes.
+
+## Add a Send Email Connector to the Process Model
+
+{% hint style="info" %}
+[A package and permissions are required to do this](email-connector.md#package-and-permissions-required).
 {% endhint %}
 
 Follow these steps to add a Send Email connector to the Process model:
@@ -77,18 +88,7 @@ Moving a Send Email connector has the following limitations in regards to the fo
 ## Settings
 
 {% hint style="info" %}
-### ProcessMaker Package Required
-
-The [Send Email package](../../../../package-development-distribution/package-a-connector/email.md) is required. The Send Email [package](../../../../package-development-distribution/first-topic.md) installs the Send Email connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Send Email connector can be installed in your ProcessMaker instance.
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to configure a Send Email connector unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[A package and permissions are required to do this](email-connector.md#package-and-permissions-required).
 {% endhint %}
 
 Follow these steps to configure a Send Email connector:

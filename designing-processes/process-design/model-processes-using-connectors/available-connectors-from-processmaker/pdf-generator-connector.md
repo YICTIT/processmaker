@@ -16,25 +16,21 @@ The PDF Generator connector requires that the [PDF Generator package](../../../.
 
 When the PDF Generator connector successfully generates the PDF during an in-progress Request, the PDF output can be downloaded from the [**Files** tab in its Request summary](../../../../using-processmaker/requests/request-details/summary-for-in-progress-requests.md#files-associated-with-the-request). The PDF Generator names the PDF output the same as the ProcessMaker Screen from which the PDF was generated. As long as the PDF Generator successfully generates the PDF, the PDF output remains available from that Request's summary regardless of that Request's status.
 
-## Add a PDF Generator Connector to the Process Model
+## Package and Permissions Required
 
-{% hint style="info" %}
-### ProcessMaker Package Required
+The PDF Generator connector requires that the [ProcessMaker PDF Generator package](../../../../package-development-distribution/package-a-connector/pdf-generator-package.md) be installed in your ProcessMaker instance. The PDF Generator connector and the PDF Generator [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the PDF Generator connector can be installed in your ProcessMaker instance.
 
-The [PDF Generator package](../../../../package-development-distribution/package-a-connector/pdf-generator-package.md) is required. The PDF Generator [package](../../../../package-development-distribution/first-topic.md) installs the PDF Generator connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the PDF Generator connector can be installed in your ProcessMaker instance.
-
-### Make a Copy of an Existing PDF Connector Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a PDF Generator connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Furthermore, your ProcessMaker user account or group membership must have the following permissions to configure a PDF Generator connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add a PDF Generator Connector to the Process Model
+
+{% hint style="info" %}
+[A package and permissions are required to do this](pdf-generator-connector.md#package-and-permissions-required).
 {% endhint %}
 
 Follow these steps to add a PDF Generator connector to the Process model:
@@ -63,22 +59,22 @@ Moving a PDF Generator connector has the following limitations in regards to the
 * **Lane element:** If the PDF Generator connector is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the PDF Generator connector cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Settings
+## Delete a PDF Generator Connector
+
+Deleting a Process model [connector](../what-is-a-connector.md) also deletes any [Sequence Flow](../../model-your-process/process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](../../model-your-process/process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model connector is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/connectors.
 
 {% hint style="info" %}
-### ProcessMaker Package Required
-
-The [PDF Generator package](../../../../package-development-distribution/package-a-connector/pdf-generator-package.md) is required. The PDF Generator [package](../../../../package-development-distribution/first-topic.md) installs the PDF Generator connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the PDF Generator connector can be installed in your ProcessMaker instance.
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to configure a PDF Generator connector unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[A package and permissions are required to do this](pdf-generator-connector.md#package-and-permissions-required).
 {% endhint %}
+
+Follow these steps to delete a PDF Generator connector from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the PDF Generator connector to delete. Available options display above the selected connector. ![](../../../../.gitbook/assets/delete-pdf-generator-connector-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../../.gitbook/assets/remove-icon.png). The Process model connector deletes.
+
+## Settings
 
 The PDF Generator connector has the following panels that contain settings:
 
@@ -90,6 +86,10 @@ The PDF Generator connector has the following panels that contain settings:
 
 #### Edit the Connector Name
 
+{% hint style="info" %}
+[A package and permissions are required to do this](pdf-generator-connector.md#package-and-permissions-required).
+{% endhint %}
+
 Follow these steps to configure a PDF Generator connector:
 
 1. Ensure that the **Hide Menus** button![](../../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -98,6 +98,10 @@ Follow these steps to configure a PDF Generator connector:
 4. In the **Name** setting, edit the selected connector's name and then press **Enter**.
 
 #### Select the ProcessMaker Screen from Which to Generate a PDF
+
+{% hint style="info" %}
+[A package and permissions are required to do this](pdf-generator-connector.md#package-and-permissions-required).
+{% endhint %}
 
 Follow these steps to select from which [Display](../../../design-forms/screens-builder/types-for-screens.md#display)-type [ProcessMaker Screen](../../../design-forms/what-is-a-form.md) to generate a PDF:
 

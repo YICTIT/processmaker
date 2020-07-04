@@ -4,7 +4,7 @@ description: >-
   elements in your Process model.
 ---
 
-# Terminate End Event Elements
+# Terminate End Event Element
 
 ## Permissions Required
 

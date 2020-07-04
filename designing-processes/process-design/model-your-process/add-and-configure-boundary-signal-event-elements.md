@@ -4,7 +4,7 @@ description: >-
   elements in your Process model.
 ---
 
-# Boundary Signal Event Elements
+# Boundary Signal Event Element
 
 ## Permissions Required
 

@@ -15,31 +15,21 @@ Use the Data Connector connector in your Process models in the following ways:
 * **Access ProcessMaker Collections:** From your [Process model](../../what-is-process-modeling.md), interact with any [ProcessMaker Collection](../../../../collections/what-is-a-collection.md) in your ProcessMaker instance, including viewing, creating, updating, and/or delete records in a selected Collection. By default, each ProcessMaker Collection has a corresponding Data Connector when it is created. Incorporate ProcessMaker Collection record data into your Process model so you can make business decisions using it. Likewise, automatically change records in a ProcessMaker Collection during a [Request](../../../../using-processmaker/requests/what-is-a-request.md) when workflow routing conditions are met.
 * **Access third-party data sources:** Similarly to ProcessMaker Collections, interact with third-party data sources such as Application Program Interfaces \(APIs\). Reference data from that API, then incorporate it into your Process's Request data. Incorporating data from external data sources helps you make business decisions from information outside of your ProcessMaker instance.
 
-{% hint style="info" %}
-### ProcessMaker Package Required
+## Package and Permissions Required
 
-The Data Connector connector requires that the [Data Connector package](../../../../package-development-distribution/package-a-connector/data-connector-package.md) be installed in your ProcessMaker instance. The Data Connector connector and the Data Connector [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Data Connector connector can be installed in your ProcessMaker instance.
-{% endhint %}
+The Data Connector connector requires that the [ProcessMaker Data Connector package](../../../../package-development-distribution/package-a-connector/data-connector-package.md) be installed in your ProcessMaker instance. The Data Connector connector and the Data Connector [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Data Connector connector can be installed in your ProcessMaker instance.
 
-## Add a Data Connector Connector to the Process Model
-
-{% hint style="info" %}
-### ProcessMaker Package Required
-
-The [Data Connector package](../../../../package-development-distribution/package-a-connector/data-connector-package.md) is required. The Data Connector [package](../../../../package-development-distribution/first-topic.md) installs the Data Connector connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Data Connector connector can be installed in your ProcessMaker instance.
-
-### Make a Copy of an Existing Data Connector Connector Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Data Connector connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Furthermore, your ProcessMaker user account or group membership must have the following permissions to configure a Data Connector connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add a Data Connector Connector to the Process Model
+
+{% hint style="info" %}
+[A package and permissions are required to do this](data-connector-connector.md#package-and-permissions-required).
 {% endhint %}
 
 Follow these steps to add a Data Connector connector to the Process model:
@@ -68,22 +58,22 @@ Moving a Data Connector connector has the following limitations in regards to th
 * **Lane element:** If the Data Connector connector is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Data Connector connector cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Settings
+## Delete a Data Connector Connector
+
+Deleting a Process model [connector](../what-is-a-connector.md) also deletes any [Sequence Flow](../../model-your-process/process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](../../model-your-process/process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model connector is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/connectors.
 
 {% hint style="info" %}
-### ProcessMaker Package Required
-
-The [Data Connector package](../../../../package-development-distribution/package-a-connector/data-connector-package.md) is required. The Data Connector [package](../../../../package-development-distribution/first-topic.md) installs the Data Connector connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Data Connector connector can be installed in your ProcessMaker instance.
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to configure a Data Connector connector unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[A package and permissions are required to do this](data-connector-connector.md#package-and-permissions-required).
 {% endhint %}
+
+Follow these steps to delete a Data Connector connector from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Data Connector connector to delete. Available options display above the selected connector. ![](../../../../.gitbook/assets/delete-data-connector-connector-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../../.gitbook/assets/remove-icon.png). The Process model connector deletes.
+
+## Settings
 
 The Data Connector connector has the following panels that contain settings:
 
@@ -106,6 +96,10 @@ The Data Connector connector has the following settings in the **Configuration**
 
 A connector name is a human-readable reference for a Process model control. Process Modeler automatically assigns the name of a Process model connector with its connector type. However, a connector's name can be changed.
 
+{% hint style="info" %}
+[A package and permissions are required to do this](data-connector-connector.md#package-and-permissions-required).
+{% endhint %}
+
 Follow these steps to edit the name for a Data Connector connector:
 
 1. Ensure that the **Hide Menus** button![](../../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -118,6 +112,10 @@ Follow these steps to edit the name for a Data Connector connector:
 The Data Connector connector uses a [ProcessMaker Data Connector](../../../data-connector-management/what-is-a-data-connector.md) that is configured to interact with a data source, such as a [ProcessMaker Collection](../../../../collections/what-is-a-collection.md) or a third-party Application Program Interface \(API\). A ProcessMaker Data Connector must already exist before it can be selected for use in a Data Connector connector. Each ProcessMaker Data Connector is already configured with which data source it interacts.
 
 ProcessMaker Collections automatically create a Data Connector when the Collection is created. ProcessMaker Data Connectors created from a Collection by default have the same name as the Collection that it references.
+
+{% hint style="info" %}
+[A package and permissions are required to do this](data-connector-connector.md#package-and-permissions-required).
+{% endhint %}
 
 Follow these steps to select the ProcessMaker Data Connector the Data Connector connector uses:
 
@@ -136,6 +134,10 @@ Ensure to [select which Endpoint to call from the selected ProcessMaker Data Con
 Each [ProcessMaker Data Connector](../../../data-connector-management/what-is-a-data-connector.md) contains at least one [Endpoint](../../../data-connector-management/what-is-an-endpoint.md). These Endpoints are configured from the ProcessMaker Data Connector itself. An Endpoint is an action the ProcessMaker Data Connector uses to interact with the data source. The Data Connector connector uses an Endpoint to interact with the data source. These Endpoints may interact with [ProcessMaker Collection](../../../../collections/what-is-a-collection.md) records, Application Program Interfaces \(APIs\), or other data source types. After a ProcessMaker Data Connector has been selected from the [**Data Connector** setting](data-connector-connector.md#select-the-processmaker-data-connector), select the Endpoint from that ProcessMaker Data Connector the Data Connector uses to interact with the data source.
 
 ProcessMaker Data Connectors created from Collections use a default set of Endpoints. See [Endpoints for ProcessMaker Collections](../../../data-connector-management/what-is-an-endpoint.md#endpoints-for-processmaker-collections).
+
+{% hint style="info" %}
+[A package and permissions are required to do this](data-connector-connector.md#package-and-permissions-required).
+{% endhint %}
 
 Follow these steps to select which Endpoint the Data Connector connector uses:
 
@@ -156,6 +158,10 @@ The Data Connector connector has the following setting in the **Data Mapping** p
 After [configuring which ProcessMaker Data Connector and Endpoint the Data Connector connector uses](data-connector-connector.md#configuration-panel-settings) to interact with the data source, specify how data from that data source integrates with [Request](../../../../using-processmaker/requests/what-is-a-request.md) data. After data integrates from the data source into the JSON data model for each Request started from your Process, make business decisions based on that data and reference it from [ProcessMaker Screens](../../../design-forms/what-is-a-form.md), [ProcessMaker Scripts](../../../scripts/what-is-a-script.md), and [ProcessMaker Collections](../../../../collections/what-is-a-collection.md).
 
 The procedure to integrate the data source's data to the Request JSON data model is called mapping: specify the JSON object\(s\) in the JSON data model to store the data source's data. Each JSON object contains a key name which references the JSON object, and the value for that key. If the JSON object already exists in a Request's JSON data model, then the Data Connector connector overwrites the existing JSON object value with that from the data source. If the JSON object\(s\) to map the data source data does not exist, then the Data Connector connector adds the JSON data object\(s\) to that Request's JSON data model.
+
+{% hint style="info" %}
+[A package and permissions are required to do this](data-connector-connector.md#package-and-permissions-required).
+{% endhint %}
 
 Follow these steps to specify the Request JSON data object\(s\) to which to map the data source's data:
 

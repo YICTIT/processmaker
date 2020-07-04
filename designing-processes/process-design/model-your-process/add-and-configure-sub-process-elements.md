@@ -4,7 +4,7 @@ description: >-
   in your Process model.
 ---
 
-# Sub Process Elements
+# Sub Process Element
 
 ## Permissions Required
 

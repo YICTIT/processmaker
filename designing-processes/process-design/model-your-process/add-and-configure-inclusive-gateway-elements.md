@@ -4,7 +4,7 @@ description: >-
   elements in your Process model.
 ---
 
-# Inclusive Gateway Elements
+# Inclusive Gateway Element
 
 ## Permissions Required
 

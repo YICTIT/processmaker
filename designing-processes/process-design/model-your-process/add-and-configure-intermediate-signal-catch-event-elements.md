@@ -4,7 +4,7 @@ description: >-
   Catch Event elements in your Process model.
 ---
 
-# Intermediate Signal Catch Event Elements
+# Intermediate Signal Catch Event Element
 
 ## Permissions Required
 

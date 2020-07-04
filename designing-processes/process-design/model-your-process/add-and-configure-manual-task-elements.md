@@ -4,7 +4,7 @@ description: >-
   in your Process model.
 ---
 
-# Manual Task Elements
+# Manual Task Element
 
 ## Permissions Required
 

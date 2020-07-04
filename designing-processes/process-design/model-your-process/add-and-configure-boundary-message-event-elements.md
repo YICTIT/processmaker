@@ -4,7 +4,7 @@ description: >-
   elements in your Process model.
 ---
 
-# Boundary Message Event Elements
+# Boundary Message Event Element
 
 ## Permissions Required
 

@@ -4,7 +4,7 @@ description: >-
   elements in your Process model.
 ---
 
-# Signal Start Event Elements
+# Signal Start Event Element
 
 ## Permissions Required
 

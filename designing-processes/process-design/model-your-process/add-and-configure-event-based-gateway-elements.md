@@ -4,7 +4,7 @@ description: >-
   elements in your Process model.
 ---
 
-# Event-Based Gateway Elements
+# Event-Based Gateway Element
 
 ## Permissions Required
 

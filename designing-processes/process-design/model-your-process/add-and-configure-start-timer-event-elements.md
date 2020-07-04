@@ -4,7 +4,7 @@ description: >-
   elements in your Process model.
 ---
 
-# Start Timer Event Elements
+# Start Timer Event Element
 
 ## Permissions Required
 

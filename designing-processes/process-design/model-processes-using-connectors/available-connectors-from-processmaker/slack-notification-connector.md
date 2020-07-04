@@ -8,39 +8,31 @@ description: Send automatic notifications to Slack channels during Requests.
 
 The [Slack](https://slack.com/) Notification [connector](../what-is-a-connector.md) is part of the [Slack Notification package](../../../../package-development-distribution/package-a-connector/slack-notification-package.md). When you add the Slack Notification connector to your Process model and then select to which Slack channel to send a notification, ProcessMaker can automatically send the notification during [Requests](../../../../using-processmaker/requests/what-is-a-request.md).
 
-{% hint style="info" %}
-### ProcessMaker Package Required
-
-The Slack Notification connector requires that the [Slack Notification package](../../../../package-development-distribution/package-a-connector/slack-notification-package.md) be installed in your ProcessMaker instance. The Slack Notification connector and the Slack Notification [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Slack Notification connector can be installed in your ProcessMaker instance.
-
-### Grant ProcessMaker Access to Your Slack Workspace
+## Grant ProcessMaker Access to Your Slack Workspace
 
 Before using the Slack Notification connector in your Process models, your ProcessMaker instance must be granted access to your Slack workspace by building a [Slack App](https://api.slack.com/start/overview). Ask your Slack administrator to help you with the following:
 
 * [Build a Slack app](https://api.slack.com/apps).
 * [Install the Slack app to your Slack workspace](https://api.slack.com/authentication).
 * [Verify requests from Slack](https://api.slack.com/authentication/verifying-requests-from-slack).
-{% endhint %}
 
-## Add a Slack Notification Connector to the Process Model
+Otherwise, when configuring the Slack Notification connector, the following ProcessMaker error displays: **Request failed with status code 404**.
 
-{% hint style="info" %}
-### ProcessMaker Package Required
+## Package and Permissions Required
 
-The [Slack Notification package](../../../../package-development-distribution/package-a-connector/slack-notification-package.md) is required. The Slack Notification [package](../../../../package-development-distribution/first-topic.md) installs the Slack Notification connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Slack Notification connector can be installed in your ProcessMaker instance.
+The Send Email connector requires that the [ProcessMaker Send Email package](../../../../package-development-distribution/package-a-connector/email.md) be installed in your ProcessMaker instance. The Send Email connector and the Send Email [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Send Email connector can be installed in your ProcessMaker instance.
 
-### Make a Copy of an Existing Slack Notification Connector Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add a Slack Notification connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Furthermore, your ProcessMaker user account or group membership must have the following permissions to configure a Send Email connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add a Slack Notification Connector to the Process Model
+
+{% hint style="info" %}
+[A package and permissions are required to do this](slack-notification-connector.md). Furthermore, [your ProcessMaker instance must be granted access to your Slack workspace](slack-notification-connector.md#grant-processmaker-access-to-your-slack-workspace).
 {% endhint %}
 
 Follow these steps to add a Slack Notification connector to the Process model:
@@ -69,32 +61,22 @@ Moving a Slack Notification connector has the following limitations in regards t
 * **Lane element:** If the Slack Notification connector is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Slack Notification connector cannot be moved outside of the Pool element.
 {% endhint %}
 
-## Settings
+## Delete a Slack Notification Connector
+
+Deleting a Process model [connector](../what-is-a-connector.md) also deletes any [Sequence Flow](../../model-your-process/process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](../../model-your-process/process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model connector is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/connectors.
 
 {% hint style="info" %}
-### ProcessMaker Package Required
-
-The [Slack Notification package](../../../../package-development-distribution/package-a-connector/slack-notification-package.md) is required. The Slack Notification [package](../../../../package-development-distribution/first-topic.md) installs the Slack Notification connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Slack Notification connector can be installed in your ProcessMaker instance.
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to configure a Slack Notification connector unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
-
-### ProcessMaker Must Access Your Slack Workspace
-
-Before configuring settings for the Slack Notification connector in your Process models, your ProcessMaker instance must access to your Slack workspace to select to which Slack channel to send a notification during [Requests](../../../../using-processmaker/requests/what-is-a-request.md). Otherwise, when configuring the Slack Notification connector, the following ProcessMaker error displays: **Request failed with status code 404**.
-
-If your ProcessMaker instance does not have access to your Slack workspace, then ask your Slack administrator to help you with the following:
-
-* [Build a Slack app](https://api.slack.com/apps).
-* [Install the Slack app to your Slack workspace](https://api.slack.com/authentication).
-* [Verify requests from Slack](https://api.slack.com/authentication/verifying-requests-from-slack).
+[A package and permissions are required to do this](slack-notification-connector.md).
 {% endhint %}
+
+Follow these steps to delete a Slack Notification connector from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Slack Notification connector to delete. Available options display above the selected connector. ![](../../../../.gitbook/assets/delete-send-email-connector-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../../.gitbook/assets/remove-icon.png). The Process model connector deletes.
+
+## Settings
 
 The Slack Notification connector has the following panels that contain settings:
 
@@ -115,6 +97,10 @@ The Slack Notification connector has the following settings in the **Configurati
 
 A connector name is a human-readable reference for a Process model control. Process Modeler automatically assigns the name of a Process model connector with its connector type. However, a connector's name can be changed.
 
+{% hint style="info" %}
+[A package and permissions are required to do this](slack-notification-connector.md). Furthermore, [your ProcessMaker instance must be granted access to your Slack workspace](slack-notification-connector.md#grant-processmaker-access-to-your-slack-workspace).
+{% endhint %}
+
 Follow these steps to edit the name for a Data Connector connector:
 
 1. Ensure that the **Hide Menus** button![](../../../../.gitbook/assets/hide-menus-button-process-modeler-processes.png)is not enabled. See [Maximize the Process Modeler Canvas View](../../navigate-around-your-process-model.md#maximize-the-process-modeler-canvas-view).
@@ -124,7 +110,11 @@ Follow these steps to edit the name for a Data Connector connector:
 
 #### Select the Slack Channel to Send the Notification
 
-Select to which Slack channel to send the notification. Slack channels are only available for the Slack workspace that your ProcessMaker instance is granted access. If ProcessMaker is not a Slack app to which it is authorized to access a Slack workspace, the following ProcessMaker error displays when selecting this setting: **Request failed with status code 404**. See notes in [Settings](slack-notification-connector.md#settings) if this occurs.
+Select to which Slack channel to send the notification. Slack channels are only available for the [Slack workspace that your ProcessMaker instance is granted access](slack-notification-connector.md#grant-processmaker-access-to-your-slack-workspace).
+
+{% hint style="info" %}
+[A package and permissions are required to do this](slack-notification-connector.md). Furthermore, [your ProcessMaker instance must be granted access to your Slack workspace](slack-notification-connector.md#grant-processmaker-access-to-your-slack-workspace).
+{% endhint %}
 
 Follow these steps to select to which Slack channel to send the notification:
 
@@ -134,6 +124,10 @@ Follow these steps to select to which Slack channel to send the notification:
 4. From the **Select a Slack Channel** drop-down menu, select the Slack channel to send the notification.
 
 #### Enter the Slack Notification Message to Send
+
+{% hint style="info" %}
+[A package and permissions are required to do this](slack-notification-connector.md). Furthermore, [your ProcessMaker instance must be granted access to your Slack workspace](slack-notification-connector.md#grant-processmaker-access-to-your-slack-workspace).
+{% endhint %}
 
 Follow these steps to enter the Slack notification message to send:
 

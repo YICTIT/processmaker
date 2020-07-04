@@ -4,7 +4,7 @@ description: >-
   in your Process model.
 ---
 
-# Script Task Elements
+# Script Task Element
 
 ## Permissions Required
 

@@ -4,7 +4,7 @@ description: >-
   Throw Event elements in your Process model.
 ---
 
-# Intermediate Signal Throw Event Elements
+# Intermediate Signal Throw Event Element
 
 ## Permissions Required
 

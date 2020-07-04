@@ -4,7 +4,7 @@ description: >-
   elements in your Process model.
 ---
 
-# Message Start Event Elements
+# Message Start Event Element
 
 ## Permissions Required
 

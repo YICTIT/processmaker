@@ -4,7 +4,7 @@ description: >-
   between elements in separate Pool elements.
 ---
 
-# Message Flow Elements
+# Message Flow Element
 
 ## Overview
 

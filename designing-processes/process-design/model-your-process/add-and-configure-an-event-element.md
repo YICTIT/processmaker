@@ -4,7 +4,7 @@ description: >-
   in your Process model.
 ---
 
-# Start Event Elements
+# Start Event Element
 
 ## Permissions Required
 
@@ -50,6 +50,23 @@ Moving a Start Event element has the following limitations in regards to the fol
 * **Pool element:** If the Start Event element is inside of a [Pool](process-modeling-element-descriptions.md#pool) element, it cannot be moved outside of the Pool element. If you attempt to do so, Process Modeler places the Start Event element inside the Pool element closest to where you attempt to move it.
 * **Lane element:** If the Start Event element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Start Event element cannot be moved outside of the Pool element.
 {% endhint %}
+
+## Copy a Start Event Element
+
+Copying a Start Event element copies the original along with its current settings, making it easier and faster to continue designing without adding default elements or [connectors](../model-processes-using-connectors/what-is-a-connector.md) with their default settings.
+
+The copied Start Event element displays below the original. Any [Sequence Flow](process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from the original are not copied.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-an-event-element.md#permissions-required).
+{% endhint %}
+
+Follow these steps to copy a Start Event element in your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Start Event element to copy. Available options display above the selected element. ![](../../../.gitbook/assets/copy-start-event-element-process-modeler-designer.png) 
+4. Click the **Copy Element** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element copies.
 
 ## Delete a Start Event Element
 

@@ -4,7 +4,7 @@ description: >-
   elements in your Process model.
 ---
 
-# Boundary Timer Event Elements
+# Boundary Timer Event Element
 
 ## Permissions Required
 

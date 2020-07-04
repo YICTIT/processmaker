@@ -4,7 +4,7 @@ description: >-
   elements in your Process model.
 ---
 
-# Boundary Error Event Elements
+# Boundary Error Event Element
 
 ## Permissions Required
 

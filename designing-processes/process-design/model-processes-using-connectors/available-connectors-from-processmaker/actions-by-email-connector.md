@@ -6,13 +6,7 @@ description: Request participants can make decisions via email with the click of
 
 ## Overview
 
-The Actions By Email connector is part of the [Actions By Email package](../../../../package-development-distribution/package-a-connector/actions-by-email-package.md). Use the Actions By Email connector in your Process models to automate emails to [Request](../../../../using-processmaker/requests/what-is-a-request.md) participants that allow them make decisions via email.
-
-{% hint style="info" %}
-### ProcessMaker Package Required
-
-The Actions By Email connector requires that the [Actions By Email Email package](../../../../package-development-distribution/package-a-connector/actions-by-email-package.md) be installed in your ProcessMaker instance. The Actions By Email connector and the Actions By Email [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Actions By Email connector can be installed in your ProcessMaker instance.
-{% endhint %}
+The Actions By Email [connector](../what-is-a-connector.md) is part of the [Actions By Email package](../../../../package-development-distribution/package-a-connector/actions-by-email-package.md). Use the Actions By Email connector in your Process models to automate emails to [Request](../../../../using-processmaker/requests/what-is-a-request.md) participants that allow them make decisions via email.
 
 When the Actions By Email connector triggers during an in-progress Request, ProcessMaker sends an email from the "no-reply@processmaker.net" email address to one email recipient so that this Request participant can make a decision as part of the Request. For example, this Request participant must make a decision to approve or deny a vacation request or for a purchase. The email recipient receives an email with buttons in the email to easily indicate the decision.
 
@@ -55,25 +49,21 @@ To ensure that Requests do not remain indefinitely active on an Exclusive Gatewa
 * If an [Intermediate Message Catch Event](../../model-your-process/process-modeling-element-descriptions.md#intermediate-message-catch-event) element triggers instead of the Intermediate Timer Event element, the email recipient sent the response within the allotted time period.
 {% endhint %}
 
-## Add an Actions By Email Connector to the Process Model
+## Package and Permissions Required
 
-{% hint style="info" %}
-### ProcessMaker Package Required
+The Actions By Email connector requires that the [ProcessMaker Actions By Email Email package](../../../../package-development-distribution/package-a-connector/actions-by-email-package.md) be installed in your ProcessMaker instance. The Actions By Email connector and the Actions By Email [package](../../../../package-development-distribution/first-topic.md) are not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Actions By Email connector can be installed in your ProcessMaker instance.
 
-The [Actions By Email package](../../../../package-development-distribution/package-a-connector/actions-by-email-package.md) is required. The Actions By Email [package](../../../../package-development-distribution/first-topic.md) installs the Actions By Email connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Actions By Email connector can be installed in your ProcessMaker instance.
-
-### Make a Copy of an Existing Actions By Email Connector Instead of Adding One?
-
-See [Copy Process Model Elements or Connectors](../../copy-process-model-elements-or-connectors.md).
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to add an Actions By Email connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
+Furthermore, your ProcessMaker user account or group membership must have the following permissions to configure an Actions By Email connector to the Process model unless your user account has the **Make this user a Super Admin** setting selected:
 
 * Processes: Edit Processes
 * Processes: View Processes
 
 See the [Process](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+
+## Add an Actions By Email Connector to the Process Model
+
+{% hint style="info" %}
+[A package and permissions are required to do this](actions-by-email-connector.md#package-and-permissions-required).
 {% endhint %}
 
 Follow these steps to add an Actions By Email connector to the Process model:
@@ -106,21 +96,25 @@ Moving an Actions By Email connector has the following limitations in regards to
 * **Lane element:** If the Actions By Email connector is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Actions By Email connector cannot be moved outside of the Pool element.
 {% endhint %}
 
+## Delete an Actions By Email Connector
+
+Deleting a Process model [connector](../what-is-a-connector.md) also deletes any [Sequence Flow](../../model-your-process/process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](../../model-your-process/process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model connector is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/connectors.
+
+{% hint style="info" %}
+[A package and permissions are required to do this](actions-by-email-connector.md#package-and-permissions-required).
+{% endhint %}
+
+Follow these steps to delete an Actions By Email connector from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Actions By Email connector to delete. Available options display above the selected connector. ![](../../../../.gitbook/assets/delete-actions-by-email-connector-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../../.gitbook/assets/remove-icon.png). The Process model connector deletes.
+
 ## Settings
 
 {% hint style="info" %}
-### ProcessMaker Package Required
-
-The [Actions By Email package](../../../../package-development-distribution/package-a-connector/actions-by-email-package.md) is required. The Actions By Email [package](../../../../package-development-distribution/first-topic.md) installs the Actions By Email connector, which is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Actions By Email connector can be installed in your ProcessMaker instance.
-
-### Permissions Required
-
-Your ProcessMaker user account or group membership must have the following permissions to configure an Actions By Email connector unless your user account has the **Make this user a Super Admin** setting selected:
-
-* Processes: Edit Processes
-* Processes: View Processes
-
-See the [Process](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#processes) permissions or ask your ProcessMaker Administrator for assistance.
+[A package and permissions are required to do this](actions-by-email-connector.md#package-and-permissions-required).
 {% endhint %}
 
 Follow these steps to configure an Actions By Email connector:
