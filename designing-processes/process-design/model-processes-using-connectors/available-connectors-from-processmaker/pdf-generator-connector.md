@@ -59,6 +59,23 @@ Moving a PDF Generator connector has the following limitations in regards to the
 * **Lane element:** If the PDF Generator connector is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the PDF Generator connector cannot be moved outside of the Pool element.
 {% endhint %}
 
+## Copy a PDF Generator Connector
+
+Copying a PDF Generator connector copies the original along with its current settings, making it easier and faster to continue designing without adding default elements or [connectors](../what-is-a-connector.md) with their default settings.
+
+The copied PDF Generator connector displays below the original. Any [Sequence Flow](../../model-your-process/process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](../../model-your-process/process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from the original are not copied.
+
+{% hint style="info" %}
+[A package and permissions are required to do this](pdf-generator-connector.md#package-and-permissions-required).
+{% endhint %}
+
+Follow these steps to copy a PDF Generator connector in your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the PDF Generator connector to copy. Available options display above the selected connector. ![](../../../../.gitbook/assets/copy-pdf-generator-connector-process-modeler-designer.png) 
+4. Click the **Copy Element** icon![](../../../../.gitbook/assets/remove-icon.png). The Process model connector copies. ![](../../../../.gitbook/assets/copied-pdf-generator-connector-process-modeler-designer.png) 
+
 ## Delete a PDF Generator Connector
 
 Deleting a Process model [connector](../what-is-a-connector.md) also deletes any [Sequence Flow](../../model-your-process/process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](../../model-your-process/process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from that element. For example, if a Process model connector is deleted that has both incoming and outgoing Sequence Flow elements, the Sequence Flow elements must be reconnected for the remaining elements/connectors.

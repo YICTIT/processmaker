@@ -18,7 +18,7 @@ Follow these steps to copy a Start Event element in your Process model:
 
 1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
 2. Click the **Open Modeler** icon![](../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
-3. Select the non-Pool element or connector to copy. Available options display above the selected element/connector. ![](../../.gitbook/assets/copy-element-tooltip-process-modeler-designer.png) 
+3. Select the non-Pool element or connector to copy. Available options display above the selected element/connector. ![](../../.gitbook/assets/copy-form-task-element-process-modeler-designer.png) 
 4. Click the **Copy Element** icon![](../../.gitbook/assets/remove-icon.png). The Process model element copies.
 
 ## Related Topics
