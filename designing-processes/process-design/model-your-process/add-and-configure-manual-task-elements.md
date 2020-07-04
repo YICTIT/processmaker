@@ -752,8 +752,6 @@ Follow these steps to edit the identifier value for a Manual Task element:
 
 {% page-ref page="../../../using-processmaker/notifications.md" %}
 
-{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
 {% page-ref page="../../../using-processmaker/task-management/view-a-task-summary.md" %}
 
 {% page-ref page="../../../package-development-distribution/package-a-connector/vocabularies.md" %}

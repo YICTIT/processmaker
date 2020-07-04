@@ -135,5 +135,3 @@ Follow these steps to select from which [Display](../../../design-forms/screens-
 
 {% page-ref page="../../../../package-development-distribution/first-topic.md" %}
 
-{% page-ref page="../../copy-process-model-elements-or-connectors.md" %}
-

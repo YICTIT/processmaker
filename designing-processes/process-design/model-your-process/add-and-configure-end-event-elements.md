@@ -171,5 +171,3 @@ Follow these steps to edit the identifier value for an End Event element:
 
 {% page-ref page="../../design-forms/what-is-a-form.md" %}
 
-{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-

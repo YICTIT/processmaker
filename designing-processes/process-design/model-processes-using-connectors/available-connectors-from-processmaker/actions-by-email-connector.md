@@ -172,5 +172,3 @@ Follow these steps to configure an Actions By Email connector:
 
 {% page-ref page="../../../../package-development-distribution/first-topic.md" %}
 
-{% page-ref page="../../copy-process-model-elements-or-connectors.md" %}
-

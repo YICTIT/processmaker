@@ -335,8 +335,6 @@ Follow these steps to edit the identifier value for a Start Event element:
 
 {% page-ref page="../../../processmaker-administration/assign-groups-to-users/what-is-a-group.md" %}
 
-{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
 {% page-ref page="../../../package-development-distribution/package-a-connector/web-entry.md" %}
 
 {% page-ref page="../../../package-development-distribution/package-a-connector/vocabularies.md" %}

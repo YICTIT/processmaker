@@ -154,7 +154,5 @@ Follow these steps to edit the identifier value for a Message Start Event elemen
 
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
 
-{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
 {% page-ref page="set-and-delete-message-flow-between-elements.md" %}
 

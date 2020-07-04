@@ -279,8 +279,6 @@ Follow these steps to edit the identifier value for a Script Task element:
 
 {% page-ref page="../../scripts/what-is-a-script.md" %}
 
-{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
 {% page-ref page="../../../package-development-distribution/package-a-connector/vocabularies.md" %}
 
 {% page-ref page="../../vocabularies-management/what-is-a-vocabulary.md" %}

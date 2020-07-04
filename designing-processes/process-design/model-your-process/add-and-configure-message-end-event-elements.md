@@ -154,5 +154,3 @@ Follow these steps to edit the identifier value for a Message End Event element:
 
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
 
-{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-

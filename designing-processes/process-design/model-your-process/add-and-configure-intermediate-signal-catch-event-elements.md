@@ -210,5 +210,3 @@ Follow these steps to edit the identifier value for an Intermediate Signal Catch
 
 {% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
 
-{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-

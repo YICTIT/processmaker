@@ -149,7 +149,5 @@ Follow these steps to edit the identifier value for an Intermediate Message Thro
 
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 
-{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
 {% page-ref page="set-and-delete-message-flow-between-elements.md" %}
 

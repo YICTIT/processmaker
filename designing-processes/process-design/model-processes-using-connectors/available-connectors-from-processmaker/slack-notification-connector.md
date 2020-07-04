@@ -161,5 +161,3 @@ Follow these steps to enter the Slack notification message to send:
 
 {% page-ref page="../../../../package-development-distribution/first-topic.md" %}
 
-{% page-ref page="../../copy-process-model-elements-or-connectors.md" %}
-

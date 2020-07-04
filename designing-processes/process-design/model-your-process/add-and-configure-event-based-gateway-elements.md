@@ -133,5 +133,3 @@ Follow these steps to edit the identifier value for an Event-Based Gateway eleme
 
 {% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 
-{% page-ref page="../copy-process-model-elements-or-connectors.md" %}
-
