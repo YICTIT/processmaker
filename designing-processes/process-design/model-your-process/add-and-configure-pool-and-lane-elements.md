@@ -36,7 +36,14 @@ Follow these steps to add a Pool element to the Process model:
 
 ![Pool element](../../../.gitbook/assets/pool-process-modeler-designer.png)
 
-After the element is placed into the Process model, you may [resize it](add-and-configure-pool-and-lane-elements.md#resize-a-pool-element) or move it by dragging it to the new location. Any elements within the Pool element move as well.
+
+
+After the element is placed into the Process model, you may adjust its location in the following ways:
+
+* [Resize the Pool element](add-and-configure-pool-and-lane-elements.md#resize-a-pool-element).
+* Move the element by dragging it to a new location. Any elements and [connectors](../model-processes-using-connectors/what-is-a-connector.md) within the Pool element move as well.
+* [Select the element with other elements and/or connectors](../select-multiple-process-model-elements-and-connectors.md#select-multiple-process-model-objects), and then move them collectively by dragging them to new locations in relation to one another.
+* [Align](../align-and-distribute-process-model-elements-and-connectors.md#align-process-model-objects) and/or [distribute](../align-and-distribute-process-model-elements-and-connectors.md#distribute-process-model-objects) the element in relation to other selected elements and/or connectors.
 
 {% hint style="warning" %}
 ### Elements Placed Into a Pool Element Cannot Be Moved Out of It

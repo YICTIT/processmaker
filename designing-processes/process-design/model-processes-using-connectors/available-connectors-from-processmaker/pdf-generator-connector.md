@@ -50,7 +50,11 @@ After adding the PDF Generator connector, consider adding the following Boundary
 * [Boundary Signal Event](../../model-your-process/add-and-configure-boundary-signal-event-elements.md) element \([Don't know what that is?](../../model-your-process/process-modeling-element-descriptions.md#boundary-signal-event)\)
 {% endhint %}
 
-After the PDF Generator connector is placed into the Process model, you may move it by dragging it to the new location.
+After the connector is placed into the Process model, you may adjust its location in the following ways:
+
+* Move the connector by dragging it to a new location.
+* [Select the connector with other elements and/or connectors](../../select-multiple-process-model-elements-and-connectors.md#select-multiple-process-model-objects), and then move them collectively by dragging them to new locations in relation to one another.
+* [Align](../../align-and-distribute-process-model-elements-and-connectors.md#align-process-model-objects) and/or [distribute](../../align-and-distribute-process-model-elements-and-connectors.md#distribute-process-model-objects) the connector in relation to other selected elements and/or connectors.
 
 {% hint style="warning" %}
 Moving a PDF Generator connector has the following limitations in regards to the following Process model elements:

@@ -42,7 +42,11 @@ Follow these steps to add an End Event element to the Process model:
 
 ![End Event element](../../../.gitbook/assets/end-event-element-process-modeler-designer.png)
 
-After the element is placed into the Process model, you may move it by dragging it to the new location.
+After the element is placed into the Process model, you may adjust its location in the following ways:
+
+* Move the element by dragging it to a new location.
+* [Select the element with other elements and/or connectors](../select-multiple-process-model-elements-and-connectors.md#select-multiple-process-model-objects), and then move them collectively by dragging them to new locations in relation to one another.
+* [Align](../align-and-distribute-process-model-elements-and-connectors.md#align-process-model-objects) and/or [distribute](../align-and-distribute-process-model-elements-and-connectors.md#distribute-process-model-objects) the element in relation to other selected elements and/or [connectors](../model-processes-using-connectors/what-is-a-connector.md).
 
 {% hint style="warning" %}
 Moving an End Event element has the following limitations in regards to the following Process model elements:

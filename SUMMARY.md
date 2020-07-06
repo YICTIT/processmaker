@@ -259,6 +259,8 @@
       * [PDF Generator Connector](designing-processes/process-design/model-processes-using-connectors/available-connectors-from-processmaker/pdf-generator-connector.md)
       * [Send Email Connector](designing-processes/process-design/model-processes-using-connectors/available-connectors-from-processmaker/email-connector.md)
       * [Slack Notification Connector](designing-processes/process-design/model-processes-using-connectors/available-connectors-from-processmaker/slack-notification-connector.md)
+  * [Select Multiple Process Model Elements and Connectors](designing-processes/process-design/select-multiple-process-model-elements-and-connectors.md)
+  * [Align and Distribute Process Model Elements and Connectors](designing-processes/process-design/align-and-distribute-process-model-elements-and-connectors.md)
   * [Undo and Redo Changes in Your Process Model](designing-processes/process-design/undo-and-redo-changes.md)
   * [Navigate Around Your Process Model](designing-processes/process-design/navigate-around-your-process-model.md)
   * [Save Your Process Model](designing-processes/process-design/toolboxes.md)
