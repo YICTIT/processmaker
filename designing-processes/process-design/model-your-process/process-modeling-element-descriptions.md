@@ -821,19 +821,45 @@ See [Connect Message Flow Elements to Indicate Collaboration](set-and-delete-mes
 
 {% page-ref page="add-and-configure-start-timer-event-elements.md" %}
 
+{% page-ref page="add-and-configure-signal-start-event-elements.md" %}
+
+{% page-ref page="add-and-configure-message-start-event-elements.md" %}
+
 {% page-ref page="add-and-configure-intermediate-timer-event-elements.md" %}
+
+{% page-ref page="add-and-configure-intermediate-signal-catch-event-elements.md" %}
+
+{% page-ref page="add-and-configure-intermediate-signal-throw-event-elements.md" %}
 
 {% page-ref page="add-and-configure-intermediate-message-catch-event-elements.md" %}
 
+{% page-ref page="add-and-configure-intermediate-message-throw-event-elements.md" %}
+
 {% page-ref page="add-and-configure-end-event-elements.md" %}
+
+{% page-ref page="add-and-configure-message-end-event-elements.md" %}
+
+{% page-ref page="add-and-configure-error-end-event-elements.md" %}
+
+{% page-ref page="add-and-configure-signal-end-event-elements.md" %}
+
+{% page-ref page="add-and-configure-terminate-end-event-elements.md" %}
 
 {% page-ref page="add-and-configure-task-elements.md" %}
 
-{% page-ref page="add-and-configure-script-task-elements.md" %}
-
 {% page-ref page="add-and-configure-manual-task-elements.md" %}
 
+{% page-ref page="add-and-configure-script-task-elements.md" %}
+
 {% page-ref page="add-and-configure-sub-process-elements.md" %}
+
+{% page-ref page="add-and-configure-boundary-timer-event-elements.md" %}
+
+{% page-ref page="add-and-configure-boundary-error-event-elements.md" %}
+
+{% page-ref page="add-and-configure-boundary-signal-event-elements.md" %}
+
+{% page-ref page="add-and-configure-boundary-message-event-elements.md" %}
 
 {% page-ref page="add-and-configure-exclusive-gateway-elements.md" %}
 
@@ -845,11 +871,11 @@ See [Connect Message Flow Elements to Indicate Collaboration](set-and-delete-mes
 
 {% page-ref page="add-and-configure-pool-and-lane-elements.md" %}
 
+{% page-ref page="add-and-configure-text-annotation-elements.md" %}
+
 {% page-ref page="the-quick-toolbar.md" %}
 
 {% page-ref page="set-and-delete-message-flow-between-elements.md" %}
-
-{% page-ref page="add-and-configure-text-annotation-elements.md" %}
 
 {% page-ref page="../undo-and-redo-changes.md" %}
 

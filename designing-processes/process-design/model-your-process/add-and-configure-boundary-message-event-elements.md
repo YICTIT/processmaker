@@ -123,7 +123,5 @@ Follow these steps to edit the identifier value for a Boundary Message Event ele
 
 {% page-ref page="process-modeling-element-descriptions.md" %}
 
-{% page-ref page="../../viewing-processes/view-the-list-of-processes/view-your-processes.md" %}
-
-{% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
+{% page-ref page="add-and-configure-sub-process-elements.md" %}
 

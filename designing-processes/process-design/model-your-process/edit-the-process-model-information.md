@@ -52,37 +52,9 @@ Follow these steps to edit the Process model name:
 
 {% page-ref page="process-modeling-element-descriptions.md" %}
 
-{% page-ref page="add-and-configure-an-event-element.md" %}
+{% page-ref page="../../viewing-processes/view-the-list-of-processes/view-your-processes.md" %}
 
-{% page-ref page="add-and-configure-start-timer-event-elements.md" %}
+{% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 
-{% page-ref page="add-and-configure-intermediate-timer-event-elements.md" %}
-
-{% page-ref page="add-and-configure-intermediate-message-catch-event-elements.md" %}
-
-{% page-ref page="add-and-configure-end-event-elements.md" %}
-
-{% page-ref page="add-and-configure-task-elements.md" %}
-
-{% page-ref page="add-and-configure-script-task-elements.md" %}
-
-{% page-ref page="add-and-configure-manual-task-elements.md" %}
-
-{% page-ref page="add-and-configure-sub-process-elements.md" %}
-
-{% page-ref page="add-and-configure-exclusive-gateway-elements.md" %}
-
-{% page-ref page="add-and-configure-inclusive-gateway-elements.md" %}
-
-{% page-ref page="add-and-configure-parallel-gateway-elements.md" %}
-
-{% page-ref page="add-and-configure-event-based-gateway-elements.md" %}
-
-{% page-ref page="add-and-configure-pool-and-lane-elements.md" %}
-
-{% page-ref page="the-quick-toolbar.md" %}
-
-{% page-ref page="set-and-delete-message-flow-between-elements.md" %}
-
-{% page-ref page="add-and-configure-text-annotation-elements.md" %}
+{% page-ref page="../../viewing-processes/what-is-a-process.md" %}
 

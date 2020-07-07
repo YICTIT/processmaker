@@ -27,5 +27,9 @@ Follow these steps to select multiple Process model elements and/or connectors, 
 
 ## Related Topics
 
+{% page-ref page="align-and-distribute-process-model-elements-and-connectors.md" %}
 
+{% page-ref page="../viewing-processes/view-the-list-of-processes/view-your-processes.md" %}
+
+{% page-ref page="../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 

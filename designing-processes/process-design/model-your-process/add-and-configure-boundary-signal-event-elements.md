@@ -204,9 +204,11 @@ Follow these steps to edit the identifier value for a Boundary Signal Event elem
 
 {% page-ref page="process-modeling-element-descriptions.md" %}
 
-{% page-ref page="../../viewing-processes/view-the-list-of-processes/view-your-processes.md" %}
+{% page-ref page="add-and-configure-task-elements.md" %}
 
-{% page-ref page="../../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
+{% page-ref page="add-and-configure-manual-task-elements.md" %}
 
-{% page-ref page="../../../using-processmaker/requests/what-is-a-request.md" %}
+{% page-ref page="add-and-configure-script-task-elements.md" %}
+
+{% page-ref page="add-and-configure-sub-process-elements.md" %}
 

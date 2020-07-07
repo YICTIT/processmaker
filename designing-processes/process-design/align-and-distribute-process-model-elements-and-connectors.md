@@ -50,5 +50,9 @@ Follow these steps to distribute Process model objects:
 
 ## Related Topics
 
+{% page-ref page="select-multiple-process-model-elements-and-connectors.md" %}
 
+{% page-ref page="../viewing-processes/view-the-list-of-processes/view-your-processes.md" %}
+
+{% page-ref page="../viewing-processes/view-the-list-of-processes/create-a-process.md" %}
 
