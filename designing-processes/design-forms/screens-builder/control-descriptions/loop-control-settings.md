@@ -9,12 +9,6 @@ description: >-
 
 ## Control Description
 
-{% hint style="info" %}
-### New Topic
-
-This topic is new for ProcessMaker version 4.0.1. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.1-release-notes#screen-builder).
-{% endhint %}
-
 Use the Loop control to contain one or more [ProcessMaker Screen](../../what-is-a-form.md) controls to duplicate the contained set of controls a specified number of times, thereby minimizing the design work to duplicate that set of controls in a Screen. Use the Loop control when the [Request](../../../../using-processmaker/requests/what-is-a-request.md) participant must enter multiple instances of the same set of information, each of which contain multiple components.
 
 For example, use a Loop control when a university registrar's office must enter the following information for each new university student enrolling to the university:
@@ -162,10 +156,6 @@ Your user account or group membership must have the following permissions to edi
 * Screens: View Screens
 
 See the ProcessMaker [Screens](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#screens) permissions or ask your ProcessMaker Administrator for assistance.
-
-### Topic Update
-
-This topic is updated for ProcessMaker version 4.0.3 \(see the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.3-release-notes#screen-builder)\) since this control was introduced in ProcessMaker version 4.0.1 \(see the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.1-release-notes#screen-builder)\).
 {% endhint %}
 
 The Loop control has the following panels that contain settings:

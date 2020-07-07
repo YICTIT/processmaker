@@ -115,10 +115,6 @@ Your user account or group membership must have the following permissions to edi
 * Screens: View Screens
 
 See the ProcessMaker [Screens](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#screens) permissions or ask your ProcessMaker Administrator for assistance.
-
-### Topic Update
-
-This topic is updated for ProcessMaker version 4.0.1. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.1-release-notes#screen-builder-1).
 {% endhint %}
 
 The File Upload control has the following panels that contain settings:
@@ -135,6 +131,7 @@ Below are settings for the File Upload control in the **Variable** panel:
 
 * [Name](file-upload-control-settings.md#name)
 * [Label](file-upload-control-settings.md#label)
+* [Required](file-upload-control-settings.md#required)
 
 #### Name
 
@@ -145,6 +142,11 @@ Enter the name of the uploaded file. This setting has no default value.
 
 Edit the default label that displays for this control if necessary. **New File Upload** is the default value.  
 ![](../../../../.gitbook/assets/file-upload-control-label-screen-builder-processes.png) 
+
+#### Required
+
+Select the **Required** setting to require a file be uploaded before the ProcessMaker Screen can be submitted. This setting is not selected by default.  
+![](../../../../.gitbook/assets/required-setting-file-upload-control-screen-builder-designer.png) 
 
 ### Configuration Panel Settings
 

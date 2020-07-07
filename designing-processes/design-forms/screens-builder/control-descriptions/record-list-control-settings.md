@@ -81,12 +81,6 @@ After opening a Task or Manual Task with a Display-type ProcessMaker Screen usin
 
 ### Use the `parent` JSON Key to Reference Request Data from Controls in a Record List Control
 
-{% hint style="info" %}
-### Topic Update
-
-This topic is updated for ProcessMaker version 4.0.3. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.3-release-notes).
-{% endhint %}
-
 The Record List control uses a unique JSON key available to any control placed into the secondary page from which the Record List control references its values so that those controls can reference Request data. Controls that are placed into that secondary page function within a container and may only access another control's data that is in the same secondary page. Use the `parent` JSON key in a control's settings placed into the secondary page to reference Request data outside of that Record List control.
 
 {% hint style="info" %}
@@ -236,10 +230,6 @@ Your user account or group membership must have the following permissions to edi
 * Screens: View Screens
 
 See the ProcessMaker [Screens](../../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#screens) permissions or ask your ProcessMaker Administrator for assistance.
-
-### Topic Update
-
-This topic is updated for ProcessMaker version 4.0.1. See the [Release Notes](https://processmaker.gitbook.io/processmaker-release-notes/processmaker-4.0.x/processmaker-4.0.1-release-notes#screen-builder-1).
 {% endhint %}
 
 The Record List control has the following panels that contain settings for [Form](../types-for-screens.md#form)-type [ProcessMaker Screens](../../what-is-a-form.md):
