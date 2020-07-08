@@ -50,6 +50,25 @@ Moving an Intermediate Signal Throw Event element has the following limitations 
 * **Lane element:** If the Intermediate Signal Throw Event element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Intermediate Signal Throw Event element cannot be moved outside of the Pool element.
 {% endhint %}
 
+## Change the Color of an Intermediate Signal Throw Event Element
+
+The Intermediate Signal Throw Event element and label have a default yellow color to indicate that this element is an intermediate [Request](../../../using-processmaker/requests/what-is-a-request.md) event. After an Intermediate Signal Throw Event element is [added to a Process model](add-and-configure-intermediate-signal-throw-event-elements.md#add-an-intermediate-signal-throw-event-element), its shape and label color can be changed. Element and [connector](../model-processes-using-connectors/what-is-a-connector.md) colors may only be changed individually.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-intermediate-signal-throw-event-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to change the color and label for an Intermediate Signal Throw Event element:
+
+1. [View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Intermediate Signal Throw Event element to change its color. Available options display above the selected element. ![](../../../.gitbook/assets/change-color-intermediate-signal-throw-event-element-process-modeler-designer.png) 
+4. Click the **Open Color Palette** icon![](../../../.gitbook/assets/open-color-palette-icon-process-modeler-designer.png). The color palette displays.
+5. Do one of the following:
+   * **Select a color swatch:** Select one of the color swatches from the color palette. The Intermediate Signal Throw Event element and label change to that color.
+   * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Intermediate Signal Throw Event element and label change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
+   * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Intermediate Signal Throw Event element and label to its default color.
+
 ## Copy an Intermediate Signal Throw Event Element
 
 Copying an Intermediate Signal Throw Event element copies the original along with its current settings, making it easier and faster to continue designing without adding default elements or [connectors](../model-processes-using-connectors/what-is-a-connector.md) with their default settings.
@@ -65,7 +84,7 @@ Follow these steps to copy an Intermediate Signal Throw Event element in your Pr
 1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
 2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
 3. Select the Intermediate Signal Throw Event element to copy. Available options display above the selected element. ![](../../../.gitbook/assets/copy-intermediate-signal-throw-event-element-process-modeler-designer.png) 
-4. Click the **Copy Element** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element copies. ![](../../../.gitbook/assets/copied-intermediate-signal-throw-event-element-process-modeler-designer.png) 
+4. Click the **Copy Element** icon![](../../../.gitbook/assets/copy-element-icon-process-modeler-designer.png). The Process model element copies. ![](../../../.gitbook/assets/copied-intermediate-signal-throw-event-element-process-modeler-designer.png) 
 
 ## Delete an Intermediate Signal Throw Event Element
 

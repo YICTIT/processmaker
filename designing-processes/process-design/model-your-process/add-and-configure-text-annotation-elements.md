@@ -49,6 +49,42 @@ Moving a Text Annotation element has the following limitations in regards to the
 * **Lane element:** If the Text Annotation element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Text Annotation element cannot be moved outside of the Pool element.
 {% endhint %}
 
+## Change the Color of a Text Annotation Element
+
+The Text Annotation element and description are black-colored by default. After a Text Annotation element is [added to a Process model](add-and-configure-text-annotation-elements.md#add-a-text-annotation-element), its shape and label color can be changed. Element and [connector](../model-processes-using-connectors/what-is-a-connector.md) colors may only be changed individually.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-text-annotation-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to change the color and description for a Text Annotation element:
+
+1. [View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Text Annotation element to change its color. Available options display above the selected element. ![](../../../.gitbook/assets/change-color-text-annotation-element-process-modeler-designer.png) 
+4. Click the **Open Color Palette** icon![](../../../.gitbook/assets/open-color-palette-icon-process-modeler-designer.png). The color palette displays.
+5. Do one of the following:
+   * **Select a color swatch:** Select one of the color swatches from the color palette. The Text Annotation element and description change to that color.
+   * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Text Annotation element and description change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
+   * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Text Annotation element and description to its default color.
+
+## Copy a Text Annotation Element
+
+Copying a Text Annotation element copies the original along with its current settings, making it easier and faster to continue designing without adding default elements or [connectors](../model-processes-using-connectors/what-is-a-connector.md) with their default settings.
+
+The copied Text Annotation element displays below the original. Any [Association](process-modeling-element-descriptions.md#association) elements the original Text Annotation element has are not copied.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-text-annotation-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to copy a Text Annotation element in your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Text Annotation element to copy. Available options display above the selected element. ![](../../../.gitbook/assets/copy-text-annotation-element-process-modeler-designer.png) 
+4. Click the **Copy Element** icon![](../../../.gitbook/assets/copy-element-icon-process-modeler-designer.png). The Process model element copies. ![](../../../.gitbook/assets/copied-text-annotation-element-process-modeler-designer.png) 
+
 ## Delete a Text Annotation Element
 
 {% hint style="info" %}
@@ -136,6 +172,25 @@ Follow these steps to add an Association element to the Process model:
    ![](../../../.gitbook/assets/association-element-process-modeler-designer.png)
 
 7. Repeat steps 5 and 6 to reference another Process model element that the Text Annotation element describes as necessary.
+
+## Change the Color of an Association Element
+
+The Association element is black-colored by default. After an Association element is [added to a Process model](add-and-configure-text-annotation-elements.md#add-an-association-element), its color can be changed. Element and [connector](../model-processes-using-connectors/what-is-a-connector.md) colors may only be changed individually.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-text-annotation-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to change the color for an Association element:
+
+1. [View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Association element to change its color. Available options display above the selected element. ![](../../../.gitbook/assets/change-color-association-element-process-modeler-designer.png) 
+4. Click the **Open Color Palette** icon![](../../../.gitbook/assets/open-color-palette-icon-process-modeler-designer.png). The color palette displays.
+5. Do one of the following:
+   * **Select a color swatch:** Select one of the color swatches from the color palette. The Association element changes to that color.
+   * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Association element changes to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
+   * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Association element to its default color.
 
 ## Delete an Association Element
 

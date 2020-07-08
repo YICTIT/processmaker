@@ -63,9 +63,28 @@ Moving a PDF Generator connector has the following limitations in regards to the
 * **Lane element:** If the PDF Generator connector is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the PDF Generator connector cannot be moved outside of the Pool element.
 {% endhint %}
 
+## Change the Color of a PDF Generator Connector
+
+The PDF Generator [connector](../what-is-a-connector.md) and label are black-colored by default. After a PDF Generator connector is [added to a Process model](pdf-generator-connector.md#add-a-pdf-generator-connector-to-the-process-model), its shape and label color can be changed. Element and connector colors may only be changed individually.
+
+{% hint style="info" %}
+[A package and permissions are required to do this](pdf-generator-connector.md#package-and-permissions-required).
+{% endhint %}
+
+Follow these steps to change the color and label for a PDF Generator connector:
+
+1. [View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the PDF Generator connector to change its color. Available options display above the selected connector. ![](../../../../.gitbook/assets/change-color-pdf-generator-connector-process-modeler-designer.png) 
+4. Click the **Open Color Palette** icon![](../../../../.gitbook/assets/open-color-palette-icon-process-modeler-designer.png). The color palette displays.
+5. Do one of the following:
+   * **Select a color swatch:** Select one of the color swatches from the color palette. The PDF Generator connector and label change to that color.
+   * **Specify a custom color:** Click the![](../../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The PDF Generator connector and label change to that color. ![](../../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
+   * **Reset to the default color:** Click the![](../../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the PDF Generator connector and label to its default color.
+
 ## Copy a PDF Generator Connector
 
-Copying a PDF Generator connector copies the original along with its current settings, making it easier and faster to continue designing without adding default elements or [connectors](../what-is-a-connector.md) with their default settings.
+Copying a PDF Generator [connector](../what-is-a-connector.md) copies the original along with its current settings, making it easier and faster to continue designing without adding default elements or connectors with their default settings.
 
 The copied PDF Generator connector displays below the original. Any [Sequence Flow](../../model-your-process/process-modeling-element-descriptions.md#sequence-flow) and/or [Message Flow](../../model-your-process/process-modeling-element-descriptions.md#message-flow) elements incoming to or outgoing from the original are not copied.
 
@@ -78,7 +97,7 @@ Follow these steps to copy a PDF Generator connector in your Process model:
 1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
 2. Click the **Open Modeler** icon![](../../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
 3. Select the PDF Generator connector to copy. Available options display above the selected connector. ![](../../../../.gitbook/assets/copy-pdf-generator-connector-process-modeler-designer.png) 
-4. Click the **Copy Element** icon![](../../../../.gitbook/assets/remove-icon.png). The Process model connector copies. ![](../../../../.gitbook/assets/copied-pdf-generator-connector-process-modeler-designer.png) 
+4. Click the **Copy Element** icon![](../../../../.gitbook/assets/copy-element-icon-process-modeler-designer.png). The Process model connector copies. ![](../../../../.gitbook/assets/copied-pdf-generator-connector-process-modeler-designer.png) 
 
 ## Delete a PDF Generator Connector
 

@@ -108,6 +108,25 @@ Follow these steps to adjust where a Sequence Flow element bends:
    * Click, and then drag, on a straight line of the Sequence Flow element to add a round anchor, then place where to add a bend in that Sequence Flow element.
    * Click an existing round anchor to delete it, thereby removing that bend in that Sequence Flow element. ![](../../../.gitbook/assets/delete-round-anchor-sequence-flow-element-process-modeler-designer.png) 
 
+## Change the Color of a Sequence Flow Element
+
+The Sequence Flow element is black-colored by default. After a Sequence Flow element is [connected](the-quick-toolbar.md#connect-the-sequence-flow-element-to-another-element-or-connector), its color can be changed. Element and [connector](../model-processes-using-connectors/what-is-a-connector.md) colors may only be changed individually.
+
+{% hint style="info" %}
+[Permissions are required to do this](the-quick-toolbar.md#permissions-required).
+{% endhint %}
+
+Follow these steps to change the color for a Sequence Flow element:
+
+1. [View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Sequence Flow element to change its color. Available options display above the selected element. ![](../../../.gitbook/assets/change-color-sequence-flow-element-process-modeler-designer.png) 
+4. Click the **Open Color Palette** icon![](../../../.gitbook/assets/open-color-palette-icon-process-modeler-designer.png). The color palette displays.
+5. Do one of the following:
+   * **Select a color swatch:** Select one of the color swatches from the color palette. The Sequence Flow element changes to that color.
+   * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Sequence Flow element changes to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
+   * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Sequence Flow element to its default color.
+
 ## Delete a Sequence Flow Element
 
 {% hint style="info" %}

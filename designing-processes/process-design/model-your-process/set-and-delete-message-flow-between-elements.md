@@ -90,6 +90,79 @@ Follow these steps to set the Message Flow element between elements in separate 
 
      ![](../../../.gitbook/assets/message-flow-between-pool-elements-process-model-designer.png)
 
+## Adjust How a Message Flow Element Bends Using Anchors
+
+Use anchors in a Message Flow element to adjust how that Message Flow element bends between its connecting elements/[connectors](../model-processes-using-connectors/what-is-a-connector.md). There are two \(2\) types of Message Flow anchors:
+
+* [Adjust a straight line within a Message Flow element](set-and-delete-message-flow-between-elements.md#adjust-a-straight-line-within-a-message-flow-element) by dragging the placement of an oblong anchor![](../../../.gitbook/assets/oblong-anchor-sequence-flow-element-process-modeler-designer.png).
+* [Adjust where a Message Flow element bends](set-and-delete-message-flow-between-elements.md#adjust-where-a-message-flow-element-bends) by placing, then dragging round anchors![](../../../.gitbook/assets/round-anchor-sequence-flow-element-process-modeler-designer.png).
+
+![Message Flow anchors adjust how that element bends](../../../.gitbook/assets/message-flow-anchors-process-modeler-designer.png)
+
+### Adjust a Straight Line Within a Message Flow Element
+
+{% hint style="info" %}
+[Permissions are required to do this](set-and-delete-message-flow-between-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to adjust a straight line within a Message Flow element:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Do one of the following:
+   * [Connect a Message Flow element](set-and-delete-message-flow-between-elements.md#connect-the-message-flow-element-between-elements-in-separate-pool-elements) from one element to another.
+   * Select a Message Flow element so that available options display above the selected element. Message Flow elements that have immediately been connected require two clicks of the Message Flow element for anchors to display.
+4. Drag the oblong anchor![](../../../.gitbook/assets/oblong-anchor-sequence-flow-element-process-modeler-designer.png)perpendicularly with the straight line of the Message Flow element.
+
+### Adjust Where a Message Flow Element Bends
+
+{% hint style="info" %}
+[Permissions are required to do this](set-and-delete-message-flow-between-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to adjust where a Sequence Flow element bends:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. [Connect a Message Flow element](set-and-delete-message-flow-between-elements.md#connect-the-message-flow-element-between-elements-in-separate-pool-elements) from one element to another.
+4. Select the Message Flow element so that available options display above the selected element. Message Flow elements that have immediately been connected require two clicks of the Message Flow element for anchors to display.
+5. Do one of the following:
+   * Drag an existing round anchor![](../../../.gitbook/assets/round-anchor-sequence-flow-element-process-modeler-designer.png)to place where to bend that Message Flow element.
+   * Click, and then drag, on a straight line of the Message Flow element to add a round anchor, then place where to add a bend in that Message Flow element.
+   * Click an existing round anchor to delete it, thereby removing that bend in that Message Flow element. ![](../../../.gitbook/assets/delete-round-anchor-message-flow-element-process-modeler-designer.png) 
+
+## Change the Color of a Message Flow Element
+
+The Message Flow element is black-colored by default. After a Message Flow element is [connected](set-and-delete-message-flow-between-elements.md#connect-the-message-flow-element-between-elements-in-separate-pool-elements), its color can be changed. Element and [connector](../model-processes-using-connectors/what-is-a-connector.md) colors may only be changed individually.
+
+{% hint style="info" %}
+[Permissions are required to do this](set-and-delete-message-flow-between-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to change the color for a Message Flow element:
+
+1. [View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Message Flow element to change its color. Available options display above the selected element. ![](../../../.gitbook/assets/change-color-message-flow-element-process-modeler-designer.png) 
+4. Click the **Open Color Palette** icon![](../../../.gitbook/assets/open-color-palette-icon-process-modeler-designer.png). The color palette displays.
+5. Do one of the following:
+   * **Select a color swatch:** Select one of the color swatches from the color palette. The Message Flow element changes to that color.
+   * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Message Flow element changes to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
+   * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Message Flow element to its default color.
+
+## Delete a Message Flow Element
+
+{% hint style="info" %}
+[Permissions are required to do this](set-and-delete-message-flow-between-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to delete a Message Flow element from your Process model:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Message Flow element between the connected element/[connector](../model-processes-using-connectors/what-is-a-connector.md) to delete. Available options display above the selected element. ![](../../../.gitbook/assets/delete-message-flow-element-process-modeler-designer.png) 
+4. Click the **Delete** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element deletes.
+
 ## Settings
 
 The Message Flow element has the following panels that contain settings:

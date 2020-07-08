@@ -61,6 +61,25 @@ Moving a Script Task element has the following limitations in regards to the fol
 * **Lane element:** If the Script Task element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Script Task element cannot be moved outside of the Pool element.
 {% endhint %}
 
+## Change the Color of a Script Task Element
+
+The Script Task element and label are black-colored by default. After a Script Task element is [added to a Process model](add-and-configure-script-task-elements.md#add-a-script-task-element), its shape and label color can be changed. Element and [connector](../model-processes-using-connectors/what-is-a-connector.md) colors may only be changed individually.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-script-task-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to change the color and label for a Script Task element:
+
+1. [View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Script Task element to change its color. Available options display above the selected element. ![](../../../.gitbook/assets/change-color-script-task-element-process-modeler-designer.png) 
+4. Click the **Open Color Palette** icon![](../../../.gitbook/assets/open-color-palette-icon-process-modeler-designer.png). The color palette displays.
+5. Do one of the following:
+   * **Select a color swatch:** Select one of the color swatches from the color palette. The Script Task element and label change to that color.
+   * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Script Task element and label change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
+   * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Script Task element and label to its default color.
+
 ## Copy a Script Task Element
 
 Copying a Script Task element copies the original along with its current settings, making it easier and faster to continue designing without adding default elements or [connectors](../model-processes-using-connectors/what-is-a-connector.md) with their default settings.
@@ -76,7 +95,7 @@ Follow these steps to copy a Script Task element in your Process model:
 1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
 2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
 3. Select the Script Task element to copy. Available options display above the selected element. ![](../../../.gitbook/assets/copy-script-task-element-process-modeler-designer.png) 
-4. Click the **Copy Element** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element copies. ![](../../../.gitbook/assets/copied-script-task-element-process-modeler-designer.png) 
+4. Click the **Copy Element** icon![](../../../.gitbook/assets/copy-element-icon-process-modeler-designer.png). The Process model element copies. ![](../../../.gitbook/assets/copied-script-task-element-process-modeler-designer.png) 
 
 ## Delete a Script Task Element
 

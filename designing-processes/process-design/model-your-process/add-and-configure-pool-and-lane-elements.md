@@ -57,6 +57,25 @@ When a Pool element is [deleted](), all elements within it are also deleted. If 
 If you accidentally delete a Pool element with other elements you want to keep, then click the **Undo** button.
 {% endhint %}
 
+## Change the Color of a Pool Element
+
+The Pool element outline and label are black-colored by default with a gray-colored background. After a Pool element is [added to a Process model](add-and-configure-pool-and-lane-elements.md#add-a-pool-element), its shape, label, and background color can be changed. Element and [connector](../model-processes-using-connectors/what-is-a-connector.md) colors may only be changed individually.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to change the color of the outline, label, and background for a Pool element:
+
+1. [View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Pool element to change its color. Available options display above the selected element. ![](../../../.gitbook/assets/change-color-pool-element-process-modeler-designer.png) 
+4. Click the **Open Color Palette** icon![](../../../.gitbook/assets/open-color-palette-icon-process-modeler-designer.png). The color palette displays.
+5. Do one of the following:
+   * **Select a color swatch:** Select one of the color swatches from the color palette. The Pool element outline, label, and background change to that color.
+   * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Pool element outline, label, and background change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
+   * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Pool element to its default colors.
+
 ## Resize a Pool Element
 
 {% hint style="info" %}
@@ -163,6 +182,25 @@ Follow these steps to add a Lane element to a Pool element:
    * **Add a Lane element above existing Lane elements:** Click the **Lane Above** icon![](../../../.gitbook/assets/lane-above-icon-pool-process-modeler-processes.png)to add a Lane element above all existing Lane elements. If only the Pool element exists, two Lane elements display.
    * **Add a Lane element below existing Lane elements:** Click the **Lane Below** icon![](../../../.gitbook/assets/lane-below-icon-pool-process-modeler-processes.png)to add a Lane element below all existing Lane elements. If only the Pool element exists, two Lane elements display.
 
+## Change the Color of a Lane Element
+
+The Lane element outline and label are black-colored by default with a gray-colored background. After a Lane element is [added to a Process model](add-and-configure-pool-and-lane-elements.md#add-a-lane-element-to-a-pool-element), its shape, label, and background color can be changed. Element and [connector](../model-processes-using-connectors/what-is-a-connector.md) colors may only be changed individually.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-pool-and-lane-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to change the color of the outline, label, and background for a Lane element:
+
+1. [View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Lane element to change its color. Anchors display on each corner of the Lane element![](../../../.gitbook/assets/pool-element-anchor-process-modeler-processes.png). Available options display above the selected element. ![](../../../.gitbook/assets/change-color-lane-element-process-modeler-designer.png) 
+4. Click the **Open Color Palette** icon![](../../../.gitbook/assets/open-color-palette-icon-process-modeler-designer.png). The color palette displays.
+5. Do one of the following:
+   * **Select a color swatch:** Select one of the color swatches from the color palette. The Lane element outline, label, and background change to that color.
+   * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Lane element outline, label, and background change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
+   * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Lane element to its default colors.
+
 ## Resize a Lane Element
 
 {% hint style="info" %}
@@ -172,11 +210,11 @@ Follow these steps to add a Lane element to a Pool element:
 Follow these steps to resize a Lane element:
 
 1. [Add a Lane element to a Pool element](add-and-configure-pool-and-lane-elements.md#add-a-lane-element-to-a-pool-element).
-2. Select the Lane element from the Pool element to resize. Anchors display on each corner of the Lane element.  
+2. Select the Lane element from the Pool element to resize. Anchors display on each corner of the Lane element![](../../../.gitbook/assets/pool-element-anchor-process-modeler-processes.png).
 
    ![](../../../.gitbook/assets/lane-element-resize-anchor-process-modeler-designer.png)
 
-3. Click one of the anchors on the Lane element![](../../../.gitbook/assets/pool-element-anchor-process-modeler-processes.png), hold your cursor, and then adjust the size of the Lane element in the Pool element. If the Lane element contains elements within it prior to resizing, the Lane element only resizes to contain all elements within it. The Pool element automatically adjusts to the width of the resized Lane element so far as all elements contained within the Pool element remain contained in it. [Pool elements can be resized](add-and-configure-pool-and-lane-elements.md#resize-a-pool-element) separately.
+3. Click one of the anchors on the Lane element, hold your cursor, and then adjust the size of the Lane element in the Pool element. If the Lane element contains elements within it prior to resizing, the Lane element only resizes to contain all elements within it. The Pool element automatically adjusts to the width of the resized Lane element so far as all elements contained within the Pool element remain contained in it. [Pool elements can be resized](add-and-configure-pool-and-lane-elements.md#resize-a-pool-element) separately.
 
 ## Delete a Lane Element from a Pool Element
 

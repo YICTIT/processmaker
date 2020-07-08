@@ -50,6 +50,25 @@ Moving an Inclusive Gateway element has the following limitations in regards to 
 * **Lane element:** If the Inclusive Gateway element is inside of a Lane element, it can be moved to another Lane element in the same Pool element. However, the Inclusive Gateway element cannot be moved outside of the Pool element.
 {% endhint %}
 
+## Change the Color of an Inclusive Gateway Element
+
+The Inclusive Gateway element and label are black-colored by default. After an Inclusive Gateway element is [added to a Process model](add-and-configure-inclusive-gateway-elements.md#add-an-inclusive-gateway-element), its shape and label color can be changed. Element and [connector](../model-processes-using-connectors/what-is-a-connector.md) colors may only be changed individually.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-inclusive-gateway-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to change the color and label for an Inclusive Gateway element:
+
+1. [View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Inclusive Gateway element to change its color. Available options display above the selected element. ![](../../../.gitbook/assets/change-color-inclusive-gateway-element-process-modeler-designer.png) 
+4. Click the **Open Color Palette** icon![](../../../.gitbook/assets/open-color-palette-icon-process-modeler-designer.png). The color palette displays.
+5. Do one of the following:
+   * **Select a color swatch:** Select one of the color swatches from the color palette. The Inclusive Gateway element and label change to that color.
+   * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Inclusive Gateway element and label change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
+   * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Inclusive Gateway element and label to its default color.
+
 ## Copy an Inclusive Gateway Element
 
 Copying an Inclusive Gateway element copies the original along with its current settings, making it easier and faster to continue designing without adding default elements or [connectors](../model-processes-using-connectors/what-is-a-connector.md) with their default settings.
@@ -65,7 +84,7 @@ Follow these steps to copy an Inclusive Gateway element in your Process model:
 1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
 2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
 3. Select the Inclusive Gateway element to copy. Available options display above the selected element. ![](../../../.gitbook/assets/copy-inclusive-gateway-element-process-modeler-designer.png) 
-4. Click the **Copy Element** icon![](../../../.gitbook/assets/remove-icon.png). The Process model element copies. ![](../../../.gitbook/assets/copied-inclusive-gateway-element-process-modeler-designer.png) 
+4. Click the **Copy Element** icon![](../../../.gitbook/assets/copy-element-icon-process-modeler-designer.png). The Process model element copies. ![](../../../.gitbook/assets/copied-inclusive-gateway-element-process-modeler-designer.png) 
 
 ## Delete an Inclusive Gateway Element
 

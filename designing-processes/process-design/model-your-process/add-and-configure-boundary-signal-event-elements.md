@@ -46,6 +46,25 @@ Follow these steps to add a Boundary Signal Event element to the Process model:
 
 After placing the Boundary Signal Event element, you may drag it to an adjacent side of its associating element/connector. Since Process Modeler displays labels at the bottom of Process model elements and connectors, the Boundary Signal Event element displays best at the bottom of its associating element.
 
+## Change the Color of a Boundary Signal Event Element
+
+The Boundary Signal Event element and label are black-colored by default. After a Boundary Signal Event element is [added to a Process model](add-and-configure-boundary-signal-event-elements.md#add-a-boundary-signal-event-element), its shape and label color can be changed. Element and [connector](../model-processes-using-connectors/what-is-a-connector.md) colors may only be changed individually.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-boundary-signal-event-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to change the color and label for a Boundary Signal Event element:
+
+1. [View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Boundary Signal Event element to change its color. Available options display above the selected element. ![](../../../.gitbook/assets/change-color-boundary-signal-event-element-process-modeler-designer.png) 
+4. Click the **Open Color Palette** icon![](../../../.gitbook/assets/open-color-palette-icon-process-modeler-designer.png). The color palette displays.
+5. Do one of the following:
+   * **Select a color swatch:** Select one of the color swatches from the color palette. The Boundary Signal Event element and label change to that color.
+   * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Boundary Signal element and label change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
+   * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Boundary Signal Event element and label to its default color.
+
 ## Delete a Boundary Signal Event Element
 
 {% hint style="info" %}
