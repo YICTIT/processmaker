@@ -72,6 +72,29 @@ Follow these steps to change the color and label for a Start Timer Event element
    * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Start Timer Event element and label change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
    * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Start Timer Event element and label to its default color.
 
+## Change to a Different Starting Request Event Element
+
+After a Start Timer Event element is [added to a Process model](add-and-configure-start-timer-event-elements.md#add-a-start-timer-event-element), you may change it to another starting [Request](../../../using-processmaker/requests/what-is-a-request.md) event element:
+
+* [Start Event](process-modeling-element-descriptions.md#start-event) element
+* [Signal Start Event](process-modeling-element-descriptions.md#signal-start-event) element
+* [Message Start Event](process-modeling-element-descriptions.md#message-start-event) element
+
+Changing to another starting Request event element replaces the selected Start Timer Event element with the default settings and color for the replacing element.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-start-timer-event-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to change a Start Timer Event element to a different starting Request event element:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Start Timer Event element to change to another starting Request event element. Available options display above the selected element.
+4. Click the **Elements** icon. The **Elements** drop-down menu displays the starting Request event elements. ![](../../../.gitbook/assets/change-element-start-timer-event-process-modeler-designer.png) 
+5. Select the element to replace the Start Timer Event element. The **Change Type** screen displays to confirm replacing the currently selected element. ![](../../../.gitbook/assets/change-type-screen-process-modeler-designer.png) 
+6. Click **Confirm**. The new element replaces the Start Timer Event element with its default settings and color.
+
 ## Copy a Start Timer Event Element
 
 Copying a Start Timer Event element copies the original along with its current settings, making it easier and faster to continue designing without adding default elements or [connectors](../model-processes-using-connectors/what-is-a-connector.md) with their default settings.
