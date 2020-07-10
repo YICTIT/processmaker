@@ -86,7 +86,7 @@ The selected Intermediate Timer Event element is replaced by the default setting
 [Permissions are required to do this](add-and-configure-intermediate-timer-event-elements.md#permissions-required).
 {% endhint %}
 
-Follow these steps to change an Intermediate Timer Event element to a different intermediate Request event element:
+Follow these steps to replace an Intermediate Timer Event element with a different intermediate Request event element:
 
 1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
 2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
