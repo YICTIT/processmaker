@@ -69,6 +69,29 @@ Follow these steps to change the color and label for a Parallel Gateway element:
    * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Parallel Gateway element and label change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
    * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Parallel Gateway element and label to its default color.
 
+## Replace a Parallel Gateway Element with a Different Gateway Element
+
+After a Parallel Gateway element is [added to a Process model](add-and-configure-parallel-gateway-elements.md#add-a-parallel-gateway-element), you may replace it with a different Gateway type element:
+
+* [Exclusive Gateway](process-modeling-element-descriptions.md#exclusive-gateway) element
+* [Inclusive Gateway](process-modeling-element-descriptions.md#inclusive-gateway) element
+* [Event-Based Gateway](process-modeling-element-descriptions.md#event-based-gateway) element
+
+The selected Parallel Gateway element is replaced by the default settings and color of the replacing element.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-parallel-gateway-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to replace a Parallel Gateway element with a different Gateway type element:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Parallel Gateway element to change to another element. Available options display above the selected element.
+4. Click the **Elements** icon. The **Elements** drop-down menu displays the Gateway type elements. ![](../../../.gitbook/assets/change-element-parallel-gateway-process-modeler-designer.png) 
+5. Select the element to replace the Parallel Gateway element. The **Change Type** screen displays to confirm replacing the currently selected element. ![](../../../.gitbook/assets/change-type-screen-process-modeler-designer.png) 
+6. Click **Confirm**. The new element replaces the Parallel Gateway element with its default settings and color.
+
 ## Copy a Parallel Gateway Element
 
 Copying a Parallel Gateway element copies the original along with its current settings, making it easier and faster to continue designing without adding default elements or [connectors](../model-processes-using-connectors/what-is-a-connector.md) with their default settings.

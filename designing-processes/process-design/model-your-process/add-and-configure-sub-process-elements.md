@@ -81,6 +81,29 @@ Follow these steps to change the color and label for a Sub Process element:
    * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Sub Process element and label change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
    * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Sub Process element and label to its default color.
 
+## Replace a Sub Process Element with a Task Type Element
+
+After a Sub Process element is [added to a Process model](add-and-configure-sub-process-elements.md#add-a-sub-process-element), you may replace it with a Task type element:
+
+* [Form Task](process-modeling-element-descriptions.md#form-task) element
+* [Manual Task](process-modeling-element-descriptions.md#manual-task) element
+* [Script Task](process-modeling-element-descriptions.md#script-task) element
+
+The selected Sub Process element is replaced by the default settings and color of the replacing element.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-sub-process-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to replace a Sub Process element with a Task type element:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Sub Process element to change to another element. Available options display above the selected element.
+4. Click the **Elements** icon. The **Elements** drop-down menu displays the Task type elements and the Sub Process element. ![](../../../.gitbook/assets/change-element-sub-process-process-modeler-designer.png) 
+5. Select the element to replace the Sub Process element. The **Change Type** screen displays to confirm replacing the currently selected element. ![](../../../.gitbook/assets/change-type-screen-process-modeler-designer.png) 
+6. Click **Confirm**. The new element replaces the Sub Process element with its default settings and color.
+
 ## Copy a Sub Process Element
 
 Copying a Sub Process element copies the original along with its current settings, making it easier and faster to continue designing without adding default elements or [connectors](../model-processes-using-connectors/what-is-a-connector.md) with their default settings.
