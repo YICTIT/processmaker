@@ -72,7 +72,7 @@ Follow these steps to change the color and label for a Message Start Event eleme
    * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Message Start Event element and label change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
    * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Message Start Event element and label to its default color.
 
-## Change to a Different Starting Request Event Element
+## Replace a Message Start Event Element with a Different Starting Request Event Element
 
 After a Message Start Event element is [added to a Process model](add-and-configure-message-start-event-elements.md#add-a-message-start-event-element), you may replace it with a different starting [Request](../../../using-processmaker/requests/what-is-a-request.md) event element:
 
@@ -80,7 +80,7 @@ After a Message Start Event element is [added to a Process model](add-and-config
 * [Start Timer Event](process-modeling-element-descriptions.md#start-timer-event) element
 * [Signal Start Event](process-modeling-element-descriptions.md#signal-start-event) element
 
-Changing to a different starting Request event element replaces the selected Message Start Event element with the default settings and color of the replacing element.
+The selected Message Start Event element is replaced by the default settings and color of the replacing element.
 
 {% hint style="info" %}
 [Permissions are required to do this](add-and-configure-message-start-event-elements.md#permissions-required).

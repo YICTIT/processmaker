@@ -71,7 +71,7 @@ Follow these steps to change the color and label for an Intermediate Timer Event
    * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Intermediate Timer Event element and label change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
    * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Intermediate Timer Event element and label to its default color.
 
-## Change to a Different Intermediate Request Event Element
+## Replace an Intermediate Timer Event Element with a Different Intermediate Request Event Element
 
 After an Intermediate Timer Event element is [added to a Process model](add-and-configure-intermediate-timer-event-elements.md#add-an-intermediate-timer-event-element), you may replace it with a different intermediate [Request](../../../using-processmaker/requests/what-is-a-request.md) event element:
 
@@ -80,7 +80,7 @@ After an Intermediate Timer Event element is [added to a Process model](add-and-
 * [Intermediate Message Catch Event](process-modeling-element-descriptions.md#intermediate-message-catch-event) element
 * [Intermediate Message Throw Event](process-modeling-element-descriptions.md#intermediate-message-throw-event) element
 
-Changing to a different intermediate Request event element replaces the selected Intermediate Timer Event element with the default settings and color of the replacing element.
+The selected Intermediate Timer Event element is replaced by the default settings and color of the replacing element.
 
 {% hint style="info" %}
 [Permissions are required to do this](add-and-configure-intermediate-timer-event-elements.md#permissions-required).
