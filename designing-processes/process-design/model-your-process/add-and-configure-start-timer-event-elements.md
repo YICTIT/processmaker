@@ -74,7 +74,7 @@ Follow these steps to change the color and label for a Start Timer Event element
 
 ## Change to a Different Starting Request Event Element
 
-After a Start Timer Event element is [added to a Process model](add-and-configure-start-timer-event-elements.md#add-a-start-timer-event-element), you may change it to another starting [Request](../../../using-processmaker/requests/what-is-a-request.md) event element:
+After a Start Timer Event element is [added to a Process model](add-and-configure-start-timer-event-elements.md#add-a-start-timer-event-element), you may replace it with a different starting [Request](../../../using-processmaker/requests/what-is-a-request.md) event element:
 
 * [Start Event](process-modeling-element-descriptions.md#start-event) element
 * [Signal Start Event](process-modeling-element-descriptions.md#signal-start-event) element

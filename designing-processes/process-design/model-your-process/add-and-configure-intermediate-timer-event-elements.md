@@ -73,7 +73,7 @@ Follow these steps to change the color and label for an Intermediate Timer Event
 
 ## Change to a Different Intermediate Request Event Element
 
-After an Intermediate Timer Event element is [added to a Process model](add-and-configure-intermediate-timer-event-elements.md#add-an-intermediate-timer-event-element), you may change it to another intermediate [Request](../../../using-processmaker/requests/what-is-a-request.md) event element:
+After an Intermediate Timer Event element is [added to a Process model](add-and-configure-intermediate-timer-event-elements.md#add-an-intermediate-timer-event-element), you may replace it with a different intermediate [Request](../../../using-processmaker/requests/what-is-a-request.md) event element:
 
 * [Intermediate Signal Catch Event](process-modeling-element-descriptions.md#intermediate-signal-catch-event) element
 * [Intermediate Signal Throw Event](process-modeling-element-descriptions.md#intermediate-signal-throw-event) element

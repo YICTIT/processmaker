@@ -74,7 +74,7 @@ Follow these steps to change the color and label for a Signal Start Event elemen
 
 ## Change to a Different Starting Request Event Element
 
-After a Signal Start Event element is [added to a Process model](add-and-configure-signal-start-event-elements.md#add-a-signal-start-event-element), you may change it to another starting [Request](../../../using-processmaker/requests/what-is-a-request.md) event element:
+After a Signal Start Event element is [added to a Process model](add-and-configure-signal-start-event-elements.md#add-a-signal-start-event-element), you may replace it with a different starting [Request](../../../using-processmaker/requests/what-is-a-request.md) event element:
 
 * [Start Event](process-modeling-element-descriptions.md#start-event) element
 * [Start Timer Event](process-modeling-element-descriptions.md#start-timer-event) element
