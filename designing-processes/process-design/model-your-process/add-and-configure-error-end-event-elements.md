@@ -72,6 +72,30 @@ Follow these steps to change the color and label for an Error End Event element:
    * **Specify a custom color:** Click the![](../../../.gitbook/assets/color-selector-swatch-process-modeler-designer.png)icon to display the color selector, and then select a color, enter the [Hex color code](https://www.color-hex.com/), or enter the red, green, blue, and alpha color values for the custom color. The Error End Event element and label change to that color. ![](../../../.gitbook/assets/color-selector-process-modeler-designer.png) 
    * **Reset to the default color:** Click the![](../../../.gitbook/assets/reset-color-icon-process-modeler-designer.png)icon to reset the Error End Event element and label to its default color.
 
+## Replace an Error End Event Element with a Different Ending Request Event Element
+
+After an Error End Event element is [added to a Process model](add-and-configure-error-end-event-elements.md#add-an-error-end-event-element), you may replace it with a different ending [Request](../../../using-processmaker/requests/what-is-a-request.md) event element:
+
+* [End Event](process-modeling-element-descriptions.md#end-event) element
+* [Message End Event](process-modeling-element-descriptions.md#message-end-event) element
+* [Signal End Event](process-modeling-element-descriptions.md#signal-end-event) element
+* [Terminate End Event](process-modeling-element-descriptions.md#terminate-end-event) element
+
+The selected Error End Event element is replaced by the default settings and color of the replacing element.
+
+{% hint style="info" %}
+[Permissions are required to do this](add-and-configure-error-end-event-elements.md#permissions-required).
+{% endhint %}
+
+Follow these steps to replace an Error End Event element with a different ending Request event element:
+
+1. ​[View your Processes](https://processmaker.gitbook.io/processmaker-4-community/-LPblkrcFWowWJ6HZdhC/~/drafts/-LRhVZm0ddxDcGGdN5ZN/primary/designing-processes/viewing-processes/view-the-list-of-processes/view-your-processes#view-all-processes). The **Processes** page displays.
+2. Click the **Open Modeler** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png)to edit the selected Process model. Process Modeler displays.
+3. Select the Error End Event element to change to another ending Request event element. Available options display above the selected element.
+4. Click the **Elements** icon. The **Elements** drop-down menu displays the ending Request event elements. ![](../../../.gitbook/assets/change-element-error-end-event-process-modeler-designer.png) 
+5. Select the element to replace the Error End Event element. The **Change Type** screen displays to confirm replacing the currently selected element. ![](../../../.gitbook/assets/change-type-screen-process-modeler-designer.png) 
+6. Click **Confirm**. The new element replaces the Error End Event element with its default settings and color.
+
 ## Copy an Error End Event Element
 
 Copying an Error End Event element copies the original along with its current settings, making it easier and faster to continue designing without adding default elements or [connectors](../model-processes-using-connectors/what-is-a-connector.md) with their default settings.
