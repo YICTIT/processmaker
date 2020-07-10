@@ -80,7 +80,7 @@ After a Message Start Event element is [added to a Process model](add-and-config
 * [Start Timer Event](process-modeling-element-descriptions.md#start-timer-event) element
 * [Signal Start Event](process-modeling-element-descriptions.md#signal-start-event) element
 
-Changing to another starting Request event element replaces the selected Message Start Event element with the default settings and color for the replacing element.
+Changing to a different starting Request event element replaces the selected Message Start Event element with the default settings and color of the replacing element.
 
 {% hint style="info" %}
 [Permissions are required to do this](add-and-configure-message-start-event-elements.md#permissions-required).
