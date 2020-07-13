@@ -24,7 +24,14 @@ See the ProcessMaker [Vocabularies](../../../processmaker-administration/permiss
 Follow these steps to edit a ProcessMaker [Vocabulary](../what-is-a-vocabulary.md):
 
 1. [View your ProcessMaker Vocabularies](view-all-vocabularies.md#view-all-vocabularies). The **Vocabularies** page displays.
-2. Click the **Edit** icon![](../../../.gitbook/assets/edit-icon.png)for your ProcessMaker Vocabulary. The **Edit** page displays. ![](../../../.gitbook/assets/edit-vocabulary-page-processes.png) 
+2. Do one of the following:
+
+   * Create a new ProcessMaker Vocabulary.
+   * Click the **Edit** icon![](../../../.gitbook/assets/edit-icon.png)for your ProcessMaker Vocabulary.
+
+   The **Edit** page displays.  
+   ![](../../../.gitbook/assets/edit-vocabulary-page-package-designer.png) 
+
 3. Edit the following information about the ProcessMaker Vocabulary as necessary:
    * In the **Title** field, edit the ProcessMaker Vocabulary name. This is a required field.
    * In the **Description** field, edit the description of the ProcessMaker Vocabulary. This is a required field.

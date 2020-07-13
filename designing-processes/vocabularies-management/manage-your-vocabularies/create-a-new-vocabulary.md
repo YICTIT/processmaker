@@ -31,7 +31,7 @@ Follow these steps to create a new ProcessMaker Vocabulary:
 2. Click the **+Vocabulary** button. The **Create Vocabulary** screen displays. ![](../../../.gitbook/assets/create-vocabulary-screen-processes.png) 
 3. In the **Title** field, enter the name of the ProcessMaker Vocabulary. This name must be unique from all other ProcessMaker Vocabularies. This is a required field.
 4. In the **Description** field, enter the description of the ProcessMaker Vocabulary. This is a required field.
-5. Click the **Browse** button beside the **JSON Schema** field to locate the JSON schema from which ProcessMaker assets are to be designed. This file must use the `.json` file extension.
+5. Optionally, click the **Browse** button beside the **JSON Schema** field to locate the JSON schema from which ProcessMaker assets are to conform. This file must use the `.json` file extension. This setting is not required because you can design the ProcessMaker Vocabulary after is it is created.
 6. Click **Save**. The Edit page displays the ProcessMaker Vocabulary. See [Edit a Vocabulary](edit-a-vocabulary.md).
 
 ## Related Topics
