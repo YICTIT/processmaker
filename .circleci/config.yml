@@ -183,13 +183,12 @@ jobs:
       
       - run:
           command: |
-            mkdir -p ~/phpunit
-            phpunit --log-junit ~/phpunit/junit.xml tests
+            mkdir -p ./vendor/bin/phpunit --log-junit tests/junit.xml tests
           when: always
       - store_test_results:
-          path: ~/phpunit
+          path: tests
       - store_artifacts:
-          path: ~/phpunit
+          path: tests
 
 
       - store_artifacts:
