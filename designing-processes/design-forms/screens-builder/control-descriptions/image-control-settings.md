@@ -130,6 +130,7 @@ Below are settings for the Image control in the **Configuration** panel:
 * [Name](image-control-settings.md#name)
 * [Upload](image-control-settings.md#upload)
 * [Preview](image-control-settings.md#preview)
+* [Render Image from a Variable Name](image-control-settings.md#render-image-from-a-variable-name)
 * [Helper Text](image-control-settings.md#helper-text)
 
 #### Name
@@ -145,6 +146,16 @@ Click the **Upload** button to browse for the PNG, GIF, or JPG file type image t
 
 Preview the uploaded image.  
 ![](../../../../.gitbook/assets/image-control-upload-preview-screen-builder-processes.png) 
+
+#### Render Image from a Variable Name
+
+Select the **Render image from a variable name** setting to render as an image the content of another control by referencing that control's **Variable Name** setting value in [mustache syntax](https://mustache.github.io/mustache.5.html).  
+![](../../../../.gitbook/assets/render-image-from-a-variable-name-not-selected-image-control-process-modeler-designer.png) 
+
+After selecting the **Render image from a variable name** setting, the **Variable Name** setting displays.  
+![](../../../../.gitbook/assets/render-image-from-a-variable-name-selected-image-control-process-modeler-designer.png) 
+
+In the **Variable Name** setting, enter in mustache syntax the **Variable Name** setting value of the content to display as an image in the Image control. For example, to display a digital signature entered into a Signature control with a **Variable Name** setting of `SignDocument`, enter `{{ SignDocument }}`. If the Signature control has been signed, that digital signature displays in the Image control when it displays.
 
 #### Helper Text
 
