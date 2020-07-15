@@ -182,8 +182,7 @@ jobs:
           command: 'npm run test'
       
       - run:
-          command: |
-            mkdir -p ./vendor/bin/phpunit --log-junit tests/junit.xml tests
+          command: './vendor/bin/phpunit --log-junit tests/junit.xml tests'
           when: always
       - store_test_results:
           path: tests
