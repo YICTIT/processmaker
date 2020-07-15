@@ -149,7 +149,7 @@ Preview the uploaded image.
 
 #### Render Image from a Variable Name
 
-Select the **Render image from a variable name** setting to render as an image the content of another control by referencing that control's **Variable Name** setting value in [mustache syntax](https://mustache.github.io/mustache.5.html).  
+Select the **Render image from a variable name** setting to render as an image the content of another control by referencing that control's **Variable Name** setting value in [mustache syntax](https://mustache.github.io/mustache.5.html). For example, render an image of a file uploaded using the [File Upload](file-upload-control-settings.md) control.  
 ![](../../../../.gitbook/assets/render-image-from-a-variable-name-not-selected-image-control-process-modeler-designer.png) 
 
 After selecting the **Render image from a variable name** setting, the **Variable Name** setting displays.  
