@@ -180,6 +180,17 @@ jobs:
       - run:
           name: 'Jest'
           command: 'npm run test'
+      
+      - run:
+          command: |
+            mkdir -p ~/phpunit
+            phpunit --log-junit ~/phpunit/junit.xml tests
+          when: always
+      - store_test_results:
+          path: ~/phpunit
+      - store_artifacts:
+          path: ~/phpunit
+
 
       - store_artifacts:
           path: coverage
