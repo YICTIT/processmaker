@@ -155,7 +155,7 @@ Select the **Render image from a variable name** setting to render as an image t
 After selecting the **Render image from a variable name** setting, the **Variable Name** setting displays.  
 ![](../../../../.gitbook/assets/render-image-from-a-variable-name-selected-image-control-process-modeler-designer.png) 
 
-In the **Variable Name** setting, enter in mustache syntax the **Variable Name** setting value of the content to display as an image in the Image control. For example, to display a digital signature entered into a Signature control with a **Variable Name** setting of `SignDocument`, enter `{{ SignDocument }}`. If the Signature control has been signed, that digital signature displays in the Image control when it displays.
+In the **Variable Name** setting, enter in mustache syntax the **Variable Name** setting value of the content to display as an image in the Image control. For example, to display a digital signature entered into a Signature control with a **Variable Name** setting of `SignDocument`, enter `{{ data.SignDocument }}`. If the Signature control has been signed, that digital signature displays in the Image control when it displays.
 
 #### Helper Text
 
