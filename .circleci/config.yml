@@ -157,7 +157,7 @@ jobs:
       # run tests!
       - run:
           name: 'PHPUnit'
-          command: 'phpdbg -qrr vendor/bin/phpunit -v -d memory_limit=-1 --coverage-html tests/coverage-report'
+          command: './vendor/bin/phpunit -v -d memory_limit=-1 --coverage-html ./tests/coverage-report'
           environment:
             DB_DATABASE: 'circle_test'
             DB_PASSWORD: 'P4ssW0rd1!'
@@ -181,18 +181,10 @@ jobs:
           name: 'Jest'
           command: 'npm run test'
       
-      - run:
-          command: 'vendor/bin/phpunit --log-junit tests/junit.xml tests'
-          when: always
       - store_test_results:
           path: tests/coverage-report
       - store_artifacts:
           path: tests/coverage-report
-      - run:
-          name: Display link to coverage report
-          command: |
-            echo "PHPUnit coverage report available at:"
-            echo https://circleci.com/api/v1.1/project/github/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/${CIRCLE_BUILD_NUM}/artifacts/0/tests/coverage-report/index.html
       - store_artifacts:
           path: coverage
 
