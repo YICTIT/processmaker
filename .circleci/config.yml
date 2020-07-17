@@ -157,7 +157,7 @@ jobs:
       # run tests!
       - run:
           name: 'PHPUnit'
-          command: './vendor/bin/phpunit -v -d memory_limit=-1'
+          command: './vendor/bin/phpunit -v -d memory_limit=-1 --coverage-html ./tests/coverage-report'
           environment:
             DB_DATABASE: 'circle_test'
             DB_PASSWORD: 'P4ssW0rd1!'
@@ -183,12 +183,12 @@ jobs:
       
       - run:
           command: |
-            mkdir -p ./vendor/bin/phpunit --log-junit tests/junit.xml tests
+            ./vendor/bin/phpunit --log-junit ./tests/junit.xml tests
           when: always
       - store_test_results:
-          path: tests
+          path: tests/coverage-report
       - store_artifacts:
-          path: tests
+          path: tests/coverage-report
 
 
       - store_artifacts:
