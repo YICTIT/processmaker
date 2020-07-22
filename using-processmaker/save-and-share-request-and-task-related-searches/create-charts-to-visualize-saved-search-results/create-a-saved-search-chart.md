@@ -18,7 +18,7 @@ Follow these steps to create a chart for a type of Saved Search:
 
 1. [View the search results for a Saved Search](../view-saved-searches-that-are-shared-with-you/view-search-results-for-a-saved-search.md) in which to create a chart. The **Data** tab displays the data details for that Saved Search.
 2. Click the **Charts** tab. The **Charts** tab displays all charts created for this Saved Search.
-3. Click the **+Chart** button. The **Create Chart** screen displays the **General** tab. ![](../../../.gitbook/assets/general-tab-create-chart-screen-saved-searches-package.png) 
+3. Click the **+Chart** button. The **Create Chart** screen displays the **General** tab. ![](../../../.gitbook/assets/general-tab-create-a-chart-saved-searches-package.png) 
 4. In the **Name** setting, enter the name of the chart. This is a required setting.
 5. From the **Chart Type** group, select one of the following chart types to visualize the results of this Saved Search:
 
@@ -28,6 +28,7 @@ Follow these steps to create a chart for a type of Saved Search:
    * **Pie:** The pie chart visualizes Saved Search results as relational proportions between data. See [chart example](overview-of-saved-search-charts.md#pie-chart).
    * **Doughnut:** The doughnut chart visualizes Saved Search results as relational proportions between data similarly to the pie chart type but with the inner portion removed. See [chart example](overview-of-saved-search-charts.md#doughnut-chart).
    * **Count:** The count chart displays a single data metric on a canvas. See [chart example](overview-of-saved-search-charts.md#count).
+   * **List:** The list chart displays chart data in tabular format. See [chart example](overview-of-saved-search-charts.md#list-chart).
 
    **Bar \(Horizontal\)** is the default chart type.
 

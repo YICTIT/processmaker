@@ -104,7 +104,8 @@ See the following Saved Search chart types:
 * [Line chart](overview-of-saved-search-charts.md#line-chart)
 * [Pie chart](overview-of-saved-search-charts.md#pie-chart)
 * [Doughnut chart](overview-of-saved-search-charts.md#doughnut-chart)
-* [Count](overview-of-saved-search-charts.md#count)
+* [Count chart](overview-of-saved-search-charts.md#count)
+* [List chart](overview-of-saved-search-charts.md#list-chart)
 
 #### Bar Chart \(Horizontal\)
 
@@ -136,11 +137,17 @@ The doughnut chart visualizes Saved Search results as relational proportions bet
 
 ![Number of Requests by status type for the Loan Process](../../../.gitbook/assets/doughnut-chart-example-saved-searches-package.png)
 
-#### Count
+#### Count Chart
 
 The count chart displays a single data metric on a canvas. The following count chart shows how many records are in the "Department" [ProcessMaker Collection](../../../collections/what-is-a-collection.md).
 
 ![Number of records in the &quot;Department&quot; ProcessMaker Collection.](../../../.gitbook/assets/count-chart-example-saved-searches-package.png)
+
+#### List Chart
+
+The list chart displays a pivot table or raw data. The following list chart shows the Loan Requests.  
+
+![List Chart of Loan Requests](../../../.gitbook/assets/list-chart-saved-searches-package.png)
 
 ## Related Topics
 
