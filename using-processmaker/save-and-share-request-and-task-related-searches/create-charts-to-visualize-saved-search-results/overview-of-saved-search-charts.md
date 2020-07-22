@@ -141,13 +141,23 @@ The doughnut chart visualizes Saved Search results as relational proportions bet
 
 The count chart displays a single data metric on a canvas. The following count chart shows how many records are in the "Department" [ProcessMaker Collection](../../../collections/what-is-a-collection.md).
 
-![Number of records in the &quot;Department&quot; ProcessMaker Collection.](../../../.gitbook/assets/count-chart-example-saved-searches-package.png)
+![Number of records in the &quot;Department&quot; ProcessMaker Collection](../../../.gitbook/assets/count-chart-example-saved-searches-package.png)
 
 #### List Chart
 
-The list chart displays a pivot table or raw data. The following list chart shows the Loan Requests.  
+The list chart displays the raw data or a pivot table for a Saved Search.
 
-![List Chart of Loan Requests](../../../.gitbook/assets/list-chart-saved-searches-package.png)
+When a List chart displays the raw data for a Saved Search, the chart contents display similarly to the Saved Search results from which the chart is based. Click the **Open Record** icon![](../../../.gitbook/assets/open-record-icon-list-chart-raw-data-saved-seaches-package.png)to display the specific data in the list chart for that Saved Search.
+
+The following list chart shows the raw data for Loan Requests.  
+
+![List chart showing the raw data for Loan Requests](../../../.gitbook/assets/list-chart-raw-data-saved-searches-package.png)
+
+When a List chart displays a pivot table for a Saved Search, click a column header to pivot how the Saved Search results display.
+
+The following chart shows a pivot table of the number of started Requests by the day of the week for Account Openings.
+
+![List chart showing a pivot table for Account Openings ](../../../.gitbook/assets/list-chart-pivot-table-saved-searches-package.png)
 
 ## Related Topics
 
