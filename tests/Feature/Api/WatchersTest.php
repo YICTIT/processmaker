@@ -38,7 +38,7 @@ class WatchersTest extends TestCase
         $watcher = uniqid();
         $data = ['a' => 1];
         $config = ['c' => 'complete'];
-        $request = $this->apiCall('POST', route(self::API_TEST_URL, ['script' => $script->id]), [
+        $request = $this->apiCall('POST', route(self::API_TEST_URL, ['script_id' => $script->id, 'script_key' => $script->key]), [
             'watcher' => $watcher,
             'data' => json_encode($data),
             'config' => json_encode($config),
