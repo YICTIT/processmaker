@@ -20,13 +20,12 @@ class MigrateFresh extends FreshCommand
         $databases = ['data', 'processmaker'];
 
         foreach ($databases as $database) {
-            if ($this->option('drop-views')) {
-                $this->dropAllViews($database);
-
-                $this->info('Dropped all views successfully.');
-            }
-
-            $this->dropAllTables($database);
+            $this->call('db:wipe', array_filter([
+                '--database' => $database,
+                '--drop-views' => $this->option('drop-views'),
+                '--drop-types' => $this->option('drop-types'),
+                '--force' => true,
+            ]));
         }
 
         $this->info('Dropped all tables successfully.');
