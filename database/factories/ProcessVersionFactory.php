@@ -10,10 +10,11 @@ use ProcessMaker\Models\User;
  * Model factory for a ProcessVersion
  */
 $factory->define(ProcessVersion::class, function (Faker $faker) {
-    $emptyProcess = array_random(glob(Process::getProcessTemplatesPath() . '/*.bpmn'));
+    $emptyProcess = glob(Process::getProcessTemplatesPath() . '/*.bpmn');
+    $rand_keys = array_rand($emptyProcess);
     $process = factory(Process::class)->make();
     return [
-        'bpmn' => file_get_contents($emptyProcess),
+        'bpmn' => file_get_contents($emptyProcess[$rand_keys]),
         'name' => $faker->sentence(3),
         'status' => $faker->randomElement(['ACTIVE', 'INACTIVE']),
         'user_id' => function () {
