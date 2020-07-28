@@ -7,8 +7,7 @@
     "dusk_edge": "disable",
     "dusk_safari": "disable",
     "run_mssql_test": "true",
-    
-    
+        
     
 
     "packages":
