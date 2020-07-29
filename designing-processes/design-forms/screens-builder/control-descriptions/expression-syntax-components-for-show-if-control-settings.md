@@ -27,7 +27,7 @@ If a ProcessMaker Screen control does not have an expression in its **Visibility
 
 ### Visibility Rules Override Custom CSS
 
-If a ProcessMaker Screen control affected by a visibility rule is hidden by default from [custom CSS](../add-custom-css-to-a-screen.md), the visibility rule overrides the custom CSS design. As a best practice, use visibility rules instead of custom CSS to hide a control by default.
+If a ProcessMaker Screen control affected by a visibility rule is hidden by default from [custom CSS](../add-custom-css-to-a-screen.md), the visibility rule overrides the custom CSS design. For example, if custom CSS is designed to hide a ProcessMaker Screen control by default when that control's visibility rule dictates that it be visible, the visibility rule overrides the custom CSS to display that control. As a best practice, use visibility rules instead of custom CSS to hide a control by default.
 {% endhint %}
 
 ### Literals
