@@ -45,12 +45,12 @@ See an example in the following video how to use a ProcessMaker Script Executor 
 
 ### Design and Test ProcessMaker Scripts in One Environment
 
-ProcessMaker Scripts are designed and tested in [Scripts Editor]().
+ProcessMaker Scripts are designed and tested in [Script Editor](script-editor.md).
 
 While designing a ProcessMaker Script, test it before you deploy it. ProcessMaker Scripts are tested within the authoring environment to ensure they function as intended. While testing, do the following:
 
 * Use the JSON data model that you can [preview from your ProcessMaker Screens](../design-forms/screens-builder/preview-a-screen.md) to ensure that variables designed from a ProcessMaker Screen function as intended in your ProcessMaker Script.
-* [Incorporate other JSON-formatted data](), such as API keys, to ensure your ProcessMaker Script uses them correctly during your testing.
+* Incorporate other JSON-formatted data, such as API keys, to ensure your ProcessMaker Script uses them correctly during your testing.
 
 ## Related Topics
 
