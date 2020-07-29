@@ -18,6 +18,10 @@ Your ProcessMaker user account or group membership must have the following permi
 
 See the ProcessMaker [Screens](../../../processmaker-administration/permission-descriptions-for-users-and-groups.md#screens) permissions or ask your ProcessMaker Administrator for assistance.
 
+### Visibility Rules Override Custom CSS
+
+If a ProcessMaker Screen control affected by a [visibility rule](control-descriptions/expression-syntax-components-for-show-if-control-settings.md#expression-syntax-components-for-visibility-rule-control-settings) is hidden by default from custom CSS, the visibility rule overrides the custom CSS design. As a best practice, use visibility rules instead of custom CSS to hide a control by default.
+
 ### Need to Learn CSS?
 
 Start with [W3School's free CSS tutorial](https://www.w3schools.com/css/).

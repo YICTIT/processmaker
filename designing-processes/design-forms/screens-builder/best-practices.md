@@ -15,6 +15,7 @@ Follow these best practices when designing ProcessMaker Screens in your organiza
   To avoid this issue, establish a naming convention with all Process Owners in your organization for **Variable Name** settings. For example, use a naming convention such as `<ScreenName>_<FieldName>`. This naming convention minimizes two controls of the same type in different ProcessMaker Screens to have identical names.
 
 * **CSS Selector Name setting for controls:** Use the same **CSS Selector Name** value on different controls of the same type to apply the same custom CSS style to all those controls.
+* **Visibility rules override custom CSS:** If a ProcessMaker Screen control affected by a visibility rule is hidden by default from custom CSS, the visibility rule overrides the custom CSS design. As a best practice, use visibility rules instead of custom CSS to hide a control by default.
 
 ## Related Topics
 

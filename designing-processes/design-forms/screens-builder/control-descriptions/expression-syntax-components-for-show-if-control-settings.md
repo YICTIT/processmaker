@@ -24,6 +24,10 @@ If a ProcessMaker Screen control does not have an expression in its **Visibility
 ### Magic Variables
 
 [Magic Variables](../../../reference-global-variables-in-your-processmaker-assets.md) can be used in when composing expressions.
+
+### Visibility Rules Override Custom CSS
+
+If a ProcessMaker Screen control affected by a visibility rule is hidden by default from [custom CSS](../add-custom-css-to-a-screen.md), the visibility rule overrides the custom CSS design. As a best practice, use visibility rules instead of custom CSS to hide a control by default.
 {% endhint %}
 
 ### Literals
