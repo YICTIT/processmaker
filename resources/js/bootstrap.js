@@ -17,6 +17,11 @@ window.Popper = require("popper.js").default;
 window.ProcessmakerComponents = require("../js/processes/screen-builder/components")
 
 /**
+ * Give node plugins access to our tasks components
+ */
+window.ProcessmakerTaskComponents = require("../js/tasks/components")
+
+/**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This
  * code may be modified to fit the specific needs of your application.
@@ -186,7 +191,7 @@ if (token) {
 window.ProcessMaker.apiClient.defaults.baseURL = "/api/1.0/";
 
 // Set the default API timeout
-let apiTimeout = 5000;
+let apiTimeout = 50000;
 if (window.Processmaker && window.Processmaker.apiTimeout !== undefined) {
     apiTimeout = window.Processmaker.apiTimeout;
 }

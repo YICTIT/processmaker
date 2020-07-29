@@ -371,11 +371,8 @@
                                 "properties": {
                                     "file": {
                                         "description": "save a new media file",
-                                        "type": "file",
-                                        "items": {
-                                            "type": "string",
-                                            "format": "binary"
-                                        }
+                                        "type": "string",
+                                        "format": "binary"
                                     }
                                 },
                                 "type": "object"
@@ -2256,11 +2253,8 @@
                                 "properties": {
                                     "file": {
                                         "description": "save a new media file",
-                                        "type": "file",
-                                        "items": {
-                                            "type": "string",
-                                            "format": "binary"
-                                        }
+                                        "type": "string",
+                                        "format": "binary"
                                     }
                                 },
                                 "type": "object"
@@ -3862,6 +3856,14 @@
                     "commentable_type": {
                         "description": "Represents a business process definition.",
                         "type": "string"
+                    },
+                    "up": {
+                        "description": "Represents a business process definition.",
+                        "type": "integer"
+                    },
+                    "down": {
+                        "description": "Represents a business process definition.",
+                        "type": "integer"
                     },
                     "subject": {
                         "description": "Represents a business process definition.",

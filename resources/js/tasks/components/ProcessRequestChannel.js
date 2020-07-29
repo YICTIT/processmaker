@@ -5,7 +5,9 @@ export default {
     };
   },
   mounted () {
+    console.log('MOUNTED PROCESSREQUESTCHANNEL');
     this.addSocketListener(`ProcessMaker.Models.ProcessRequest.${this.instanceId}`, ".ActivityAssigned", (data) => {
+      console.log('ActivityAssigned', data);
       if (data.payloadUrl) {
         this.obtainPayload(data.payloadUrl)
           .then(response => {
@@ -14,6 +16,7 @@ export default {
       }
     });
     this.addSocketListener(`ProcessMaker.Models.ProcessRequest.${this.instanceId}`, ".ProcessCompleted", (data) => {
+      console.log('ProcessCompleted', data);
       if (data.payloadUrl) {
         this.obtainPayload(data.payloadUrl)
           .then(response => {
@@ -22,6 +25,7 @@ export default {
       }
     });
     this.addSocketListener(`ProcessMaker.Models.ProcessRequest.${this.instanceId}`, ".ProcessUpdated", (data) => {
+      console.log('ProcessUpdated', data);
       if (data.payloadUrl) {
         this.obtainPayload(data.payloadUrl)
           .then(response => {

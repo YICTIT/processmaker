@@ -27,7 +27,10 @@
       ], 'attributes' => 'v-cloak'])
 @endsection
 @section('content')
-    <div v-cloak id="task" class="container-fluid px-3">
+  <div id="task">
+    <task-edit :permission="{{ \Auth::user()->hasPermissionsFor('tasks') }}"></task-edit>
+  </div>
+    {{-- <div v-cloak id="task" class="container-fluid px-3">
         <div class="d-flex flex-column flex-md-row">
             <div class="flex-grow-1">
                 <div v-if="isSelfService" class="alert alert-primary" role="alert">
@@ -240,278 +243,283 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
 @endsection
 
 @section('js')
   <script>
     window.ProcessMaker.EventBus.$on("screen-renderer-init", (screen) => {
-      if (screen.watchers_config) {
-        screen.watchers_config.api.execute = @json(route('api.scripts.execute', ['script_id' => 'script_id', 'script_key' => 'script_key']));
-        screen.watchers_config.api.execution = @json(route('api.scripts.execution', ['key' => 'execution_key']));
-      } else {
-        console.warn('Screen builder version does not have watchers');
-      }
+        if (screen.watchers_config) {
+            screen.watchers_config.api.execute = @json(route('api.scripts.execute', ['script_id' => 'script_id', 'script_key' => 'script_key']));
+            screen.watchers_config.api.execution = @json(route('api.scripts.execution', ['key' => 'execution_key']));
+        } else {
+            console.warn('Screen builder version does not have watchers');
+        }
     });
 
     window.PM4ConfigOverrides = { requestFiles: @json($files) };
+    window.ProcessMaker.editTask = @json($task->toArray());
+    window.Laravel= @json([
+        "csrf_token" => csrf_token(),
+    ]);
+    
+    
   </script>
     @foreach($manager->getScripts() as $script)
         <script src="{{$script}}"></script>
     @endforeach
     <script src="{{mix('js/tasks/show.js')}}"></script>
     <script>
-      const main = new Vue({
-        el: "#task",
-        data: {
-          //Edit data
-          fieldsToUpdate: [],
-          jsonData: "",
-          monacoLargeOptions: {
-            automaticLayout: true,
-          },
-          showJSONEditor: false,
+      // const main = new Vue({
+      //   data: {
+      //     //Edit data
+      //     fieldsToUpdate: [],
+      //     jsonData: "",
+      //     monacoLargeOptions: {
+      //       automaticLayout: true,
+      //     },
+      //     showJSONEditor: false,
 
-          // Reassignment
-          selected: null,
-          selectedIndex: -1,
-          usersList: [],
-          filter: "",
-          showReassignment: false,
+      //     // Reassignment
+      //     selected: null,
+      //     selectedIndex: -1,
+      //     usersList: [],
+      //     filter: "",
+      //     showReassignment: false,
 
-          task: @json($task->toArray()),
-          statusCard: "card-header text-capitalize text-white bg-success",
-          selectedUser: [],
-          hasErrors: false,
-        },
-        watch: {
-          task: {
-            deep: true,
-            handler(task) {
-              window.ProcessMaker.breadcrumbs.taskTitle = task.element_name;
-            }
-          },
-          showReassignment (show) {
-            show ? this.loadUsers() : null;
-          }
-        },
-        computed: {
-          taskHasComments() {
-            const commentsPackage = 'comment-editor' in Vue.options.components;
-            let config = {};
-            if (commentsPackage && this.task.definition && this.task.definition.config) {
-              config = JSON.parse(this.task.definition.config);
-            }
-            return config;
-          },
-          dueLabel() {
-            const dueLabels = {
-              'open': 'Due',
-              'completed': 'Completed',
-              'overdue': 'Due',
-            };
-            return dueLabels[this.task.advanceStatus] || '';
-          },
-          taskIsCompleted() {
-            return this.task.advanceStatus === 'completed' || this.task.advanceStatus === 'triggered';
-          },
-          taskIsOpenOrOverdue() {
-            return this.task.advanceStatus === 'open' || this.task.advanceStatus === 'overdue';
-          },
-          isSelfService() {
-            return this.task.process_request.status === 'ACTIVE' && this.task.is_self_service;
-          },
-          dateDueAt () {
-            return this.task.due_at;
-          },
-          createdAt () {
-            return this.task.created_at;
-          },
-          completedAt () {
-            return this.task.completed_at;
-          },
-          showDueAtDates () {
-            return this.task.status !== "CLOSED";
-          },
-          disabled () {
-            return this.selectedUser ? this.selectedUser.length === 0 : true;
-          },
-          styleDataMonaco () {
-            let height = window.innerHeight * 0.55;
-            return "height: " + height + "px; border:1px solid gray;";
-          }
-        },
-        methods: {
-          activityAssigned() {
-            this.checkTaskStatus();
-            this.redirectToNextAssignedTask(false);
-          },
-          reload() {
-            this.loadTask(this.task.id);
-          },
-          loadTask(id) {
-            window.ProcessMaker.apiClient.get(`/tasks/${id}?include=data,user,requestor,processRequest,component,screen,requestData,bpmnTagName,interstitial,definition`)
-              .then((response) => {
-                this.$set(this, 'task', response.data);
-                if (response.data.process_request.status === 'ERROR') {
-                  this.hasErrors = true;
-                }
-                this.prepareTask();
-              });
-          },
-          claimTask() {
-            ProcessMaker.apiClient
-              .put("tasks/" + this.task.id, {
-                user_id: window.ProcessMaker.user.id,
-                is_self_service: 0,
-              })
-              .then(response => {
-                this.reload();
-              });
-          },
-          redirectWhenProcessCompleted() {
-            window.location.href = `/requests/${this.task.process_request_id}`;
-          },
-          refreshWhenProcessUpdated(data) {
-            if (data.event === 'ACTIVITY_COMPLETED' || data.event === 'ACTIVITY_ACTIVATED') {
-              this.reload();
-            }
-          },
-          checkTaskStatus(redirect=false) {
-            if (this.task.status == 'COMPLETED' || this.task.status == 'CLOSED' || this.task.status == 'TRIGGERED') {
-              this.closeTask();
-            }
-          },
-          closeTask() {
-            if (this.hasErrors) {
-              window.location.href = `/requests/${this.task.process_request_id}`;
-              return;
-            }
-            if (!this.task.allow_interstitial) {
-              document.location.href = "/tasks";
-            } else {
-              this.redirectToNextAssignedTask();
-            }
-          },
-          redirectToNextAssignedTask(redirect = false) {
-            if (this.task.status == 'COMPLETED' || this.task.status == 'CLOSED' || this.task.status == 'TRIGGERED') {
-              window.ProcessMaker.apiClient.get(`/tasks?user_id=${this.task.user_id}&status=ACTIVE&process_request_id=${this.task.process_request_id}`).then((response) => {
-                if (response.data.data.length > 0) {
-                  const firstNextAssignedTask = response.data.data[0].id;
-                  if (redirect) {
-                    window.location.href = `/tasks/${firstNextAssignedTask}/edit`;
-                  } else {
-                    this.loadTask(firstNextAssignedTask);
-                  }
-                } else if (this.task.process_request.status === 'COMPLETED') {
-                  setTimeout(() => {
-                    window.location.href = `/requests/${this.task.process_request_id}`;
-                  }, 500);
-                }
-              });
-            }
-          },
-          /**
-           * Submit the task screen
-           */
-          submitTaskScreen () {
-            this.$refs.taskScreen.submit();
-          },
-          // Data editor
-          updateRequestData () {
-            const data = JSON.parse(this.jsonData);
-            ProcessMaker.apiClient
-              .put("requests/" + this.task.process_request_id, {
-                data: data,
-                task_element_id: this.task.element_id,
-              })
-              .then(response => {
-                this.fieldsToUpdate.splice(0);
-                ProcessMaker.alert("{{__('The request data was saved.')}}", "success");
-              });
-          },
-          saveJsonData () {
-            try {
-              const value = JSON.parse(this.jsonData);
-              this.updateRequestData();
-            } catch (e) {
-              // Invalid data
-            }
-          },
-          editJsonData () {
-            this.jsonData = JSON.stringify(this.task.request_data, null, 4);
-          },
-          // Reassign methods
-          show () {
-            this.showReassignment = true;
-          },
-          cancelReassign () {
-            this.showReassignment = false;
-            this.selectedUser = [];
-          },
-          reassignUser () {
-            if (this.selectedUser) {
-              ProcessMaker.apiClient
-                .put("tasks/" + this.task.id, {
-                  user_id: this.selectedUser.id
-                })
-                .then(response => {
-                  this.showReassignment = false;
-                  this.selectedUser = [];
-                  window.location.href =
-                    "/requests/" + response.data.process_request_id;
-                });
-            }
-          },
-          loadUsers (filter) {
-            filter = typeof filter === "string" ? "?filter=" + filter + "&" : "?";
-            ProcessMaker.apiClient
-              .get(
-                "tasks/" + this.task.id + filter, {
-                  params: {
-                    include: "assignableUsers"
-                  }
-                }
-              )
-              .then(response => {
-                this.usersList = response.data.assignable_users;
-              });
-          },
-          classHeaderCard (status) {
-            let header = "bg-success";
-            switch (status) {
-              case "completed":
-                header = "bg-secondary";
-                break;
-              case "overdue":
-                header = "bg-danger";
-                break;
-            }
-            return "card-header text-capitalize text-white " + header;
-          },
-          assignedUserAvatar (user) {
-            return [{
-              src: user.avatar,
-              name: user.fullname
-            }];
-          },
-          resizeMonaco () {
-            let editor = this.$refs.monaco.getMonaco();
-            editor.layout({height: window.innerHeight * 0.65});
-          },
-          prepareTask(redirect = false) {
-            this.statusCard = this.classHeaderCard(this.task.advanceStatus);
-            this.updateRequestData = debounce(this.updateRequestData, 1000);
-            this.editJsonData();
-            this.checkTaskStatus(redirect);
-          },
-        },
-        mounted () {
-          this.prepareTask(true);
-        }
-      });
-      window.ProcessMaker.breadcrumbs.taskTitle = @json($task->element_name)
+      //     task: @json($task->toArray()),
+      //     statusCard: "card-header text-capitalize text-white bg-success",
+      //     selectedUser: [],
+      //     hasErrors: false,
+      //   },
+      //   watch: {
+      //     task: {
+      //       deep: true,
+      //       handler(task) {
+      //         window.ProcessMaker.breadcrumbs.taskTitle = task.element_name;
+      //       }
+      //     },
+      //     showReassignment (show) {
+      //       show ? this.loadUsers() : null;
+      //     }
+      //   },
+      //   computed: {
+      //     taskHasComments() {
+      //       const commentsPackage = 'comment-editor' in Vue.options.components;
+      //       let config = {};
+      //       if (commentsPackage && this.task.definition && this.task.definition.config) {
+      //         config = JSON.parse(this.task.definition.config);
+      //       }
+      //       return config;
+      //     },
+      //     dueLabel() {
+      //       const dueLabels = {
+      //         'open': 'Due',
+      //         'completed': 'Completed',
+      //         'overdue': 'Due',
+      //       };
+      //       return dueLabels[this.task.advanceStatus] || '';
+      //     },
+      //     taskIsCompleted() {
+      //       return this.task.advanceStatus === 'completed' || this.task.advanceStatus === 'triggered';
+      //     },
+      //     taskIsOpenOrOverdue() {
+      //       return this.task.advanceStatus === 'open' || this.task.advanceStatus === 'overdue';
+      //     },
+      //     isSelfService() {
+      //       return this.task.process_request.status === 'ACTIVE' && this.task.is_self_service;
+      //     },
+      //     dateDueAt () {
+      //       return this.task.due_at;
+      //     },
+      //     createdAt () {
+      //       return this.task.created_at;
+      //     },
+      //     completedAt () {
+      //       return this.task.completed_at;
+      //     },
+      //     showDueAtDates () {
+      //       return this.task.status !== "CLOSED";
+      //     },
+      //     disabled () {
+      //       return this.selectedUser ? this.selectedUser.length === 0 : true;
+      //     },
+      //     styleDataMonaco () {
+      //       let height = window.innerHeight * 0.55;
+      //       return "height: " + height + "px; border:1px solid gray;";
+      //     }
+      //   },
+      //   methods: {
+      //     activityAssigned() {
+      //       this.checkTaskStatus();
+      //       this.redirectToNextAssignedTask(false);
+      //     },
+      //     reload() {
+      //       this.loadTask(this.task.id);
+      //     },
+      //     loadTask(id) {
+      //       window.ProcessMaker.apiClient.get(`/tasks/${id}?include=data,user,requestor,processRequest,component,screen,requestData,bpmnTagName,interstitial,definition`)
+      //         .then((response) => {
+      //           this.$set(this, 'task', response.data);
+      //           if (response.data.process_request.status === 'ERROR') {
+      //             this.hasErrors = true;
+      //           }
+      //           this.prepareTask();
+      //         });
+      //     },
+      //     claimTask() {
+      //       ProcessMaker.apiClient
+      //         .put("tasks/" + this.task.id, {
+      //           user_id: window.ProcessMaker.user.id,
+      //           is_self_service: 0,
+      //         })
+      //         .then(response => {
+      //           this.reload();
+      //         });
+      //     },
+      //     redirectWhenProcessCompleted() {
+      //       window.location.href = `/requests/${this.task.process_request_id}`;
+      //     },
+      //     refreshWhenProcessUpdated(data) {
+      //       if (data.event === 'ACTIVITY_COMPLETED' || data.event === 'ACTIVITY_ACTIVATED') {
+      //         this.reload();
+      //       }
+      //     },
+      //     checkTaskStatus(redirect=false) {
+      //       if (this.task.status == 'COMPLETED' || this.task.status == 'CLOSED' || this.task.status == 'TRIGGERED') {
+      //         this.closeTask();
+      //       }
+      //     },
+      //     closeTask() {
+      //       if (this.hasErrors) {
+      //         window.location.href = `/requests/${this.task.process_request_id}`;
+      //         return;
+      //       }
+      //       if (!this.task.allow_interstitial) {
+      //         document.location.href = "/tasks";
+      //       } else {
+      //         this.redirectToNextAssignedTask();
+      //       }
+      //     },
+      //     redirectToNextAssignedTask(redirect = false) { 
+      //       if (this.task.status == 'COMPLETED' || this.task.status == 'CLOSED' || this.task.status == 'TRIGGERED') {
+      //         window.ProcessMaker.apiClient.get(`/tasks?user_id=${this.task.user_id}&status=ACTIVE&process_request_id=${this.task.process_request_id}`).then((response) => {
+      //           if (response.data.data.length > 0) {
+      //             const firstNextAssignedTask = response.data.data[0].id;
+      //             if (redirect) {
+      //               window.location.href = `/tasks/${firstNextAssignedTask}/edit`;
+      //             } else {
+      //               this.loadTask(firstNextAssignedTask);
+      //             }
+      //           } else if (this.task.process_request.status === 'COMPLETED') {
+      //             setTimeout(() => {
+      //               window.location.href = `/requests/${this.task.process_request_id}`;
+      //             }, 500);
+      //           }
+      //         });
+      //       }
+      //     },
+      //     /**
+      //      * Submit the task screen
+      //      */
+      //     submitTaskScreen () {
+      //       this.$refs.taskScreen.submit();
+      //     },
+      //     // Data editor
+      //     updateRequestData () {
+      //       const data = JSON.parse(this.jsonData);
+      //       ProcessMaker.apiClient
+      //         .put("requests/" + this.task.process_request_id, {
+      //           data: data,
+      //           task_element_id: this.task.element_id,
+      //         })
+      //         .then(response => {
+      //           this.fieldsToUpdate.splice(0);
+      //           ProcessMaker.alert("{{__('The request data was saved.')}}", "success");
+      //         });
+      //     },
+      //     saveJsonData () {
+      //       try {
+      //         const value = JSON.parse(this.jsonData);
+      //         this.updateRequestData();
+      //       } catch (e) {
+      //         // Invalid data
+      //       }
+      //     },
+      //     editJsonData () {
+      //       this.jsonData = JSON.stringify(this.task.request_data, null, 4);
+      //     },
+      //     // Reassign methods
+      //     show () {
+      //       this.showReassignment = true;
+      //     },
+      //     cancelReassign () {
+      //       this.showReassignment = false;
+      //       this.selectedUser = [];
+      //     },
+      //     reassignUser () {
+      //       if (this.selectedUser) {
+      //         ProcessMaker.apiClient
+      //           .put("tasks/" + this.task.id, {
+      //             user_id: this.selectedUser.id
+      //           })
+      //           .then(response => {
+      //             this.showReassignment = false;
+      //             this.selectedUser = [];
+      //             window.location.href =
+      //               "/requests/" + response.data.process_request_id;
+      //           });
+      //       }
+      //     },
+      //     loadUsers (filter) {
+      //       filter = typeof filter === "string" ? "?filter=" + filter + "&" : "?";
+      //       ProcessMaker.apiClient
+      //         .get(
+      //           "tasks/" + this.task.id + filter, {
+      //             params: {
+      //               include: "assignableUsers"
+      //             }
+      //           }
+      //         )
+      //         .then(response => {
+      //           this.usersList = response.data.assignable_users;
+      //         });
+      //     },
+      //     classHeaderCard (status) {
+      //       let header = "bg-success";
+      //       switch (status) {
+      //         case "completed":
+      //           header = "bg-secondary";
+      //           break;
+      //         case "overdue":
+      //           header = "bg-danger";
+      //           break;
+      //       }
+      //       return "card-header text-capitalize text-white " + header;
+      //     },
+      //     assignedUserAvatar (user) {
+      //       return [{
+      //         src: user.avatar,
+      //         name: user.fullname
+      //       }];
+      //     },
+      //     resizeMonaco () {
+      //       let editor = this.$refs.monaco.getMonaco();
+      //       editor.layout({height: window.innerHeight * 0.65});
+      //     },
+      //     prepareTask(redirect = false) {
+      //       this.statusCard = this.classHeaderCard(this.task.advanceStatus);
+      //       this.updateRequestData = debounce(this.updateRequestData, 1000);
+      //       this.editJsonData();
+      //       this.checkTaskStatus(redirect);
+      //     },
+      //   },
+      //   mounted () {
+      //     this.prepareTask(true);
+      //   }
+      // });
+      // window.ProcessMaker.breadcrumbs.taskTitle = @json($task->element_name)
     </script>
 @endsection
 
