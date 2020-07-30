@@ -202,6 +202,7 @@ class PerformanceTest extends TestCase
      */
     public function testRoutesSpeed($route, $params)
     {
+        $this->markTestSkipped();
         $this->user = factory(User::class)->create(['is_administrator' => true]);
         factory(Comment::class, $this->dbSize)->create();
         $this->actingAs($this->user);
