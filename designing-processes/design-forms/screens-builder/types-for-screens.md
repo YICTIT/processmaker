@@ -47,7 +47,7 @@ Do not use a ProcessMaker Screen type other than the Email type when using the [
 ### Advanced
 
 {% hint style="info" %}
-The Advanced Screen [package](../../../package-development-distribution/first-topic.md) is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Advanced Screen package can be installed in your ProcessMaker instance.
+The [Advanced Screen package](../../../package-development-distribution/package-a-connector/advanced-screen-package.md) is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](mailto:sales@processmaker.com) or ask your ProcessMaker sales representative how the Advanced Screen [package](../../../package-development-distribution/first-topic.md) can be installed in your ProcessMaker instance.
 {% endhint %}
 
 Use the Advanced Screen package to design your own advanced forms using HTML syntax and JavaScript. This is an ideal solution for highly technical designers to create their own form designs and functionality.
