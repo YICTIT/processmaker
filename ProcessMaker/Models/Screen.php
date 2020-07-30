@@ -151,7 +151,7 @@ class Screen extends Model
         if (isset($this->config['renderComponent'])) {
             return $this->config['renderComponent'];
         }
-        return 'task-screen';
+        return 'task-from';
     }
 
     /**

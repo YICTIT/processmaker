@@ -13,7 +13,7 @@ import RequestScreens from '../requests/components/RequestScreens';
 Vue.component('data-summary', DataSummary);
 Vue.component('request-detail', RequestDetail);
 Vue.component('avatar-image', AvatarImage);
-Vue.component('task-screen', TaskForm);
+Vue.component('task-from', TaskForm);
 Vue.component('request-errors', RequestErrors);
 Vue.component('monaco-editor', MonacoEditor);
 Vue.component('timeline', Timeline);

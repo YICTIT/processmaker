@@ -8,7 +8,7 @@ import debounce from 'lodash/debounce';
 import Timeline from '../components/Timeline';
 import TimelineItem from '../components/TimelineItem';
 
-Vue.component('task-screen', TaskForm);
+Vue.component('task-from', TaskForm);
 Vue.component('task-view', TaskView);
 Vue.component('avatar-image', AvatarImage);
 Vue.component('monaco-editor', MonacoEditor);

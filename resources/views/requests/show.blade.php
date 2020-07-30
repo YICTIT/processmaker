@@ -112,7 +112,7 @@
                             <template v-if="showSummary">
                                 <template v-if="showScreenSummary">
                                     <div class="p-3">
-                                        <task-screen ref="screen" :screen="screenSummary.config" :data="dataSummary" :computed="screenSummary.computed" />
+                                        <task-from ref="screen" :screen="screenSummary.config" :data="dataSummary" :computed="screenSummary.computed" />
                                     </div>
                                 </template>
                                 <template v-else>
@@ -143,7 +143,7 @@
                                 <template v-if="showScreenRequestDetail">
                                     <div class="card">
                                         <div class="card-body">
-                                            <task-screen ref="screenRequestDetail" :screen="screenRequestDetail" :data="dataSummary"/>
+                                            <task-from ref="screenRequestDetail" :screen="screenRequestDetail" :data="dataSummary"/>
                                         </div>
                                     </div>
                                 </template>

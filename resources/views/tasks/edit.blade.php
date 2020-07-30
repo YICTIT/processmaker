@@ -73,7 +73,7 @@
                                         </component>
                                     </template>
                                     <template v-else>
-                                        <task-screen
+                                        <task-from
                                             ref="taskScreen"
                                             :process-id="task.process_id"
                                             :instance-id="task.process_request_id"
@@ -84,7 +84,7 @@
                                             @process-completed="redirectWhenProcessCompleted"
                                             @process-updated="refreshWhenProcessUpdated"
                                         >
-                                        </task-screen>
+                                        </task-from>
                                     </template>
                                 </div>
                                 <div v-if="task.bpmn_tag_name === 'manualTask' || !task.screen" class="card-footer">
@@ -93,7 +93,7 @@
                             </template>
                             <template v-if="taskIsCompleted">
                               <div class="card card-body border-top-0 h-100">
-                                <task-screen
+                                <task-from
                                     ref="taskWaitScreen"
                                     v-if="task.allow_interstitial"
                                     :process-id="task.process_id"
@@ -107,7 +107,7 @@
                                     @activity-assigned="activityAssigned"
                                     @process-completed="redirectWhenProcessCompleted"
                                     @process-updated="refreshWhenProcessUpdated"
-                                ></task-screen>
+                                ></task-from>
                                 <div v-else class="card card-body text-center" v-cloak>
                                     <h1>{{ __('Task Completed') }} <i class="fas fa-clipboard-check"></i></h1>
                                 </div>
