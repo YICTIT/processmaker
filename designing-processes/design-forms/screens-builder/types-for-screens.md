@@ -52,7 +52,11 @@ The Advanced Screen [package](../../../package-development-distribution/first-to
 
 Use the Advanced Screen package to design your own advanced forms using HTML syntax and JavaScript. This is an ideal solution for highly technical designers to create their own form designs and functionality.
 
-When the Advanced Screen package is installed in your ProcessMaker instance, create a new ProcessMaker Screen using the [Advanced](types-for-screens.md#advanced) Screen type. Screen Builder displays a template that contains a sample Advanced-type ProcessMaker Screen.
+When the Advanced Screen package is installed in your ProcessMaker instance, create a new ProcessMaker Screen using the Advanced Screen type. Screen Builder displays a template that contains a sample Advanced-type ProcessMaker Screen.
+
+{% hint style="warning" %}
+The Advanced Screen type is a highly technical solution only for advanced HTML and JavaScript designers intended only for specific solutions. ProcessMaker Support cannot support nor troubleshoot advanced forms. Please use at your own risk.
+{% endhint %}
 
 ![Advanced-type ProcessMaker Screen](../../../.gitbook/assets/advanced-screen-builder-processes.png)
 
