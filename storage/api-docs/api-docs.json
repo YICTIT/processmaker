@@ -2218,10 +2218,19 @@
                 "operationId": "createRequestFile",
                 "parameters": [
                     {
-                        "name": "data_name",
+                        "name": "model_id",
                         "in": "query",
-                        "description": "Variable name in the request data to use for the file name",
-                        "required": true,
+                        "description": "ID of the model to which the file will be associated",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "model",
+                        "in": "query",
+                        "description": "Name of the class of the model",
+                        "required": false,
                         "schema": {
                             "type": "string"
                         }
@@ -2260,13 +2269,21 @@
                             "application/json": {
                                 "schema": {
                                     "properties": {
-                                        "message": {
+                                        "id": {
                                             "description": "Store a newly created resource in storage.",
                                             "type": "string"
                                         },
-                                        "fileUploadId": {
+                                        "model_id": {
                                             "description": "Store a newly created resource in storage.",
-                                            "type": "integer"
+                                            "type": "string"
+                                        },
+                                        "file_name": {
+                                            "description": "Store a newly created resource in storage.",
+                                            "type": "string"
+                                        },
+                                        "mime_type": {
+                                            "description": "Store a newly created resource in storage.",
+                                            "type": "string"
                                         }
                                     },
                                     "type": "object"
@@ -5111,10 +5128,6 @@
                         "description": "The attributes that are mass assignable.",
                         "type": "string"
                     },
-                    "password": {
-                        "description": "The attributes that are mass assignable.",
-                        "type": "string"
-                    },
                     "address": {
                         "description": "The attributes that are mass assignable.",
                         "type": "string"
@@ -5187,6 +5200,18 @@
                             "INACTIVE"
                         ]
                     },
+                    "group_id": {
+                        "description": "The attributes that are mass assignable.",
+                        "type": "string"
+                    },
+                    "member_type": {
+                        "description": "The attributes that are mass assignable.",
+                        "type": "string"
+                    },
+                    "member_id": {
+                        "description": "The attributes that are mass assignable.",
+                        "type": "string"
+                    },
                     "fullname": {
                         "description": "The attributes that are mass assignable.",
                         "type": "string"
@@ -5204,8 +5229,7 @@
                     },
                     "birthdate": {
                         "description": "The attributes that are mass assignable.",
-                        "type": "string",
-                        "format": "date"
+                        "type": "string"
                     }
                 },
                 "type": "object"
