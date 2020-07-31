@@ -26,7 +26,8 @@ This control is only available for [Form](../types-for-screens.md#form)-type Pro
 
 ### Use the Date Picker Control to Receive Dates and Datetimes
 
-Use the [Date Picker](date-picker-control-settings.md) control for Request participants to select a date or datetime.
+Use the [Date Picker](date-picker-control-settings.md) control for Request participants to select a date or datetime through a user interface.  
+![](../../../../.gitbook/assets/date-picker-control-1.png) 
 {% endhint %}
 
 ## Add the Control to a ProcessMaker Screen
