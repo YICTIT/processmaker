@@ -269,6 +269,8 @@ Follow these steps to design a ProcessMaker Screen that allows multiple files fo
 
 {% file src="../../../../.gitbook/assets/multifile-uploader.json" caption="Download this Screen to your computer, and then import it." %}
 
+![Multiple files uploaded to a ProcessMaker Screen Using the Loop control](../../../../.gitbook/assets/multiple-file-upload-loop-example.png)
+
 ## Related Topics
 
 {% page-ref page="../types-for-screens.md" %}
