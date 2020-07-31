@@ -226,6 +226,23 @@ To make this control hidden until another control contains a value, enter the **
 Enter the value to represent this control in custom CSS syntax when in [Custom CSS](../add-custom-css-to-a-screen.md#add-custom-css-to-a-processmaker-screen) mode. As a best practice, use the same **CSS Selector Name** value on different controls of the same type to apply the same custom CSS style to all those controls.  
 ![](../../../../.gitbook/assets/css-selector-name-screen-builder-processes.png) 
 
+## Upload Multiple Files Example
+
+Use the Loop and [File Upload](file-upload-control-settings.md) controls to upload multiple files in a ProcessMaker Screen.
+
+Follow these steps to design a ProcessMaker Screen that allows multiple files for upload:
+
+1. [Add the Loop control to the ProcessMaker Screen page](loop-control-settings.md#add-the-control-to-a-processmaker-screen) from which ProcessMaker users may upload multiple files.
+2. From the **Data Source** setting, select the **New Array of Objects** option. ![](../../../../.gitbook/assets/data-source-setting-loop-control-multiple-file-upload-example-screen-builder-designer.png) 
+3. In the **Default Loop Count** setting, enter how many files by default that may be uploaded to this ProcessMaker Screen. **3** is the default setting. ![](../../../../.gitbook/assets/loop-control-default-loop-count-screen-builder-processes.png) 
+4. Select the **Allow additional loops** option to allow additional files be uploaded to this ProcessMaker Screen. By default this setting is not selected, which would prevent additional files be uploaded. ![](../../../../.gitbook/assets/loop-control-allow-additional-loops-screen-builder-processes.png) 
+5. [Specify other settings in the Loop control](loop-control-settings.md#inspector-settings) as necessary. These settings do not affect how this example functions.
+6. Add a File Upload control to the Loop control by dragging it into the Loop control.
+7. [Configure the File Upload control](file-upload-control-settings.md#inspector-settings) as necessary. These settings do not affect how this example functions.
+8. [Add a Submit Button control](submit-button-control-settings.md#add-the-control-to-a-processmaker-screen) to this ProcessMaker Screen. Ensure not to add the Submit Button control inside the Loop control.
+9. [Save](../save-a-screen.md#save-a-processmaker-screen) your ProcessMaker Screen.
+10. Reference this ProcessMaker Screen from a Process model or as an editable ProcessMaker Screen in a ProcessMaker Collection.
+
 ## Related Topics
 
 {% page-ref page="../types-for-screens.md" %}
