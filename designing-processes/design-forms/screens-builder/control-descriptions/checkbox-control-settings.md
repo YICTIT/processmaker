@@ -11,7 +11,7 @@ description: >-
 The Checkbox control adds a checkbox from which the [Request](../../../../using-processmaker/requests/what-is-a-request.md) participant can select or deselect an option. Multiple Checkbox controls can be grouped together to function as one set of options whereby separate Checkbox controls with the same name maintain the same selected or deselected state.
 
 {% hint style="info" %}
-This control is only available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
+This control is only available for [Form](../types-for-screens.md#form)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
 {% endhint %}
 
 ## Add the Control to a ProcessMaker Screen

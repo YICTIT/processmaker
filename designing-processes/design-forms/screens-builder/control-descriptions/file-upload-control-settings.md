@@ -13,7 +13,7 @@ The File Upload control adds an area in the ProcessMaker [Screen](../../what-is-
 When a file is uploaded to a ProcessMaker Screen during an in-progress Request, then submitted, that file can be downloaded from the [**Files** tab in that Request's summary](../../../../using-processmaker/requests/request-details/summary-for-in-progress-requests.md#files-associated-with-the-request). The file remains available from that Request's summary regardless of that Request's status.
 
 {% hint style="info" %}
-This control is only available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
+This control is only available for [Form](../types-for-screens.md#form)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
 {% endhint %}
 
 ## Add the Control to a ProcessMaker Screen <a id="add-the-control-to-a-processmaker-screen"></a>

@@ -20,7 +20,13 @@ The Line Input control is a text field that the [Request](../../../../using-proc
 * **Password:** The control accepts a password. Entered text is hidden.
 
 {% hint style="info" %}
-This control is only available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
+### Control Availability
+
+This control is only available for [Form](../types-for-screens.md#form)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
+
+### Use the Date Picker Control to Receive Dates and Datetimes
+
+Use the [Date Picker](date-picker-control-settings.md) control for Request participants to select a date or datetime.
 {% endhint %}
 
 ## Add the Control to a ProcessMaker Screen

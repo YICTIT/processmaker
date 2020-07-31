@@ -26,7 +26,7 @@ During the in-progress Request, the Loop control displays the set of controls co
 Do not place another Loop control inside the first Loop control.
 
 {% hint style="info" %}
-This control is only available for [Display](../types-for-screens.md#display)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
+This control is only available for [Form](../types-for-screens.md#form)-type ProcessMaker Screens. See [Screen Types](../types-for-screens.md).
 {% endhint %}
 
 ### Use the `parent` JSON Key to Reference Request Data from Controls in a Loop Control
