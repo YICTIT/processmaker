@@ -170,7 +170,26 @@ Click the control while in [Design](../screens-builder-modes.md#design-mode) mod
 
 Below is the setting for the Loop control in the **Variable** panel:
 
+* [Data Source](loop-control-settings.md#data-source)
 * [Variable Name](loop-control-settings.md#variable-name)
+
+#### Data Source
+
+Select whether to create a new array of JSON objects designed from ProcessMaker Screen controls within the Loop control or to reference an existing JSON array of objects:
+
+* **New array of JSON objects designed from ProcessMaker Screen controls**
+
+  Select the **New Array of Objects** option from the **Data Source** setting to place ProcessMaker Screen controls into the Loop control while in Design mode.  
+  ![](../../../../.gitbook/assets/data-source-setting-new-array-objects-loop-control-screen-builder-designer.png) 
+
+  When this option is selected, the [**Default Loop Count** setting](loop-control-settings.md#default-loop-count) displays to indicate how many times to repeat the control\(s\) that the Loop control contains.
+
+* **Existing JSON array of objects**
+
+  Select the Existing Array option from the Data Source setting to reference a JSON array from the Request data that the Loop control contains.  
+  ![](../../../../.gitbook/assets/data-source-setting-existing-array-loop-control-screen-builder-designer.png) 
+
+  When this option is selected the **Default Loop Count** setting does not display since the JSON array specifies how many times to repeat the control\(s\) that the Loop control contains.
 
 #### Variable Name
 
@@ -230,18 +249,25 @@ Enter the value to represent this control in custom CSS syntax when in [Custom C
 
 Use the Loop and [File Upload](file-upload-control-settings.md) controls to upload multiple files in a ProcessMaker Screen.
 
+{% hint style="info" %}
+Download an example of this ProcessMaker Screen at the end these instructions, and then [import it into your ProcessMaker instance](../../manage-forms/import-a-screen.md).
+{% endhint %}
+
 Follow these steps to design a ProcessMaker Screen that allows multiple files for upload:
 
 1. [Add the Loop control to the ProcessMaker Screen page](loop-control-settings.md#add-the-control-to-a-processmaker-screen) from which ProcessMaker users may upload multiple files.
-2. From the **Data Source** setting, select the **New Array of Objects** option. ![](../../../../.gitbook/assets/data-source-setting-loop-control-multiple-file-upload-example-screen-builder-designer.png) 
+2. From the **Data Source** setting, select the **New Array of Objects** option. ![](../../../../.gitbook/assets/data-source-setting-new-array-objects-loop-control-screen-builder-designer.png)
 3. In the **Default Loop Count** setting, enter how many files by default that may be uploaded to this ProcessMaker Screen. **3** is the default setting. ![](../../../../.gitbook/assets/loop-control-default-loop-count-screen-builder-processes.png) 
 4. Select the **Allow additional loops** option to allow additional files be uploaded to this ProcessMaker Screen. By default this setting is not selected, which would prevent additional files be uploaded. ![](../../../../.gitbook/assets/loop-control-allow-additional-loops-screen-builder-processes.png) 
-5. [Specify other settings in the Loop control](loop-control-settings.md#inspector-settings) as necessary. These settings do not affect how this example functions.
-6. Add a File Upload control to the Loop control by dragging it into the Loop control.
-7. [Configure the File Upload control](file-upload-control-settings.md#inspector-settings) as necessary. These settings do not affect how this example functions.
-8. [Add a Submit Button control](submit-button-control-settings.md#add-the-control-to-a-processmaker-screen) to this ProcessMaker Screen. Ensure not to add the Submit Button control inside the Loop control.
-9. [Save](../save-a-screen.md#save-a-processmaker-screen) your ProcessMaker Screen.
-10. Reference this ProcessMaker Screen from a Process model or as an editable ProcessMaker Screen in a ProcessMaker Collection.
+5. Do not enter a visibility rule in the [**Visibility Rule** setting](loop-control-settings.md#visibility-rule) so that the Loop control always remains visible.
+6. [Specify other settings in the Loop control](loop-control-settings.md#inspector-settings) as necessary. These settings do not affect how this example functions.
+7. Add a File Upload control to the Loop control by dragging it into the Loop control.
+8. [Configure the File Upload control](file-upload-control-settings.md#inspector-settings) as necessary. These settings do not affect how this example functions.
+9. [Add a Submit Button control](submit-button-control-settings.md#add-the-control-to-a-processmaker-screen) to this ProcessMaker Screen. Ensure not to add the Submit Button control inside the Loop control.
+10. [Save](../save-a-screen.md#save-a-processmaker-screen) your ProcessMaker Screen.
+11. Reference this ProcessMaker Screen from a Process model or as an editable ProcessMaker Screen in a ProcessMaker Collection.
+
+{% file src="../../../../.gitbook/assets/multifile-uploader.json" caption="Download this Screen to your computer, and then import it." %}
 
 ## Related Topics
 
