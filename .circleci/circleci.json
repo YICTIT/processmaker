@@ -13,6 +13,19 @@
     
     "packages":
     [      
+        {            
+            "name": "processmaker/package-webentry",
+            "environment": [
+                {  
+                }
+            ],
+            "previous_commands": [
+                "composer require -n --prefer-dist processmaker/package-webentry:dev-branchtoinstall"
+            ],
+            "command_install": [
+                "php artisan package-webentry:install"
+            ]
+        }
      
     ]
 }
