@@ -204,8 +204,6 @@ class User extends Authenticatable implements HasMedia
             }
         });
 
-        dd($filtered);
-
         return $filtered->values();
     }
 
