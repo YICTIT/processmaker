@@ -16,6 +16,10 @@ Below are a few examples how to use ProcessMaker Environment Variables:
 * A Request participant's credit card information securely interacts with an online payment processing service through multiple ProcessMaker Environment Variables.
 * A Request participant's banking information securely interacts with a bank to make transactions securely while following compliance protocols.
 
+{% hint style="info" %}
+See [ProcessMaker and Environment Variable Syntax, Usage, and Examples](../scripts/script-editor.md#processmaker-and-environment-variable-syntax-usage-and-examples) for how to use an Environment Variable in each programming language that ProcessMaker supports.
+{% endhint %}
+
 ## Related Topics
 
 {% page-ref page="manage-your-environment-variables/view-all-environment-variables.md" %}

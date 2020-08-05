@@ -28,6 +28,10 @@ Follow these steps to edit a ProcessMaker Environment Variable:
    * Optionally, in the **Value** setting, edit or enter the ProcessMaker Environment Variable value. Entering or editing a value is optional since ProcessMaker Environment Variables are secure, abstract proxies for sensitive information you assign to contain a value that can be determined during an in-progress Request.
 4. Click **Save**.
 
+{% hint style="info" %}
+See [ProcessMaker and Environment Variable Syntax, Usage, and Examples](../../scripts/script-editor.md#processmaker-and-environment-variable-syntax-usage-and-examples) for how to use an Environment Variable in each programming language that ProcessMaker supports.
+{% endhint %}
+
 ## Related Topics
 
 {% page-ref page="../what-is-an-environment-variable.md" %}

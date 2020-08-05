@@ -29,6 +29,10 @@ Follow these steps to create a new ProcessMaker Environment Variable:
 5. Optionally, in the **Value** setting, enter the value for the ProcessMaker Environment Variable. Entering a value is optional since ProcessMaker Environment Variables are secure, abstract proxies for sensitive information you assign to contain a value that can be determined during an in-progress Request.
 6. Click **Save**. The screen closes and the following message displays: **The environment variable was created.** The **Environment Variables** page displays with your new ProcessMaker Environment Variable.
 
+{% hint style="info" %}
+See [ProcessMaker and Environment Variable Syntax, Usage, and Examples](../../scripts/script-editor.md#processmaker-and-environment-variable-syntax-usage-and-examples) for how to use an Environment Variable in each programming language that ProcessMaker supports.
+{% endhint %}
+
 ## Related Topics
 
 {% page-ref page="../what-is-an-environment-variable.md" %}

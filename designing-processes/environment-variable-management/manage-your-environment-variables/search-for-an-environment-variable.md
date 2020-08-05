@@ -26,6 +26,12 @@ Follow these steps to search for a ProcessMaker Environment Variable:
 As you enter text into the **Search** setting, ProcessMaker Environment Variables display that match your entered text.
 
 {% hint style="info" %}
+### Use a ProcessMaker Environment Variable in a Script
+
+See [ProcessMaker and Environment Variable Syntax, Usage, and Examples](../../scripts/script-editor.md#processmaker-and-environment-variable-syntax-usage-and-examples) for how to use an Environment Variable in each programming language that ProcessMaker supports.
+
+### No Search Results
+
 If there are no search results, the following message displays: **No Results**.
 {% endhint %}
 

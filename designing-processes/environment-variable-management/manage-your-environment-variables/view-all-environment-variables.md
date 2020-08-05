@@ -48,6 +48,10 @@ Click the **+Environment Variable** button. See [Create a New Environment Variab
 
 Click the **Edit** icon![](../../../.gitbook/assets/open-modeler-edit-icon-processes-page-processes.png). See [Edit an Environment Variable](edit-an-environmental-variable.md#edit-a-processmaker-environment-variable).
 
+### Use a ProcessMaker Environment Variable in a Script
+
+See [ProcessMaker and Environment Variable Syntax, Usage, and Examples](../../scripts/script-editor.md#processmaker-and-environment-variable-syntax-usage-and-examples) for how to use an Environment Variable in each programming language that ProcessMaker supports.
+
 ### Delete a ProcessMaker Environment Variable
 
 Click the **Delete** icon![](../../../.gitbook/assets/trash-icon-process-modeler-processes.png). See [Delete an Environment Variable](remove-an-environment-variable.md#remove-a-processmaker-environment-variable).
