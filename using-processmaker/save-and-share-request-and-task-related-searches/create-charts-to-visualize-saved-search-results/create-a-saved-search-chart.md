@@ -193,8 +193,8 @@ Follow these steps to create a list chart type for a Saved Search:
    **Follow these steps if the Select Pivot Table toggle key is disabled from the Source tab:**
 
    1. From the **Background Color** setting, select a color as the background for the list chart canvas.
-   2. Enable the **Display link** toggle key to display a link that, when clicked, displays the data source that provides the Saved Search data in that list chart record. The link displays as the **Open Record** icon![](../../../.gitbook/assets/open-record-icon-list-chart-saved-searches-package.png)at the end of each row. The **Display link** toggle key is enabled by default.
-   3. Enable the **Make rows clickable** toggle key to allow anywhere within a row will link to view the data source that provides the Saved Search data in that list chart record. The **Make rows clickable** toggle key is disabled by default. ![](../../../.gitbook/assets/create-a-list-chart-display-pivot-icon-disabled-saved-searches-package.png) 
+   2. Enable the **Display link** toggle key to display a link that, when clicked, redirects to the corresponding Request, Task or ProcessMaker Collection record depending from which type of Saved Search the list chart derives its data. The link displays as the **Open Record** icon![](../../../.gitbook/assets/open-record-icon-list-chart-saved-searches-package.png)at the end of each row. The **Display link** toggle key is enabled by default.
+   3. Enable the **Make rows clickable** toggle key to allow anywhere within a list chart row to redirect to the corresponding Request, Task or ProcessMaker Collection record depending from which type of Saved Search the list chart derives its data. The **Make rows clickable** toggle key is disabled by default. ![](../../../.gitbook/assets/create-a-list-chart-display-pivot-icon-disabled-saved-searches-package.png) 
 
 10. Click **Save**. If a required setting does not contain a value or selection, the following message displays: **The given data was invalid.**. Otherwise, the chart and the following message display: **Successfully Created Chart**.
 
