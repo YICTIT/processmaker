@@ -73,7 +73,7 @@ Your ProcessMaker user account or group membership must have the following permi
 See the ProcessMaker [Screens](https://processmaker.gitbook.io/processmaker/processmaker-administration/permission-descriptions-for-users-and-groups#screens) permissions or ask your ProcessMaker Administrator for assistance.
 {% endhint %}
 
-Copying a control also copies the current settings of that control. The copied control displays below other controls placed on that [ProcessMaker Screen](https://processmaker.gitbook.io/processmaker/designing-processes/design-forms/what-is-a-form) page.Follow these steps to copy a control:
+Copying a control also copies the current settings of that control. The copied control displays below other controls placed on that [ProcessMaker Screen](https://processmaker.gitbook.io/processmaker/designing-processes/design-forms/what-is-a-form) page. Follow these steps to copy a control:
 
 1. Select the control to be copied.
 2. Click the **Duplicate Control** button![](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LJ0aNaVW1m7sNsxVJLV%2F-M35zYld_NqI8FJQk8tz%2F-M37LeBNJaLfGSAVqQo7%2FCopy%20Duplicate%20Control%20icon%20Screen%20Builder%20-%20Processes.png?alt=media&token=dec6e3a0-4b0b-4d5d-b259-5373a2a25873). The control copies with its current settings, and then displays below other controls placed on that page.
@@ -107,9 +107,7 @@ Your user account or group membership must have the following permissions to edi
 See the ProcessMaker [Screens](https://processmaker.gitbook.io/processmaker/processmaker-administration/permission-descriptions-for-users-and-groups#screens) permissions or ask your ProcessMaker Administrator for assistance.
 {% endhint %}
 
-### Permissions Required <a id="permissions-required"></a>
-
-The Signature control has the following panel that contain settings:
+The Signature control has the following panel that contains settings:
 
 * **​**[**Configuration** panel](signature-control-settings.md#configuration-panel-settings)
 
