@@ -781,6 +781,8 @@ Below is one JSON object from the Endpoint response that gets the list of countr
 
 {% page-ref page="./" %}
 
+{% page-ref page="signature-control-settings.md" %}
+
 {% page-ref page="google-places-control-settings.md" %}
 
 {% page-ref page="rich-text-control-settings.md" %}

@@ -413,9 +413,9 @@ The Rich Text control displays the following during a Request:
 
 ## Related Topics
 
-{% page-ref page="../../../../package-development-distribution/package-a-connector/google-places-package.md" %}
-
 {% page-ref page="../../../../package-development-distribution/first-topic.md" %}
+
+{% page-ref page="signature-control-settings.md" %}
 
 {% page-ref page="saved-search-chart-control-settings.md" %}
 

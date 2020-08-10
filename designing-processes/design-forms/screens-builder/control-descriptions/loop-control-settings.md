@@ -279,6 +279,8 @@ Follow these steps to design a ProcessMaker Screen that allows multiple files fo
 
 {% page-ref page="../validate-your-screen.md" %}
 
+{% page-ref page="signature-control-settings.md" %}
+
 {% page-ref page="google-places-control-settings.md" %}
 
 {% page-ref page="rich-text-control-settings.md" %}

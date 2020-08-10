@@ -434,6 +434,8 @@ Follow these steps to configure the parameter\(s\) for a `URL` validation rule:
 
 {% page-ref page="./" %}
 
+{% page-ref page="signature-control-settings.md" %}
+
 {% page-ref page="google-places-control-settings.md" %}
 
 {% page-ref page="rich-text-control-settings.md" %}

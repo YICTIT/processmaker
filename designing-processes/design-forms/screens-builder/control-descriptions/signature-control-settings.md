@@ -104,14 +104,14 @@ Your user account or group membership must have the following permissions to edi
 * Screens: Edit Screens
 * Screens: View Screens
 
-See the ProcessMaker [Screens](https://processmaker.gitbook.io/processmaker/processmaker-administration/permission-descriptions-for-users-and-groups#screens) permissions or ask your ProcessMaker Administrator for assistance
+See the ProcessMaker [Screens](https://processmaker.gitbook.io/processmaker/processmaker-administration/permission-descriptions-for-users-and-groups#screens) permissions or ask your ProcessMaker Administrator for assistance.
 {% endhint %}
 
 ### Permissions Required <a id="permissions-required"></a>
 
 The Signature control has the following panel that contain settings:
 
-* **​Configuration** panel ![](../../../../.gitbook/assets/image%20%289%29.png) 
+* **​**[**Configuration** panel](signature-control-settings.md#configuration-panel-settings)
 
 ### Configuration Panel Settings <a id="configuration-panel-settings"></a>
 
@@ -119,8 +119,8 @@ Click the control while in [Design](https://processmaker.gitbook.io/processmaker
 
 Below are settings for the Signature control in the **Variable** panel:
 
-* ​Variable Name
-* ​Required
+* ​[Variable Name](signature-control-settings.md#name)
+* ​[Required](signature-control-settings.md#upload)
 
 #### Variable Name <a id="name"></a>
 
@@ -133,6 +133,54 @@ Enter the alphanumeric name that identifies this [ProcessMaker Screen](https://p
 Select the **Required** setting to clarify that the signature is required to submit the form.
 
   ![](../../../../.gitbook/assets/required_signature-control.png)
+
+## Related Topics
+
+{% page-ref page="../../../../package-development-distribution/package-a-connector/signature-package.md" %}
+
+{% page-ref page="../../../../package-development-distribution/first-topic.md" %}
+
+{% page-ref page="google-places-control-settings.md" %}
+
+{% page-ref page="saved-search-chart-control-settings.md" %}
+
+{% page-ref page="rich-text-control-settings.md" %}
+
+{% page-ref page="line-input-control-settings.md" %}
+
+{% page-ref page="textarea-control-settings.md" %}
+
+{% page-ref page="select-list-control-settings.md" %}
+
+{% page-ref page="checkbox-control-settings.md" %}
+
+{% page-ref page="date-picker-control-settings.md" %}
+
+{% page-ref page="page-navigation-button-control-settings.md" %}
+
+{% page-ref page="multi-column-button-control-settings.md" %}
+
+{% page-ref page="loop-control-settings.md" %}
+
+{% page-ref page="record-list-control-settings.md" %}
+
+{% page-ref page="image-control-settings.md" %}
+
+{% page-ref page="submit-button-control-settings.md" %}
+
+{% page-ref page="nested-screen-control-settings.md" %}
+
+{% page-ref page="file-upload-control-settings.md" %}
+
+{% page-ref page="file-download-control-settings.md" %}
+
+{% page-ref page="validation-rules-for-validation-control-settings.md" %}
+
+{% page-ref page="expression-syntax-components-for-show-if-control-settings.md" %}
+
+
+
+
 
 
 

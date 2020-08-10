@@ -198,6 +198,8 @@ The **Size** setting options are based on the height of the Saved Search chart. 
 
 {% page-ref page="../../../../package-development-distribution/first-topic.md" %}
 
+{% page-ref page="signature-control-settings.md" %}
+
 {% page-ref page="google-places-control-settings.md" %}
 
 {% page-ref page="rich-text-control-settings.md" %}

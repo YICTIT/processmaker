@@ -204,6 +204,8 @@ Enter the value to represent this control in custom CSS syntax when in [Custom C
 
 {% page-ref page="../validate-your-screen.md" %}
 
+{% page-ref page="signature-control-settings.md" %}
+
 {% page-ref page="google-places-control-settings.md" %}
 
 {% page-ref page="rich-text-control-settings.md" %}
