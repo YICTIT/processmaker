@@ -34,10 +34,10 @@ Follow these steps to add this control to the ProcessMaker Screen:
 4. Drag the **Signature** icon into the Screen Builder canvas. Existing controls on the Screen Builder canvas adjust positioning based on where you drag the control.
 5. Place into the Screen Builder canvas where you want the control to display on the ProcessMaker Screen.
 
-​![](../../../../.gitbook/assets/signature-control_canvas.png)​
+   ​![](../../../../.gitbook/assets/signature-control_canvas.png)​
 
-1. Configure the Image control. See Settings.
-2. Validate that the control is configured correctly. See [Validate Your Screen](https://processmaker.gitbook.io/processmaker/designing-processes/design-forms/screens-builder/validate-your-screen#validate-a-processmaker-screen).
+6. Configure the Image control. See [Settings](signature-control-settings.md#settings).
+7. Validate that the control is configured correctly. See [Validate Your Screen](https://processmaker.gitbook.io/processmaker/designing-processes/design-forms/screens-builder/validate-your-screen#validate-a-processmaker-screen).
 
 Below is a digital Signature added in [Preview mode](https://processmaker.gitbook.io/processmaker/designing-processes/design-forms/screens-builder/screens-builder-modes#preview-mode).
 
