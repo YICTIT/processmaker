@@ -10,7 +10,7 @@ description: 'Develop ProcessMaker Scripts using C# programming language.'
 The C\# [package](../first-topic.md) is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the C\# package can be installed in your ProcessMaker instance.
 {% endhint %}
 
-Use the C\# package to develop [ProcessMaker Scripts](../../designing-processes/scripts/what-is-a-script.md) in [Scripts Editor]() using C\# programming language.
+Use the C\# package to develop [ProcessMaker Scripts](../../designing-processes/scripts/what-is-a-script.md) in [Script Editor](../../designing-processes/scripts/script-editor.md) using C\# programming language.
 
 See the following topics:
 

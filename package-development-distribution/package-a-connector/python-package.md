@@ -10,7 +10,7 @@ description: Develop ProcessMaker Scripts using Python programming language.
 The Python [package](../first-topic.md) is not available in the ProcessMaker open-source edition. Contact [ProcessMaker Sales](https://www.processmaker.com/contact/) or ask your ProcessMaker sales representative how the Python package can be installed in your ProcessMaker instance.
 {% endhint %}
 
-Use the Python package to develop [ProcessMaker Scripts](../../designing-processes/scripts/what-is-a-script.md) in [Scripts Editor]() using Python programming language.
+Use the Python package to develop [ProcessMaker Scripts](../../designing-processes/scripts/what-is-a-script.md) in [Script Editor](../../designing-processes/scripts/script-editor.md) using Python programming language.
 
 See the following topics:
 
