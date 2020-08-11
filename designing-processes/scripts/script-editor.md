@@ -87,9 +87,9 @@ If the ProcessMaker Script evaluates successfully, its output displays in the **
 * **ProcessMaker Magic Variables:** ProcessMaker uses a set of Magic Variables that become part of the JSON data model for all Requests. ProcessMaker uses these Magic Variables to store ProcessMaker user, Process, and Request related data for all Requests. During an in-progress Request, these ProcessMaker Magic Variables are updated. All ProcessMaker Magic Variables are preceded by an underscore \(`_`\) character in the JSON data model. See [Reference Magic Variables in ProcessMaker Assets](https://app.gitbook.com/@processmaker/s/processmaker/~/drafts/-M8lHWfe3NHeZQ-3bGbC/designing-processes/reference-global-variables-in-your-processmaker-assets/@merged).
 * **ProcessMaker Environment Variables:** The sensitive information that a [ProcessMaker Environment Variable](https://app.gitbook.com/@processmaker/s/processmaker/~/drafts/-M8lHWfe3NHeZQ-3bGbC/designing-processes/environment-variable-management/what-is-an-environment-variable/@merged) represents can pass to a ProcessMaker Script when it runs. Usage depends on the programming language that the ProcessMaker Script uses. In the usage examples below, `ENV_VAR_NAME` represents the name of the ProcessMaker Environment Variable. See [ProcessMaker Variable Syntax, Usage, and Examples](script-editor.md#processmaker-variable-syntax-usage-and-examples).
 
-### ‌ProcessMaker and Environment Variable Syntax, Usage, and Examples
+### ‌ProcessMaker and Environment Variable Syntax, Usage, SDK, and Examples
 
-‌ProcessMaker uses two global variables that can ProcessMaker Scripts can call. Variable usage depends on the programming language that the ProcessMaker Script uses. See [ProcessMaker Variable Syntax, Usage, and Examples](script-editor.md#processmaker-variable-syntax-usage-and-examples). Below is a description of these global variables:‌
+‌ProcessMaker uses two global variables that ProcessMaker Scripts can call. Variable usage depends on the programming language that the ProcessMaker Script uses. Below is a description of these global variables:‌
 
 * **Data:** The `data` variable contains all Request data to the moment a ProcessMaker Script runs.
 * **Config:** The `config` variable contains any special configuration to be passed to the ProcessMaker Script prior to it running.
@@ -103,6 +103,7 @@ Below is a sample ProcessMaker Script that uses PHP. Refer to the comments denot
 * How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
 * How to get a value from the configuration object.
 * How to get a value from a data object.
+* Call the Software Development Kit \(SDK\).
 
 ```php
 <?php
@@ -130,6 +131,7 @@ Below is a sample ProcessMaker Script that uses Lua. Refer to the comments denot
 * How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
 * How to get a value from the configuration object.
 * How to get a value from a data object.
+* Call the Software Development Kit \(SDK\).
 
 ```lua
 -- Get a ProcessMaker Environment Variable, in this example TEST_VAR.
@@ -160,6 +162,7 @@ Below is a sample ProcessMaker Script that uses JavaScript. Refer to the comment
 * How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
 * How to get a value from the configuration object.
 * How to get a value from a data object.
+* Call the Software Development Kit \(SDK\).
 
 ```javascript
 // A ProcessMaker Script written in JavaScript should return a Promise that
@@ -206,6 +209,7 @@ Below is a sample ProcessMaker Script that uses C\#. Refer to the comments denot
 * How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
 * How to get a value from the configuration object.
 * How to get a value from a data object.
+* Call the Software Development Kit \(SDK\).
 
 ```csharp
 using System;
@@ -257,6 +261,7 @@ Below is a sample ProcessMaker Script that uses Java. Refer to the comments deno
 * How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
 * How to get a value from the configuration object.
 * How to get a value from a data object.
+* Call the Software Development Kit \(SDK\).
 
 ```java
 import java.io.*;
@@ -312,6 +317,7 @@ Below is a sample ProcessMaker Script that uses Python. Refer to the comments de
 * How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
 * How to get a value from the configuration object.
 * How to get a value from a data object.
+* Call the Software Development Kit \(SDK\).
 
 ```python
 # A PM4 script written in Python must set a dict
@@ -353,6 +359,7 @@ Below is a sample ProcessMaker Script that uses R. Refer to the comments denoted
 * How to get a [ProcessMaker Environment Variable](../environment-variable-management/what-is-an-environment-variable.md).
 * How to get a value from the configuration object.
 * How to get a value from a data object.
+* Call the Software Development Kit \(SDK\).
 
 ```r
 # Get a ProcessMaker Environment Variable, in this example TEST_VAR.
